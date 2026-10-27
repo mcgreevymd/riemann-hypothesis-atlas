@@ -1,0 +1,6898 @@
+{
+ "edition": "public",
+ "concepts": [
+  {
+   "id": "weil_positivity",
+   "name": "Weil positivity criterion",
+   "aliases": [
+    "Weil criterion",
+    "W(f∗f̃*) ≥ 0",
+    "Weil form 𝒬",
+    "arithmetic action S[F]"
+   ],
+   "plain": "A quadratic form built from primes, the archimedean place and the pole. RH holds exactly when it is never negative.",
+   "label": "Cited",
+   "core": "Weil 1952: RH ⇔ W(f∗f̃*) ≥ 0 for all test f; equivalently the Hermitian form 𝒬 is positive, ⇔ a unitary Hilbert realization of the scaling flow (TAA Lemma 1 Thm 2.1 (iv)).",
+   "formula": "RH ⇔ W(f ∗ f̃*) ≥ 0 ∀f",
+   "numbers": [
+    "κ(𝒬) = N₊ (L1)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The zero-side check is tautological (TAA Lemma 142); only the prime side with no zeros is a test.",
+    "\"Q = LP + positive\" is false (TAA Lemma 8)."
+   ],
+   "lemmas": [
+    "L1",
+    "L17",
+    "L98",
+    "L103",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "Weil 1952"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "relative_gram",
+     "note": "TAA Lemma 142: Weil form = relative intersection matrix on translates"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_index",
+     "note": "Spec ℤ analogue of Hodge index on V₀ (TAA Lemma 91)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "two_point",
+     "note": "TAA Lemma 103: g + iω ≥ 0 ⇔ Weil"
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 1
+  },
+  {
+   "id": "davenport_heilbronn",
+   "name": "Davenport–Heilbronn function",
+   "aliases": [
+    "DH"
+   ],
+   "plain": "Has a functional equation but no Euler product, and zeros off the line.",
+   "label": "Theorem",
+   "core": "DH is a location test only (no Euler product, TAA Lemma 103). Tail 0.7398 (TAA Lemma 78) vs 0.7376 (TAA Lemma 136).",
+   "formula": "",
+   "numbers": [
+    "0.7398 (L78)",
+    "0.7376 (L136)",
+    "5×10⁻¹⁵",
+    "−66.8"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Tail number conflict."
+   ],
+   "lemmas": [
+    "L78",
+    "L103",
+    "L136",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "functional_equation",
+     "note": ""
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 2
+  },
+  {
+   "id": "psi_minus_x",
+   "name": "ψ(x) − x (explicit formula, deviation from the pole)",
+   "aliases": [
+    "Chebyshev ψ",
+    "prime counting error",
+    "ψ − x ≠ 0"
+   ],
+   "plain": "Count prime powers with weight log p and subtract the pole’s prediction x; what remains is a sum over zeros. RH ⇔ the remainder is O(√x log²x).",
+   "label": "Cited",
+   "core": "Explicit formula ψ(x) = x − Σ_ρ x^ρ/ρ − log 2π − ½log(1 − x⁻²); RH ⇔ ψ(x) − x = O(x^{½+ε}). In TAA the x term is the pole/𝕃 reference; ψ − x ≠ 0 measures the flow-relative H¹.",
+   "formula": "ψ(x) − x = −Σ_ρ x^ρ/ρ + …",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-sensitive",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "The explicit-formula wording is standard (cited), not from a specific lemma section.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "ψ(x) − x ≠ 0 is not a failure: it is the zero contribution relative to the pole reference."
+   ],
+   "lemmas": [
+    "L142",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "goldfeld_bsd",
+     "note": "both compare a prime product/sum to a pole reference"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "displaced_reference",
+     "note": "subtract the pole"
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "size O(x^{½+ε}) ⇔ RH"
+    },
+    {
+     "type": "analogue-of",
+     "to": "tate_count",
+     "note": "N_n − (1 + qⁿ) = −Tr(Fⁿ|H¹) over F_q"
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 3
+  },
+  {
+   "id": "primitive_part",
+   "name": "Primitive part V₀ = U^⊥",
+   "aliases": [
+    "V₀",
+    "primitive classes",
+    "D°"
+   ],
+   "plain": "What is left after removing the reference plane; on it the form should be negative (curves: theorem; ℚ: RH).",
+   "label": "Theorem",
+   "core": "D° = D − d₁f₂ − d₂f₁; (D°)² = −Tr_{H¹}(α_Dα_D†) (TAA Lemma 133). Over ℚ V₀ = U^⊥ and D·D ≤ 0 on V₀ ⇔ RH (TAA Lemma 91).",
+   "formula": "(D°)² = −def(D) ≤ 0",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A “−2Tr” formula holds only on the primitive part."
+   ],
+   "lemmas": [
+    "L91",
+    "L125",
+    "L133",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "complement"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "brst",
+     "note": "physical quotient"
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_brst",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 4
+  },
+  {
+   "id": "lagarias",
+   "name": "Lagarias/Hinkkanen criterion",
+   "aliases": [
+    "Re ξ′/ξ > 0",
+    "Hinkkanen"
+   ],
+   "plain": "RH ⇔ the log-derivative of ξ has positive real part to the right of the line.",
+   "label": "Cited",
+   "core": "Lagarias 1999 (1.5), credited to Hinkkanen: RH ⇔ Re ξ′/ξ(s) > 0 on Re s > ½ (TAA Lemmas 17, 146).",
+   "formula": "RH ⇔ Re ξ′/ξ(s) > 0 (Re s > ½)",
+   "numbers": [
+    "DH: Re ξ′/ξ = −66.8"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L17",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "DH violates it"
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 5
+  },
+  {
+   "id": "mp_castelnuovo",
+   "name": "Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)",
+   "aliases": [
+    "C1–C4",
+    "positive involution",
+    "Hilbert–Pólya object"
+   ],
+   "plain": "A space with an infinite H¹, a positive involution † and a flow u_t with u_t u_t† = eᵗ, on which the explicit-formula (Weil) distribution becomes a squared norm, with that positivity proved without using the zeros.",
+   "label": "Open",
+   "core": "Arithmetic Castelnuovo object = (C1) infinite H¹, (C2) positive involution, (C3) u_t u_t† = eᵗ, (C4) positivity proved without zeros (TAA Lemma 136); equivalently a positive involution plus a Frobenius-type flow with positivity proved without zeros (TAA Lemma 136 synthesis). Hilbert–Pólya form: a positive V ≅ H¹ (TAA Lemma 115); “all that is missing is an appropriate inner product” (Lax–Phillips, TAA Lemma 105/TAA Lemma 141).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "Over F_q: Ax2 ∧ Ax3 ⇔ |α| = √q (TAA Lemma 137, theorem). Over ℚ: isometry of the flow is unconditional (TAA Lemma 1); the Čech 2-class supplies C2–C3 structure but not the sign (TAA Lemma 138); Ax2 alone holds for fakes, Ax3 alone is tautological (TAA Lemma 137).",
+   "tests": "Must separate ghosts: Ax2 and Ax3 jointly, never one alone (TAA Lemma 137). Must not define the inner product by Weil’s form (circular, TAA Lemma 138 R2; TAA Lemma 106).",
+   "pitfalls": [],
+   "lemmas": [
+    "L105",
+    "L106",
+    "L115",
+    "L136",
+    "L137",
+    "L138"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "castelnuovo_object",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "hilbert_polya",
+     "note": ""
+    },
+    {
+     "type": "special-case-of",
+     "to": "ax123",
+     "note": "Ax2 + Ax3 jointly"
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 6
+  },
+  {
+   "id": "mp_d8",
+   "name": "Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)",
+   "aliases": [
+    "D8",
+    "arithmetic surface with Hodge index"
+   ],
+   "plain": "The top substantive direction: a surface S over Spec ℤ with an ample class and a Riemann–Roch whose χ(nD) is quadratic, so that Hodge index follows as it does for curves.",
+   "label": "Open",
+   "core": "D8: surface + ample + RR for Spec ℤ — find S with χ(nD) quadratic and a Hodge index; obstacle: the collapse ℤ ⊗ ℤ = ℤ; sign = Weil form (TAA Lemma 140, TAA Lemma 141). Acceptance test (TAA Lemma 141): reconstruct the relative space and its form from independent constraints — (a) the hyperbolic plane U = ⟨𝟙, 𝕃⟩, (b) the scaling flow acting on it as diag(1, eᵗ), (c) ampleness at ∞, (d) RR/GRR with quadratic growth — then prove negativity on U^⊥. Any proof that uses the zeros, or defines the form by its negativity, fails.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "Over F_q: surface + ample + RR ⇒ Hodge index (Segre 1937, Grothendieck 1958) (TAA Lemma 140). Spec ℤ ×_ℤ Spec ℤ = Spec ℤ (TAA Lemma 65). Arithmetic surfaces (curve × Spec O_K) satisfy V1–V3, but the relative part is Néron–Tate, not ζ (TAA Lemma 145).",
+   "tests": "Must pass the tautology test (no zeros, no definition by negativity, TAA Lemma 141) and the must-fail-for-DH test (TAA Lemma 147).",
+   "pitfalls": [],
+   "lemmas": [
+    "L65",
+    "L140",
+    "L141",
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "surface_ample_rr",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "mp_quadratic_rr",
+     "note": ""
+    },
+    {
+     "type": "special-case-of",
+     "to": "mp_castelnuovo",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_d8",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.4,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 7
+  },
+  {
+   "id": "mp_flow_h1",
+   "name": "Missing: flow-relative H¹ for Spec ℤ",
+   "aliases": [
+    "H¹_flow",
+    "Deninger H¹"
+   ],
+   "plain": "For ℚ both cohomologies we can compute vanish (étale H¹ = 0, Arakelov Pic⁰ = a point), yet ψ(x) − x ≠ 0. The zeros need a cohomology relative to the scaling flow.",
+   "label": "Open",
+   "core": "TAA Lemma 141 H¹ table: Spec ℤ has étale H¹ = 0, Arakelov Pic⁰ = point (r = 0, h = 1), relative count ψ(x) − x = −Σ_ρ x^ρ/ρ + …, infinitely many zeros, flow H¹ = Deninger H¹_flow (Open). “For ℚ both H¹’s that we can compute vanish, yet ψ − x ≠ 0, so the zeros need a cohomology relative to the flow” (TAA Lemma 141, restatement).",
+   "formula": "N_n − (1 + qⁿ) = −Tr(Fⁿ | H¹) ↔ ψ(x) − x = −Σ_ρ x^ρ/ρ + …",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "π₁ét(Spec ℤ) = 1 ⇒ H¹ét = 0 (TAA Lemma 140); curve row: N_n − (qⁿ + 1) = −Tr(Fⁿ | H¹) with relative Gram NSD (TAA Lemma 141 §1); Tr ↔ −(ψ − x) up to the s = 0 term and ARCH (TAA Lemma 142 corrections).",
+   "tests": "Must carry a positive structure (Ax2), not only the trace formula: the explicit formula alone is ghost-blind in data (TAA Lemma 143: ghost defect ≤ 1.9e−5, 0.08× noise).",
+   "pitfalls": [],
+   "lemmas": [
+    "L140",
+    "L141",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "no_etale_h1",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "psi_minus_x",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "deninger",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 8
+  },
+  {
+   "id": "mp_quadratic_rr",
+   "name": "Missing: quadratic Riemann–Roch + “ampleness ⇒ effectivity” on the square",
+   "aliases": [
+    "S1q + S4",
+    "quadratic RR",
+    "VF-E"
+   ],
+   "plain": "A Riemann–Roch on Spec ℤ × Spec ℤ whose Euler characteristic is quadratic in D, together with the step “ample ⇒ has sections ⇒ effective”. This is exactly the part of the curve proof that Spec ℤ lacks.",
+   "label": "Open",
+   "core": "Classical chain: S1 quadratic RR, S2 Serre duality, S3 h¹ ≥ 0 / Minkowski, S4 sections ⇒ effective, S5 ample·effective > 0. Missing Spec ℤ step = quadratic S1 + S4 (“ampleness ⇒ effectivity” via a 2-dim h⁰) (TAA Lemma 145 V3, verdict VF-E). Parity: quadratic χ is even in D, linear χ odd ⇒ fixed rank proves only degree c(D) = 0, never sees D².",
+   "formula": "χ(D) = ½D·(D − K) + χ(𝒪) (needed shape)",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "The displayed “needed shape” is the classical surface RR, quoted as the target form.",
+   "proved": "Every proved Connes–Consani RR is 1-dimensional, χ = deg + const (TAA Lemma 147); fixed-rank products are linear, h⁰/n = 2.000 at n = 400 (TAA Lemma 145 Thm linear); on ℙ¹_ℤ χ̂ is quadratic and realizes the U-form (TAA Lemma 145). Hodge index also needs S2, S3, S5 (TAA Lemma 145 corrections).",
+   "tests": "Must fail for Davenport–Heilbronn, hence must use the Euler product (TAA Lemma 147, necessary condition). Must see D², i.e. be quadratic. V3 on the square ⇔ Weil ⇔ RH, so it must be proved, not assumed (TAA Lemma 145).",
+   "pitfalls": [],
+   "lemmas": [
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "surface_ample_rr",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "cc_riemann_roch",
+     "note": "linear χ"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "parity_linear_chi",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.4,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 9
+  },
+  {
+   "id": "mp_automorphy_ineq",
+   "name": "Missing: an inequality consequence of automorphy (SC-E / HS-1)",
+   "aliases": [
+    "SC-E",
+    "HS-1",
+    "automorphy-defect functional"
+   ],
+   "plain": "Automorphy (invariance under the full modular group) decides where the zeros are but does not derive it; what is missing is an inequality that automorphy forces on δ_ρ.",
+   "label": "Open",
+   "core": "SC-E (structural P: Hecke/Euler product) = Selberg-class RH, the open non-circular version of trapped-set rigidity (TAA Lemma 143); sharpened to “an inequality consequence of automorphy” (→ Weil positivity, TAA Lemma 142) (TAA Lemma 144). HS-1: an automorphy-defect functional 𝒟(Λ_X) ≥ 0 with 𝒟 = 0 ⇔ Λ_X = ξ; it needs an inequality that the defect forces on δ_ρ, which we do not have (TAA Lemma 144).",
+   "formula": "𝒟(Λ_X) ≥ 0, 𝒟(Λ_X) = 0 ⇔ Λ_X = ξ",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "ghost-sensitive",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "Thm 3.3 (TAA Lemma 144): automorphy picks a = 1/ξ(2s), c = φ uniquely, exact defect formula; Hecke alone puts no constraint on φ (Prop 3.2). SC-A ⇔ RH (restatement); SC-B false (DH); SC-C false (all cofinite Γ); HS-B (Hecke + unitarity ⇒ δ = 0) false (fakes).",
+   "tests": "Fakes pass Hecke/FE/Δ/unitarity to 1e−25 but fail S-invariance: DH by 1.4–3.2%, the degree-0 ghost by 4.5e−6–1.6e−4 (TAA Lemma 144). The inequality must be violated by both.",
+   "pitfalls": [],
+   "lemmas": [
+    "L142",
+    "L143",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "automorphy_defect",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "DH breaks automorphy"
+    },
+    {
+     "type": "implies",
+     "to": "weil_positivity",
+     "note": "target"
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 10
+  },
+  {
+   "id": "mp_brst",
+   "name": "Missing: a BRST-type complex Q with H(Q) = U^⊥ positive (PM-3)",
+   "aliases": [
+    "PM-3",
+    "flow-relative cohomology (BRST)"
+   ],
+   "plain": "A nilpotent operator on the test functions whose cohomology is exactly the relative space U^⊥, so that “remove the pole plane, then the rest is positive” becomes a cohomology statement, as in Gupta–Bleuler/BRST.",
+   "label": "Open",
+   "core": "PM-3: Gupta–Bleuler/BRST complex Q on TAA Lemma 142’s test functions with H(Q) = U^⊥ (TAA Lemma 146). Thm gb (linear algebra, proved): for V = U ⊕ U^⊥, U = ⟨F₁, F₂⟩, F_i² = 0, F₁F₂ = 1, the quotient F₁^⊥/⟨F₁⟩ is isometric to U^⊥; a nilpotent Q with cohomology U^⊥ would package it as a flow-relative cohomology (Open).",
+   "formula": "F₁^⊥/⟨F₁⟩ ≅ U^⊥ (isometric)",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "TAA Lemma 115: BRST structure exact over F_q and ℚ; “no ghosts” ⇔ RH (restatement); missing positive V ≅ H¹ (Hilbert–Pólya). TAA Lemma 146: the BRST quartet decouples, but a ghost quartet survives.",
+   "tests": "A ghost quartet is exactly a quartet that fails to decouple (TAA Lemma 146); the complex must not decouple it. Positivity of the quotient is an input in QED and is RH for ζ.",
+   "pitfalls": [],
+   "lemmas": [
+    "L115",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "brst",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "primitive_part",
+     "note": "H(Q) = U^⊥"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "mp_flow_h1",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_brst",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 11
+  },
+  {
+   "id": "mp_h1_square",
+   "name": "Missing: H¹ on the square of the scaling site (Connes–Consani s(f,f) ≤ 0)",
+   "aliases": [
+    "H¹ on C_ℚ × C_ℚ",
+    "CC18 key step"
+   ],
+   "plain": "A first cohomology on the square of Connes–Consani’s scaling site; with it, an RR theorem would give D(f)•D(f) ≤ 0, which is RH.",
+   "label": "Open",
+   "core": "CC18: RH ⇔ s(f,f) ≤ 0, s(f,f) = D•D with D = ∫fΨ_λ; five steps, only step 1 (complex lift) built; H¹ on the square of the scaling site, and hence RR there, is open (TAA Lemma 147, correction 2). ½D(f)•D(f) = ½s(f,f) is the Weil form (TAA Lemma 142).",
+   "formula": "RH ⇔ s(f,f) = D(f)•D(f) ≤ 0",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "No RR for C_ℚ × C_ℚ exists (TAA Lemma 147, correction 2). The square exists as a site with Ψ_λ (TAA Lemma 30) but carries no H¹, RR or Hodge index (TAA Lemma 65).",
+   "tests": "All H⁰-side objects built from ℤ ⊂ 𝔸_ℚ are ghost-blind; the topological side s(f,f) is ghost-sensitive (DH-location ghost positive from L* = 3.45, actual DH from 4.70) (TAA Lemma 142, TAA Lemma 147).",
+   "pitfalls": [],
+   "lemmas": [
+    "L30",
+    "L65",
+    "L142",
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "cc_square_open",
+     "note": ""
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "s(f,f) ≤ 0"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "rr_strategy_sff",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 12
+  },
+  {
+   "id": "mp_ns_psi",
+   "name": "Missing: a Néron–Severi strictly larger than U containing the Frobenius classes Ψ_λ",
+   "aliases": [
+    "NS ⊋ U",
+    "Ψ_λ classes"
+   ],
+   "plain": "An intersection theory on the square in which the Connes–Consani correspondences Ψ_λ are genuine classes outside the pole plane U, with enough sections that their growth sees s(f,f).",
+   "label": "Open",
+   "core": "Need NS ⊋ U with Ψ_λ, and #H⁰(±nD(f)) ≥ 2^{n² s(f,f)/2} (TAA Lemma 147). Decisive missing objects: H¹ on the square, an intersection theory putting Ψ_λ into an NS larger than U, and quadratic RR (TAA Lemma 147 (iv)).",
+   "formula": "#H⁰(±nD(f)) ≥ 2^{n² s(f,f)/2}",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "Laurent piece of HZ ∧_𝕊 HZ: box count 2n² + 4n exact, but the quadratic coefficient 2αβ is the U-form ⇒ vacuous on degree-0 D(f) (TAA Lemma 147 Thm vac).",
+   "tests": "Quadratic growth must come from V₀ = U^⊥, not from U (Thm vac). Ghost-sensitive side is s(f,f), which must be negative for ζ and fail for DH (TAA Lemma 142, TAA Lemma 147).",
+   "pitfalls": [],
+   "lemmas": [
+    "L147",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "laurent_square",
+     "note": ""
+    },
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "must leave U"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "rr_strategy_sff",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 13
+  },
+  {
+   "id": "mp_passivity_margin",
+   "name": "Missing: passivity of ξ′/ξ from a zero-free mechanism (Lagarias margin)",
+   "aliases": [
+    "PM-1",
+    "Lagarias margin"
+   ],
+   "plain": "RH is equivalent to ξ′/ξ being a passive (positive-real) response to the right of the line. What is missing is a proof of a passivity margin that uses only primes, the pole and the archimedean place.",
+   "label": "Open",
+   "core": "Lagarias (1.5), attributed to Hinkkanen: RH ⇔ Re ξ′/ξ(s) > 0 on Re s > ½ (TAA Lemma 146, opened). PM-1: a Lagarias margin h(σ) for ξ vs DH/ghost — a provable, ghost-sensitive passivity margin? (TAA Lemma 146).",
+   "formula": "RH ⇔ Re ξ′/ξ(s) > 0 for Re s > ½",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "Re ξ′/ξ = Σ(σ−β)/((σ−β)² + (t−γ)²): each zero an absorption line, an off-line zero a gain line (TAA Lemma 146). Passivity ⇒ causality, not conversely (TAA Lemma 146 corrections). Free positivity (Λ(n) ≥ 0, KMS, Bagchi recurrence) is ghost-blind (TAA Lemma 136, TAA Lemma 118).",
+   "tests": "Grid σ ∈ [.505, 1.1], t ∈ [80, 92]: ξ min +0.00467; DH −66.84 at (0.794, 85.70), 1.89% negative; ghost −66.97, 1.94% (TAA Lemma 146). The margin must stay positive for ξ and go negative for both.",
+   "pitfalls": [],
+   "lemmas": [
+    "L17",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "lagarias",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "gain_line",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 14
+  },
+  {
+   "id": "mp_rg5",
+   "name": "Missing: RR/GRR on an arithmetic Spec ℤ × Spec ℤ producing the sign (RG-5, “the missing row”)",
+   "aliases": [
+    "RG-5",
+    "D9",
+    "missing row"
+   ],
+   "plain": "In the relative Gram dictionary every entry has an analogue except the one that proves the sign: a Riemann–Roch or Grothendieck–Riemann–Roch theorem on an arithmetic square.",
+   "label": "Open",
+   "core": "RG-5: RR/GRR on an arithmetic “Spec ℤ × Spec ℤ” producing the sign — the missing row of the TAA Lemma 142 dictionary (TAA Lemma 142). D9: arithmetic GRR test on the scaling-site square (TAA Lemma 140/TAA Lemma 141 candidate).",
+   "formula": "G_rel ≤ 0 on all spans ⇔ RH",
+   "numbers": [],
+   "axes": [
+    "missing piece",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "TAA Lemma 142 Thm 1.1: Weil Gram on translates is Toeplitz (flow), POLE = rank-2 signature (1,1) = the curve U-part exactly; every entry zero-free (flow, U/Tate poles, Γ_ℝ, Λ(n)); G_rel ≤ 0 on all spans ⇔ RH (Weil, restatement). Unconditional sign only on windows ≤ log 3 (TAA Lemma 10) and arch-only a* (TAA Lemma 127), both ghost-blind.",
+   "tests": "Ghost ⇒ n₊(G_rel) = 2 (TAA Lemma 142); DH-location ghost positive from L* = 3.45. The theorem must produce G_rel ≤ 0 for ζ on every span without using zeros.",
+   "pitfalls": [],
+   "lemmas": [
+    "L10",
+    "L127",
+    "L140",
+    "L141",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "relative_gram",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "tautology_boundary",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "mp_d8",
+     "note": ""
+    }
+   ],
+   "priority": 0.7,
+   "ranking": {
+    "gap_significance": 1.0,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.25,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 15
+  },
+  {
+   "id": "passivity",
+   "name": "Passivity (positive real part)",
+   "aliases": [
+    "Re Z ≥ 0",
+    "positive-real function"
+   ],
+   "plain": "A system that never produces energy; its impedance has non-negative real part. For ξ′/ξ this is Lagarias’ criterion.",
+   "label": "Restatement",
+   "core": "Passivity ⇔ Re ξ′/ξ > 0 on Re s > ½ ⇔ RH (Lagarias/Hinkkanen). Passivity ⇒ causality (TAA Lemma 146, correction 3).",
+   "formula": "Re ξ′/ξ(s) > 0 for Re s > ½",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Not independent of causality."
+   ],
+   "lemmas": [
+    "L17",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "lagarias",
+     "note": ""
+    },
+    {
+     "type": "implies",
+     "to": "kramers_kronig",
+     "note": "causal"
+    }
+   ],
+   "priority": 0.6,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 16
+  },
+  {
+   "id": "relative_gram",
+   "name": "Relative Gram matrix G_rel",
+   "aliases": [
+    "relative intersection matrix",
+    "Gram on translates",
+    "Weil Gram"
+   ],
+   "plain": "Take a test function, translate it, and form the matrix of pairings after removing the pole plane. RH ⇔ this matrix is positive (semi)definite for all choices.",
+   "label": "Restatement",
+   "core": "TAA Lemma 142: G_rel(f; t_i) with zero-free entries (flow, U/Tate poles, Γ_ℝ, Λ(n)); G_rel ⪰ 0 ∀ ⇔ Weil ⇔ RH. Unconditional only on windows ≤ log 3 (TAA Lemma 10) and arch a* (TAA Lemma 127).",
+   "formula": "G_rel ⪰ 0 ∀ f, t_i ⇔ RH",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "reference/pole/cusp",
+    "restatement ⇔ RH",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Using the zero side to \"check\" it is tautological."
+   ],
+   "lemmas": [
+    "L142",
+    "L10",
+    "L127"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "TAA Lemma 142"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "primitive_part",
+     "note": "Gram on U^⊥"
+    }
+   ],
+   "priority": 0.6,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 17
+  },
+  {
+   "id": "rr_strategy_sff",
+   "name": "Riemann–Roch strategy: RH ⇔ s(f,f) ≤ 0",
+   "aliases": [
+    "CC18",
+    "s(f,f) = D•D",
+    "five steps",
+    "D = ∫fΨ_λ"
+   ],
+   "plain": "Connes–Consani’s plan: build divisors D(f) on the square from test functions; RH is equivalent to their self-intersection being ≤ 0, and an RR theorem there would prove it.",
+   "label": "Restatement",
+   "core": "CC18: RH ⇔ s(f,f) ≤ 0 (12), s(f,f) = D•D with D = ∫fΨ_λ (14); five steps, only step 1 (complex lift) built; H¹ on the square open. ½D(f)•D(f) = ½s(f,f) is the Weil form (TAA Lemma 147 §4, TAA Lemma 142).",
+   "formula": "RH ⇔ s(f,f) = D(f)•D(f) ≤ 0",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The H⁰ side is ghost-blind; only the topological side s(f,f) is ghost-sensitive (TAA Lemma 147 §4)."
+   ],
+   "lemmas": [
+    "L147",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "CC18 (12)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": "½ s(f,f) = Weil form"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "relative_gram",
+     "note": "TAA Lemma 142 computes it"
+    },
+    {
+     "type": "lives-in",
+     "to": "connes_consani",
+     "note": "scaling site square"
+    }
+   ],
+   "priority": 0.6,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 18
+  },
+  {
+   "id": "light_cone_U",
+   "name": "Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)",
+   "aliases": [
+    "U",
+    "null rays",
+    "hyperbolic plane",
+    "light cone"
+   ],
+   "plain": "The two special directions (the trivial class 𝟙 and the Lefschetz/pole class 𝕃) span a plane with one positive and one negative direction; positivity is always measured relative to it.",
+   "label": "Theorem",
+   "core": "Over F_q: U = ⟨f₁, f₂⟩ ⊂ NS(C×C), signature (1,1), f₁, f₂ null; ample class lies in U; complement negative definite. Over ℚ: the pole/Tate plane spanned by 𝟙 and 𝕃 (poles at s = 0, 1), U^⊥ = V₀ (TAA Lemma 142).",
+   "formula": "U = ⟨𝟙, 𝕃⟩, sig U = (1,1), 𝟙² = 𝕃² = 0",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "\"Light cone\" includes its interior.",
+    "The ample class lives in U; the surface is read relative to the points."
+   ],
+   "lemmas": [
+    "L14",
+    "L98",
+    "L115",
+    "L140",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "pole_plane",
+     "note": "same plane over ℚ"
+    },
+    {
+     "type": "lives-in",
+     "to": "hodge_index",
+     "note": "the (1,1) part"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 19
+  },
+  {
+   "id": "ax123",
+   "name": "Ax1–Ax3 axioms (Yoneda specification)",
+   "aliases": [
+    "Ax1",
+    "Ax2",
+    "Ax3",
+    "T_W"
+   ],
+   "plain": "The three ingredients that together force RH for curves: Hodge index on Frobenius graphs (Ax1), a positive involution † (Ax2), and ππ† = q for that same † (Ax3).",
+   "label": "Theorem",
+   "core": "TAA Lemma 137: on T_W, |α| = √q ⇔ Ax2 ∧ Ax3 ⇔ Ax1 ∀N. Each axiom alone is ghost-blind (Ax3 alone tautological; Ax2 alone holds for fakes); only the joint requirement separates. All qualifying items are over F_q; no Spec ℤ item qualifies.",
+   "formula": "|α| = √q ⇔ Ax2 ∧ Ax3 ⇔ Ax1 ∀N",
+   "numbers": [
+    "7 of 135 items in the programme’s positivity inventory pass (TAA Lemma 137)",
+    "n₊(Ax1) = 1 + n₋(Ax2) observed"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "phase/unitarity (Ax3)",
+    "structure/frame (Ax1)",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Ax3 (unitarity, ππ† = q) is satisfied by ghosts too; never present it as positivity."
+   ],
+   "lemmas": [
+    "L137",
+    "L138",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "rosati",
+     "note": "Ax2 ∧ Ax3 = Rosati"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_index",
+     "note": "Ax1"
+    },
+    {
+     "type": "lives-in",
+     "to": "fq_curves",
+     "note": "proved only over F_q"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 20
+  },
+  {
+   "id": "surface_ample_rr",
+   "name": "Surface + ample + RR ⇒ Hodge index (D8)",
+   "aliases": [
+    "D8"
+   ],
+   "plain": "The curve proof needs a surface, an ample class and Riemann–Roch.",
+   "label": "Theorem",
+   "core": "D8 (TAA Lemma 140): surface + ample + RR ⇒ Hodge index. TAA Lemma 145 V3: classical S1 quadratic RR, S2 Serre, S3 h¹ ≥ 0, S4 sections ⇒ effective, S5 ample·eff > 0; the missing Spec ℤ step is quadratic S1 + S4. TAA Lemma 147: CC18 calls exactly this \"the key missing step\".",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Needs S2, S3, S5 too (TAA Lemma 145)."
+   ],
+   "lemmas": [
+    "L140",
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "hodge_index",
+     "note": ""
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 21
+  },
+  {
+   "id": "laurent_square",
+   "name": "Tensor square HZ ∧_𝕊 HZ and its Laurent piece (quadratic only in U)",
+   "aliases": [
+    "HZ∧HZ",
+    "Laurent assembly ℤ[t^±]/ℤ",
+    "Thm vac",
+    "CC-1/CC-3 object"
+   ],
+   "plain": "The tensor square of ℤ over the sphere spectrum is bigger than ℤ and has a Laurent-polynomial piece; its sections grow quadratically, but the quadratic term is only the U-form, so it is vacuous on the degree-0 divisors that matter for RH.",
+   "label": "Theorem",
+   "core": "CC16 Prop 7.4: HZ ∧ HZ ≇ HZ, assembly onto ℤ[t^±]^{⊗k}/ℤ. TAA Lemma 147 Laurent model (t-degree ≤ nβ, coefficient ≤ 2^{nα}): box count 2n² + 4n exact; ℓ² ball counts = volume to 4.8e−6 (n = 10), log₂ # = 2n² − n log₂ n + O(n); coefficient 2αβ is the U-form ⇒ vacuous on degree-0 D(f) (Thm vac). Needed: NS ⊋ U containing Ψ_λ with #H⁰(±nD(f)) ≥ 2^{n² s(f,f)/2}.",
+   "formula": "log₂ # = 2n² − n log₂ n + O(n); quadratic coefficient 2αβ = U-form",
+   "numbers": [
+    "box 2n² + 4n",
+    "4.8e−6 at n = 10"
+   ],
+   "axes": [
+    "Spec ℤ gap",
+    "reference/pole/cusp",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Quadratic growth here comes only from U, so it says nothing about the primitive part V₀ (Thm vac)."
+   ],
+   "lemmas": [
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "quadratic term = U-form only"
+    },
+    {
+     "type": "fails-for",
+     "to": "primitive_part",
+     "note": "vacuous on degree 0"
+    },
+    {
+     "type": "special-case-of",
+     "to": "cc_square_open",
+     "note": "candidate H⁰ of the square"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 22
+  },
+  {
+   "id": "parity_linear_chi",
+   "name": "Parity argument: linear χ cannot see D²",
+   "aliases": [
+    "TAA Lemma 145 parity",
+    "even/odd χ",
+    "χ(D)+χ(−D) = 2"
+   ],
+   "plain": "A Riemann–Roch whose Euler characteristic is linear (odd) in D can prove \"positive degree ⇒ sections\" but never contains D²; a quadratic (even) χ is needed for Hodge index.",
+   "label": "Theorem",
+   "core": "TAA Lemma 145: quadratic χ is even in D, linear χ odd ⇒ fixed rank only proves degree c(D) = 0, never sees D². TAA Lemma 147: for CC23, χ(D) + χ(−D) = 2 for deg₂D ∉ ℤ (even part constant 2χ(𝒪), odd part ⌈deg₂D⌉′); χ(D) + χ(K−D) = 0 except −1 on deg₂ ∈ (−2,0) (observation).",
+   "formula": "χ(D) + χ(−D) = 2",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "χ-symmetry is an observation, not a CC claim (TAA Lemma 147 s2)."
+   ],
+   "lemmas": [
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "hodge_index",
+     "note": "cannot reach the D² step"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "cc_riemann_roch",
+     "note": ""
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 23
+  },
+  {
+   "id": "tautology_boundary",
+   "name": "Tautology boundary (zero side vs prime side)",
+   "aliases": [
+    "circularity",
+    "zero-free entries"
+   ],
+   "plain": "Checking positivity using the zeros themselves is circular; a real test must use only primes, the pole and the archimedean place.",
+   "label": "Theorem",
+   "core": "TAA Lemma 142: all entries of the relative Gram are zero-free (flow, U/Tate poles, Γ_ℝ, Λ(n)); sign = RH (Weil); the zero-side check is the tautology. Unconditional sign only on windows ≤ log 3 (TAA Lemma 10) and arch-only a* (TAA Lemma 127), both ghost-blind.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "\"Without zero locations\" is vacuous in finite models (Newton identities, TAA Lemma 109)."
+   ],
+   "lemmas": [
+    "L142",
+    "L106",
+    "L109",
+    "L137"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": "zero side = restatement"
+    },
+    {
+     "type": "fails-for",
+     "to": "certified_windows",
+     "note": "certificates are below ghost thresholds"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 24
+  },
+  {
+   "id": "deninger",
+   "name": "Deninger’s foliated program",
+   "aliases": [
+    "foliation"
+   ],
+   "plain": "Deninger’s program: a foliated dynamical space whose leafwise cohomology carries the zeros; a positive Hodge star plus the flow would force Θ = ½ + (skew part).",
+   "label": "Cited",
+   "core": "TAA Lemma 4: foliation-like (Deninger) structure carries the explicit formula with its signs; contact-like (Reeb) gives only the analytic shadow; on closed M, Reeb flows and Deninger systems are mutually exclusive. TAA Lemma 28: zeros = leafwise zero modes [analogy/conjectural]. TAA Lemma 50 Prop 7.1 (Den98): positive J commuting with Θ ⇒ Θ − ½ skew [RESTATEMENT]. TAA Lemma 93: Deninger D1–D5 stated exactly. TAA Lemma 141 §2: level S3 of the \"surface\" target.",
+   "formula": "Θ = ½ + A, A skew",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "open target",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L4",
+    "L28",
+    "L50",
+    "L93",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "arith_unitarity",
+     "note": ""
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 25
+  },
+  {
+   "id": "no_etale_h1",
+   "name": "No étale H¹ for Spec ℤ",
+   "aliases": [
+    "flow-relative H¹"
+   ],
+   "plain": "Spec ℤ is simply connected; the \"H¹\" must be relative to the flow (ψ − x ≠ 0).",
+   "label": "Theorem",
+   "core": "TAA Lemma 140: π₁ét(Spec ℤ) = 1 ⇒ H¹ét = 0. TAA Lemma 141 §4: H¹ table with a flow-H¹ column; Q(√2) circle length √2·log(1+√2) = 1.24645 (Schoof). The H¹ that carries zeros is flow-relative (ψ − x).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L140",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "psi_minus_x",
+     "note": ""
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 26
+  },
+  {
+   "id": "rosati",
+   "name": "Rosati positivity",
+   "aliases": [
+    "Rosati involution †",
+    "Tr(φφ†) > 0",
+    "positive involution",
+    "Ax2∧Ax3"
+   ],
+   "plain": "An involution † on endomorphisms with Tr(φφ†) > 0 — like a squared length that is never negative. With ππ† = q it forces |α| = √q.",
+   "label": "Theorem",
+   "core": "Tr(φφ†) > 0 on End⁰(J); ππ† = q ⇒ |α| = √q (Milne AV 14.3). On R[F]: Rosati PD ⇔ RH-model ⇔ ∃ compatible J with [J,F] = 0; n₋ = #real pairs + 2#quartets (TAA Lemma 106). Over ℚ: Rosati = Weil form is a restatement.",
+   "formula": "Tr(φφ†) > 0; ππ† = q",
+   "numbers": [
+    "E^n over F₅: Tr = 2ΣN(φ_ij) > 0, 3000/3000 (L136)",
+    "signatures true (2,0),(4,0),(8,0); ghost (1,1); quartet (2,2)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "|φ| = 1 on Re s = ½ is only the adjoint half ππ† = q (Ax3), ghost-blind.",
+    "Positivity over F_q is geometric, from intersection numbers, not arithmetic (TAA Lemma 106, correction 1)."
+   ],
+   "lemmas": [
+    "L84",
+    "L99",
+    "L106",
+    "L133",
+    "L136"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "castelnuovo_severi",
+     "note": "TAA Lemma 133"
+    },
+    {
+     "type": "special-case-of",
+     "to": "cartan_involution",
+     "note": "Rosati = Cartan θ_J on commutant (TAA Lemma 99)"
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "over ℚ"
+    },
+    {
+     "type": "analogue-of",
+     "to": "mass_density",
+     "note": "mass-like single positivity"
+    },
+    {
+     "type": "lives-in",
+     "to": "fq_curves",
+     "note": "proved setting"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 27
+  },
+  {
+   "id": "castelnuovo_severi",
+   "name": "Castelnuovo–Severi inequality",
+   "aliases": [
+    "C–S",
+    "reverse Cauchy–Schwarz",
+    "def(D)"
+   ],
+   "plain": "On the surface C×C a class cannot be \"too timelike\" relative to the two fibre directions; applied to Frobenius graphs it gives RH for curves.",
+   "label": "Theorem",
+   "core": "D² ≤ 2(D·f₁)(D·f₂); def(D) = 2d₁d₂ − D² = −(D°)² = Tr_{H¹}(α_D α_D†) (C–S = Rosati, TAA Lemma 133). Weil mF + n: −(2gqm² + 2amn + 2gn²) ≤ 0 ⇔ a² ≤ 4g²q (TAA Lemma 125).",
+   "formula": "D² ≤ 2(D·f₁)(D·f₂)",
+   "numbers": [
+    "primitive Gram det 4p − a² > 0 (29 primes, L133)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A “−2Tr” formula holds only on the primitive part with the g-dimensional trace."
+   ],
+   "lemmas": [
+    "L14",
+    "L114",
+    "L125",
+    "L133"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "rosati",
+     "note": "TAA Lemma 133: C–S = Rosati"
+    },
+    {
+     "type": "special-case-of",
+     "to": "hodge_index",
+     "note": "C–S ⇔ Hodge index on ⟨f₁,f₂,D⟩"
+    },
+    {
+     "type": "analogue-of",
+     "to": "archimedes",
+     "note": "buoyancy reading"
+    },
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "relative to the null rays"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 28
+  },
+  {
+   "id": "arith_unitarity",
+   "name": "Arithmetic unitarity (\"RH = unitarity\")",
+   "aliases": [
+    "TAA central thesis",
+    "unitary realization",
+    "T_t isometry"
+   ],
+   "plain": "TAA’s founding claim made precise: the scaling flow is always an isometry of the Weil form; RH is the statement that this form is positive, so the flow is genuinely unitary.",
+   "label": "Theorem",
+   "core": "TAA Lemma 1 Thm 2.1: (ii) T_t is a 𝒬-isometry unconditionally; (iii) growth exponent = Θ − ½; (iv) RH ⇔ 𝒬 ≥ 0 ⇔ unitary Hilbert realization ⇔ bounded matrix coefficients.",
+   "formula": "(T_tF)(u) = F(u − t); RH ⇔ 𝒬 ≥ 0",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Isometry is free (Ax3-like); positivity of the form is the content (Ax2)."
+   ],
+   "lemmas": [
+    "L1",
+    "L7"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "TAA Lemma 1 (iv)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": "same form"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 29
+  },
+  {
+   "id": "fq_curves",
+   "name": "RH for curves over F_q (Weil)",
+   "aliases": [
+    "Hasse–Weil",
+    "|α| = √q",
+    "column 2"
+   ],
+   "plain": "For a curve over a finite field the Frobenius eigenvalues all have size √q. This is the one setting where TAA’s positivity is a theorem.",
+   "label": "Cited",
+   "core": "Weil 1948: Castelnuovo–Severi / Hodge index on C×C ⇒ |α_i| = √q. Proved without the zeros: surface + ample class + Riemann–Roch ⇒ Hodge index ⇒ sign.",
+   "formula": "|α_i| = √q; |N − q − 1| ≤ 2g√q",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Weil already did column 2 (1940 note, 1948 books); the open step is column 3."
+   ],
+   "lemmas": [
+    "L3",
+    "L14",
+    "L98",
+    "L133",
+    "L140"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "castelnuovo_severi",
+     "note": "proof route"
+    },
+    {
+     "type": "analogue-of",
+     "to": "rh",
+     "note": "column 2 ↔ column 3 (Rosetta)"
+    },
+    {
+     "type": "lives-in",
+     "to": "weil_rosetta",
+     "note": "column 2"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 30
+  },
+  {
+   "id": "ghost_quartet",
+   "name": "Ghost quartet ½ ± δ ± iγ",
+   "aliases": [
+    "ghost",
+    "off-line quartet",
+    "synthetic ghost"
+   ],
+   "plain": "A fake set of four zeros off the line, replacing a pair ½ ± iγ, used to test whether a criterion can detect RH failure.",
+   "label": "Theorem",
+   "core": "TAA Lemma 103 convention: replace ½ ± iγ by ½ ± δ ± iγ; each quartet gives 2 negative Weil eigenvalues; onsets L* listed.",
+   "formula": "½ ± δ ± iγ",
+   "numbers": [
+    "onsets 0.90, 1.15, 1.70, 3.45"
+   ],
+   "axes": [
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "δ convention conflict: δ = β − ½ (TAA Lemma 25/TAA Lemma 103/TAA Lemma 143) vs δ_ρ = 2β − 1 (TAA Lemma 144)."
+   ],
+   "lemmas": [
+    "L103",
+    "L110",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "kappa_index",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "ghost_conventions",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 31
+  },
+  {
+   "id": "goldfeld_bsd",
+   "name": "Goldfeld’s theorem (Euler product at s = 1 ⇒ RH, analytic order)",
+   "aliases": [
+    "Goldfeld 1982",
+    "Nagao–Mestre product",
+    "∏ L_p(E,1)"
+   ],
+   "plain": "If the partial Euler product of L(E,s) at the centre behaves like C/(log x)^r, then L(E,s) satisfies RH and r is the analytic order of vanishing — with a surprising √2 in the constant.",
+   "label": "Cited",
+   "core": "If ∏_{p≤x} L_p(E,1) ∼ C/(log x)^r then L(E,s) satisfies RH, r = ord_{s=1}L(E,s), C = L^{(r)}(E,1)/(r! √2 e^{rγ}) (Goldfeld 1982, cited via Conrad 2005; TAA Lemma 140).",
+   "formula": "∏_{p≤x} L_p(E,1) ∼ C/(log x)^r, C = L^{(r)}(E,1)/(r!√2 e^{rγ})",
+   "numbers": [
+    "√2 factor"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "It gives the analytic order, not the rank (rank = order is BSD).",
+    "a_p are not BSD generators.",
+    "Note the √2 factor (Conrad)."
+   ],
+   "lemmas": [
+    "L140"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "rh",
+     "note": "for L(E,s)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "psi_minus_x",
+     "note": "prime data vs the reference at s = 1"
+    },
+    {
+     "type": "analogue-of",
+     "to": "displaced_reference",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 32
+  },
+  {
+   "id": "decay_quarter",
+   "name": "Decay rate ¼",
+   "aliases": [
+    "spectral gap ¼"
+   ],
+   "plain": "Every scattering resonance of the modular surface decays at rate ¼ exactly when its ζ-zero is on the line; an off-line zero decays at (1−β)/2 instead.",
+   "label": "Theorem",
+   "core": "TAA Lemma 118 Thm 3.1: ‖Z″‖ ≤ 1 unconditionally, poles at ρ/2 symmetric about ¼, rate (1−β)/2; RH ⇔ all rates ¼ [R]. TAA Lemma 120: spectral rate ¼, not uniform. TAA Lemma 143 SC-A (L + unitarity ⇒ κ ≡ ¼) ⇔ RH; ringing rate 0.24996 vs predicted ¼. TAA Lemma 144: μ = ¼ for every ρ (FE), ghost and DH ring at 0.0957414 = (1−β)/2.",
+   "formula": "rate = (1 − β)/2; RH ⇔ all rates = ¼",
+   "numbers": [
+    "0.24996 (pred ¼)",
+    "0.0957414 ghost/DH"
+   ],
+   "axes": [
+    "physics analogue",
+    "reference/pole/cusp",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The circular line for the modular surface is Re s = ¼, not ½ (TAA Lemma 143 corrections); rate = (1−β)/2, not Re ρ/2 (TAA Lemma 143 corrections).",
+    "No essential spectral gap for the modular surface (Bourgain–Dyatlov 1612.09040)."
+   ],
+   "lemmas": [
+    "L118",
+    "L120",
+    "L141",
+    "L143",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "lax_phillips",
+     "note": ""
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "RH ⇔ all rates ¼ (TAA Lemma 118)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "heaviside",
+     "note": "critically damped modes (TAA Lemma 144)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 33
+  },
+  {
+   "id": "fake_weil_poly",
+   "name": "Fake Weil polynomials (finite ghosts)",
+   "aliases": [
+    "fakes",
+    "T² − 5T + 5",
+    "ghost a=25 q=101",
+    "quartet q=11"
+   ],
+   "plain": "Polynomials that look like curve zeta numerators (functional equation, integer counts) but have roots off the circle. They are the F_q test ghosts.",
+   "label": "Theorem",
+   "core": "Fakes pass FE, count positivity, mod-2 data and the Hecke lattice (1,2); they fail Hodge index on ⟨H,V,Δ,Γ_{Fⁿ}⟩ (n₊ ≥ 2) and Rosati. Mixed fake (T² − 6T + 7)(T² + 7) passes N ≤ 2, fails from N = 4 (TAA Lemma 137, TAA Lemma 141).",
+   "formula": "",
+   "numbers": [
+    "T² − 5T + 5: |α| = 3.618 > √5",
+    "g = 2, q = 11: 2935 count-positive ghosts (L109)"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Degenerate fakes (|α| ∈ {1, q}) cause pole-degenerate exceptions (TAA Lemma 92 C9)."
+   ],
+   "lemmas": [
+    "L88",
+    "L94",
+    "L109",
+    "L137",
+    "L138",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "ax123",
+     "note": "no positive † with ππ† = q"
+    },
+    {
+     "type": "analogue-of",
+     "to": "davenport_heilbronn",
+     "note": "F_q analogue of DH"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 34
+  },
+  {
+   "id": "compatible_J",
+   "name": "Compatible complex structure J commuting with Frobenius",
+   "aliases": [
+    "J = (2F − a)/√(4q − a²)",
+    "h(i)",
+    "polarizing J"
+   ],
+   "plain": "A quarter-turn that commutes with Frobenius and makes the form positive; it exists exactly when the curve satisfies RH.",
+   "label": "Theorem",
+   "core": "J = (2F − a)/√(4q − a²) (TAA Lemma 101) exists only if a² < 4q; 2^g sign choices, exactly one positive. Finite: compatible J with [J,F] = 0 ⇔ F unitary semisimple (TAA Lemma 104). For ζ: J exists ⇔ RH (restatement, TAA Lemma 104 dichotomy).",
+   "formula": "J = (2F − a)/√(4q − a²)",
+   "numbers": [
+    "g = 1, q = 101: J = J_F exact; ghosts give Cl(1,1)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A quartet J is symplectic but never compatible (sig (2,2)) (TAA Lemma 110).",
+    "With a W-independent form J is unconditional but ghost-blind (TAA Lemma 104)."
+   ],
+   "lemmas": [
+    "L99",
+    "L100",
+    "L101",
+    "L104",
+    "L110"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_operator",
+     "note": ""
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "for ζ"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "spinor_route",
+     "note": "Clifford pair version"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 35
+  },
+  {
+   "id": "connes_trace",
+   "name": "Connes trace formula",
+   "aliases": [
+    "adelic class space"
+   ],
+   "plain": "Connes’ trace formula on the adele class space: zeros appear as an absorption spectrum, and the global trace formula holding is equivalent to RH.",
+   "label": "Cited",
+   "core": "Connes 1999 (read at source, TAA Lemma 30/TAA Lemma 71): global trace formula ≡ RH; Thm 1 sees only critical zeros (δ > 1); Thm 5 char p; zeros = absorption spectrum (TAA Lemma 71). TAA Lemma 82: cutoff, non-critical zeros as resonances. TAA Lemma 118: Connes reduces RH for Hecke L to the trace formula ⇒ Weil positivity; absorption spectrum ghost-blind. TAA Lemma 138 R2: Hilbert–Pólya positivity is circular if the inner product is Weil’s form.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "restatement ⇔ RH",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L30",
+    "L71",
+    "L82",
+    "L118",
+    "L138"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": "reduces to Weil positivity (TAA Lemma 118)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 36
+  },
+  {
+   "id": "de_branges",
+   "name": "de Branges spaces",
+   "aliases": [
+    "Hermite–Biehler"
+   ],
+   "plain": "Hilbert spaces of entire functions built from a Hermite–Biehler function E; RH becomes \"E_h is Hermite–Biehler\", but de Branges’ stronger positivity conditions are known to fail for ζ.",
+   "label": "Cited",
+   "core": "TAA Lemma 36 Thm 3.1: for h ∈ (0,½], all β ≤ ½ + h ⇔ PR on σ > ½ + h ⇔ E_{h′} HB ∀h′ > h; h = ½ free, h → 0 = RH. Conrey–Li 2000 (opened, TAA Lemma 78): de Branges positivity fails for ζ and χ₄. TAA Lemma 118: Ψ_c passive ⇔ E_c = ξ(·+c) Hermite–Biehler. TAA Lemma 34: Suzuki’s de Branges line from the prime side.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Conrey–Li: de Branges’ stronger conditions fail — beware \"positivity ⇒ RH\" shortcuts."
+   ],
+   "lemmas": [
+    "L34",
+    "L36",
+    "L78",
+    "L118"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "toeplitz_verblunsky",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": "HB ⇔ passive (TAA Lemma 118)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 37
+  },
+  {
+   "id": "epstein",
+   "name": "Epstein zeta no-go",
+   "aliases": [
+    "Epstein"
+   ],
+   "plain": "Epstein zeta functions of binary quadratic forms have a functional equation but no Euler product, and they have zeros off the line — the classic counterexample class next to DH.",
+   "label": "Theorem",
+   "core": "TAA Lemma 83: Epstein x² + 5y² = ζL(χ₋₂₀) + L(χ₋₄)L(χ₅); N(200) = 253 zeros, 183 on the line (70 off-line); first off-line 0.93297 + 15.66825i. TAA Lemma 135: 46 zeros with ½ < σ < 1 for t ≤ 250; control x² + y² (= 4ζL(χ₋₄), has Euler product): 0. TAA Lemma 138 R4: theta inversion and FE hold, unitarity ⇒ FE only, ghost-blind (Thm).",
+   "formula": "",
+   "numbers": [
+    "0.93297 + 15.66825i",
+    "N(200) = 253, 183 on line",
+    "46 off-line zeros t ≤ 250"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L83",
+    "L135",
+    "L138"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "davenport_heilbronn",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "functional_equation",
+     "note": "FE without RH"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "count_positivity",
+     "note": "TAA Lemma 135 counts vs quadratic positivity"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 38
+  },
+  {
+   "id": "hasse_pythagoras",
+   "name": "Hasse bound as a positive degree form",
+   "aliases": [
+    "deg form",
+    "Q_p = x² + a_p xy + p y²",
+    "Pythagoras"
+   ],
+   "plain": "For an elliptic curve the degree of an endomorphism is a positive quadratic form; Hasse’s bound is that this form is positive (Cauchy–Schwarz / Pythagoras).",
+   "label": "Theorem",
+   "core": "deg(m + nπ) = m² + amn + qn² is PD ⇔ a² < 4q; Hasse = Cauchy–Schwarz. Ghost a = 25, q = 101: deg(10 − π) = −49 (TAA Lemma 106).",
+   "formula": "m² + a mn + q n² > 0 ⇔ a² < 4q",
+   "numbers": [
+    "ghost deg(10 − π) = −49"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L19",
+    "L64",
+    "L106",
+    "L114"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "rosati",
+     "note": "genus 1"
+    },
+    {
+     "type": "analogue-of",
+     "to": "light_cone_U",
+     "note": "definite forms = hyperboloid sheet (TAA Lemma 14)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 39
+  },
+  {
+   "id": "li_criterion",
+   "name": "Li criterion",
+   "aliases": [
+    "λ_n ≥ 0"
+   ],
+   "plain": "RH ⇔ the Li coefficients are non-negative.",
+   "label": "Cited",
+   "core": "Li 1997 / Bombieri–Lagarias 1999: RH ⇔ λ_n ≥ 0 for all n — the Weil positivity in another basis. TAA Lemma 112 reads the Weil form as a Toeplitz–Carathéodory problem; TAA Lemma 131: no route supplies the positivity.",
+   "formula": "λ_n ≥ 0 ∀n",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L112",
+    "L131"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": "same positivity, other basis"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "toeplitz_verblunsky",
+     "note": "TAA Lemma 112"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 40
+  },
+  {
+   "id": "suzuki_line",
+   "name": "Suzuki’s de Branges line from the prime side",
+   "aliases": [
+    "Suzuki JFA 2021",
+    "E^{ω,ν}",
+    "exponential line Θ_c",
+    "G5 line"
+   ],
+   "plain": "A de Branges / transmission-line object built from prime data whose passivity along the whole line is equivalent to RH.",
+   "label": "Cited",
+   "core": "Su21 (Suzuki JFA 281 (2021) 109116): E^{ω,ν} = ξ(½ + ω − iz)^ν, νω > 1, Hankel kernel from prime-side data (TAA Lemma 34). TAA Lemma 37: headline exponential line Θ_c = exp(−2c ξ′/ξ); ‖𝒦[t]‖ < 1 ∀t ⇔ sup ≤ 1; weak form sup_t ≤ 1 ⇔ RH; \"sup < 1\" is false in the passive case; strict pointwise bound open (M11).",
+   "formula": "Θ_c = exp(−2c ξ′/ξ)",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "\"sup < 1\" is false in the passive case; the correct form is sup ≤ 1 (TAA Lemma 37)."
+   ],
+   "lemmas": [
+    "L34",
+    "L37"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "de_branges",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": "G5 as passive line"
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "weak form (TAA Lemma 37)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 41
+  },
+  {
+   "id": "bagchi",
+   "name": "Bagchi recurrence",
+   "aliases": [
+    "universality"
+   ],
+   "plain": "RH ⇔ ζ approximates itself in the strip (strong recurrence).",
+   "label": "Cited",
+   "core": "Bagchi (via Nakamura Thm B): RH ⇔ strong recurrence of ζ for all K, ε (\"infinite prime bath still recurs\", TAA Lemma 118). TAA Lemma 123 local form [T given Voronin + Carlson]: ζ strongly recurrent on a disc K ⇔ no zero on K; ghosts show up as a local Rouché defect. Finite prime baths recur but are ghost-blind.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L118",
+    "L123"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "passivity",
+     "note": "prime-bath / arrow-of-time reading (TAA Lemma 118)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 42
+  },
+  {
+   "id": "debruijn_newman",
+   "name": "de Bruijn–Newman constant Λ",
+   "aliases": [
+    "heat flow",
+    "Λ ≥ 0"
+   ],
+   "plain": "Heat flow on ξ; Λ ≥ 0 (Rodgers–Tao), RH ⇔ Λ = 0.",
+   "label": "Cited",
+   "core": "Λ ≥ 0 ⇒ ζ not heat-flow stable (TAA Lemma 111). Healing times TAA Lemma 124/TAA Lemma 136 conflict.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "t* = 2δ² vs δ²/2."
+   ],
+   "lemmas": [
+    "L111",
+    "L124",
+    "L136"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "Λ = 0"
+    },
+    {
+     "type": "analogue-of",
+     "to": "krein_collision",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 43
+  },
+  {
+   "id": "frobenius_boost",
+   "name": "Frobenius as a boost (rapidity ½ log q)",
+   "aliases": [
+    "one boost",
+    "hyperbolic orthogonal",
+    "Levinson boosts"
+   ],
+   "plain": "On the light-cone plane Frobenius acts like a Lorentz boost of rapidity ½ log q; a true curve needs one boost, a fake needs two.",
+   "label": "Theorem",
+   "core": "Hodge index + one boost of rapidity ½ log q on the H–V plane ⇒ Hasse; fakes need two (TAA Lemma 98 thm:fqboost). Over ℚ: translation is an isometry, pole boost rapidity ½ log λ; Lorentzian = Weil positivity (restatement).",
+   "formula": "B_{½ log q}(H + V) = Γ/√q (hyperbolic part)",
+   "numbers": [
+    "q = 101: translation length 2.3076 = ½ log 101"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "structure/frame (Ax1)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Dividing by √q does not undo the boost (TAA Lemma 114, correction 14).",
+    "Two boosts are never a pure rotation unless inverse (TAA Lemma 107)."
+   ],
+   "lemmas": [
+    "L14",
+    "L98",
+    "L99",
+    "L107",
+    "L114",
+    "L117"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "acts on U"
+    },
+    {
+     "type": "analogue-of",
+     "to": "toeplitz_verblunsky",
+     "note": "Levinson/Szegő step = boost of rapidity artanh|α| (TAA Lemma 98, TAA Lemma 117)"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 44
+  },
+  {
+   "id": "gain_line",
+   "name": "Gain lines (active media)",
+   "aliases": [
+    "negative absorption"
+   ],
+   "plain": "A ghost acts like a gain line: negative absorption.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §2: Re ξ′/ξ = Σ(σ−β)/((σ−β)² + (t−γ)²) — each zero is an absorption line to its right; an off-line zero gives a gain line. Grid σ ∈ [.505,1.1], t ∈ [80,92]: ξ min +0.00467; DH −66.84 at (0.794, 85.70), 1.89% negative; TAA Lemma 144 ghost −66.97 (1.94%). Lorentz model: dRe χ/dω −6 (absorber) / +6 (gain).",
+   "formula": "",
+   "numbers": [
+    "ξ min +0.00467",
+    "DH −66.84 (1.89% negative)",
+    "ghost −66.97 (1.94%)"
+   ],
+   "axes": [
+    "physics analogue",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L36",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "ghost_quartet",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "passivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.532,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 0.6,
+    "specificity": 1.0,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "sharp but interpretive"
+   },
+   "rank": 45
+  },
+  {
+   "id": "dim_S",
+   "name": "Integer dimension over 𝕊 (minimal generators)",
+   "aliases": [
+    "dim_𝕊",
+    "dim_𝕊[±1]",
+    "vdGS virtual dimension"
+   ],
+   "plain": "On Spec ℤ̄ Connes–Consani’s dimension is an integer: the least number of generators over the sphere spectrum. The log-theta dimension of van der Geer–Schoof is a different, \"virtual\" count that agrees up to a bounded error.",
+   "label": "Numerical",
+   "core": "TAA Lemma 147 [N]: brute force dim_𝕊(HZ)_[−m,m] = n + 1 for all m ≤ 16; dim_𝕊[±1] = ⌈log₃(2n+1)⌉ for all n ≤ 40; dim_𝕊 − vdGS h⁰/log 2 ∈ [1.016, 1.983]. TAA Lemma 147, correction 1: Dim_ℝ on C_p is a covering dimension, not a theta count.",
+   "formula": "",
+   "numbers": [
+    "n + 1 (m ≤ 16)",
+    "⌈log₃(2n+1)⌉ (n ≤ 40)",
+    "[1.016, 1.983]"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Do not identify CC dimension with theta/lattice counts (TAA Lemma 147, correction 1)."
+   ],
+   "lemmas": [
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "cc_riemann_roch",
+     "note": ""
+    }
+   ],
+   "priority": 0.492,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 46
+  },
+  {
+   "id": "hodge_index",
+   "name": "Hodge index theorem",
+   "aliases": [
+    "NS signature (1, ρ−1)",
+    "Lorentzian Néron–Severi",
+    "Ax1"
+   ],
+   "plain": "On a surface the intersection form has exactly one positive direction (the ample class); everything orthogonal to it is negative. This sign is what proves RH for curves.",
+   "label": "Theorem",
+   "core": "NS(C×C) ⊗ ℝ has signature (1, ρ−1); U = ⟨f₁,f₂⟩ is the (1,1) part and its complement is negative definite. Over ℚ, Hodge-index form on V₀ ⇔ RH (TAA Lemma 91, restatement). Surface + ample + RR ⇒ Hodge index (D8).",
+   "formula": "sig NS = (1, ρ − 1); D·D ≤ 0 on h^⊥",
+   "numbers": [
+    "true E×E (1,3), fakes (2,2) (L88)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Effectivity and Hodge index are independent on both sides (TAA Lemma 94).",
+    "Hodge index needs S2, S3, S5 too (TAA Lemma 145)."
+   ],
+   "lemmas": [
+    "L14",
+    "L88",
+    "L91",
+    "L98",
+    "L140",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "D·D ≤ 0 on V₀ over ℚ (TAA Lemma 91)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "brst",
+     "note": "U^⊥ = physical quotient (TAA Lemma 115, TAA Lemma 146)"
+    },
+    {
+     "type": "lives-in",
+     "to": "light_cone_U",
+     "note": "complement of U"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 47
+  },
+  {
+   "id": "lax_phillips",
+   "name": "Lax–Phillips scattering",
+   "aliases": [
+    "LP scattering"
+   ],
+   "plain": "Scattering theory for waves on the modular surface; resonances relate to zeros.",
+   "label": "Cited",
+   "core": "LP80 (read at source, TAA Lemma 118/TAA Lemma 141): s(z) = Λ(2s−1)/Λ(2s), Res_{s=1} = 3/π, poles at zeros of ζ(1+2iz), RH ⇒ Im z = ¼; Pavlov–Faddeev \"RH iff Z″ decays exponentially\"; spectrum of B″ = {(κ−1)/2}; \"all that is missing is an appropriate inner product\". TAA Lemma 118 Thm 3.1: ‖Z″‖ ≤ 1 unconditionally.",
+   "formula": "",
+   "numbers": [
+    "Res = 3/π",
+    "Im z = ¼"
+   ],
+   "axes": [
+    "physics analogue",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "LP (6.19) rate sign ambiguous in OCR (TAA Lemma 118, correction 7)."
+   ],
+   "lemmas": [
+    "L118",
+    "L141",
+    "L143"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "scattering_phi",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "decay_quarter",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": "passive arrow (TAA Lemma 118)"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 48
+  },
+  {
+   "id": "cartan_involution",
+   "name": "Cartan involution / compact unitary group",
+   "aliases": [
+    "positive involution ⇔ compact form",
+    "Albert classification"
+   ],
+   "plain": "A positive involution is the same thing as a compact (rotation-type) symmetry group; Albert lists the possible kinds.",
+   "label": "Theorem",
+   "core": "Positive involution ⇔ compact unitary group (TAA Lemma 99, Milne Prop 1.20); Rosati = Cartan θ_J on commutant of J; Weil numbers generate CM or totally real fields (TAA Lemma 136); Albert types I–IV.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Abelian scaling has only an outer Cartan U(1); zeros-as-angles = RH (circular, TAA Lemma 99)."
+   ],
+   "lemmas": [
+    "L84",
+    "L99",
+    "L136"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "rosati",
+     "note": "Rosati = Cartan θ_J (TAA Lemma 99)"
+    },
+    {
+     "type": "fails-for",
+     "to": "rh",
+     "note": "no compact Hodge circle for ℚ (TAA Lemma 100)"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 49
+  },
+  {
+   "id": "connes_consani",
+   "name": "Connes–Consani sites",
+   "aliases": [
+    "arithmetic site",
+    "scaling site"
+   ],
+   "plain": "Topos-theoretic candidate for Spec ℤ × Spec ℤ.",
+   "label": "Cited",
+   "core": "Arithmetic site and scaling site (CC14, CC16): a square exists, with Ψ_λ and s(f,f) = D•D (TAA Lemma 30), but no H¹, RR or Hodge index on it (TAA Lemma 65). TAA Lemma 147: their proved RRs are 1-dimensional; RR on the square is open (CC18).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L30",
+    "L131",
+    "L140",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "castelnuovo_object",
+     "note": ""
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 50
+  },
+  {
+   "id": "pole_plane",
+   "name": "Pole plane / Tate poles at s = 0, 1",
+   "aliases": [
+    "Tate plane",
+    "𝟙, 𝕃",
+    "pole terms"
+   ],
+   "plain": "The two poles of ξ(s) at s = 0 and 1 give the reference plane; subtracting them is what makes a form \"relative\".",
+   "label": "Theorem",
+   "core": "TAA Lemma 142: the relative Gram on translates uses the pole terms f̂(0), f̂(1) (zero-free entries). Pole of ζ at s = 1 is the 𝕃-ray; the functional equation pairs it with s = 0.",
+   "formula": "ξ(s) = ½s(s−1)π^{−s/2}Γ(s/2)ζ(s)",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L142",
+    "L143",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "light_cone_U",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "pole_s1",
+     "note": ""
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_ns_psi",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 51
+  },
+  {
+   "id": "products_linear",
+   "name": "Products grow linearly (2n), not quadratically",
+   "aliases": [
+    "product sandwich",
+    "fixed rank ⇒ linear",
+    "Spec ℤ̄² growth 2n"
+   ],
+   "plain": "Sections on naive products of Spec ℤ̄ grow only linearly in n (slope 2); a genuine surface needs quadratic growth, which forces the rank to grow with n.",
+   "label": "Theorem",
+   "core": "TAA Lemma 147 [T/N]: product sandwich ⌈log₂ #⌉ ≤ dim_𝕊(box) ≤ Σ dims, exact = additive bound in 6/6 boxes; fixed rank ⇒ linear: Spec ℤ̄² fits 1.99993n + 2.0009 (vs 2n + 4); quadratic growth ⇒ rank ≳ n. Same as TAA Lemma 145 Thm linear (fixed-rank lattice ⇒ h⁰ linear, h⁰/n = 2.000 at n = 400).",
+   "formula": "dim_𝕊 H⁰(nD) ≈ 2n + O(1)",
+   "numbers": [
+    "1.99993n + 2.0009",
+    "6/6 boxes exact"
+   ],
+   "axes": [
+    "Spec ℤ gap",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L147",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "surface_ample_rr",
+     "note": "no quadratic S1"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "parity_linear_chi",
+     "note": "linear χ sees only degree"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 52
+  },
+  {
+   "id": "yoneda",
+   "name": "Yoneda specification",
+   "aliases": [
+    "T_W"
+   ],
+   "plain": "Specify the object by its properties (Ax1–Ax3).",
+   "label": "Theorem",
+   "core": "TAA Lemma 90: bare Hom sets do not determine an object (ℚ vs ℚ^(N)); naturality needed; representability ⇒ uniqueness/functoriality, presupposes positivity if it is an axiom. TAA Lemma 98 Prop 6.1: representable ⇒ unique; 𝔉(pt) ≠ ∅ ⇒ RH; \"representability is the whole battle\" (TAA Lemma 98, correction 19). TAA Lemma 137: T_W with Ax1–Ax3; existence open.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L89",
+    "L90",
+    "L98",
+    "L137"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "ax123",
+     "note": ""
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 53
+  },
+  {
+   "id": "split_blind_sensitive",
+   "name": "Organizing split: ghost-blind = phase, ghost-sensitive = sign",
+   "aliases": [
+    "TAA Lemma 146 split",
+    "two bins",
+    "phase vs sign"
+   ],
+   "plain": "Every test that ghosts pass is about phase/unitarity; every test that catches a ghost is about the sign of a spectral weight, and for ζ that sign is RH.",
+   "label": "Heuristic",
+   "core": "TAA Lemma 146 synthesis: functional equation, |φ| = 1, cocycles, Hecke, cusp positivity are ghost-blind (Ax3); Lagarias sign, Weil sign, Rosati sign are ghost-sensitive (Ax2) and ⇔ RH for ζ. Every ghost-sensitive global quadratic statement for Spec ℤ found so far is a restatement.",
+   "formula": "ghost-blind ↔ Ax3 (phase); ghost-sensitive ↔ Ax2 (sign) ⇔ RH",
+   "numbers": [
+    "DH: FE to 5×10⁻¹⁵ yet Re ξ′/ξ = −66.8"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "phase/unitarity (Ax3)",
+    "ghost-blind",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "An organizing observation, not a theorem: \"sign\" items for curves are theorems, for ζ restatements."
+   ],
+   "lemmas": [
+    "L146",
+    "L137",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "kramers_kronig",
+     "note": "absorption (sign) vs dispersion (phase) split"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "ax123",
+     "note": "Ax2 vs Ax3"
+    }
+   ],
+   "priority": 0.451,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 0.7,
+    "specificity": 1.0,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "sharp but interpretive"
+   },
+   "rank": 54
+  },
+  {
+   "id": "dh_acceptance",
+   "name": "Must-fail-for-DH acceptance test",
+   "aliases": [
+    "ghost criterion",
+    "Euler-product necessity",
+    "CC-4 test",
+    "TAA Lemma 147"
+   ],
+   "plain": "Any future Riemann–Roch on the square must be false for Davenport–Heilbronn; otherwise it cannot prove RH. So it has to use the Euler product.",
+   "label": "Heuristic",
+   "core": "All H⁰-side objects are built from ℤ ⊂ 𝔸_ℚ and are ghost-blind; the topological side s(f,f) is ghost-sensitive (TAA Lemma 142: DH-location ghost positive from L* = 3.45, actual DH from 4.70). Hence an RR theorem on the square must FAIL for DH ⇒ must use the Euler product / ring structure (necessary condition, proposed acceptance test, TAA Lemma 147).",
+   "formula": "",
+   "numbers": [
+    "L* = 3.45 (DH-location ghost)",
+    "4.70 (actual DH, uncertified list)"
+   ],
+   "axes": [
+    "ghost-sensitive",
+    "no-go / refuted",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "Proposed acceptance test.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A necessary condition only."
+   ],
+   "lemmas": [
+    "L147",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "davenport_heilbronn",
+     "note": "DH as test object"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "split_blind_sensitive",
+     "note": "H⁰ blind, s(f,f) sensitive"
+    },
+    {
+     "type": "fails-for",
+     "to": "cc_riemann_roch",
+     "note": "proved RRs pass DH, so cannot decide RH"
+    }
+   ],
+   "priority": 0.451,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 0.7,
+    "specificity": 1.0,
+    "tractability": 0.5,
+    "evidence": 0.48,
+    "quadrant": "sharp but interpretive"
+   },
+   "rank": 55
+  },
+  {
+   "id": "brst",
+   "name": "BRST / Gupta–Bleuler physical quotient",
+   "aliases": [
+    "ghost subtraction",
+    "PM-3"
+   ],
+   "plain": "Remove null and negative-norm states to get a positive physical space — as U^⊥ in Hodge index.",
+   "label": "Analogy",
+   "core": "TAA Lemma 115: BRST structure exact over F_q and ℚ [T]; \"no ghosts\" ⇔ RH [R]; missing positive V ≅ H¹ (Hilbert–Pólya) ⇒ restatement. TAA Lemma 146 §3: Gupta–Bleuler F₁^⊥/F₁ ≅ U^⊥; the BRST quartet decouples but the ghost quartet survives. PM-3 (BRST complex with H(Q) = U^⊥) open.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "PM-3 open.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "PM-3 is open."
+   ],
+   "lemmas": [
+    "L115",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_index",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "primitive_part",
+     "note": ""
+    }
+   ],
+   "priority": 0.423,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_brst",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.4,
+    "quadrant": "background"
+   },
+   "rank": 56
+  },
+  {
+   "id": "two_point",
+   "name": "Two-point form g + iω ≥ 0",
+   "aliases": [
+    "Kähler two-point"
+   ],
+   "plain": "Combine a metric g and symplectic ω into one Hermitian form; positivity ⇔ Weil.",
+   "label": "Restatement",
+   "core": "TAA Lemma 103: g + iω ≥ 0 ⇔ Weil ⇔ RH.",
+   "formula": "g + iω ≥ 0",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L103"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 57
+  },
+  {
+   "id": "rh",
+   "name": "Riemann hypothesis (target node)",
+   "aliases": [
+    "RH",
+    "Θ = ½"
+   ],
+   "plain": "All nontrivial zeros of ζ have real part ½. In TAA every ghost-sensitive global sign statement for Spec ℤ turns out to be RH restated.",
+   "label": "Open",
+   "core": "RH is not proved in TAA. The positivity inventory of the programme finds that every ghost-sensitive global quadratic statement for Spec ℤ is a restatement of RH.",
+   "formula": "ρ = β + iγ, β = ½ for all ρ",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Every lemma PDF carries \"RH NOT proved\"."
+   ],
+   "lemmas": [
+    "L1",
+    "L107"
+   ],
+   "rels": [],
+   "priority": 0.419,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 58
+  },
+  {
+   "id": "castelnuovo_object",
+   "name": "Arithmetic Castelnuovo object (C1–C4)",
+   "aliases": [
+    "C1–C4"
+   ],
+   "plain": "Requirements an arithmetic surface would need to reproduce the curve proof.",
+   "label": "Open",
+   "core": "TAA Lemma 136: an arithmetic Castelnuovo object needs (C1) infinite H¹, (C2) positive involution, (C3) u_t u_t† = e^t, (C4) positivity proved without zeros; circularity flagged (TAA Lemma 106). TAA Lemma 138: the Čech 2-class supplies C2–C3 structure but not the sign. TAA Lemma 147: the decisive missing objects are H¹ on the square, an NS ⊋ U containing Ψ_λ, and quadratic RR.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L136",
+    "L138",
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "castelnuovo_severi",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "surface_ample_rr",
+     "note": ""
+    }
+   ],
+   "priority": 0.419,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 59
+  },
+  {
+   "id": "cc_square_open",
+   "name": "No Riemann–Roch for C_ℚ × C_ℚ (the square is open)",
+   "aliases": [
+    "RR on the square",
+    "H¹ on the square",
+    "TAA Lemma 147, correction 2"
+   ],
+   "plain": "There is no Riemann–Roch theorem for the square of the scaling site; Connes–Consani themselves list H¹ on the square, and hence RR there, as open.",
+   "label": "Open",
+   "core": "TAA Lemma 147, correction 2: \"their RR for the square / C_ℚ × C_ℚ, if it exists\" — it does not exist; CC18 states H¹ on the square of the scaling site, and hence RR there, is open. TAA Lemma 147 (iv): decisive missing objects = H¹ on the square, an intersection theory putting Ψ_λ into an NS larger than U, and quadratic RR.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Do not cite a CC Riemann–Roch on the square: none exists (TAA Lemma 147, correction 2)."
+   ],
+   "lemmas": [
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "castelnuovo_object",
+     "note": "the missing arithmetic surface"
+    },
+    {
+     "type": "corrects",
+     "to": "cc_riemann_roch",
+     "note": "proved RRs are only 1-dimensional"
+    }
+   ],
+   "priority": 0.419,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 60
+  },
+  {
+   "id": "hilbert_polya",
+   "name": "Hilbert–Pólya",
+   "aliases": [
+    "self-adjoint operator"
+   ],
+   "plain": "Find a self-adjoint operator with spectrum the γ’s.",
+   "label": "Open",
+   "core": "Standard program: a self-adjoint/unitary realization with spectrum the γ’s would give RH. TAA verdicts: spinor route = Hilbert–Pólya in Clifford dress (TAA Lemma 104); 2B″ + ½ needs an inner product (TAA Lemma 105, LP80 \"all that is missing is an appropriate inner product\"); missing positive V ≅ H¹ (TAA Lemma 115); circular if the inner product is Weil’s form (TAA Lemma 138 R2); lossless Heaviside realization = Hilbert–Pólya [O] (TAA Lemma 144 HS-F).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L104",
+    "L105",
+    "L115",
+    "L138",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "rh",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "arith_unitarity",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "lax_phillips",
+     "note": "missing inner product"
+    }
+   ],
+   "priority": 0.419,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 61
+  },
+  {
+   "id": "ghost_onset",
+   "name": "Ghost onset L* ≈ log(γ/2π)",
+   "aliases": [
+    "onset length",
+    "detection scale"
+   ],
+   "plain": "The smallest window at which a ghost quartet can be detected; it grows like the log of the ghost’s height.",
+   "label": "Numerical",
+   "core": "TAA Lemma 103: onsets L* = 0.90, 1.15, 1.70, 3.45 for the test ghosts; L* ≈ log(γ/2π).",
+   "formula": "L* ≈ log(γ/2π)",
+   "numbers": [
+    "0.90",
+    "1.15",
+    "1.70",
+    "3.45"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L103",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "ghost_quartet",
+     "note": ""
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 62
+  },
+  {
+   "id": "kallen_lehmann",
+   "name": "Källén–Lehmann spectral positivity",
+   "aliases": [
+    "spectral density ρ ≥ 0"
+   ],
+   "plain": "Physical theories have non-negative spectral weight; ζ analogue is the sign of zero weights.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §3: Källén–Lehmann / R(s) positivity is an Ax2 statement (spectral weight ≥ 0; CMT05, WP20 6931(40)e−11). TAA Lemma 146 corrections: KL positivity needs a positive metric — exactly what is missing for ζ.",
+   "formula": "ρ(μ²) ≥ 0",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "KL needs a positive metric (TAA Lemma 146 corrections)."
+   ],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.392,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 0.6,
+    "specificity": 1.0,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "sharp but interpretive"
+   },
+   "rank": 63
+  },
+  {
+   "id": "time_delay",
+   "name": "Time delay (Wigner)",
+   "aliases": [
+    "phase derivative"
+   ],
+   "plain": "How long a wave packet lingers in the cusp; unlike the winding of the phase, the time-delay peak does see ghosts.",
+   "label": "Analogy",
+   "core": "TAA Lemma 143: winding ½ per zero for all β (ghost-blind), but time-delay peak at r = 42.85 is 3.09 (ζ), 27.22 (ζ + TAA Lemma 103 ghost), 27.42 (DH): ghost-sensitive. ζ time delay is negative for r ≲ 2.9 (min −3.87), so \"positive delay\" fails for ζ. TAA Lemma 120: dwell time ∂_x log|Φ| = −θ′(ω). TAA Lemma 118: Connes harmonic measure of an off-line zero = (1/2π) × TAA Lemma 117 excess group delay.",
+   "formula": "",
+   "numbers": [
+    "3.09 / 27.22 / 27.42 at r = 42.85",
+    "min −3.87"
+   ],
+   "axes": [
+    "physics analogue",
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Positive time delay fails for ζ (TAA Lemma 143 corrections)."
+   ],
+   "lemmas": [
+    "L117",
+    "L118",
+    "L120",
+    "L143"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "scattering_phi",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "gain_line",
+     "note": "ghost = extra delay"
+    }
+   ],
+   "priority": 0.392,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 0.6,
+    "specificity": 1.0,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "sharp but interpretive"
+   },
+   "rank": 64
+  },
+  {
+   "id": "elliptic_chebyshev_bias",
+   "name": "Chebyshev bias for elliptic curves (averaged sign of a_p)",
+   "aliases": [
+    "average sign of a_p",
+    "prime race for a_p"
+   ],
+   "plain": "Individual signs of a_p are phase data, but their running average is biased, and the bias is governed by the zeros of L(E, s) and the analytic rank, in the same way ψ(x) − x is governed by the zeros of ζ. An off-line zero would make the averaged sign blow up like a power of x.",
+   "label": "Open",
+   "core": "Proposed comparison (TAA Lemma 150 plan): averaged sign of a_p for 11a, 37a, 389a and 32a (y² = x³ − x) against ψ − x; ties to Goldfeld’s product ∏ L_p(E,1) ∼ C/(log x)^r. Under RH the bias is a log-scale effect; an off-line zero gives power-law growth. The literature citation for an elliptic-curve Chebyshev bias is to verify and is not given.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "ghost-sensitive",
+    "reference/pole/cusp",
+    "open target"
+   ],
+   "uncertain": "to verify: the Chebyshev-bias citation for elliptic curves is unverified (not opened); no reference given.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Literature citation to verify: none is given until opened at source."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "goldfeld_bsd",
+     "note": "Goldfeld product (log x)^r"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "psi_minus_x",
+     "note": "averaged error term governed by zeros"
+    },
+    {
+     "type": "analogue-of",
+     "to": "primary_sign_rule",
+     "note": "individual sign (phase) vs averaged sign (zeros)"
+    }
+   ],
+   "priority": 0.38,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.2,
+    "evidence": 0.4,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 65
+  },
+  {
+   "id": "displaced_reference",
+   "name": "Displaced reference (subtracting the pole)",
+   "aliases": [
+    "reference subtraction"
+   ],
+   "plain": "Arithmetic quantities are measured relative to a reference fixed by the pole; the \"error\" is the displacement from that reference.",
+   "label": "Heuristic",
+   "core": "ψ − x, E₂* = E₂ − 3/(πy) and the relative Gram all subtract a pole/reference term. TAA Lemma 146 records this as an organizing analogy.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Analogy, not theorem."
+   ],
+   "lemmas": [
+    "L146",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "psi_minus_x",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "e2_anomaly",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "relative_gram",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "archimedes",
+     "note": "buoyancy: weight relative to displaced fluid"
+    }
+   ],
+   "priority": 0.377,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 66
+  },
+  {
+   "id": "kappa_index",
+   "name": "Negative index κ(𝒬) = N₊ (ghost count)",
+   "aliases": [
+    "κ",
+    "negative index",
+    "Bombieri count",
+    "n₋ = #real pairs + 2#quartets"
+   ],
+   "plain": "Counts how many negative directions the Weil form has; each off-line zero quartet contributes exactly 2.",
+   "label": "Theorem",
+   "core": "Unconditional: κ(𝒬) = N₊ (TAA Lemma 1 Thm 2.1); each ghost quartet gives 2 negative eigenvalues (TAA Lemma 103, Bombieri). Finite form: n₋ = k_r + 2k_c = ½ rk E² (TAA Lemma 110 Thm 2.3); Rosati n₋ = k = τ + ½Z_off = n₊(NS) − 1 (TAA Lemma 88 Thm B).",
+   "formula": "n₋ = k_r + 2k_c",
+   "numbers": [
+    "2 negative eigenvalues per quartet"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Count convention: TAA Lemma 91 n₊ = 2k vs TAA Lemma 88 k = ½Z_off — see TAA Lemma 92 C5 notation clash."
+   ],
+   "lemmas": [
+    "L1",
+    "L88",
+    "L93",
+    "L103",
+    "L110"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "rosati",
+     "note": "Rosati index on R[F] = Weil index (TAA Lemma 106)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "ghost_quartet",
+     "note": "one quartet ↦ two negatives"
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 67
+  },
+  {
+   "id": "krein_collision",
+   "name": "Krein collisions (how ghosts are born)",
+   "aliases": [
+    "Krein sign",
+    "opposite-sign collision",
+    "strong stability"
+   ],
+   "plain": "Zeros on the line carry a sign; two can only leave the line together if they meet with opposite signs.",
+   "label": "Theorem",
+   "core": "TAA Lemma 111: semisimple unit-spectrum F strongly stable ⇔ Krein form definite on each eigenspace; ghosts born only at opposite-sign collisions (710/710 births). For ζ the graphical Krein sign alternates ⇒ no protection; Λ ≥ 0 ⇒ ζ not heat-flow stable.",
+   "formula": "",
+   "numbers": [
+    "300 paths: 710 births, all opposite-sign"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Krein = stability, not positivity; presupposes unit spectrum (TAA Lemma 111 circularity)."
+   ],
+   "lemmas": [
+    "L27",
+    "L41",
+    "L111",
+    "L120"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "debruijn_newman",
+     "note": "heat-flow collisions"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "ghost_quartet",
+     "note": "pair leaves as (γ ± iδ)²"
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 68
+  },
+  {
+   "id": "two_partners",
+   "name": "Two partners of a zero (duality vs conjugation)",
+   "aliases": [
+    "ρ ↔ 1 − ρ",
+    "ρ ↔ ρ̄",
+    "α ↔ q/α vs ᾱ"
+   ],
+   "plain": "Every zero has a duality partner (from the functional equation) and a conjugate partner; RH says the two coincide.",
+   "label": "Theorem",
+   "core": "TAA Lemma 93 Thm 1.1: duality partner (Poincaré duality/cup product, ghosts too) and conjugation partner; RH ⇔ partners coincide. Rosati Tr(p(F)p(F)†) and the Weil zero side have the same \"zero × duality partner\" shape.",
+   "formula": "RH ⇔ 1 − ρ = ρ̄",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L93",
+    "L30"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "s_mirror",
+     "note": "mirror ρ ↦ 1 − ρ̄ fixes ρ ⇔ β = ½"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "cup_product",
+     "note": "duality pairing = cup product"
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 69
+  },
+  {
+   "id": "ghost_conventions",
+   "name": "Ghost conventions (δ, heat-flow healing)",
+   "aliases": [
+    "TAA Lemma 103 convention",
+    "δ_ρ"
+   ],
+   "plain": "Bookkeeping for ghost parameters across lemmas; several conventions disagree.",
+   "label": "Theorem",
+   "core": "δ = β − ½ (TAA Lemmas 25, 103, 143) vs δ_ρ = 2β − 1 (TAA Lemma 144). Heat-flow healing time t* = 2δ² (TAA Lemma 124) vs δ²/2 (TAA Lemma 136).",
+   "formula": "",
+   "numbers": [
+    "t* = 2δ² (L124)",
+    "t* = δ²/2 (L136)"
+   ],
+   "axes": [
+    "ghost-sensitive"
+   ],
+   "uncertain": "Conflicts unresolved.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Always state which δ is used."
+   ],
+   "lemmas": [
+    "L25",
+    "L103",
+    "L106",
+    "L124",
+    "L136",
+    "L143",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "ghost_quartet",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 70
+  },
+  {
+   "id": "cc_riemann_roch",
+   "name": "Connes–Consani Riemann–Roch on Spec ℤ̄ (1-dimensional)",
+   "aliases": [
+    "VF-1",
+    "CC22",
+    "CC23",
+    "RR over 𝕊"
+   ],
+   "plain": "Connes and Consani proved Riemann–Roch for the compactified Spec ℤ, counting sections by integer numbers of generators; it is a one-dimensional \"χ = degree + constant\" law and cannot see D².",
+   "label": "Cited",
+   "core": "CC23 Thm 1.1/5.1 over 𝕊: dim H⁰ − dim H¹ = ⌈deg₂D⌉′ + 1 (genus 0, base 2, no exceptional set); CC22 over 𝕊[±1]: ⌈(deg D + log 2)/log 3⌉′ − 1_L, duality H⁰(K−D) ≅ Hom(H¹(D), U(1)_{1/4}), K = −2{2}; scaling site Thm 5.17 Dim_ℝ H⁰(D) − Dim_ℝ H⁰(−D) = deg D. Verdict (TAA Lemma 147): all proved RRs are 1-dimensional, χ = deg + const ⇒ blind to D² by TAA Lemma 145 parity.",
+   "formula": "dim H⁰(D) − dim H¹(D) = ⌈deg₂D⌉′ + 1",
+   "numbers": [
+    "RR grid 320 points, error 0",
+    "χ(D) + χ(−D) = 2"
+   ],
+   "axes": [
+    "Spec ℤ gap",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "RR is for the Arakelov compactification Spec ℤ̄, not Spec ℤ; two versions, the 𝕊 one supersedes 𝕊[±1] (TAA Lemma 147, correction 3).",
+    "Dim_ℝ is a Lebesgue covering dimension on C_p, not a theta count (TAA Lemma 147, correction 1)."
+   ],
+   "lemmas": [
+    "L147",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "surface_ample_rr",
+     "note": ""
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 71
+  },
+  {
+   "id": "automorphy_defect",
+   "name": "Automorphy defect (TAA Lemma 144)",
+   "aliases": [
+    "defect cocycle"
+   ],
+   "plain": "How far a function fails to be modular, packaged as a cocycle; it is phase data.",
+   "label": "Theorem",
+   "core": "TAA Lemma 144: defect is a cocycle; ghost-blind. \"Cocycles give structure, not sign.\"",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "cocycle_principle",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "e2_anomaly",
+     "note": ""
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 72
+  },
+  {
+   "id": "certified_windows",
+   "name": "Certified positivity windows",
+   "aliases": [
+    "interval-arithmetic certificates",
+    "windows to e², e^2.4"
+   ],
+   "plain": "Computer-certified intervals on which the Weil form is positive.",
+   "label": "Numerical",
+   "core": "Certified windows: progress log reaches e² and hybrid e^2.4; one text says \"stop at 1.6\". All below ghost onsets, ghost-blind (TAA Lemma 142).",
+   "formula": "",
+   "numbers": [
+    "e²",
+    "e^2.4 (hybrid)",
+    "1.6"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-blind"
+   ],
+   "uncertain": "Which extent is current needs a check of the progress log.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Source conflict: \"stop at 1.6\" vs progress log to e², e^2.4."
+   ],
+   "lemmas": [
+    "L121",
+    "L127",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "ghost_onset",
+     "note": ""
+    },
+    {
+     "type": "special-case-of",
+     "to": "yoshida",
+     "note": ""
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 73
+  },
+  {
+   "id": "hodge_riemann",
+   "name": "Hodge–Riemann bilinear relations",
+   "aliases": [
+    "HR form",
+    "i∫α∧ᾱ > 0",
+    "Riemann form",
+    "Petersson positivity"
+   ],
+   "plain": "Pairing a holomorphic form with its own complex conjugate gives a positive number: a genuine |amplitude|².",
+   "label": "Theorem",
+   "core": "HR holds on every compact Riemann surface; HR form = 2 × Petersson (TAA Lemma 134). Positivity = complex structure inserted (Weil operator C = i^{p−q}). Hecke self-adjointness gives a_p ∈ ℝ, not |a_p| ≤ 2√p.",
+   "formula": "i ∫ α ∧ ᾱ = 2∫|f|² > 0",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Column 2 (F_q) never fully inherited the HR sign; Castelnuovo replaces it algebraically (TAA Lemma 140)."
+   ],
+   "lemmas": [
+    "L40",
+    "L102",
+    "L134",
+    "L139",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "cup_product",
+     "note": "cup with the conjugate through the Hodge structure"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "rosati",
+     "note": "Rosati = H-adjoint (TAA Lemma 134)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "weil_operator",
+     "note": "positivity needs C = i^{p−q}"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 74
+  },
+  {
+   "id": "weil_operator",
+   "name": "Weil operator C = i^{p−q} = Wick rotation",
+   "aliases": [
+    "Wick rotation",
+    "J² = −1",
+    "μ₄ action",
+    "complex structure"
+   ],
+   "plain": "Turning an indefinite pairing into a positive one by inserting a quarter turn — the same move as Wick rotation in physics.",
+   "label": "Theorem",
+   "core": "TAA Lemma 139: Q indefinite → Q(C·, ·̄) PD (Rosati); Abel–Jacobi = principalization. A complex structure is a μ₄ action (J² = −1). Obstruction: Pic^(Spec ℤ̄) ≅ ℝ has no complex structure.",
+   "formula": "C = i^{p−q}; Q(x, C ȳ) > 0",
+   "numbers": [
+    "y² = x³ − x: π/√p primitive 4th root of unity for p ≡ 3 mod 4 (L140)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "Spec ℤ gap",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The Fourier transform is the swap, not the Weil operator (TAA Lemma 140).",
+    "Over F_q the sign is algebraic (Castelnuovo); the Hodge model is only an analogy there (TAA Lemma 139 caveat)."
+   ],
+   "lemmas": [
+    "L139",
+    "L140",
+    "L102"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "compatible_J",
+     "note": "J = h(i)"
+    },
+    {
+     "type": "analogue-of",
+     "to": "principalization",
+     "note": "Abel–Jacobi = principalization"
+    },
+    {
+     "type": "fails-for",
+     "to": "arakelov",
+     "note": "no complex structure on Pic^ ≅ ℝ"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 75
+  },
+  {
+   "id": "sqrt2_family",
+   "name": "√2 family",
+   "aliases": [
+    "√2 geodesic",
+    "t = 6"
+   ],
+   "plain": "Geodesic from 1 + √2; it is not singled out.",
+   "label": "Theorem",
+   "core": "TAA Lemma 146 §1: traces t_k = 6, 34, 198, 1154, 6726 (Pell), lengths kℓ₀, ℓ₀ = 4 log(1+√2) = 3.5255; length-ordered series is periodic (period 2πi/ℓ₀ = 1.7822i) ⇒ cannot carry ζ zeros; conductor-ordered = h⁺R(8)ζ(s−1)/L(s,χ₈). TAA Lemma 146, correction 2: √2 is not the first norm −1 unit (φ is smaller).",
+   "formula": "",
+   "numbers": [
+    "traces 6, 34, 198, 1154, 6726",
+    "ℓ₀ = 3.5255"
+   ],
+   "axes": [
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "√2 is not the first norm −1 unit; the golden ratio is smaller (TAA Lemma 146)."
+   ],
+   "lemmas": [
+    "L141",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "closed_geodesics",
+     "note": ""
+    },
+    {
+     "type": "corrects",
+     "to": "goldfeld_bsd",
+     "note": "√2 in Goldfeld is unrelated"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 76
+  },
+  {
+   "id": "pole_s1",
+   "name": "Pole of ζ at s = 1 (residue / 3/π)",
+   "aliases": [
+    "s = 1 pole",
+    "residue 3/π",
+    "Eisenstein pole"
+   ],
+   "plain": "ζ has a pole at s = 1; the Eisenstein series E(z,s) has its pole there with residue 3/π, the reciprocal of the area of the modular surface.",
+   "label": "Cited",
+   "core": "Res_{s=1} E(z,s) = 3/π = 1/vol(SL₂(ℤ)∖ℍ); E₂* = E₂ − 3/(πy) is the non-holomorphic correction (TAA Lemma 144/TAA Lemma 145 context).",
+   "formula": "Res_{s=1}E(z,s) = 3/π",
+   "numbers": [
+    "3/π"
+   ],
+   "axes": [
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The point 1 is not ∞."
+   ],
+   "lemmas": [
+    "L144",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "displaced_reference",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "e2_anomaly",
+     "note": "3/(πy) correction"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "pole_plane",
+     "note": "𝕃-ray"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 77
+  },
+  {
+   "id": "toeplitz_verblunsky",
+   "name": "Toeplitz / Verblunsky coefficients",
+   "aliases": [
+    "Szegő",
+    "Levinson"
+   ],
+   "plain": "Positivity of Toeplitz matrices ⇔ |α_n| < 1; each step a boost of rapidity artanh|α|.",
+   "label": "Theorem",
+   "core": "TAA Lemma 112 [C Simon]: Carathéodory–Toeplitz–Herglotz; T_{n+1} ≻ 0 ⇔ |α_j| < 1 ∀j < n; n₋(T_N) = #{E_n < 0}, sign flips at each |α_j| > 1. Levinson: PD ⇔ |κ_j| < 1, each step a boost of rapidity artanh κ (true |κ| < 1 for 60 orders; ghost κ₈ = −1.0009). TAA Lemma 117: U(1,1) boost of velocity |α|; |α| > 1 = Krein swap ∘ boost. TAA Lemma 37/TAA Lemma 118: Schur/Verblunsky layer stripping = restatement (circular).",
+   "formula": "|α_n| < 1",
+   "numbers": [
+    "closest true κ₈ = −0.986",
+    "ghost 14.13 ± 0.1i: κ₈ = −1.0009"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L37",
+    "L98",
+    "L112",
+    "L117",
+    "L118"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "frobenius_boost",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 78
+  },
+  {
+   "id": "closed_geodesics",
+   "name": "Closed geodesics on the modular surface",
+   "aliases": [
+    "primitive hyperbolic classes"
+   ],
+   "plain": "Lengths 2 log ε_t from traces t; Selberg trace formula pairs them with resonances.",
+   "label": "Theorem",
+   "core": "Length 2 log ε_t with h⁺ classes (TAA Lemma 143); trace-6 has 3 primitive oriented classes (TAA Lemma 141); counts t = 3..11: 1,2,2,3,3,4,2,6,3. √2 geodesic ℓ = 3.5254943481, sinh(ℓ/2) = 2√2; golden geodesic 1.9248 is shortest. S(t) = Σ h⁺ log ε⁺², 36 discriminants 0 mismatches (TAA Lemma 143).",
+   "formula": "ℓ = 2 log ε_t",
+   "numbers": [
+    "1.9248 (golden)",
+    "3.5254943481 (√2)",
+    "counts 1,2,2,3,3,4,2,6,3"
+   ],
+   "axes": [
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L141",
+    "L143",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "selberg_resonances",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 79
+  },
+  {
+   "id": "s_mirror",
+   "name": "S-mirror ρ ↦ 1 − ρ̄",
+   "aliases": [
+    "mirror symmetry",
+    "critical-line reflection"
+   ],
+   "plain": "Reflecting across the critical line; a zero is fixed exactly when it is on the line.",
+   "label": "Theorem",
+   "core": "ρ fixed by ρ ↦ 1 − ρ̄ ⇔ β = ½.",
+   "formula": "1 − ρ̄ = ρ ⇔ β = ½",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L93",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "two_partners",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 80
+  },
+  {
+   "id": "selberg_resonances",
+   "name": "Selberg resonances",
+   "aliases": [
+    "scattering poles"
+   ],
+   "plain": "Poles of φ(s) relate to ζ zeros at s = ρ/2.",
+   "label": "Theorem",
+   "core": "φ = Λ(2s−1)/Λ(2s) has poles in Re s < ½ exactly at ρ/2, φ(½) = −1 (TAA Lemma 143). ΣΛ(P)N^{−s} = Z′/Z(s) − Z′/Z(s+1). TAA Lemma 143: ρ/2 seen in the length spectrum from class numbers (projection on the predicted ζ term 1.003). Selberg zeros ρ/2: infinitely many off the line (TAA Lemma 141).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L141",
+    "L143",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "eisenstein_ct",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 81
+  },
+  {
+   "id": "arakelov",
+   "name": "Arakelov geometry",
+   "aliases": [
+    "Pic^"
+   ],
+   "plain": "Compactified arithmetic surfaces.",
+   "label": "Cited",
+   "core": "TAA Lemma 74: Ô(1)² = ½ for FS metrics; pole-plane Gram [[½,1],[1,0]] signature (1,1); Hodge index vacuous in genus 0. TAA Lemma 139: Pic^(Spec ℤ̄) ≅ ℝ has rank 1 and no complex structure. TAA Lemma 65/TAA Lemma 145: Faltings–Hriljac = Hodge index on arithmetic surfaces (curve × Spec O_K), relative part = Néron–Tate, not ζ. TAA Lemma 138 R5: Néron–Tate PD (37a1 ĥ = 0.051114).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L65",
+    "L74",
+    "L138",
+    "L139",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "weil_operator",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 82
+  },
+  {
+   "id": "cusp_vs_infinity",
+   "name": "Cusp ≠ archimedean place",
+   "aliases": [
+    "cusp i∞",
+    "place ∞"
+   ],
+   "plain": "The cusp of the modular curve and the archimedean place of ℚ are different objects, though both get written ∞.",
+   "label": "Theorem",
+   "core": "The cusp is a point of the modular curve; the archimedean place is a valuation of ℚ. Neither is the frame bundle, and ∞-toposes are unrelated to the infinite place.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Do not identify cusp, place ∞, frame bundle, ∞-topos."
+   ],
+   "lemmas": [
+    "L144",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "corrects",
+     "to": "archimedean_place",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 83
+  },
+  {
+   "id": "density_volume",
+   "name": "Density / volume reading",
+   "aliases": [
+    "volume form"
+   ],
+   "plain": "The modular surface’s volume form and the half-density: area π/3 gives degree 1/12, and the half-density y^½ is the Heaviside ½ — structure, not sign.",
+   "label": "Theorem",
+   "core": "TAA Lemma 141 §7: c₁(ω, Pet) = dxdy/(4πy²); area π/3 ⇒ deg ω = 1/12 = −ζ(−1); χ_orb = −1/6; half-density y^½ unitary L²(dr) → L²(dy/y²) = Heaviside ½. TAA Lemma 145: the U-form is indefinite, not a volume (TAA Lemma 145 corrections); volume formula for h⁰ is heuristic.",
+   "formula": "deg ω = 1/12 = −ζ(−1)",
+   "numbers": [
+    "area π/3",
+    "χ_orb = −1/6"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Volume form ≠ Levi-Civita connection (TAA Lemma 141 list)."
+   ],
+   "lemmas": [
+    "L141",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "mass_density",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 84
+  },
+  {
+   "id": "f1_base",
+   "name": "F₁ base",
+   "aliases": [
+    "field with one element"
+   ],
+   "plain": "The hoped-for \"field with one element\" under Spec ℤ. Over F₁ the single Frobenius trace becomes a sum over all zeros, and Connes–Consani take the sphere spectrum 𝕊 as F₁.",
+   "label": "Cited",
+   "core": "TAA Lemma 65: a_p is the right model, but over F₁ the single trace becomes Σ_ρ u^ρ (one eigenvalue per zero, infinite genus, N(1) = −∞); for curves the CC dictionary is literal (u = qⁿ, α_i = q^{ρ_i}). CC10 N(u) positive on (1,∞) is prime-side and shared by Beurling systems ⇒ cannot force RH alone. TAA Lemma 147, correction 4: \"On the metaphysics of F₁\" proves no new RR; it restates CC23 and discusses 𝕊 as F₁.",
+   "formula": "N(u) = u − d/du(Σ_ρ order(ρ) u^{ρ+1}/(ρ+1)) + 1",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "CC N(u) is only formal (TAA Lemma 65 C1)."
+   ],
+   "lemmas": [
+    "L65",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "spec_z_terminal",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 85
+  },
+  {
+   "id": "principalization",
+   "name": "Principalization",
+   "aliases": [
+    "Abel–Jacobi"
+   ],
+   "plain": "Making divisors principal; Abel–Jacobi = principalization (TAA Lemma 139).",
+   "label": "Theorem",
+   "core": "TAA Lemma 60: \"principalization as hamiltonization\"; clutching = principalization (analogy). TAA Lemma 71: curve version theorem — #Pic⁰(F_{pⁿ}) = |1 − πⁿ|²; on Spec ℤ only the ℝ>0 boost (blind to θ_p). TAA Lemma 73: class group = obstruction to integral spinor square roots of light rays. TAA Lemma 139: Abel–Jacobi = principalization.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L60",
+    "L71",
+    "L73",
+    "L139"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "weil_operator",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 86
+  },
+  {
+   "id": "spec_z_terminal",
+   "name": "Spec ℤ is terminal",
+   "aliases": [
+    "no base"
+   ],
+   "plain": "Spec ℤ has no base to fiber over, unlike a curve over F_q.",
+   "label": "Theorem",
+   "core": "Spec ℤ ×_ℤ Spec ℤ = Spec ℤ (TAA Lemma 65 THM), so the \"square\" must be built elsewhere (arithmetic site, Borger). TAA Lemma 137: Spec ℤ is terminal ⇒ Yoneda gives uniqueness only. TAA Lemma 140: π₁ét(Spec ℤ) = 1.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L65",
+    "L90",
+    "L137",
+    "L140"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "f1_base",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 87
+  },
+  {
+   "id": "spinor_route",
+   "name": "Spinor/Clifford route",
+   "aliases": [
+    "Clifford pair",
+    "Cl(1,1)"
+   ],
+   "plain": "Encode J and F as a Clifford pair; ghosts give the indefinite Cl(1,1).",
+   "label": "Theorem",
+   "core": "TAA Lemma 101/TAA Lemma 110: ghosts give Cl(1,1); true case Cl(2,0).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L101",
+    "L110"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "compatible_J",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 88
+  },
+  {
+   "id": "weil_rosetta",
+   "name": "Weil Rosetta stone",
+   "aliases": [
+    "three columns"
+   ],
+   "plain": "Weil’s analogy number fields / function fields / Riemann surfaces.",
+   "label": "Cited",
+   "core": "TAA Lemma 140: Rosetta table (loop, H¹, 1 ⊕ 𝕃, counts, involution, sign); the Spec ℤ sign cell is missing (Weil positivity ⇔ RH). Column 2’s sign is the dim-2 algebraic shadow of Hodge–Riemann (surface + ample + RR ⇒ Hodge index). Weil’s 1940 letter quotes read at source (Krieger, Notices 52(3)).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L140"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "fq_curves",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 89
+  },
+  {
+   "id": "cohesion",
+   "name": "Cohesion (arena)",
+   "aliases": [
+    "cohesive topos"
+   ],
+   "plain": "Cohesion is the arena, not the surface.",
+   "label": "Theorem",
+   "core": "TAA Lemma 141 §3: cohesion is the arena, not the surface; the étale ∞-topos of Spec ℤ is not cohesive (pro-shape, Hoyois); new Thm: [ℕ^×, Set] is not cohesive (Γ has no right adjoint). D10 (relative cohesion). TAA Lemma 146 §5: the cohesion quadruple Π ⊣ Disc ⊣ Γ ⊣ coDisc is a line without sign; RLGC is a 2×2 grid with mirror/KK/sign — numerology only.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Heaviside ≠ cohesion one-to-one."
+   ],
+   "lemmas": [
+    "L96",
+    "L141",
+    "L146"
+   ],
+   "rels": [],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 90
+  },
+  {
+   "id": "local_global",
+   "name": "Local-to-global failure",
+   "aliases": [
+    "local positivity"
+   ],
+   "plain": "Local positivity at each prime does not imply global.",
+   "label": "Theorem",
+   "core": "TAA Lemma 25 Rem 6.2: naive local positivity fails (K < 0 for |r| < 6.28984); CC21 Thm 1 local archimedean positivity only for supp ⊂ [2^{−½}, 2^{½}] with vanishing. TAA Lemma 64/TAA Lemma 65: local Hasse (Q_p > 0 at every p, proved) vs global RH for L(E,s) (open) — the collective split. TAA Lemma 66: local positivity via Deligne weights is ghost-blind residual data.",
+   "formula": "",
+   "numbers": [
+    "|r| < 6.28984"
+   ],
+   "axes": [
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L25",
+    "L64",
+    "L65",
+    "L66",
+    "L91"
+   ],
+   "rels": [],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 91
+  },
+  {
+   "id": "kramers_kronig",
+   "name": "Kramers–Kronig relations",
+   "aliases": [
+    "KK",
+    "dispersion relation"
+   ],
+   "plain": "Causal response: real (dispersive) and imaginary (absorptive) parts determine each other. Absorption’s sign is the passivity condition.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146: dispersion = phase (ghost-blind), absorption sign = passivity ⇔ Lagarias ⇔ RH.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "phase/unitarity (Ax3)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Passivity implies causality, not conversely (TAA Lemma 146)."
+   ],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "split_blind_sensitive",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "passivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.324,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 92
+  },
+  {
+   "id": "gribov",
+   "name": "Gribov ambiguity",
+   "aliases": [
+    "gauge-fixing failure"
+   ],
+   "plain": "In QCD the gluon propagator violates positivity (it changes sign in Euclidean time) — the physics example of a \"spectral weight\" that is not positive.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §3: Gribov C(t) re-derived to 1e−16, first sign change t* = π/(2√2 M) = 1.1107 (in units of M). Interpretation as positivity violation is interpretive (TAA Lemma 146 corrections).",
+   "formula": "t* = π/(2√2 M)",
+   "numbers": [
+    "t* = 1.1107",
+    "re-derived to 1e−16"
+   ],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Gluon positivity violation as confinement evidence is interpretive (TAA Lemma 146 corrections)."
+   ],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "brst",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "kallen_lehmann",
+     "note": "spectral positivity violated"
+    }
+   ],
+   "priority": 0.324,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_brst",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 93
+  },
+  {
+   "id": "functional_equation",
+   "name": "Functional equation ξ(s) = ξ(1 − s)",
+   "aliases": [
+    "FE",
+    "completed zeta"
+   ],
+   "plain": "ζ’s completed version is symmetric under s ↦ 1 − s. Ghosts satisfy it too, so it cannot prove RH.",
+   "label": "Theorem",
+   "core": "ξ(s) = ξ(1 − s); DH satisfies FE to 5×10⁻¹⁵ yet Re ξ′/ξ = −66.8 off the line (TAA Lemma 146). Ghost-blind.",
+   "formula": "ξ(s) = ξ(1 − s)",
+   "numbers": [
+    "5×10⁻¹⁵",
+    "−66.8"
+   ],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Symmetry is phase data, never sign."
+   ],
+   "lemmas": [
+    "L103",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "s_mirror",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "DH satisfies FE without RH"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 94
+  },
+  {
+   "id": "gauss_sum_unitarity",
+   "name": "Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)",
+   "aliases": [
+    "|g|² = p",
+    "finite Fourier transform unitary",
+    "CM Frobenius in ℤ[i]"
+   ],
+   "plain": "A quadratic Gauss sum has absolute value exactly √p: this is the statement that the finite Fourier transform is unitary. For the CM curve y² = x³ − x and p ≡ 1 mod 4, the Frobenius eigenvalue is a Gaussian integer π with ππ̄ = p, so RH for this curve is the same kind of unitarity identity.",
+   "label": "Theorem",
+   "core": "|g|² = p (checked numerically for all odd p ≤ 691) = Plancherel for the finite Fourier transform, the same |x|^{½} twist as TAA Lemma 145. For p ≡ 1 mod 4, π ∈ ℤ[i], ππ̄ = p, a_p = 2 Re π, so |α| = √p is automatic. Over ℚ the analogue |ε| = 1 of a root number holds for Davenport–Heilbronn too: necessary, not sufficient. Open: a ζ-analogue in which the eigenvalue itself is a Gauss sum.",
+   "formula": "|g|² = p, ππ̄ = p, a_p = 2 Re π",
+   "numbers": [
+    "|g|² at p = 691: 691 (float)"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Unitarity identities of this kind are Ax3 (phase); over ℚ they are satisfied by DH too and cannot replace the sign."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "half_density",
+     "note": "Plancherel / unitary |x|^{½} twist"
+    },
+    {
+     "type": "analogue-of",
+     "to": "hasse_pythagoras",
+     "note": "CM case: |π|² = p as a norm identity"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "split_blind_sensitive",
+     "note": "phase side"
+    },
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "|ε| = 1 holds for DH as well"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 95
+  },
+  {
+   "id": "e2_anomaly",
+   "name": "E₂ anomaly (E₂* = E₂ − 3/(πy))",
+   "aliases": [
+    "quasimodular E₂",
+    "2-class",
+    "modular anomaly"
+   ],
+   "plain": "E₂ fails to be modular; fixing it costs a non-holomorphic term 3/(πy) tied to the pole. One reading treats the failure as a 2-class.",
+   "label": "Theorem",
+   "core": "E₂(−1/z) = z²E₂(z) + 12z/(2πi)… corrected by E₂* = E₂ − 3/(πy), modular of weight 2. Ghost-blind (phase/automorphy data).",
+   "formula": "E₂* = E₂ − 3/(πy)",
+   "numbers": [
+    "3/π"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "Exact transformation constant quoted from standard theory; the 2-class reading is conjectural.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L144",
+    "L145",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "displaced_reference",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "automorphy_defect",
+     "note": "defect of a cocycle"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "pole_s1",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 96
+  },
+  {
+   "id": "euler_char_chi",
+   "name": "Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)",
+   "aliases": [
+    "χ(D)",
+    "Euler characteristic",
+    "RR χ"
+   ],
+   "plain": "The χ in the Connes–Consani Riemann–Roch is an Euler characteristic: sections minus obstructions of a divisor D. It is a number attached to D, not a character of a Galois group.",
+   "label": "Theorem",
+   "core": "CC23 over 𝕊: χ(D) = dim H⁰(D) − dim H¹(D) = ⌈deg₂D⌉′ + 1 (TAA Lemma 147). TAA Lemma 145 parity: a linear χ is odd in D and never contains D²; the Hodge-index step needs a quadratic χ (D²/2 term). TAA Lemma 147: χ(D) + χ(−D) = 2 (deg₂D ∉ ℤ).",
+   "formula": "χ(D) = dim H⁰(D) − dim H¹(D)",
+   "numbers": [
+    "χ(D) + χ(−D) = 2"
+   ],
+   "axes": [
+    "Spec ℤ gap",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Notation clash: this χ is an Euler characteristic, not the character χ (or ω) of the 691 class-group eigenspace."
+   ],
+   "lemmas": [
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "parity_linear_chi",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "cc_riemann_roch",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "mazur_wiles",
+     "note": "both \"χ = L-value\"-type identities; analogy only"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_quadratic_rr",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 97
+  },
+  {
+   "id": "herbrand_ribet",
+   "name": "Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k",
+   "aliases": [
+    "Teichmüller eigenspace",
+    "ω⁻¹¹ class",
+    "χ¹¹-minus class",
+    "691 class",
+    "Kummer criterion refined"
+   ],
+   "plain": "The p-part of the class group of ℚ(μ_p) splits into pieces labelled by powers of the Teichmüller character ω. The piece ω¹⁻ᵏ is nonzero exactly when p divides the Bernoulli number B_k; for p = 691, k = 12 this is the ω⁻¹¹ piece.",
+   "label": "Cited",
+   "core": "For odd p and even k, 2 ≤ k ≤ p−3: A(ω¹⁻ᵏ) ≠ 0 ⇔ p | B_k (Herbrand 1932 ⇒, Ribet 1976 ⇐). p = 691, k = 12: B₁₂ = −691/2730, class in ω⁻¹¹ = ωᵖ⁻¹² (same character, since ω has order p − 1); odd character ⇒ minus part. TAA Lemma 66: 691 has two irregular indices (12, 200), so Cl/691 is 2-dim (ω⁻¹¹, ω⁻¹⁹⁹); ρ_{Δ,691} ss = 1 ⊕ ω¹¹, the non-split extension gives the ω⁻¹¹ class via CFT (Greenberg–Monsky lattices).",
+   "formula": "A(ω¹⁻ᵏ) ≠ 0 ⇔ p | B_k",
+   "numbers": [
+    "B₁₂ = −691/2730",
+    "irregular indices of 691: 12, 200",
+    "v₆₉₁(h⁻) = 2"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Notation: det ρ_Δ = χ_cyc¹¹ (cyclotomic character), whose reduction mod 691 is ω¹¹; the class itself sits in ω⁻¹¹ (TAA Lemma 66).",
+    "Ribet 1976 used weight-2 forms on Γ₁(p), not Δ.",
+    "Some authors write ωᵖ⁻¹²; it is the same eigenspace."
+   ],
+   "lemmas": [
+    "L60",
+    "L66"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "ramanujan_691",
+     "note": "via Ribet’s Eisenstein congruence"
+    },
+    {
+     "type": "special-case-of",
+     "to": "mazur_wiles",
+     "note": "size statement implied by the main conjecture"
+    },
+    {
+     "type": "fails-for",
+     "to": "rh",
+     "note": "sizes, not signs: ghost-blind residual data (TAA Lemma 66)"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 98
+  },
+  {
+   "id": "mazur_wiles",
+   "name": "Mazur–Wiles main conjecture (\"Euler characteristic = L-value\")",
+   "aliases": [
+    "Iwasawa main conjecture",
+    "char ideal = p-adic L-function",
+    "Kubota–Leopoldt"
+   ],
+   "plain": "The size of each Teichmüller piece of the class group (and of the Iwasawa module up the cyclotomic tower) equals the p-part of an L-value; slogan: an algebraic Euler characteristic equals an analytic L-value.",
+   "label": "Cited",
+   "core": "Mazur–Wiles 1984: characteristic ideal of the χ-part of the Iwasawa module = ideal of the Kubota–Leopoldt p-adic L-function. Finite-level consequence: #A(ω¹⁻ᵏ) = p-part of L(0, ωᵏ⁻¹) (Ribet, Berkeley slides). TAA Lemma 66: main conjecture = Hilbert–Pólya-type with free p-adic unitarity (γ eigenvalues are 1-units); μ = 0 is not a positivity; no positivity found on the Iwasawa side (OPEN).",
+   "formula": "char(X_∞^χ) = (L_p(χ))",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Iwasawa theory measures sizes (orders, characteristic ideals), never the sign of D²; it cannot by itself give Weil positivity.",
+    "\"Euler characteristic = L-value\" is a slogan (Heuristic wording), the theorem is the equality of ideals."
+   ],
+   "lemmas": [
+    "L4",
+    "L66"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "euler_char_chi",
+     "note": "\"χ = value\" shape only"
+    },
+    {
+     "type": "analogue-of",
+     "to": "hilbert_polya",
+     "note": "TAA Lemma 66: Hilbert–Pólya-type, p-adic"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 99
+  },
+  {
+   "id": "archimedean_place",
+   "name": "Archimedean place and Γ_ℝ factor",
+   "aliases": [
+    "Γ_ℝ(s) = π^{−s/2}Γ(s/2)",
+    "place ∞",
+    "arch term"
+   ],
+   "plain": "The \"prime at infinity\": its Gamma factor contributes a term to the Weil form that can be positive or negative depending on the window.",
+   "label": "Theorem",
+   "core": "Γ_ℝ contributes the arch functional to W; arch-only positivity holds on thresholds a* (TAA Lemma 127), ghost-blind.",
+   "formula": "Γ_ℝ(s) = π^{−s/2}Γ(s/2)",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "∞ is not the frame bundle."
+   ],
+   "lemmas": [
+    "L98",
+    "L121",
+    "L127"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "arch_threshold",
+     "note": ""
+    },
+    {
+     "type": "lives-in",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 100
+  },
+  {
+   "id": "cusp_forms_petersson",
+   "name": "Cusp forms & Petersson positivity",
+   "aliases": [
+    "Petersson norm",
+    "⟨f,f⟩ > 0"
+   ],
+   "plain": "Cusp forms have positive Petersson norm — a real positivity, but it does not see ζ’s zeros.",
+   "label": "Theorem",
+   "core": "⟨f,f⟩ = ∫|f|²y^k dμ > 0; HR = 2 × Petersson (TAA Lemma 134). Ghost-blind for ζ (TAA Lemma 146).",
+   "formula": "⟨f,f⟩ = ∫ |f|² y^k dμ > 0",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Positive but about cusp forms, not ζ’s spectral weights."
+   ],
+   "lemmas": [
+    "L134",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_riemann",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "rh",
+     "note": "ghost-blind"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 101
+  },
+  {
+   "id": "ramanujan_691",
+   "name": "Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)",
+   "aliases": [
+    "691 congruence",
+    "Δ ≡ E₁₂ mod 691",
+    "ζ(−11) = 691/32760",
+    "Eisenstein ideal at level 1"
+   ],
+   "plain": "The cusp form Δ agrees with the Eisenstein series E₁₂ modulo 691, because 691 divides the numerator of ζ(−11). It is the meeting point of the Eisenstein (reference) and cusp-form (primitive) parts of the Hecke algebra.",
+   "label": "Cited",
+   "core": "τ(n) ≡ σ₁₁(n) mod 691; ζ(−11) = −B₁₂/12 = 691/32760 (constant term of E₁₂ ∝ ζ(−11)/2 = 691/65520, TAA Lemma 70). TAA Lemma 66: τ(p) ≡ 1 + p¹¹ mod 691 for all 9592 p < 10⁵; Hecke congruence moduli N_k = |num(B_k/2k)| = 691, 3617, 43867, … (k = 12, 16, 18, …); bridge = closed point where Eisenstein and cuspidal components of Spec 𝕋 meet. TAA Lemma 70 (Mazur77 at source): Eisenstein ideal 𝕋/𝔍 ≅ ℤ/n, modulus = numerator of an Euler-depleted ζ(1−k); cusp encodes it as a negative zeta value; positivity invisible (timelike f ≡ spacelike E).",
+   "formula": "τ(n) ≡ σ₁₁(n) mod 691, ζ(−11) = 691/32760",
+   "numbers": [
+    "9592 primes checked (L66)",
+    "691/65520 = ζ(−11)/2"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The congruence is mod 691 data: it says nothing about the sign of the Weil form (TAA Lemma 66: bridge = where positivity is lost).",
+    "E₁₂ has all its zeros off Re s = 6 (unconditional, TAA Lemma 66) — an \"all ghost\" Euler product."
+   ],
+   "lemmas": [
+    "L66",
+    "L70"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "weight_ladder",
+     "note": "weight-12 rung: E₁₂ reference vs Δ primitive"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "primitive_part",
+     "note": "Eisenstein = reference, cusp form = primitive split"
+    },
+    {
+     "type": "special-case-of",
+     "to": "herbrand_ribet",
+     "note": "the k = 12, p = 691 case"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_brst",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 102
+  },
+  {
+   "id": "tate_count",
+   "name": "Tate count / Picard number (ghost-blind)",
+   "aliases": [
+    "ρ = 2 + Σm(λ)m(q/λ)",
+    "Tate classes"
+   ],
+   "plain": "Counting algebraic classes on C×C does not see whether eigenvalues are on the circle.",
+   "label": "Theorem",
+   "core": "ρ(C×C) = 2 + Σ m(λ)m(q/λ) (Tate 1966, S–S §14.6); = 2g for squarefree, fakes too (TAA Lemma 93 Prop 2.3).",
+   "formula": "ρ = 2 + Σ m(λ) m(q/λ)",
+   "numbers": [
+    "2923/2923 family checks (L93)"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L88",
+    "L93"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "fake_weil_poly",
+     "note": "fakes have the same count"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "count_positivity",
+     "note": "counts are blind"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 103
+  },
+  {
+   "id": "hecke",
+   "name": "Hecke operators",
+   "aliases": [
+    "T_p",
+    "Hecke self-adjointness"
+   ],
+   "plain": "Averaging operators on modular forms; self-adjointness gives real eigenvalues but not the Ramanujan bound.",
+   "label": "Theorem",
+   "core": "Hecke self-adjoint ⇒ a_p ∈ ℝ, not |a_p| ≤ 2√p (TAA Lemma 134). Ghost-blind (TAA Lemma 146).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "a_p are not BSD generators."
+   ],
+   "lemmas": [
+    "L134",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_riemann",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "rh",
+     "note": "ghost-blind"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 104
+  },
+  {
+   "id": "primary_sign_rule",
+   "name": "Primary sign rule for a_p of y² = x³ − x",
+   "aliases": [
+    "a_p = 2a",
+    "primary mod (1+i)³",
+    "sign of a_p"
+   ],
+   "plain": "For p ≡ 1 mod 4 write p = a² + b² with b even; the sign of a in a_p = 2a is fixed by a 2-adic normalisation (a + b ≡ 1 mod 4). The individual sign is phase data; RH is about the size |a_p| ≤ 2√p, not the sign.",
+   "label": "Numerical",
+   "core": "p = a² + b², b even, a_p = 2a with a + b ≡ 1 mod 4 (π primary mod (1 + i)³); checked for all 14 primes p ≡ 1 mod 4 below 120 (p = 5, 13, 17: a_p = −2, 6, 2). The individual sign is a 2-adic phase (ghost-blind); RH = |a_p| ≤ 2√p is a size statement. The distribution of the signs (Sato–Tate for CM curves) is a separate question; no citation given here.",
+   "formula": "a_p = 2a, p = a² + b², a + b ≡ 1 mod 4",
+   "numbers": [
+    "14/14 primes p ≡ 1 mod 4, p < 120"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "ghost-blind",
+    "numerics/certificate"
+   ],
+   "uncertain": "Sato–Tate/Hecke–Deuring citation for CM sign distribution not verified; none given.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The minus sign in a₅ = −2 is not the positivity sign of RH: it is a phase (choice of primary generator), and RH bounds the size."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "prime_two_wild",
+     "note": "the normalisation is 2-adic"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "gauss_sum_unitarity",
+     "note": "a_p = 2 Re π"
+    },
+    {
+     "type": "fails-for",
+     "to": "castelnuovo_severi",
+     "note": "the sign of a_p is not the Castelnuovo sign"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 105
+  },
+  {
+   "id": "arch_threshold",
+   "name": "Archimedean thresholds a*",
+   "aliases": [
+    "a*_S2 < 0.5976773",
+    "a ≤ 1"
+   ],
+   "plain": "Largest window size where the archimedean part alone is positive.",
+   "label": "Numerical",
+   "core": "TAA Lemma 127: a*_S2 < 0.5976773 (supersedes TAA Lemma 121’s 0.602); TAA Lemma 98 states a ≤ 1 in another normalization. Ghost-blind.",
+   "formula": "",
+   "numbers": [
+    "a*_S2 < 0.5976773",
+    "0.602 (L121, superseded)",
+    "a ≤ 1 (L98)"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-blind",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "Normalization between TAA Lemma 98 and TAA Lemma 127 not reconciled here.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Source conflict: TAA Lemma 98 \"a ≤ 1\" vs TAA Lemma 127 a* < 0.5976773 (different setups/normalizations to check)."
+   ],
+   "lemmas": [
+    "L98",
+    "L121",
+    "L127"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "archimedean_place",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "yoshida",
+     "note": "window positivity"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 106
+  },
+  {
+   "id": "maass_selberg",
+   "name": "Maass–Selberg relations",
+   "aliases": [
+    "truncated Eisenstein norm"
+   ],
+   "plain": "Norm of truncated Eisenstein series expressed via φ and φ′; positivity there is automatic.",
+   "label": "Numerical",
+   "core": "TAA Lemma 146 §8.1: Maass–Selberg ‖Λ^T E‖² minimum 0.611 (ζ) vs 1.383 (DH) over 540 points ⇒ ghost-blind; it only constrains ζ(w) ≠ 0 for Re w > 1 (already known).",
+   "formula": "",
+   "numbers": [
+    "0.611 (ζ)",
+    "1.383 (DH)"
+   ],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "eisenstein_ct",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 107
+  },
+  {
+   "id": "metaplectic",
+   "name": "Metaplectic / Kubota cocycle",
+   "aliases": [
+    "Kubota",
+    "double cover"
+   ],
+   "plain": "A 2-valued cocycle on SL₂ behind half-integer weight; structure without sign.",
+   "label": "Theorem",
+   "core": "TAA Lemma 146 §4: Kubota cocycle is a phase (Ax3); Hilbert product formula 300/300, quadratic reciprocity; θ weight ½ is metaplectic (a fourth root, TAA Lemma 141 §7) — mod 2 data, ghost-blind.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L138",
+    "L141",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "cocycle_principle",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "w2_cech",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 108
+  },
+  {
+   "id": "prime_two_wild",
+   "name": "The prime 2 as the wild place",
+   "aliases": [
+    "even prime",
+    "√2 and (2/p)",
+    "supplementary law",
+    "bad reduction at 2"
+   ],
+   "plain": "The only even prime is 2 (not √2). At 2 the Gauss halves break: (p − 1)/2 is not an integer, every model y² = f(x) has bad reduction, and the Hilbert symbol / metaplectic cocycle is wild. √2 enters through (2/p), which depends on p mod 8.",
+   "label": "Theorem",
+   "core": "Supplementary law: (2/p) = +1 ⇔ p ≡ ±1 mod 8; √2 ∈ ℚ(ζ₈), so (2/p) is the character χ₈ (the √2 family). At p = 2, (p − 1)/2 is not an integer and every Weierstrass model y² = f(x) is bad at 2; the Hilbert symbol and the metaplectic (Kubota) cocycle are wild at 2. All of this is phase data, hence ghost-blind.",
+   "formula": "(2/p) = (−1)^{(p²−1)/8}",
+   "numbers": [],
+   "axes": [
+    "ghost-blind",
+    "phase/unitarity (Ax3)",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The even prime is 2, not √2; √2 appears only through the character (2/p) = χ₈(p)."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "metaplectic",
+     "note": "wild at 2: Hilbert symbol / Kubota cocycle"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "sqrt2_family",
+     "note": "χ₈ = (2/·), √2 ∈ ℚ(ζ₈)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "cocycle_principle",
+     "note": "structure, not sign"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 109
+  },
+  {
+   "id": "scattering_phi",
+   "name": "Scattering unitarity |φ| = 1",
+   "aliases": [
+    "|φ| = 1",
+    "unitary scattering matrix"
+   ],
+   "plain": "The cusp scattering coefficient has modulus one on the critical line — true with or without RH.",
+   "label": "Theorem",
+   "core": "|φ(½ + it)| = 1 follows from the functional equation; it is Ax3 (adjoint) only and ghost-blind.",
+   "formula": "|φ(½ + it)| = 1",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Not Rosati: only the ππ† = q half."
+   ],
+   "lemmas": [
+    "L144",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "functional_equation",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "rosati",
+     "note": "Ax3 half only"
+    },
+    {
+     "type": "analogue-of",
+     "to": "lax_phillips",
+     "note": "unitary scattering"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 110
+  },
+  {
+   "id": "eisenstein_ct",
+   "name": "Eisenstein constant term & scattering φ(s)",
+   "aliases": [
+    "constant term y^s + φ(s)y^{1−s}",
+    "φ(s) = ξ(2s−1)/ξ(2s)"
+   ],
+   "plain": "The Eisenstein series’ constant term has two pieces linked by φ(s); on Re s = ½ |φ| = 1 for any zeros — a phase statement.",
+   "label": "Theorem",
+   "core": "φ(s) = ξ(2s−1)/ξ(2s); |φ(½+it)| = 1 unconditionally (unitarity of scattering). Ghost-blind.",
+   "formula": "φ(s) = ξ(2s − 1)/ξ(2s)",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "|φ| = 1 is only Ax3."
+   ],
+   "lemmas": [
+    "L144",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "scattering_phi",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "functional_equation",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 111
+  },
+  {
+   "id": "gauss_half",
+   "name": "Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula",
+   "aliases": [
+    "Gauss 1/2 system",
+    "(p+1)/2 split",
+    "p/4 measure",
+    "691 → 173",
+    "Hasse invariant"
+   ],
+   "plain": "Every odd prime p splits the nonzero residues into (p − 1)/2 squares and (p − 1)/2 non-squares; the quadratic character (x/p) records which. For an elliptic curve y² = f(x), a_p is minus the sum of these characters, and its value mod p is a Gauss-half power.",
+   "label": "Theorem",
+   "core": "a_p = −Σ_x (f(x)/p) for y² = f(x); Hasse: a_p ≡ coefficient of x^{p−1} in f^{(p−1)/2} mod p. For p ≡ 3 mod 4, (p + 1)/4 is an integer and √a = a^{(p+1)/4} mod p (691 → 173). y² = x³ − x: a_p = −2, 6, 2 for p = 5, 13, 17; a_p = 0 for p ≡ 3 mod 4, so N₆₉₁ = 692. The Gauss halves see only the coherent H¹(E, 𝒪), i.e. a_p mod p; the bound |a_p| ≤ 2√p needs positivity (Castelnuovo/Hodge index).",
+   "formula": "a_p = −Σ_x (f(x)/p), a_p ≡ [x^{p−1}] f^{(p−1)/2} mod p",
+   "numbers": [
+    "(691 + 1)/4 = 173",
+    "N₆₉₁(y² = x³ − x) = 692"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "ghost-blind",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "a_p mod p is phase-type information; it does not give the size bound |a_p| ≤ 2√p.",
+    "The ½ of (p ± 1)/2 is a counting half; relating it to the half-density ½ is an analogy."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "half_density",
+     "note": "the ½ in (p ± 1)/2 vs the unitary |x|^{½} twist; analogy"
+    },
+    {
+     "type": "fails-for",
+     "to": "castelnuovo_severi",
+     "note": "mod-p data cannot give the size bound; that needs Castelnuovo–Severi"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "gauss_sum_unitarity",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 112
+  },
+  {
+   "id": "half_density",
+   "name": "Half-density normalization |x|^{½}",
+   "aliases": [
+    "½ shift",
+    "unitary normalization"
+   ],
+   "plain": "Multiplying by |x|^{½} makes scaling unitary on L²; this is why the critical line is at ½.",
+   "label": "Theorem",
+   "core": "TAA Lemma 145 Thm twist: |x|^½ = (dx/d*x)^½ is unitary L²(dx) → L²(d*x); U_λ unitary with generator −(x∂_x + ½); Mellin is unitary only on Re s = ½ (Plancherel 0.35355339 both sides; at Re 0.4 a weighted norm 0.53173). Cusp gauge y²∂²(y^½W) = y^½(W″ − W/4).",
+   "formula": "f ↦ |x|^{½} f",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "There are two ½’s (TAA Lemma 145 corrections): the unitary twist and the critical line."
+   ],
+   "lemmas": [
+    "L1",
+    "L141",
+    "L145"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "arith_unitarity",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "lamb_cutoff",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 113
+  },
+  {
+   "id": "hilbert_reciprocity_at_2",
+   "name": "Hilbert reciprocity at 2: the odd halves become sign bits",
+   "aliases": [
+    "ε(u) = (u−1)/2",
+    "ω(u) = (u²−1)/8",
+    "2-adic Hilbert symbol",
+    "sign of the prime 2",
+    "product formula"
+   ],
+   "plain": "At odd primes the halves (p − 1)/2 count squares; at 2 the corresponding quantities ε(u) = (u − 1)/2 and ω(u) = (u² − 1)/8 are sign bits. Hilbert reciprocity says the sign at 2 is fixed by the odd places and ∞. This is phase information, not positivity.",
+   "label": "Cited",
+   "core": "(−1/p) = (−1)^{ε(p)}, (2/p) = (−1)^{ω(p)}. 2-adic Hilbert symbol: for a = 2^α u, b = 2^β v with u, v odd units, (a,b)₂ = (−1)^{ε(u)ε(v) + αω(v) + βω(u)} (Serre, A Course in Arithmetic, Ch. III, Thm 1). Product formula ∏ᵥ (a,b)ᵥ = 1 over all places including ∞ ⇒ the 2-adic sign is determined by the odd places and ∞; it is a restatement of quadratic reciprocity with both supplementary laws. ℚ₂^×/squares has order 8; ℤ₂^×/squares = {±1, ±5} has order 4: two sign bits, ε (sign of −1) and ω (the √2 / χ₈ bit). Checked: product formula holds for 3000 random pairs |a|, |b| ≤ 5000; ε, ω for u = 1, 3, 5, 7: (0,0), (1,1), (0,1), (1,0). Phase data (Ax3), ghost-blind: Davenport–Heilbronn shares the same reciprocity.",
+   "formula": "∏ᵥ (a,b)ᵥ = 1, (a,b)₂ = (−1)^{ε(u)ε(v) + αω(v) + βω(u)}",
+   "numbers": [
+    "ℚ₂^×/(ℚ₂^×)² order 8",
+    "ℤ₂^×/squares = {±1, ±5}",
+    "3000/3000 product-formula checks"
+   ],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "to verify: Serre, A Course in Arithmetic, Ch. III Thm 1 not opened here; formula re-checked numerically via the product formula only.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The sign at 2 is a reciprocity sign (phase), not the positivity sign of RH; reading it as the half-density counterpart is an analogy.",
+    "Equivalent to quadratic reciprocity, not to RH."
+   ],
+   "lemmas": [
+    "L150 (planned)"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "gauss_half",
+     "note": "odd halves (p ± 1)/2 ↔ sign bits ε, ω at 2"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "prime_two_wild",
+     "note": "2 as the wild place"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "metaplectic",
+     "note": "Hilbert symbol = the cocycle behind the metaplectic cover"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "sqrt2_family",
+     "note": "ω is the χ₈ = (2/·) bit"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 114
+  },
+  {
+   "id": "count_positivity",
+   "name": "Counts vs quadratic positivity",
+   "aliases": [
+    "N_n ≥ 0"
+   ],
+   "plain": "Point counts being positive does not force RH; only quadratic forms can.",
+   "label": "Theorem",
+   "core": "TAA Lemma 109: 2935 count-positive ghosts (g = 2, q = 11).",
+   "formula": "",
+   "numbers": [
+    "2935"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L109"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "fake_weil_poly",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 115
+  },
+  {
+   "id": "w2_cech",
+   "name": "w₂ / Čech class (TAA Lemma 138)",
+   "aliases": [
+    "Stiefel–Whitney",
+    "spin obstruction"
+   ],
+   "plain": "Obstruction class to a spin structure, tested as a candidate arithmetic object (TAA Lemma 138).",
+   "label": "Theorem",
+   "core": "TAA Lemma 138: the Čech 2-class (polarization, c₁) supplies the pairing, † and Ax3 (π*L ≅ L^q) for free; spin supplies mod-2 refinements only; the sign is always ampleness. TAA Lemma 141 §7: w₂ = c₁ mod 2; half-densities are canonical (no w₂); w₂ governs half-forms (K^{1/2} = ω weight 1).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "w₂ is not for densities (TAA Lemma 141 list)."
+   ],
+   "lemmas": [
+    "L138",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "cocycle_principle",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 116
+  },
+  {
+   "id": "weight_ladder",
+   "name": "Weight ladder (modular weights)",
+   "aliases": [
+    "weight k ladder"
+   ],
+   "plain": "Modular forms come in weights; at each rung the Eisenstein series E_k is the reference. A “stratification” of modular structures is this ladder.",
+   "label": "Theorem",
+   "core": "TAA Lemma 146 corrections: stratification = weight ladder, with E_k the reference per rung; cusp positivity on each rung is ghost-blind. TAA Lemma 139 weight-1 search: weight-1 modular = motivic weight 0 (η(z)η(23z), |α| = 1); motivic weight 1 = weight-2 cusp forms (11a, Rosati PD); ζ appears only in Eisenstein lines (ζ_K weight 1, ζ(s)ζ(s−1) weight 2), not in L².",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L146",
+    "L139"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "e2_anomaly",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "cusp_forms_petersson",
+     "note": "cusp positivity per rung is ghost-blind"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 117
+  },
+  {
+   "id": "yoshida",
+   "name": "Yoshida window positivity",
+   "aliases": [
+    "Yoshida 1992",
+    "small-support positivity"
+   ],
+   "plain": "For test functions supported in a small enough window, Weil positivity holds unconditionally.",
+   "label": "Cited",
+   "core": "Yoshida: W ≥ 0 for supp f ⊂ small window; TAA Lemma 10 window ≤ log 3. Below ghost onsets, so ghost-blind.",
+   "formula": "",
+   "numbers": [
+    "log 3 (L10)"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Unconditional windows never reach ghost onset."
+   ],
+   "lemmas": [
+    "L10",
+    "L142"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "certified_windows",
+     "note": ""
+    },
+    {
+     "type": "fails-for",
+     "to": "ghost_onset",
+     "note": "windows smaller than onset"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 118
+  },
+  {
+   "id": "cup_product",
+   "name": "Cup product / Poincaré duality pairing",
+   "aliases": [
+    "∪",
+    "duality pairing"
+   ],
+   "plain": "The pairing of cohomology classes; it gives the duality partner of a zero, ghosts included.",
+   "label": "Theorem",
+   "core": "Duality partner via cup product (TAA Lemma 93); positivity needs conjugate + Hodge structure (HR).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L93",
+    "L134",
+    "L138"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "two_partners",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 119
+  },
+  {
+   "id": "theta_inversion",
+   "name": "Theta inversion θ(1/t) = √t θ(t)",
+   "aliases": [
+    "Jacobi theta",
+    "Poisson summation"
+   ],
+   "plain": "Poisson summation gives the functional equation; phase data.",
+   "label": "Theorem",
+   "core": "θ(1/x) = √x θ(x) gives Riemann’s FE and the boundary terms f(0), f̂(0) of 1/(s(s−1)) (TAA Lemma 36 §6). TAA Lemma 138 R4: theta inversion for x² + 5y² to 3e−30; Weil representation unitary, (ST)³ = Gauss sum · I; unitarity ⇒ FE only, ghost-blind (Thm). TAA Lemma 145: θ FE error 6.3e−26; TAA Lemma 146: θ S-error ≤ 2.5e−16, Fresnel = half-density × Weil index.",
+   "formula": "θ(1/t) = √t θ(t)",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L36",
+    "L138",
+    "L145",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "implies",
+     "to": "functional_equation",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "metaplectic",
+     "note": "Weil index"
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 120
+  },
+  {
+   "id": "kms_bost_connes",
+   "name": "Bost–Connes KMS states",
+   "aliases": [
+    "BC system"
+   ],
+   "plain": "A quantum statistical system whose partition function is ζ(β); its positive KMS states and phase transition at β = 1 see ζ only at real β > 1, never the zeros.",
+   "label": "Cited",
+   "core": "BC95 (Thm 5; CM08 3.32): Q-structure, Gal(Q^cycl/Q) symmetry, positive KMS states, ζ(β) real for β > 1; no trace equal to the Weil distribution found (TAA Lemma 30). TAA Lemma 38: strongest rigorous bridge; BC time is dual to rapidity, (β,t) = (Re s, −Im s); BC ordered phase ⇔ ω > ½. TAA Lemma 39: BC = tensor product over primes twisted by Galois. TAA Lemma 54/TAA Lemma 118: KMS/passivity uses ζ at real β > 1 ⇒ ghost-blind.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "BC95 Thm 5(a) states β < 1 (β ≤ 1 from CM08 3.32) (TAA Lemma 38 flag)."
+   ],
+   "lemmas": [
+    "L30",
+    "L38",
+    "L39",
+    "L54",
+    "L118"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "connes_trace",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 121
+  },
+  {
+   "id": "spin_theta",
+   "name": "Spin structure & theta characteristic",
+   "aliases": [
+    "theta characteristic",
+    "spin"
+   ],
+   "plain": "Theta characteristics = spin structures = square roots of the canonical bundle; they refine the Weil pairing mod 2 and are shared by fakes and true curves alike.",
+   "label": "Theorem",
+   "core": "TAA Lemma 136: theta chars = spin structures = quadratic refinements of the Weil pairing; Arf counts 3/1, 10/6, 36/28, 136/120, 528/496 (g ≤ 5); K^{1/2} = fixed points of D ↦ K − D = self-dual centre s = ½ [R]. TAA Lemma 138 R3 (exhaustive g ≤ 2): #Frobenius-fixed theta chars = #J[2](F_q); fakes share mod-2 data with true curves ⇒ ghost-blind (Thm). TAA Lemma 141 §7: w₂ governs half-forms (K^{1/2}), not half-densities.",
+   "formula": "",
+   "numbers": [
+    "Arf 3/1, 10/6, 36/28, 136/120, 528/496"
+   ],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "\"Spec ℤ not spin\": the real place obstructs a half twist — analogy only (TAA Lemma 50 Rem 7.3)."
+   ],
+   "lemmas": [
+    "L50",
+    "L136",
+    "L138",
+    "L141"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "w2_cech",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 122
+  },
+  {
+   "id": "cocycle_principle",
+   "name": "\"Cocycles give structure, not sign\"",
+   "aliases": [
+    "cocycle principle"
+   ],
+   "plain": "Any cocycle/class (metaplectic, w₂, defect) fixes structure but cannot decide a positivity sign.",
+   "label": "Heuristic",
+   "core": "TAA Lemma 138/TAA Lemma 144/TAA Lemma 146 summary principle.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L138",
+    "L144",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "split_blind_sensitive",
+     "note": ""
+    }
+   ],
+   "priority": 0.256,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 0.7,
+    "specificity": 0.05,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 123
+  },
+  {
+   "id": "archimedes",
+   "name": "Buoyancy / Archimedes principle",
+   "aliases": [
+    "buoyancy",
+    "displaced fluid"
+   ],
+   "plain": "Weight is measured relative to the fluid displaced; Castelnuovo–Severi and the pole subtraction can be read the same way.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §7: C–S as D² = 2ab + D′² — Archimedes relative to U; the sign is an input (fluids), proved (curves), ⇔ RH (ζ). Buoyancy sign as input: TAA Lemma 146 corrections.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Analogy, not a mechanism."
+   ],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "castelnuovo_severi",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "displaced_reference",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 124
+  },
+  {
+   "id": "heaviside",
+   "name": "Heaviside RLGC line",
+   "aliases": [
+    "telegrapher",
+    "RLGC"
+   ],
+   "plain": "Transmission line with resistance, inductance, conductance, capacitance; used as a model for β.",
+   "label": "Analogy",
+   "core": "TAA Lemma 25: {R/L, G/C} = {β, 1 − β} in τ, orientation conventional (Prop 3.3); TAA Lemma 143 R/2L ↔ β/2; TAA Lemma 144 unordered {(1−β)/2, β/2} in u.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue"
+   ],
+   "uncertain": "R/L vs G/C ordering conventional.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The R/L, G/C ordering is a convention and differs between TAA Lemmas 25, 143 and 144."
+   ],
+   "lemmas": [
+    "L25",
+    "L143",
+    "L144"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "distortionless",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.4,
+    "quadrant": "background"
+   },
+   "rank": 125
+  },
+  {
+   "id": "mass_density",
+   "name": "Mass-density positivity",
+   "aliases": [
+    "positive mass"
+   ],
+   "plain": "Single positive quantity (like mass) as model for Rosati.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §7: N² = −(g/ρ)ρ′ (buoyancy frequency); the sign of the density gradient is an input for fluids, proved for curves, ⇔ RH for ζ.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "Analogy only.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "rosati",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.4,
+    "quadrant": "background"
+   },
+   "rank": 126
+  },
+  {
+   "id": "distortionless",
+   "name": "Distortionless line R/L = G/C",
+   "aliases": [
+    "Heaviside condition"
+   ],
+   "plain": "Line that transmits without distortion; corresponds to β = ½.",
+   "label": "Analogy",
+   "core": "TAA Lemma 25/TAA Lemma 143: distortionless ⇔ β = ½.",
+   "formula": "R/L = G/C",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L25",
+    "L143"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "heaviside",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 127
+  },
+  {
+   "id": "anomalous_dispersion",
+   "name": "Anomalous dispersion",
+   "aliases": [
+    "dispersion near resonance"
+   ],
+   "plain": "Phase behavior near a line; ghost-blind.",
+   "label": "Analogy",
+   "core": "TAA Lemma 36: anomalous dispersion = analogy — gain lines are where absorption and phase disagree; THM 4.3 absorption–phase sum rule ∫₀ᵀ Re ξ′/ξ(σ₀+it)dt = π[N(T) − 2N(σ₀,T)] + …, deficit 2πN(σ₀,T) ≥ 0 (leads to zero density, not a proof). TAA Lemma 78: causality versus linewidth, Kramers–Kronig for the modular scattering matrix. TAA Lemma 146: dRe χ/dω at centre −6 (absorber) vs +6 (gain).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L36",
+    "L78",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "kramers_kronig",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "gain_line",
+     "note": ""
+    }
+   ],
+   "priority": 0.212,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 0.6,
+    "specificity": 0.05,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 128
+  },
+  {
+   "id": "lamb_cutoff",
+   "name": "Lamb cutoff",
+   "aliases": [
+    "Lamb"
+   ],
+   "plain": "In a stratified fluid, waves below the Lamb cutoff frequency c/2H cannot propagate; on the modular surface the cusp’s −¼ is exactly this cutoff with scale height H = 1.",
+   "label": "Analogy",
+   "core": "TAA Lemma 146 §7: with dy/y² = e^{−r}dr, the cusp −¼ equals the Lamb cutoff c/2H with H = 1 (exact operator identity); TAA Lemma 141 §6: the cusp is a Webster horn A = e^{−r}, Liouville factor e^{r/2}, and +¼ cancels the horn cutoff. Same −¼ as y²∂²(y^½W) = y^½(W″ − W/4) (TAA Lemma 145).",
+   "formula": "y²∂²(y^½W) = y^½(W″ − W/4)",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Lamb’s original source not opened (TAA Lemma 146 refs); the identity is checked as an operator identity."
+   ],
+   "lemmas": [
+    "L141",
+    "L145",
+    "L146"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "half_density",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "archimedes",
+     "note": "same stratified-fluid picture"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "decay_quarter",
+     "note": "the same ¼"
+    }
+   ],
+   "priority": 0.181,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.05,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 129
+  },
+  {
+   "id": "two_chis",
+   "name": "Two different χ’s: Euler characteristic vs class-group character",
+   "aliases": [
+    "which chi",
+    "χ notation clash"
+   ],
+   "plain": "The χ of the Connes–Consani Riemann–Roch on the square is an Euler characteristic of a divisor; the χ¹¹ / ω⁻¹¹ of the 691 story is a Galois character labelling an eigenspace. Different objects; any link is an analogy.",
+   "label": "Analogy",
+   "core": "Euler characteristic χ(D) = dim H⁰ − dim H¹ (TAA Lemma 145/TAA Lemma 147, a number for each divisor) vs Teichmüller / cyclotomic character ω, χ_cyc (TAA Lemma 66, labels of eigenspaces of Cl(ℚ(μ₆₉₁)) and of ρ_Δ mod 691). Shared shape only: Mazur–Wiles equates an algebraic size with an L-value, as RR equates χ with degree + constant. Neither sees the sign of D² (Iwasawa: sizes; CC RR: linear χ).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "ghost-blind"
+   ],
+   "uncertain": "The analogy itself is interpretive; no TAA lemma relates the two.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Do not identify them: notation clash only.",
+    "Iwasawa measures sizes, never the sign of D²."
+   ],
+   "lemmas": [
+    "L66",
+    "L145",
+    "L147"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "euler_char_chi",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "herbrand_ribet",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "mazur_wiles",
+     "note": ""
+    }
+   ],
+   "priority": 0.181,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.05,
+    "tractability": 0.4,
+    "evidence": 0.4,
+    "quadrant": "background"
+   },
+   "rank": 130
+  },
+  {
+   "id": "standard_conj",
+   "name": "Standard conjectures (Hodge type)",
+   "aliases": [
+    "Hodge standard conjecture",
+    "Grothendieck"
+   ],
+   "plain": "The higher-dimensional version of Hodge index in characteristic p; known for surfaces, open in general.",
+   "label": "Open",
+   "core": "Hodge standard conjecture: known in char 0 and for surfaces, abelian fourfolds (Ancona 2021), K3² (IIK 2022); open in general char p, dim ≥ 3. Common root of Hodge, BSD and RH over F_q; analogy over ℚ (TAA Lemma 88).",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "geometry over F_q",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "TAA Lemma 89, correction 4: unrefereed preprint claim (CM Hodge ⇒ standard conjecture) flagged, not applied."
+   ],
+   "lemmas": [
+    "L88",
+    "L94",
+    "L134"
+   ],
+   "rels": [
+    {
+     "type": "special-case-of",
+     "to": "hodge_index",
+     "note": "generalization"
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 131
+  }
+ ],
+ "counts": {
+  "concepts": 131,
+  "relations": 279
+ }
+}
