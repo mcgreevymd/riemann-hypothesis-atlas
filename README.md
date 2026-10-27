@@ -156,6 +156,10 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 - Arithmetic Unitarity IVb: https://ai.vixra.org/abs/2610.0055
 - Arithmetic Unitarity V: https://ai.vixra.org/abs/2610.0059
 
+## Lemmas
+
+- [Lemma 159: The arithmetic equation of state](lemmas/lemma159_arithmetic_equation_of_state.pdf) (J. W. McGreevy; formalization by Grok Bot). RH is not proved.
+
 ## How to cite
 
 J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.1 (27 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
