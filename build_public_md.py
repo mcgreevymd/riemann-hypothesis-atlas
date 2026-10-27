@@ -9,7 +9,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, 'atlas.json'), encoding='utf-8'))
 C = sorted(D['concepts'], key=lambda c: c['rank'])
 BY = {c['id']: c for c in C}
-VERSION, VDATE = '1.2', '27 Oct 2026'
+VERSION, VDATE = '1.3', '27 Oct 2026'
 
 REL = {'same-mechanism-as': 'same mechanism as', 'special-case-of': 'special case of',
        'analogue-of': 'analogue of', 'implies': 'implies', 'equivalent-to-RH': 'equivalent to RH',

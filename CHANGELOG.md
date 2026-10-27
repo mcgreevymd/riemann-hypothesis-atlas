@@ -1,5 +1,17 @@
 # Changelog — The RH Atlas
 
+## v1.3 — 27 Oct 2026
+
+- 230 concepts (+26) and 770 typed relations (+135), all in descending priority with the Heuristic scoring layer.
+- TAA Lemmas 161–162, orbits and hidden symmetry: the F/V sweep as a Kepler orbit sequence (apsidal axes fixed at 45°/135°, circle → ellipse → parabola → hyperbola); apsides as zeros of the dual-minus-adjoint gap form; the Laplace–Runge–Lenz trichotomy SO(4) / E(3) / SO(1,3) [Analogy]; definite versus gyroscopic stability; Moser/Souriau's S²×S² orbit space; the Kustaanheimo–Stiefel quaternion lift; four squares as the Eisenstein lift of ζ; Hecke operators on S³ (Lubotzky–Phillips–Sarnak); half representations of SL(2, F_p); compact versus non-compact real forms of so(4, ℂ); boosts, rotations and the KMS condition [Heuristic].
+- TAA Lemma 163, the standing frame: SO(2,2) on AdS₃ as the frame group of the F/V animation, with SO(4) on S³ as its compact dual; which real Lie algebras can carry an off-line quartet; under MP0–MP3, a compact zero-side real form is equivalent to RH [Restatement].
+- TAA Lemma 164: KMS / modular positivity is coefficient positivity (a_n ∈ ℤ≥0), so it does not separate Davenport–Heilbronn-type fakes; the Epstein entry corrected (its ghost is not new).
+- TAA Lemma 165, composite leakage: −F′/F is supported on prime powers exactly for an Euler product; the σ-pencil from L(χ₅) to Davenport–Heilbronn and the genealogy of its off-line zeros (births at Krein-type folds).
+- TAA Lemmas 166–169: over F_q, point counts and a positive Euler product do not by themselves induce the Hodge sign (the sign comes from the surface C×C); the primitive-part Weil spectrometer; growing-S truncation rates (Euler-product truncations fail just after the log of the first omitted prime, Davenport–Heilbronn locks at its global onset); the Epstein zeta of x² + 5y² as a second standing ghost next to Davenport–Heilbronn [Numerical].
+- Missing Piece v5 entries: the MP4 headline as a one-line Conjecture, stated geometrically — the Euler product, taken as geometry (the Frobenius correspondence: graph classes on the square with an ample class), not as counting data, induces the Hodge splitting of the square, with its sign — with the sharper form underneath; the Weil template (Deninger's foliation as one factor, the Connes–Consani square as the product, the cusp part split off) [Analogy]; the n! bridge across all places; no-go items 27–32. First use of the label Conjecture in the atlas.
+- Updated entries include Davenport–Heilbronn, Epstein, Weil positivity, the primitive part, Hecke operators, Hodge index, Krein collisions and the MP4 missing piece.
+- Figures: the 45° flip of the F/V ring (`figures/flip45/`).
+
 ## v1.2 — 27 Oct 2026
 
 - 204 concepts (+21) and 635 typed relations (+106), all in descending priority with the Heuristic scoring layer.
