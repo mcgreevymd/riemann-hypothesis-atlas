@@ -1,5 +1,14 @@
 # Changelog — The RH Atlas
 
+## v1.2 — 27 Oct 2026
+
+- 204 concepts (+21) and 635 typed relations (+106), all in descending priority with the Heuristic scoring layer.
+- TAA Lemma 157, two Verschiebungs: the pairing dual V^∨ versus the positive adjoint V†; Γ (the width of a zero) as their gap, ⟨(Θ^∨ − Θ†)v, v⟩ = 1 − 2β; the Kähler triple (ω, J, g) as a polarization; a sharpened form of MP4 (a J commuting with the flow, built without the zeros) [Theorem; Open for MP4].
+- TAA Lemma 158, the missing square: ℤ ⊗ ℤ = ℤ collapses Spec ℤ × Spec ℤ to the diagonal; Kähler identities on foliated spaces (MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting); the adelic solenoid and profinite integers; 𝔽₁ square constructions; the F/V merge trichotomy (elliptic, parabolic, hyperbolic).
+- TAA Lemma 159, the arithmetic equation of state: the primon gas / Bost–Connes dictionary, time as imaginary temperature, dT∧dS = dP∧dV, Clausius versus passivity, Ruppeiner and contact geometry, Lee–Yang versus Fisher zeros, and a ladder of gas positivities that separate Davenport–Heilbronn without forcing RH.
+- TAA Lemma 160, zeros as frames: an Euler factor never vanishes; Wick rotation of one frame (cos θ → cos(iφ) = cosh φ) from elliptic through parabolic to hyperbolic, ending at the ζ(s)ζ(s−1) Eisenstein factor; zeros of the de Bruijn–Newman family leave the real line only through a double zero (a Krein collision) or from infinity; RH ⇔ Λ = 0 (Rodgers–Tao), with the threshold at infinity when the zeros are simple; invariant (χ-type) versus refined (h-type) zero counts, and why count invariance is ghost-blind.
+- Updated entries include Davenport–Heilbronn, de Bruijn–Newman, Krein collisions, Hecke operators, passivity, Deninger and the MP4 missing piece.
+
 ## v1.1 — 27 Oct 2026
 
 - 183 concepts (+52) and 529 typed relations (+250).
