@@ -2,7 +2,9 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.3 · 27 Oct 2026
+Version 1.4 · 27 Oct 2026
+
+> **New in v1.4** (see [CHANGELOG.md](CHANGELOG.md)): TAA Lemma 174, the Livšic route to conformality for Deninger's conjectured flow. On a compact manifold a conformal flow has α = 0, so the phase space must be solenoidal [Theorem]; the explicit formula fixes only the sign and |det| = p of each prime orbit's return map, not its conformality [Theorem]; and conformality on every prime orbit is strictly stronger than RH (a perturbed version of Deninger's elliptic-curve example over 𝔽₅ keeps RH but has a non-conformal fixed point), so the missing input must be a global positivity on the square, which restates Connes–Consani [Theorem; Restatement]; a continuous Beurling system with very regular integer counts still has a zero off the line, at 0.75 ± 10i [Theorem, computer-checked example]; and Conjecture B\* (Euler product + counting error O(x^θ), θ < ½ ⇒ RH) appears false: a deterministic discretization of that continuous system keeps an exact zero at 0.75 ± 10i while its measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ [Numerical refutation; asymptotic θ < ½ is not proved]. The three remaining steps A1–A3 are [Open]. **The Riemann Hypothesis is not proved.**
 
 <p align="center"><img src="figures/animation_labelled/fv_sweep.gif" alt="F and V as the roots of x² − a·x + q while the trace a sweeps: ellipse, double line, hyperbolic window" width="820"></p>
 
@@ -86,7 +88,7 @@ Most PNGs have a PDF twin. The detailed overview is PNG only. The Kramers–Kron
 
 ## What this is
 
-The RH Atlas is a structured catalogue of 230 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 770 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
+The RH Atlas is a structured catalogue of 233 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 780 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
 
 Every entry says in plain words what the concept is, gives its precise core statement, carries a label for how well established it is, and records corrections and cautions where a tempting claim turns out to be false.
 
@@ -178,7 +180,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.3 (27 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.4 (27 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -198,4 +200,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.3, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.4, CC BY 4.0”.

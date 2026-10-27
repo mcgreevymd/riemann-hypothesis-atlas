@@ -1,5 +1,13 @@
 # Changelog — The RH Atlas
 
+## v1.4 — 27 Oct 2026
+
+- 233 concepts (+3) and 780 typed relations (+10), all in descending priority with the Heuristic scoring layer. Only TAA Lemma 174 is folded in this release.
+- TAA Lemma 174, the Livšic route to conformality for Deninger's conjectured flow: on a compact manifold, a flow that is conformal on the leaf tangent bundle with factor e^{αt} has α = 0, so ζ (which needs α = 1) needs a solenoidal phase space, as in Deninger's elliptic-curve example [Theorem]. Under Deninger's working hypothesis, the explicit formula fixes only the sign and |det A_p| = p of each prime orbit's return map; the trace, and so conformality, is invisible to it [Theorem]. Conformality on every prime orbit is also strictly stronger than RH: a nonlinear perturbation of Deninger's CM elliptic-curve solenoid over 𝔽₅ keeps H¹, hence RH, but has a node fixed point [Theorem]. A per-orbit route therefore needs a rigidity axiom that arithmetic does not supply, and (B) must be global: an intersection pairing Γ_F·Δ on the square with Rosati/Hodge-index positivity, which restates Connes–Consani [Restatement]. The Livšic-route entry is rescored accordingly (priority 0.579; its target is not RH-necessary). The scalar factor e^t comes from abelian Livšic; the conformal structure does not. The route splits into three steps: (A1) a solenoidal Kalinin–Sadovskaya theorem, (A2) fixed points for infinitely generated orbit lengths, and (A3) the local input at prime orbits. All three are [Open].
+- Base regularity (B): the integer-counting error over nine systems. ℤ stays bounded; the randomly built discrete Beurling controls (shifted primes, Poisson primes, a planted off-line zero, random multiplicities) fluctuate at order √x [Numerical]. A continuous Beurling system with integer counts ρx + O(log² x) still has a zero at 0.75 ± 10i [Theorem, computer-checked example]. Conjecture B\* (Euler product + counting error O(x^θ), θ < ½ ⇒ RH) appears false: a deterministic discretization of that continuous Beurling system keeps an exact zero at 0.75 ± 10i while the measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ [Numerical refutation, not a theorem; asymptotic θ < ½ is not proved]. So integer-counting regularity is not, on its own, a route to RH. Compare Diamond–Montgomery–Vorhauer (2006) and Broucke–Vindas (arXiv 2102.08478); prior examples were not exhaustively searched. The entry is rescored as a no-go (priority 0.347; the test θ < ½ does not separate this off-line-zero system).
+- Updated entries: Davenport–Heilbronn, Deninger, Epstein.
+- The Riemann Hypothesis is not proved here.
+
 ## v1.3 — 27 Oct 2026
 
 - 230 concepts (+26) and 770 typed relations (+135), all in descending priority with the Heuristic scoring layer.

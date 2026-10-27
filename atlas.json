@@ -37,7 +37,8 @@
     "TAA Lemma 163: Weil-Gram real form O(n−q, q), q ≤ 24; on-line spacings KS vs GUE.121 (464 zeros, 5% crit.063)",
     "TAA Lemma 165: ghosts born from L(χ) along the σ-pencil at λ* ∈ [.033,.499], t ≤ 600; composite −L′/L terms from n = 6",
     "TAA Lemma 164: Toeplitz/Bochner test at β = 1.6 fails (DH not a partition function); companion positive ghost Z_Q (x²+5y²)",
-    "TAA Lemma 167: Weil index on kerP = full index (24 at h = 0.025, W = 15.95); onset 3.875"
+    "TAA Lemma 167: Weil index on kerP = full index (24 at h = 0.025, W = 15.95); onset 3.875",
+    "TAA Lemma 174: Σa(n) bounded (θ = 0) yet no Euler product; composite share of |c(n)| 0.878 (458,230 atoms ≤ 2·10⁶)"
    ],
    "axes": [
     "no-go / refuted",
@@ -78,7 +79,8 @@
     "L163",
     "L165",
     "L164",
-    "L167"
+    "L167",
+    "L174"
    ],
    "rels": [
     {
@@ -2355,6 +2357,80 @@
    "rank": 35
   },
   {
+   "id": "deninger",
+   "name": "Deninger’s foliated program",
+   "aliases": [
+    "foliation"
+   ],
+   "plain": "Deninger’s program: a foliated dynamical space whose leafwise cohomology carries the zeros; a positive Hodge star plus the flow would force Θ = ½ + (skew part).",
+   "label": "Cited",
+   "core": "TAA Lemma 4: foliation-like (Deninger) structure carries the explicit formula with its signs; contact-like (Reeb) gives only the analytic shadow; on closed M, Reeb flows and Deninger systems are mutually exclusive. TAA Lemma 28: zeros = leafwise zero modes [analogy/conjectural]. TAA Lemma 50 Prop 7.1 (Den98): positive J commuting with Θ ⇒ Θ − ½ skew [RESTATEMENT]. TAA Lemma 93: Deninger D1–D5 stated exactly. TAA Lemma 141 §2: level S3 of the \"surface\" target. TAA Lemma 151 Conj 4.1 (OPEN): Deninger's conjectured cohomology stated as axioms MP0–MP4 (H⁰/H² = Tate boundary terms; H¹ with flow, spectrum = zeros; trace formula; cup product to ℝ(−1); definite cup square on primitive part = the sign). Naming rule: no coined name until constructed. Deninger 2007 (opened): 'the conjectured cohomology has not been constructed'. TAA Lemma 174: Livšic route audit — conformal ⇒ α = 0 on compact manifolds (Thm V; Deninger Rem. 2); explicit formula fixes only ε = +1 and |det A_p| = p (Thm I).",
+   "formula": "Θ = ½ + A, A skew",
+   "numbers": [
+    "TAA Lemma 157: Den98 p.169 re-opened: Hodge ∗ with tr(f ∪ ∗f′) positive definite, ∗Θ = Θ∗ ⇒ Θ = ½ + A, A skew ⇒ RH; in TAA Lemma 157 terms Θ† = ∗⁻¹Θ^∨∗",
+    "TAA Lemma 158: Den05 p.18–19 (opened): foliated Hodge–Kähler theory (18)–(19), polarizable primitive H̄; 'I do not think that such a metric will exist … one will need the Kähler identities on cohomology' (for (11) Θ∗ = ∗(d−i+Θ))"
+   ],
+   "axes": [
+    "Spec ℤ gap",
+    "open target",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L4",
+    "L28",
+    "L50",
+    "L93",
+    "L141",
+    "L151",
+    "L153",
+    "L157",
+    "L158",
+    "L174"
+   ],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "arith_unitarity",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "connes_trace",
+     "note": "foliation vs leaf space; J. W. McGreevy conjectures an isomorphism (Hodge–Lefschetz style)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "mp_flow_h1",
+     "note": "MP0–MP4"
+    },
+    {
+     "type": "analogue-of",
+     "to": "consani_archimedean_cohomology",
+     "note": "archimedean Γ-factor proved (Consani 1998)"
+    },
+    {
+     "type": "lives-in",
+     "to": "conformal_flow_needs_solenoid",
+     "note": ""
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 36
+  },
+  {
    "id": "surface_ample_rr",
    "name": "Surface + ample + RR ⇒ Hodge index (D8)",
    "aliases": [
@@ -2398,74 +2474,6 @@
    "ranking": {
     "gap_significance": 0.8,
     "gap": "mp_quadratic_rr",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 36
-  },
-  {
-   "id": "deninger",
-   "name": "Deninger’s foliated program",
-   "aliases": [
-    "foliation"
-   ],
-   "plain": "Deninger’s program: a foliated dynamical space whose leafwise cohomology carries the zeros; a positive Hodge star plus the flow would force Θ = ½ + (skew part).",
-   "label": "Cited",
-   "core": "TAA Lemma 4: foliation-like (Deninger) structure carries the explicit formula with its signs; contact-like (Reeb) gives only the analytic shadow; on closed M, Reeb flows and Deninger systems are mutually exclusive. TAA Lemma 28: zeros = leafwise zero modes [analogy/conjectural]. TAA Lemma 50 Prop 7.1 (Den98): positive J commuting with Θ ⇒ Θ − ½ skew [RESTATEMENT]. TAA Lemma 93: Deninger D1–D5 stated exactly. TAA Lemma 141 §2: level S3 of the \"surface\" target. TAA Lemma 151 Conj 4.1 (OPEN): Deninger's conjectured cohomology stated as axioms MP0–MP4 (H⁰/H² = Tate boundary terms; H¹ with flow, spectrum = zeros; trace formula; cup product to ℝ(−1); definite cup square on primitive part = the sign). Naming rule: no coined name until constructed. Deninger 2007 (opened): 'the conjectured cohomology has not been constructed'.",
-   "formula": "Θ = ½ + A, A skew",
-   "numbers": [
-    "TAA Lemma 157: Den98 p.169 re-opened: Hodge ∗ with tr(f ∪ ∗f′) positive definite, ∗Θ = Θ∗ ⇒ Θ = ½ + A, A skew ⇒ RH; in TAA Lemma 157 terms Θ† = ∗⁻¹Θ^∨∗",
-    "TAA Lemma 158: Den05 p.18–19 (opened): foliated Hodge–Kähler theory (18)–(19), polarizable primitive H̄; 'I do not think that such a metric will exist … one will need the Kähler identities on cohomology' (for (11) Θ∗ = ∗(d−i+Θ))"
-   ],
-   "axes": [
-    "Spec ℤ gap",
-    "open target",
-    "physics analogue"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [
-    "L4",
-    "L28",
-    "L50",
-    "L93",
-    "L141",
-    "L151",
-    "L153",
-    "L157",
-    "L158"
-   ],
-   "rels": [
-    {
-     "type": "analogue-of",
-     "to": "arith_unitarity",
-     "note": ""
-    },
-    {
-     "type": "analogue-of",
-     "to": "connes_trace",
-     "note": "foliation vs leaf space; J. W. McGreevy conjectures an isomorphism (Hodge–Lefschetz style)"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "mp_flow_h1",
-     "note": "MP0–MP4"
-    },
-    {
-     "type": "analogue-of",
-     "to": "consani_archimedean_cohomology",
-     "note": "archimedean Γ-factor proved (Consani 1998)"
-    }
-   ],
-   "priority": 0.579,
-   "ranking": {
-    "gap_significance": 0.8,
-    "gap": "mp_flow_h1",
     "sensitivity": 1.0,
     "specificity": 0.5,
     "tractability": 0.6,
@@ -2652,6 +2660,72 @@
    "rank": 40
   },
   {
+   "id": "livsic_route_split",
+   "name": "Livšic route to conformality, split: under Deninger’s working hypothesis 7.5 ζ’s explicit formula fixes only ε_γp(k) = +1 and |det A_p| = p for the return map of the log p orbit; tr M_p (M_p = A_p/√p) is constrained only by |tr M_p| < √p + 1/√p, while Kalinin–Sadovskaya’s periodic-data conformality theorem needs |tr M_p| < 2; the scalar factor e^t is supplied by abelian Livšic, the conformal structure (≡ invariant leafwise J, i.e. H4 at the prime orbits) is not",
+   "aliases": [
+    "Livšic route",
+    "(A) split into A1–A3",
+    "invisibility theorem"
+   ],
+   "plain": "If every closed orbit of Deninger's hoped-for flow stretched its two transverse directions equally, a theorem of Kalinin and Sadovskaya type would make the whole flow conformal, and Deninger's theorem would put the zeros on the line. The explicit formula, though, only tells us each orbit's sign and its area scaling p. It cannot tell a rotation from a mild squeeze, so the key local input has to come from somewhere else. Worse, equal stretching on every orbit is more than RH needs: a slightly bent version of Deninger's own example keeps RH, yet stretches unequally at one fixed point. So the missing input has to be global, a positivity on the square, as in Connes and Consani's programme.",
+   "label": "Theorem",
+   "core": "[T] Thm I (invisibility) and Prop S (abelian half) of TAA Lemma 174; conditional on (A1) a solenoidal version of KS 2010 Thm 1.3 (Open). [C] Kalinin, Ann. Math. 173 (2011): Livšic for GL(m,R) cocycles over transitive homeomorphisms of compact metric spaces with the closing property; Kalinin–Sadovskaya, JMD 4 (2010) Thm 1.3: 2-dim fibres, return maps diagonalizable over C with equal-modulus eigenvalues ⇒ conformal (base: transitive C² Anosov diffeo of a compact manifold). [Open] (A1) solenoidal KS; [Open] (A2) fixed points (infinitely generated orbit lengths); [Open] (A3) the local input, invisible to the explicit formula. RH is not proved. [T] Conformal (SO(2)) periodic data on the prime orbits is invisible to the explicit formula (Thm I) and strictly stronger than RH: a nonlinear perturbation of Deninger's CM elliptic-curve solenoid over F₅ keeps H¹, hence RH, but has a node fixed point (agreed in partner review; the perturbation is not reproduced in TAA Lemma 174). So a per-orbit route needs a rigidity axiom that arithmetic does not supply, and (B) must be global: an intersection pairing Γ_F·Δ on the square with Rosati/Hodge-index positivity [R: this restates Connes–Consani]. Model: Deninger's elliptic-curve solenoid satisfies all links (return maps π^ν, C-linear; Hasse ⇔ |π| = √q).",
+   "formula": "",
+   "numbers": [
+    "allowed band 2 < |tr M_p| < √p + 1/√p (p = 2: 2.1213)",
+    "|det A_p| = p from the k ≤ −1 coefficients Np^k"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "Spec ℤ gap",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Kalinin–Sadovskaya 2010 is for C² Anosov diffeomorphisms of compact manifolds only.",
+    "The earlier reading “each prime orbit’s transversal is a rotation” holds only when |det| = 1 (TAA Lemma 174, correction 1)."
+   ],
+   "lemmas": [
+    "L174"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "mp_flow_h1",
+     "note": "reduces H4 to periodic orbits, given (A1)"
+    },
+    {
+     "type": "analogue-of",
+     "to": "deninger",
+     "note": "periodic-data route to Thm 4.1"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "kahler_identities_foliated",
+     "note": "invariant leafwise J = holomorphic flow"
+    },
+    {
+     "type": "lives-in",
+     "to": "connes_consani",
+     "note": "the global form of (B): Γ_F·Δ on the square with Rosati/Hodge-index positivity [Restatement]"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_flow_h1",
+    "sensitivity": 0.5,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "sharp but interpretive",
+    "sensitivity_override": true
+   },
+   "rank": 41
+  },
+  {
    "id": "parity_linear_chi",
    "name": "Parity argument: linear χ cannot see D²",
    "aliases": [
@@ -2700,7 +2774,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 41
+   "rank": 42
   },
   {
    "id": "adelic_gluing_bruhat_tits",
@@ -2753,7 +2827,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 42
+   "rank": 43
   },
   {
    "id": "tautology_boundary",
@@ -2805,7 +2879,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 43
+   "rank": 44
   },
   {
    "id": "no_etale_h1",
@@ -2846,7 +2920,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 44
+   "rank": 45
   },
   {
    "id": "mp4_euler_induces_hodge",
@@ -2935,7 +3009,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 45
+   "rank": 46
   },
   {
    "id": "rosati",
@@ -3018,7 +3092,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 46
+   "rank": 47
   },
   {
    "id": "castelnuovo_severi",
@@ -3090,7 +3164,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 47
+   "rank": 48
   },
   {
    "id": "krein_collision",
@@ -3181,7 +3255,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 48
+   "rank": 49
   },
   {
    "id": "frobenius_boost",
@@ -3263,7 +3337,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 49
+   "rank": 50
   },
   {
    "id": "breit_wigner_resonances",
@@ -3369,7 +3443,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 50
+   "rank": 51
   },
   {
    "id": "conic_type_at_infinity",
@@ -3429,7 +3503,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 51
+   "rank": 52
   },
   {
    "id": "epstein",
@@ -3450,7 +3524,8 @@
     "46 off-line zeros t ≤ 250",
     "TAA Lemma 164: ≥ 52 certified zeros with Re ρ ≥ 0.52, t < 400 (lower bound: grid starts at σ = 0.52)",
     "r_Q(6) = 4, r_Q(2) = r_Q(3) = 0",
-    "TAA Lemma 169: truncated Weil test h = 0.025: onset 3.0 (kerP 3.175, no pole 1.05); index 32 at W = 7.9; ζ_K control passes to W = 8"
+    "TAA Lemma 169: truncated Weil test h = 0.025: onset 3.0 (kerP 3.175, no pole 1.05); index 32 at W = 7.9; ζ_K control passes to W = 8",
+    "TAA Lemma 174: counting θ̂ ≈ 0.32; composite share of |c(n)| 0.921; ψ slope 0.92 (max Re 0.955)"
    ],
    "axes": [
     "no-go / refuted",
@@ -3471,7 +3546,8 @@
     "L153",
     "L159",
     "L164",
-    "L169"
+    "L169",
+    "L174"
    ],
    "rels": [
     {
@@ -3525,7 +3601,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 52
+   "rank": 53
   },
   {
    "id": "fv_merge_trichotomy",
@@ -3602,7 +3678,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 53
+   "rank": 54
   },
   {
    "id": "ghost_quartet",
@@ -3656,7 +3732,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 54
+   "rank": 55
   },
   {
    "id": "poincare_disk_period_domain",
@@ -3728,7 +3804,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 55
+   "rank": 56
   },
   {
    "id": "arith_unitarity",
@@ -3780,7 +3856,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 56
+   "rank": 57
   },
   {
    "id": "debruijn_newman",
@@ -3843,7 +3919,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 57
+   "rank": 58
   },
   {
    "id": "fake_weil_poly",
@@ -3904,7 +3980,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 58
+   "rank": 59
   },
   {
    "id": "compatible_J",
@@ -3967,7 +4043,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 59
+   "rank": 60
   },
   {
    "id": "fq_curves",
@@ -4027,7 +4103,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 60
+   "rank": 61
   },
   {
    "id": "gamma_as_dual_adjoint_gap",
@@ -4092,7 +4168,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 61
+   "rank": 62
   },
   {
    "id": "certified_zero_lists",
@@ -4158,7 +4234,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 62
+   "rank": 63
   },
   {
    "id": "decay_quarter",
@@ -4220,7 +4296,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 63
+   "rank": 64
   },
   {
    "id": "eisenstein_resonances_rho_half",
@@ -4282,7 +4358,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 64
+   "rank": 65
   },
   {
    "id": "euler_to_dh_pencil_genealogy",
@@ -4340,7 +4416,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 65
+   "rank": 66
   },
   {
    "id": "ghost_map",
@@ -4415,7 +4491,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 66
+   "rank": 67
   },
   {
    "id": "kms_bochner_coefficient_positivity",
@@ -4471,7 +4547,75 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 67
+   "rank": 68
+  },
+  {
+   "id": "profinite_integers_adelic_solenoid",
+   "name": "ℤ̂ in the dictionary: Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂; ℚ⧵𝔸 ≅ (ℝ × ℤ̂)/ℤ; C_ℚ ≅ ℝ₊* × ℤ̂*",
+   "aliases": [
+    "adelic solenoid",
+    "idele class group"
+   ],
+   "plain": "The profinite integers are where all the finite primes live in the adelic picture. They are not the analogue of Frobenius over ℚ (that is the real scaling flow); they give the totally disconnected direction and the Dirichlet-character sectors, and DH sits in no single sector.",
+   "label": "Theorem",
+   "core": "[C] Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂ (Frobenius generates the dense ℤ); ℤ̂ = ∏ℤ_p, dual ℚ/ℤ; 𝔸_ℚ ≅ ℝ × (ℤ̂⊗ℚ) (Wikipedia, opened). [T] ℚ + (ℝ × ℤ̂) = 𝔸_ℚ and ℚ ∩ (ℝ × ℤ̂) = ℤ ⇒ ℚ⧵𝔸_ℚ ≅ (ℝ × ℤ̂)/ℤ, the adelic solenoid (leaves ℝ, transversal ℤ̂; Den05's S¹_p = ℝ ×_ℤ ℤ_p is the one-prime case, opened). [T] class number 1 + ℤ^× = {±1}: C_ℚ = ℚ^×⧵𝔸^× ≅ ℝ₊* × ℤ̂*. [C] Connes 1999 (20)–(21): C_k ≅ K × N, N = ℝ₊* (number fields) vs q^ℤ (function fields); H = ⊕_χ H_χ over characters of K. Dictionary: over ℚ the Frobenius role goes to ℝ₊* (the flow), not to ℤ̂; ℤ̂ carries the finite primes (transversal), ℤ̂* the Dirichlet-character sectors. [T,N] DH = ½(1−iκ)L(s,χ) + ½(1+iκ)L(s,χ̄), χ mod 5 (residual 0): a sum of two sectors, in no single one; a(2)a(3) = −0.0807 ≠ a(6) = 1. Wikipedia's line 𝔸^×/ℚ^× ≅ (ℝ×ℤ̂)/ℤ conflates the additive quotient: not used.",
+   "formula": "",
+   "numbers": [
+    "DH decomposition residual 0; a(2)a(3) = −0.0807, a(6) = 1"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-sensitive",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "ℤ̂ ≠ the Frobenius group over ℚ: Connes N = ℝ₊*.",
+    "Sector exclusion of DH is structural, not a sign: GRH per sector remains open."
+   ],
+   "lemmas": [
+    "L158"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "adelic_gluing_bruhat_tits",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "connes_trace",
+     "note": "C_ℚ = ℝ₊* × ℤ̂*"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "kms_bost_connes",
+     "note": "ℤ̂* symmetry"
+    },
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "DH = two ℤ̂*-sectors"
+    },
+    {
+     "type": "analogue-of",
+     "to": "deninger",
+     "note": "solenoids"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 69
   },
   {
    "id": "free_gas_positivity_ladder",
@@ -4543,7 +4687,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 68
+   "rank": 70
   },
   {
    "id": "goldfeld_bsd",
@@ -4606,7 +4750,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 69
+   "rank": 71
   },
   {
    "id": "invariant_vs_refined_count",
@@ -4677,75 +4821,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 70
-  },
-  {
-   "id": "profinite_integers_adelic_solenoid",
-   "name": "ℤ̂ in the dictionary: Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂; ℚ⧵𝔸 ≅ (ℝ × ℤ̂)/ℤ; C_ℚ ≅ ℝ₊* × ℤ̂*",
-   "aliases": [
-    "adelic solenoid",
-    "idele class group"
-   ],
-   "plain": "The profinite integers are where all the finite primes live in the adelic picture. They are not the analogue of Frobenius over ℚ (that is the real scaling flow); they give the totally disconnected direction and the Dirichlet-character sectors, and DH sits in no single sector.",
-   "label": "Theorem",
-   "core": "[C] Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂ (Frobenius generates the dense ℤ); ℤ̂ = ∏ℤ_p, dual ℚ/ℤ; 𝔸_ℚ ≅ ℝ × (ℤ̂⊗ℚ) (Wikipedia, opened). [T] ℚ + (ℝ × ℤ̂) = 𝔸_ℚ and ℚ ∩ (ℝ × ℤ̂) = ℤ ⇒ ℚ⧵𝔸_ℚ ≅ (ℝ × ℤ̂)/ℤ, the adelic solenoid (leaves ℝ, transversal ℤ̂; Den05's S¹_p = ℝ ×_ℤ ℤ_p is the one-prime case, opened). [T] class number 1 + ℤ^× = {±1}: C_ℚ = ℚ^×⧵𝔸^× ≅ ℝ₊* × ℤ̂*. [C] Connes 1999 (20)–(21): C_k ≅ K × N, N = ℝ₊* (number fields) vs q^ℤ (function fields); H = ⊕_χ H_χ over characters of K. Dictionary: over ℚ the Frobenius role goes to ℝ₊* (the flow), not to ℤ̂; ℤ̂ carries the finite primes (transversal), ℤ̂* the Dirichlet-character sectors. [T,N] DH = ½(1−iκ)L(s,χ) + ½(1+iκ)L(s,χ̄), χ mod 5 (residual 0): a sum of two sectors, in no single one; a(2)a(3) = −0.0807 ≠ a(6) = 1. Wikipedia's line 𝔸^×/ℚ^× ≅ (ℝ×ℤ̂)/ℤ conflates the additive quotient: not used.",
-   "formula": "",
-   "numbers": [
-    "DH decomposition residual 0; a(2)a(3) = −0.0807, a(6) = 1"
-   ],
-   "axes": [
-    "structure/frame (Ax1)",
-    "ghost-sensitive",
-    "geometry over F_q"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "ℤ̂ ≠ the Frobenius group over ℚ: Connes N = ℝ₊*.",
-    "Sector exclusion of DH is structural, not a sign: GRH per sector remains open."
-   ],
-   "lemmas": [
-    "L158"
-   ],
-   "rels": [
-    {
-     "type": "lives-in",
-     "to": "adelic_gluing_bruhat_tits",
-     "note": ""
-    },
-    {
-     "type": "analogue-of",
-     "to": "connes_trace",
-     "note": "C_ℚ = ℝ₊* × ℤ̂*"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "kms_bost_connes",
-     "note": "ℤ̂* symmetry"
-    },
-    {
-     "type": "fails-for",
-     "to": "davenport_heilbronn",
-     "note": "DH = two ℤ̂*-sectors"
-    },
-    {
-     "type": "analogue-of",
-     "to": "deninger",
-     "note": "solenoids"
-    }
-   ],
-   "priority": 0.54,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_flow_h1",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 71
+   "rank": 72
   },
   {
    "id": "dbn_parabolic_threshold",
@@ -4804,7 +4880,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 72
+   "rank": 73
   },
   {
    "id": "de_branges",
@@ -4856,7 +4932,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 73
+   "rank": 74
   },
   {
    "id": "hasse_pythagoras",
@@ -4910,7 +4986,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 74
+   "rank": 75
   },
   {
    "id": "lee_yang_fisher_rh",
@@ -4969,7 +5045,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 75
+   "rank": 76
   },
   {
    "id": "li_criterion",
@@ -5022,7 +5098,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 76
+   "rank": 77
   },
   {
    "id": "suzuki_line",
@@ -5080,7 +5156,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 77
+   "rank": 78
   },
   {
    "id": "bagchi",
@@ -5127,7 +5203,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 78
+   "rank": 79
   },
   {
    "id": "gain_line",
@@ -5185,7 +5261,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 79
+   "rank": 80
   },
   {
    "id": "near_null_anatomy",
@@ -5235,7 +5311,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 80
+   "rank": 81
   },
   {
    "id": "dim_S",
@@ -5284,7 +5360,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 81
+   "rank": 82
   },
   {
    "id": "hodge_index",
@@ -5354,7 +5430,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 82
+   "rank": 83
   },
   {
    "id": "os_reflection_positivity",
@@ -5443,7 +5519,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 83
+   "rank": 84
   },
   {
    "id": "legendre_support_function",
@@ -5499,7 +5575,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 84
+   "rank": 85
   },
   {
    "id": "hodge_riemann",
@@ -5559,7 +5635,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 85
+   "rank": 86
   },
   {
    "id": "lax_phillips",
@@ -5623,7 +5699,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 86
+   "rank": 87
   },
   {
    "id": "weil_operator",
@@ -5685,7 +5761,54 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 87
+   "rank": 88
+  },
+  {
+   "id": "connes_consani",
+   "name": "Connes–Consani sites",
+   "aliases": [
+    "arithmetic site",
+    "scaling site"
+   ],
+   "plain": "Topos-theoretic candidate for Spec ℤ × Spec ℤ.",
+   "label": "Cited",
+   "core": "Arithmetic site and scaling site (CC14, CC16): a square exists, with Ψ_λ and s(f,f) = D•D (TAA Lemma 30), but no H¹, RR or Hodge index on it (TAA Lemma 65). TAA Lemma 147: their proved RRs are 1-dimensional; RR on the square is open (CC18).",
+   "formula": "",
+   "numbers": [
+    "TAA Lemma 158: CC16 §6 (opened): ℤ_min ⊗_B ℤ_min, reduced square with Newton polygons, points over ℝ_max⁺ = product of points (Prop 6.11), Ψ(λ) congruences"
+   ],
+   "axes": [
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L30",
+    "L131",
+    "L140",
+    "L147",
+    "L158"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "castelnuovo_object",
+     "note": ""
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 89
   },
   {
    "id": "ff_counts_do_not_induce_sign",
@@ -5757,54 +5880,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 88
-  },
-  {
-   "id": "connes_consani",
-   "name": "Connes–Consani sites",
-   "aliases": [
-    "arithmetic site",
-    "scaling site"
-   ],
-   "plain": "Topos-theoretic candidate for Spec ℤ × Spec ℤ.",
-   "label": "Cited",
-   "core": "Arithmetic site and scaling site (CC14, CC16): a square exists, with Ψ_λ and s(f,f) = D•D (TAA Lemma 30), but no H¹, RR or Hodge index on it (TAA Lemma 65). TAA Lemma 147: their proved RRs are 1-dimensional; RR on the square is open (CC18).",
-   "formula": "",
-   "numbers": [
-    "TAA Lemma 158: CC16 §6 (opened): ℤ_min ⊗_B ℤ_min, reduced square with Newton polygons, points over ℝ_max⁺ = product of points (Prop 6.11), Ψ(λ) congruences"
-   ],
-   "axes": [
-    "Spec ℤ gap"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [
-    "L30",
-    "L131",
-    "L140",
-    "L147",
-    "L158"
-   ],
-   "rels": [
-    {
-     "type": "same-mechanism-as",
-     "to": "castelnuovo_object",
-     "note": ""
-    }
-   ],
-   "priority": 0.452,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_castelnuovo",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 89
+   "rank": 90
   },
   {
    "id": "laguerre_formula",
@@ -5858,7 +5934,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 90
+   "rank": 91
   },
   {
    "id": "deligne_tensor_power",
@@ -5908,7 +5984,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 91
+   "rank": 92
   },
   {
    "id": "pole_plane",
@@ -5957,7 +6033,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 92
+   "rank": 93
   },
   {
    "id": "selberg_eigenvalue_mass_shell",
@@ -6010,7 +6086,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 93
+   "rank": 94
   },
   {
    "id": "cartan_involution",
@@ -6061,7 +6137,58 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 94
+   "rank": 95
+  },
+  {
+   "id": "conformal_flow_needs_solenoid",
+   "name": "On a compact manifold a flow conformal on TF with factor e^{αt} has α = 0 (Jacobian e^{αt}, volume conserved); ζ needs α = 1, so the phase space must be solenoidal, with leaf expansion balanced by contraction of a totally disconnected transversal (product formula as volume balance, in Deninger’s elliptic-curve example)",
+   "aliases": [
+    "Theorem V",
+    "α = 0 on manifolds"
+   ],
+   "plain": "A flow on a closed, finite manifold cannot stretch everything sideways forever, because the total volume has to stay the same. The Riemann zeta function needs exactly such stretching. So Deninger's space has to be a solenoid, in which the stretching along the leaves is paid for by shrinking in a dust-like p-adic direction.",
+   "label": "Theorem",
+   "core": "[T] one-line proof (TAA Lemma 174 Thm V). [C] Deninger 2005 Cor. 5.5 Rem. 2 and arXiv 0709.2801 state that the conditions force α = 0; Rem. 3: finitely generated orbit-length group, infinitely generated needs fixed points; §7: solenoid (C ×_Γ T_πΓ) ×_{p^Z} R*_+ with metric e^t Re ξη̄ has α = 1. [H] multiplication by π scales leaf area by q and has index q on T_πΓ.",
+   "formula": "",
+   "numbers": [
+    "α = 0 forced (compact manifold)"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Volume balance on solenoids is shown only for Deninger’s elliptic-curve example (Heuristic in general)."
+   ],
+   "lemmas": [
+    "L174"
+   ],
+   "rels": [
+    {
+     "type": "lives-in",
+     "to": "deninger",
+     "note": "why α = 1 needs solenoids"
+    },
+    {
+     "type": "analogue-of",
+     "to": "profinite_integers_adelic_solenoid",
+     "note": "non-archimedean transversal"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 96
   },
   {
    "id": "maxwell_effective_potential",
@@ -6111,7 +6238,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 95
+   "rank": 97
   },
   {
    "id": "products_linear",
@@ -6163,7 +6290,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 96
+   "rank": 98
   },
   {
    "id": "weight_monodromy",
@@ -6210,7 +6337,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 97
+   "rank": 99
   },
   {
    "id": "yoneda",
@@ -6253,7 +6380,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 98
+   "rank": 100
   },
   {
    "id": "split_blind_sensitive",
@@ -6315,7 +6442,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 99
+   "rank": 101
   },
   {
    "id": "boost_rotation_modular_kms",
@@ -6392,7 +6519,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 100
+   "rank": 102
   },
   {
    "id": "gyroscopic_vs_definite_stability",
@@ -6464,7 +6591,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 101
+   "rank": 103
   },
   {
    "id": "dh_acceptance",
@@ -6525,7 +6652,7 @@
     "evidence": 0.48,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 102
+   "rank": 104
   },
   {
    "id": "brst",
@@ -6582,7 +6709,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 103
+   "rank": 105
   },
   {
    "id": "weil_template_factor_product",
@@ -6647,7 +6774,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 104
+   "rank": 106
   },
   {
    "id": "gamma_fwhm_of_a_zero",
@@ -6730,7 +6857,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 105
+   "rank": 107
   },
   {
    "id": "mass_shell_even_xi",
@@ -6802,7 +6929,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 106
+   "rank": 108
   },
   {
    "id": "arithmetic_equation_of_state",
@@ -6883,7 +7010,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 107
+   "rank": 109
   },
   {
    "id": "composite_leakage",
@@ -6947,7 +7074,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 108
+   "rank": 110
   },
   {
    "id": "circle_pi_in_zero_counts",
@@ -7008,7 +7135,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 109
+   "rank": 111
   },
   {
    "id": "two_point",
@@ -7055,7 +7182,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 110
+   "rank": 112
   },
   {
    "id": "rh",
@@ -7094,7 +7221,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 111
+   "rank": 113
   },
   {
    "id": "hilbert_polya",
@@ -7150,7 +7277,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 112
+   "rank": 114
   },
   {
    "id": "cc_square_open",
@@ -7200,7 +7327,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 113
+   "rank": 115
   },
   {
    "id": "castelnuovo_object",
@@ -7249,7 +7376,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 114
+   "rank": 116
   },
   {
    "id": "ghost_onset",
@@ -7303,7 +7430,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 115
+   "rank": 117
   },
   {
    "id": "curvature_cup_square",
@@ -7368,7 +7495,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 116
+   "rank": 118
   },
   {
    "id": "clausius_gamma_reversibility",
@@ -7439,7 +7566,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 117
+   "rank": 119
   },
   {
    "id": "time_delay",
@@ -7501,7 +7628,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 118
+   "rank": 120
   },
   {
    "id": "kallen_lehmann",
@@ -7545,7 +7672,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 119
+   "rank": 121
   },
   {
    "id": "psi_n_lattice",
@@ -7597,7 +7724,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 120
+   "rank": 122
   },
   {
    "id": "displaced_reference",
@@ -7656,7 +7783,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 121
+   "rank": 123
   },
   {
    "id": "band_criterion",
@@ -7703,7 +7830,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 122
+   "rank": 124
   },
   {
    "id": "formal_vs_geometric_lattice",
@@ -7760,7 +7887,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 123
+   "rank": 125
   },
   {
    "id": "cutoff_saturation",
@@ -7806,7 +7933,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 124
+   "rank": 126
   },
   {
    "id": "lmfdb_maass_complete",
@@ -7852,7 +7979,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 125
+   "rank": 127
   },
   {
    "id": "null_calibrated_gls",
@@ -7899,7 +8026,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 126
+   "rank": 128
   },
   {
    "id": "onset_kernel_dependence",
@@ -7937,7 +8064,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 127
+   "rank": 129
   },
   {
    "id": "birman_krein_spectral_shift",
@@ -8000,7 +8127,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 128
+   "rank": 130
   },
   {
    "id": "ghost_conventions",
@@ -8059,7 +8186,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 129
+   "rank": 131
   },
   {
    "id": "kappa_index",
@@ -8116,7 +8243,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 130
+   "rank": 132
   },
   {
    "id": "s_of_t_remainder",
@@ -8165,7 +8292,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 131
+   "rank": 133
   },
   {
    "id": "two_partners",
@@ -8214,7 +8341,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 132
+   "rank": 134
   },
   {
    "id": "nogo_v5_per_prime_and_places",
@@ -8286,7 +8413,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 133
+   "rank": 135
   },
   {
    "id": "cc_riemann_roch",
@@ -8338,7 +8465,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 134
+   "rank": 136
   },
   {
    "id": "zero_count_two_form",
@@ -8396,7 +8523,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 135
+   "rank": 137
   },
   {
    "id": "oscillator_semigroup_contraction",
@@ -8457,7 +8584,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 136
+   "rank": 138
   },
   {
    "id": "automorphy_defect",
@@ -8503,7 +8630,72 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 137
+   "rank": 139
+  },
+  {
+   "id": "beurling_counting_test_bstar",
+   "name": "Base-regularity test (B) and the B* no-go: B* (Euler product + counting error O(x^θ), θ < ½ ⇒ RH) appears false — a deterministic discretization of a continuous Beurling system keeps an exact zero at 0.75 ± 10i while the measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ (Numerical refutation; asymptotic θ < ½ not proved); integer-counting error over 9 systems: ℤ bounded (≤ 1), Davenport–Heilbronn bounded, Epstein and ζ_Q(i) θ̂ ≈ 0.32, random discretizations at order √x",
+   "aliases": [
+    "B*",
+    "B* no-go",
+    "Beurling controls",
+    "integer-counting regularity"
+   ],
+   "plain": "To separate the genuine integers from imitations, count how many 'integers' lie below x and compare with the expected straight line. For ℤ the error never exceeds 1. Imitation number systems built with random or slightly shifted primes wobble by about √x, which first suggested a conjecture (B*): a system with unique factorization whose wobble stays well below √x must satisfy RH. That now looks false. Choosing the imitation primes deterministically, so that they track a smooth system with a planted zero off the line, keeps unique factorization and keeps the planted zero exactly, yet the wobble grows only like x^0.29 as far as it was computed (x = 5·10⁷). So counting regularity alone does not force RH. This is numerical evidence, not a proof: nobody has shown the exponent stays below ½ forever.",
+   "label": "Numerical",
+   "core": "[N] B* (Euler product + N(x) = ρx + O(x^θ), θ < ½ ⇒ RH) appears false: a deterministic discretization of the continuous Beurling system below (g-primes chosen greedily so that the prime-counting discrepancy, prime powers included, stays ≤ 1) keeps an exact zero at 0.75 ± 10i, because ζ_P = ζ_T·e^H with H holomorphic on Re s > 0 [T, given the continuous system], while the measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ (max|N − ρx| ≈ 4.3·x^0.3; ratio to √x falls from 0.61 to 0.116). Asymptotic θ < ½ is not proved, so this is a numerical refutation, not a theorem. Compare Diamond–Montgomery–Vorhauer (2006) and Broucke–Vindas (arXiv 2102.08478); prior examples were not exhaustively searched. Consequence: integer-counting regularity is a no-go as a route to RH on its own. [N] Earlier controls to X = 10⁷: random (Poisson) discretizations and integer-supported random multiplicities fluctuate at order √x; that √x noise came from the prime-counting discrepancy, not from discreteness [H]. [T] continuous system ζ_C = (s − ρ₀)(s − ρ̄₀)(s + 10)/(s²(s − 1)), N_C = ρx + O(log² x), positivity min f/t = 0.193 (computer-assisted). [C] DMV 2006 (θ > ½, RH fails), Zhang (RH with regular N), BDV 2020 (RH with large N oscillation), Hilberdink 2005 (the integer and prime exponents cannot both be < ½; not contradicted here, since the prime count is far from li x).",
+   "formula": "",
+   "numbers": [
+    "deterministic discretization: θ̂ ≈ 0.28–0.29 up to x = 5·10⁷ (2,994,465 g-primes); max|N − ρx| ≈ 4.3·x^0.3; ratio to √x 0.61 → 0.116",
+    "ψ regression coefficient on the planted term 0.9999993",
+    "random controls, ratio to √x: PERT 0.19–0.28; CRAMER 0.6–1.4; ZERO 1.6–2.0; RANDMULT 3.1–4.4",
+    "θ̂: Epstein 0.32, ζ_Q(i) 0.32"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "numerics/certificate",
+    "ghost-blind",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "Numerical refutation: θ < ½ for the discretized system is not proved asymptotically; prior examples in the literature were not exhaustively searched.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "θ̂ are finite-range slopes (x ≤ 5·10⁷); θ < ½ asymptotically is not proved.",
+    "B* was earlier listed as a live conjecture; it is withdrawn on this numerical evidence.",
+    "Euler product + counting data still excludes Davenport–Heilbronn and Epstein, but only through the Euler product."
+   ],
+   "lemmas": [
+    "L174"
+   ],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "davenport_heilbronn",
+     "note": "no Euler product (4,062 defects ≤ 200)"
+    },
+    {
+     "type": "fails-for",
+     "to": "epstein",
+     "note": "no Euler product (1,566 defects)"
+    },
+    {
+     "type": "lives-in",
+     "to": "livsic_route_split",
+     "note": "(B) as the additive shadow of stable directions [H]"
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 140
   },
   {
    "id": "certified_windows",
@@ -8558,7 +8750,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 138
+   "rank": 141
   },
   {
    "id": "euler_factor_wick_rotation",
@@ -8632,7 +8824,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 139
+   "rank": 142
   },
   {
    "id": "morse_lobes_wedges_windows",
@@ -8698,7 +8890,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 140
+   "rank": 143
   },
   {
    "id": "zeros_as_frames_trichotomy",
@@ -8762,7 +8954,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 141
+   "rank": 144
   },
   {
    "id": "dual_conic",
@@ -8814,7 +9006,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 142
+   "rank": 145
   },
   {
    "id": "sqrt2_family",
@@ -8866,7 +9058,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 143
+   "rank": 146
   },
   {
    "id": "closed_geodesics",
@@ -8914,7 +9106,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 144
+   "rank": 147
   },
   {
    "id": "cusp_vs_infinity",
@@ -8958,7 +9150,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 145
+   "rank": 148
   },
   {
    "id": "pole_s1",
@@ -9015,7 +9207,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 146
+   "rank": 149
   },
   {
    "id": "selberg_resonances",
@@ -9059,7 +9251,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 147
+   "rank": 150
   },
   {
    "id": "toeplitz_verblunsky",
@@ -9107,7 +9299,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 148
+   "rank": 151
   },
   {
    "id": "density_volume",
@@ -9154,7 +9346,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 149
+   "rank": 152
   },
   {
    "id": "f1_base",
@@ -9200,7 +9392,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 150
+   "rank": 153
   },
   {
    "id": "s_mirror",
@@ -9242,7 +9434,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 151
+   "rank": 154
   },
   {
    "id": "arakelov",
@@ -9294,7 +9486,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 152
+   "rank": 155
   },
   {
    "id": "principalization",
@@ -9337,7 +9529,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 153
+   "rank": 156
   },
   {
    "id": "spec_z_terminal",
@@ -9380,7 +9572,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 154
+   "rank": 157
   },
   {
    "id": "spinor_route",
@@ -9423,7 +9615,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 155
+   "rank": 158
   },
   {
    "id": "weil_rosetta",
@@ -9464,7 +9656,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 156
+   "rank": 159
   },
   {
    "id": "cohesion",
@@ -9502,7 +9694,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 157
+   "rank": 160
   },
   {
    "id": "local_global",
@@ -9542,7 +9734,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 158
+   "rank": 161
   },
   {
    "id": "kramers_kronig",
@@ -9593,7 +9785,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 159
+   "rank": 162
   },
   {
    "id": "ep_gap_across_collision",
@@ -9649,7 +9841,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 160
+   "rank": 163
   },
   {
    "id": "gribov",
@@ -9700,7 +9892,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 161
+   "rank": 164
   },
   {
    "id": "metaplectic",
@@ -9756,7 +9948,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 162
+   "rank": 165
   },
   {
    "id": "half_tate_twist",
@@ -9829,7 +10021,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 163
+   "rank": 166
   },
   {
    "id": "functional_equation",
@@ -9882,7 +10074,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 164
+   "rank": 167
   },
   {
    "id": "gauss_sum_unitarity",
@@ -9952,7 +10144,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 165
+   "rank": 168
   },
   {
    "id": "kms_bost_connes",
@@ -10015,7 +10207,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 166
+   "rank": 169
   },
   {
    "id": "nash_kuiper_onsager",
@@ -10075,7 +10267,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 167
+   "rank": 170
   },
   {
    "id": "half_turn_sign_flip",
@@ -10139,7 +10331,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 168
+   "rank": 171
   },
   {
    "id": "lps_hecke_on_s3",
@@ -10206,7 +10398,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 169
+   "rank": 172
   },
   {
    "id": "apsides_gap_form",
@@ -10270,7 +10462,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 170
+   "rank": 173
   },
   {
    "id": "moser_orbit_space_s2xs2",
@@ -10341,7 +10533,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 171
+   "rank": 174
   },
   {
    "id": "real_forms_compact_vs_boost",
@@ -10415,7 +10607,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 172
+   "rank": 175
   },
   {
    "id": "archimedean_place",
@@ -10467,7 +10659,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 173
+   "rank": 176
   },
   {
    "id": "cup_product",
@@ -10518,7 +10710,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 174
+   "rank": 177
   },
   {
    "id": "cusp_forms_petersson",
@@ -10568,7 +10760,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 175
+   "rank": 178
   },
   {
    "id": "e2_anomaly",
@@ -10626,7 +10818,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 176
+   "rank": 179
   },
   {
    "id": "euler_char_chi",
@@ -10686,7 +10878,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 177
+   "rank": 180
   },
   {
    "id": "f1_square_constructions",
@@ -10756,7 +10948,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 178
+   "rank": 181
   },
   {
    "id": "n_factorial_bridge_all_places",
@@ -10811,7 +11003,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 179
+   "rank": 182
   },
   {
    "id": "tate_count",
@@ -10861,7 +11053,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 180
+   "rank": 183
   },
   {
    "id": "cc21_archimedean_positivity",
@@ -10922,7 +11114,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 181
+   "rank": 184
   },
   {
    "id": "hecke",
@@ -10979,7 +11171,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 182
+   "rank": 185
   },
   {
    "id": "herbrand_ribet",
@@ -11043,7 +11235,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 183
+   "rank": 186
   },
   {
    "id": "mazur_wiles",
@@ -11096,7 +11288,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 184
+   "rank": 187
   },
   {
    "id": "pv_ts_symplectomorphism",
@@ -11160,7 +11352,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 185
+   "rank": 188
   },
   {
    "id": "standing_frame_so22_ads3",
@@ -11219,7 +11411,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 186
+   "rank": 189
   },
   {
    "id": "thermo_geometry_ruppeiner_contact",
@@ -11286,7 +11478,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 187
+   "rank": 190
   },
   {
    "id": "consani_archimedean_cohomology",
@@ -11339,7 +11531,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 188
+   "rank": 191
   },
   {
    "id": "ramanujan_691",
@@ -11400,7 +11592,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 189
+   "rank": 192
   },
   {
    "id": "primary_sign_rule",
@@ -11465,7 +11657,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 190
+   "rank": 193
   },
   {
    "id": "maass_selberg",
@@ -11514,7 +11706,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 191
+   "rank": 194
   },
   {
    "id": "arch_threshold",
@@ -11570,7 +11762,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 192
+   "rank": 195
   },
   {
    "id": "half_density",
@@ -11629,7 +11821,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 193
+   "rank": 196
   },
   {
    "id": "theta_inversion",
@@ -11694,7 +11886,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 194
+   "rank": 197
   },
   {
    "id": "apsidal_sweep_eccentricity",
@@ -11762,7 +11954,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 195
+   "rank": 198
   },
   {
    "id": "eisenstein_ct",
@@ -11813,7 +12005,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 196
+   "rank": 199
   },
   {
    "id": "fundamental_domain_three_phases",
@@ -11866,7 +12058,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 197
+   "rank": 200
   },
   {
    "id": "hilbert_reciprocity_at_2",
@@ -11938,7 +12130,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 198
+   "rank": 201
   },
   {
    "id": "prime_two_wild",
@@ -12001,7 +12193,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 199
+   "rank": 202
   },
   {
    "id": "scattering_phi",
@@ -12056,7 +12248,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 200
+   "rank": 203
   },
   {
    "id": "sl2fp_half_representations",
@@ -12125,7 +12317,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 201
+   "rank": 204
   },
   {
    "id": "count_positivity",
@@ -12170,7 +12362,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 202
+   "rank": 205
   },
   {
    "id": "four_squares_eisenstein_lift",
@@ -12236,7 +12428,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 203
+   "rank": 206
   },
   {
    "id": "gauss_half",
@@ -12310,7 +12502,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 204
+   "rank": 207
   },
   {
    "id": "gauss_sum_canonical_root",
@@ -12364,7 +12556,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 205
+   "rank": 208
   },
   {
    "id": "ks_quaternion_lift",
@@ -12424,7 +12616,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 206
+   "rank": 209
   },
   {
    "id": "maslov_legendre_fourier",
@@ -12488,7 +12680,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 207
+   "rank": 210
   },
   {
    "id": "quartet_capacity_sp4",
@@ -12544,7 +12736,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 208
+   "rank": 211
   },
   {
    "id": "weight_ladder",
@@ -12591,7 +12783,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 209
+   "rank": 212
   },
   {
    "id": "yoshida",
@@ -12650,7 +12842,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 210
+   "rank": 213
   },
   {
    "id": "kronecker_limit_E2star",
@@ -12705,7 +12897,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 211
+   "rank": 214
   },
   {
    "id": "w2_cech",
@@ -12750,7 +12942,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 212
+   "rank": 215
   },
   {
    "id": "sector_map_w",
@@ -12797,7 +12989,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 213
+   "rank": 216
   },
   {
    "id": "spin_theta",
@@ -12846,7 +13038,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 214
+   "rank": 217
   },
   {
    "id": "cocycle_principle",
@@ -12889,7 +13081,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 215
+   "rank": 218
   },
   {
    "id": "wedge_flip_animation",
@@ -12943,7 +13135,7 @@
     "evidence": 0.48,
     "quadrant": "background"
    },
-   "rank": 216
+   "rank": 219
   },
   {
    "id": "purity_distortionless",
@@ -13002,7 +13194,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 217
+   "rank": 220
   },
   {
    "id": "archimedes",
@@ -13052,7 +13244,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 218
+   "rank": 221
   },
   {
    "id": "distortionless",
@@ -13107,7 +13299,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 219
+   "rank": 222
   },
   {
    "id": "heaviside",
@@ -13158,7 +13350,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 220
+   "rank": 223
   },
   {
    "id": "mass_density",
@@ -13199,7 +13391,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 221
+   "rank": 224
   },
   {
    "id": "su2xsu2_peter_weyl_surface",
@@ -13270,7 +13462,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 222
+   "rank": 225
   },
   {
    "id": "lrl_hidden_symmetry_trichotomy",
@@ -13346,7 +13538,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 223
+   "rank": 226
   },
   {
    "id": "higgs_negative_mass2",
@@ -13404,7 +13596,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 224
+   "rank": 227
   },
   {
    "id": "klein_gordon_charge",
@@ -13464,7 +13656,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 225
+   "rank": 228
   },
   {
    "id": "anomalous_dispersion",
@@ -13519,7 +13711,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 226
+   "rank": 229
   },
   {
    "id": "missing_square_spec_z",
@@ -13601,7 +13793,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 227
+   "rank": 230
   },
   {
    "id": "lamb_cutoff",
@@ -13657,7 +13849,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 228
+   "rank": 231
   },
   {
    "id": "two_chis",
@@ -13714,7 +13906,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 229
+   "rank": 232
   },
   {
    "id": "standard_conj",
@@ -13760,11 +13952,11 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 230
+   "rank": 233
   }
  ],
  "counts": {
-  "concepts": 230,
-  "relations": 770
+  "concepts": 233,
+  "relations": 780
  }
 }
