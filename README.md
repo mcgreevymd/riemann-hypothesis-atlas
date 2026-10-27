@@ -39,6 +39,18 @@ The repository carries two sets of labelled figures. **They are equivalent:** th
 - **[Theorem given certificates]** (TAA Lemmas 154, 156) The width Γ = 2|β − ½| is the limit of the full width at half maximum as σ → ½, approached from below for a ghost. For the first Davenport–Heilbronn ghost, the certified value is Γ₁ = 0.617034364913274771106 ± 9·10⁻²².
 - **[Numerical]** The bottom panels evaluate ζ and Davenport–Heilbronn directly at σ = 0.55. The ζ panel shows absorption lines only. The Davenport–Heilbronn panel shows a gain line at its first ghost.
 
+## Figures
+
+[![Eigenvalue plane vs the upper half-plane](figures/fixed_point/eigenvalue_plane_vs_upper_half_plane.gif)](figures/fixed_point/eigenvalue_plane_vs_upper_half_plane.gif)
+
+Eigenvalue plane vs the upper half-plane. Left: Frobenius F and Verschiebung V as roots of x² − a·x + q (q = 5), normalized by √q. Right: the fixed point τ of g_t = [[t, −1], [1, 0]] (t = a/√q) in the Poincaré disk, which equals F/√q and is the complex structure J the element preserves. Invariant circles (elliptic, harmonic oscillator) become horocycles at the F/V meeting point (parabolic, free particle) and an axis with hypercycles past it (hyperbolic, inverted oscillator); at trace √p + 1/√p the translation length is log p. Theorem-level geometry; archimedean and ghost-blind on its own. RH is not proved.
+
+[![Smoothness through the meeting point](figures/fixed_point/smoothness_through_the_meeting_point.png)](figures/fixed_point/smoothness_through_the_meeting_point.png)
+
+Smoothness through the meeting point: F’s speed |dF/da| blows up like |a − 2√q|^(−½), while the generator X and the trace as a function of θ² are real-analytic straight through it.
+
+(J. W. McGreevy; formalization by Grok Bot.)
+
 ## Where RH is likely to live
 
 > **⚠ RH is not proved.** The pictures locate the question; they do not answer it.
