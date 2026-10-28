@@ -2,6 +2,68 @@
  "edition": "public",
  "concepts": [
   {
+   "id": "ferromagnetic_phi_missing_piece",
+   "name": "Refined missing piece (Open): a ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ; the underlying equivalence RH ⇔ Φ is a Lee–Yang single-spin measure (Λ = 0 margin) is a known restatement",
+   "aliases": [],
+   "plain": "Newman's results turn RH into a statement in statistical mechanics: RH holds exactly when the kernel Φ behaves like the spin distribution of a ferromagnet, so that every ferromagnetic system built from copies of it has its field zeros on the imaginary axis. That equivalence is a restatement, not progress. The conjectured missing piece is a mechanism: a ferromagnetic system whose sites are the primes (and the archimedean place) and whose block-spin law is Φ. Such a system would give the Lee–Yang property, and hence RH, as a structural consequence. The Riemann Hypothesis is not proved.",
+   "label": "Open",
+   "core": "Open. The equivalence RH ⇔ Φ Lee–Yang is a cited Restatement (Newman 1974/1976, Lieb–Sokal 1981); only a ferromagnetic construction from the primes would be new. RH is not proved.",
+   "formula": "RH ⇔ Φ(u)du has the Lee–Yang property (Newman 1974, as stated by Lieb–Sokal 1981) ⇔ b₀ ≥ 0 (Newman 1976, Λ = −b₀) ⇔ Λ ≤ 0; with Λ ≥ 0 (Rodgers–Tao) the margin is zero. Refined form: Φ(u)du = lim_N law of (Σ_{i∈B_N} c_{N,i}σ_i), with σ_i = ±1 Ising spins with ferromagnetic couplings J_ij ≥ 0 indexed by primes and ∞",
+   "numbers": [
+    "Φ even to 2.9e−12 and positive on [0,1.5]; Φ(0) = 0.44670",
+    "one-site Lee–Yang to height 100: 29 sign changes of Ξ = N(100) = 29",
+    "Newman class 𝒫 fails unconditionally: V/u⁴ = 253, 160, 247, 584 at u = 0.5, 1, 1.5, 2 (double-exponential decay)",
+    "Turán gaps positive for the flowed kernel at every b tested (1 → 3000), so these tests cannot locate b₀"
+   ],
+   "axes": [
+    "open target",
+    "physics analogue",
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "lee_yang_fisher_rh",
+     "note": ""
+    },
+    {
+     "type": "restates",
+     "to": "debruijn_newman",
+     "note": ""
+    },
+    {
+     "type": "candidate_setting",
+     "to": "kms_bost_connes",
+     "note": ""
+    },
+    {
+     "type": "tested_by",
+     "to": "duursma_code_toy",
+     "note": ""
+    }
+   ],
+   "priority": 0.2,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 1
+  },
+  {
    "id": "davenport_heilbronn",
    "name": "Davenport–Heilbronn function",
    "aliases": [
@@ -99,7 +161,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 1
+   "rank": 2
   },
   {
    "id": "weil_positivity",
@@ -177,7 +239,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 2
+   "rank": 3
   },
   {
    "id": "frobenius_graph_lattice",
@@ -242,7 +304,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 3
+   "rank": 4
   },
   {
    "id": "psi_minus_x",
@@ -315,7 +377,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 4
+   "rank": 5
   },
   {
    "id": "two_verschiebungs_dual_vs_adjoint",
@@ -401,7 +463,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 5
+   "rank": 6
   },
   {
    "id": "kahler_triple_polarization",
@@ -473,7 +535,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 6
+   "rank": 7
   },
   {
    "id": "connes_trace",
@@ -537,7 +599,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 7
+   "rank": 8
   },
   {
    "id": "kahler_identities_foliated",
@@ -617,7 +679,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 8
+   "rank": 9
   },
   {
    "id": "lagarias",
@@ -680,7 +742,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 9
+   "rank": 10
   },
   {
    "id": "primitive_part",
@@ -743,7 +805,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 10
+   "rank": 11
   },
   {
    "id": "definite_cup_square",
@@ -808,7 +870,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 11
+   "rank": 12
   },
   {
    "id": "mp_flow_h1",
@@ -887,7 +949,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 12
+   "rank": 13
   },
   {
    "id": "mp_castelnuovo",
@@ -947,7 +1009,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 13
+   "rank": 14
   },
   {
    "id": "mp_h1_square",
@@ -1003,7 +1065,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 14
+   "rank": 15
   },
   {
    "id": "mp_ns_psi",
@@ -1060,7 +1122,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 15
+   "rank": 16
   },
   {
    "id": "mp_d8",
@@ -1119,7 +1181,7 @@
     "evidence": 0.4,
     "quadrant": "RH-sharp"
    },
-   "rank": 16
+   "rank": 17
   },
   {
    "id": "mp_passivity_margin",
@@ -1174,7 +1236,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 17
+   "rank": 18
   },
   {
    "id": "mp_quadratic_rr",
@@ -1229,7 +1291,7 @@
     "evidence": 0.4,
     "quadrant": "RH-sharp"
    },
-   "rank": 18
+   "rank": 19
   },
   {
    "id": "mp_rg5",
@@ -1288,7 +1350,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 19
+   "rank": 20
   },
   {
    "id": "mp_automorphy_ineq",
@@ -1345,7 +1407,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 20
+   "rank": 21
   },
   {
    "id": "mp_brst",
@@ -1399,7 +1461,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 21
+   "rank": 22
   },
   {
    "id": "relative_gram",
@@ -1470,7 +1532,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 22
+   "rank": 23
   },
   {
    "id": "verschiebung_positive_adjoint",
@@ -1573,7 +1635,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 23
+   "rank": 24
   },
   {
    "id": "passivity",
@@ -1631,7 +1693,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 24
+   "rank": 25
   },
   {
    "id": "cayley_klein_absolute",
@@ -1701,7 +1763,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 25
+   "rank": 26
   },
   {
    "id": "rr_strategy_sff",
@@ -1765,7 +1827,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 26
+   "rank": 27
   },
   {
    "id": "zero_side_real_form_krein",
@@ -1830,7 +1892,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 27
+   "rank": 28
   },
   {
    "id": "blockwise_weil_diagnostic",
@@ -1918,7 +1980,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 28
+   "rank": 29
   },
   {
    "id": "dh_prime_side_gram",
@@ -1970,7 +2032,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 29
+   "rank": 30
   },
   {
    "id": "primitive_part_weil_spectrometer",
@@ -2040,7 +2102,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 30
+   "rank": 31
   },
   {
    "id": "two_standing_ghosts_truncation",
@@ -2110,7 +2172,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 31
+   "rank": 32
   },
   {
    "id": "growing_s_truncation_rate",
@@ -2175,7 +2237,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 32
+   "rank": 33
   },
   {
    "id": "elliptic_chebyshev_bias",
@@ -2234,7 +2296,7 @@
     "evidence": 0.64,
     "quadrant": "RH-sharp"
    },
-   "rank": 33
+   "rank": 34
   },
   {
    "id": "ghost_conv_abc",
@@ -2293,7 +2355,7 @@
     "evidence": 0.64,
     "quadrant": "RH-sharp"
    },
-   "rank": 34
+   "rank": 35
   },
   {
    "id": "light_cone_U",
@@ -2354,7 +2416,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 35
+   "rank": 36
   },
   {
    "id": "deninger",
@@ -2428,7 +2490,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 36
+   "rank": 37
   },
   {
    "id": "surface_ample_rr",
@@ -2480,7 +2542,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 37
+   "rank": 38
   },
   {
    "id": "ax123",
@@ -2543,7 +2605,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 38
+   "rank": 39
   },
   {
    "id": "laurent_square",
@@ -2603,7 +2665,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 39
+   "rank": 40
   },
   {
    "id": "lmhs_nilpotent_orbit",
@@ -2657,7 +2719,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 40
+   "rank": 41
   },
   {
    "id": "livsic_route_split",
@@ -2723,7 +2785,7 @@
     "quadrant": "sharp but interpretive",
     "sensitivity_override": true
    },
-   "rank": 41
+   "rank": 42
   },
   {
    "id": "parity_linear_chi",
@@ -2774,7 +2836,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 42
+   "rank": 43
   },
   {
    "id": "adelic_gluing_bruhat_tits",
@@ -2827,7 +2889,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 43
+   "rank": 44
   },
   {
    "id": "tautology_boundary",
@@ -2879,7 +2941,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 44
+   "rank": 45
   },
   {
    "id": "no_etale_h1",
@@ -2920,7 +2982,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 45
+   "rank": 46
   },
   {
    "id": "mp4_euler_induces_hodge",
@@ -3009,7 +3071,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 46
+   "rank": 47
   },
   {
    "id": "rosati",
@@ -3092,7 +3154,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 47
+   "rank": 48
   },
   {
    "id": "castelnuovo_severi",
@@ -3164,7 +3226,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 48
+   "rank": 49
   },
   {
    "id": "krein_collision",
@@ -3255,7 +3317,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 49
+   "rank": 50
   },
   {
    "id": "frobenius_boost",
@@ -3337,7 +3399,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 50
+   "rank": 51
   },
   {
    "id": "breit_wigner_resonances",
@@ -3443,7 +3505,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 51
+   "rank": 52
   },
   {
    "id": "conic_type_at_infinity",
@@ -3503,7 +3565,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 52
+   "rank": 53
   },
   {
    "id": "epstein",
@@ -3601,7 +3663,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 53
+   "rank": 54
   },
   {
    "id": "fv_merge_trichotomy",
@@ -3678,7 +3740,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 54
+   "rank": 55
   },
   {
    "id": "ghost_quartet",
@@ -3732,7 +3794,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 55
+   "rank": 56
   },
   {
    "id": "poincare_disk_period_domain",
@@ -3804,7 +3866,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 56
+   "rank": 57
   },
   {
    "id": "arith_unitarity",
@@ -3856,7 +3918,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 57
+   "rank": 58
   },
   {
    "id": "debruijn_newman",
@@ -3867,7 +3929,7 @@
    ],
    "plain": "Heat flow on ξ; Λ ≥ 0 (Rodgers–Tao), RH ⇔ Λ = 0.",
    "label": "Cited",
-   "core": "Λ ≥ 0 ⇒ ζ not heat-flow stable (TAA Lemma 111). Healing times TAA Lemma 124/TAA Lemma 136 conflict. TAA Lemma 150 (opened): Rodgers–Tao Λ ≥ 0 (Forum Math Pi 2020), Polymath 15 Λ ≤ 0.22; H_0(z) = Ξ(z/2)/8, so t_RT = 4·t_Ξ (TAA Lemma 150, correction 8). DH heuristic (truncated list): pair at 85.70 closes at t_RT ≈ 0.177 (isolated 2δ² = 0.190); does not separate DH from ζ's known range. TAA Lemma 158: H_t = ∫e^{tu²}Φ(u)cos(zu)du solves the BACKWARD heat equation ∂_tH = −∂_zzH (Rodgers–Tao, Polymath, opened); increasing t (= exp(−tD²), anti-dissipative) makes zeros real (Pólya); the dissipative (forward-heat) direction t ↓ creates collisions and complex pairs. RH ⇔ Λ ≤ 0; Λ ≥ 0 (Rodgers–Tao, Forum Math Pi 2020); Λ ≤ ½ (de Bruijn 1950); −∞ < Λ (Newman 1976); Λ ≤ 0.22 (Polymath). Toy exp(−tD²)(z²−1)(z²−1.6²): Λ_toy = −0.0463. F/V merge = 𝔽_q picture of the collision (Analogy, fv_merge_trichotomy). TAA Lemma 159: Newman–Wu 2019 (opened): the 1976 theorem's motivation came 'more by statistical physics and Euclidean field theory … than by analytic number theory'; Lee–Yang property of Φ is the precise Lee–Yang form of RH (lee_yang_fisher_rh). TAA Lemma 160: direction stated explicitly (RT convention ∂_t H = −∂_zz H; increasing t makes zeros real; collisions come from lowering t); RH ⇔ Λ = 0; under RH with simple zeros the forced collisions escape every compact set as t → 0⁻ (dbn_parabolic_threshold). Newman 1976 is Proc. AMS 61, 245–251 (AMS DOI record; TAA Lemma 158 had 246).",
+   "core": "Λ ≥ 0 ⇒ ζ not heat-flow stable (TAA Lemma 111). Healing times TAA Lemma 124/TAA Lemma 136 conflict. TAA Lemma 150 (opened): Rodgers–Tao Λ ≥ 0 (Forum Math Pi 2020), Polymath 15 Λ ≤ 0.22; H_0(z) = Ξ(z/2)/8, so t_RT = 4·t_Ξ (TAA Lemma 150, correction 8). DH heuristic (truncated list): pair at 85.70 closes at t_RT ≈ 0.177 (isolated 2δ² = 0.190); does not separate DH from ζ's known range. TAA Lemma 158: H_t = ∫e^{tu²}Φ(u)cos(zu)du solves the BACKWARD heat equation ∂_tH = −∂_zzH (Rodgers–Tao, Polymath, opened); increasing t (= exp(−tD²), anti-dissipative) makes zeros real (Pólya); the dissipative (forward-heat) direction t ↓ creates collisions and complex pairs. RH ⇔ Λ ≤ 0; Λ ≥ 0 (Rodgers–Tao, Forum Math Pi 2020); Λ ≤ ½ (de Bruijn 1950); −∞ < Λ (Newman 1976); Λ ≤ 0.22 (Polymath). Toy exp(−tD²)(z²−1)(z²−1.6²): Λ_toy = −0.0463. F/V merge = 𝔽_q picture of the collision (Analogy, fv_merge_trichotomy). TAA Lemma 159: Newman–Wu 2019 (opened): the 1976 theorem's motivation came 'more by statistical physics and Euclidean field theory … than by analytic number theory'; Lee–Yang property of Φ is the precise Lee–Yang form of RH (lee_yang_fisher_rh). TAA Lemma 160: direction stated explicitly (RT convention ∂_t H = −∂_zz H; increasing t makes zeros real; collisions come from lowering t); RH ⇔ Λ = 0; under RH with simple zeros the forced collisions escape every compact set as t → 0⁻ (dbn_parabolic_threshold). Newman 1976 is Proc. AMS 61, 245–251 (AMS DOI record; TAA Lemma 158 had 246). L180: local flow = F/V sweep; Λ_p = ACM Lemma 3.18 (t_ACM = t log²p, t_RT = 4t); product cross-term explicit; Λ_global = 0 for incommensurable Hasse products (Heuristic/Numerical).",
    "formula": "",
    "numbers": [
     "Λ ∈ [0, 0.22]",
@@ -3890,7 +3952,8 @@
     "L150",
     "L158",
     "L159",
-    "L160"
+    "L160",
+    "L180"
    ],
    "rels": [
     {
@@ -3919,7 +3982,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 58
+   "rank": 59
   },
   {
    "id": "fake_weil_poly",
@@ -3980,7 +4043,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 59
+   "rank": 60
   },
   {
    "id": "compatible_J",
@@ -4043,7 +4106,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 60
+   "rank": 61
   },
   {
    "id": "fq_curves",
@@ -4103,7 +4166,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 61
+   "rank": 62
   },
   {
    "id": "gamma_as_dual_adjoint_gap",
@@ -4168,7 +4231,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 62
+   "rank": 63
   },
   {
    "id": "certified_zero_lists",
@@ -4234,7 +4297,62 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 63
+   "rank": 64
+  },
+  {
+   "id": "trace_polarization_primitive_positivity",
+   "name": "Trace part = polarization (projection onto span{h,v}, ample ω = h + v, ω² = 2), positivity = definiteness of the primitive part relative to it; together = Hodge index on E×E (primitive Gram [[−2,−a],[−a,−2q]] definite ⇔ a² < 4q)",
+   "aliases": [],
+   "plain": "Split each class into the part along the two fibre directions and the rest. The first part is the polarization. Positivity means the rest is definite, and that only makes sense relative to the polarization. The two together are the Hodge index theorem, which is Weil's proof of RH for curves.",
+   "label": "Theorem",
+   "core": "Trace part = polarization (projection onto span{h,v}, ample ω = h + v, ω² = 2), positivity = definiteness of the primitive part relative to it; together = Hodge index on E×E (primitive Gram [[−2,−a],[−a,−2q]] definite ⇔ a² < 4q)",
+   "formula": "π(D) = (D·v)h + (D·h)v; D² = 2(D·h)(D·v) + D₀²",
+   "numbers": [
+    "fake (5,5): signature (2,2); real: (1,3)",
+    "h − v complement indefinite even for real curves"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The trace-free part alone is not positivity. The flowed primitive form is definite iff t > Λ_p (formal)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "castelnuovo_severi",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 65
   },
   {
    "id": "decay_quarter",
@@ -4296,7 +4414,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 64
+   "rank": 66
   },
   {
    "id": "eisenstein_resonances_rho_half",
@@ -4358,7 +4476,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 65
+   "rank": 67
   },
   {
    "id": "euler_to_dh_pencil_genealogy",
@@ -4416,7 +4534,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 66
+   "rank": 68
   },
   {
    "id": "ghost_map",
@@ -4491,7 +4609,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 67
+   "rank": 69
   },
   {
    "id": "kms_bochner_coefficient_positivity",
@@ -4547,7 +4665,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 68
+   "rank": 70
   },
   {
    "id": "profinite_integers_adelic_solenoid",
@@ -4615,7 +4733,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 69
+   "rank": 71
   },
   {
    "id": "free_gas_positivity_ladder",
@@ -4687,7 +4805,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 70
+   "rank": 72
   },
   {
    "id": "goldfeld_bsd",
@@ -4750,7 +4868,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 71
+   "rank": 73
   },
   {
    "id": "invariant_vs_refined_count",
@@ -4821,7 +4939,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 72
+   "rank": 74
   },
   {
    "id": "dbn_parabolic_threshold",
@@ -4880,7 +4998,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 73
+   "rank": 75
   },
   {
    "id": "de_branges",
@@ -4932,7 +5050,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 74
+   "rank": 76
   },
   {
    "id": "hasse_pythagoras",
@@ -4986,7 +5104,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 75
+   "rank": 77
   },
   {
    "id": "lee_yang_fisher_rh",
@@ -4998,7 +5116,7 @@
    ],
    "plain": "Lee and Yang proved that ferromagnets have their partition-function zeros on a circle. ζ's zeros are zeros in temperature (Fisher zeros), not in field; the exact Lee–Yang-type statement for ζ is the de Bruijn–Newman one, which is RH itself.",
    "label": "Cited",
-   "core": "[C] Lee–Yang (1952): ferromagnetic Ising, zeros in the fugacity z = e^{−2βh} on |z| = 1; Newman 1974 extension (Newman–Wu 2019 Thm 11, opened); Lee–Yang zeros (field) vs Fisher zeros (temperature) (Wikipedia 'Lee–Yang theory', opened). [N] 3-spin toy: ferromagnet J = 0.4 zeros |z| = 1, 1, 1; antiferromagnet J = −0.4: 13.79, 1.00, 0.0725. [T] Truncated Euler products have no zeros in any prime fugacity: ζ zeros are Fisher zeros of the Bost–Connes continuation, not Lee–Yang zeros (TAA Lemma 124). [C/R] Precise Lee–Yang form: Newman–Wu Thm 9 (de Bruijn 1950, Newman 1976): H_λ has only real zeros iff λ ≥ Λ; RH ⇔ Λ ≤ 0; Rodgers–Tao Λ ≥ 0; Polymath Λ ≤ 0.22. NW19: the 1976 result's 'original motivation was provided more by statistical physics and Euclidean field theory … than by analytic number theory'. e^{λt²} weighting = Gaussian (ferromagnetic-type) tilt; increasing λ = backward heat (TAA Lemma 158, correction 16).",
+   "core": "[C] Lee–Yang (1952): ferromagnetic Ising, zeros in the fugacity z = e^{−2βh} on |z| = 1; Newman 1974 extension (Newman–Wu 2019 Thm 11, opened); Lee–Yang zeros (field) vs Fisher zeros (temperature) (Wikipedia 'Lee–Yang theory', opened). [N] 3-spin toy: ferromagnet J = 0.4 zeros |z| = 1, 1, 1; antiferromagnet J = −0.4: 13.79, 1.00, 0.0725. [T] Truncated Euler products have no zeros in any prime fugacity: ζ zeros are Fisher zeros of the Bost–Connes continuation, not Lee–Yang zeros (TAA Lemma 124). [C/R] Precise Lee–Yang form: Newman–Wu Thm 9 (de Bruijn 1950, Newman 1976): H_λ has only real zeros iff λ ≥ Λ; RH ⇔ Λ ≤ 0; Rodgers–Tao Λ ≥ 0; Polymath Λ ≤ 0.22. NW19: the 1976 result's 'original motivation was provided more by statistical physics and Euclidean field theory … than by analytic number theory'. e^{λt²} weighting = Gaussian (ferromagnetic-type) tilt; increasing λ = backward heat (TAA Lemma 158, correction 16). L180: Newman 1976 (opened) proves the classification of the class 𝒫 and Φ ∉ 𝒫 unconditionally (so b₀ < ∞), and states RH as b₀ ≥ 0. It does not state 'RH ⇔ Φ Lee–Yang'; that follows from Newman 1974 via Lieb–Sokal 1981 (first pages opened). ζ zeros are Fisher-type (temperature) zeros of the Bost–Connes continuation at Re β = ½, beyond the transition at β = 1; finite truncations have zeros off the line.",
    "formula": "",
    "numbers": [
     "toy ferromagnet |z| = 1 (3/3); antiferromagnet 13.79, 1.00, 0.0725"
@@ -5016,7 +5134,8 @@
     "Lee–Yang 1952 originals not opened (via Newman–Wu, Wikipedia)."
    ],
    "lemmas": [
-    "L159"
+    "L159",
+    "L180"
    ],
    "rels": [
     {
@@ -5045,7 +5164,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 76
+   "rank": 78
   },
   {
    "id": "li_criterion",
@@ -5098,7 +5217,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 77
+   "rank": 79
   },
   {
    "id": "suzuki_line",
@@ -5156,7 +5275,58 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 78
+   "rank": 80
+  },
+  {
+   "id": "burgers_local_toeplitz",
+   "name": "Cole–Hopf: Ψ = H′/H obeys backward Burgers ∂_tΨ = −Ψ″ − 2ΨΨ′; at one prime the Toeplitz sequence 2T_k(x_t) is positive-definite iff t ≥ Λ_p; product cross-term −2tΨ_pΨ_q",
+   "aliases": [],
+   "plain": "The log-derivative side of the flow is a Burgers equation. At one prime its time-t positivity switches on exactly at the local Newman time. For products the primes couple at first order through a product of their log-derivatives.",
+   "label": "Theorem",
+   "core": "Cole–Hopf: Ψ = H′/H obeys backward Burgers ∂_tΨ = −Ψ″ − 2ΨΨ′; at one prime the Toeplitz sequence 2T_k(x_t) is positive-definite iff t ≥ Λ_p; product cross-term −2tΨ_pΨ_q",
+   "formula": "c_k(t) = (α_t^k + β_t^k)/p^{k/2} = 2T_k(λ_p e^{−t log²p}/2)",
+   "numbers": [
+    "(5,3): min eig −9.9e8, −1.9e3, −34 at Λ_p − 0.05, −0.005, −0.0005"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "dbn_product_cross_term",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 81
   },
   {
    "id": "bagchi",
@@ -5203,7 +5373,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 79
+   "rank": 82
   },
   {
    "id": "gain_line",
@@ -5261,7 +5431,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 80
+   "rank": 83
   },
   {
    "id": "near_null_anatomy",
@@ -5311,7 +5481,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 81
+   "rank": 84
   },
   {
    "id": "dim_S",
@@ -5360,7 +5530,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 82
+   "rank": 85
   },
   {
    "id": "hodge_index",
@@ -5430,7 +5600,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 83
+   "rank": 86
   },
   {
    "id": "os_reflection_positivity",
@@ -5519,7 +5689,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 84
+   "rank": 87
   },
   {
    "id": "legendre_support_function",
@@ -5575,7 +5745,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 85
+   "rank": 88
   },
   {
    "id": "hodge_riemann",
@@ -5635,7 +5805,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 86
+   "rank": 89
   },
   {
    "id": "lax_phillips",
@@ -5699,7 +5869,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 87
+   "rank": 90
   },
   {
    "id": "weil_operator",
@@ -5761,7 +5931,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 88
+   "rank": 91
   },
   {
    "id": "connes_consani",
@@ -5808,7 +5978,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 89
+   "rank": 92
   },
   {
    "id": "ff_counts_do_not_induce_sign",
@@ -5880,7 +6050,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 90
+   "rank": 93
   },
   {
    "id": "laguerre_formula",
@@ -5934,7 +6104,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 91
+   "rank": 94
   },
   {
    "id": "deligne_tensor_power",
@@ -5984,7 +6154,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 92
+   "rank": 95
   },
   {
    "id": "pole_plane",
@@ -6033,7 +6203,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 93
+   "rank": 96
   },
   {
    "id": "selberg_eigenvalue_mass_shell",
@@ -6086,7 +6256,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 94
+   "rank": 97
   },
   {
    "id": "cartan_involution",
@@ -6137,7 +6307,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 95
+   "rank": 98
   },
   {
    "id": "conformal_flow_needs_solenoid",
@@ -6188,7 +6358,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 96
+   "rank": 99
   },
   {
    "id": "maxwell_effective_potential",
@@ -6238,7 +6408,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 97
+   "rank": 100
   },
   {
    "id": "products_linear",
@@ -6290,7 +6460,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 98
+   "rank": 101
   },
   {
    "id": "weight_monodromy",
@@ -6337,7 +6507,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 99
+   "rank": 102
   },
   {
    "id": "yoneda",
@@ -6380,7 +6550,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 100
+   "rank": 103
   },
   {
    "id": "split_blind_sensitive",
@@ -6442,7 +6612,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 101
+   "rank": 104
   },
   {
    "id": "boost_rotation_modular_kms",
@@ -6519,7 +6689,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 102
+   "rank": 105
   },
   {
    "id": "gyroscopic_vs_definite_stability",
@@ -6591,7 +6761,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 103
+   "rank": 106
   },
   {
    "id": "dh_acceptance",
@@ -6652,7 +6822,7 @@
     "evidence": 0.48,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 104
+   "rank": 107
   },
   {
    "id": "brst",
@@ -6709,7 +6879,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 105
+   "rank": 108
   },
   {
    "id": "weil_template_factor_product",
@@ -6774,7 +6944,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 106
+   "rank": 109
   },
   {
    "id": "gamma_fwhm_of_a_zero",
@@ -6857,7 +7027,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 107
+   "rank": 110
   },
   {
    "id": "mass_shell_even_xi",
@@ -6929,7 +7099,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 108
+   "rank": 111
   },
   {
    "id": "arithmetic_equation_of_state",
@@ -7010,7 +7180,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 109
+   "rank": 112
   },
   {
    "id": "composite_leakage",
@@ -7074,7 +7244,59 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 110
+   "rank": 113
+  },
+  {
+   "id": "rh_hodge_index_zero_margin",
+   "name": "Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector",
+   "aliases": [],
+   "plain": "Weil turned RH into a positivity statement, and Bombieri asked whether some index theorem proves it. The de Bruijn–Newman constant says that positivity holds with no room to spare.",
+   "label": "Restatement",
+   "core": "Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector",
+   "formula": "RH ⇔ Weil form ≥ 0 (pole terms = polarization); Λ ≥ 0 (Rodgers–Tao) ⇒ RH ⇔ Λ = 0",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Building the pole term as a genuine ⋆-polarization is Open (Deninger)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "incommensurable_lehmer_zero",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "dbn_parabolic_threshold",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 114
   },
   {
    "id": "circle_pi_in_zero_counts",
@@ -7135,7 +7357,109 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 111
+   "rank": 115
+  },
+  {
+   "id": "weil_shear_subtracts",
+   "name": "Weil criterion in push/shear language: pole terms = (hyperbolic) push, −Σ_ρ f̂(ρ) = shear, primes + archimedean = total; degree-0 test functions remove the push; RH ⇔ shear ≤ 0",
+   "aliases": [],
+   "plain": "Restated this way, RH says the zeros can only subtract once the pole terms are removed; the restatement proves nothing.",
+   "label": "Restatement",
+   "core": "Weil criterion in push/shear language: pole terms = (hyperbolic) push, −Σ_ρ f̂(ρ) = shear, primes + archimedean = total; degree-0 test functions remove the push; RH ⇔ shear ≤ 0",
+   "formula": "f̂(s) = ĝ(s)·conj ĝ(1−s̄); f̂(0)+f̂(1) = 2Re ĝ(0)conj ĝ(1)",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The inequality is still RH (Open)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "rh_hodge_index_zero_margin",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 116
+  },
+  {
+   "id": "passive_network_positive_real",
+   "name": "Passive-network reading: RH ⇔ ξ′/ξ(½+w) is positive real on Re w > 0 (Lagarias); lossless on the line; Foster interlacing",
+   "aliases": [],
+   "plain": "A circuit that never produces energy has a positive-real impedance. For ξ′/ξ this property is equivalent to RH. Building the circuit from the primes would make positivity structural.",
+   "label": "Restatement",
+   "core": "Passive-network reading: RH ⇔ ξ′/ξ(½+w) is positive real on Re w > 0 (Lagarias); lossless on the line; Foster interlacing",
+   "formula": "",
+   "numbers": [
+    "min Re Z > 0 on the tested half-plane grid; |Re Z| < 1e−20 on the axis; Foster interlacing holds on the tested range"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "physics analogue",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Completely passive ⇔ KMS is Pusz–Woronowicz (not opened)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "lagarias",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "passivity",
+     "note": ""
+    },
+    {
+     "type": "contrasts-with",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 117
   },
   {
    "id": "two_point",
@@ -7182,7 +7506,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 112
+   "rank": 118
   },
   {
    "id": "rh",
@@ -7221,7 +7545,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 113
+   "rank": 119
   },
   {
    "id": "hilbert_polya",
@@ -7277,7 +7601,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 114
+   "rank": 120
   },
   {
    "id": "cc_square_open",
@@ -7327,7 +7651,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 115
+   "rank": 121
   },
   {
    "id": "castelnuovo_object",
@@ -7376,7 +7700,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 116
+   "rank": 122
   },
   {
    "id": "ghost_onset",
@@ -7430,7 +7754,40 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 117
+   "rank": 123
+  },
+  {
+   "id": "duursma_code_toy",
+   "name": "Duursma zeta functions of codes as a finite RH laboratory: Golay satisfies RH; the [32,16,4] code G₂₄ ⊕ e₈ fails",
+   "aliases": [],
+   "plain": "Linear codes have zeta functions with a Riemann hypothesis that can hold or fail, so the positivity tests can be calibrated on them.",
+   "label": "Numerical",
+   "core": "Duursma zeta functions of codes as a finite RH laboratory: Golay satisfies RH; the [32,16,4] code G₂₄ ⊕ e₈ fails Duursma, arXiv:math/0302172.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 124
   },
   {
    "id": "curvature_cup_square",
@@ -7495,7 +7852,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 118
+   "rank": 125
   },
   {
    "id": "clausius_gamma_reversibility",
@@ -7566,7 +7923,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 119
+   "rank": 126
   },
   {
    "id": "time_delay",
@@ -7628,7 +7985,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 120
+   "rank": 127
   },
   {
    "id": "kallen_lehmann",
@@ -7672,7 +8029,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 121
+   "rank": 128
   },
   {
    "id": "psi_n_lattice",
@@ -7724,7 +8081,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 122
+   "rank": 129
   },
   {
    "id": "displaced_reference",
@@ -7783,7 +8140,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 123
+   "rank": 130
   },
   {
    "id": "band_criterion",
@@ -7830,7 +8187,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 124
+   "rank": 131
   },
   {
    "id": "formal_vs_geometric_lattice",
@@ -7887,7 +8244,88 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 125
+   "rank": 132
+  },
+  {
+   "id": "deninger_preserved_leaf_term",
+   "name": "Preserved-leaf contribution χ(L)/|e^{κt} − 1| (Álvarez López–Kordyukov–Leichtnam Thm 1.3.10) has the shape of the archimedean term",
+   "aliases": [],
+   "plain": "In foliated Lefschetz formulas, a leaf preserved by the flow contributes a term that looks like the archimedean factor. Matching it with the pole push is an open test.",
+   "label": "Heuristic",
+   "core": "Preserved-leaf contribution χ(L)/|e^{κt} − 1| (Álvarez López–Kordyukov–Leichtnam Thm 1.3.10) has the shape of the archimedean term",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "physics analogue",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Deninger Theorem 5: a conformal factor gives Re ρ = α/2 in the fixed-point-free model. Defining the flow by e^{tρ} is circular."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "extends",
+     "to": "deninger",
+     "note": ""
+    }
+   ],
+   "priority": 0.377,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 133
+  },
+  {
+   "id": "talenti_template_test",
+   "name": "Talenti template transcribed to Weil: bulk=boundary works on Yoshida's short-support class (ĝ(±i/2)=0 as the boundary condition); W_R alone indefinite by support log 4; total top eigenvalue → 0⁻",
+   "aliases": [],
+   "plain": "The template gives a sign only where no primes enter.",
+   "label": "Numerical",
+   "core": "Talenti template transcribed to Weil: bulk=boundary works on Yoshida's short-support class (ĝ(±i/2)=0 as the boundary condition); W_R alone indefinite by support log 4; total top eigenvalue → 0⁻",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "numerics/certificate",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "constrains",
+     "to": "sharpened_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 134
   },
   {
    "id": "cutoff_saturation",
@@ -7933,7 +8371,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 126
+   "rank": 135
   },
   {
    "id": "lmfdb_maass_complete",
@@ -7979,7 +8417,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 127
+   "rank": 136
   },
   {
    "id": "null_calibrated_gls",
@@ -8026,7 +8464,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 128
+   "rank": 137
   },
   {
    "id": "onset_kernel_dependence",
@@ -8064,7 +8502,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 129
+   "rank": 138
   },
   {
    "id": "birman_krein_spectral_shift",
@@ -8127,7 +8565,59 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 130
+   "rank": 139
+  },
+  {
+   "id": "acm_local_newman_constant",
+   "name": "Local Newman constant Λ_p = log(|a|/2√p)/log²p (Andrade–Chang–Miller 2014, Lemma 3.18, in time t_ACM = t log²p); Λ_p ≤ 0 ⇔ Hasse; a = 0 ⇒ −∞",
+   "aliases": [],
+   "plain": "Each prime has its own threshold time after which its two zeros are real. It is negative exactly when the Hasse bound holds. This is already known from work on function fields.",
+   "label": "Cited",
+   "core": "Local Newman constant Λ_p = log(|a|/2√p)/log²p (Andrade–Chang–Miller 2014, Lemma 3.18, in time t_ACM = t log²p); Λ_p ≤ 0 ⇔ Hasse; a = 0 ⇒ −∞",
+   "formula": "Λ_p = log(|a|/2√p)/log²p; Rodgers–Tao units ×4; ACM units ×log²p",
+   "numbers": [
+    "(5,3) −0.1541",
+    "(7,−4) −0.0739",
+    "(11,6) −0.0174",
+    "(5,5) fake +0.0431",
+    "(11,7) fake +0.0094",
+    "ζ local pair (a = p+1): log cosh(½ log p)/log²p, p = 2: 0.1226"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "dbn_local_flow_fv_sweep",
+     "note": ""
+    },
+    {
+     "type": "restates",
+     "to": "ghost_onset",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 140
   },
   {
    "id": "ghost_conventions",
@@ -8186,7 +8676,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 131
+   "rank": 141
   },
   {
    "id": "kappa_index",
@@ -8243,7 +8733,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 132
+   "rank": 142
   },
   {
    "id": "s_of_t_remainder",
@@ -8292,7 +8782,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 133
+   "rank": 143
   },
   {
    "id": "two_partners",
@@ -8341,7 +8831,182 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 134
+   "rank": 144
+  },
+  {
+   "id": "deninger_derivation_positivity",
+   "name": "Deninger: Θ a derivation of cup product + positive Hodge ⋆ ⇒ Θ=½+A, A skew ⇒ RH (conjectural cohomology)",
+   "aliases": [],
+   "plain": "The closest existing 'Leibniz plus a positive star' mechanism.",
+   "label": "Cited",
+   "core": "Deninger: Θ a derivation of cup product + positive Hodge ⋆ ⇒ Θ=½+A, A skew ⇒ RH (conjectural cohomology)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "open target"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "candidate_setting",
+     "to": "sharpened_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 145
+  },
+  {
+   "id": "dolbeault_kahler_sign",
+   "name": "d* = −⋆d⋆ (dim 4), ∂̄* = −⋆∂⋆, Δ = 2□, [Λ,∂̄] = −i∂*; Hodge-index sign D°² = −‖α_harm‖² from ⋆ = −1 on primitive (1,1)",
+   "aliases": [],
+   "plain": "The sign is minus a sum of squares, as an identity.",
+   "label": "Theorem",
+   "core": "d* = −⋆d⋆ (dim 4), ∂̄* = −⋆∂⋆, Δ = 2□, [Λ,∂̄] = −i∂*; Hodge-index sign D°² = −‖α_harm‖² from ⋆ = −1 on primitive (1,1)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "structure/frame (Ax1)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "supplies_sign_for",
+     "to": "edge_boundary_cycle",
+     "note": ""
+    },
+    {
+     "type": "worked_example_E2star",
+     "to": "eta_chain",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 146
+  },
+  {
+   "id": "shear_push_density",
+   "name": "Shear-to-push density r = T/(2ℓ₊ℓ₋): RH iff r ≤ 1 for push > 0; sup r = 1 unconditionally (log-Gaussians)",
+   "aliases": [],
+   "plain": "Zero margin is a theorem in density form; approach from below is RH. Margin has density 0 against dBN slack.",
+   "label": "Theorem",
+   "core": "Shear-to-push density r = T/(2ℓ₊ℓ₋): RH iff r ≤ 1 for push > 0; sup r = 1 unconditionally (log-Gaussians)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "quantifies",
+     "to": "net_force_orientation",
+     "note": ""
+    },
+    {
+     "type": "density_form_of",
+     "to": "anisotropic_part_weil",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 147
+  },
+  {
+   "id": "trace_shear_budget",
+   "name": "Budget lemma: a 2×2 symmetric H = (τ/2)I + H° is PD iff τ/2 > |H°|; for [[1,a/2],[a/2,p]] this is a² < 4p (Hasse); dBN shrinks only the off-diagonal shear",
+   "aliases": [],
+   "plain": "Positivity means the isotropic part outweighs the shear; Hasse is that inequality for one Frobenius.",
+   "label": "Theorem",
+   "core": "Budget lemma: a 2×2 symmetric H = (τ/2)I + H° is PD iff τ/2 > |H°|; for [[1,a/2],[a/2,p]] this is a² < 4p (Hasse); dBN shrinks only the off-diagonal shear",
+   "formula": "λ = τ/2 ± √(((h11−h22)/2)² + h12²)",
+   "numbers": [
+    "0/20000 mismatches"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The Hodge-index analogue holds up to a sign on the complement."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "trace_polarization_primitive_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 148
   },
   {
    "id": "nogo_v5_per_prime_and_places",
@@ -8413,7 +9078,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 135
+   "rank": 149
   },
   {
    "id": "cc_riemann_roch",
@@ -8465,7 +9130,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 136
+   "rank": 150
   },
   {
    "id": "zero_count_two_form",
@@ -8523,7 +9188,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 137
+   "rank": 151
   },
   {
    "id": "oscillator_semigroup_contraction",
@@ -8584,7 +9249,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 138
+   "rank": 152
   },
   {
    "id": "automorphy_defect",
@@ -8630,7 +9295,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 139
+   "rank": 153
   },
   {
    "id": "beurling_counting_test_bstar",
@@ -8695,7 +9360,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 140
+   "rank": 154
   },
   {
    "id": "certified_windows",
@@ -8750,7 +9415,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 141
+   "rank": 155
   },
   {
    "id": "euler_factor_wick_rotation",
@@ -8824,7 +9489,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 142
+   "rank": 156
   },
   {
    "id": "morse_lobes_wedges_windows",
@@ -8890,7 +9555,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 143
+   "rank": 157
   },
   {
    "id": "zeros_as_frames_trichotomy",
@@ -8954,7 +9619,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 144
+   "rank": 158
   },
   {
    "id": "dual_conic",
@@ -9006,7 +9671,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 145
+   "rank": 159
   },
   {
    "id": "sqrt2_family",
@@ -9058,7 +9723,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 146
+   "rank": 160
   },
   {
    "id": "closed_geodesics",
@@ -9106,7 +9771,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 147
+   "rank": 161
   },
   {
    "id": "cusp_vs_infinity",
@@ -9150,7 +9815,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 148
+   "rank": 162
   },
   {
    "id": "pole_s1",
@@ -9207,7 +9872,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 149
+   "rank": 163
   },
   {
    "id": "selberg_resonances",
@@ -9251,7 +9916,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 150
+   "rank": 164
   },
   {
    "id": "toeplitz_verblunsky",
@@ -9299,7 +9964,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 151
+   "rank": 165
   },
   {
    "id": "density_volume",
@@ -9346,7 +10011,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 152
+   "rank": 166
   },
   {
    "id": "f1_base",
@@ -9392,7 +10057,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 153
+   "rank": 167
   },
   {
    "id": "s_mirror",
@@ -9434,7 +10099,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 154
+   "rank": 168
   },
   {
    "id": "arakelov",
@@ -9486,7 +10151,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 155
+   "rank": 169
   },
   {
    "id": "principalization",
@@ -9529,7 +10194,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 156
+   "rank": 170
   },
   {
    "id": "spec_z_terminal",
@@ -9572,7 +10237,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 157
+   "rank": 171
   },
   {
    "id": "spinor_route",
@@ -9615,7 +10280,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 158
+   "rank": 172
   },
   {
    "id": "weil_rosetta",
@@ -9656,7 +10321,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 159
+   "rank": 173
   },
   {
    "id": "cohesion",
@@ -9694,7 +10359,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 160
+   "rank": 174
   },
   {
    "id": "local_global",
@@ -9734,7 +10399,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 161
+   "rank": 175
   },
   {
    "id": "kramers_kronig",
@@ -9785,7 +10450,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 162
+   "rank": 176
   },
   {
    "id": "ep_gap_across_collision",
@@ -9841,7 +10506,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 163
+   "rank": 177
   },
   {
    "id": "gribov",
@@ -9892,7 +10557,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 164
+   "rank": 178
   },
   {
    "id": "metaplectic",
@@ -9948,7 +10613,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 165
+   "rank": 179
   },
   {
    "id": "half_tate_twist",
@@ -10021,7 +10686,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 166
+   "rank": 180
   },
   {
    "id": "functional_equation",
@@ -10074,7 +10739,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 167
+   "rank": 181
   },
   {
    "id": "gauss_sum_unitarity",
@@ -10144,7 +10809,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 168
+   "rank": 182
   },
   {
    "id": "kms_bost_connes",
@@ -10207,7 +10872,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 169
+   "rank": 183
   },
   {
    "id": "nash_kuiper_onsager",
@@ -10267,7 +10932,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 170
+   "rank": 184
   },
   {
    "id": "half_turn_sign_flip",
@@ -10331,7 +10996,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 171
+   "rank": 185
   },
   {
    "id": "lps_hecke_on_s3",
@@ -10398,7 +11063,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 172
+   "rank": 186
   },
   {
    "id": "apsides_gap_form",
@@ -10462,7 +11127,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 173
+   "rank": 187
   },
   {
    "id": "moser_orbit_space_s2xs2",
@@ -10533,7 +11198,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 174
+   "rank": 188
   },
   {
    "id": "real_forms_compact_vs_boost",
@@ -10607,7 +11272,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 175
+   "rank": 189
   },
   {
    "id": "archimedean_place",
@@ -10659,7 +11324,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 176
+   "rank": 190
   },
   {
    "id": "cup_product",
@@ -10710,7 +11375,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 177
+   "rank": 191
   },
   {
    "id": "cusp_forms_petersson",
@@ -10760,7 +11425,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 178
+   "rank": 192
   },
   {
    "id": "e2_anomaly",
@@ -10818,7 +11483,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 179
+   "rank": 193
   },
   {
    "id": "euler_char_chi",
@@ -10878,7 +11543,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 180
+   "rank": 194
   },
   {
    "id": "f1_square_constructions",
@@ -10948,7 +11613,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 181
+   "rank": 195
   },
   {
    "id": "n_factorial_bridge_all_places",
@@ -11003,7 +11668,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 182
+   "rank": 196
   },
   {
    "id": "tate_count",
@@ -11053,7 +11718,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 183
+   "rank": 197
   },
   {
    "id": "cc21_archimedean_positivity",
@@ -11114,7 +11779,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 184
+   "rank": 198
   },
   {
    "id": "hecke",
@@ -11171,7 +11836,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 185
+   "rank": 199
   },
   {
    "id": "herbrand_ribet",
@@ -11235,7 +11900,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 186
+   "rank": 200
   },
   {
    "id": "mazur_wiles",
@@ -11288,7 +11953,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 187
+   "rank": 201
   },
   {
    "id": "pv_ts_symplectomorphism",
@@ -11352,7 +12017,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 188
+   "rank": 202
   },
   {
    "id": "standing_frame_so22_ads3",
@@ -11411,7 +12076,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 189
+   "rank": 203
   },
   {
    "id": "thermo_geometry_ruppeiner_contact",
@@ -11478,7 +12143,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 190
+   "rank": 204
   },
   {
    "id": "consani_archimedean_cohomology",
@@ -11531,7 +12196,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 191
+   "rank": 205
   },
   {
    "id": "ramanujan_691",
@@ -11592,7 +12257,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 192
+   "rank": 206
   },
   {
    "id": "primary_sign_rule",
@@ -11657,7 +12322,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 193
+   "rank": 207
   },
   {
    "id": "maass_selberg",
@@ -11706,7 +12371,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 194
+   "rank": 208
   },
   {
    "id": "arch_threshold",
@@ -11762,7 +12427,236 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 195
+   "rank": 209
+  },
+  {
+   "id": "slack_ledger_cf",
+   "name": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
+   "aliases": [],
+   "plain": "How fast the local slack is used up is governed by how well log q/log p is approximated by fractions.",
+   "label": "Numerical",
+   "core": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
+   "formula": "|t_first(Z)| = d_min(Z)²/8 ≈ C²/(8Z²)",
+   "numbers": [
+    "Z≤1e9",
+    "envelope slopes −1.01,−0.85,−0.89,−0.90",
+    "record α 1.04,1.11,1.08,1.16",
+    "22/22 same-branch jumps = q_n",
+    "|t_c/(−d²/8)−1| ≤ 5e−15 on 24 records"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Z·d_min stays in [0.11, 5.4]; partial quotients drive the excursions."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "local_dbn_slack",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "incommensurable_lehmer_zero",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 210
+  },
+  {
+   "id": "perelman_template_dbn",
+   "name": "Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy",
+   "aliases": [],
+   "plain": "Perelman found a quantity that the Ricci flow forces to increase. At one prime the dBN flow has such quantities. No such quantity is known for the whole product, and the link to Galois deformations is only an analogy.",
+   "label": "Open",
+   "core": "Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy",
+   "formula": "Ṡ = 2Σ_k(∂_k S)² ≥ 0 (finite real-rooted polynomials)",
+   "numbers": [
+    "degree 8: Ṡ = 53.110 both ways"
+   ],
+   "axes": [
+    "open target",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "contrasts-with",
+     "to": "oscillator_semigroup_contraction",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "mazur_wiles",
+     "note": ""
+    }
+   ],
+   "priority": 0.292,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 211
+  },
+  {
+   "id": "edge_boundary_cycle",
+   "name": "The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)",
+   "aliases": [],
+   "plain": "∂∂ = 0 carries no sign; the positivity must come from extra structure.",
+   "label": "Heuristic",
+   "core": "The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "explains",
+     "to": "exactness_monge_ampere",
+     "note": ""
+    },
+    {
+     "type": "heuristically_points_to",
+     "to": "deninger_derivation_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.271,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 212
+  },
+  {
+   "id": "kahler_package_one_liner",
+   "name": "RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin",
+   "aliases": [],
+   "plain": "The pole push has signature (1,1) and K is unsigned.",
+   "label": "Heuristic",
+   "core": "RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "sharpens",
+     "to": "sharpened_missing_piece",
+     "note": ""
+    },
+    {
+     "type": "uses",
+     "to": "net_force_orientation",
+     "note": ""
+    }
+   ],
+   "priority": 0.271,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 213
+  },
+  {
+   "id": "identity_not_estimate",
+   "name": "Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack",
+   "aliases": [],
+   "plain": "With local room but no global room, a proof has to show the sign exactly rather than bound it.",
+   "label": "Heuristic",
+   "core": "Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack",
+   "formula": "Λ_p<0 locally; Λ=0 globally",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "sign/positivity (Ax2)",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The slack is in the de Bruijn–Newman direction only; it is not a null vector of Weil's form."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "rh_hodge_index_zero_margin",
+     "note": ""
+    }
+   ],
+   "priority": 0.271,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 214
   },
   {
    "id": "half_density",
@@ -11821,7 +12715,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 196
+   "rank": 215
   },
   {
    "id": "theta_inversion",
@@ -11886,7 +12780,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 197
+   "rank": 216
   },
   {
    "id": "apsidal_sweep_eccentricity",
@@ -11954,7 +12848,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 198
+   "rank": 217
   },
   {
    "id": "eisenstein_ct",
@@ -12005,7 +12899,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 199
+   "rank": 218
   },
   {
    "id": "fundamental_domain_three_phases",
@@ -12058,7 +12952,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 200
+   "rank": 219
   },
   {
    "id": "hilbert_reciprocity_at_2",
@@ -12130,7 +13024,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 201
+   "rank": 220
   },
   {
    "id": "prime_two_wild",
@@ -12193,7 +13087,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 202
+   "rank": 221
   },
   {
    "id": "scattering_phi",
@@ -12248,7 +13142,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 203
+   "rank": 222
   },
   {
    "id": "sl2fp_half_representations",
@@ -12317,7 +13211,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 204
+   "rank": 223
   },
   {
    "id": "count_positivity",
@@ -12362,7 +13256,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 205
+   "rank": 224
   },
   {
    "id": "four_squares_eisenstein_lift",
@@ -12428,7 +13322,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 206
+   "rank": 225
   },
   {
    "id": "gauss_half",
@@ -12502,7 +13396,159 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 207
+   "rank": 226
+  },
+  {
+   "id": "dbn_local_flow_fv_sweep",
+   "name": "De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}",
+   "aliases": [],
+   "plain": "Running the heat flow on a single Euler factor changes only its trace, which shrinks or grows exponentially, while the product of the two Frobenius roots stays p. So the flow slides the pair along the F/V sweep.",
+   "label": "Theorem",
+   "core": "De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}",
+   "formula": "P_p(½+iz) = e^{−iz log p}(2cos(z log p) − a/√p); H_t = 2e^{t log²p}cos(z log p) − a/√p",
+   "numbers": [
+    "forward: z → π/(2 log p), F,V → ±i√p (k = 2 point)",
+    "inversion: flowed 1/P_p diverges for t > 0 (weight 2·10^275 at k = 70, t = 0.05)"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_merge_trichotomy",
+     "note": ""
+    },
+    {
+     "type": "localises",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 227
+  },
+  {
+   "id": "incommensurable_lehmer_zero",
+   "name": "Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)",
+   "aliases": [],
+   "plain": "Zeros from different primes come arbitrarily close because the logarithms of primes are rationally independent, which is unique factorisation. Running the flow backward makes every such pair collide, so the product sits exactly at threshold 0, whatever the a_p are. This is a statement on the local unitarity line, not GRH.",
+   "label": "Theorem",
+   "core": "Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)",
+   "formula": "collision t_c ≈ −d²/8; F_{−s} = F + sF″ + O(s²)",
+   "numbers": [
+    "record pair d = 1.98792e−6 at z = 430949.266: t_c = −4.93978673e−13 = −d²/8 (ratio 1 + 7e−13)",
+    "(5,3)×(11,6) min gap 1.6e−3 (z < 100), 1.1e−4 (z < 10⁴), 3.7e−6 (z < 10⁵)"
+   ],
+   "axes": [
+    "geometry over F_q",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "No exact reference found; the method is close to Csordas–Smith–Varga and Dobner (possibly folklore). Hasse-level, not GRH.",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "mirror-of",
+     "to": "dbn_parabolic_threshold",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "dbn_product_cross_term",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 228
+  },
+  {
+   "id": "push_shear_balance",
+   "name": "Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)",
+   "aliases": [],
+   "plain": "Over a whole surface the isotropic and shear parts of a Hessian balance exactly; any surplus is a boundary or curvature term.",
+   "label": "Theorem",
+   "core": "Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)",
+   "formula": "∫(τ/2)²−∫|H°|² = ½∮[κ|∇u|² − 2u_s∂_s u_n] ; = ½∫K|∇u|² (closed)",
+   "numbers": [
+    "disk x³+xy²: B=4π",
+    "disk x²y+y⁴−x: B=−2π",
+    "S² Y₂⁰: 48π/5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The sign is controlled only with Dirichlet or Neumann data on convex domains (Miranda–Talenti)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "trace_shear_budget",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "weil_shear_subtracts",
+     "note": ""
+    },
+    {
+     "type": "tested_by",
+     "to": "talenti_template_test",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 229
   },
   {
    "id": "gauss_sum_canonical_root",
@@ -12556,7 +13602,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 208
+   "rank": 230
   },
   {
    "id": "ks_quaternion_lift",
@@ -12616,7 +13662,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 209
+   "rank": 231
   },
   {
    "id": "maslov_legendre_fourier",
@@ -12680,7 +13726,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 210
+   "rank": 232
   },
   {
    "id": "quartet_capacity_sp4",
@@ -12736,7 +13782,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 211
+   "rank": 233
   },
   {
    "id": "weight_ladder",
@@ -12783,7 +13829,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 212
+   "rank": 234
   },
   {
    "id": "yoshida",
@@ -12842,7 +13888,107 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 213
+   "rank": 235
+  },
+  {
+   "id": "dbn_deficit_time_to_cusp",
+   "name": "Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)",
+   "aliases": [],
+   "plain": "Each prime's Frobenius is a rotation of the sphere, so it has a cone angle. The flow sharpens the cone backward until it becomes a cusp, exactly at the local Newman time. Forward it relaxes toward a half-turn. Past the cusp the rotation becomes a boost.",
+   "label": "Theorem",
+   "core": "Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)",
+   "formula": "SO(3) angle 2θ̄, θ̄ = arccos(|a|/2√p); t_k = log(cos θ̄₀/cos(π/k))/log²p; 2η = 2 arccosh(|tr|/2) = log(F/V)",
+   "numbers": [
+    "δ(0): (5,3) 264.3°, (7,−4) 278.2°, (11,6) 309.5°",
+    "fake (5,5): 2η = 0.962",
+    "ζ paired factor: boost length log p"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The time-to-cusp restates Andrade–Chang–Miller Lemma 3.18; the deficit reading was not found there or in Chang et al."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "euler_factor_wick_rotation",
+     "note": ""
+    },
+    {
+     "type": "mirror-of",
+     "to": "dbn_bohlin_decay",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 236
+  },
+  {
+   "id": "dbn_product_cross_term",
+   "name": "Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p",
+   "aliases": [],
+   "plain": "The flow of a product is not the product of the flows. The extra terms are explicit, and they decide the product's threshold, which the local thresholds do not determine.",
+   "label": "Theorem",
+   "core": "Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p",
+   "formula": "cross-weights e^{±2t log p log q}, as in Dobner's ζ_t",
+   "numbers": [
+    "Hasse factors at distinct primes: Λ_global = 0 (numerical, ±5·10⁻⁴) vs max Λ_p −0.0174 … −0.119",
+    "fake (5,5)×(11,6): 0.0356 < 0.0431",
+    "same p (5,3)×(5,1): −0.0132 vs −0.1541",
+    "11a1 truncations (2–6 primes): Λ = 0"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "obstructs",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 237
   },
   {
    "id": "kronecker_limit_E2star",
@@ -12897,7 +14043,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 214
+   "rank": 238
   },
   {
    "id": "w2_cech",
@@ -12942,7 +14088,140 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 215
+   "rank": 239
+  },
+  {
+   "id": "dbn_bohlin_decay",
+   "name": "Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward",
+   "aliases": [],
+   "plain": "Under the forward flow every orbit becomes more circular at an exact exponential rate. The ghost onset is the moment it becomes parabolic. The picture in the root dictionary is different (see TAA Lemma 179).",
+   "label": "Theorem",
+   "core": "Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward",
+   "formula": "e_K(t) = |a_eff(t)|/2√p",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "apsidal_sweep_eccentricity",
+     "note": ""
+    },
+    {
+     "type": "mirror-of",
+     "to": "euler_factor_wick_rotation",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 240
+  },
+  {
+   "id": "exactness_monge_ampere",
+   "name": "(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²",
+   "aliases": [],
+   "plain": "Push−shear is exact in flat space; curvature is the non-exact leftover.",
+   "label": "Theorem",
+   "core": "(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "explains",
+     "to": "sharpened_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 241
+  },
+  {
+   "id": "local_dbn_slack",
+   "name": "Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)",
+   "aliases": [],
+   "plain": "One prime survives a definite amount of backward heat flow; a product of two primes survives none, because near-coincident zeros collide.",
+   "label": "Theorem",
+   "core": "Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)",
+   "formula": "s_p = log(2√p/|a|)/log²p; s(product) = 0; t_c = −d²/8",
+   "numbers": [
+    "s_5(3)=0.15413",
+    "s_7(-4)=0.07389",
+    "s_11(6)=0.01745"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A correction term changes the function; a non-circular form is an exact ledger (Open)."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "incommensurable_lehmer_zero",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 242
   },
   {
    "id": "sector_map_w",
@@ -12989,7 +14268,225 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 216
+   "rank": 243
+  },
+  {
+   "id": "archimedean_weyl_kernel",
+   "name": "W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ",
+   "aliases": [],
+   "plain": "The archimedean 'curvature' is monotone but unsigned.",
+   "label": "Theorem",
+   "core": "W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "talenti_template_test",
+     "note": ""
+    },
+    {
+     "type": "analogous_to",
+     "to": "serre_derivative_analogy",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 244
+  },
+  {
+   "id": "chirality_star_gamma5_hodge_index",
+   "name": "On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH",
+   "aliases": [],
+   "plain": "Over the complex numbers, the polarization is the self-dual (right-handed) direction and the primitive classes are anti-self-dual. Curvature produces the topological signature through its Weyl part, but that signature is zero for every such surface and does not see Frobenius.",
+   "label": "Theorem",
+   "core": "On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH The signature is constant (LeBrun, arXiv:2203.02528, eq. (2)).",
+   "formula": "b⁺ = 2h^{2,0} + 1 = 3, b⁻ = h^{1,1} − 1 = 3",
+   "numbers": [
+    "ρ = 3 (non-CM), 4 (CM); over F̄_q supersingular ρ = 6 > h^{1,1}"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "trace_polarization_primitive_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 245
+  },
+  {
+   "id": "eta_chain",
+   "name": "η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential",
+   "aliases": [],
+   "plain": "The arithmetic η for the Weil form is open.",
+   "label": "Theorem",
+   "core": "η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "extends",
+     "to": "serre_derivative_analogy",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 246
+  },
+  {
+   "id": "hecke_toy_contraction",
+   "name": "Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)",
+   "aliases": [],
+   "plain": "The simplest prime-indexed ladder operators fail to close into a spin algebra; they contract.",
+   "label": "Theorem",
+   "core": "Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "no-go / refuted",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "illustrates",
+     "to": "hecke",
+     "note": ""
+    },
+    {
+     "type": "obstructs",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 247
+  },
+  {
+   "id": "prime_clocks",
+   "name": "One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction",
+   "aliases": [],
+   "plain": "The heat flow advances each frequency at a rate set by its square. On its own clock, every prime with the same angle reaches the cusp at the same moment. When two primes combine, their clocks interact, which is why products behave differently.",
+   "label": "Theorem",
+   "core": "One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction",
+   "formula": "e^{iωz} ↦ e^{ω²t}; Wick t = −is: iH_s = −H_zz, ω = k², v_g = 2k",
+   "numbers": [
+    "θ̄₀ = π/5: Λ_p = −0.0818, −0.0369, −0.0100, −0.0025 at p = 5, 11, 101, 10007"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "“Proper time” is an Analogy only."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "dbn_product_cross_term",
+     "note": ""
+    },
+    {
+     "type": "restates",
+     "to": "acm_local_newman_constant",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 248
   },
   {
    "id": "spin_theta",
@@ -13038,7 +14535,328 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 217
+   "rank": 249
+  },
+  {
+   "id": "conic_compactness",
+   "name": "Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves",
+   "aliases": [],
+   "plain": "The parabola is not compact.",
+   "label": "Theorem",
+   "core": "Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "buoyancy_reading",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 250
+  },
+  {
+   "id": "fourth_roots_supersingular",
+   "name": "Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)",
+   "aliases": [],
+   "plain": "At ±i the Frobenius pair has maximal slack; squaring moves it to the cusp.",
+   "label": "Theorem",
+   "core": "Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "geometry over F_q",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "illustrates",
+     "to": "dbn_local_flow_fv_sweep",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 251
+  },
+  {
+   "id": "kepler_so4_contraction",
+   "name": "Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0",
+   "aliases": [],
+   "plain": "The hidden symmetry of the hydrogen atom switches type with the sign of the energy, as the conic does.",
+   "label": "Theorem",
+   "core": "Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "illustrates",
+     "to": "lrl_hidden_symmetry_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 252
+  },
+  {
+   "id": "newman_class_P_fails_for_phi",
+   "name": "Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH",
+   "aliases": [],
+   "plain": "Newman's sufficient condition (an even potential growing like a polynomial) fails for Φ because Φ decays doubly exponentially. Lee–Yang for Φ is therefore not available from that theorem.",
+   "label": "Cited",
+   "core": "Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH",
+   "formula": "",
+   "numbers": [
+    "V/u⁴ = 253, 160, 247, 584 at u = 0.5, 1, 1.5, 2"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "constrains",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 253
+  },
+  {
+   "id": "orbifold_vs_descartes_deficits",
+   "name": "Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)",
+   "aliases": [],
+   "plain": "There are two different 'deficit angles of the Platonic solids'. The ones on the F/V sweep belong to the quotient of the sphere by the symmetry group. The corners of the solids themselves have smaller defects. Both add up to 720° once the smooth curvature is counted.",
+   "label": "Theorem",
+   "core": "Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)",
+   "formula": "Σ 2π(1−1/k_i) + 4π/|G| = 4π; Descartes: Σ vertex defects = 4π",
+   "numbers": [
+    "Descartes defects: 180°, 90°, 120°, 36°, 60°"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "dbn_deficit_time_to_cusp",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 254
+  },
+  {
+   "id": "so4_chirality_split",
+   "name": "so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²",
+   "aliases": [],
+   "plain": "Both chiral halves generate rotations; ⋆ referees the sign.",
+   "label": "Theorem",
+   "core": "so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "corrects",
+     "to": "buoyancy_reading",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 255
+  },
+  {
+   "id": "three_lenses_one_flow",
+   "name": "Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products",
+   "aliases": [],
+   "plain": "At a single prime the analytic factor, the Frobenius polynomial and the oscillator are the same equation, and the flow acts on all three in the same way.",
+   "label": "Theorem",
+   "core": "Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products",
+   "formula": "H(z) = 0 ⇔ e^{iz log p} ∈ spec(Frob/√p)",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "dbn_local_flow_fv_sweep",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 256
+  },
+  {
+   "id": "zero_gas_forced_functionals",
+   "name": "Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)",
+   "aliases": [],
+   "plain": "For finitely many zeros the flow forces several quantities to move in one direction, Perelman-style. None of them decides anything at time zero, for heuristic reasons.",
+   "label": "Theorem",
+   "core": "Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)",
+   "formula": "",
+   "numbers": [
+    "n = 10: W_Hermite = −50.2043"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "None of these functionals decides the sign at time zero (Heuristic). The claim that y_max² + 2t is nonincreasing is false as stated."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "perelman_template_dbn",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 257
   },
   {
    "id": "cocycle_principle",
@@ -13081,7 +14899,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 218
+   "rank": 258
   },
   {
    "id": "wedge_flip_animation",
@@ -13135,7 +14953,7 @@
     "evidence": 0.48,
     "quadrant": "background"
    },
-   "rank": 219
+   "rank": 259
   },
   {
    "id": "purity_distortionless",
@@ -13194,7 +15012,207 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 220
+   "rank": 260
+  },
+  {
+   "id": "net_force_orientation",
+   "name": "Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down",
+   "aliases": [],
+   "plain": "Locally net = det of the Frobenius Gram matrix, p − a²/4.",
+   "label": "Restatement",
+   "core": "Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "extends",
+     "to": "buoyancy_reading",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 261
+  },
+  {
+   "id": "sharpened_missing_piece",
+   "name": "RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole",
+   "aliases": [],
+   "plain": "A programme, not a theorem; boundary term cannot be W_R itself.",
+   "label": "Restatement",
+   "core": "RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "Spec ℤ gap",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 262
+  },
+  {
+   "id": "anisotropic_part_weil",
+   "name": "Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel",
+   "aliases": [],
+   "plain": "On finite bases the top eigenvalue tends to 0 from below; the near-null mode is an archimedean/p=2 cancellation.",
+   "label": "Restatement",
+   "core": "Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "push_shear_balance",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 263
+  },
+  {
+   "id": "hodge_index_shear_subtracts",
+   "name": "Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²",
+   "aliases": [],
+   "plain": "The ample direction pushes, everything orthogonal to it can only lower the self-intersection.",
+   "label": "Restatement",
+   "core": "Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²",
+   "formula": "D² ≤ (D·ω)²/ω²",
+   "numbers": [
+    "fakes (5,5): max D°²/|D|² = 0.18 > 0"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "ω = h + v; h alone has h² = 0."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "trace_polarization_primitive_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 264
+  },
+  {
+   "id": "weil_braket_pairing",
+   "name": "⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite",
+   "aliases": [],
+   "plain": "RH adds positivity, not unitarity.",
+   "label": "Restatement",
+   "core": "⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "phase/unitarity (Ax3)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "weil_shear_subtracts",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 265
   },
   {
    "id": "archimedes",
@@ -13244,7 +15262,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 221
+   "rank": 266
   },
   {
    "id": "distortionless",
@@ -13299,7 +15317,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 222
+   "rank": 267
   },
   {
    "id": "heaviside",
@@ -13350,7 +15368,45 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 223
+   "rank": 268
+  },
+  {
+   "id": "serre_derivative_analogy",
+   "name": "Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned",
+   "aliases": [],
+   "plain": "The open part is a signed curvature, the analogue of −E₄/12.",
+   "label": "Analogy",
+   "core": "Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "analogous_to",
+     "to": "exactness_monge_ampere",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 269
   },
   {
    "id": "mass_density",
@@ -13391,7 +15447,85 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 224
+   "rank": 270
+  },
+  {
+   "id": "einstein_de_haas_lesson",
+   "name": "Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit",
+   "aliases": [],
+   "plain": "The first explanation of magnetism used circulating currents; the right one needed spin.",
+   "label": "Analogy",
+   "core": "Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Original 1915 papers not opened."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "heuristically_points_to",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 271
+  },
+  {
+   "id": "viscosity_baroclinic",
+   "name": "Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ",
+   "aliases": [],
+   "plain": "Hasse makes the tilt a real angle.",
+   "label": "Analogy",
+   "core": "Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "illustrates",
+     "to": "net_force_orientation",
+     "note": ""
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 272
   },
   {
    "id": "su2xsu2_peter_weyl_surface",
@@ -13462,7 +15596,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 225
+   "rank": 273
   },
   {
    "id": "lrl_hidden_symmetry_trichotomy",
@@ -13538,7 +15672,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 226
+   "rank": 274
   },
   {
    "id": "higgs_negative_mass2",
@@ -13596,7 +15730,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 227
+   "rank": 275
   },
   {
    "id": "klein_gordon_charge",
@@ -13656,7 +15790,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 228
+   "rank": 276
   },
   {
    "id": "anomalous_dispersion",
@@ -13711,7 +15845,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 229
+   "rank": 277
   },
   {
    "id": "missing_square_spec_z",
@@ -13793,7 +15927,46 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 230
+   "rank": 278
+  },
+  {
+   "id": "buoyancy_reading",
+   "name": "Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks",
+   "aliases": [],
+   "plain": "A picture, not a proof: the cusp is neutral buoyancy, not half submerged.",
+   "label": "Analogy",
+   "core": "Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "illustrates",
+     "to": "push_shear_balance",
+     "note": ""
+    }
+   ],
+   "priority": 0.181,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.05,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": 279
   },
   {
    "id": "lamb_cutoff",
@@ -13849,7 +16022,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 231
+   "rank": 280
   },
   {
    "id": "two_chis",
@@ -13906,7 +16079,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 232
+   "rank": 281
   },
   {
    "id": "standard_conj",
@@ -13952,11 +16125,101 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 233
+   "rank": 282
+  },
+  {
+   "id": "thermodynamic_J_direction",
+   "name": "Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance",
+   "aliases": [],
+   "plain": "Thermodynamics supplies the antisymmetric half (area) for free; the positive half needs extra structure that the free prime gas does not have.",
+   "label": "Open",
+   "core": "Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance",
+   "formula": "dT∧dS = dP∧dV; J(dP)=dT ⇔ U_SS+U_VV=0; (log ζ)″ = Σ_p log²p p^{−β}/(1−p^{−β})²",
+   "numbers": [
+    "Var(log n)|β=2 = 0.884481834"
+   ],
+   "axes": [
+    "physics analogue",
+    "open target",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Ruppeiner, Rev. Mod. Phys. 67 (1995), abstract opened; a one-parameter primon gas has no Ruppeiner curvature."
+   ],
+   "lemmas": [
+    "L180",
+    "L102"
+   ],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "chirality_star_gamma5_hodge_index",
+     "note": ""
+    },
+    {
+     "type": "feeds",
+     "to": "identity_not_estimate",
+     "note": ""
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 283
+  },
+  {
+   "id": "both_at_once",
+   "name": "One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya",
+   "aliases": [],
+   "plain": "Hodge flow is e^{−tΔ}; dBN is e^{+tΔ_z} on the spectral variable.",
+   "label": "Open",
+   "core": "One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "sign/positivity (Ax2)",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "strengthens",
+     "to": "kahler_package_one_liner",
+     "note": ""
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 284
   }
  ],
  "counts": {
-  "concepts": 233,
-  "relations": 780
+  "concepts": 284,
+  "relations": 860
  }
 }

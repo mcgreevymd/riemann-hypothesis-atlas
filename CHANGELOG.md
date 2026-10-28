@@ -1,5 +1,13 @@
 # Changelog — The RH Atlas
 
+## v1.5 — 28 Oct 2026
+
+- 284 concepts (+51) and 860 typed relations (+80). TAA Lemma 180 is folded in this release. The refined missing piece is placed at rank 1; every other entry stays in the Heuristic order.
+- Refined missing piece [Open], rank 1: a ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ, with Ξ(z) = ∫Φ(u)cos(zu)du. Such a construction would make RH a structural consequence of the Lee–Yang theorem [Conjecture]. The equivalence underneath is known and is a restatement of RH: RH ⇔ Φ(u)du has the Lee–Yang property (Newman 1974, as stated by Lieb–Sokal 1981) ⇔ b₀ ≥ 0 in Newman 1976 (Λ = −b₀) [Cited; Restatement]. Newman 1976 also proves unconditionally that Φ is not in his sufficient class 𝒫, because Φ decays doubly exponentially [Cited]. Numerical checks [Numerical]: Φ is even and positive; the one-site Lee–Yang statement holds to height 100 (29 real zeros = N(100)); the class-𝒫 growth condition fails, as Newman proved; Turán-type gaps stay positive for every flow time tested, so they cannot locate b₀. The ζ zeros are temperature (Fisher-type) zeros of the Bost–Connes system, not Lee–Yang field zeros, and finite truncations have zeros off the line [Correction]. Placed at rank 1 for this release. Its Heuristic priority is 0.200 (gap significance 0.2, open-target tractability 0.2); every other entry keeps the usual order. The Riemann Hypothesis is not proved.
+- Also from TAA Lemma 180: the local de Bruijn–Newman flow at one prime is the F/V sweep at fixed determinant [Theorem]; each prime has a local Newman constant (Andrade–Chang–Miller 2014), negative exactly when the Hasse bound holds [Cited]; the flow of a product is not the product of the flows, and the cross-term is explicit [Theorem]; Λ = 0 for every finite product of at least two strictly Hasse degree-2 factors at distinct primes [Theorem]; push minus shear balances, and RH restated as a Hodge index for Spec ℤ × Spec ℤ holding with zero margin [Theorem; Restatement]; Deninger's preserved-leaf term has the shape of the archimedean factor [Heuristic]; the Hecke ladder toy contracts, and is neither su(2) nor su(1,1) [Theorem]; the passive-network form of Lagarias's criterion [Restatement]; Duursma zeta functions of codes are a finite laboratory in which RH can fail (the Golay code satisfies it, and G₂₄ ⊕ e₈ does not) [Numerical].
+- Updated entries: de Bruijn–Newman constant, Lee–Yang versus Fisher zeros.
+- The Riemann Hypothesis is not proved here.
+
 ## v1.4 — 27 Oct 2026
 
 - 233 concepts (+3) and 780 typed relations (+10), all in descending priority with the Heuristic scoring layer. Only TAA Lemma 174 is folded in this release.

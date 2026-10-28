@@ -9,11 +9,20 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, 'atlas.json'), encoding='utf-8'))
 C = sorted(D['concepts'], key=lambda c: c['rank'])
 BY = {c['id']: c for c in C}
-VERSION, VDATE = '1.4', '27 Oct 2026'
+VERSION, VDATE = '1.5', '28 Oct 2026'
 
 REL = {'same-mechanism-as': 'same mechanism as', 'special-case-of': 'special case of',
        'analogue-of': 'analogue of', 'implies': 'implies', 'equivalent-to-RH': 'equivalent to RH',
-       'corrects': 'corrects', 'lives-in': 'lives in', 'fails-for': 'fails for'}
+       'corrects': 'corrects', 'lives-in': 'lives in', 'fails-for': 'fails for',
+       'refines': 'refines', 'restates': 'restates', 'feeds': 'feeds', 'illustrates': 'illustrates',
+       'mirror-of': 'mirror of', 'extends': 'extends', 'obstructs': 'obstructs',
+       'contrasts-with': 'contrasts with', 'tested_by': 'tested by', 'constrains': 'constrains',
+       'explains': 'explains', 'candidate_setting': 'candidate setting for',
+       'analogous_to': 'analogous to', 'heuristically_points_to': 'heuristically points to',
+       'localises': 'localises', 'analogy': 'analogy of', 'quantifies': 'quantifies',
+       'density_form_of': 'density form of', 'supplies_sign_for': 'supplies the sign for',
+       'sharpens': 'sharpens', 'uses': 'uses', 'strengthens': 'strengthens',
+       'worked_example_E2star': 'worked example of'}
 QUAD = [('RH-sharp', 'RH-sharp: true for ζ and fails for the fakes'),
         ('true but ghost-blind/untested', 'True for ζ but ghost-blind or untested against the fakes'),
         ('sharp but interpretive', 'Separates ζ from the fakes, but the claim itself is interpretive (Analogy/Heuristic)'),
