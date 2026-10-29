@@ -2,9 +2,9 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.5 · 28 Oct 2026
+Version 1.5.1 · 28 Oct 2026
 
-> **New in v1.5** (see [CHANGELOG.md](CHANGELOG.md)): **the refined missing piece [Open].** Is there a **ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ** (with Ξ(z) = ∫Φ(u)cos(zu)du)? Precisely: can Φ(u)du arise as a limit of block-spin laws of ferromagnetic Ising models (couplings J_ij ≥ 0) whose sites are indexed by the primes and ∞? Such a construction would make RH a structural consequence of the Lee–Yang theorem [Conjecture]. The equivalence underneath is known and is a **restatement** of RH: RH ⇔ Φ(u)du has the Lee–Yang property (Newman 1974, as stated by Lieb–Sokal 1981) ⇔ b₀ ≥ 0 in Newman 1976 (Λ = −b₀) [Cited; Restatement]. Newman 1976 also proves unconditionally that Φ is *not* in his sufficient class 𝒫, because Φ decays doubly exponentially [Cited]. Numerical checks [Numerical]: Φ is even and positive; the one-site Lee–Yang statement holds to height 100 (29 real zeros = N(100)); the class-𝒫 growth condition fails, as Newman proved; Turán-type gaps stay positive for every flow time tested, so they cannot locate b₀. The ζ zeros are temperature (Fisher-type) zeros of the Bost–Connes system, not Lee–Yang field zeros, and finite truncations have zeros off the line [Correction]. Also new (TAA Lemma 180, rev. 9): Deninger's preserved-leaf term, the Hecke ladder toy (it contracts: neither su(2) nor su(1,1)), the passive-network form of Lagarias's criterion, and Duursma code zeta functions as a finite laboratory in which RH can fail (G₂₄ ⊕ e₈). **The Riemann Hypothesis is not proved.**
+> **New in v1.5** (see [CHANGELOG.md](CHANGELOG.md)): **the refined missing piece [Open].** Is there a **ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ** (with Ξ(z) = ∫Φ(u)cos(zu)du)? Precisely: can Φ(u)du arise as a limit of block-spin laws of ferromagnetic Ising models (couplings J_ij ≥ 0) whose sites are indexed by the primes and ∞? Such a construction would make RH a structural consequence of the Lee–Yang theorem [Conjecture]. The equivalence underneath is known and is a **restatement** of RH: RH ⇔ Φ(u)du has the Lee–Yang property (Newman 1974, as stated by Lieb–Sokal 1981) ⇔ b₀ ≥ 0 in Newman 1976 (Λ = −4b₀ (Rodgers–Tao normalisation)) [Cited; Restatement]. Newman 1976 also proves unconditionally that Φ is *not* in his sufficient class 𝒫, because Φ decays doubly exponentially [Cited]. Numerical checks [Numerical]: Φ is even and positive; the one-site Lee–Yang statement holds to height 100 (29 real zeros = N(100)); the class-𝒫 growth condition fails, as Newman proved; Turán-type gaps stay positive for every flow time tested, so they cannot locate b₀. The ζ zeros are temperature (Fisher-type) zeros of the Bost–Connes system, not Lee–Yang field zeros, and finite truncations have zeros off the line [Correction]. Also new (TAA Lemma 180, rev. 9): Deninger's preserved-leaf term, the Hecke ladder toy (it contracts: neither su(2) nor su(1,1)), the passive-network form of Lagarias's criterion, and Duursma code zeta functions as a finite laboratory in which RH can fail (G₂₄ ⊕ e₈). **v1.5.1.** The obvious ferromagnetic constructions are ruled out (no prime-lattice convolution factor with zeros can divide Φ; the de Bruijn–Newman flow is a mean-field coupling, excluded by Rodgers–Tao), and the remaining open target is a pair-dependent, non-mean-field ferromagnetic coupling of the primes. **The Riemann Hypothesis is not proved.**
 
 <p align="center"><img src="figures/animation_labelled/fv_sweep.gif" alt="F and V as the roots of x² − a·x + q while the trace a sweeps: ellipse, double line, hyperbolic window" width="820"></p>
 
@@ -88,7 +88,7 @@ Most PNGs have a PDF twin. The detailed overview is PNG only. The Kramers–Kron
 
 ## What this is
 
-The RH Atlas is a structured catalogue of 284 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 860 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
+The RH Atlas is a structured catalogue of 295 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 877 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
 
 Every entry says in plain words what the concept is, gives its precise core statement, carries a label for how well established it is, and records corrections and cautions where a tempting claim turns out to be false.
 
@@ -180,7 +180,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.5 (28 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.5.1 (28 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -200,4 +200,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.5, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.5.1, CC BY 4.0”.
