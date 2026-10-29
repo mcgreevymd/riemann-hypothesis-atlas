@@ -2,9 +2,9 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.5.1 · 28 Oct 2026
+Version 1.6 · 29 Oct 2026
 
-> **New in v1.5** (see [CHANGELOG.md](CHANGELOG.md)): **the refined missing piece [Open].** Is there a **ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ** (with Ξ(z) = ∫Φ(u)cos(zu)du)? Precisely: can Φ(u)du arise as a limit of block-spin laws of ferromagnetic Ising models (couplings J_ij ≥ 0) whose sites are indexed by the primes and ∞? Such a construction would make RH a structural consequence of the Lee–Yang theorem [Conjecture]. The equivalence underneath is known and is a **restatement** of RH: RH ⇔ Φ(u)du has the Lee–Yang property (Newman 1974, as stated by Lieb–Sokal 1981) ⇔ b₀ ≥ 0 in Newman 1976 (Λ = −4b₀ (Rodgers–Tao normalisation)) [Cited; Restatement]. Newman 1976 also proves unconditionally that Φ is *not* in his sufficient class 𝒫, because Φ decays doubly exponentially [Cited]. Numerical checks [Numerical]: Φ is even and positive; the one-site Lee–Yang statement holds to height 100 (29 real zeros = N(100)); the class-𝒫 growth condition fails, as Newman proved; Turán-type gaps stay positive for every flow time tested, so they cannot locate b₀. The ζ zeros are temperature (Fisher-type) zeros of the Bost–Connes system, not Lee–Yang field zeros, and finite truncations have zeros off the line [Correction]. Also new (TAA Lemma 180, rev. 9): Deninger's preserved-leaf term, the Hecke ladder toy (it contracts: neither su(2) nor su(1,1)), the passive-network form of Lagarias's criterion, and Duursma code zeta functions as a finite laboratory in which RH can fail (G₂₄ ⊕ e₈). **v1.5.1.** The obvious ferromagnetic constructions are ruled out (no prime-lattice convolution factor with zeros can divide Φ; the de Bruijn–Newman flow is a mean-field coupling, excluded by Rodgers–Tao), and the remaining open target is a pair-dependent, non-mean-field ferromagnetic coupling of the primes. **The Riemann Hypothesis is not proved.**
+> **New in v1.6** (see [CHANGELOG.md](CHANGELOG.md)): TAA Lemmas 180 (rev. 10b–11g), 181 and 182 and the research notes of 29 Oct 2026 are folded in: 346 concepts and 989 typed relations. **The ghost count [Theorem]:** on long windows the arithmetic side of Weil’s form has one negative square for the pole plus one for each distinct zero to the right of the critical line, so RH is equivalent to “exactly one unstable mode at every large window” [Restatement; circular as a route], and the second eigenvalue is non-increasing under nested windows [Theorem]. **What the sign needs [Numerical]:** the Euler product and the functional equation together (each alone fails), and the complete product (dropping one prime creates many unstable modes). **Allowed locally ≠ aligned globally [Numerical]:** for Ramanujan’s Δ and the curve 11a1 every Frobenius angle is allowed and Sato–Tate distributed, yet only the genuine assignment keeps the window form positive; permuted, i.i.d. Sato–Tate and adversarial angles all fail, and positivity pins each angle to a fraction of a degree. The missing piece is the joint law of the angles, not any single angle [Open]. **The 1/24 [Theorem]:** 1/24 = −ζ(−1)/2 and η²⁴ = Δ, but in Weil’s form the 1/24 acts only through the weight, and the weight edge is generic; no-ghost ↔ Gupta–Bleuler is an Analogy, with a Conjecture of an algebra whose central term is 24. **The lead entry stays at rank 1 [Open]:** the ferromagnetic coupling of the primes that would produce Φ, now linked to Li’s criterion (w = 1 − 1/ρ maps the critical line to the unit circle; under RH λₙ = Σ_ρ 2sin²(nθ_ρ/2) [Theorem]) and to Lee–Yang (ferromagnetic coupling puts zeros on the unit circle [Theorem]); matching the two circles, and reading genuine versus shuffled angles as ferromagnetic versus frustrated coupling, are Analogies. Every other entry sits where the Heuristic priority puts it. New figures and two animations are in the Figures section. **The Riemann Hypothesis is not proved.**
 
 <p align="center"><img src="figures/animation_labelled/fv_sweep.gif" alt="F and V as the roots of x² − a·x + q while the trace a sweeps: ellipse, double line, hyperbolic window" width="820"></p>
 
@@ -55,6 +55,43 @@ Smoothness through the meeting point: F’s speed |dF/da| blows up like |a − 2
 
 The 45° flip of the F/V ring (q = 5): the reflection R(z) = i·z̄ across y = x sends the collision √q to i√q and the real split axis to the imaginary axis, where the F ↔ V swap is the Fricke involution τ ↦ −q/τ, fixed at i√q (Theorem; static version: [flip45.png](figures/flip45/flip45.png)).
 
+### New in v1.6
+
+[![Brainstorm map: the new idea, the missing piece and what surrounds them](figures/new_idea_map/brainstorm_map.png)](figures/new_idea_map/brainstorm_map_hires.png)
+
+**The shape of the new idea and the missing piece** (`figures/new_idea_map/brainstorm_map.png`; 300 dpi: [brainstorm_map_hires.png](figures/new_idea_map/brainstorm_map_hires.png)). The proved surround, the no-go boundary and recurring concepts around the new idea (positive space) and the missing piece (negative space), joined by density × density on the diagonal and its log n translates. Line style is the label: solid Theorem, dashed Restatement, dotted Analogy, red ✗ no-go. A map, not a proof [labels as marked; centre Open].
+
+[![What abuts the new idea and the missing piece, in seven beats](figures/new_idea_map/abut.gif)](figures/new_idea_map/abut.mp4)
+
+**What abuts the missing piece, in seven beats** (`abut.gif`; H.264: [abut.mp4](figures/new_idea_map/abut.mp4)). λ₂ along the window for ζ, Davenport–Heilbronn, ζ with one prime dropped and ½L(χ)L(χ̄) [Numerical]; the pole light cone and its boost [Theorem]; the 45° F/V axis swap [Restatement]; the deficit cone under the flow [Theorem]; buoyancy [Theorem locally, Analogy globally]; density × density [Restatement + Numerical]; the shape of the missing piece [Open].
+
+[![Allowed locally, aligned globally: Δ and 11a1 under genuine, shuffled, Sato–Tate and adversarial angles](figures/allowed_vs_aligned/fig3_allowed_vs_aligned.png)](figures/allowed_vs_aligned/fig3_allowed_vs_aligned.png)
+
+**Allowed locally ≠ aligned globally** (`figures/allowed_vs_aligned/fig3_allowed_vs_aligned.png`). Unstable-mode counts of the window form for Δ (left) and 11a1 (right): only the genuine Frobenius angles keep n₋ = 0; permuted, i.i.d. Sato–Tate and adversarial-but-allowed angles fail [Numerical; consistent with GRH, not evidence for it].
+
+[![The angles arrive prime by prime; positivity pins each one](figures/allowed_vs_aligned/theta.gif)](figures/allowed_vs_aligned/theta.mp4)
+
+**θ_p at an allowed angle, in seven beats** (`theta.gif`; H.264: [theta.mp4](figures/allowed_vs_aligned/theta.mp4)). Angles arrive prime by prime (Deligne, Sato–Tate) [Theorem]; same angles, different assignment; phases add up coherently or drift [Numerical]; positivity pins each angle [Numerical]; no tachyon for Δ [Numerical]; η²⁴ and the 1/24 [Theorem identities; Numerical no-go]; the missing piece is the alignment [Open].
+
+| File | Caption | Label |
+|---|---|---|
+| `figures/allowed_vs_aligned/fig1_newton_angles.png` | 11a1 at p = 2, 3, 5, 7, 19: Newton polygon of 1 − a_pX + pX² (ordinary vs supersingular) and α/√p on the unit circle; the polygon fixes \|α\| = √p, not θ_p | Theorem + Numerical |
+| `figures/allowed_vs_aligned/fig2_sato_tate.png` | The marginal is satisfied: 11a1 angles for p ≤ 3000 against the Sato–Tate density (KS distance 0.024) | Cited + Numerical |
+| `figures/allowed_vs_aligned/fig3_allowed_vs_aligned.png` | Genuine vs permuted / Sato–Tate / adversarial angles for Δ and 11a1: only the genuine set keeps W ⪰ 0 | Numerical |
+| `figures/allowed_vs_aligned/fig3b_pinning.png` | The pinning: the admissible width of one angle (others genuine) shrinks from 180° to about 0.03° by ℓ = 6; widths are model-dependent | Numerical |
+| `figures/allowed_vs_aligned/fig4_slot_in.png` | The slot-in shape: allowed marginals plus an unknown joint law; candidates scored 0.6·sig + 0.4·prob | Open + Heuristic scores |
+| `figures/allowed_vs_aligned/fig5_eta24.png` | η²⁴ = Δ and the 1/24; the one-sided weight edge is generic (11a1 has it too), not a fingerprint of 1/24 | Theorem (identities) + Numerical (no-go) |
+| `figures/new_idea_map/brainstorm_map.png`, `brainstorm_map_hires.png` | Brainstorm map of the new idea and the missing piece | labels as marked |
+| `figures/new_idea_map/abut.gif`, `abut.mp4` | Seven captioned beats abutting the missing piece | labels per beat |
+| `figures/allowed_vs_aligned/theta.gif`, `theta.mp4` | Seven captioned beats on θ_p at an allowed angle | labels per beat |
+| `figures/lemma181/l181_Q.png` | The ℚ side: a ghost drives the primitive margin negative while the pole channels stay put; E×E primitive minimum; genus by resolution; (d) a two-class diagnostic that uses the zeros | Numerical |
+| `figures/lemma181/l181_genus2.png` | Genus 2 over F_q: genuine defect Grams are PSD, fakes have one negative eigenvalue; which channel fails as graphs are added | Theorem + Numerical |
+| `figures/lemma181/l181_ghostQ.png` | Over ℚ, planted off-line quartets on finite sections (box, sine, bump, Legendre bases): which channel goes negative first | Numerical (diagnostic) |
+| `figures/lemma182/l182_ghostcount.png` | The ghost count: lowest eigenvalues of Z_ℓ with and without a synthetic off-line pair; the Perron mode stays the pole, ghost modes oscillate at the ghost frequency | Numerical |
+| `figures/lemma182/l182_poleplane.png` | The pole plane: P = 2K₊K₋ hyperbolic, null lines forced by dilation; the coupling to the primitive part stays O(1), only its ratio decays | Theorem + Numerical |
+| `figures/lemma182/l182_crossings.png` | Synthetic-ghost crossing windows against log(t/2π)(0.85 + 0.14/β); Davenport–Heilbronn gains unstable modes in pairs | Numerical |
+| `figures/lemma182/l182_691.png` | Irregular primes leave no signature in the ℚ window form; τ(n) ≡ σ₁₁(n) mod 691 for n ≤ 1000 | Numerical |
+
 (J. W. McGreevy; formalization by Grok Bot.)
 
 ## Where RH is likely to live
@@ -88,7 +125,7 @@ Most PNGs have a PDF twin. The detailed overview is PNG only. The Kramers–Kron
 
 ## What this is
 
-The RH Atlas is a structured catalogue of 295 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 877 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
+The RH Atlas is a structured catalogue of 346 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 989 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
 
 Every entry says in plain words what the concept is, gives its precise core statement, carries a label for how well established it is, and records corrections and cautions where a tempting claim turns out to be false.
 
@@ -135,20 +172,20 @@ A concept ranks high only if it is both true for ζ and false for the fakes. The
 | 1 | 0.200 | [Refined missing piece (Open): a ferromagnetic coupling between the primes (and the archimedean place) that produces the Riemann kernel Φ; the underlying equivalence RH ⇔ Φ is a Lee–Yang single-spin measure (Λ = 0 margin) is a known restatement](ATLAS.md#ferromagnetic-phi-missing-piece) | Open | RH-sharp |
 | 2 | 0.720 | [Davenport–Heilbronn function](ATLAS.md#davenport-heilbronn) | Theorem | RH-sharp |
 | 3 | 0.720 | [Weil positivity criterion](ATLAS.md#weil-positivity) | Cited | RH-sharp |
-| 4 | 0.720 | [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](ATLAS.md#frobenius-graph-lattice) | Theorem | RH-sharp |
-| 5 | 0.720 | [ψ(x) − x (explicit formula, deviation from the pole)](ATLAS.md#psi-minus-x) | Cited | RH-sharp |
-| 6 | 0.720 | [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](ATLAS.md#two-verschiebungs-dual-vs-adjoint) | Theorem | RH-sharp |
+| 4 | 0.720 | [ψ(x) − x (explicit formula, deviation from the pole)](ATLAS.md#psi-minus-x) | Cited | RH-sharp |
+| 5 | 0.720 | [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](ATLAS.md#two-verschiebungs-dual-vs-adjoint) | Theorem | RH-sharp |
+| 6 | 0.720 | [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](ATLAS.md#frobenius-graph-lattice) | Theorem | RH-sharp |
 | 7 | 0.720 | [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization) | Theorem | RH-sharp |
-| 8 | 0.720 | [Connes trace formula](ATLAS.md#connes-trace) | Cited | RH-sharp |
-| 9 | 0.720 | [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](ATLAS.md#kahler-identities-foliated) | Theorem | RH-sharp |
-| 10 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | RH-sharp |
+| 8 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | RH-sharp |
+| 9 | 0.720 | [Connes trace formula](ATLAS.md#connes-trace) | Cited | RH-sharp |
+| 10 | 0.720 | [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](ATLAS.md#kahler-identities-foliated) | Theorem | RH-sharp |
 | 11 | 0.720 | [Primitive part V₀ = U^⊥](ATLAS.md#primitive-part) | Theorem | RH-sharp |
 | 12 | 0.720 | [Definite cup square / Krein one-liner](ATLAS.md#definite-cup-square) | Theorem | RH-sharp |
 | 13 | 0.700 | [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](ATLAS.md#mp-flow-h1) | Open | RH-sharp |
 | 14 | 0.700 | [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a &#124;·&#124;²)](ATLAS.md#mp-castelnuovo) | Open | RH-sharp |
 | 15 | 0.700 | [Missing: H¹ on the square of the scaling site (Connes–Consani s(f,f) ≤ 0)](ATLAS.md#mp-h1-square) | Open | RH-sharp |
 
-Ties at the same priority are broken by gap significance, then by number of relations, then alphabetically by id.
+Ties at the same priority are broken by gap significance, then by number of relations (counted in this public edition), then alphabetically by id.
 
 ## The ten missing pieces
 
@@ -180,7 +217,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.5.1 (28 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.6 (29 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -192,7 +229,7 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 | `scores.md` | The scoring method behind the ordering. |
 | `CHANGELOG.md` | Version history. |
 | `build_public_md.py` | Regenerates `ATLAS.md` from `atlas.json`: `python3 build_public_md.py`. |
-| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip). |
+| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/` (figures from TAA Lemmas 181–182). |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), full legal text. |
 | `q.py` | Command-line query tool: `python3 q.py rosati`, `python3 q.py --axis ghost-blind`, `python3 q.py --list`, `python3 q.py --quadrant RH-sharp`, `python3 q.py --missing`. Python 3, standard library only. |
 
@@ -200,4 +237,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.5.1, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.6, CC BY 4.0”.
