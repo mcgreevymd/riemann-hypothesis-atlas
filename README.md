@@ -2,9 +2,9 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.6 · 29 Oct 2026
+Version 1.6.1 · 29 Oct 2026
 
-> **New in v1.6** (see [CHANGELOG.md](CHANGELOG.md)): TAA Lemmas 180 (rev. 10b–11g), 181 and 182 and the research notes of 29 Oct 2026 are folded in: 346 concepts and 989 typed relations. **The ghost count [Theorem]:** on long windows the arithmetic side of Weil’s form has one negative square for the pole plus one for each distinct zero to the right of the critical line, so RH is equivalent to “exactly one unstable mode at every large window” [Restatement; circular as a route], and the second eigenvalue is non-increasing under nested windows [Theorem]. **What the sign needs [Numerical]:** the Euler product and the functional equation together (each alone fails), and the complete product (dropping one prime creates many unstable modes). **Allowed locally ≠ aligned globally [Numerical]:** for Ramanujan’s Δ and the curve 11a1 every Frobenius angle is allowed and Sato–Tate distributed, yet only the genuine assignment keeps the window form positive; permuted, i.i.d. Sato–Tate and adversarial angles all fail, and positivity pins each angle to a fraction of a degree. The missing piece is the joint law of the angles, not any single angle [Open]. **The 1/24 [Theorem]:** 1/24 = −ζ(−1)/2 and η²⁴ = Δ, but in Weil’s form the 1/24 acts only through the weight, and the weight edge is generic; no-ghost ↔ Gupta–Bleuler is an Analogy, with a Conjecture of an algebra whose central term is 24. **The lead entry stays at rank 1 [Open]:** the ferromagnetic coupling of the primes that would produce Φ, now linked to Li’s criterion (w = 1 − 1/ρ maps the critical line to the unit circle; under RH λₙ = Σ_ρ 2sin²(nθ_ρ/2) [Theorem]) and to Lee–Yang (ferromagnetic coupling puts zeros on the unit circle [Theorem]); matching the two circles, and reading genuine versus shuffled angles as ferromagnetic versus frustrated coupling, are Analogies. Every other entry sits where the Heuristic priority puts it. New figures and two animations are in the Figures section. **The Riemann Hypothesis is not proved.**
+> **New in v1.6.1** (see [CHANGELOG.md](CHANGELOG.md)): corrections from an external review, a literature review (1976–2026), TAA Lemma 183 and TAA Lemma 184 (rev. 1 and rev. 2) are folded in: 388 concepts and 1040 typed relations. **Correction, the two circles [Theorem]:** v1.6 said no map between Li’s circle and the Lee–Yang circle is known. In Li’s variable z = 1 − 1/s, ξ becomes a series F(z) with F(1/z) = F(z), positive coefficients and a₁/a₀ = λ₁, the shape of a Lee–Yang partition function; RH is then the Lee–Yang property of F [Restatement]. **Nonnegative couplings plus a pole are not enough [Numerical]:** with random signs in place of χ₄, ζ·L(χ₄) keeps nonnegative coefficients and its pole but fails the window test in 20 of 20 cases. **Davenport–Heilbronn, corrected:** a functional equation alone is not sufficient [Theorem], but the Euler product is not necessary either: Weng zeta functions satisfy RH without one [Theorem, Cited]. A ladder exponent of −0.19 is withdrawn as noise. **Lemma 184 [Theorem + Numerical]:** a quaternionic ⋆ on a finite form is a parity condition; the 45° flip is a real structure (square +1), not a rotation; the gluing connections (Galois representations, ω = W⁻¹dW) are flat, so curvature with a sign has to live in the metric; a gluing curvature on prime pairs is nonnegative on 91–100% of pairs for ζ, L(Δ) and 11a1 and about half negative for shuffled forms, a tendency, not a law; a torsion/contorsion split is a null result. **Rank 1 is a manual pin:** the ferromagnetic missing piece is listed first by the author’s choice, not by its score (Heuristic priority 0.200); every other entry follows the scored order. **The Riemann Hypothesis is not proved.**
 
 <p align="center"><img src="figures/animation_labelled/fv_sweep.gif" alt="F and V as the roots of x² − a·x + q while the trace a sweeps: ellipse, double line, hyperbolic window" width="820"></p>
 
@@ -54,6 +54,18 @@ Smoothness through the meeting point: F’s speed |dF/da| blows up like |a − 2
 [![The 45° flip of the F/V ring](figures/flip45/flip45.gif)](figures/flip45/flip45.png)
 
 The 45° flip of the F/V ring (q = 5): the reflection R(z) = i·z̄ across y = x sends the collision √q to i√q and the real split axis to the imaginary axis, where the F ↔ V swap is the Fricke involution τ ↦ −q/τ, fixed at i√q (Theorem; static version: [flip45.png](figures/flip45/flip45.png)).
+
+### New in v1.6.1
+
+[![Flat gluing connections, curvature in the metric](figures/lemma184/l184r2_flat_gluing.png)](figures/lemma184/l184r2_flat_gluing.png)
+
+**Where curvature can live** (`figures/lemma184/l184r2_flat_gluing.png`, TAA Lemma 184 rev. 2). Each Euler factor is a unitary local frame [Theorem]; the connections that glue the primes, a Galois representation (Frobenius as holonomy) and ω = W⁻¹dW for the window family, are flat [Theorem]; so curvature with a sign has to come from the metric they preserve (Petersson, Weil). The window form is positive only after all primes are glued [Numerical]. That metric over Spec ℤ is the missing piece [Open].
+
+| File | Caption | Label |
+|---|---|---|
+| `figures/lemma184/l184r2_flat_gluing.png` | Flat gluing connections; curvature with a sign must live in the metric | Theorem + Numerical + Open |
+| `figures/lemma184/l184r2_gluing_curvature.png` | Gluing curvature K_g(p,q) on 105 prime pairs (window ℓ = 5, p ≤ 47): genuine ζ, L(Δ), 11a1 nonnegative on 91–100% of pairs, sign-flipped and permuted variants about half negative; the log-det Hessian curvature is negative for every positive-definite form (control); the symmetric/antisymmetric split of the connection moves alike under sign flips (null) | Numerical |
+| `figures/lemma184/l184_quaternionic_star.png` | Same formula Cκ, opposite squares: the 45° flip is a real structure (square +1), Deninger’s ⋆ on H¹ is quaternionic (square −1); a compatible quaternionic ⋆ on a finite form is a parity condition | Theorem + Numerical |
 
 ### New in v1.6
 
@@ -125,7 +137,7 @@ Most PNGs have a PDF twin. The detailed overview is PNG only. The Kramers–Kron
 
 ## What this is
 
-The RH Atlas is a structured catalogue of 346 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 989 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
+The RH Atlas is a structured catalogue of 388 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 1040 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
 
 Every entry says in plain words what the concept is, gives its precise core statement, carries a label for how well established it is, and records corrections and cautions where a tempting claim turns out to be false.
 
@@ -151,6 +163,8 @@ Every list in the atlas runs in **descending priority**, with `#rank · priority
   **priority = 0.6 · (gap significance × √(sensitivity · specificity)) + 0.4 · tractability**
 
 A concept ranks high only if it is both true for ζ and false for the fakes. The full rules and tie-breaks are in [scores.md](scores.md).
+
+**One manual exception.** Rank 1 is a pin, not a score: the refined missing piece (a ferromagnetic coupling of the primes that produces Φ) [Open] is listed first by an editorial decision of the author, kept since v1.5. Its own Heuristic priority is 0.200. Every other entry sits where the priority puts it.
 
 ## Label legend
 
@@ -217,7 +231,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.6 (29 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.6.1 (29 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -229,7 +243,7 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 | `scores.md` | The scoring method behind the ordering. |
 | `CHANGELOG.md` | Version history. |
 | `build_public_md.py` | Regenerates `ATLAS.md` from `atlas.json`: `python3 build_public_md.py`. |
-| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/` (figures from TAA Lemmas 181–182). |
+| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/`, `lemma184/` (figures from TAA Lemmas 181, 182 and 184). |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), full legal text. |
 | `q.py` | Command-line query tool: `python3 q.py rosati`, `python3 q.py --axis ghost-blind`, `python3 q.py --list`, `python3 q.py --quadrant RH-sharp`, `python3 q.py --missing`. Python 3, standard library only. |
 
@@ -237,4 +251,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.6, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.6.1, CC BY 4.0”.
