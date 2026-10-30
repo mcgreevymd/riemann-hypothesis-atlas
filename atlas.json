@@ -26,7 +26,9 @@
     "prime-by-prime build: partial sums indefinite throughout; n₋ peaks near log P ≈ ℓ/2 (ζ 117 against control median 98 at ℓ = 8); positive only for log p ≳ ℓ − 0.05 [Numerical]",
     "per-prime allocation of the pole cushion D: needs ≥ 267× (ℓ = 4) and ≥ 474× (ℓ = 8, p ≤ 60) the available cushion; every single prime needs more than all of D [Numerical]",
     "prime-step sign = sign of g_p − log p in 99.5% of 14,912 primes below e¹² [Numerical; no fixed sign by Westzynthius and Erdős, Cited]",
-    "ζ sits about 10⁻⁷ from the wall (λ_min/r₀ ≈ 2.7e−7 at ℓ = 16) while sup|k| ≤ 0.21; a relative change of 1e−4 in one atom Λ(101) breaks positivity near ℓ ≈ 7.1 [Numerical]"
+    "ζ sits about 10⁻⁷ from the wall (λ_min/r₀ ≈ 2.7e−7 at ℓ = 16) while sup|k| ≤ 0.21; a relative change of 1e−4 in one atom Λ(101) breaks positivity near ℓ ≈ 7.1 [Numerical]",
+    "v1.8: local per-place Hardy/stability constants do not glue: their product is an Euler product at Re s ≤ 1 and diverges, so a global bound must use analytic continuation [Theorem]",
+    "v1.8: a Hardy/KLMN constant for the primes, the linear K-theory order on exponential-type tests, and central-charge positivity with a Rosati partner are each Weil positivity restated; computed from the prime side alone, ζ stays ≥ 0 to support L = 8 while Davenport–Heilbronn turns negative near L = 4 [Restatement + Numerical]"
    ],
    "axes": [
     "open target",
@@ -129,6 +131,11 @@
      "type": "candidate_setting",
      "to": "deninger",
      "note": "a cohomology carrying a positivity is one candidate source of the global cancellation [Open]"
+    },
+    {
+     "type": "constrains",
+     "to": "central_charge_positivity_weil",
+     "note": "central-charge packaging of positivity is the Weil form again [Restatement]"
     }
    ],
    "priority": 0.38,
@@ -142,6 +149,84 @@
     "quadrant": "RH-sharp"
    },
    "rank": 1
+  },
+  {
+   "id": "weil_positivity",
+   "name": "Weil positivity criterion",
+   "aliases": [
+    "Weil criterion",
+    "W(f∗f̃*) ≥ 0",
+    "Weil form 𝒬",
+    "arithmetic action S[F]"
+   ],
+   "plain": "A quadratic form built from primes, the archimedean place and the pole. RH holds exactly when it is never negative.",
+   "label": "Cited",
+   "core": "Weil 1952: RH ⇔ W(f∗f̃*) ≥ 0 for all test f; equivalently the Hermitian form 𝒬 is positive, ⇔ a unitary Hilbert realization of the scaling flow (TAA Lemma 1 Thm 2.1 (iv)). TAA Lemma 161: positivity read as definite (apsidal/Kepler) stability vs gyroscopic (TAA Lemma 4) stability: the FE is a work-free J that DH also has; only a definite form excludes Krein collisions (Heuristic).",
+   "formula": "RH ⇔ W(f ∗ f̃*) ≥ 0 ∀f",
+   "numbers": [
+    "κ(𝒬) = N₊ (TAA Lemma 1)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "restatement ⇔ RH",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The zero-side check is tautological (TAA Lemma 142); only the prime side with no zeros is a test.",
+    "\"Q = LP + positive\" is false (TAA Lemma 8).",
+    "Definition, not source (TAA Lemma 152 §3): Weil's criterion ⇔ RH, so it cannot by itself supply the positivity."
+   ],
+   "lemmas": [
+    "L1",
+    "L17",
+    "L98",
+    "L103",
+    "L142",
+    "L152",
+    "L161"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "Weil 1952"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "relative_gram",
+     "note": "TAA Lemma 142: Weil form = relative intersection matrix on translates"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "hodge_index",
+     "note": "Spec ℤ analogue of Hodge index on V₀ (TAA Lemma 91)"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "two_point",
+     "note": "TAA Lemma 103: g + iω ≥ 0 ⇔ Weil"
+    },
+    {
+     "type": "analogue-of",
+     "to": "gyroscopic_vs_definite_stability",
+     "note": ""
+    }
+   ],
+   "priority": 0.72,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 2
   },
   {
    "id": "davenport_heilbronn",
@@ -228,84 +313,6 @@
     {
      "type": "fails-for",
      "to": "functional_equation",
-     "note": ""
-    }
-   ],
-   "priority": 0.72,
-   "ranking": {
-    "gap_significance": 0.8,
-    "gap": "mp_automorphy_ineq",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 2
-  },
-  {
-   "id": "weil_positivity",
-   "name": "Weil positivity criterion",
-   "aliases": [
-    "Weil criterion",
-    "W(f∗f̃*) ≥ 0",
-    "Weil form 𝒬",
-    "arithmetic action S[F]"
-   ],
-   "plain": "A quadratic form built from primes, the archimedean place and the pole. RH holds exactly when it is never negative.",
-   "label": "Cited",
-   "core": "Weil 1952: RH ⇔ W(f∗f̃*) ≥ 0 for all test f; equivalently the Hermitian form 𝒬 is positive, ⇔ a unitary Hilbert realization of the scaling flow (TAA Lemma 1 Thm 2.1 (iv)). TAA Lemma 161: positivity read as definite (apsidal/Kepler) stability vs gyroscopic (TAA Lemma 4) stability: the FE is a work-free J that DH also has; only a definite form excludes Krein collisions (Heuristic).",
-   "formula": "RH ⇔ W(f ∗ f̃*) ≥ 0 ∀f",
-   "numbers": [
-    "κ(𝒬) = N₊ (TAA Lemma 1)"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "ghost-sensitive",
-    "restatement ⇔ RH",
-    "Spec ℤ gap"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "The zero-side check is tautological (TAA Lemma 142); only the prime side with no zeros is a test.",
-    "\"Q = LP + positive\" is false (TAA Lemma 8).",
-    "Definition, not source (TAA Lemma 152 §3): Weil's criterion ⇔ RH, so it cannot by itself supply the positivity."
-   ],
-   "lemmas": [
-    "L1",
-    "L17",
-    "L98",
-    "L103",
-    "L142",
-    "L152",
-    "L161"
-   ],
-   "rels": [
-    {
-     "type": "equivalent-to-RH",
-     "to": "rh",
-     "note": "Weil 1952"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "relative_gram",
-     "note": "TAA Lemma 142: Weil form = relative intersection matrix on translates"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "hodge_index",
-     "note": "Spec ℤ analogue of Hodge index on V₀ (TAA Lemma 91)"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "two_point",
-     "note": "TAA Lemma 103: g + iω ≥ 0 ⇔ Weil"
-    },
-    {
-     "type": "analogue-of",
-     "to": "gyroscopic_vs_definite_stability",
      "note": ""
     }
    ],
@@ -3491,6 +3498,70 @@
    "rank": 52
   },
   {
+   "id": "debruijn_newman",
+   "name": "de Bruijn–Newman constant Λ",
+   "aliases": [
+    "heat flow",
+    "Λ ≥ 0"
+   ],
+   "plain": "Heat flow on ξ; Λ ≥ 0 (Rodgers–Tao), RH ⇔ Λ = 0.",
+   "label": "Cited",
+   "core": "Λ ≥ 0 ⇒ ζ not heat-flow stable (TAA Lemma 111). Healing times TAA Lemma 124/TAA Lemma 136 conflict. TAA Lemma 150 (opened): Rodgers–Tao Λ ≥ 0 (Forum Math Pi 2020), Polymath 15 Λ ≤ 0.22; H_0(z) = Ξ(z/2)/8, so t_RT = 4·t_Ξ (TAA Lemma 150, correction 8). DH heuristic (truncated list): pair at 85.70 closes at t_RT ≈ 0.177 (isolated 2δ² = 0.190); does not separate DH from ζ's known range. TAA Lemma 158: H_t = ∫e^{tu²}Φ(u)cos(zu)du solves the BACKWARD heat equation ∂_tH = −∂_zzH (Rodgers–Tao, Polymath, opened); increasing t (= exp(−tD²), anti-dissipative) makes zeros real (Pólya); the dissipative (forward-heat) direction t ↓ creates collisions and complex pairs. RH ⇔ Λ ≤ 0; Λ ≥ 0 (Rodgers–Tao, Forum Math Pi 2020); Λ ≤ ½ (de Bruijn 1950); −∞ < Λ (Newman 1976); Λ ≤ 0.22 (Polymath). Toy exp(−tD²)(z²−1)(z²−1.6²): Λ_toy = −0.0463. F/V merge = 𝔽_q picture of the collision (Analogy, fv_merge_trichotomy). TAA Lemma 159: Newman–Wu 2019 (opened): the 1976 theorem's motivation came 'more by statistical physics and Euclidean field theory … than by analytic number theory'; Lee–Yang property of Φ is the precise Lee–Yang form of RH (lee_yang_fisher_rh). TAA Lemma 160: direction stated explicitly (RT convention ∂_t H = −∂_zz H; increasing t makes zeros real; collisions come from lowering t); RH ⇔ Λ = 0; under RH with simple zeros the forced collisions escape every compact set as t → 0⁻ (dbn_parabolic_threshold). Newman 1976 is Proc. AMS 61, 245–251 (AMS DOI record; TAA Lemma 158 had 246). L180: local flow = F/V sweep; Λ_p = ACM Lemma 3.18 (t_ACM = t log²p, t_RT = 4t); product cross-term explicit; Λ_global = 0 for incommensurable Hasse products (Heuristic/Numerical).",
+   "formula": "",
+   "numbers": [
+    "Λ ∈ [0, 0.22]",
+    "DH t*_RT ≈ 0.177 (H)"
+   ],
+   "axes": [
+    "ghost-sensitive",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "t* = 2δ² vs δ²/2."
+   ],
+   "lemmas": [
+    "L111",
+    "L124",
+    "L136",
+    "L150",
+    "L158",
+    "L159",
+    "L160",
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "equivalent-to-RH",
+     "to": "rh",
+     "note": "Λ = 0"
+    },
+    {
+     "type": "analogue-of",
+     "to": "krein_collision",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "dbn_parabolic_threshold",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_h1_square",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 53
+  },
+  {
    "id": "krein_collision",
    "name": "Krein collisions (how ghosts are born)",
    "aliases": [
@@ -3579,7 +3650,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 53
+   "rank": 54
   },
   {
    "id": "castelnuovo_severi",
@@ -3645,70 +3716,6 @@
    "ranking": {
     "gap_significance": 0.5,
     "gap": "mp_castelnuovo",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 54
-  },
-  {
-   "id": "debruijn_newman",
-   "name": "de Bruijn–Newman constant Λ",
-   "aliases": [
-    "heat flow",
-    "Λ ≥ 0"
-   ],
-   "plain": "Heat flow on ξ; Λ ≥ 0 (Rodgers–Tao), RH ⇔ Λ = 0.",
-   "label": "Cited",
-   "core": "Λ ≥ 0 ⇒ ζ not heat-flow stable (TAA Lemma 111). Healing times TAA Lemma 124/TAA Lemma 136 conflict. TAA Lemma 150 (opened): Rodgers–Tao Λ ≥ 0 (Forum Math Pi 2020), Polymath 15 Λ ≤ 0.22; H_0(z) = Ξ(z/2)/8, so t_RT = 4·t_Ξ (TAA Lemma 150, correction 8). DH heuristic (truncated list): pair at 85.70 closes at t_RT ≈ 0.177 (isolated 2δ² = 0.190); does not separate DH from ζ's known range. TAA Lemma 158: H_t = ∫e^{tu²}Φ(u)cos(zu)du solves the BACKWARD heat equation ∂_tH = −∂_zzH (Rodgers–Tao, Polymath, opened); increasing t (= exp(−tD²), anti-dissipative) makes zeros real (Pólya); the dissipative (forward-heat) direction t ↓ creates collisions and complex pairs. RH ⇔ Λ ≤ 0; Λ ≥ 0 (Rodgers–Tao, Forum Math Pi 2020); Λ ≤ ½ (de Bruijn 1950); −∞ < Λ (Newman 1976); Λ ≤ 0.22 (Polymath). Toy exp(−tD²)(z²−1)(z²−1.6²): Λ_toy = −0.0463. F/V merge = 𝔽_q picture of the collision (Analogy, fv_merge_trichotomy). TAA Lemma 159: Newman–Wu 2019 (opened): the 1976 theorem's motivation came 'more by statistical physics and Euclidean field theory … than by analytic number theory'; Lee–Yang property of Φ is the precise Lee–Yang form of RH (lee_yang_fisher_rh). TAA Lemma 160: direction stated explicitly (RT convention ∂_t H = −∂_zz H; increasing t makes zeros real; collisions come from lowering t); RH ⇔ Λ = 0; under RH with simple zeros the forced collisions escape every compact set as t → 0⁻ (dbn_parabolic_threshold). Newman 1976 is Proc. AMS 61, 245–251 (AMS DOI record; TAA Lemma 158 had 246). L180: local flow = F/V sweep; Λ_p = ACM Lemma 3.18 (t_ACM = t log²p, t_RT = 4t); product cross-term explicit; Λ_global = 0 for incommensurable Hasse products (Heuristic/Numerical).",
-   "formula": "",
-   "numbers": [
-    "Λ ∈ [0, 0.22]",
-    "DH t*_RT ≈ 0.177 (H)"
-   ],
-   "axes": [
-    "ghost-sensitive",
-    "restatement ⇔ RH"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "t* = 2δ² vs δ²/2."
-   ],
-   "lemmas": [
-    "L111",
-    "L124",
-    "L136",
-    "L150",
-    "L158",
-    "L159",
-    "L160",
-    "L180"
-   ],
-   "rels": [
-    {
-     "type": "equivalent-to-RH",
-     "to": "rh",
-     "note": "Λ = 0"
-    },
-    {
-     "type": "analogue-of",
-     "to": "krein_collision",
-     "note": ""
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "dbn_parabolic_threshold",
-     "note": ""
-    }
-   ],
-   "priority": 0.54,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_h1_square",
     "sensitivity": 1.0,
     "specificity": 1.0,
     "tractability": 0.6,
@@ -3898,6 +3905,83 @@
    "rank": 57
   },
   {
+   "id": "fv_merge_trichotomy",
+   "name": "F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)",
+   "aliases": [
+    "tilt"
+   ],
+   "plain": "As Frobenius and Verschiebung slide together on the unit circle, the invariant conic goes from a circle to ever thinner ellipses; when they meet it degenerates, and past that it becomes a hyperbola with positive and negative wedges, which only fake zeta functions reach.",
+   "label": "Theorem",
+   "core": "[T] M_t = [[0,−1],[1,t]] (Frobenius/√q on ℤ[π], t = a/√q) preserves Q_t = m² + tmn + n² (residual 0); disc t² − 4: |t| < 2 definite (closed ellipses; circle iff t = 0), |t| = 2 degenerate, |t| > 2 indefinite (1,1): + in two opposite wedges, − in the other two. Eigenvalues α, ᾱ = (t ± i√(4−t²))/2 start at ±i (t = 0), meet at 1 (t = 2), split on ℝ. Fixed point τ(t) = (−t + i√(4−t²))/2 of z ↦ −1/(z+t): τ = i at t = 0 (the round START), → ∂ℍ as |t| → 2. [N] t = 0 occurs for every supersingular E/𝔽_p, p ≥ 5 (y² = x³ − x, p ≡ 3 mod 4: 8/8; y² = x³ + 1, p ≡ 2 mod 3: 9/9): not specific to CM by ℤ[i]. |t| = 2 on actual curves: y² = x³ − x over 𝔽_{p²} (p = 3, 7, 11): a = −2p, π = −p scalar (every form invariant, TAA Lemma 157, correction 4), not a Jordan block. [T] Mirror α ↔ ᾱ and half turn Q(−x) = Q(x) persist in every stage: ghost-blind; the signal is sign(t² − 4) (signature), coordinate-free. [A] The merge is the 𝔽_q picture of the de Bruijn–Newman collision. TAA Lemma 160: the merge never happens in a single Euler factor at a good prime (|a_p| < 2√p); at the level of zeros it is the dBN double zero (zeros_as_frames_trichotomy); one-frame Wick rotation in euler_factor_wick_rotation. TAA Lemma 161: F = V is the parabolic escape of the invariant conic (Kepler e_K = t/2 = 1 after Bohlin); hyperbolic F, V span the asymptotes, mirror images in the 45° apsidal axis.",
+   "formula": "",
+   "numbers": [
+    "trace 0: 17/17 supersingular examples",
+    "scalar Frobenius over F_{p²}: a = −2p for p = 3, 7, 11"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "ghost-sensitive",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "τ = i is the start (t = 0), not the meeting point (TAA Lemma 158, correction 13).",
+    "At |t| = 2 actual curves have scalar Frobenius; the parallel-line picture is the non-semisimple model (TAA Lemma 158, correction 14).",
+    "The 'tilt' of an axis is coordinate-dependent; use the discriminant/signature (TAA Lemma 158, correction 17)."
+   ],
+   "lemmas": [
+    "L158",
+    "L160",
+    "L161"
+   ],
+   "rels": [
+    {
+     "type": "same-mechanism-as",
+     "to": "conic_type_at_infinity",
+     "note": ""
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "kahler_triple_polarization",
+     "note": "SL₂ trichotomy"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "half_turn_sign_flip",
+     "note": "half turn ghost-blind"
+    },
+    {
+     "type": "analogue-of",
+     "to": "debruijn_newman",
+     "note": "collision ↔ merge"
+    },
+    {
+     "type": "same-mechanism-as",
+     "to": "morse_lobes_wedges_windows",
+     "note": "lobes vs wedges"
+    },
+    {
+     "type": "fails-for",
+     "to": "fake_weil_poly",
+     "note": "hyperbolic stage"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 58
+  },
+  {
    "id": "ghost_quartet",
    "name": "Ghost quartet ½ ± δ ± iγ",
    "aliases": [
@@ -3949,7 +4033,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 58
+   "rank": 59
   },
   {
    "id": "breit_wigner_resonances",
@@ -4055,7 +4139,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 59
+   "rank": 60
   },
   {
    "id": "conic_type_at_infinity",
@@ -4109,83 +4193,6 @@
    "ranking": {
     "gap_significance": 0.5,
     "gap": "mp_ns_psi",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 60
-  },
-  {
-   "id": "fv_merge_trichotomy",
-   "name": "F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)",
-   "aliases": [
-    "tilt"
-   ],
-   "plain": "As Frobenius and Verschiebung slide together on the unit circle, the invariant conic goes from a circle to ever thinner ellipses; when they meet it degenerates, and past that it becomes a hyperbola with positive and negative wedges, which only fake zeta functions reach.",
-   "label": "Theorem",
-   "core": "[T] M_t = [[0,−1],[1,t]] (Frobenius/√q on ℤ[π], t = a/√q) preserves Q_t = m² + tmn + n² (residual 0); disc t² − 4: |t| < 2 definite (closed ellipses; circle iff t = 0), |t| = 2 degenerate, |t| > 2 indefinite (1,1): + in two opposite wedges, − in the other two. Eigenvalues α, ᾱ = (t ± i√(4−t²))/2 start at ±i (t = 0), meet at 1 (t = 2), split on ℝ. Fixed point τ(t) = (−t + i√(4−t²))/2 of z ↦ −1/(z+t): τ = i at t = 0 (the round START), → ∂ℍ as |t| → 2. [N] t = 0 occurs for every supersingular E/𝔽_p, p ≥ 5 (y² = x³ − x, p ≡ 3 mod 4: 8/8; y² = x³ + 1, p ≡ 2 mod 3: 9/9): not specific to CM by ℤ[i]. |t| = 2 on actual curves: y² = x³ − x over 𝔽_{p²} (p = 3, 7, 11): a = −2p, π = −p scalar (every form invariant, TAA Lemma 157, correction 4), not a Jordan block. [T] Mirror α ↔ ᾱ and half turn Q(−x) = Q(x) persist in every stage: ghost-blind; the signal is sign(t² − 4) (signature), coordinate-free. [A] The merge is the 𝔽_q picture of the de Bruijn–Newman collision. TAA Lemma 160: the merge never happens in a single Euler factor at a good prime (|a_p| < 2√p); at the level of zeros it is the dBN double zero (zeros_as_frames_trichotomy); one-frame Wick rotation in euler_factor_wick_rotation. TAA Lemma 161: F = V is the parabolic escape of the invariant conic (Kepler e_K = t/2 = 1 after Bohlin); hyperbolic F, V span the asymptotes, mirror images in the 45° apsidal axis.",
-   "formula": "",
-   "numbers": [
-    "trace 0: 17/17 supersingular examples",
-    "scalar Frobenius over F_{p²}: a = −2p for p = 3, 7, 11"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "geometry over F_q",
-    "ghost-sensitive",
-    "structure/frame (Ax1)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "τ = i is the start (t = 0), not the meeting point (TAA Lemma 158, correction 13).",
-    "At |t| = 2 actual curves have scalar Frobenius; the parallel-line picture is the non-semisimple model (TAA Lemma 158, correction 14).",
-    "The 'tilt' of an axis is coordinate-dependent; use the discriminant/signature (TAA Lemma 158, correction 17)."
-   ],
-   "lemmas": [
-    "L158",
-    "L160",
-    "L161"
-   ],
-   "rels": [
-    {
-     "type": "same-mechanism-as",
-     "to": "conic_type_at_infinity",
-     "note": ""
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "kahler_triple_polarization",
-     "note": "SL₂ trichotomy"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "half_turn_sign_flip",
-     "note": "half turn ghost-blind"
-    },
-    {
-     "type": "analogue-of",
-     "to": "debruijn_newman",
-     "note": "collision ↔ merge"
-    },
-    {
-     "type": "same-mechanism-as",
-     "to": "morse_lobes_wedges_windows",
-     "note": "lobes vs wedges"
-    },
-    {
-     "type": "fails-for",
-     "to": "fake_weil_poly",
-     "note": "hyperbolic stage"
-    }
-   ],
-   "priority": 0.54,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_castelnuovo",
     "sensitivity": 1.0,
     "specificity": 1.0,
     "tractability": 0.6,
@@ -5449,6 +5456,52 @@
    "rank": 81
   },
   {
+   "id": "hardy_constant_window_weil",
+   "name": "Hardy/KLMN constant of the window Weil form",
+   "aliases": [],
+   "plain": "For any exact split W = T - V of the window Weil form with T positive definite, the best constant a = sup V/T satisfies a <= 1 iff W is positive semidefinite, so a Hardy inequality for the primes is Weil positivity restated. For zeta the constant stays below 1 for windows up to 16 but the margin closes in every normalisation tried (critical, no slack); Delta and 11a1 behave alike, Davenport-Heilbronn crosses 1 near l = 4-5, sign-flip controls are far above 1.",
+   "label": "Theorem",
+   "core": "Hardy/KLMN constant of the window Weil form. Sources: Reed-Simon II (KLMN); Hardy-Littlewood-Polya, Inequalities; Weil 1952.",
+   "formula": "a_T(l) = lambda_max(T^{-1}(T - W)) <= 1 <=> W >= 0",
+   "numbers": [
+    "zeta margin TD l4 8 12 16 h02: [4e-05, 4.4e-06, 2.8e-06, 2.2e-06]",
+    "zeta margin TD l16 h01: 2.4e-07",
+    "dh a DplusAplus l5 8 12 16 h02: [1.037, 2.48, 9.81, 36.8]",
+    "ctrl median a l8: 139",
+    "route score: 3.9 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 3; circular as a route"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A Hardy-type constant for the primes is equivalent to window positivity under any exact positive-definite split; only its margin is informative, and that margin closes for every positive form tested."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 82
+  },
+  {
    "id": "li_criterion",
    "name": "Li criterion",
    "aliases": [
@@ -5499,7 +5552,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 82
+   "rank": 83
   },
   {
    "id": "positive_tensor_iff_positivity",
@@ -5546,7 +5599,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 83
+   "rank": 84
   },
   {
    "id": "burgers_local_toeplitz",
@@ -5597,7 +5650,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 84
+   "rank": 85
   },
   {
    "id": "de_branges",
@@ -5649,7 +5702,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 85
+   "rank": 86
   },
   {
    "id": "hasse_pythagoras",
@@ -5703,7 +5756,57 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 86
+   "rank": 87
+  },
+  {
+   "id": "hermite_window_ghost_count",
+   "name": "Hermite form counts ghosts in a window",
+   "aliases": [],
+   "plain": "The quadratic form sum_k q(z_k)^2 over the zeros in a window, built from contour moments, is positive definite exactly when those zeros are real; its number of negative directions is the number of off-line pairs. It flagged every ghost over its whole pre-landing era and nothing in any real-rooted window. It is a local positivity of Weil type with polynomial-square tests.",
+   "label": "Theorem",
+   "core": "Hermite form counts ghosts in a window. Sources: Hermite quadratic form (classical root counting).",
+   "formula": "H_ij = (1/2 pi i) oint T_i(u) T_j(u) H_t'/H_t dz; #neg(H) = #non-real pairs",
+   "numbers": [
+    "zeta windows flagged: 0",
+    "dh ghosts flagged: 4",
+    "poisson min eig ratio: 4.198e-08",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Exact because it counts off-line zeros in the window: for ζ, a zero negative count in every window at every height is RH restated; the non-circular use is as a zero-free barrier certificate (Polymath15-type), which bounds Λ from above."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "holomorphic_energy_ghost_criterion",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 88
   },
   {
    "id": "suzuki_line",
@@ -5761,7 +5864,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 87
+   "rank": 89
   },
   {
    "id": "bagchi",
@@ -5808,7 +5911,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 88
+   "rank": 90
   },
   {
    "id": "compressed_weil_inertia_two_thirds",
@@ -5851,7 +5954,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 89
+   "rank": 91
   },
   {
    "id": "coupled_coil_hasse",
@@ -5900,7 +6003,53 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 90
+   "rank": 92
+  },
+  {
+   "id": "linear_equals_weil_positivity",
+   "name": "Linear positivity equals Weil positivity on exponential type",
+   "aliases": [],
+   "plain": "By the Akhiezer/Krein factorization, a nonnegative entire function of exponential type is |F|^2. So positivity of the zero sum on nonnegative test functions is the same cone as Weil quadratic positivity: not a weaker route. Fejer kernels make ghost pairs negative while real pairs stay positive.",
+   "label": "Cited",
+   "core": "Linear positivity equals Weil positivity on exponential type. Sources: Akhiezer theorem; Weil explicit formula.",
+   "formula": "g >= 0 on R, exp. type  <=>  g = |F|^2",
+   "numbers": [
+    "pw scan / (14.134725, 0.3): min ghost = -0.009594, L at min = 2.888, min real pair = 6.021e-09",
+    "pw scan / (14.134725, 0.05): min ghost = -0.0002104, L at min = 2.889, min real pair = 6.021e-09",
+    "pw scan / (85.69934848537758, 0.3085171824566374): min ghost = -0.0002998, L at min = 2.969, min real pair = 8.219e-11",
+    "fejer riesz rel err: 2.82e-15",
+    "route score: 4.5 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 4.5"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Not a weaker route: the linear cone on nonnegative exponential-type tests is the Weil quadratic cone."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 93
   },
   {
    "id": "gain_line",
@@ -5958,7 +6107,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 91
+   "rank": 94
   },
   {
    "id": "gluing_curvature_tracks_positivity",
@@ -6013,7 +6162,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 92
+   "rank": 95
   },
   {
    "id": "near_null_anatomy",
@@ -6063,7 +6212,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 93
+   "rank": 96
   },
   {
    "id": "single_box_axis_criterion",
@@ -6112,7 +6261,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 94
+   "rank": 97
   },
   {
    "id": "dim_S",
@@ -6161,7 +6310,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 95
+   "rank": 98
   },
   {
    "id": "hodge_index",
@@ -6231,7 +6380,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 96
+   "rank": 99
   },
   {
    "id": "os_reflection_positivity",
@@ -6320,7 +6469,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 97
+   "rank": 100
   },
   {
    "id": "legendre_support_function",
@@ -6376,7 +6525,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 98
+   "rank": 101
   },
   {
    "id": "weil_operator",
@@ -6438,7 +6587,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 99
+   "rank": 102
   },
   {
    "id": "hodge_riemann",
@@ -6498,7 +6647,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 100
+   "rank": 103
   },
   {
    "id": "lax_phillips",
@@ -6562,7 +6711,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 101
+   "rank": 104
   },
   {
    "id": "ff_counts_do_not_induce_sign",
@@ -6634,7 +6783,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 102
+   "rank": 105
   },
   {
    "id": "connes_consani",
@@ -6681,7 +6830,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 103
+   "rank": 106
   },
   {
    "id": "laguerre_formula",
@@ -6735,7 +6884,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 104
+   "rank": 107
   },
   {
    "id": "pole_plane",
@@ -6784,7 +6933,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 105
+   "rank": 108
   },
   {
    "id": "haar_measure_not_metric",
@@ -6834,7 +6983,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 106
+   "rank": 109
   },
   {
    "id": "cartan_involution",
@@ -6885,7 +7034,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 107
+   "rank": 110
   },
   {
    "id": "conformal_flow_needs_solenoid",
@@ -6936,7 +7085,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 108
+   "rank": 111
   },
   {
    "id": "deligne_tensor_power",
@@ -6986,7 +7135,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 109
+   "rank": 112
   },
   {
    "id": "selberg_eigenvalue_mass_shell",
@@ -7039,7 +7188,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 110
+   "rank": 113
   },
   {
    "id": "maxwell_effective_potential",
@@ -7089,7 +7238,47 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 111
+   "rank": 114
+  },
+  {
+   "id": "prime_step_operator_indefinite",
+   "name": "Single-prime step of the window Weil form",
+   "aliases": [],
+   "plain": "The contribution of one prime power to the window form is a symmetrised shift by k log p compressed to the window: high rank (2(l - k log p)/h boxes), with a spectrum symmetric about zero, and a whole-line symbol -2 Re[log p/(p^(1/2+i xi) - 1)] that always takes both signs. Rank-two positive pieces belong to the zero side, not the prime side.",
+   "label": "Theorem",
+   "core": "Single-prime step of the window Weil form. Sources: Weil 1952 explicit formula.",
+   "formula": "sigma_p(xi) in [-2 log p/(sqrt p - 1), 2 log p/(sqrt p + 1)]",
+   "numbers": [
+    "inertia p101 l8: 339, 339",
+    "inertia p2 l8: 569, 231"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 115
   },
   {
    "id": "products_linear",
@@ -7141,7 +7330,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 112
+   "rank": 116
   },
   {
    "id": "weight_monodromy",
@@ -7188,47 +7377,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 113
-  },
-  {
-   "id": "prime_step_operator_indefinite",
-   "name": "Single-prime step of the window Weil form",
-   "aliases": [],
-   "plain": "The contribution of one prime power to the window form is a symmetrised shift by k log p compressed to the window: high rank (2(l - k log p)/h boxes), with a spectrum symmetric about zero, and a whole-line symbol -2 Re[log p/(p^(1/2+i xi) - 1)] that always takes both signs. Rank-two positive pieces belong to the zero side, not the prime side.",
-   "label": "Theorem",
-   "core": "Single-prime step of the window Weil form. Sources: Weil 1952 explicit formula.",
-   "formula": "sigma_p(xi) in [-2 log p/(sqrt p - 1), 2 log p/(sqrt p + 1)]",
-   "numbers": [
-    "inertia p101 l8: 339, 339",
-    "inertia p2 l8: 569, 231"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "structure/frame (Ax1)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "weil_positivity",
-     "note": ""
-    }
-   ],
-   "priority": 0.452,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_automorphy_ineq",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 114
+   "rank": 117
   },
   {
    "id": "yoneda",
@@ -7271,7 +7420,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 115
+   "rank": 118
   },
   {
    "id": "boost_rotation_modular_kms",
@@ -7348,7 +7497,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 116
+   "rank": 119
   },
   {
    "id": "split_blind_sensitive",
@@ -7410,7 +7559,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 117
+   "rank": 120
   },
   {
    "id": "gyroscopic_vs_definite_stability",
@@ -7482,7 +7631,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 118
+   "rank": 121
   },
   {
    "id": "dh_acceptance",
@@ -7544,7 +7693,7 @@
     "evidence": 0.48,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 119
+   "rank": 122
   },
   {
    "id": "brst",
@@ -7601,7 +7750,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 120
+   "rank": 123
   },
   {
    "id": "weil_template_factor_product",
@@ -7666,7 +7815,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 121
+   "rank": 124
   },
   {
    "id": "gamma_fwhm_of_a_zero",
@@ -7749,7 +7898,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 122
+   "rank": 125
   },
   {
    "id": "arithmetic_equation_of_state",
@@ -7830,7 +7979,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 123
+   "rank": 126
   },
   {
    "id": "mass_shell_even_xi",
@@ -7902,7 +8051,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 124
+   "rank": 127
   },
   {
    "id": "two_channel_missing_piece",
@@ -7953,7 +8102,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 125
+   "rank": 128
   },
   {
    "id": "composite_leakage",
@@ -8017,7 +8166,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 126
+   "rank": 129
   },
   {
    "id": "arithmetic_response_passivity_32a1",
@@ -8084,7 +8233,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 127
+   "rank": 130
   },
   {
    "id": "rh_hodge_index_zero_margin",
@@ -8136,7 +8285,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 128
+   "rank": 131
   },
   {
    "id": "density_times_density_diagonal",
@@ -8196,7 +8345,59 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 129
+   "rank": 132
+  },
+  {
+   "id": "central_charge_positivity_weil",
+   "name": "Central-charge positivity from the explicit formula",
+   "aliases": [],
+   "plain": "With Z_g(rho) = ghat(gamma) and Rosati partner 1 - conj(rho), the aggregate sum over zeros of Z_g(rho) conj Z_g(1 - conj rho) is exactly Weil's quadratic form; on-line zeros give |Z_g|^2 >= 0 and each off-line quadruple gives an indefinite block. Weighting by lambda = rho(1 - rho) (the scaling Casimir 1/4 - D^2) removes the pole terms but changes nothing else. Computed from the primes side for zeta and from the coefficient side of -f'/f for Davenport-Heilbronn (no zero-finding): zeta stays nonnegative up to support L = 8 (to numerical noise), DH turns negative at L ~ 4 from its 85.70 quadruple, planted ghosts turn negative at L 1-2.5. Equivalent to the Weil criterion, so not a bypass.",
+   "label": "Restatement",
+   "core": "Central-charge positivity from the explicit formula. Sources: Weil 1952 (explicit formulas); Davenport-Heilbronn 1936.",
+   "formula": "W(g) = sum_rho Z_g(rho) conj Z_g(1 - conj rho) = poles + archimedean - sum Lambda(n) n^-1/2 [F(log n) + F(-log n)]",
+   "numbers": [
+    "zeta min by L: 1.0 = 1.601e-06, 1.5 = 5.794e-15, 2.0 = -4.205e-16, 2.5 = -2.656e-13, 3.0 = -4.669e-12, 3.5 = -1.946e-11, 4.0 = -5.167e-11, 5.0 = -2.155e-10, 6.0 = -5.693e-10, 7.0 = -1.023e-09, 8.0 = -1.774e-09",
+    "dh min by L: 1.0 = 0.324, 1.5 = 0.02036, 2.0 = 5.267e-05, 2.5 = 8.251e-10, 3.0 = -3.816e-18, 3.5 = -9.75e-14, 4.0 = -0.64, 5.0 = -1.845, 6.0 = -3.546, 7.0 = -6.134, 8.0 = -10.59",
+    "explicit formula relerr zeta max: 7.686e-10",
+    "explicit formula relerr dh max: 4.003e-12",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5",
+    "route score (central-charge positivity as a route to RH): 2.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 1"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Equivalent to the Weil criterion, so not a bypass; the gain is computational (prime side only, no zeros used)."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "weil_positivity",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "linear_equals_weil_positivity",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 133
   },
   {
    "id": "circle_pi_in_zero_counts",
@@ -8257,7 +8458,100 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 130
+   "rank": 134
+  },
+  {
+   "id": "order_form_rosati",
+   "name": "Order compatible with a form needs a Rosati involution",
+   "aliases": [],
+   "plain": "A quadratic form built from a linear order needs a second state equal to the complex conjugate of the first. For F/V that is q/F = conj(F); for zeta it is 1 - rho = conj(rho), i.e. the critical line, where lambda = rho(1 - rho) = 1/4 + gamma^2 is real and at least 1/4. Off-line zeros make lambda complex; a real off-line zero would give lambda below 1/4.",
+   "label": "Restatement",
+   "core": "Order compatible with a form needs a Rosati involution. Sources: Selberg eigenvalue form (standard).",
+   "formula": "lambda = rho(1 - rho); (1 - rho) - conj(rho) = -2 delta",
+   "numbers": [
+    "lambda table: (label = zeta_1, rho = [0.5, 14.13], lam = [200, 0], fe minus conj = 0); (label = zeta_2, rho = [0.5, 21.02], lam = [442.2, 0], fe minus conj = 0); (label = DH_on_1, rho = [0.5, 5.094], lam = [26.2, 0], fe minus conj = 0); (label = DH_off, rho = [0.8085, 85.7], lam = [7345, -52.88], fe minus conj = 0.617); (label = ghost_14.13+0.3, rho = [0.8, 14.13], lam = [200, -8.481], fe minus conj = 0.6); (label = ghost_2+0.45, rho = [0.95, 2], lam = [4.048, -1.8], fe minus conj = 0.9); (label = real_offline_rho=0.8, rho = [0.8, 0], lam = [0.16, 0], fe minus conj = 0.6)",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "rosati",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "hilbert_polya",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 135
+  },
+  {
+   "id": "positivity_real_clock_restatement",
+   "name": "Positivity as reality of the regularized clock",
+   "aliases": [],
+   "plain": "Staying on the definite side is equivalent to the Sundman clock being real; the regularization turns a crossing into an imaginary clock but does not forbid it. It helps only if crossings are already excluded.",
+   "label": "Restatement",
+   "core": "Positivity as reality of the regularized clock.",
+   "formula": "gap^2 >= 0 <=> tau real",
+   "numbers": [
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5; circular: restates positivity"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Circular as a proof route: the regularization makes a crossing an imaginary clock but does not forbid it, so “the clock stays real” is the Riemann Hypothesis restated (every heat-flow collision at t ≤ 0), not a proof of it."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "rosati",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "hilbert_polya",
+     "note": ""
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 136
   },
   {
    "id": "weil_shear_subtracts",
@@ -8304,7 +8598,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 131
+   "rank": 137
   },
   {
    "id": "passive_network_positive_real",
@@ -8359,7 +8653,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 132
+   "rank": 138
   },
   {
    "id": "two_point",
@@ -8406,54 +8700,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 133
-  },
-  {
-   "id": "positivity_real_clock_restatement",
-   "name": "Positivity as reality of the regularized clock",
-   "aliases": [],
-   "plain": "Staying on the definite side is equivalent to the Sundman clock being real; the regularization turns a crossing into an imaginary clock but does not forbid it. It helps only if crossings are already excluded.",
-   "label": "Restatement",
-   "core": "Positivity as reality of the regularized clock.",
-   "formula": "gap^2 >= 0 <=> tau real",
-   "numbers": [
-    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5; circular: restates positivity"
-   ],
-   "axes": [
-    "restatement ⇔ RH",
-    "sign/positivity (Ax2)",
-    "phase/unitarity (Ax3)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "Circular as a proof route: the regularization makes a crossing an imaginary clock but does not forbid it, so “the clock stays real” is the Riemann Hypothesis restated (every heat-flow collision at t ≤ 0), not a proof of it."
-   ],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "analogy",
-     "to": "rosati",
-     "note": ""
-    },
-    {
-     "type": "analogy",
-     "to": "hilbert_polya",
-     "note": ""
-    }
-   ],
-   "priority": 0.42,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_castelnuovo",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.3,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 134
+   "rank": 139
   },
   {
    "id": "rh",
@@ -8492,7 +8739,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 135
+   "rank": 140
   },
   {
    "id": "hilbert_polya",
@@ -8548,7 +8795,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 136
+   "rank": 141
   },
   {
    "id": "castelnuovo_object",
@@ -8597,7 +8844,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 137
+   "rank": 142
   },
   {
    "id": "cc_square_open",
@@ -8647,7 +8894,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 138
+   "rank": 143
   },
   {
    "id": "central_term_24_algebra_conjecture",
@@ -8693,7 +8940,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 139
+   "rank": 144
   },
   {
    "id": "pole_perron_one_mode",
@@ -8745,7 +8992,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 140
+   "rank": 145
   },
   {
    "id": "ghost_onset",
@@ -8799,7 +9046,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 141
+   "rank": 146
   },
   {
    "id": "allowed_locally_not_aligned_globally",
@@ -8867,7 +9114,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 142
+   "rank": 147
   },
   {
    "id": "explicit_ghost_window",
@@ -8910,7 +9157,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 143
+   "rank": 148
   },
   {
    "id": "gluing_curvature_prime_pairs",
@@ -8960,7 +9207,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 144
+   "rank": 149
   },
   {
    "id": "q_quotient_induction_matrix",
@@ -9016,7 +9263,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 145
+   "rank": 150
   },
   {
    "id": "davenport_heilbronn_window_jumps",
@@ -9064,7 +9311,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 146
+   "rank": 151
   },
   {
    "id": "dilution_law_dh_to_product",
@@ -9117,7 +9364,7 @@
     "evidence": 0.64,
     "quadrant": "RH-sharp"
    },
-   "rank": 147
+   "rank": 152
   },
   {
    "id": "ghost_onset_nonperturbative",
@@ -9170,7 +9417,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 148
+   "rank": 153
   },
   {
    "id": "pole_mode_unpaired_degree0",
@@ -9218,7 +9465,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 149
+   "rank": 154
   },
   {
    "id": "channel_depends_on_span",
@@ -9261,7 +9508,57 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 150
+   "rank": 155
+  },
+  {
+   "id": "dh_true_flow_landing",
+   "name": "Davenport-Heilbronn ghosts under the true heat flow",
+   "aliases": [],
+   "plain": "Running the actual heat flow of the Davenport-Heilbronn completed function, the four known off-line zeros below height 180 land at the times predicted by the earlier windowed zero dynamics, so its de Bruijn-Newman-type constant is at least about 0.176 (floating point).",
+   "label": "Numerical",
+   "core": "Davenport-Heilbronn ghosts under the true heat flow. Sources: Davenport-Heilbronn 1936.",
+   "formula": "H_t = E[H_0(z + iY)], Y ~ N(0, 2t)",
+   "numbers": [
+    "85.70: 0.177",
+    "114.16: 0.045",
+    "166.48: 0.011",
+    "176.70: 0.095",
+    "route score: 3.9 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 4.5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The windowed landing estimate for the Davenport–Heilbronn ghost at height 85.70 (t = 0.177) is confirmed by the true heat flow; the bound on its constant is floating-point, not interval-certified."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "ghost_onset",
+     "note": ""
+    },
+    {
+     "type": "instance",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 156
   },
   {
    "id": "ghost_channel_order_over_Q",
@@ -9314,7 +9611,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 151
+   "rank": 157
   },
   {
    "id": "ghost_crossing_scale",
@@ -9353,7 +9650,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 152
+   "rank": 158
   },
   {
    "id": "no_single_prime_frame_positive",
@@ -9400,7 +9697,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 153
+   "rank": 159
   },
   {
    "id": "positivity_by_lag_exhaustion",
@@ -9445,7 +9742,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 154
+   "rank": 160
   },
   {
    "id": "duursma_code_toy",
@@ -9478,7 +9775,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 155
+   "rank": 161
   },
   {
    "id": "laguerre_detects_offline_zero",
@@ -9521,7 +9818,50 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 156
+   "rank": 162
+  },
+  {
+   "id": "near_collision_exponent",
+   "name": "Near-collision law at the de Bruijn-Newman edge",
+   "aliases": [],
+   "plain": "Through the pair law, the small-gap law of zeros is the density of backward collision times near t = 0. Zeta zeros (and GUE) show a cubic small-gap law, so collisions thin out at t = 0 (zeta sits at the edge, Lambda = 0); the on-line zeros of Davenport-Heilbronn show an exponent near 2 and an excess of tiny gaps, consistent with t = 0 lying inside its collision era (Lambda_DH > 0). A diagnostic, not a proof.",
+   "label": "Numerical",
+   "core": "Near-collision law at the de Bruijn-Newman edge. Sources: Bogomolny-Bohigas-Leboeuf-Monastra, J. Phys. A 39 (2006) 10743.",
+   "formula": "P(s < x) ~ x^3 (zeta, GUE) vs ~ x^1.9 (DH)",
+   "numbers": [
+    "slope zeta low: 3.21",
+    "slope zeta platt: 2.901",
+    "slope dh: 1.9",
+    "slope gue: 3.278",
+    "route score: 3.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 3.5; a separation, not a proof"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 163
   },
   {
    "id": "nonnegative_couplings_pole_insufficient",
@@ -9559,7 +9899,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 157
+   "rank": 164
   },
   {
    "id": "scalar_gluing_curvature_classifier",
@@ -9607,7 +9947,93 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 158
+   "rank": 165
+  },
+  {
+   "id": "signed_energy_early_warning",
+   "name": "Signed energy as an early warning of ghost landing",
+   "aliases": [],
+   "plain": "The signed energy always goes negative before a ghost lands, but how early depends on how far off the line the ghost starts relative to the local gap. Low ghosts are flagged for their whole era; a ghost at half a gap only in the last 8-17%. Its sign at a single time is not a reality test: one Davenport-Heilbronn window is positive at t = 0 with a ghost inside.",
+   "label": "Numerical",
+   "core": "Signed energy as an early warning of ghost landing.",
+   "formula": "lead = (t_land - t_first(E_w < 0))/t_land",
+   "numbers": [
+    "zeta planted k=0.1: [0.1, 0.6364, 1]",
+    "zeta planted k=0.2: [0.2, 0.2564, 0.641]",
+    "zeta planted k=0.3: [0.3, 0.1605, 0.358]",
+    "zeta planted k=0.5: [0.5, 0.08242, 0.1703]",
+    "route score: 3.9 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 4.5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The signed energy at a single time is not a reality test: a Davenport–Heilbronn window has positive unweighted signed energy at t = 0 with an off-line pair inside; only the sign for all later t, or the Hermite count, detects it."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "signed_local_energy_trace",
+     "note": ""
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 166
+  },
+  {
+   "id": "slemma_constant_indefinite_cushion",
+   "name": "S-lemma constant for the indefinite smooth part",
+   "aliases": [],
+   "plain": "With the literal cushion T = A + D (indefinite), the best constant over the cone T > 0 is computed by the S-lemma: a0 = inf{c : W + (c-1)T >= 0}. Positivity implies a0 <= 1 but not conversely. Zeta: 0.906 rising to 0.992 (l = 1 to 16); infinite for Davenport-Heilbronn, all controls and a ghost past onset; the ghost's a0 rises to 0.9988 just before onset (zeta 0.9878).",
+   "label": "Numerical",
+   "core": "S-lemma constant for the indefinite smooth part. Sources: Yakubovich 1971 (S-lemma).",
+   "formula": "a0 = inf{c : W + (c-1)(A+D) >= 0}",
+   "numbers": [
+    "zeta a0 l1 4 8 16 h02: [0.906, 0.972, 0.987, 0.992]",
+    "route score: 3.9 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 4.5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "hardy_constant_window_weil",
+     "note": ""
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 167
   },
   {
    "id": "rs_separates_permutations",
@@ -9645,7 +10071,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 159
+   "rank": 168
   },
   {
    "id": "curvature_cup_square",
@@ -9710,7 +10136,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 160
+   "rank": 169
   },
   {
    "id": "clausius_gamma_reversibility",
@@ -9781,7 +10207,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 161
+   "rank": 170
   },
   {
    "id": "time_delay",
@@ -9843,7 +10269,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 162
+   "rank": 171
   },
   {
    "id": "kallen_lehmann",
@@ -9887,7 +10313,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 163
+   "rank": 172
   },
   {
    "id": "psi_n_lattice",
@@ -9939,7 +10365,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 164
+   "rank": 173
   },
   {
    "id": "global_J_missing_piece",
@@ -9994,7 +10420,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 165
+   "rank": 174
   },
   {
    "id": "deninger_hodge_energy_torsion_open",
@@ -10048,7 +10474,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 166
+   "rank": 175
   },
   {
    "id": "displaced_reference",
@@ -10107,7 +10533,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 167
+   "rank": 176
   },
   {
    "id": "formal_vs_geometric_lattice",
@@ -10164,7 +10590,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 168
+   "rank": 177
   },
   {
    "id": "band_criterion",
@@ -10211,7 +10637,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 169
+   "rank": 178
   },
   {
    "id": "deninger_preserved_leaf_term",
@@ -10253,7 +10679,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 170
+   "rank": 179
   },
   {
    "id": "hessian_curvature_negative_genuine",
@@ -10301,7 +10727,56 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 171
+   "rank": 180
+  },
+  {
+   "id": "per_prime_psd_allocation_nogo",
+   "name": "No per-prime positive allocation of the smooth part",
+   "aliases": [],
+   "plain": "Sharing the arch term and multiples of the positive pole remnant D among primes so that each prime step becomes positive needs at least 267 times the available cushion for zeta at window length 4, more at longer windows, and every single prime alone needs more than the whole cushion; controls need somewhat more, ghosts the same as zeta. In 2x2 Fourier blocks controls are allocatable in more blocks than zeta. Unrestricted allocations exist exactly when the form is positive, so they are circular.",
+   "label": "Numerical",
+   "core": "No per-prime positive allocation of the smooth part.",
+   "formula": "t* >= sum_p min_a lambda_max(-D^(-1/2)(aA + Phi_p)D^(-1/2))",
+   "numbers": [
+    "zeta LB l4: 267",
+    "ctrl LB l4: 407, 371, 374",
+    "zeta LB l8 p60: 474",
+    "blocks feasible zeta ctrl: 8, 20",
+    "route score: 2.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 1; dead in the tested families"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "no-go / refuted",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "lee_yang_fisher_rh",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 181
   },
   {
    "id": "ghost_negative_compressibility",
@@ -10352,56 +10827,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 172
-  },
-  {
-   "id": "per_prime_psd_allocation_nogo",
-   "name": "No per-prime positive allocation of the smooth part",
-   "aliases": [],
-   "plain": "Sharing the arch term and multiples of the positive pole remnant D among primes so that each prime step becomes positive needs at least 267 times the available cushion for zeta at window length 4, more at longer windows, and every single prime alone needs more than the whole cushion; controls need somewhat more, ghosts the same as zeta. In 2x2 Fourier blocks controls are allocatable in more blocks than zeta. Unrestricted allocations exist exactly when the form is positive, so they are circular.",
-   "label": "Numerical",
-   "core": "No per-prime positive allocation of the smooth part.",
-   "formula": "t* >= sum_p min_a lambda_max(-D^(-1/2)(aA + Phi_p)D^(-1/2))",
-   "numbers": [
-    "zeta LB l4: 267",
-    "ctrl LB l4: 407, 371, 374",
-    "zeta LB l8 p60: 474",
-    "blocks feasible zeta ctrl: 8, 20",
-    "route score: 2.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 1; dead in the tested families"
-   ],
-   "axes": [
-    "numerics/certificate",
-    "no-go / refuted",
-    "sign/positivity (Ax2)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "ferromagnetic_phi_missing_piece",
-     "note": ""
-    },
-    {
-     "type": "analogy",
-     "to": "lee_yang_fisher_rh",
-     "note": ""
-    }
-   ],
-   "priority": 0.365,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.7,
-    "evidence": 0.8,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 173
+   "rank": 182
   },
   {
    "id": "dedekind_qi_one_mode",
@@ -10450,7 +10876,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 174
+   "rank": 183
   },
   {
    "id": "ferromagnetic_sign_not_count",
@@ -10499,7 +10925,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 175
+   "rank": 184
   },
   {
    "id": "levinson_contraction_route_dead",
@@ -10546,7 +10972,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 176
+   "rank": 185
   },
   {
    "id": "talenti_template_test",
@@ -10585,7 +11011,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 177
+   "rank": 186
   },
   {
    "id": "hessian_curvature_generic_control",
@@ -10627,7 +11053,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 178
+   "rank": 187
   },
   {
    "id": "prime_weight_anisotropy",
@@ -10675,7 +11101,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 179
+   "rank": 188
   },
   {
    "id": "structured_gram_factor_search",
@@ -10724,7 +11150,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 180
+   "rank": 189
   },
   {
    "id": "archimedean_rectifier_fill",
@@ -10768,7 +11194,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 181
+   "rank": 190
   },
   {
    "id": "connection_split_torsion_null",
@@ -10808,7 +11234,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 182
+   "rank": 191
   },
   {
    "id": "cutoff_saturation",
@@ -10854,7 +11280,49 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 183
+   "rank": 192
+  },
+  {
+   "id": "dh_offline_zeros_400",
+   "name": "Davenport-Heilbronn off-line zeros below height 400",
+   "aliases": [],
+   "plain": "Argument-principle scan of Re s in [0.505, 3], 0 < t < 400: exactly 8 zeros off the line, none with Re s > 1 in this range.",
+   "label": "Numerical",
+   "core": "Davenport-Heilbronn off-line zeros below height 400. Sources: Davenport-Heilbronn 1936.",
+   "formula": "f(s) = 5^-s [zeta(s,1/5) + k zeta(s,2/5) - k zeta(s,3/5) - zeta(s,4/5)]",
+   "numbers": [
+    "zeros: [[0.808517, 85.699348], [0.65083, 114.163343], [0.574356, 166.479306], [0.724258, 176.702461], [0.869531, 240.404672], [0.81955, 320.87649], [0.768223, 331.050259], [0.628508, 366.640908]]",
+    "route score: 3.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "Spec ℤ gap"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Zeros extremely close to the critical line could be missed by the scan."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "weil_negative_index_quadruples",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 193
   },
   {
    "id": "genus_at_resolution",
@@ -10896,7 +11364,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 184
+   "rank": 194
   },
   {
    "id": "graded_inertia_null",
@@ -10939,7 +11407,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 185
+   "rank": 195
   },
   {
    "id": "heat_kernel_gram_fails",
@@ -10976,7 +11444,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 186
+   "rank": 196
   },
   {
    "id": "kramers_absent_window_forms",
@@ -11020,7 +11488,49 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 187
+   "rank": 197
+  },
+  {
+   "id": "lehmer_pair_backward_clock",
+   "name": "Backward collision clocks of Lehmer pairs",
+   "aliases": [],
+   "plain": "Flowing windows of real zeta zeros backward, the closest known pairs collide at times matching the pair law -s^2/8 and the Rodgers-Tao/Csordas-Smith-Varga Riccati lower bound to within half a percent, stable under window changes.",
+   "label": "Numerical",
+   "core": "Backward collision clocks of Lehmer pairs. Sources: Lehmer 1956; Platt zero tables (LMFDB).",
+   "formula": "t_c ~ -s^2/8",
+   "numbers": [
+    "t c 7005: -0.0007112",
+    "t c 17143: -0.0006242",
+    "t c 234017: -8.522e-05",
+    "route score: 4.1 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 198
   },
   {
    "id": "lmfdb_maass_complete",
@@ -11066,7 +11576,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 188
+   "rank": 199
   },
   {
    "id": "null_calibrated_gls",
@@ -11113,7 +11623,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 189
+   "rank": 200
   },
   {
    "id": "onset_kernel_dependence",
@@ -11151,7 +11661,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 190
+   "rank": 201
   },
   {
    "id": "pnt_subtracted_levinson_nogo",
@@ -11193,7 +11703,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 191
+   "rank": 202
   },
   {
    "id": "sextic_kernel_collision",
@@ -11234,7 +11744,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 192
+   "rank": 203
   },
   {
    "id": "window_barotropy",
@@ -11277,7 +11787,50 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 193
+   "rank": 204
+  },
+  {
+   "id": "zeta_signed_energy_positive",
+   "name": "Zeta windows: signed energy positive and decreasing",
+   "aliases": [],
+   "plain": "For zeta the signed energy is positive and decreasing in t in every tested window (136 zeros below height about 297, t up to 0.25, and the Lehmer window near 7005), with Hermite count zero. Ghost-free Davenport-Heilbronn windows look the same, so the trace detects ghosts rather than arithmetic.",
+   "label": "Numerical",
+   "core": "Zeta windows: signed energy positive and decreasing. Sources: Platt zero tables (LMFDB).",
+   "formula": "E_1(t) > 0, dE_1/dt < 0",
+   "numbers": [
+    "windows: 17",
+    "zeros: 136",
+    "gamma max: 296.8",
+    "lehmer E1: [367.5, 15.09]",
+    "route score: 3.5 (0.6·significance + 0.4·probability of progress, 0–10); significance 2.5, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 205
   },
   {
    "id": "birman_krein_spectral_shift",
@@ -11340,7 +11893,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 194
+   "rank": 206
   },
   {
    "id": "acm_local_newman_constant",
@@ -11392,7 +11945,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 195
+   "rank": 207
   },
   {
    "id": "ghost_count_theorem",
@@ -11432,7 +11985,56 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 196
+   "rank": 208
+  },
+  {
+   "id": "holomorphic_energy_ghost_criterion",
+   "name": "Signed (holomorphic) energy detects every ghost before it lands",
+   "aliases": [],
+   "plain": "Allowing complex zeros, the pair energy sum of (z_j - z_k)^-2 is signed: a conjugate ghost pair contributes a negative term that diverges as it lands on the real axis. For polynomials, real-rootedness is equivalent to this energy staying positive for all forward heat times, and the energy is computable from coefficients alone as a companion-matrix trace. For zeta this restates RH.",
+   "label": "Theorem",
+   "core": "Signed (holomorphic) energy detects every ghost before it lands.",
+   "formula": "Ec = (1/2) Tr g(C_t), g = (P''/2P')^2 - P'''/(3P')",
+   "numbers": [
+    "toy first negative t delta0.2: 0.001436",
+    "toy landing t delta0.2: 0.0185",
+    "route score: 4.5 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 4.5; Theorem in finite degree; for ζ a restatement of RH"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "ghost-sensitive",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Positivity has to hold for all forward times: the sign at one time is not a reality test (a Davenport–Heilbronn window is positive at t = 0 with an off-line pair inside; see the v1.8 signed-trace entries)."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "positivity_real_clock_restatement",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "ghost_onset",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 209
   },
   {
    "id": "ghost_conventions",
@@ -11491,7 +12093,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 197
+   "rank": 210
   },
   {
    "id": "two_partners",
@@ -11540,7 +12142,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 198
+   "rank": 211
   },
   {
    "id": "compatible_quaternionic_J_parity",
@@ -11585,7 +12187,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 199
+   "rank": 212
   },
   {
    "id": "frobenius_graph_toeplitz_split",
@@ -11634,7 +12236,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 200
+   "rank": 213
   },
   {
    "id": "kappa_index",
@@ -11691,7 +12293,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 201
+   "rank": 214
   },
   {
    "id": "castelnuovo_severi_lemma",
@@ -11731,7 +12333,57 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 202
+   "rank": 215
+  },
+  {
+   "id": "contour_signed_energy_trace",
+   "name": "Zero-free signed energy trace of the heat-flowed Xi",
+   "aliases": [],
+   "plain": "The weighted holomorphic energy of the zeros of H_t in a window can be computed from H_t, H_t' and H_t'' on a contour alone: power sums by the argument principle give the window polynomial, a companion-matrix trace gives the inside pairs, and one more contour integral gives the pull of all outside zeros. No zero is located. Checked against direct zero sums (zeta, Lehmer window, Davenport-Heilbronn, exact polynomial heat flow).",
+   "label": "Theorem",
+   "core": "Zero-free signed energy trace of the heat-flowed Xi. Sources: Rodgers-Tao arXiv 1801.05914; Csordas-Smith-Varga 1994.",
+   "formula": "E_w = sum_k w(z_k) sum_{j != k} (z_k - z_j)^-2 = Tr[w(C) g(C)]/R^2 + (1/2 pi i) oint w Phi (H_t'/H_t) dz",
+   "numbers": [
+    "toy max rel err: 2.103e-07",
+    "zeta t0 max rel err: 0.0002654",
+    "lehmer t0 rel err: 2.91e-06",
+    "two contours max rel diff: 2.53e-10",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5",
+    "route score (Gaussian heat-flow evaluation of H_t (Euler–Maclaurin)): 3.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "signed_local_energy_trace",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "holomorphic_energy_ghost_criterion",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 216
   },
   {
    "id": "deninger_derivation_positivity",
@@ -11772,7 +12424,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 203
+   "rank": 217
   },
   {
    "id": "dolbeault_kahler_sign",
@@ -11817,7 +12469,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 204
+   "rank": 218
   },
   {
    "id": "fq_cs_block_identity",
@@ -11869,7 +12521,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 205
+   "rank": 219
   },
   {
    "id": "pontryagin_de_branges_spaces",
@@ -11907,7 +12559,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 206
+   "rank": 220
   },
   {
    "id": "s_of_t_remainder",
@@ -11956,7 +12608,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 207
+   "rank": 221
   },
   {
    "id": "shear_push_density",
@@ -12001,7 +12653,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 208
+   "rank": 222
   },
   {
    "id": "trace_shear_budget",
@@ -12045,7 +12697,47 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 209
+   "rank": 223
+  },
+  {
+   "id": "weil_negative_index_quadruples",
+   "name": "Negative index of the Weil form counts off-line quadruples",
+   "aliases": [],
+   "plain": "On real test functions each off-line quadruple contributes a block of signature (2, 2) and each on-line zero a positive square, so the negative index on support L is at most twice the number of quadruples and is nondecreasing in L. Observed: 0 for zeta through L = 8; 2 for DH from L = 4 (one quadruple; the next at 114.16 lies above the test band); 2 for each planted ghost.",
+   "label": "Theorem",
+   "core": "Negative index of the Weil form counts off-line quadruples.",
+   "formula": "n_-(L) <= 2 #{off-line quadruples}",
+   "numbers": [
+    "dh nneg by L: 1.0 = 0, 1.5 = 0, 2.0 = 0, 2.5 = 0, 3.0 = 0, 3.5 = 0, 4.0 = 2, 5.0 = 2, 6.0 = 2, 7.0 = 2, 8.0 = 2",
+    "route score: 4.2 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 4.5"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "central_charge_positivity_weil",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 224
   },
   {
    "id": "li_variable_self_reciprocal_series",
@@ -12083,7 +12775,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 210
+   "rank": 225
   },
   {
    "id": "rh_without_euler_product_weng",
@@ -12121,7 +12813,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 211
+   "rank": 226
   },
   {
    "id": "nogo_v5_per_prime_and_places",
@@ -12193,7 +12885,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 212
+   "rank": 227
   },
   {
    "id": "cc_riemann_roch",
@@ -12245,7 +12937,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 213
+   "rank": 228
   },
   {
    "id": "oscillator_semigroup_contraction",
@@ -12306,7 +12998,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 214
+   "rank": 229
   },
   {
    "id": "zero_count_two_form",
@@ -12364,7 +13056,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 215
+   "rank": 230
   },
   {
    "id": "automorphy_defect",
@@ -12410,7 +13102,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 216
+   "rank": 231
   },
   {
    "id": "certified_windows",
@@ -12465,7 +13157,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 217
+   "rank": 232
   },
   {
    "id": "beurling_counting_test_bstar",
@@ -12530,7 +13222,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 218
+   "rank": 233
   },
   {
    "id": "euler_factor_wick_rotation",
@@ -12604,7 +13296,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 219
+   "rank": 234
   },
   {
    "id": "morse_lobes_wedges_windows",
@@ -12670,7 +13362,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 220
+   "rank": 235
   },
   {
    "id": "zeros_as_frames_trichotomy",
@@ -12734,7 +13426,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 221
+   "rank": 236
   },
   {
    "id": "pole_s1",
@@ -12791,7 +13483,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 222
+   "rank": 237
   },
   {
    "id": "toeplitz_verblunsky",
@@ -12839,7 +13531,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 223
+   "rank": 238
   },
   {
    "id": "window_equation_of_state",
@@ -12890,7 +13582,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 224
+   "rank": 239
   },
   {
    "id": "dual_conic",
@@ -12942,7 +13634,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 225
+   "rank": 240
   },
   {
    "id": "arakelov",
@@ -12994,7 +13686,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 226
+   "rank": 241
   },
   {
    "id": "flat_gluing_curvature_in_metric",
@@ -13040,7 +13732,48 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 227
+   "rank": 242
+  },
+  {
+   "id": "fv_nc_torus_trichotomy",
+   "name": "F/V trichotomy in Manin's dictionary",
+   "aliases": [],
+   "plain": "On the Hasse lobe the module Z + ZF is a lattice in C, so it is a CM elliptic curve with a definite norm. On the wedge it is a pseudolattice in R, so it is the noncommutative torus A_theta with theta = F mod 1 and real multiplication. The wall a^2 = 4q is tau tending to the real line, where the norm becomes the square of one linear form. When a^2 - 4q is a square (q = 5, a = 6) theta is rational: the cusp.",
+   "label": "Theorem",
+   "core": "F/V trichotomy in Manin's dictionary. Sources: Manin arXiv math/0202109; Rieffel 1981; Pimsner-Voiculescu 1980.",
+   "formula": "m^2 - a m n + q n^2 = (m - nF)(m - nV); lobe: = |m - nF|^2; wall: = (m - n sqrt q)^2",
+   "numbers": [
+    "theta A: 5 = 0.618, 6 = 0, 7 = 0.1926, 8 = 0.3166, 9 = 0.4051, 10 = 0.4721, wall = 0.2361",
+    "disc: 5 = 5, 6 = 16, 7 = 29, 8 = 44, 9 = 61, 10 = 80, wall = 0",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_merge_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 243
   },
   {
    "id": "sqrt2_family",
@@ -13092,7 +13825,48 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 228
+   "rank": 244
+  },
+  {
+   "id": "calogero_pair_levi_civita",
+   "name": "Levi-Civita regularization of zero collisions",
+   "aliases": [],
+   "plain": "For a colliding pair of heat-flow zeros, with separation s obeying s-dot = 4/s, the clock dt = s dtau makes the collision regular (s = 4 tau, t = t_c + 2 tau^2). On real tau the zeros stay real and time reflects; the ghost branch is imaginary tau. The clock dt = s^2 dtau gives free motion in log s. Integrated through a toy collision this matches the exact roots to 8e-11.",
+   "label": "Theorem",
+   "core": "Levi-Civita regularization of zero collisions. Sources: Levi-Civita 1920.",
+   "formula": "s = 4 tau, t = t_c + 2 tau^2; K = P^2/2 - 8 - E e^{2X}",
+   "numbers": [
+    "ode err: 7.808331758951681e-11",
+    "ds dtau: -3.999968215981472",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "dbn_parabolic_threshold",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 245
   },
   {
    "id": "cusp_vs_infinity",
@@ -13136,7 +13910,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 229
+   "rank": 246
   },
   {
    "id": "f1_base",
@@ -13182,7 +13956,97 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 230
+   "rank": 247
+  },
+  {
+   "id": "fv_sundman_oscillator",
+   "name": "Sundman clock for the F/V collision",
+   "aliases": [],
+   "plain": "Using the trace a as time and the gap as the conformal factor (dt = gap dtau), the F/V sweep becomes a harmonic oscillator a = 2 sqrt(q) cos(tau). Frobenius and Verschiebung become entire functions of tau, the Hasse bound is the classically allowed region, and the F = V collision is a turning point where the motion bounces. Crossing to the indefinite side needs imaginary tau (the Wick rotation).",
+   "label": "Theorem",
+   "core": "Sundman clock for the F/V collision. Sources: Levi-Civita 1920; Sundman 1912.",
+   "formula": "(da/dtau)^2 + a^2 = 4q, F = sqrt(q) e^{i tau}",
+   "numbers": [
+    "puiseux exponent a: 0.500073",
+    "exponent tau: 0.9999214",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The clock is a regularization, not a positivity mechanism: for curves the angle is real because the normalized Frobenius is unitary for the Weil pairing; for ζ that unitary is exactly what is missing."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_merge_trichotomy",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "euler_factor_wick_rotation",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 248
+  },
+  {
+   "id": "fv_two_states_sector",
+   "name": "Norm as the product of two K-theory states",
+   "aliases": [],
+   "plain": "On the wedge each Galois embedding gives a real state, i.e. a linear order on K0. The norm is positive only on the totally positive sector where both agree, and that sector closes at the wall like the square root of the distance to it. On the lobe the two states are complex conjugates, so the norm is positive for free.",
+   "label": "Theorem",
+   "core": "Norm as the product of two K-theory states. Sources: Manin arXiv math/0202109.",
+   "formula": "Q = tau_F tau_V; opening angle ~ (a - 2 sqrt q)^(1/2)",
+   "numbers": [
+    "sector exponent: 0.4999",
+    "opening rad: 5 = 0.3567, 6 = 0.588, 7 = 0.7314, 8 = 0.8355, 9 = 0.9157, 10 = 0.9799",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "rosati",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 249
   },
   {
    "id": "local_global",
@@ -13222,7 +14086,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 231
+   "rank": 250
   },
   {
    "id": "no_real_weil_cohomology_arithmetic",
@@ -13260,7 +14124,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 232
+   "rank": 251
   },
   {
    "id": "null_line_quotient",
@@ -13303,7 +14167,108 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 233
+   "rank": 252
+  },
+  {
+   "id": "ps_central_charge_fv_family",
+   "name": "Polishchuk-Schwarz tilt as the wall limit of a central charge",
+   "aliases": [],
+   "plain": "On the Hasse lobe the CM point F defines a Bridgeland central charge Z_F(r,d) = -d + F r on the elliptic curve, whose squared length is the norm form and whose Rosati partner under the integer involution iota(r,d) = (-r, d - a r) is complex conjugation. The same involution gives the Galois partner V on the wedge, so the norm is Z_F(v) Z_F(iota v) on both sides. Z_F equals F times the Polishchuk-Schwarz rank at theta = -1/F (Morita image of F). As a approaches the wall, the phases of all line bundles collapse to 0 or 1 according to their slope versus sqrt q, which is exactly the tilted heart; the collapse is like the square root of the distance.",
+   "label": "Theorem",
+   "core": "Polishchuk-Schwarz tilt as the wall limit of a central charge. Sources: Polishchuk-Schwarz arXiv math/0211262 (CMP 2003), Prop. 3.9; Bridgeland arXiv math/0212237, Thm 9.1.",
+   "formula": "|Z_F|^2 = d^2 - a d r + q r^2 (lobe); Q(v) = Z_F(v) Z_F(iota v); Z_F = F (r - d/F); phase deviation ~ (2 sqrt q - a)^(1/2)",
+   "numbers": [
+    "sympy identities passed: 7",
+    "sympy identities total: 7",
+    "phase collapse exponent d0: 0.5",
+    "heart classes checked: 48140",
+    "rosati maxerr: 2.842e-14",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "ps_tilt_central_charge_target",
+     "note": ""
+    },
+    {
+     "type": "instance",
+     "to": "order_form_rosati",
+     "note": ""
+    },
+    {
+     "type": "corrects",
+     "to": "ps_tilt_central_charge_target",
+     "note": "the tilt slope is −1/θ (Morita image), not θ; Z_F = F·rk_{−1/F}"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 253
+  },
+  {
+   "id": "rt_energy_sundman_clock",
+   "name": "Rodgers-Tao Hamiltonian as a Sundman clock",
+   "aliases": [],
+   "plain": "For heat-flow zeros moving by the Csordas-Smith-Varga/Rodgers-Tao law, the Sundman time d tau = E dt (E the inverse-square pair energy) turns the log-gas Hamiltonian into an exact clock, H(tau) = H(0) - 4 tau. The N-body log-gap X_E = -(1/2) log E moves with speed between 0 and 4; the isolated pair saturates the bound. Consequence: the first backward collision cannot occur sooner than 1/(8E).",
+   "label": "Theorem",
+   "core": "Rodgers-Tao Hamiltonian as a Sundman clock. Sources: Rodgers-Tao arXiv 1801.05914 eq.(6), Lemma 4.18; Csordas-Smith-Varga 1994.",
+   "formula": "H = H0 - 4 tau; 0 <= dX_E/dtau <= 4; |t_c| >= 1/(8E)",
+   "numbers": [
+    "max ratio random: 1",
+    "closed window speed max: 4",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "calogero_pair_levi_civita",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "debruijn_newman",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 254
   },
   {
    "id": "s_mirror",
@@ -13345,7 +14310,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 234
+   "rank": 255
   },
   {
    "id": "arithmetic_hodge_index_null_quotient",
@@ -13388,48 +14353,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 235
-  },
-  {
-   "id": "calogero_pair_levi_civita",
-   "name": "Levi-Civita regularization of zero collisions",
-   "aliases": [],
-   "plain": "For a colliding pair of heat-flow zeros, with separation s obeying s-dot = 4/s, the clock dt = s dtau makes the collision regular (s = 4 tau, t = t_c + 2 tau^2). On real tau the zeros stay real and time reflects; the ghost branch is imaginary tau. The clock dt = s^2 dtau gives free motion in log s. Integrated through a toy collision this matches the exact roots to 8e-11.",
-   "label": "Theorem",
-   "core": "Levi-Civita regularization of zero collisions. Sources: Levi-Civita 1920.",
-   "formula": "s = 4 tau, t = t_c + 2 tau^2; K = P^2/2 - 8 - E e^{2X}",
-   "numbers": [
-    "ode err: 7.808331758951681e-11",
-    "ds dtau: -3.999968215981472",
-    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
-   ],
-   "axes": [
-    "physics analogue",
-    "structure/frame (Ax1)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "dbn_parabolic_threshold",
-     "note": ""
-    }
-   ],
-   "priority": 0.325,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 236
+   "rank": 256
   },
   {
    "id": "chebyshev_bias_boson_fermion",
@@ -13479,7 +14403,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 237
+   "rank": 257
   },
   {
    "id": "closed_geodesics",
@@ -13527,7 +14451,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 238
+   "rank": 258
   },
   {
    "id": "density_volume",
@@ -13574,7 +14498,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 239
+   "rank": 259
   },
   {
    "id": "dent_is_charge_move",
@@ -13619,7 +14543,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 240
+   "rank": 260
   },
   {
    "id": "dirichlet_primes_are_chi4",
@@ -13662,7 +14586,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 241
+   "rank": 261
   },
   {
    "id": "fv_is_dbn_flow",
@@ -13707,56 +14631,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 242
-  },
-  {
-   "id": "fv_sundman_oscillator",
-   "name": "Sundman clock for the F/V collision",
-   "aliases": [],
-   "plain": "Using the trace a as time and the gap as the conformal factor (dt = gap dtau), the F/V sweep becomes a harmonic oscillator a = 2 sqrt(q) cos(tau). Frobenius and Verschiebung become entire functions of tau, the Hasse bound is the classically allowed region, and the F = V collision is a turning point where the motion bounces. Crossing to the indefinite side needs imaginary tau (the Wick rotation).",
-   "label": "Theorem",
-   "core": "Sundman clock for the F/V collision. Sources: Levi-Civita 1920; Sundman 1912.",
-   "formula": "(da/dtau)^2 + a^2 = 4q, F = sqrt(q) e^{i tau}",
-   "numbers": [
-    "puiseux exponent a: 0.500073",
-    "exponent tau: 0.9999214",
-    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
-   ],
-   "axes": [
-    "physics analogue",
-    "structure/frame (Ax1)",
-    "phase/unitarity (Ax3)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "The clock is a regularization, not a positivity mechanism: for curves the angle is real because the normalized Frobenius is unitary for the Weil pairing; for ζ that unitary is exactly what is missing."
-   ],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "fv_merge_trichotomy",
-     "note": ""
-    },
-    {
-     "type": "refines",
-     "to": "euler_factor_wick_rotation",
-     "note": ""
-    }
-   ],
-   "priority": 0.325,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 243
+   "rank": 262
   },
   {
    "id": "gram_factor_channel_bound",
@@ -13806,7 +14681,46 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 244
+   "rank": 263
+  },
+  {
+   "id": "hecke_indefinite_as_min_definite",
+   "name": "Indefinite norm as a minimum of definite forms",
+   "aliases": [],
+   "plain": "Along the Hecke geodesic the definite forms l^2 e^t + l'^2 e^-t have minimum 2|l l'|, so the indefinite norm is recovered from a definite family with the sign supplied by the K-order. Hecke averaging of thetas over the closed geodesic is the integrated version.",
+   "label": "Theorem",
+   "core": "Indefinite norm as a minimum of definite forms. Sources: Manin arXiv math/0202109 Prop. 2.6.",
+   "formula": "min_t (l^2 e^t + l'^2 e^{-t}) = 2|N(l)|",
+   "numbers": [
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_two_states_sector",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 264
   },
   {
    "id": "imaginary_shift_positive_tensor",
@@ -13843,7 +14757,56 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 245
+   "rank": 265
+  },
+  {
+   "id": "local_hardy_constants_no_glue",
+   "name": "Local stability constants do not glue",
+   "aliases": [],
+   "plain": "Products of per-place Hardy/stability constants are Euler products at Re s <= 1 and diverge: the p-adic averaging-operator constants multiply to +infinity for every q (they do not equal zeta(1 - 1/q), which is negative there), and the sharp Vladimirov-Hardy constants multiply to 0. A global bound must use analytic continuation on the quotient.",
+   "label": "Theorem",
+   "core": "Local stability constants do not glue.",
+   "formula": "prod_p 1/(1 - p^{-(1-1/q)}) = +infinity, zeta(1-1/q) < 0",
+   "numbers": [
+    "log prod q2 x1e7: 464",
+    "zeta half: -1.46",
+    "route score: 4.0 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 4.8"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The identity “product of local constants = ζ(1 − 1/q)” is false: the Euler product diverges to +∞ at Re s ≤ 1, while ζ(1 − 1/q) < 0 there."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "per_prime_psd_allocation_nogo",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "ferromagnetic_phi_missing_piece",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 266
   },
   {
    "id": "modularity_observability_link",
@@ -13883,7 +14846,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 246
+   "rank": 267
   },
   {
    "id": "prime_step_sign_gap_excess",
@@ -13925,7 +14888,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 247
+   "rank": 268
   },
   {
    "id": "principalization",
@@ -13968,7 +14931,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 248
+   "rank": 269
   },
   {
    "id": "selberg_resonances",
@@ -14012,7 +14975,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 249
+   "rank": 270
   },
   {
    "id": "spec_z_terminal",
@@ -14055,7 +15018,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 250
+   "rank": 271
   },
   {
    "id": "spinor_route",
@@ -14098,7 +15061,49 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 251
+   "rank": 272
+  },
+  {
+   "id": "support_property_wall",
+   "name": "Support property dies at the wall; integrality replaces it on the wedge",
+   "aliases": [],
+   "plain": "On the lobe the Bridgeland support constant (smallest |Z(v)|/|v|) is the square root of the smallest eigenvalue of the norm form and goes to zero at the wall like the square root of the distance. On the wedge a single real state has no support (Diophantine small values), but the product of the two states is the integer norm, so |Z_F Z_V| >= 1 off the cusp; the single-state Lagrange constant equals min|N|/sqrt D. At the cusp (a = 6) the norm vanishes on a lattice vector.",
+   "label": "Theorem",
+   "core": "Support property dies at the wall; integrality replaces it on the wedge. Sources: Bridgeland arXiv math/0212237.",
+   "formula": "C(a)^2 = lambda_min[[q, -a/2], [-a/2, 1]] ~ (2 sqrt q - a); |Z_F(v) Z_V(v)| = |N(v)| >= 1",
+   "numbers": [
+    "exponent near wall: 0.5",
+    "lagrange: 5 = 0.4472, 7 = 0.1857, 8 = 0.1508, 9 = 0.128, 10 = 0.1118",
+    "minN over sqrtD: 5 = 0.4472, 7 = 0.1857, 8 = 0.1508, 9 = 0.128, 10 = 0.1118",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_two_states_sector",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 273
   },
   {
    "id": "three_indices_not_conflated",
@@ -14142,7 +15147,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 252
+   "rank": 274
   },
   {
    "id": "weil_rosetta",
@@ -14183,7 +15188,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 253
+   "rank": 275
   },
   {
    "id": "window_nonextensivity",
@@ -14231,7 +15236,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 254
+   "rank": 276
   },
   {
    "id": "euler_product_omega_parity_split",
@@ -14273,7 +15278,47 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 255
+   "rank": 277
+  },
+  {
+   "id": "hecke_mass_stability",
+   "name": "Indefinite norm as minimal mass over stability conditions",
+   "aliases": [],
+   "plain": "Along Manin's geodesic of complex structures between V and F, the normalized mass |Z_tau(v)|^2 / Im tau has minimum 2|N(v)|/sqrt D; on the lobe the single stability condition gives 2N(v)/sqrt|D|. The same formula on both sides; only the sign of N differs, and the sign is the K-order agreement.",
+   "label": "Theorem",
+   "core": "Indefinite norm as minimal mass over stability conditions. Sources: Manin arXiv math/0202109 (Hecke geodesic lift).",
+   "formula": "min_psi |d - tau(psi) r|^2 / Im tau = 2|N|/sqrt D, tau(psi) = a/2 + (sqrt D/2) e^{i psi}",
+   "numbers": [
+    "maxrelerr: 7.383e-10",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "hecke_indefinite_as_min_definite",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 278
   },
   {
    "id": "kepler_two_degenerations",
@@ -14315,7 +15360,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 256
+   "rank": 279
   },
   {
    "id": "lee_yang_multivariate_restriction",
@@ -14353,7 +15398,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 257
+   "rank": 280
   },
   {
    "id": "non_coercive_metric_loses_spectrum",
@@ -14390,7 +15435,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 258
+   "rank": 281
   },
   {
    "id": "piston_window_free_energy",
@@ -14434,7 +15479,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 259
+   "rank": 282
   },
   {
    "id": "sqrt_factorization_one_sided_wick",
@@ -14474,7 +15519,48 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 260
+   "rank": 283
+  },
+  {
+   "id": "sundman_clock_hyperbolic_length",
+   "name": "The gap-squared clock is hyperbolic arc length",
+   "aliases": [],
+   "plain": "On the lobe F runs along the geodesic |z| = sqrt q in the upper half-plane. The Sundman clock dt = gap^2 dtau is hyperbolic arc length divided by 2 sqrt q, so the wall is at infinite hyperbolic distance. On the wedge the geodesic from V to F is orthogonal to that circle because FV = q. The gap clock is instead the angle of the unitary F/sqrt q, whose rotation algebra is noncommutative on the lobe, while the wedge gives a commutative Tate curve: crossing the wall swaps which torus is noncommutative.",
+   "label": "Theorem",
+   "core": "The gap-squared clock is hyperbolic arc length. Sources: Manin arXiv math/0202109 sec. 1.8, eq. (1.18).",
+   "formula": "tau' = (hyperbolic length)/(2 sqrt q); U = q^(-1/2) F = e^{i phi}",
+   "numbers": [
+    "sympy identities passed: 27/27",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "fv_sundman_oscillator",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 284
   },
   {
    "id": "two_component_lee_yang_can_fail",
@@ -14512,7 +15598,48 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 261
+   "rank": 285
+  },
+  {
+   "id": "vladimirov_derivative_is_prime_term",
+   "name": "Prime term = alpha-derivative of the conjugated Vladimirov symbol",
+   "aliases": [],
+   "plain": "On unit-invariant functions the conjugated p-adic Vladimirov operator |x|^(a/2) D^a |x|^(a/2) is positive with Mellin symbol |Gamma_p(1/2 + a/2 + i xi)|^2, equal to 1 at a = 0; its a-derivative at 0 is exactly the prime term -2 Re[log p/(p^(1/2+i xi) - 1)] of the explicit formula (archimedean analogue: Re psi(1/4 + i xi/2) - log pi). So the canonical adelic kinetic energy transfers to the potential, not to a positive cushion. Sharp radial p-adic Hardy constant: ((1 - p^((a-1)/2))/(1 - p^(-(a+1)/2)))^2.",
+   "label": "Theorem",
+   "core": "Prime term = alpha-derivative of the conjugated Vladimirov symbol. Sources: Haran, Invent. Math. 101 (1990); Burnol, arXiv:math/9902080; Vladimirov-Volovich-Zelenov 1994; Tate 1950.",
+   "formula": "d/da |Gamma_p(1/2+a/2+i xi)|^2 at a=0 = sigma_p(xi)",
+   "numbers": [
+    "derivative check maxerr: 4.2e-10",
+    "route score: 3.6 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 3; a no-go for the Vladimirov transfer"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "Spec ℤ gap",
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "prime_step_operator_indefinite",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 286
   },
   {
    "id": "window_ground_state_simple_even",
@@ -14550,7 +15677,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 262
+   "rank": 287
   },
   {
    "id": "zeta_collisions_type_one",
@@ -14589,7 +15716,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 263
+   "rank": 288
   },
   {
    "id": "cohesion",
@@ -14627,7 +15754,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 264
+   "rank": 289
   },
   {
    "id": "kramers_kronig",
@@ -14678,7 +15805,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 265
+   "rank": 290
   },
   {
    "id": "no_ghost_gupta_bleuler_analogy",
@@ -14734,7 +15861,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 266
+   "rank": 291
   },
   {
    "id": "ep_gap_across_collision",
@@ -14790,7 +15917,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 267
+   "rank": 292
   },
   {
    "id": "gribov",
@@ -14841,7 +15968,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 268
+   "rank": 293
   },
   {
    "id": "metaplectic",
@@ -14897,7 +16024,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 269
+   "rank": 294
   },
   {
    "id": "half_tate_twist",
@@ -14970,7 +16097,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 270
+   "rank": 295
   },
   {
    "id": "kms_bost_connes",
@@ -15033,7 +16160,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 271
+   "rank": 296
   },
   {
    "id": "functional_equation",
@@ -15086,7 +16213,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 272
+   "rank": 297
   },
   {
    "id": "gauss_sum_unitarity",
@@ -15156,7 +16283,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 273
+   "rank": 298
   },
   {
    "id": "e2_anomaly",
@@ -15214,7 +16341,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 274
+   "rank": 299
   },
   {
    "id": "half_turn_sign_flip",
@@ -15278,7 +16405,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 275
+   "rank": 300
   },
   {
    "id": "lps_hecke_on_s3",
@@ -15345,7 +16472,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 276
+   "rank": 301
   },
   {
    "id": "moser_orbit_space_s2xs2",
@@ -15416,7 +16543,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 277
+   "rank": 302
   },
   {
    "id": "nash_kuiper_onsager",
@@ -15476,7 +16603,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 278
+   "rank": 303
   },
   {
    "id": "apsides_gap_form",
@@ -15540,7 +16667,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 279
+   "rank": 304
   },
   {
    "id": "cup_product",
@@ -15591,7 +16718,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 280
+   "rank": 305
   },
   {
    "id": "hecke",
@@ -15648,7 +16775,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 281
+   "rank": 306
   },
   {
    "id": "real_forms_compact_vs_boost",
@@ -15722,7 +16849,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 282
+   "rank": 307
   },
   {
    "id": "archimedean_place",
@@ -15774,7 +16901,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 283
+   "rank": 308
   },
   {
    "id": "cusp_forms_petersson",
@@ -15824,7 +16951,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 284
+   "rank": 309
   },
   {
    "id": "euler_char_chi",
@@ -15884,7 +17011,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 285
+   "rank": 310
   },
   {
    "id": "mazur_wiles",
@@ -15937,7 +17064,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 286
+   "rank": 311
   },
   {
    "id": "pv_ts_symplectomorphism",
@@ -16001,7 +17128,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 287
+   "rank": 312
   },
   {
    "id": "cc21_archimedean_positivity",
@@ -16062,7 +17189,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 288
+   "rank": 313
   },
   {
    "id": "f1_square_constructions",
@@ -16132,7 +17259,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 289
+   "rank": 314
   },
   {
    "id": "herbrand_ribet",
@@ -16196,7 +17323,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 290
+   "rank": 315
   },
   {
    "id": "n_factorial_bridge_all_places",
@@ -16251,7 +17378,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 291
+   "rank": 316
   },
   {
    "id": "ramanujan_691",
@@ -16312,7 +17439,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 292
+   "rank": 317
   },
   {
    "id": "self_duality_push_shear",
@@ -16376,7 +17503,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 293
+   "rank": 318
   },
   {
    "id": "standing_frame_so22_ads3",
@@ -16435,7 +17562,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 294
+   "rank": 319
   },
   {
    "id": "tate_count",
@@ -16485,7 +17612,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 295
+   "rank": 320
   },
   {
    "id": "thermo_geometry_ruppeiner_contact",
@@ -16552,7 +17679,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 296
+   "rank": 321
   },
   {
    "id": "consani_archimedean_cohomology",
@@ -16605,7 +17732,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 297
+   "rank": 322
   },
   {
    "id": "lambda2_monotone_nested_windows",
@@ -16654,7 +17781,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 298
+   "rank": 323
   },
   {
    "id": "thermo_shift_invariance",
@@ -16699,7 +17826,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 299
+   "rank": 324
   },
   {
    "id": "window_mechanical_stability",
@@ -16753,7 +17880,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 300
+   "rank": 325
   },
   {
    "id": "hodge_star_square_fermion_parity",
@@ -16800,7 +17927,68 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 301
+   "rank": 326
+  },
+  {
+   "id": "riesz_nonnormal_residue_gauge",
+   "name": "Non-normal residue ||P - P*|| is a gauge quantity and a collision detector",
+   "aliases": [],
+   "plain": "The Riesz projection onto an eigenvalue is self-adjoint exactly when its eigenvector is orthogonal to the rest, which is a property of the chosen matrix, not of the spectrum. A normal model diag(zeros) gives ||P - P*|| = 0 even for ghosts; a companion matrix gives large values for real zeros. Under heat flow the residue diverges like |t - t_collision|^{-1/2} at every collision (ghost landing, and zeta's own backward collisions), symmetrically before and after, and then settles to the real-zero baseline; the projection onto the colliding pair stays bounded. So it does not separate ghosts from real zeros without first assuming a self-adjoint model, which is the Hilbert-Polya assumption.",
+   "label": "Theorem",
+   "core": "Non-normal residue ||P - P*|| is a gauge quantity and a collision detector.",
+   "formula": "||P - P*|| ~ |t - t_c|^{-1/2} ~ split^{-1}",
+   "numbers": [
+    "static / zeta: companion real median = 3.942, companion real max = 6.118, balanced real median = 2.059, normal model = 0",
+    "static / DH actual: companion real median = 32.34, companion real max = 100.8, companion ghost = 72.08, balanced real median = 21.27, balanced ghost = 2.143, normal model = 0, pair projection = 18.02",
+    "static / DH online only: companion real median = 28.81, companion real max = 110.1, balanced real median = 22.82, normal model = 0",
+    "static / zeta ghost 0.05: companion real median = 2.022, companion real max = 3.184, companion ghost = 101.4, balanced real median = 1.342, balanced ghost = 1.994, normal model = 0, pair projection = 2.684",
+    "static / zeta ghost 0.10: companion real median = 2.02, companion real max = 3.18, companion ghost = 50.68, balanced real median = 1.34, balanced ghost = 1.539, normal model = 0, pair projection = 2.68",
+    "static / zeta ghost 0.30: companion real median = 2.002, companion real max = 3.137, companion ghost = 16.76, balanced real median = 1.335, balanced ghost = 0.8745, normal model = 0, pair projection = 2.641",
+    "landing: DH actual = 0.1791, zeta ghost 0.05 = 0.004997, zeta ghost 0.10 = 0.01994, zeta ghost 0.30 = 0.1757",
+    "exponents / DH actual: before = -0.5011, after = -0.4966",
+    "exponents / zeta ghost 0.05: before = -0.5002, after = -0.4989",
+    "exponents / zeta ghost 0.10: before = -0.5003, after = -0.499",
+    "exponents / zeta ghost 0.30: before = -0.5002, after = -0.4991",
+    "zeta backward: t c = -1.065, real side = exp = -0.5016, se = 0.0002001, max single = 1.587e+04, complex side = exp = -0.5002, se = 4.54e-05, max single = 1.587e+04",
+    "fv exponent: -0.5",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5",
+    "route score (‖P − P*‖ as a ghost detector): 1.6 (0.6·significance + 0.4·probability of progress, 0–10); significance 2, probability 1"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-blind",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The non-normality ‖P − P*‖ of a spectral projection depends on the matrix model (similarity), vanishes for normal models even with complex eigenvalues, and diverges at any eigenvalue collision; it is not a ghost test unless a self-adjoint model is assumed (Hilbert–Pólya, circular)."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "hilbert_polya",
+     "note": ""
+    },
+    {
+     "type": "analogy",
+     "to": "k_order_ghost_blind",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 327
   },
   {
    "id": "primary_sign_rule",
@@ -16865,7 +18053,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 302
+   "rank": 328
   },
   {
    "id": "gaussian_filter_ghost_blind",
@@ -16925,7 +18113,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 303
+   "rank": 329
   },
   {
    "id": "arch_threshold",
@@ -16981,7 +18169,54 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 304
+   "rank": 330
+  },
+  {
+   "id": "gap_labelling_fv_check",
+   "name": "Hofstadter gap labels for F/V fluxes",
+   "aliases": [],
+   "plain": "Gap labelling is a statement about the integrated density of states, not gap energies: the IDS in each open gap is m + n theta mod 1 and n is the Chern number. Checked for all open gaps at rational approximants of the F/V fluxes and for irrational F/V fluxes on long chains.",
+   "label": "Numerical",
+   "core": "Hofstadter gap labels for F/V fluxes. Sources: TKNN PRL 49 405 (1982); Wannier phys. stat. sol. (b) 88 757 (1978); Claro-Wannier PRB 19 6068 (1979); Bellissard gap labelling.",
+   "formula": "IDS = s + t theta, Chern = -t (r = q s + p t, |t| <= q/2)",
+   "numbers": [
+    "tknn open gaps: 86",
+    "tknn fail: 0",
+    "chern max dev: 8.9e-16",
+    "irrational gaps labelled: 208",
+    "route score: 3.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Hofstadter gap labelling fixes the integrated density of states (m + nθ mod 1), not the gap energies; gap widths are not proportional to |m − nθ|.",
+    "Corrected in v1.8: gap widths decay exponentially in the label |n| (log-linear, Leguil–You–Zhao–Zhou), not in n²; a quadratic exponent is not supported."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "fv_nc_torus_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 331
   },
   {
    "id": "maass_selberg",
@@ -17030,7 +18265,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 305
+   "rank": 332
   },
   {
    "id": "arithmetic_topology_linking_matrix",
@@ -17078,102 +18313,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 306
-  },
-  {
-   "id": "fisher_curvature_operator_ghost_blind",
-   "name": "The Fisher curvature operator on bivectors is ghost-blind",
-   "aliases": [],
-   "plain": "The full curvature operator of the log-det (Fisher) metric on prime directions, a symmetric form on the 105-dimensional space of bivectors, has a low-rank inertia for genuine forms and nearly non-degenerate balanced inertia for controls, so its signature separates them; the separation reflects near-degeneracy of the window form. Along a ghost sweep its inertia is unchanged except next to the eigenvalue crossing, because the metric sees |λ| through W⁻¹, not the sign.",
-   "label": "Numerical",
-   "core": "The Fisher curvature operator on bivectors is ghost-blind. Sources: Gallot and Meyer, J. Math. Pures Appl. 54 (1975); Böhm and Wilking, Ann. of Math. 167 (2008).",
-   "formula": "ℛ(e_i∧e_j, e_k∧e_l) = R_ijkl",
-   "numbers": [
-    "zeta genuine inertia: (12, 14, 79)",
-    "unchanged sweep points: 70/78"
-   ],
-   "axes": [
-    "numerics/certificate",
-    "no-go / refuted",
-    "ghost-blind"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [
-    "L185"
-   ],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "hessian_curvature_negative_genuine",
-     "note": ""
-    }
-   ],
-   "priority": 0.307,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.05,
-    "tractability": 0.7,
-    "evidence": 0.8,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 307
-  },
-  {
-   "id": "slack_ledger_cf",
-   "name": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
-   "aliases": [],
-   "plain": "How fast the local slack is used up is governed by how well log q/log p is approximated by fractions.",
-   "label": "Numerical",
-   "core": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
-   "formula": "|t_first(Z)| = d_min(Z)²/8 ≈ C²/(8Z²)",
-   "numbers": [
-    "Z≤1e9",
-    "envelope slopes −1.01,−0.85,−0.89,−0.90",
-    "record α 1.04,1.11,1.08,1.16",
-    "22/22 same-branch jumps = q_n",
-    "|t_c/(−d²/8)−1| ≤ 5e−15 on 24 records"
-   ],
-   "axes": [
-    "numerics/certificate",
-    "ghost-blind"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "Z·d_min stays in [0.11, 5.4]; partial quotients drive the excursions."
-   ],
-   "lemmas": [
-    "L180"
-   ],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "local_dbn_slack",
-     "note": ""
-    },
-    {
-     "type": "refines",
-     "to": "incommensurable_lehmer_zero",
-     "note": ""
-    }
-   ],
-   "priority": 0.307,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.05,
-    "tractability": 0.7,
-    "evidence": 0.8,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 308
+   "rank": 333
   },
   {
    "id": "coefficient_ilc_ghost_blind",
@@ -17226,7 +18366,164 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 309
+   "rank": 334
+  },
+  {
+   "id": "fisher_curvature_operator_ghost_blind",
+   "name": "The Fisher curvature operator on bivectors is ghost-blind",
+   "aliases": [],
+   "plain": "The full curvature operator of the log-det (Fisher) metric on prime directions, a symmetric form on the 105-dimensional space of bivectors, has a low-rank inertia for genuine forms and nearly non-degenerate balanced inertia for controls, so its signature separates them; the separation reflects near-degeneracy of the window form. Along a ghost sweep its inertia is unchanged except next to the eigenvalue crossing, because the metric sees |λ| through W⁻¹, not the sign.",
+   "label": "Numerical",
+   "core": "The Fisher curvature operator on bivectors is ghost-blind. Sources: Gallot and Meyer, J. Math. Pures Appl. 54 (1975); Böhm and Wilking, Ann. of Math. 167 (2008).",
+   "formula": "ℛ(e_i∧e_j, e_k∧e_l) = R_ijkl",
+   "numbers": [
+    "zeta genuine inertia: (12, 14, 79)",
+    "unchanged sweep points: 70/78"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "no-go / refuted",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [
+    "L185"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "hessian_curvature_negative_genuine",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 335
+  },
+  {
+   "id": "gap_width_vs_label",
+   "name": "Hofstadter gap widths decay exponentially in |n|, not n^2",
+   "aliases": [],
+   "plain": "Almost-Mathieu gap widths along the F/V wedge and at the wall fit log width linear in the label |n| far better than quadratic in n (residuals 2.7-27 vs 11-49). Slopes are between 1.1 and 1.7 times log lambda at lambda = 1/2, consistent with the two-sided lambda^{xi |n|} bounds of Leguil-You-Zhao-Zhou; lambda = 2 reproduces lambda = 1/2 (Aubry duality).",
+   "label": "Numerical",
+   "core": "Hofstadter gap widths decay exponentially in |n|, not n^2. Sources: Leguil-You-Zhao-Zhou arXiv 1712.04700, Thm 1.1.",
+   "formula": "log |G_n| ~ c - kappa |n|",
+   "numbers": [
+    "law / wall|lam=0.5: slope = -1.062, rss abs n = 11.09, rss n2 = 19.36",
+    "law / a=4.6|lam=0.5: slope = -1.185, rss abs n = 26.57, rss n2 = 48.67",
+    "law / a=5|lam=0.5: slope = -1.149, rss abs n = 2.772, rss n2 = 10.97",
+    "law / a=7|lam=0.5: slope = -0.9276, rss abs n = 23.36, rss n2 = 40.45",
+    "law / a=9|lam=0.5: slope = -0.7899, rss abs n = 12.27, rss n2 = 23.78",
+    "law / wall|lam=1: slope = -0.5427, rss abs n = 11.88, rss n2 = 16.31",
+    "law / a=4.6|lam=1: slope = -0.8391, rss abs n = 19.21, rss n2 = 29.93",
+    "law / a=5|lam=1: slope = -0.5959, rss abs n = 2.727, rss n2 = 6.752",
+    "law / a=7|lam=1: slope = -0.4947, rss abs n = 25.07, rss n2 = 33.41",
+    "law / a=9|lam=1: slope = -0.4098, rss abs n = 9.511, rss n2 = 14.48",
+    "law / wall|lam=2: slope = -1.062, rss abs n = 11.09, rss n2 = 19.36",
+    "law / a=4.6|lam=2: slope = -1.185, rss abs n = 26.57, rss n2 = 48.67",
+    "law / a=5|lam=2: slope = -1.149, rss abs n = 2.772, rss n2 = 10.97",
+    "law / a=7|lam=2: slope = -0.9276, rss abs n = 23.36, rss n2 = 40.45",
+    "law / a=9|lam=2: slope = -0.7899, rss abs n = 12.27, rss n2 = 23.78",
+    "route score: 3.6 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 4.5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Hofstadter gap widths decay exponentially in the label |n| (log-linear), not in n²; a quadratic exponent is not supported."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "gap_labelling_fv_check",
+     "note": ""
+    },
+    {
+     "type": "corrects",
+     "to": "gap_labelling_fv_check",
+     "note": "gap widths are log-linear in |n|, not quadratic in n"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 336
+  },
+  {
+   "id": "slack_ledger_cf",
+   "name": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
+   "aliases": [],
+   "plain": "How fast the local slack is used up is governed by how well log q/log p is approximated by fractions.",
+   "label": "Numerical",
+   "core": "Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²",
+   "formula": "|t_first(Z)| = d_min(Z)²/8 ≈ C²/(8Z²)",
+   "numbers": [
+    "Z≤1e9",
+    "envelope slopes −1.01,−0.85,−0.89,−0.90",
+    "record α 1.04,1.11,1.08,1.16",
+    "22/22 same-branch jumps = q_n",
+    "|t_c/(−d²/8)−1| ≤ 5e−15 on 24 records"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Z·d_min stays in [0.11, 5.4]; partial quotients drive the excursions."
+   ],
+   "lemmas": [
+    "L180"
+   ],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "local_dbn_slack",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "incommensurable_lehmer_zero",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 337
   },
   {
    "id": "dbn_monotone_functionals",
@@ -17269,7 +18566,63 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 310
+   "rank": 338
+  },
+  {
+   "id": "gap_width_wall_exponent",
+   "name": "Gap widths approaching the wall",
+   "aliases": [],
+   "plain": "Lobe side (theta_B = angle/pi -> 0): the label-n gaps are Landau gaps of width 4 pi theta_B sqrt(lambda), so width ~ (2 sqrt q - a)^{1/2}: fitted exponent 0.4956 +- 0.0005 (n = 1, lambda = 1); band widths are exponentially small in 1/theta_B. Wedge side (theta_A -> sqrt 5 - 2, irrational): nothing is singular; the change in width scales like eps^{0.55-0.69} (lambda = 1), i.e. a square root from the map a -> theta composed with a Holder-type dependence on theta.",
+   "label": "Numerical",
+   "core": "Gap widths approaching the wall.",
+   "formula": "w_n ~ 4 pi theta_B sqrt(lambda), theta_B ~ (2 sqrt q - a)^{1/2}",
+   "numbers": [
+    "lobe / lam=1,n=1: beta eps = 0.4956, se = 0.0005044, beta theta = 0.9912, w over 4pi theta at N384 = 0.9959",
+    "lobe / lam=1,n=2: beta eps = 0.4911, se = 0.001023, beta theta = 0.9823, w over 4pi theta at N384 = 0.9918",
+    "lobe / lam=1,n=3: beta eps = 0.4866, se = 0.001553, beta theta = 0.9732, w over 4pi theta at N384 = 0.9878",
+    "lobe / lam=1,n=4: beta eps = 0.482, se = 0.002093, beta theta = 0.9641, w over 4pi theta at N384 = 0.9837",
+    "lobe / lam=0.5,n=1: beta eps = 0.4953, se = 0.0005388, beta theta = 0.9906, w over 4pi theta at N384 = 0.704",
+    "lobe / lam=0.5,n=2: beta eps = 0.4905, se = 0.001098, beta theta = 0.9811, w over 4pi theta at N384 = 0.701",
+    "lobe / lam=0.5,n=3: beta eps = 0.4857, se = 0.001676, beta theta = 0.9713, w over 4pi theta at N384 = 0.6979",
+    "lobe / lam=0.5,n=4: beta eps = 0.4807, se = 0.002274, beta theta = 0.9614, w over 4pi theta at N384 = 0.6949",
+    "wedge / lam=0.5,n=1: beta eps = 1.305, se = 0.2259, beta theta = 2.609, npts = 6",
+    "wedge / lam=0.5,n=2: beta eps = 0.714, se = 0.03793, beta theta = 1.428, npts = 6",
+    "wedge / lam=0.5,n=3: beta eps = 0.666, se = 0.06488, beta theta = 1.332, npts = 6",
+    "wedge / lam=1,n=1: beta eps = 0.5459, se = 0.0287, beta theta = 1.092, npts = 6",
+    "wedge / lam=1,n=2: beta eps = 0.5917, se = 0.0187, beta theta = 1.183, npts = 6",
+    "wedge / lam=1,n=3: beta eps = 0.6902, se = 0.02198, beta theta = 1.38, npts = 6",
+    "route score: 3.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 4"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The exponent ½ on the lobe side comes from the map a → θ (Landau gaps); the wall itself is not singular for the spectrum, and the wedge side has no universal exponent."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "fv_nc_torus_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 339
   },
   {
    "id": "hopf_fibration_spec_z",
@@ -17316,7 +18669,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 311
+   "rank": 340
   },
   {
    "id": "perelman_template_dbn",
@@ -17362,7 +18715,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 312
+   "rank": 341
   },
   {
    "id": "identity_not_estimate",
@@ -17404,7 +18757,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 313
+   "rank": 342
   },
   {
    "id": "edge_boundary_cycle",
@@ -17448,7 +18801,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 314
+   "rank": 343
   },
   {
    "id": "kahler_package_one_liner",
@@ -17493,7 +18846,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 315
+   "rank": 344
   },
   {
    "id": "phase_branch_selection",
@@ -17532,7 +18885,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 316
+   "rank": 345
   },
   {
    "id": "half_density",
@@ -17591,7 +18944,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 317
+   "rank": 346
   },
   {
    "id": "theta_inversion",
@@ -17656,7 +19009,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 318
+   "rank": 347
   },
   {
    "id": "apsidal_sweep_eccentricity",
@@ -17724,7 +19077,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 319
+   "rank": 348
   },
   {
    "id": "dbn_local_flow_fv_sweep",
@@ -17772,7 +19125,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 320
+   "rank": 349
   },
   {
    "id": "eisenstein_ct",
@@ -17823,7 +19176,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 321
+   "rank": 350
   },
   {
    "id": "gauss_half",
@@ -17897,7 +19250,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 322
+   "rank": 351
   },
   {
    "id": "hilbert_reciprocity_at_2",
@@ -17969,7 +19322,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 323
+   "rank": 352
   },
   {
    "id": "prime_two_wild",
@@ -18032,7 +19385,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 324
+   "rank": 353
   },
   {
    "id": "scattering_phi",
@@ -18087,7 +19440,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 325
+   "rank": 354
   },
   {
    "id": "four_squares_eisenstein_lift",
@@ -18153,7 +19506,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 326
+   "rank": 355
   },
   {
    "id": "fundamental_domain_three_phases",
@@ -18206,7 +19559,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 327
+   "rank": 356
   },
   {
    "id": "sl2fp_half_representations",
@@ -18275,7 +19628,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 328
+   "rank": 357
   },
   {
    "id": "yoshida",
@@ -18334,7 +19687,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 329
+   "rank": 358
   },
   {
    "id": "count_positivity",
@@ -18379,7 +19732,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 330
+   "rank": 359
   },
   {
    "id": "incommensurable_lehmer_zero",
@@ -18427,7 +19780,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 331
+   "rank": 360
   },
   {
    "id": "ks_quaternion_lift",
@@ -18487,7 +19840,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 332
+   "rank": 361
   },
   {
    "id": "maslov_legendre_fourier",
@@ -18551,7 +19904,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 333
+   "rank": 362
   },
   {
    "id": "one_cusp_three_readings",
@@ -18607,7 +19960,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 334
+   "rank": 363
   },
   {
    "id": "push_shear_balance",
@@ -18663,7 +20016,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 335
+   "rank": 364
   },
   {
    "id": "quartet_capacity_sp4",
@@ -18719,7 +20072,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 336
+   "rank": 365
   },
   {
    "id": "cm_gaussian_hasse_triangle",
@@ -18761,7 +20114,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 337
+   "rank": 366
   },
   {
    "id": "cm_split_inert_duality",
@@ -18814,7 +20167,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 338
+   "rank": 367
   },
   {
    "id": "dbn_deficit_time_to_cusp",
@@ -18870,7 +20223,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 339
+   "rank": 368
   },
   {
    "id": "dbn_product_cross_term",
@@ -18914,7 +20267,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 340
+   "rank": 369
   },
   {
    "id": "gauss_sum_canonical_root",
@@ -18968,7 +20321,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 341
+   "rank": 370
   },
   {
    "id": "johnson_lippmann_supercharge",
@@ -19018,7 +20371,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 342
+   "rank": 371
   },
   {
    "id": "kk_circle_and_adelic_solenoids",
@@ -19067,7 +20420,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 343
+   "rank": 372
   },
   {
    "id": "one_twentyfourth_identities",
@@ -19125,7 +20478,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 344
+   "rank": 373
   },
   {
    "id": "weight_ladder",
@@ -19172,7 +20525,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 345
+   "rank": 374
   },
   {
    "id": "chirality_star_gamma5_hodge_index",
@@ -19213,7 +20566,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 346
+   "rank": 375
   },
   {
    "id": "dbn_bohlin_decay",
@@ -19257,7 +20610,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 347
+   "rank": 376
   },
   {
    "id": "eta_chain",
@@ -19297,7 +20650,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 348
+   "rank": 377
   },
   {
    "id": "euler_factor_passive_lossy",
@@ -19340,7 +20693,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 349
+   "rank": 378
   },
   {
    "id": "exactness_monge_ampere",
@@ -19379,7 +20732,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 350
+   "rank": 379
   },
   {
    "id": "flat_bochner_curvature_ghost_blind",
@@ -19430,7 +20783,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 351
+   "rank": 380
   },
   {
    "id": "galois_obstruction_is_curvature",
@@ -19479,7 +20832,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 352
+   "rank": 381
   },
   {
    "id": "hardy_z_critical_line_wave",
@@ -19528,7 +20881,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 353
+   "rank": 382
   },
   {
    "id": "hodge_C_star_eighth_turn",
@@ -19573,7 +20926,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 354
+   "rank": 383
   },
   {
    "id": "kronecker_limit_E2star",
@@ -19628,7 +20981,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 355
+   "rank": 384
   },
   {
    "id": "local_dbn_slack",
@@ -19678,7 +21031,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 356
+   "rank": 385
   },
   {
    "id": "w2_cech",
@@ -19723,7 +21076,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 357
+   "rank": 386
   },
   {
    "id": "archimedean_weyl_kernel",
@@ -19767,7 +21120,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 358
+   "rank": 387
   },
   {
    "id": "beta_dequantization_entropy",
@@ -19815,7 +21168,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 359
+   "rank": 388
   },
   {
    "id": "chi_minus_one_half_pole",
@@ -19862,7 +21215,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 360
+   "rank": 389
   },
   {
    "id": "hecke_toy_contraction",
@@ -19907,7 +21260,52 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 361
+   "rank": 390
+  },
+  {
+   "id": "k_order_ghost_blind",
+   "name": "The K-theory order is automatic and ghost-blind",
+   "aliases": [],
+   "plain": "Any finite set of real zeros gives a quasi-periodic operator whose gap labels lie in the frequency module, for zeta, Davenport-Heilbronn on-line zeros, GUE and arithmetic progressions alike. A paired off-line ghost changes only the amplitude (cos times cosh), so labels never move; gaps only close once delta times the window is about 1. An unpaired ghost is seen only because the operator stops being self-adjoint, which restates reality of zeros.",
+   "label": "Theorem",
+   "core": "The K-theory order is automatic and ghost-blind. Sources: Bellissard gap labelling.",
+   "formula": "2 cos(gamma u) cosh(delta u)",
+   "numbers": [
+    "paired ghost: (delta = 0, top10 kept = 10, top10 closed = 0); (delta = 0.0001, top10 kept = 10, top10 closed = 0); (delta = 0.0003, top10 kept = 10, top10 closed = 0); (delta = 0.001, top10 kept = 10, top10 closed = 0); (delta = 0.002, top10 kept = 8, top10 closed = 2); (delta = 0.003, top10 kept = 0, top10 closed = 10); (delta = 0.005, top10 kept = 0, top10 closed = 10)",
+    "unpaired max imE: (delta = 0.0001, max abs imE = 0.01332); (delta = 0.001, max abs imE = 0.1345); (delta = 0.003, max abs imE = 0.4319)",
+    "route score: 4.7 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 5",
+    "route score (the K-theory order as a route to ζ positivity): 2.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 1"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-blind",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The linear K-theory order on zero-frequency modules is automatic and ghost-blind; for ζ, linear positivity on exponential-type tests equals Weil positivity (Akhiezer), so it is not a weaker route."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "coefficient_ilc_ghost_blind",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 391
   },
   {
    "id": "kepler_so4_contraction",
@@ -19947,7 +21345,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 362
+   "rank": 392
   },
   {
    "id": "knauf_ferromagnetic_spin_chain",
@@ -19985,7 +21383,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 363
+   "rank": 393
   },
   {
    "id": "newman_class_P_fails_for_phi",
@@ -20026,7 +21424,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 364
+   "rank": 394
   },
   {
    "id": "prime_clocks",
@@ -20074,7 +21472,52 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 365
+   "rank": 395
+  },
+  {
+   "id": "rt_energy_monotone_but_blind",
+   "name": "The monotone log-gas energy cannot certify real zeros",
+   "aliases": [],
+   "plain": "The energy and Hamiltonian are monotone under the zero flow for every configuration of real points, so their monotonicity cannot distinguish zeta from Davenport-Heilbronn, random-matrix or lattice controls; first backward collision times of zeta and DH blocks are statistically indistinguishable.",
+   "label": "Theorem",
+   "core": "The monotone log-gas energy cannot certify real zeros. Sources: Rodgers-Tao arXiv 1801.05914.",
+   "formula": "",
+   "numbers": [
+    "ks zeta vs dh p: 0.4131",
+    "median t zeta: 0.01784",
+    "median t dh: 0.01663",
+    "route score: 4.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 5"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "ghost-blind",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The log-gas energy of heat-flow zeros is an exact clock in Sundman time and is monotone, but monotone for every real configuration; it does not separate ζ from Davenport–Heilbronn. The signed holomorphic energy and the near-collision exponent do."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "rt_energy_sundman_clock",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 396
   },
   {
    "id": "sector_map_w",
@@ -20121,7 +21564,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 366
+   "rank": 397
   },
   {
    "id": "window_contact_legendre_surface",
@@ -20170,7 +21613,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 367
+   "rank": 398
   },
   {
    "id": "conic_compactness",
@@ -20209,7 +21652,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 368
+   "rank": 399
   },
   {
    "id": "dbn_kernel_not_pf5",
@@ -20247,7 +21690,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 369
+   "rank": 400
   },
   {
    "id": "euler_product_saddle_additivity",
@@ -20292,7 +21735,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 370
+   "rank": 401
   },
   {
    "id": "finite_guinand_weil_dictionary",
@@ -20330,7 +21773,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 371
+   "rank": 402
   },
   {
    "id": "flip45_is_real_structure",
@@ -20370,7 +21813,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 372
+   "rank": 403
   },
   {
    "id": "fourier_quarter_turn",
@@ -20413,7 +21856,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 373
+   "rank": 404
   },
   {
    "id": "fourth_roots_supersingular",
@@ -20452,7 +21895,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 374
+   "rank": 405
   },
   {
    "id": "frobenius_angles_quantized",
@@ -20492,7 +21935,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 375
+   "rank": 406
   },
   {
    "id": "gross_zagier_rank_one_positivity",
@@ -20526,7 +21969,52 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 376
+   "rank": 407
+  },
+  {
+   "id": "levy_khintchine_mass_gap",
+   "name": "Window Weil form as jump kinetic energy minus a mass plus a pole",
+   "aliases": [],
+   "plain": "For zeta the window form splits exactly as W = J - M I + Pole, with J a positive jump (log-Vladimirov) form from the arch and prime atoms, M = 2 sum Lambda(n) n^(-1/2) minus the arch value at 0, and Pole of inertia (1,1). Positivity forces at most one level of J below M. Zeta has exactly one (the constant mode) for all tested windows, and its second level sits only 2.8e-4 to 9e-10 above M (critical); controls have 22-198. For Davenport-Heilbronn, Delta and 11a1 the jump form is indefinite (signed coefficients), so this is a Lambda >= 0 property, not an RH mechanism; ghost-blind.",
+   "label": "Theorem",
+   "core": "Window Weil form as jump kinetic energy minus a mass plus a pole. Sources: Haran 1990.",
+   "formula": "W = J - M I + Pole;  W >= 0 => #{eig J < M} <= 1",
+   "numbers": [
+    "zeta levels below M: 1",
+    "zeta gap l2 4 8 12 16: [0.00028, 2.3e-05, 5.6e-07, 1.1e-08, 9e-10]",
+    "ctrl levels below M l12: [180, 198]",
+    "route score: 4.3 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 4; necessary only; ghost-blind"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "physics analogue",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "A Λ(n) ≥ 0 property, not an RH mechanism: the jump form is indefinite for Davenport–Heilbronn and also for the GRH-true L(Δ) and 11a1."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "hardy_constant_window_weil",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 408
   },
   {
    "id": "mobius_is_witten_parity",
@@ -20569,7 +22057,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 377
+   "rank": 409
   },
   {
    "id": "orbifold_vs_descartes_deficits",
@@ -20610,7 +22098,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 378
+   "rank": 410
   },
   {
    "id": "rs_blind_to_sign_flips",
@@ -20655,7 +22143,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 379
+   "rank": 411
   },
   {
    "id": "rs_explicit_formula_positive_lattice_form",
@@ -20692,7 +22180,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 380
+   "rank": 412
   },
   {
    "id": "ruled_quadric_null_lines",
@@ -20735,7 +22223,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 381
+   "rank": 413
   },
   {
    "id": "so4_chirality_split",
@@ -20774,7 +22262,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 382
+   "rank": 414
   },
   {
    "id": "spin_theta",
@@ -20823,7 +22311,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 383
+   "rank": 415
   },
   {
    "id": "three_lenses_one_flow",
@@ -20862,7 +22350,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 384
+   "rank": 416
   },
   {
    "id": "zero_gas_forced_functionals",
@@ -20905,7 +22393,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 385
+   "rank": 417
   },
   {
    "id": "cocycle_principle",
@@ -20948,7 +22436,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 386
+   "rank": 418
   },
   {
    "id": "wedge_flip_animation",
@@ -21002,7 +22490,7 @@
     "evidence": 0.48,
     "quadrant": "background"
    },
-   "rank": 387
+   "rank": 419
   },
   {
    "id": "purity_distortionless",
@@ -21061,7 +22549,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 388
+   "rank": 420
   },
   {
    "id": "hasse_triangle_newton",
@@ -21111,7 +22599,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 389
+   "rank": 421
   },
   {
    "id": "net_force_orientation",
@@ -21151,7 +22639,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 390
+   "rank": 422
   },
   {
    "id": "sharpened_missing_piece",
@@ -21187,7 +22675,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 391
+   "rank": 423
   },
   {
    "id": "ghost_count_rh_restatement",
@@ -21227,7 +22715,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 392
+   "rank": 424
   },
   {
    "id": "anisotropic_part_weil",
@@ -21267,7 +22755,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 393
+   "rank": 425
   },
   {
    "id": "pontryagin_exactly_two",
@@ -21307,7 +22795,49 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 394
+   "rank": 426
+  },
+  {
+   "id": "sundman_regularized_rt_energy",
+   "name": "Sundman-regularized Rodgers-Tao energy",
+   "aliases": [],
+   "plain": "Tested: in the log-gap Sundman clock the Rodgers-Tao Hamiltonian is an exact clock with a speed limit, but its monotonicity holds for every real configuration, so it does not certify real zeros; the signed holomorphic energy does, at the cost of restating RH.",
+   "label": "Restatement",
+   "core": "Sundman-regularized Rodgers-Tao energy. Sources: Rodgers-Tao arXiv 1801.05914.",
+   "formula": "",
+   "numbers": [
+    "route score: 3.4 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 2.5; tested in v1.8 (was 3.2 as a proposed next step)"
+   ],
+   "axes": [
+    "physics analogue",
+    "no-go / refuted",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "History: in v1.7 this was an Open proposed next step (Proposed next step: write the Rodgers-Tao pair energy in log-gap (Sundman f = s^2) coordinates and test whether it is a monotone bounce functional under backward flow for zeta versus controls.) Tested in v1.8 and relabelled Open → Restatement: the energy is an exact Sundman clock but monotone for every real configuration, so it is ghost-blind as a certificate."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "calogero_pair_levi_civita",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 427
   },
   {
    "id": "supercharge_laplacian_restates_positivity",
@@ -21349,7 +22879,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 395
+   "rank": 428
   },
   {
    "id": "hodge_index_shear_subtracts",
@@ -21393,7 +22923,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 396
+   "rank": 429
   },
   {
    "id": "infinitely_divisible_rh_criterion",
@@ -21431,7 +22961,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 397
+   "rank": 430
   },
   {
    "id": "riemann_roch_sorting",
@@ -21470,7 +23000,89 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 398
+   "rank": 431
+  },
+  {
+   "id": "rt_renormalization_count_drift",
+   "name": "Rodgers-Tao renormalization needs the zero count (Turing)",
+   "aliases": [],
+   "plain": "The renormalized Rodgers-Tao energy is measured against classical zero locations from the Riemann-von Mangoldt count. For Davenport-Heilbronn the on-line zeros fall behind the count linearly (off-line zeros), so the renormalized energy separates it from zeta, but only through the argument-principle count, which is Turing's verification method.",
+   "label": "Restatement",
+   "core": "Rodgers-Tao renormalization needs the zero count (Turing). Sources: Rodgers-Tao arXiv 1801.05914 section 7.",
+   "formula": "",
+   "numbers": [
+    "dh drift per 1000: -108",
+    "zeta max abs drift: 0.6854",
+    "route score: 4.1 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 5"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "rt_energy_monotone_but_blind",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 432
+  },
+  {
+   "id": "signed_energy_noncircular_sign",
+   "name": "Which sign statements for zeta are non-circular",
+   "aliases": [],
+   "plain": "Unconditional: for t >= 0.2 every window is positive (all zeros real by the published bound Lambda <= 0.2), and at t = 0 every window below the verified height 3e12 is positive. Positivity for all windows at all small t > 0 is the Riemann hypothesis restated, so it cannot be used as an input.",
+   "label": "Restatement",
+   "core": "Which sign statements for zeta are non-circular. Sources: Platt-Trudgian Bull. LMS 53 (2021), Cor. 2; Polymath15 arXiv 1904.12438 Thm 1.2; de Bruijn 1950.",
+   "formula": "RH <=> Lambda <= 0 <=> E_w(t) >= 0 for all t > 0 (localized w >= 0)",
+   "numbers": [
+    "Lambda upper: 0.2",
+    "route score: 3.8 (0.6·significance + 0.4·probability of progress, 0–10); significance 3, probability 5"
+   ],
+   "axes": [
+    "restatement ⇔ RH",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "positivity_real_clock_restatement",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 433
   },
   {
    "id": "weil_braket_pairing",
@@ -21510,7 +23122,87 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 399
+   "rank": 434
+  },
+  {
+   "id": "weil_form_momentum_dictionary",
+   "name": "Hamiltonian dictionary for the window Weil form",
+   "aliases": [],
+   "plain": "Position = log-scale u, time = scaling parameter, velocity = 1 for the free scaling flow, momentum = generator -i d/du with eigenvalue the zero ordinate; Berry-Keating H = xp equals the momentum, is unbounded below, and has a singular Legendre map (canonical momentum only as a Dirac constraint). The window Weil form is a function of momentum compressed to a box, with no position potential; the T + V Legendre derivation (quadratic kinetic energy) does not apply. No Lagrangian giving the Weil form is known.",
+   "label": "Restatement",
+   "core": "Hamiltonian dictionary for the window Weil form. Sources: Connes 1999; Berry-Keating 1999; Sierra-Townsend 2008; Meyer 2005.",
+   "formula": "W = P_l w(p) P_l,  w = sum_gamma delta_gamma",
+   "numbers": [
+    "route score: 4.1 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 5"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "hardy_constant_window_weil",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 435
+  },
+  {
+   "id": "zeta_zero_fv_quadratic",
+   "name": "Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)",
+   "aliases": [],
+   "plain": "The zero rho and its functional-equation partner 1 - rho are the roots of x^2 - x + lambda with lambda = rho(1 - rho). On the line lambda = 1/4 + gamma^2 is real and > 1/4: the lobe. A real off-line zero gives real lambda < 1/4: the wedge (a noncommutative torus at a real parameter). A complex off-line zero gives complex lambda, a fourth type the integer F/V family cannot produce. So the F/V trichotomy models only the exceptional real-zero failure mode, not the complex ghost.",
+   "label": "Restatement",
+   "core": "Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho).",
+   "formula": "x^2 - x + lambda, lambda = rho(1 - rho); disc = 1 - 4 lambda = (2 i gamma)^2",
+   "numbers": [
+    "route score: 4.2 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 4.5"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "phase/unitarity (Ax3)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "The integer F/V family models only the real off-line zero (real λ < ¼); a complex ghost gives complex λ, a type the family cannot produce."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "fv_nc_torus_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 436
   },
   {
    "id": "archimedes",
@@ -21560,7 +23252,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 400
+   "rank": 437
   },
   {
    "id": "distortionless",
@@ -21615,7 +23307,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 401
+   "rank": 438
   },
   {
    "id": "einstein_cartan_torsion_spin",
@@ -21654,7 +23346,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 402
+   "rank": 439
   },
   {
    "id": "heaviside",
@@ -21705,7 +23397,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 403
+   "rank": 440
   },
   {
    "id": "log_gas_frozen_limit",
@@ -21749,7 +23441,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 404
+   "rank": 441
   },
   {
    "id": "mass_density",
@@ -21790,7 +23482,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 405
+   "rank": 442
   },
   {
    "id": "serre_derivative_analogy",
@@ -21828,7 +23520,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 406
+   "rank": 443
   },
   {
    "id": "dpt_quantitative_template",
@@ -21867,7 +23559,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 407
+   "rank": 444
   },
   {
    "id": "einstein_de_haas_lesson",
@@ -21907,7 +23599,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 408
+   "rank": 445
   },
   {
    "id": "half_density_tension_dictionary",
@@ -21946,7 +23638,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 409
+   "rank": 446
   },
   {
    "id": "viscosity_baroclinic",
@@ -21984,7 +23676,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 410
+   "rank": 447
   },
   {
    "id": "lrl_hidden_symmetry_trichotomy",
@@ -22060,7 +23752,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 411
+   "rank": 448
   },
   {
    "id": "su2xsu2_peter_weyl_surface",
@@ -22131,7 +23823,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 412
+   "rank": 449
   },
   {
    "id": "higgs_negative_mass2",
@@ -22189,7 +23881,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 413
+   "rank": 450
   },
   {
    "id": "klein_gordon_charge",
@@ -22249,7 +23941,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 414
+   "rank": 451
   },
   {
    "id": "anomalous_dispersion",
@@ -22304,7 +23996,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 415
+   "rank": 452
   },
   {
    "id": "convolution_square_root",
@@ -22339,7 +24031,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 416
+   "rank": 453
   },
   {
    "id": "anticipation_law_fluctuation",
@@ -22388,7 +24080,55 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 417
+   "rank": 454
+  },
+  {
+   "id": "signed_local_energy_trace",
+   "name": "Weighted signed energy trace from the heat-flowed function",
+   "aliases": [],
+   "plain": "Proposed construction: a localized trace of the signed zero energy, computed by contour integrals of the heat-flowed xi function and its derivatives without locating zeros. Any ghost forces it negative in a window around its landing point before landing; RH is equivalent to its positivity for all positive heat times.",
+   "label": "Open",
+   "core": "Weighted signed energy trace from the heat-flowed function.",
+   "formula": "E_w(t) = sum_k w(z_k) e_k(t)",
+   "numbers": [
+    "route score: 3.5 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 2; as proposed",
+    "route score (tested in v1.8: the signed trace as a route to RH): 3.3 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 1.5"
+   ],
+   "axes": [
+    "open target",
+    "ghost-sensitive",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Tested in v1.8 (zero-free contour version, Theorem + Numerical): any ghost drives it negative before landing, ζ windows stay positive, but the sign at a single time is not a reality test; the exact zero-free detector is the Hermite form. For ζ, positivity at all small t > 0 is Λ ≤ 0, i.e. RH restated."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "holomorphic_energy_ghost_criterion",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "sundman_regularized_rt_energy",
+     "note": ""
+    }
+   ],
+   "priority": 0.2,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 455
   },
   {
    "id": "height_positivity_equals_rh_positivity",
@@ -22432,7 +24172,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 418
+   "rank": 456
   },
   {
    "id": "weil_as_special_cycle_self_intersection",
@@ -22476,7 +24216,7 @@
     "evidence": 0.4,
     "quadrant": "RH-sharp"
    },
-   "rank": 419
+   "rank": 457
   },
   {
    "id": "missing_square_spec_z",
@@ -22558,7 +24298,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 420
+   "rank": 458
   },
   {
    "id": "buoyancy_reading",
@@ -22597,7 +24337,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 421
+   "rank": 459
   },
   {
    "id": "lamb_cutoff",
@@ -22653,7 +24393,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 422
+   "rank": 460
   },
   {
    "id": "two_chis",
@@ -22710,7 +24450,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 423
+   "rank": 461
   },
   {
    "id": "sha_as_holonomy_defect",
@@ -22756,7 +24496,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 424
+   "rank": 462
   },
   {
    "id": "ramanujan_691_degeneration",
@@ -22800,7 +24540,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 425
+   "rank": 463
   },
   {
    "id": "tate_twist_as_hbar",
@@ -22834,7 +24574,93 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 426
+   "rank": 464
+  },
+  {
+   "id": "ps_tilt_central_charge_target",
+   "name": "Order as a stability condition (target shape)",
+   "aliases": [],
+   "plain": "Polishchuk-Schwarz identify the noncommutative-torus positive cone (rank n + m theta > 0) with a tilt of coherent sheaves on an elliptic curve at slope -1/theta (the Morita image of theta; corrected in v1.8, not at theta itself). So the wedge order is a stability-type half-plane on the lobe curve. For zeta the needed structure would carry a central charge with |Z|^2 = rho(1 - rho), a tilt giving the order, and a Rosati involution: this is the shape Deninger's conjectured cohomology would need. Not constructed.",
+   "label": "Open",
+   "core": "Order as a stability condition (target shape). Sources: Polishchuk-Schwarz arXiv math/0211262; Connes Selecta 1999; Bost-Connes Selecta 1995.",
+   "formula": "rk = n + m theta, deg = m",
+   "numbers": [
+    "route score: 3.6 (0.6·significance + 0.4·probability of progress, 0–10); significance 5, probability 1.5"
+   ],
+   "axes": [
+    "open target",
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Corrected in v1.8: in Polishchuk–Schwarz (Prop. 3.9) the heart for A_θ is the tilt of Coh at slope −1/θ (the Morita image), not at θ itself; the F/V central charge satisfies Z_F = F·rk_{−1/F}."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "order_form_rosati",
+     "note": ""
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 465
+  },
+  {
+   "id": "barrier_certificate_bypass",
+   "name": "Zero-free window certificates as heat-flow barriers",
+   "aliases": [],
+   "plain": "The contour Hermite count is exactly the kind of zero-free certificate the Polymath15 barrier criterion needs at intermediate times, so it points to lowering the upper bound on Lambda rather than to RH itself.",
+   "label": "Open",
+   "core": "Zero-free window certificates as heat-flow barriers. Sources: Polymath15 arXiv 1904.12438 Thm 1.2.",
+   "formula": "",
+   "numbers": [
+    "route score: 3.3 (0.6·significance + 0.4·probability of progress, 0–10); significance 3.5, probability 3"
+   ],
+   "axes": [
+    "open target",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogy",
+     "to": "debruijn_newman",
+     "note": ""
+    },
+    {
+     "type": "refines",
+     "to": "hermite_window_ghost_count",
+     "note": ""
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 466
   },
   {
    "id": "cs_for_spec_z_formulations",
@@ -22874,7 +24700,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 427
+   "rank": 467
   },
   {
    "id": "rings_purity_restates_positivity",
@@ -22924,7 +24750,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 428
+   "rank": 468
   },
   {
    "id": "standard_conj",
@@ -22970,7 +24796,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 429
+   "rank": 469
   },
   {
    "id": "thermodynamic_J_direction",
@@ -23020,7 +24846,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 430
+   "rank": 470
   },
   {
    "id": "both_at_once",
@@ -23060,22 +24886,23 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 431
+   "rank": 471
   },
   {
-   "id": "sundman_regularized_rt_energy",
-   "name": "Sundman-regularized Rodgers-Tao energy",
+   "id": "integrality_support_bypass",
+   "name": "Integrality instead of positivity (45-degree direction)",
    "aliases": [],
-   "plain": "Proposed next step: write the Rodgers-Tao pair energy in log-gap (Sundman f = s^2) coordinates and test whether it is a monotone bounce functional under backward flow for zeta versus controls.",
+   "plain": "On the RM wedge, positivity is lost but a support property survives through integrality: the product of the two real central charges is a nonzero integer. The zeta analogue would be a discreteness or integrality constraint on lambda = rho(1 - rho) that a complex lambda cannot meet. No candidate is known; recorded as a direction, not a result.",
    "label": "Open",
-   "core": "Sundman-regularized Rodgers-Tao energy. Sources: Rodgers-Tao arXiv 1801.05914.",
-   "formula": "",
+   "core": "Integrality instead of positivity (45-degree direction).",
+   "formula": "|Z_F Z_V| = |N| in Z ⧵ {0}",
    "numbers": [
-    "route score: 3.2 (0.6·significance + 0.4·probability of progress, 0–10); significance 4, probability 2; proposed next step"
+    "route score: 3.1 (0.6·significance + 0.4·probability of progress, 0–10); significance 4.5, probability 1; a direction, not a result"
    ],
    "axes": [
     "open target",
-    "physics analogue"
+    "Spec ℤ gap",
+    "sign/positivity (Ax2)"
    ],
    "uncertain": "",
    "proved": "",
@@ -23084,8 +24911,8 @@
    "lemmas": [],
    "rels": [
     {
-     "type": "refines",
-     "to": "calogero_pair_levi_civita",
+     "type": "analogy",
+     "to": "support_property_wall",
      "note": ""
     }
    ],
@@ -23099,11 +24926,11 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 432
+   "rank": 472
   }
  ],
  "counts": {
-  "concepts": 432,
-  "relations": 1122
+  "concepts": 472,
+  "relations": 1177
  }
 }

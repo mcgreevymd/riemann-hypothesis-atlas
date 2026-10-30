@@ -9,7 +9,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, 'atlas.json'), encoding='utf-8'))
 C = sorted(D['concepts'], key=lambda c: c['rank'])
 BY = {c['id']: c for c in C}
-VERSION, VDATE = '1.7', '30 Oct 2026'
+VERSION, VDATE = '1.8', '30 Oct 2026'
 
 REL = {'same-mechanism-as': 'same mechanism as', 'special-case-of': 'special case of',
        'analogue-of': 'analogue of', 'implies': 'implies', 'equivalent-to-RH': 'equivalent to RH',
@@ -79,6 +79,15 @@ def entry(c, full=True):
 L = ['# The RH Atlas — full public edition', '',
      f"Version {VERSION} · {VDATE} · J. W. McGreevy; formalization by Grok Bot", '',
      '> **The Riemann Hypothesis is NOT proved here.** This atlas is a classification of known structures, criteria and open problems, not a proof.', '',
+     '## Latest results (v1.8)', '', 'Figures from the research notes folded into v1.8 (see README.md for the gallery and CHANGELOG.md for details). The Riemann Hypothesis is not proved.', '',
+     '![Central-charge positivity is the Weil form](figures/nc_torus_fv/central_charge_positivity_zeta_vs_dh.png)', '', '*Central-charge positivity is the Weil form: from the prime side ζ stays ≥ 0 up to L = 8, while Davenport–Heilbronn turns negative near L = 4, with no zeros used.* [Restatement + Numerical · route score 4.7 (as a route to RH 2.8)]', '',
+     '![Zero-free signed energy of the heat-flowed Ξ](figures/heat_flow_energy/zero_free_signed_energy_trace.png)', '', '*Zero-free signed energy of the heat-flowed Ξ: every ghost goes negative before it lands, ζ windows stay positive, and the Hermite form counts off-line pairs exactly.* [Theorem + Numerical · 4.4 (as a route to RH 3.3)]', '',
+     '![Hofstadter gap widths are log-linear in |n| and close like (distance to the wall)^½ on the lobe side](figures/nc_torus_fv/gap_widths_and_nonnormal_residue.png)', '', '*Hofstadter gap widths are log-linear in |n| and close like (distance to the wall)^½ on the lobe side; ‖P − P&#42;‖ is a gauge quantity that spikes at every collision, not a ghost test.* [Numerical + Theorem · 3.6 / 3.4 / 4.4 (as a ghost detector 1.6)]', '',
+     '![F/V on the noncommutative torus](figures/nc_torus_fv/nc_torus_gap_labels_ghost_blind.png)', '', '*F/V on the noncommutative torus: Manin’s lobe / wall / wedge, and gap labels that hold for every zero set, so the K-theory order is ghost-blind.* [Theorem + Numerical · 4.7 (as a route to ζ positivity 2.8)]', '',
+     '![The Rodgers–Tao energy is an exact Sundman clock with speed limit 4, but monotone for every real configuration](figures/heat_flow_energy/rodgers_tao_sundman_clock.png)', '', '*The Rodgers–Tao energy is an exact Sundman clock with speed limit 4, but monotone for every real configuration; the near-collision law separates Davenport–Heilbronn from ζ.* [Theorem + Numerical · 4.4]', '',
+     '![A Hardy constant for the primes is window positivity restated](figures/hardy_constant/hardy_constant_primes.png)', '', '*A Hardy constant for the primes is window positivity restated: ζ’s margin closes (critical), Davenport–Heilbronn crosses 1 near ℓ = 4–5, and local constants do not glue.* [Theorem + Numerical · 3.9]', '',
+     '![Sundman/Levi-Civita clock](figures/sundman_clock/sundman_levi_civita_clock.png)', '', '*Sundman/Levi-Civita clock: the F/V collision becomes a turning point and real τ bounces; positivity is the clock staying real, i.e. RH restated.* [Theorem · 4.7 (circular as a proof route, Restatement 4.4)]', '',
+     '![Two Kepler degenerations](figures/sundman_clock/two_kepler_degenerations.png)', '', '*Two Kepler degenerations: F = V is the circular orbit (e = 0), not the Levi-Civita centre collision (e = 1); both share the square-root map.* [Theorem · 4.4]', '',
      f"{D['counts']['concepts']} concepts · {D['counts']['relations']} typed relations · "
      f"{sum('missing piece' in c['axes'] for c in C)} missing pieces. Generated from `atlas.json` by `build_public_md.py`.", '',
      '**Order.** Every section lists its entries in descending priority. Headers read `#rank · priority · name`. '
