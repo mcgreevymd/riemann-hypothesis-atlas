@@ -9,7 +9,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, 'atlas.json'), encoding='utf-8'))
 C = sorted(D['concepts'], key=lambda c: c['rank'])
 BY = {c['id']: c for c in C}
-VERSION, VDATE = '1.8', '30 Oct 2026'
+VERSION, VDATE = '1.9', '30 Oct 2026'
 
 REL = {'same-mechanism-as': 'same mechanism as', 'special-case-of': 'special case of',
        'analogue-of': 'analogue of', 'implies': 'implies', 'equivalent-to-RH': 'equivalent to RH',
@@ -79,7 +79,10 @@ def entry(c, full=True):
 L = ['# The RH Atlas — full public edition', '',
      f"Version {VERSION} · {VDATE} · J. W. McGreevy; formalization by Grok Bot", '',
      '> **The Riemann Hypothesis is NOT proved here.** This atlas is a classification of known structures, criteria and open problems, not a proof.', '',
-     '## Latest results (v1.8)', '', 'Figures from the research notes folded into v1.8 (see README.md for the gallery and CHANGELOG.md for details). The Riemann Hypothesis is not proved.', '',
+     '## Latest results (v1.9)', '', 'Figures from the research notes folded into v1.9 (see README.md for the gallery and CHANGELOG.md for details). The Riemann Hypothesis is not proved.', '',
+     '![Two-degree-of-freedom chaotic regularized xp](figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png)', '', '*Two-degree-of-freedom chaotic regularized xp: periodic-orbit periods drift with energy and do not lock onto k·log p; modular-surface lengths count like the primes but are logs of quadratic units; the explicit-formula sign is cohomological, not a Maslov phase; ζ’s orbit sum improves with the prime cutoff while Davenport–Heilbronn’s degrades.* [Numerical + Theorem + Cited · 3.9 / 4.4 / 4.4 / 3.9 (as a route to RH 2.9; adelic orbit space 3.4)]', '',
+     '![Regularized xp](figures/regularized_xp/regularized_xp_legendre_liouville_counting.png)', '', '*Regularized xp: a Poincaré time change with ∂f/∂p ≠ 0 makes xp Legendre-regular; the regularized xp is the hyperbolic Sundman clock of the F/V pair; in a Deninger-type toy the Liouville law gives only ρ ↔ 1 − ρ and a positive metric gives the line; counting matches only the two leading Riemann–von Mangoldt terms.* [Theorem + Numerical · 4.1 / 4.4 / 4.7 / 3.8 (as a route to RH 3.1)]', '',
+     '## Previous results (v1.8)', '', 'Figures from the research notes folded into v1.8. The Riemann Hypothesis is not proved.', '',
      '![Central-charge positivity is the Weil form](figures/nc_torus_fv/central_charge_positivity_zeta_vs_dh.png)', '', '*Central-charge positivity is the Weil form: from the prime side ζ stays ≥ 0 up to L = 8, while Davenport–Heilbronn turns negative near L = 4, with no zeros used.* [Restatement + Numerical · route score 4.7 (as a route to RH 2.8)]', '',
      '![Zero-free signed energy of the heat-flowed Ξ](figures/heat_flow_energy/zero_free_signed_energy_trace.png)', '', '*Zero-free signed energy of the heat-flowed Ξ: every ghost goes negative before it lands, ζ windows stay positive, and the Hermite form counts off-line pairs exactly.* [Theorem + Numerical · 4.4 (as a route to RH 3.3)]', '',
      '![Hofstadter gap widths are log-linear in |n| and close like (distance to the wall)^½ on the lobe side](figures/nc_torus_fv/gap_widths_and_nonnormal_residue.png)', '', '*Hofstadter gap widths are log-linear in |n| and close like (distance to the wall)^½ on the lobe side; ‖P − P&#42;‖ is a gauge quantity that spikes at every collision, not a ghost test.* [Numerical + Theorem · 3.6 / 3.4 / 4.4 (as a ghost detector 1.6)]', '',

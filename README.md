@@ -2,9 +2,17 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.8 · 30 Oct 2026
+Version 1.9 · 30 Oct 2026
 
-## Latest results (v1.8)
+## Latest results (v1.9)
+
+> The Riemann Hypothesis is not proved. Figures from the research notes folded into v1.9; labels and route scores (0.6·significance + 0.4·probability, 0–10) as in the entries. The v1.8 gallery follows directly below.
+
+<table>
+<tr><td width="50%" valign="top"><a href="figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png"><img src="figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png" width="420" alt="Two-degree-of-freedom chaotic regularized xp"></a><br><sub>Two-degree-of-freedom chaotic regularized xp: periodic-orbit periods drift with energy and do not lock onto k·log p; modular-surface lengths count like the primes but are logs of quadratic units; the explicit-formula sign is cohomological, not a Maslov phase; ζ’s orbit sum improves with the prime cutoff while Davenport–Heilbronn’s degrades. <b>[Numerical + Theorem + Cited · 3.9 / 4.4 / 4.4 / 3.9 (as a route to RH 2.9; adelic orbit space 3.4)]</b></sub></td><td width="50%" valign="top"><a href="figures/regularized_xp/regularized_xp_legendre_liouville_counting.png"><img src="figures/regularized_xp/regularized_xp_legendre_liouville_counting.png" width="420" alt="Regularized xp"></a><br><sub>Regularized xp: a Poincaré time change with ∂f/∂p ≠ 0 makes xp Legendre-regular; the regularized xp is the hyperbolic Sundman clock of the F/V pair; in a Deninger-type toy the Liouville law gives only ρ ↔ 1 − ρ and a positive metric gives the line; counting matches only the two leading Riemann–von Mangoldt terms. <b>[Theorem + Numerical · 4.1 / 4.4 / 4.7 / 3.8 (as a route to RH 3.1)]</b></sub></td></tr>
+</table>
+
+## Previous results (v1.8)
 
 > The Riemann Hypothesis is not proved. Figures from the research notes folded into v1.8; labels and route scores (0.6·significance + 0.4·probability, 0–10) as in the entries.
 
@@ -15,7 +23,7 @@ Version 1.8 · 30 Oct 2026
 <tr><td width="50%" valign="top"><a href="figures/sundman_clock/sundman_levi_civita_clock.png"><img src="figures/sundman_clock/sundman_levi_civita_clock.png" width="420" alt="Sundman/Levi-Civita clock"></a><br><sub>Sundman/Levi-Civita clock: the F/V collision becomes a turning point and real τ bounces; positivity is the clock staying real, i.e. RH restated. <b>[Theorem · 4.7 (circular as a proof route, Restatement 4.4)]</b></sub></td><td width="50%" valign="top"><a href="figures/sundman_clock/two_kepler_degenerations.png"><img src="figures/sundman_clock/two_kepler_degenerations.png" width="420" alt="Two Kepler degenerations"></a><br><sub>Two Kepler degenerations: F = V is the circular orbit (e = 0), not the Levi-Civita centre collision (e = 1); both share the square-root map. <b>[Theorem · 4.4]</b></sub></td></tr>
 </table>
 
-> **New in v1.8** (see [CHANGELOG.md](CHANGELOG.md)): five sets of research notes are folded in (a Hardy-inequality reading of the window Weil form; the Rodgers–Tao log-gas energy in a Sundman clock; the F/V family on the noncommutative-torus side; a zero-free signed-energy trace of the heat-flowed Ξ; a Polishchuk–Schwarz central charge on the F/V family, with central-charge positivity tested on ζ and Davenport–Heilbronn): 472 concepts and 1177 typed relations. Several of the constructions were suggested in external review; each is recorded only at the label its test supports. **Every new positivity reformulation is Weil positivity again [Restatement]:** a Hardy/KLMN constant for the primes, the linear K-theory order on exponential-type tests (Akhiezer), and central-charge positivity with a Rosati partner. Their value is computational: from the prime side alone ζ stays ≥ 0 up to support L = 8, while Davenport–Heilbronn turns negative near L = 4, with no zeros used [Numerical]. **Zero-free ghost detection [Theorem + Numerical]:** the signed energy Σ(z_j − z_k)⁻² of the heat-flowed zeros can be computed from contour integrals alone; every ghost drives it negative before it lands, but its sign at a single time is not a reality test. The Hermite form built from the same contour moments counts off-line pairs exactly and caught every Davenport–Heilbronn and planted ghost tested. For ζ, positivity at every small t > 0 is Λ ≤ 0, i.e. RH restated; the non-circular use is as a barrier certificate for upper bounds on Λ [Open]. **Ghost-blind [Theorem]:** the monotone Rodgers–Tao energy (monotone for every real configuration), the K-theory gap labels, and the non-normality ‖P − P*‖ of spectral projections (a gauge quantity that diverges at every collision). **Noncommutative torus [Theorem]:** in Manin’s dictionary the Hasse lobe is a CM elliptic curve and the wedge a noncommutative torus with real multiplication; the Sundman gap² clock is hyperbolic arc length; Z_F(r, d) = −d + F·r is a Bridgeland central charge whose Rosati partner is complex conjugation on the lobe and Galois conjugation on the wedge, and the Polishchuk–Schwarz tilt is at slope −1/θ. Hofstadter gap widths decay exponentially in the label |n|, and on the lobe side they close like the square root of the distance to the wall [Numerical]. **Rank 1 is a manual pin:** the narrowed missing piece is listed first by the author’s choice, not by its score (Heuristic priority 0.380, unchanged); every other entry follows the scored order. **The Riemann Hypothesis is not proved.**
+> **New in v1.9** (see [CHANGELOG.md](CHANGELOG.md)): two sets of research notes on the regularized Berry–Keating xp Hamiltonian are folded in (Legendre regularity, Hamiltonian-plus-Liouville structure, semiclassical counting and a Deninger-type toy; then a two-degree-of-freedom chaotic regularized xp, the modular surface and the adelic orbits): 498 concepts and 1207 typed relations. Several of the questions were raised in external review; each answer is recorded only at the label its test supports. **Regularized xp [Theorem]:** bare xp has a singular Legendre map, but a Poincaré time change K = f·(xp − E) is Legendre-regular exactly when ∂f/∂p ≠ 0 on the energy shell, and the Sierra–Rodríguez-Laguna and Berry–Keating 2011 regularizations have explicit square-root Lagrangians; the regularized xp is the hyperbolic Sundman clock of the F/V pair, with the turning point at the wall. A flow that is Hamiltonian on the leaves and Liouville (conformal) transversally must be a decoupled product. In Deninger’s Theorem 4.1 the flow must be conformal **along** the leaves; in a toy model the Liouville law alone gives only the symmetry ρ ↔ 1 − ρ, and a positive metric is what puts the zeros on the line [Theorem + Numerical]. The ½ is α/2 with α = 1 put in. Every single-degree-of-freedom regularization matches only the two leading Riemann–von Mangoldt terms and has no fluctuating term S(T) [Theorem + Numerical]. **Two degrees of freedom [Numerical]:** a chaotic coupled regularized xp has periodic-orbit periods that drift with energy; they do not lock onto k·log p (50% within 0.005 against a 36% random baseline, not significant). Modular-surface geodesics count like the primes (78,441 against 78,498 below 10⁶) but their lengths are logs of quadratic units, never log p [Theorem + Numerical]. **Sign and weights:** the minus sign of the explicit formula is cohomological (zeros in H¹), not a Maslov phase; Gutzwiller’s weights would add shifted copies ζ(s + j), and the exact weights p^{−k/2} are the same half-density as the conformal weight [Numerical + Theorem]. On a compact manifold Deninger’s conditions force a finitely generated length group, so log p orbits need a non-manifold; Connes’ adele class space has exactly the right orbit data, and its global trace formula is equivalent to RH [Cited]. From the prime side alone, Davenport–Heilbronn is not a periodic-orbit sum (87% of its weight off prime powers) [Numerical]. **Rank 1 is a manual pin:** the narrowed missing piece is listed first by the author’s choice, not by its score (Heuristic priority 0.380, unchanged); every other entry follows the scored order. **The Riemann Hypothesis is not proved.**
 
 <p align="center"><img src="figures/animation_labelled/fv_sweep.gif" alt="F and V as the roots of x² − a·x + q while the trace a sweeps: ellipse, double line, hyperbolic window" width="820"></p>
 
@@ -65,6 +73,17 @@ Smoothness through the meeting point: F’s speed |dF/da| blows up like |a − 2
 [![The 45° flip of the F/V ring](figures/flip45/flip45.gif)](figures/flip45/flip45.png)
 
 The 45° flip of the F/V ring (q = 5): the reflection R(z) = i·z̄ across y = x sends the collision √q to i√q and the real split axis to the imaginary axis, where the F ↔ V swap is the Fricke involution τ ↦ −q/τ, fixed at i√q (Theorem; static version: [flip45.png](figures/flip45/flip45.png)).
+
+### New in v1.9
+
+[![Two-degree-of-freedom chaotic regularized xp](figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png)](figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png)
+
+**A chaotic two-degree-of-freedom regularized xp blurs its orbit lengths instead of locking onto log p** (`figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png`, research notes). Coupling the Berry–Keating regularized xp (x + 1/x)(p + 1/p) to a transverse oscillator makes it chaotic from E ≈ 10, with Lyapunov exponents 0.24–0.61 rather than the uniform 1 the Riemann dynamics needs; all 35 continued periodic orbits have periods that drift with E [Numerical]. The modular surface counts like the primes, but its lengths are logs of quadratic units, and its orbit sum is uncorrelated with ζ’s S(T) [Theorem + Numerical]. The explicit-formula sign is cohomological (Riemann’s sign correlates 0.9999 with S(T), Gutzwiller’s −0.9999, a constant Maslov phase 0.957) [Numerical + Theorem]. ζ’s truncated orbit sum improves as the prime cutoff grows; Davenport–Heilbronn’s peaks and then degrades [Numerical].
+
+| File | Caption | Label |
+|---|---|---|
+| `figures/regularized_xp/chaotic_two_dof_xp_orbit_lengths.png` | Length spectra against k·log p for the modular surface and the coupled regularized xp; periods and Lyapunov exponents against energy; prime geodesic theorem for the modular surface; smoothed orbit sums with the Riemann, Gutzwiller and Maslov signs against S(T); raw truncated orbit sums for ζ and Davenport–Heilbronn against the prime cutoff; Davenport–Heilbronn residual at its off-line ordinates | Numerical + Theorem |
+| `figures/regularized_xp/regularized_xp_legendre_liouville_counting.png` | Closed orbits of x(p + ℓ²/p) and the Legendre-regular Lagrangian; the F/V circle and the regularized-xp hyperbola (τ = iσ); semiclassical counting against Riemann–von Mangoldt; Deninger Theorem 4.1 toy (Liouville law only, indefinite metric, positive metric); telegrapher modes after stripping the mean damping (LG = RC); a planted ghost as frequency-localized growth (circular: von Koch) | Theorem + Numerical |
 
 ### New in v1.8
 
@@ -181,7 +200,7 @@ Most PNGs have a PDF twin. The detailed overview is PNG only. The Kramers–Kron
 
 ## What this is
 
-The RH Atlas is a structured catalogue of 472 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 1177 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
+The RH Atlas is a structured catalogue of 498 concepts from number theory, algebraic geometry, spectral theory and physics that have been proposed as routes to, restatements of, or analogies for the Riemann Hypothesis. There are 1207 typed relations between them (same mechanism as, special case of, analogue of, implies, equivalent to RH, corrects, lives in, fails for). It grew out of the research programme *Thermodynamics of Arithmetic Action* (TAA). References of the form “TAA Lemma N” point to that lemma series; The published volumes listed below collect the earlier lemmas; later lemmas (beyond Lemma 118) are not yet published.
 
 Every entry says in plain words what the concept is, gives its precise core statement, carries a label for how well established it is, and records corrections and cautions where a tempting claim turns out to be false.
 
@@ -230,12 +249,12 @@ A concept ranks high only if it is both true for ζ and false for the fakes. The
 | 1 | 0.380 | [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](ATLAS.md#ferromagnetic-phi-missing-piece) | Open | RH-sharp |
 | 2 | 0.720 | [Weil positivity criterion](ATLAS.md#weil-positivity) | Cited | RH-sharp |
 | 3 | 0.720 | [Davenport–Heilbronn function](ATLAS.md#davenport-heilbronn) | Theorem | RH-sharp |
-| 4 | 0.720 | [ψ(x) − x (explicit formula, deviation from the pole)](ATLAS.md#psi-minus-x) | Cited | RH-sharp |
-| 5 | 0.720 | [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](ATLAS.md#two-verschiebungs-dual-vs-adjoint) | Theorem | RH-sharp |
-| 6 | 0.720 | [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](ATLAS.md#frobenius-graph-lattice) | Theorem | RH-sharp |
-| 7 | 0.720 | [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization) | Theorem | RH-sharp |
-| 8 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | RH-sharp |
-| 9 | 0.720 | [Connes trace formula](ATLAS.md#connes-trace) | Cited | RH-sharp |
+| 4 | 0.720 | [Connes trace formula](ATLAS.md#connes-trace) | Cited | RH-sharp |
+| 5 | 0.720 | [ψ(x) − x (explicit formula, deviation from the pole)](ATLAS.md#psi-minus-x) | Cited | RH-sharp |
+| 6 | 0.720 | [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](ATLAS.md#two-verschiebungs-dual-vs-adjoint) | Theorem | RH-sharp |
+| 7 | 0.720 | [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](ATLAS.md#frobenius-graph-lattice) | Theorem | RH-sharp |
+| 8 | 0.720 | [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization) | Theorem | RH-sharp |
+| 9 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | RH-sharp |
 | 10 | 0.720 | [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](ATLAS.md#kahler-identities-foliated) | Theorem | RH-sharp |
 | 11 | 0.720 | [Primitive part V₀ = U^⊥](ATLAS.md#primitive-part) | Theorem | RH-sharp |
 | 12 | 0.720 | [Definite cup square / Krein one-liner](ATLAS.md#definite-cup-square) | Theorem | RH-sharp |
@@ -275,7 +294,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.8 (30 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.9 (30 Oct 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -287,7 +306,7 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 | `scores.md` | The scoring method behind the ordering. |
 | `CHANGELOG.md` | Version history. |
 | `build_public_md.py` | Regenerates `ATLAS.md` from `atlas.json`: `python3 build_public_md.py`. |
-| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/`, `lemma184/`, `lemma185/` (figures from TAA Lemmas 181, 182, 184 and 185), `narrowed_missing_piece/` (research-note figures for the v1.7 narrowing), `heat_flow_energy/`, `nc_torus_fv/`, `hardy_constant/` and `sundman_clock/` (research-note figures for v1.8, shown in the “Latest results (v1.8)” gallery at the top). |
+| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/`, `lemma184/`, `lemma185/` (figures from TAA Lemmas 181, 182, 184 and 185), `narrowed_missing_piece/` (research-note figures for the v1.7 narrowing), `heat_flow_energy/`, `nc_torus_fv/`, `hardy_constant/` and `sundman_clock/` (research-note figures for v1.8, shown in the “Previous results (v1.8)” gallery near the top), `regularized_xp/` (research-note figures for v1.9, shown in the “Latest results (v1.9)” gallery at the top). |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), full legal text. |
 | `q.py` | Command-line query tool: `python3 q.py rosati`, `python3 q.py --axis ghost-blind`, `python3 q.py --list`, `python3 q.py --quadrant RH-sharp`, `python3 q.py --missing`. Python 3, standard library only. |
 
@@ -295,4 +314,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.8, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.9, CC BY 4.0”.
