@@ -2718,6 +2718,50 @@
    "rank": 40
   },
   {
+   "id": "dh_kreinminus_carried_by_couplings",
+   "name": "Davenport–Heilbronn’s Krein-negative energy is carried by its non-multiplicative coefficients, yet deleting them makes it worse",
+   "aliases": [],
+   "plain": "On every cutoff where DH has a Krein-negative elliptic pair, the non-prime-power part of its prime sum is negative on that plane (24/24 and 31/31 at two resolutions) while the prime-power part is mostly not. But keeping only the prime-power coefficients (\"Eulerized DH\", a hybrid) loses positivity earlier (L* 2.0 instead of 3.9): positivity is a global balance, not a local property of multiplicativity.",
+   "label": "Numerical",
+   "core": "Davenport–Heilbronn’s Krein-negative energy is carried by its non-multiplicative coefficients, yet deleting them makes it worse. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 2.76 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "tests",
+     "to": "davenport_heilbronn",
+     "note": ""
+    },
+    {
+     "type": "tests",
+     "to": "prime_torus_nonresonance",
+     "note": "couplings = non-prime-power coefficients"
+    }
+   ],
+   "priority": 0.58,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 41
+  },
+  {
    "id": "dh_predictor_roots_are_ghosts",
    "name": "Davenport–Heilbronn: the root that enters the disk at the wall is the off-line zero",
    "aliases": [],
@@ -2765,7 +2809,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 41
+   "rank": 42
   },
   {
    "id": "dirac_hardy_sea",
@@ -2812,22 +2856,25 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 42
+   "rank": 43
   },
   {
-   "id": "dh_kreinminus_carried_by_couplings",
-   "name": "Davenport–Heilbronn’s Krein-negative energy is carried by its non-multiplicative coefficients, yet deleting them makes it worse",
+   "id": "prime_coupling_window_pinch",
+   "name": "The admissible prime-coupling window around κ = 1 pinches for ζ and L(11a) but closes for Davenport–Heilbronn and a Beurling control (circular)",
    "aliases": [],
-   "plain": "On every cutoff where DH has a Krein-negative elliptic pair, the non-prime-power part of its prime sum is negative on that plane (24/24 and 31/31 at two resolutions) while the prime-power part is mostly not. But keeping only the prime-power coefficients (\"Eulerized DH\", a hybrid) loses positivity earlier (L* 2.0 instead of 3.9): positivity is a global balance, not a local property of multiplicativity.",
+   "plain": "Scale every prime term of the Weil Gram form by a common coupling κ (the arithmetic value is κ = 1). Because λ_min is concave in κ, K_L = {κ : Z_L(κ) ⪰ 0} is an interval [Theorem]. For ζ, κ = 1 stays inside K_L at every L ≤ 8 and the window narrows exponentially, from width 4.1·10⁻⁶ at L = 1.5 to 1.8·10⁻¹¹ at L = 8 (rate 1.67 per unit L, h = 0.025; narrower at h = 0.0125); for L(11a) it plateaus near 4.7·10⁻⁷. Davenport–Heilbronn leaves the window at L = 3.850 and the neck (λ₂ = 0) follows at 3.900; the Beurling control ζ·ζ_C leaves at 3.150. This separation is Weil positivity restated: 1 ∈ K_L ⇔ λ_min(Z_L) ≥ 0, and for all L it is RH. The product formula fixes κ = 1, but positivity is a separate input.",
    "label": "Numerical",
-   "core": "Davenport–Heilbronn’s Krein-negative energy is carried by its non-multiplicative coefficients, yet deleting them makes it worse. Sources: TAA research notes, Oct 2026.",
+   "core": "The admissible prime-coupling window around κ = 1 pinches for ζ and L(11a) but closes for Davenport–Heilbronn and a Beurling control (circular). Sources: TAA research notes, Oct 2026.",
    "formula": "",
    "numbers": [
-    "research-note score: 2.76 (0.6·significance + 0.4·probability, each on 0–4)"
+    "research-note label: Numerical (circular)",
+    "research-note score: 3.48 (0.6·significance + 0.4·probability, each on 0–4)"
    ],
    "axes": [
-    "structure/frame (Ax1)",
-    "ghost-sensitive"
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH",
+    "ghost-sensitive",
+    "numerics/certificate"
    ],
    "uncertain": "",
    "proved": "",
@@ -2836,14 +2883,19 @@
    "lemmas": [],
    "rels": [
     {
-     "type": "tests",
-     "to": "davenport_heilbronn",
-     "note": ""
+     "type": "restates",
+     "to": "weil_positivity",
+     "note": "1 ∈ K_L ⇔ λ_min ≥ 0"
+    },
+    {
+     "type": "extends",
+     "to": "weil_two_sided_rigidity_all_directions",
+     "note": "the prime-coupling direction"
     },
     {
      "type": "tests",
-     "to": "prime_torus_nonresonance",
-     "note": "couplings = non-prime-power coefficients"
+     "to": "davenport_heilbronn",
+     "note": ""
     }
    ],
    "priority": 0.58,
@@ -2856,7 +2908,51 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 43
+   "rank": 44
+  },
+  {
+   "id": "weil_two_sided_rigidity_all_directions",
+   "name": "ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime",
+   "aliases": [],
+   "plain": "With ζ’s primes fixed, scaling W∞ or the pole, lowering the conductor, shifting the Gamma argument, or changing one prime weight by ε breaks positivity at a finite cutoff for every ε ≠ 0 tested; the radius of positivity decays with L like λ_min(Z_L) (≈ e^{−1.3L} at h = .025), so L*(ε) grows only like log(1/|ε|). Signs are very asymmetric (lowering W∞ is tolerated ~3·10⁵ times longer than raising it at L = 8). Circular core: this is λ_min → 0.",
+   "label": "Numerical",
+   "core": "ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 3.28 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "weil_cone_prime_rigidity",
+     "note": "adds the archimedean directions"
+    },
+    {
+     "type": "equivalent-to-RH",
+     "to": "weil_positivity",
+     "note": "radius -> 0 is lambda_min -> 0 (circular core)"
+    }
+   ],
+   "priority": 0.58,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 45
   },
   {
    "id": "matched_vs_hybrid_archimedean",
@@ -2900,7 +2996,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 44
+   "rank": 46
   },
   {
    "id": "minimal_hodge_index_test",
@@ -2948,7 +3044,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 45
+   "rank": 47
   },
   {
    "id": "tropical_needs_finite_diagonal",
@@ -2993,51 +3089,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 46
-  },
-  {
-   "id": "weil_two_sided_rigidity_all_directions",
-   "name": "ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime",
-   "aliases": [],
-   "plain": "With ζ’s primes fixed, scaling W∞ or the pole, lowering the conductor, shifting the Gamma argument, or changing one prime weight by ε breaks positivity at a finite cutoff for every ε ≠ 0 tested; the radius of positivity decays with L like λ_min(Z_L) (≈ e^{−1.3L} at h = .025), so L*(ε) grows only like log(1/|ε|). Signs are very asymmetric (lowering W∞ is tolerated ~3·10⁵ times longer than raising it at L = 8). Circular core: this is λ_min → 0.",
-   "label": "Numerical",
-   "core": "ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime. Sources: TAA research notes, Oct 2026.",
-   "formula": "",
-   "numbers": [
-    "research-note score: 3.28 (0.6·significance + 0.4·probability, each on 0–4)"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "restatement ⇔ RH"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "weil_cone_prime_rigidity",
-     "note": "adds the archimedean directions"
-    },
-    {
-     "type": "equivalent-to-RH",
-     "to": "weil_positivity",
-     "note": "radius -> 0 is lambda_min -> 0 (circular core)"
-    }
-   ],
-   "priority": 0.58,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_automorphy_ineq",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.7,
-    "evidence": 0.8,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 47
+   "rank": 48
   },
   {
    "id": "dh_not_orbit_sum",
@@ -3078,7 +3130,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 48
+   "rank": 49
   },
   {
    "id": "deninger",
@@ -3153,7 +3205,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 49
+   "rank": 50
   },
   {
    "id": "light_cone_U",
@@ -3214,7 +3266,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 50
+   "rank": 51
   },
   {
    "id": "surface_ample_rr",
@@ -3266,7 +3318,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 51
+   "rank": 52
   },
   {
    "id": "ax123",
@@ -3329,7 +3381,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 52
+   "rank": 53
   },
   {
    "id": "rosati_time_reversal_krein",
@@ -3394,7 +3446,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 53
+   "rank": 54
   },
   {
    "id": "lmhs_nilpotent_orbit",
@@ -3448,7 +3500,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 54
+   "rank": 55
   },
   {
    "id": "krein_rosati_iota",
@@ -3494,7 +3546,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 55
+   "rank": 56
   },
   {
    "id": "laurent_square",
@@ -3554,7 +3606,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 56
+   "rank": 57
   },
   {
    "id": "livsic_route_split",
@@ -3619,7 +3671,7 @@
     "evidence": 1,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 57
+   "rank": 58
   },
   {
    "id": "parity_linear_chi",
@@ -3670,7 +3722,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 58
+   "rank": 59
   },
   {
    "id": "adelic_gluing_bruhat_tits",
@@ -3723,7 +3775,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 59
+   "rank": 60
   },
   {
    "id": "tautology_boundary",
@@ -3775,7 +3827,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 60
+   "rank": 61
   },
   {
    "id": "no_etale_h1",
@@ -3816,7 +3868,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 61
+   "rank": 62
   },
   {
    "id": "mp4_euler_induces_hodge",
@@ -3905,7 +3957,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 62
+   "rank": 63
   },
   {
    "id": "missing_piece_shape_list",
@@ -3988,7 +4040,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 63
+   "rank": 64
   },
   {
    "id": "rosati",
@@ -4071,7 +4123,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 64
+   "rank": 65
   },
   {
    "id": "debruijn_newman",
@@ -4135,7 +4187,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 65
+   "rank": 66
   },
   {
    "id": "krein_collision",
@@ -4226,7 +4278,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 66
+   "rank": 67
   },
   {
    "id": "castelnuovo_severi",
@@ -4298,7 +4350,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 67
+   "rank": 68
   },
   {
    "id": "frobenius_boost",
@@ -4380,7 +4432,74 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 68
+   "rank": 69
+  },
+  {
+   "id": "two_walls_parabolic_routh",
+   "name": "Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first",
+   "aliases": [],
+   "plain": "Every positivity failure in the dictionary is a collision, of one of two kinds. The parabolic (signature) wall is a one-mode collision of a conjugate pair on the real axis: a² = 4q over 𝔽_q (Hasse), Kepler’s E = 0, a Levinson step with |k| = 1, a Hodge–Riemann signature change, and along the support filtration the Weil radius L*. RH ⇔ ζ never reaches it (L* = ∞; Weil) [Restatement]. The Routh wall is a collision of two different modes of opposite Krein sign off the real axis (Hamiltonian–Hopf; at L4 μ_R = ½(1 − √(23/27)) = 0.0385209, ω = 1/√2). It needs a Krein-negative mode, so it lies downstream: RH ⇒ ζ never reaches any Routh wall (Krein’s theorem plus Weil’s criterion) [Theorem]. The converse fails at finite L: Davenport–Heilbronn crosses the parabolic wall at L* ≈ 3.6–3.9 (depending on the resolution), then sits in an L4-like window (energy indefinite, every pencil mode still elliptic, one Krein-negative pair), and shows Hamiltonian–Hopf quartets from L_H ≈ 4.3–4.8 on (4.263 at h = 0.0125, 4.775 at h = 0.025; quartets at 18 of 27 grid points up to L = 8). ζ shows none of this for L ≤ 8 [Numerical]. Over 𝔽_q in genus 1 the two walls coincide.",
+   "label": "Theorem",
+   "core": "Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical",
+    "research-note score: 3.52 (0.6·significance + 0.4·probability, each on 0–4)",
+    "Weil-pencil census, L ∈ [3, 8]: ζ 0 Krein-negative modes, 0 real pairs, 0 quartets (41 cutoffs); Davenport–Heilbronn real pair at L = 3.875 (h = 0.025), Krein-negative pair present at 3.763 (h = 0.0125), first quartet 4.775 / 4.263",
+    "dense-band conjecture: any Krein-negative mode collides with a Krein-positive neighbour within about one level spacing as L → ∞ (collision distance / spacing 0.09–1.29 at 23 grid points) [Conjecture 2.6]; if true for the whole class, “never a Routh wall at any L” ⇔ RH",
+    "v1.11: the Routh wall is unreachable under a Rosati-type (Krein-definite) polarization by Krein–Gelfand–Lidskii; Davenport–Heilbronn’s parabolic crossing L* = 3.875 is the birth of a cap of the forbidden set and the neck opens at 4.025 (Hamiltonian–Krein index, 212/212) [Theorem + Numerical]"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-sensitive",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "“RH ⇔ ζ never reaches its Routh wall” is false at finite L: Davenport–Heilbronn is indefinite but still elliptic on (L*, L_H). Only the implication RH ⇒ no Routh wall is a theorem.",
+    "L_H moves with the resolution (4.78 → 4.26 as h halves); the h → 0 limit is open."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "levinson_su11_boosts",
+     "note": "Levinson |k| = 1 is the parabolic wall"
+    },
+    {
+     "type": "refines",
+     "to": "l4_routh_krein",
+     "note": "the Routh wall is the second, downstream wall"
+    },
+    {
+     "type": "refines",
+     "to": "weil_radius_trichotomy",
+     "note": "the Weil radius is the parabolic wall along the support filtration"
+    },
+    {
+     "type": "refines",
+     "to": "krein_collision",
+     "note": ""
+    },
+    {
+     "type": "tests",
+     "to": "davenport_heilbronn",
+     "note": "parabolic wall, then an L4-like window, then Hopf quartets"
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 70
   },
   {
    "id": "epstein",
@@ -4478,74 +4597,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 69
-  },
-  {
-   "id": "two_walls_parabolic_routh",
-   "name": "Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first",
-   "aliases": [],
-   "plain": "Every positivity failure in the dictionary is a collision, of one of two kinds. The parabolic (signature) wall is a one-mode collision of a conjugate pair on the real axis: a² = 4q over 𝔽_q (Hasse), Kepler’s E = 0, a Levinson step with |k| = 1, a Hodge–Riemann signature change, and along the support filtration the Weil radius L*. RH ⇔ ζ never reaches it (L* = ∞; Weil) [Restatement]. The Routh wall is a collision of two different modes of opposite Krein sign off the real axis (Hamiltonian–Hopf; at L4 μ_R = ½(1 − √(23/27)) = 0.0385209, ω = 1/√2). It needs a Krein-negative mode, so it lies downstream: RH ⇒ ζ never reaches any Routh wall (Krein’s theorem plus Weil’s criterion) [Theorem]. The converse fails at finite L: Davenport–Heilbronn crosses the parabolic wall at L* ≈ 3.6–3.9 (depending on the resolution), then sits in an L4-like window (energy indefinite, every pencil mode still elliptic, one Krein-negative pair), and shows Hamiltonian–Hopf quartets from L_H ≈ 4.3–4.8 on (4.263 at h = 0.0125, 4.775 at h = 0.025; quartets at 18 of 27 grid points up to L = 8). ζ shows none of this for L ≤ 8 [Numerical]. Over 𝔽_q in genus 1 the two walls coincide.",
-   "label": "Theorem",
-   "core": "Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first.",
-   "formula": "",
-   "numbers": [
-    "research-note label: Theorem + Numerical",
-    "research-note score: 3.52 (0.6·significance + 0.4·probability, each on 0–4)",
-    "Weil-pencil census, L ∈ [3, 8]: ζ 0 Krein-negative modes, 0 real pairs, 0 quartets (41 cutoffs); Davenport–Heilbronn real pair at L = 3.875 (h = 0.025), Krein-negative pair present at 3.763 (h = 0.0125), first quartet 4.775 / 4.263",
-    "dense-band conjecture: any Krein-negative mode collides with a Krein-positive neighbour within about one level spacing as L → ∞ (collision distance / spacing 0.09–1.29 at 23 grid points) [Conjecture 2.6]; if true for the whole class, “never a Routh wall at any L” ⇔ RH",
-    "v1.11: the Routh wall is unreachable under a Rosati-type (Krein-definite) polarization by Krein–Gelfand–Lidskii; Davenport–Heilbronn’s parabolic crossing L* = 3.875 is the birth of a cap of the forbidden set and the neck opens at 4.025 (Hamiltonian–Krein index, 212/212) [Theorem + Numerical]"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "ghost-sensitive",
-    "physics analogue"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [
-    "“RH ⇔ ζ never reaches its Routh wall” is false at finite L: Davenport–Heilbronn is indefinite but still elliptic on (L*, L_H). Only the implication RH ⇒ no Routh wall is a theorem.",
-    "L_H moves with the resolution (4.78 → 4.26 as h halves); the h → 0 limit is open."
-   ],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "levinson_su11_boosts",
-     "note": "Levinson |k| = 1 is the parabolic wall"
-    },
-    {
-     "type": "refines",
-     "to": "l4_routh_krein",
-     "note": "the Routh wall is the second, downstream wall"
-    },
-    {
-     "type": "refines",
-     "to": "weil_radius_trichotomy",
-     "note": "the Weil radius is the parabolic wall along the support filtration"
-    },
-    {
-     "type": "refines",
-     "to": "krein_collision",
-     "note": ""
-    },
-    {
-     "type": "tests",
-     "to": "davenport_heilbronn",
-     "note": "parabolic wall, then an L4-like window, then Hopf quartets"
-    }
-   ],
-   "priority": 0.54,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_automorphy_ineq",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 70
+   "rank": 71
   },
   {
    "id": "fv_merge_trichotomy",
@@ -4622,7 +4674,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 71
+   "rank": 72
   },
   {
    "id": "ghost_quartet",
@@ -4676,7 +4728,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 72
+   "rank": 73
   },
   {
    "id": "breit_wigner_resonances",
@@ -4782,7 +4834,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 73
+   "rank": 74
   },
   {
    "id": "conic_type_at_infinity",
@@ -4842,7 +4894,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 74
+   "rank": 75
   },
   {
    "id": "lee_yang_fisher_rh",
@@ -4902,7 +4954,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 75
+   "rank": 76
   },
   {
    "id": "poincare_disk_period_domain",
@@ -4974,7 +5026,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 76
+   "rank": 77
   },
   {
    "id": "compatible_J",
@@ -5037,7 +5089,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 77
+   "rank": 78
   },
   {
    "id": "ghost_map",
@@ -5112,7 +5164,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 78
+   "rank": 79
   },
   {
    "id": "arith_unitarity",
@@ -5164,7 +5216,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 79
+   "rank": 80
   },
   {
    "id": "euler_to_dh_pencil_genealogy",
@@ -5222,7 +5274,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 80
+   "rank": 81
   },
   {
    "id": "fake_weil_poly",
@@ -5283,7 +5335,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 81
+   "rank": 82
   },
   {
    "id": "fq_curves",
@@ -5343,7 +5395,64 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 82
+   "rank": 83
+  },
+  {
+   "id": "hamiltonian_krein_index_weil",
+   "name": "Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1)",
+   "aliases": [],
+   "plain": "For the scaling pencil D v̇ = Z_L v, with D the invertible skew scaling generator, the Hamiltonian–Krein index theorem (Kapitula–Kevrekidis–Sandstede 2004; Pelinovsky 2005) equates the signature of the Weil form with the spectral data: n₋(Z_L) = N_real + 2N_quart + 2N_Krein− (real pairs, Hamiltonian–Hopf quartets, Krein-negative elliptic pairs). The identity holds at 212/212 pencils (ζ, Davenport–Heilbronn, L(11a) and a hybrid, 53 support lengths each, h = 0.025). Hence Z_L ≥ 0 exactly when there is no real pair, no quartet and no Krein-negative pair: positivity is Krein-definiteness, the trivial grading Γ = 1, and not merely the existence of some grading (a non-trivial one exists for Davenport–Heilbronn on L ∈ [4.025, 4.625], where it is elliptic). This corrects the v1.10 statement “P = ZΓ positive for some Γ”. As an RH criterion it is circular (it is Z_L ≥ 0); its content is the exact accounting between the potential (Jacobi) half and the symplectic (Legendre) half.",
+   "label": "Theorem",
+   "core": "Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1).",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical",
+    "research-note score: 4.0 (0.6·significance + 0.4·probability, each on 0–4)",
+    "Davenport–Heilbronn sequence at h = 0.025: real pair (parabolic wall) at L = 3.875, Krein-negative pair (neck) from 4.025, first Hopf quartet at 4.775 (4.263 at h = 0.0125); ζ: n₋ = 0 at all 53 cutoffs [Numerical]"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "weil_pencil_jacobi_integral",
+     "note": ""
+    },
+    {
+     "type": "extends",
+     "to": "hasse_parabolic_routh_forbidden_by_rosati",
+     "note": ""
+    },
+    {
+     "type": "corrects",
+     "to": "rosati_time_reversal_krein",
+     "note": "positivity needs the trivial grading Γ = 1 (Krein-definite), not some Γ"
+    },
+    {
+     "type": "refines",
+     "to": "weil_gyroscopic_pencil",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_castelnuovo",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 84
   },
   {
    "id": "dbn_parabolic_threshold",
@@ -5402,7 +5511,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 83
+   "rank": 85
   },
   {
    "id": "gamma_as_dual_adjoint_gap",
@@ -5467,7 +5576,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 84
+   "rank": 86
   },
   {
    "id": "kms_bochner_coefficient_positivity",
@@ -5523,7 +5632,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 85
+   "rank": 87
   },
   {
    "id": "levinson_causal_coordinates",
@@ -5577,7 +5686,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 86
+   "rank": 88
   },
   {
    "id": "certified_zero_lists",
@@ -5643,7 +5752,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 87
+   "rank": 89
   },
   {
    "id": "decay_quarter",
@@ -5705,7 +5814,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 88
+   "rank": 90
   },
   {
    "id": "eisenstein_resonances_rho_half",
@@ -5767,7 +5876,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 89
+   "rank": 91
   },
   {
    "id": "free_gas_positivity_ladder",
@@ -5839,7 +5948,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 90
+   "rank": 92
   },
   {
    "id": "goldfeld_bsd",
@@ -5902,64 +6011,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 91
-  },
-  {
-   "id": "hamiltonian_krein_index_weil",
-   "name": "Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1)",
-   "aliases": [],
-   "plain": "For the scaling pencil D v̇ = Z_L v, with D the invertible skew scaling generator, the Hamiltonian–Krein index theorem (Kapitula–Kevrekidis–Sandstede 2004; Pelinovsky 2005) equates the signature of the Weil form with the spectral data: n₋(Z_L) = N_real + 2N_quart + 2N_Krein− (real pairs, Hamiltonian–Hopf quartets, Krein-negative elliptic pairs). The identity holds at 212/212 pencils (ζ, Davenport–Heilbronn, L(11a) and a hybrid, 53 support lengths each, h = 0.025). Hence Z_L ≥ 0 exactly when there is no real pair, no quartet and no Krein-negative pair: positivity is Krein-definiteness, the trivial grading Γ = 1, and not merely the existence of some grading (a non-trivial one exists for Davenport–Heilbronn on L ∈ [4.025, 4.625], where it is elliptic). This corrects the v1.10 statement “P = ZΓ positive for some Γ”. As an RH criterion it is circular (it is Z_L ≥ 0); its content is the exact accounting between the potential (Jacobi) half and the symplectic (Legendre) half.",
-   "label": "Theorem",
-   "core": "Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1).",
-   "formula": "",
-   "numbers": [
-    "research-note label: Theorem + Numerical",
-    "research-note score: 4.0 (0.6·significance + 0.4·probability, each on 0–4)",
-    "Davenport–Heilbronn sequence at h = 0.025: real pair (parabolic wall) at L = 3.875, Krein-negative pair (neck) from 4.025, first Hopf quartet at 4.775 (4.263 at h = 0.0125); ζ: n₋ = 0 at all 53 cutoffs [Numerical]"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "restatement ⇔ RH",
-    "ghost-sensitive"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "weil_pencil_jacobi_integral",
-     "note": ""
-    },
-    {
-     "type": "extends",
-     "to": "hasse_parabolic_routh_forbidden_by_rosati",
-     "note": ""
-    },
-    {
-     "type": "corrects",
-     "to": "rosati_time_reversal_krein",
-     "note": "positivity needs the trivial grading Γ = 1 (Krein-definite), not some Γ"
-    },
-    {
-     "type": "refines",
-     "to": "weil_gyroscopic_pencil",
-     "note": ""
-    }
-   ],
-   "priority": 0.54,
-   "ranking": {
-    "gap_significance": 0.5,
-    "gap": "mp_castelnuovo",
-    "sensitivity": 1.0,
-    "specificity": 1.0,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "RH-sharp"
-   },
-   "rank": 92
+   "rank": 93
   },
   {
    "id": "hardy_constant_window_weil",
@@ -6005,7 +6057,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 93
+   "rank": 94
   },
   {
    "id": "profinite_integers_adelic_solenoid",
@@ -6073,7 +6125,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 94
+   "rank": 95
   },
   {
    "id": "trace_polarization_primitive_positivity",
@@ -6128,7 +6180,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 95
+   "rank": 96
   },
   {
    "id": "hermite_window_ghost_count",
@@ -6178,7 +6230,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 96
+   "rank": 97
   },
   {
    "id": "invariant_vs_refined_count",
@@ -6249,7 +6301,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 97
+   "rank": 98
   },
   {
    "id": "li_criterion",
@@ -6302,7 +6354,63 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 98
+   "rank": 99
+  },
+  {
+   "id": "lossy_weil_pencil_inertia",
+   "name": "Lossy Weil pencil: with any loss, the number of growing modes equals n₋(Z_L) (Ostrowski–Schneider), so robustness to dissipation is Krein-definiteness",
+   "aliases": [],
+   "plain": "For the scaling pencil with a loss term, v̇ = (J − εR)Z_L v with J = D⁻¹ skew and R > 0, one has AX + XAᵀ = −2εR < 0 for X = Z_L⁻¹, so by the Ostrowski–Schneider inertia theorem the number of eigenvalues with positive real part is exactly n₋(Z_L), with none on the imaginary axis. Checked on 18 pencils (ζ and Davenport–Heilbronn, L = 2–6.5, two loss matrices, two loss strengths): 72/72. Where Davenport–Heilbronn is elliptic but Krein-indefinite (n₋ = 2), any loss produces two growing modes with rate ∝ ε (log–log slopes 1.000, 0.997, 0.993); ζ (n₋ = 0) decays. This is the L4 libration mechanism: the pencil survives every dissipation iff Z_L ≥ 0 iff the grading is trivial (Γ = 1). Circular as a criterion; no physical loss term is known on the ζ side.",
+   "label": "Theorem",
+   "core": "Lossy Weil pencil: with any loss, the number of growing modes equals n₋(Z_L) (Ostrowski–Schneider), so robustness to dissipation is Krein-definiteness. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical (circular)",
+    "research-note score: 3.6 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "restatement ⇔ RH",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "extends",
+     "to": "hamiltonian_krein_index_weil",
+     "note": ""
+    },
+    {
+     "type": "tests",
+     "to": "dh_kreinminus_carried_by_couplings",
+     "note": ""
+    },
+    {
+     "type": "restates",
+     "to": "weil_positivity",
+     "note": "robustness to every loss ⇔ Z_L ≥ 0"
+    },
+    {
+     "type": "analogue-of",
+     "to": "drag_destabilises_krein_minus_libration",
+     "note": ""
+    }
+   ],
+   "priority": 0.54,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 100
   },
   {
    "id": "positive_tensor_iff_positivity",
@@ -6349,7 +6457,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 99
+   "rank": 101
   },
   {
    "id": "burgers_local_toeplitz",
@@ -6400,7 +6508,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 100
+   "rank": 102
   },
   {
    "id": "de_branges",
@@ -6452,7 +6560,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 101
+   "rank": 103
   },
   {
    "id": "hasse_pythagoras",
@@ -6506,7 +6614,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 102
+   "rank": 104
   },
   {
    "id": "suzuki_line",
@@ -6564,7 +6672,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 103
+   "rank": 105
   },
   {
    "id": "bagchi",
@@ -6611,7 +6719,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 104
+   "rank": 106
   },
   {
    "id": "compressed_weil_inertia_two_thirds",
@@ -6654,7 +6762,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 105
+   "rank": 107
   },
   {
    "id": "coupled_coil_hasse",
@@ -6703,7 +6811,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 106
+   "rank": 108
   },
   {
    "id": "linear_equals_weil_positivity",
@@ -6749,7 +6857,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 107
+   "rank": 109
   },
   {
    "id": "lorentzian_index_pole_free",
@@ -6788,7 +6896,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 108
+   "rank": 110
   },
   {
    "id": "xi_line_morse_excess",
@@ -6833,7 +6941,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 109
+   "rank": 111
   },
   {
    "id": "connes_adelic_orbits_logp",
@@ -6875,7 +6983,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 110
+   "rank": 112
   },
   {
    "id": "gain_line",
@@ -6933,7 +7041,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 111
+   "rank": 113
   },
   {
    "id": "coupled_regularized_xp_blurs",
@@ -6980,7 +7088,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 112
+   "rank": 114
   },
   {
    "id": "gluing_curvature_tracks_positivity",
@@ -7035,7 +7143,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 113
+   "rank": 115
   },
   {
    "id": "near_null_anatomy",
@@ -7085,7 +7193,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 114
+   "rank": 116
   },
   {
    "id": "riemann_sign_cohomological",
@@ -7133,7 +7241,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 115
+   "rank": 117
   },
   {
    "id": "single_box_axis_criterion",
@@ -7182,7 +7290,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 116
+   "rank": 118
   },
   {
    "id": "weil_cone_prime_rigidity",
@@ -7221,7 +7329,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 117
+   "rank": 119
   },
   {
    "id": "dim_S",
@@ -7270,7 +7378,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 118
+   "rank": 120
   },
   {
    "id": "hodge_index",
@@ -7340,7 +7448,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 119
+   "rank": 121
   },
   {
    "id": "os_reflection_positivity",
@@ -7429,7 +7537,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 120
+   "rank": 122
   },
   {
    "id": "l4_routh_krein",
@@ -7462,7 +7570,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 121
+   "rank": 123
   },
   {
    "id": "legendre_support_function",
@@ -7518,7 +7626,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 122
+   "rank": 124
   },
   {
    "id": "weil_operator",
@@ -7580,7 +7688,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 123
+   "rank": 125
   },
   {
    "id": "connes_consani",
@@ -7627,7 +7735,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 124
+   "rank": 126
   },
   {
    "id": "hodge_riemann",
@@ -7687,7 +7795,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 125
+   "rank": 127
   },
   {
    "id": "lax_phillips",
@@ -7751,7 +7859,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 126
+   "rank": 128
   },
   {
    "id": "ff_counts_do_not_induce_sign",
@@ -7823,7 +7931,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 127
+   "rank": 129
   },
   {
    "id": "pole_plane",
@@ -7872,7 +7980,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 128
+   "rank": 130
   },
   {
    "id": "laguerre_formula",
@@ -7926,7 +8034,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 129
+   "rank": 131
   },
   {
    "id": "haar_measure_not_metric",
@@ -7976,7 +8084,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 130
+   "rank": 132
   },
   {
    "id": "weil_archimedean_one_sided_cone",
@@ -8015,7 +8123,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 131
+   "rank": 133
   },
   {
    "id": "cartan_involution",
@@ -8066,7 +8174,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 132
+   "rank": 134
   },
   {
    "id": "conformal_flow_needs_solenoid",
@@ -8117,7 +8225,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 133
+   "rank": 135
   },
   {
    "id": "deligne_tensor_power",
@@ -8167,7 +8275,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 134
+   "rank": 136
   },
   {
    "id": "selberg_eigenvalue_mass_shell",
@@ -8220,7 +8328,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 135
+   "rank": 137
   },
   {
    "id": "xp_counting_orders",
@@ -8263,7 +8371,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 136
+   "rank": 138
   },
   {
    "id": "chaotic_candidates_vs_foliation_requirements",
@@ -8309,7 +8417,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 137
+   "rank": 139
   },
   {
    "id": "hecke_angle_t_log_p",
@@ -8355,7 +8463,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 138
+   "rank": 140
   },
   {
    "id": "leaf_ham_transverse_liouville_product",
@@ -8395,7 +8503,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 139
+   "rank": 141
   },
   {
    "id": "maxwell_effective_potential",
@@ -8445,7 +8553,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 140
+   "rank": 142
   },
   {
    "id": "prime_step_operator_indefinite",
@@ -8485,7 +8593,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 141
+   "rank": 143
   },
   {
    "id": "products_linear",
@@ -8537,7 +8645,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 142
+   "rank": 144
   },
   {
    "id": "weight_monodromy",
@@ -8584,7 +8692,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 143
+   "rank": 145
   },
   {
    "id": "bernoulli_fix_rstar",
@@ -8625,7 +8733,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 144
+   "rank": 146
   },
   {
    "id": "deninger_conformal_along_leaves",
@@ -8668,7 +8776,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 145
+   "rank": 147
   },
   {
    "id": "gutzwiller_weights_shifted_copies",
@@ -8710,7 +8818,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 146
+   "rank": 148
   },
   {
    "id": "scaling_weyl_dimension_obstruction",
@@ -8751,7 +8859,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 147
+   "rank": 149
   },
   {
    "id": "yoneda",
@@ -8794,7 +8902,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 148
+   "rank": 150
   },
   {
    "id": "boost_rotation_modular_kms",
@@ -8871,7 +8979,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 149
+   "rank": 151
   },
   {
    "id": "split_blind_sensitive",
@@ -8933,7 +9041,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 150
+   "rank": 152
   },
   {
    "id": "gyroscopic_vs_definite_stability",
@@ -9005,7 +9113,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 151
+   "rank": 153
   },
   {
    "id": "dh_acceptance",
@@ -9067,7 +9175,7 @@
     "evidence": 0.48,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 152
+   "rank": 154
   },
   {
    "id": "no_uniform_klmn_bound",
@@ -9106,7 +9214,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 153
+   "rank": 155
   },
   {
    "id": "brst",
@@ -9163,7 +9271,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 154
+   "rank": 156
   },
   {
    "id": "weil_template_factor_product",
@@ -9228,7 +9336,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 155
+   "rank": 157
   },
   {
    "id": "gamma_fwhm_of_a_zero",
@@ -9311,7 +9419,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 156
+   "rank": 158
   },
   {
    "id": "arithmetic_equation_of_state",
@@ -9392,7 +9500,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 157
+   "rank": 159
   },
   {
    "id": "mass_shell_even_xi",
@@ -9464,7 +9572,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 158
+   "rank": 160
   },
   {
    "id": "two_channel_missing_piece",
@@ -9515,7 +9623,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 159
+   "rank": 161
   },
   {
    "id": "composite_leakage",
@@ -9579,7 +9687,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 160
+   "rank": 162
   },
   {
    "id": "arithmetic_response_passivity_32a1",
@@ -9646,7 +9754,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 161
+   "rank": 163
   },
   {
    "id": "rh_hodge_index_zero_margin",
@@ -9698,7 +9806,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 162
+   "rank": 164
   },
   {
    "id": "density_times_density_diagonal",
@@ -9758,7 +9866,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 163
+   "rank": 165
   },
   {
    "id": "witten_constant_window",
@@ -9813,7 +9921,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 164
+   "rank": 166
   },
   {
    "id": "central_charge_positivity_weil",
@@ -9865,7 +9973,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 165
+   "rank": 167
   },
   {
    "id": "circle_pi_in_zero_counts",
@@ -9926,7 +10034,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 166
+   "rank": 168
   },
   {
    "id": "order_form_rosati",
@@ -9972,7 +10080,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 167
+   "rank": 169
   },
   {
    "id": "positivity_real_clock_restatement",
@@ -10019,7 +10127,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 168
+   "rank": 170
   },
   {
    "id": "weil_schroedinger_split",
@@ -10067,7 +10175,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 169
+   "rank": 171
   },
   {
    "id": "weil_shear_subtracts",
@@ -10114,7 +10222,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 170
+   "rank": 172
   },
   {
    "id": "passive_network_positive_real",
@@ -10169,7 +10277,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 171
+   "rank": 173
   },
   {
    "id": "two_point",
@@ -10216,7 +10324,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 172
+   "rank": 174
   },
   {
    "id": "fh_ingredient_map",
@@ -10256,7 +10364,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 173
+   "rank": 175
   },
   {
    "id": "melnikov_pairing_weil_restricted",
@@ -10301,7 +10409,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 174
+   "rank": 176
   },
   {
    "id": "adelic_orbit_space_route",
@@ -10340,7 +10448,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 175
+   "rank": 177
   },
   {
    "id": "ghost_dispersion_route",
@@ -10382,7 +10490,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 176
+   "rank": 178
   },
   {
    "id": "tropical_abscissa_restatement",
@@ -10421,7 +10529,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 177
+   "rank": 179
   },
   {
    "id": "rh",
@@ -10460,7 +10568,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 178
+   "rank": 180
   },
   {
    "id": "hilbert_polya",
@@ -10516,7 +10624,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 179
+   "rank": 181
   },
   {
    "id": "castelnuovo_object",
@@ -10565,7 +10673,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 180
+   "rank": 182
   },
   {
    "id": "cc_square_open",
@@ -10615,7 +10723,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 181
+   "rank": 183
   },
   {
    "id": "finite_rank_phase_keeping_source",
@@ -10660,7 +10768,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 182
+   "rank": 184
   },
   {
    "id": "ahr_zeta_conjecture",
@@ -10700,7 +10808,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 183
+   "rank": 185
   },
   {
    "id": "central_term_24_algebra_conjecture",
@@ -10746,7 +10854,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 184
+   "rank": 186
   },
   {
    "id": "pole_perron_one_mode",
@@ -10798,7 +10906,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 185
+   "rank": 187
   },
   {
    "id": "ghost_onset",
@@ -10852,7 +10960,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 186
+   "rank": 188
   },
   {
    "id": "allowed_locally_not_aligned_globally",
@@ -10920,7 +11028,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 187
+   "rank": 189
   },
   {
    "id": "explicit_ghost_window",
@@ -10963,7 +11071,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 188
+   "rank": 190
   },
   {
    "id": "krein_mass_ratio_mu_eff",
@@ -11021,7 +11129,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 189
+   "rank": 191
   },
   {
    "id": "euler_product_not_sufficient_routh",
@@ -11075,7 +11183,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 190
+   "rank": 192
   },
   {
    "id": "gluing_curvature_prime_pairs",
@@ -11125,7 +11233,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 191
+   "rank": 193
   },
   {
    "id": "laguerre_detects_offline_zero",
@@ -11168,7 +11276,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 192
+   "rank": 194
   },
   {
    "id": "q_quotient_induction_matrix",
@@ -11224,7 +11332,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 193
+   "rank": 195
   },
   {
    "id": "davenport_heilbronn_window_jumps",
@@ -11272,7 +11380,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 194
+   "rank": 196
   },
   {
    "id": "dbn_light_cone_recession",
@@ -11321,7 +11429,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 195
+   "rank": 197
   },
   {
    "id": "dh_true_flow_landing",
@@ -11372,7 +11480,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 196
+   "rank": 198
   },
   {
    "id": "dilution_law_dh_to_product",
@@ -11425,7 +11533,7 @@
     "evidence": 0.64,
     "quadrant": "RH-sharp"
    },
-   "rank": 197
+   "rank": 199
   },
   {
    "id": "ghost_onset_nonperturbative",
@@ -11478,7 +11586,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 198
+   "rank": 200
   },
   {
    "id": "pole_mode_unpaired_degree0",
@@ -11526,7 +11634,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 199
+   "rank": 201
   },
   {
    "id": "weil_two_failure_channels",
@@ -11565,7 +11673,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 200
+   "rank": 202
   },
   {
    "id": "channel_depends_on_span",
@@ -11608,7 +11716,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 201
+   "rank": 203
   },
   {
    "id": "dh_landing_certified",
@@ -11647,7 +11755,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 202
+   "rank": 204
   },
   {
    "id": "fq_ghost_inertia_rule",
@@ -11688,7 +11796,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 203
+   "rank": 205
   },
   {
    "id": "ghost_channel_order_over_Q",
@@ -11741,7 +11849,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 204
+   "rank": 206
   },
   {
    "id": "ghost_crossing_scale",
@@ -11780,7 +11888,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 205
+   "rank": 207
   },
   {
    "id": "no_single_prime_frame_positive",
@@ -11827,7 +11935,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 206
+   "rank": 208
   },
   {
    "id": "positivity_by_lag_exhaustion",
@@ -11872,7 +11980,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 207
+   "rank": 209
   },
   {
    "id": "shear_weighted_cushion",
@@ -11917,7 +12025,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 208
+   "rank": 210
   },
   {
    "id": "certified_hermite_pipeline",
@@ -11956,7 +12064,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 209
+   "rank": 211
   },
   {
    "id": "duursma_code_toy",
@@ -11989,7 +12097,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 210
+   "rank": 212
   },
   {
    "id": "ghost_frequency_localized_growth",
@@ -12028,7 +12136,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 211
+   "rank": 213
   },
   {
    "id": "ghost_landing_route",
@@ -12067,7 +12175,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 212
+   "rank": 214
   },
   {
    "id": "near_collision_exponent",
@@ -12110,7 +12218,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 213
+   "rank": 215
   },
   {
    "id": "nonnegative_couplings_pole_insufficient",
@@ -12148,7 +12256,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 214
+   "rank": 216
   },
   {
    "id": "scalar_gluing_curvature_classifier",
@@ -12196,7 +12304,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 215
+   "rank": 217
   },
   {
    "id": "signed_energy_early_warning",
@@ -12241,7 +12349,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 216
+   "rank": 218
   },
   {
    "id": "slemma_constant_indefinite_cushion",
@@ -12282,7 +12390,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 217
+   "rank": 219
   },
   {
    "id": "weil_equator_crossing",
@@ -12321,7 +12429,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 218
+   "rank": 220
   },
   {
    "id": "weil_spectral_flow",
@@ -12361,7 +12469,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 219
+   "rank": 221
   },
   {
    "id": "zeta_predictor_roots_on_circle",
@@ -12401,7 +12509,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 220
+   "rank": 222
   },
   {
    "id": "laguerre_on_line_finite_part",
@@ -12434,7 +12542,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 221
+   "rank": 223
   },
   {
    "id": "literal_light_cone_test",
@@ -12467,7 +12575,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 222
+   "rank": 224
   },
   {
    "id": "mobius_light_cone",
@@ -12500,7 +12608,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 223
+   "rank": 225
   },
   {
    "id": "rs_separates_permutations",
@@ -12538,7 +12646,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 224
+   "rank": 226
   },
   {
    "id": "curvature_cup_square",
@@ -12603,7 +12711,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 225
+   "rank": 227
   },
   {
    "id": "clausius_gamma_reversibility",
@@ -12674,7 +12782,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 226
+   "rank": 228
   },
   {
    "id": "time_delay",
@@ -12736,7 +12844,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 227
+   "rank": 229
   },
   {
    "id": "kallen_lehmann",
@@ -12780,7 +12888,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 228
+   "rank": 230
   },
   {
    "id": "psi_n_lattice",
@@ -12832,7 +12940,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 229
+   "rank": 231
   },
   {
    "id": "global_J_missing_piece",
@@ -12887,7 +12995,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 230
+   "rank": 232
   },
   {
    "id": "deninger_hodge_energy_torsion_open",
@@ -12941,7 +13049,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 231
+   "rank": 233
   },
   {
    "id": "hecke_equivariance_as_observability",
@@ -12992,7 +13100,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 232
+   "rank": 234
   },
   {
    "id": "displaced_reference",
@@ -13051,7 +13159,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 233
+   "rank": 235
   },
   {
    "id": "formal_vs_geometric_lattice",
@@ -13108,7 +13216,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 234
+   "rank": 236
   },
   {
    "id": "band_criterion",
@@ -13155,7 +13263,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 235
+   "rank": 237
   },
   {
    "id": "deninger_preserved_leaf_term",
@@ -13197,7 +13305,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 236
+   "rank": 238
   },
   {
    "id": "hessian_curvature_negative_genuine",
@@ -13245,7 +13353,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 237
+   "rank": 239
   },
   {
    "id": "per_prime_psd_allocation_nogo",
@@ -13294,7 +13402,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 238
+   "rank": 240
   },
   {
    "id": "ghost_negative_compressibility",
@@ -13345,7 +13453,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 239
+   "rank": 241
   },
   {
    "id": "dedekind_qi_one_mode",
@@ -13394,7 +13502,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 240
+   "rank": 242
   },
   {
    "id": "ferromagnetic_sign_not_count",
@@ -13443,7 +13551,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 241
+   "rank": 243
   },
   {
    "id": "levinson_contraction_route_dead",
@@ -13490,7 +13598,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 242
+   "rank": 244
   },
   {
    "id": "talenti_template_test",
@@ -13529,7 +13637,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 243
+   "rank": 245
   },
   {
    "id": "arch_levy_khintchine_sos",
@@ -13570,7 +13678,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 244
+   "rank": 246
   },
   {
    "id": "hessian_curvature_generic_control",
@@ -13612,7 +13720,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 245
+   "rank": 247
   },
   {
    "id": "prime_weight_anisotropy",
@@ -13660,7 +13768,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 246
+   "rank": 248
   },
   {
    "id": "structured_gram_factor_search",
@@ -13709,7 +13817,46 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 247
+   "rank": 249
+  },
+  {
+   "id": "abs_normalization_degenerate",
+   "name": "|a|-normalized prime terms against the true archimedean factor are indefinite from the first window",
+   "aliases": [],
+   "plain": "Replacing the √q-normalized prime weights of L(11a) by |a|-normalized ones (three regularizations at a = 0) while keeping the true archimedean factor gives a Gram form that is negative from L = 1.525, with n₋ = 51–80 and λ_min = −0.26 to −0.43 at L = 8 (hat basis, h = 0.025). The analogous ad hoc version for Davenport–Heilbronn reaches λ_min = −327. No functional equation stands behind these forms.",
+   "label": "Numerical",
+   "core": "|a|-normalized prime terms against the true archimedean factor are indefinite from the first window. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 2.72 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "feeds",
+     "to": "abs_a_is_infinite_place_of_trace",
+     "note": ""
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 250
   },
   {
    "id": "archimedean_rectifier_fill",
@@ -13753,7 +13900,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 248
+   "rank": 251
   },
   {
    "id": "chaos_without_negative_curvature",
@@ -13793,7 +13940,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 249
+   "rank": 252
   },
   {
    "id": "connection_split_torsion_null",
@@ -13833,7 +13980,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 250
+   "rank": 253
   },
   {
    "id": "cutoff_saturation",
@@ -13879,7 +14026,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 251
+   "rank": 254
   },
   {
    "id": "dh_offline_zeros_400",
@@ -13921,7 +14068,47 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 252
+   "rank": 255
+  },
+  {
+   "id": "generalized_routh_verified",
+   "name": "Generalized Routh criterion 27(m₁m₂ + m₂m₃ + m₃m₁) < M² verified; Sun–Jupiter needs about 41 Jupiter masses at L4 to reach the wall",
+   "aliases": [],
+   "plain": "The 12-dimensional rotating-frame linearization of the Lagrange triangle agrees with Routh’s criterion on 400/400 random mass triples and 60/60 within 1% of the wall. Sun–Jupiter has 27μ(1 − μ) = 0.0257, 39 times below the wall; a third mass at L4 reaches it at 0.03903 M_sun = 40.9 Jupiter masses, about 2·10⁹ times the estimated L4 Trojan mass (Vinogradova–Chernetenko 2015). In four-body relative equilibria, a cloud at L4 alone destabilises a test particle at L5 first (at 20.2 Jupiter masses), and split clouds become unstable at 9.2–9.4 Jupiter masses. μ is the secondary’s mass share; massless Trojans do not change it.",
+   "label": "Numerical",
+   "core": "Generalized Routh criterion 27(m₁m₂ + m₂m₃ + m₃m₁) < M² verified; Sun–Jupiter needs about 41 Jupiter masses at L4 to reach the wall. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Numerical + Cited",
+    "research-note score: 3.04 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "corrects",
+     "to": "krein_mass_ratio_mu_eff",
+     "note": "massless Trojans do not change μ"
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 256
   },
   {
    "id": "genus_at_resolution",
@@ -13963,7 +14150,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 253
+   "rank": 257
   },
   {
    "id": "graded_inertia_null",
@@ -14006,7 +14193,46 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 254
+   "rank": 258
+  },
+  {
+   "id": "headwind_drag_l4_preference",
+   "name": "Sub-Keplerian gas drag makes L4 less unstable than L5: a decay-rate asymmetry, not an accumulation",
+   "aliases": [],
+   "plain": "With drag relative to a sub-Keplerian gas (η = 0.01, γ = 0.05, μ = 10⁻³) the equilibria shift to 66.35° and −55.21°, and the libration growth rates are 1.40·10⁻⁴ (L4) against 3.32·10⁻⁴ (L5). In integrations of 400 + 400 mirror-paired test particles, 70 survive at L4 against 2 at L5 at t = 12 000, and the survivor ratio passes the observed 1.4–1.9 after about 476–544 orbits and keeps growing, so any ratio is transient. Small-μ windows of asymptotic stability exist at L4 only. This agrees with Murray (1994); the observed Jupiter Trojan excess (1.4 ± 0.2, Grav et al. 2011; 1.6 ± 0.1, Szabó et al. 2007) is usually attributed to capture during migration (Pirani et al. 2019).",
+   "label": "Numerical",
+   "core": "Sub-Keplerian gas drag makes L4 less unstable than L5: a decay-rate asymmetry, not an accumulation. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 2.84 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "contrasts-with",
+     "to": "l4l5_isospectral_symmetric_damping",
+     "note": "breaks the isospectrality"
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 259
   },
   {
    "id": "heat_kernel_gram_fails",
@@ -14043,7 +14269,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 255
+   "rank": 260
   },
   {
    "id": "infrared_minimiser_nodes",
@@ -14082,7 +14308,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 256
+   "rank": 261
   },
   {
    "id": "kramers_absent_window_forms",
@@ -14126,7 +14352,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 257
+   "rank": 262
   },
   {
    "id": "lehmer_pair_backward_clock",
@@ -14168,7 +14394,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 258
+   "rank": 263
   },
   {
    "id": "lmfdb_maass_complete",
@@ -14214,7 +14440,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 259
+   "rank": 264
   },
   {
    "id": "null_calibrated_gls",
@@ -14261,7 +14487,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 260
+   "rank": 265
   },
   {
    "id": "onset_kernel_dependence",
@@ -14299,7 +14525,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 261
+   "rank": 266
   },
   {
    "id": "place_partial_products_negative",
@@ -14333,7 +14559,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 262
+   "rank": 267
   },
   {
    "id": "pnt_subtracted_levinson_nogo",
@@ -14375,7 +14601,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 263
+   "rank": 268
   },
   {
    "id": "real_beta_heat_capacity_sign",
@@ -14414,7 +14640,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 264
+   "rank": 269
   },
   {
    "id": "selberg_sum_vs_zeta_uncorrelated",
@@ -14453,7 +14679,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 265
+   "rank": 270
   },
   {
    "id": "sextic_kernel_collision",
@@ -14494,7 +14720,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 266
+   "rank": 271
   },
   {
    "id": "window_barotropy",
@@ -14537,7 +14763,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 267
+   "rank": 272
   },
   {
    "id": "zeta_normalized_frame",
@@ -14577,7 +14803,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 268
+   "rank": 273
   },
   {
    "id": "zeta_signed_energy_positive",
@@ -14620,7 +14846,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 269
+   "rank": 274
   },
   {
    "id": "mu_lrl_precession",
@@ -14653,7 +14879,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 270
+   "rank": 275
   },
   {
    "id": "prime_thresholds_regular",
@@ -14686,7 +14912,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 271
+   "rank": 276
   },
   {
    "id": "levinson_su11_boosts",
@@ -14741,7 +14967,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 272
+   "rank": 277
   },
   {
    "id": "birman_krein_spectral_shift",
@@ -14804,7 +15030,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 273
+   "rank": 278
   },
   {
    "id": "acm_local_newman_constant",
@@ -14856,7 +15082,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 274
+   "rank": 279
   },
   {
    "id": "hecke_lattice_klein_gordon",
@@ -14911,7 +15137,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 275
+   "rank": 280
   },
   {
    "id": "ghost_count_theorem",
@@ -14951,7 +15177,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 276
+   "rank": 281
   },
   {
    "id": "kinetic_mass_metric",
@@ -15010,7 +15236,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 277
+   "rank": 282
   },
   {
    "id": "logxi_shear_turan",
@@ -15058,7 +15284,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 278
+   "rank": 283
   },
   {
    "id": "holomorphic_energy_ghost_criterion",
@@ -15107,7 +15333,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 279
+   "rank": 284
   },
   {
    "id": "szego_sos_factor_disk",
@@ -15152,7 +15378,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 280
+   "rank": 285
   },
   {
    "id": "coherency_hasse",
@@ -15203,7 +15429,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 281
+   "rank": 286
   },
   {
    "id": "ghost_conventions",
@@ -15262,7 +15488,7 @@
     "evidence": 0.8,
     "quadrant": "RH-sharp"
    },
-   "rank": 282
+   "rank": 287
   },
   {
    "id": "two_partners",
@@ -15311,7 +15537,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 283
+   "rank": 288
   },
   {
    "id": "weitzenbock_curvature_density",
@@ -15360,7 +15586,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 284
+   "rank": 289
   },
   {
    "id": "compatible_quaternionic_J_parity",
@@ -15405,7 +15631,53 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 285
+   "rank": 290
+  },
+  {
+   "id": "drag_destabilises_krein_minus_libration",
+   "name": "Dissipation-induced instability at L4: any velocity damping destabilises the Krein-negative libration for every μ below the Routh value",
+   "aliases": [],
+   "plain": "At L4 the effective-potential Hessian is negative definite, so the long-period libration (ω = 0.0824 at μ = 10⁻³) has negative Krein sign and the short-period epicycle positive. With complete damping −γv the number of right-half-plane roots equals the number of negative stiffness eigenvalues (Kelvin–Tait–Chetaev; Krechetnikov–Marsden 2007): the libration grows at +1.528γ and the epicycle decays at −2.528γ at μ = 10⁻³, for every γ > 0 and every μ < μ_R, so the effective threshold is μ_eff = 0. Nonlinear check: 400 + 400 mirror-paired test particles are all lost, with median loss times 968.5 (L4) and 974.0 (L5). Drag relative to a Keplerian gas flow destabilises far more weakly (7.4·10⁻⁵ at γ = 0.01).",
+   "label": "Theorem",
+   "core": "Dissipation-induced instability at L4: any velocity damping destabilises the Krein-negative libration for every μ below the Routh value. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical",
+    "research-note score: 3.4 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "uses",
+     "to": "l4_veff_hessian_negative_definite",
+     "note": ""
+    },
+    {
+     "type": "extends",
+     "to": "krein_collision",
+     "note": ""
+    }
+   ],
+   "priority": 0.36,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 291
   },
   {
    "id": "frobenius_graph_toeplitz_split",
@@ -15454,7 +15726,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 286
+   "rank": 292
   },
   {
    "id": "kappa_index",
@@ -15511,7 +15783,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 287
+   "rank": 293
   },
   {
    "id": "krein_handedness",
@@ -15558,7 +15830,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 288
+   "rank": 294
   },
   {
    "id": "ks_lift_two_walls",
@@ -15607,7 +15879,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 289
+   "rank": 295
   },
   {
    "id": "liouville_vs_hodge_toy",
@@ -15660,7 +15932,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 290
+   "rank": 296
   },
   {
    "id": "tropical_psd_fq_weil_bound",
@@ -15705,7 +15977,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 291
+   "rank": 297
   },
   {
    "id": "bochner_raychaudhuri_logxi",
@@ -15753,7 +16025,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 292
+   "rank": 298
   },
   {
    "id": "castelnuovo_severi_lemma",
@@ -15793,7 +16065,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 293
+   "rank": 299
   },
   {
    "id": "contour_signed_energy_trace",
@@ -15843,7 +16115,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 294
+   "rank": 300
   },
   {
    "id": "dbn_calogero_moser_not_conformal",
@@ -15887,7 +16159,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 295
+   "rank": 301
   },
   {
    "id": "deninger_derivation_positivity",
@@ -15928,7 +16200,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 296
+   "rank": 302
   },
   {
    "id": "dolbeault_kahler_sign",
@@ -15973,7 +16245,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 297
+   "rank": 303
   },
   {
    "id": "fq_cs_block_identity",
@@ -16025,7 +16297,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 298
+   "rank": 304
   },
   {
    "id": "hermite_barrier_soundness",
@@ -16069,7 +16341,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 299
+   "rank": 305
   },
   {
    "id": "phi_dh_positive_kernel",
@@ -16109,7 +16381,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 300
+   "rank": 306
   },
   {
    "id": "pontryagin_de_branges_spaces",
@@ -16147,7 +16419,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 301
+   "rank": 307
   },
   {
    "id": "s_of_t_remainder",
@@ -16196,7 +16468,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 302
+   "rank": 308
   },
   {
    "id": "schur_cohn_negative_count",
@@ -16236,7 +16508,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 303
+   "rank": 309
   },
   {
    "id": "shear_push_density",
@@ -16281,7 +16553,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 304
+   "rank": 310
   },
   {
    "id": "trace_shear_budget",
@@ -16325,7 +16597,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 305
+   "rank": 311
   },
   {
    "id": "weil_negative_index_quadruples",
@@ -16365,7 +16637,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 306
+   "rank": 312
   },
   {
    "id": "fq_ensemble_aggregation",
@@ -16408,7 +16680,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 307
+   "rank": 313
   },
   {
    "id": "krein_flip_noncompact",
@@ -16448,7 +16720,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 308
+   "rank": 314
   },
   {
    "id": "ktc_parity_odd_index",
@@ -16488,7 +16760,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 309
+   "rank": 315
   },
   {
    "id": "li_variable_self_reciprocal_series",
@@ -16526,7 +16798,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 310
+   "rank": 316
   },
   {
    "id": "modular_resonances_half_zeros",
@@ -16565,7 +16837,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 311
+   "rank": 317
   },
   {
    "id": "positivity_cup",
@@ -16606,7 +16878,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 312
+   "rank": 318
   },
   {
    "id": "rh_without_euler_product_weng",
@@ -16644,7 +16916,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 313
+   "rank": 319
   },
   {
    "id": "nogo_v5_per_prime_and_places",
@@ -16716,7 +16988,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 314
+   "rank": 320
   },
   {
    "id": "cc_riemann_roch",
@@ -16768,7 +17040,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 315
+   "rank": 321
   },
   {
    "id": "oscillator_semigroup_contraction",
@@ -16829,7 +17101,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 316
+   "rank": 322
   },
   {
    "id": "zero_count_two_form",
@@ -16887,7 +17159,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 317
+   "rank": 323
   },
   {
    "id": "automorphy_defect",
@@ -16933,7 +17205,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 318
+   "rank": 324
   },
   {
    "id": "herbrand_ribet_spectral_no_positivity",
@@ -16980,7 +17252,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 319
+   "rank": 325
   },
   {
    "id": "beurling_counting_test_bstar",
@@ -17045,7 +17317,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 320
+   "rank": 326
   },
   {
    "id": "certified_windows",
@@ -17100,7 +17372,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 321
+   "rank": 327
   },
   {
    "id": "maslov_path_weil_matrix",
@@ -17153,7 +17425,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 322
+   "rank": 328
   },
   {
    "id": "euler_factor_wick_rotation",
@@ -17227,7 +17499,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 323
+   "rank": 329
   },
   {
    "id": "morse_lobes_wedges_windows",
@@ -17293,7 +17565,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 324
+   "rank": 330
   },
   {
    "id": "toeplitz_verblunsky",
@@ -17341,7 +17613,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 325
+   "rank": 331
   },
   {
    "id": "zeros_as_frames_trichotomy",
@@ -17405,7 +17677,53 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 326
+   "rank": 332
+  },
+  {
+   "id": "hasse_parabolic_routh_forbidden_by_rosati",
+   "name": "Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable",
+   "aliases": [],
+   "plain": "Mode by mode, a stable normal mode corresponds to a Frobenius pair; Hasse a² = 4q is the one-mode (parabolic) wall. Routh is a two-mode collision of opposite Krein signs. Rosati positivity makes all Frobenius pairs Krein-definite, so by Krein–Gelfand–Lidskii collisions are strongly stable (164 genus-2 collisions, max Re 7.8e-16 vs 1.6e-2 at L4 at μ_R). The formal map μ ↔ a/2√q is false: same discriminant, opposite stable side.",
+   "label": "Theorem",
+   "core": "Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical",
+    "research-note score: 4.2 (0.6·significance + 0.4·probability of progress, each on 0–5)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "geometry over F_q",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "grading_supporting_functional",
+     "note": ""
+    },
+    {
+     "type": "contrasts-with",
+     "to": "l4_veff_hessian_negative_definite",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 333
   },
   {
    "id": "fv_sundman_oscillator",
@@ -17454,53 +17772,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 327
-  },
-  {
-   "id": "hasse_parabolic_routh_forbidden_by_rosati",
-   "name": "Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable",
-   "aliases": [],
-   "plain": "Mode by mode, a stable normal mode corresponds to a Frobenius pair; Hasse a² = 4q is the one-mode (parabolic) wall. Routh is a two-mode collision of opposite Krein signs. Rosati positivity makes all Frobenius pairs Krein-definite, so by Krein–Gelfand–Lidskii collisions are strongly stable (164 genus-2 collisions, max Re 7.8e-16 vs 1.6e-2 at L4 at μ_R). The formal map μ ↔ a/2√q is false: same discriminant, opposite stable side.",
-   "label": "Theorem",
-   "core": "Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable. Sources: TAA research notes, Oct 2026.",
-   "formula": "",
-   "numbers": [
-    "research-note label: Theorem + Numerical",
-    "research-note score: 4.2 (0.6·significance + 0.4·probability of progress, each on 0–5)"
-   ],
-   "axes": [
-    "sign/positivity (Ax2)",
-    "geometry over F_q",
-    "physics analogue"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "refines",
-     "to": "grading_supporting_functional",
-     "note": ""
-    },
-    {
-     "type": "contrasts-with",
-     "to": "l4_veff_hessian_negative_definite",
-     "note": ""
-    }
-   ],
-   "priority": 0.325,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 328
+   "rank": 334
   },
   {
    "id": "pole_s1",
@@ -17557,7 +17829,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 329
+   "rank": 335
   },
   {
    "id": "window_equation_of_state",
@@ -17608,7 +17880,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 330
+   "rank": 336
   },
   {
    "id": "discriminant_space_trichotomy",
@@ -17659,7 +17931,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 331
+   "rank": 337
   },
   {
    "id": "dual_conic",
@@ -17711,7 +17983,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 332
+   "rank": 338
   },
   {
    "id": "arakelov",
@@ -17763,7 +18035,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 333
+   "rank": 339
   },
   {
    "id": "flat_gluing_curvature_in_metric",
@@ -17809,7 +18081,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 334
+   "rank": 340
   },
   {
    "id": "frobenius_verschiebung_rotation_split",
@@ -17848,7 +18120,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 335
+   "rank": 341
   },
   {
    "id": "fv_nc_torus_trichotomy",
@@ -17889,7 +18161,46 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 336
+   "rank": 342
+  },
+  {
+   "id": "l4_veff_hessian_negative_definite",
+   "name": "At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant",
+   "aliases": [],
+   "plain": "Hess V_eff at L4 has determinant (27/4)μ(1−μ) > 0 and trace −3: a hilltop with two negative-stiffness directions for every μ. The cross term (3√3/4)(1−2μ) controls the discriminant −(27/4)μ(1−μ). Only the full energy form (velocity + potential) is indefinite, signature (2,2). Coriolis rescues both negative directions until μ_R; long-period mode Krein −.",
+   "label": "Theorem",
+   "core": "At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 4.1 (0.6·significance + 0.4·probability of progress, each on 0–5)"
+   ],
+   "axes": [
+    "physics analogue",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "legendre_jacobi_split_rotating_frame",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 343
   },
   {
    "id": "selberg_resonances",
@@ -17933,7 +18244,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 337
+   "rank": 344
   },
   {
    "id": "sqrt2_family",
@@ -17985,7 +18296,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 338
+   "rank": 345
   },
   {
    "id": "amgm_discriminant_walls",
@@ -18037,7 +18348,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 339
+   "rank": 346
   },
   {
    "id": "calogero_pair_levi_civita",
@@ -18078,7 +18389,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 340
+   "rank": 347
   },
   {
    "id": "count_vs_stability_gyroscopic",
@@ -18128,7 +18439,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 341
+   "rank": 348
   },
   {
    "id": "cusp_vs_infinity",
@@ -18172,7 +18483,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 342
+   "rank": 349
   },
   {
    "id": "f1_base",
@@ -18218,7 +18529,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 343
+   "rank": 350
   },
   {
    "id": "focal_frobenius_quadratic",
@@ -18266,7 +18577,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 344
+   "rank": 351
   },
   {
    "id": "fv_two_states_sector",
@@ -18307,7 +18618,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 345
+   "rank": 352
   },
   {
    "id": "ks_stokes_hasse",
@@ -18342,46 +18653,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 346
-  },
-  {
-   "id": "l4_veff_hessian_negative_definite",
-   "name": "At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant",
-   "aliases": [],
-   "plain": "Hess V_eff at L4 has determinant (27/4)μ(1−μ) > 0 and trace −3: a hilltop with two negative-stiffness directions for every μ. The cross term (3√3/4)(1−2μ) controls the discriminant −(27/4)μ(1−μ). Only the full energy form (velocity + potential) is indefinite, signature (2,2). Coriolis rescues both negative directions until μ_R; long-period mode Krein −.",
-   "label": "Theorem",
-   "core": "At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant. Sources: TAA research notes, Oct 2026.",
-   "formula": "",
-   "numbers": [
-    "research-note score: 4.1 (0.6·significance + 0.4·probability of progress, each on 0–5)"
-   ],
-   "axes": [
-    "physics analogue",
-    "sign/positivity (Ax2)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "instance",
-     "to": "legendre_jacobi_split_rotating_frame",
-     "note": ""
-    }
-   ],
-   "priority": 0.325,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 347
+   "rank": 353
   },
   {
    "id": "lagrange_clock_rates",
@@ -18429,7 +18701,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 348
+   "rank": 354
   },
   {
    "id": "legendre_jacobi_split_rotating_frame",
@@ -18468,7 +18740,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 349
+   "rank": 355
   },
   {
    "id": "local_global",
@@ -18508,7 +18780,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 350
+   "rank": 356
   },
   {
    "id": "no_real_weil_cohomology_arithmetic",
@@ -18546,7 +18818,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 351
+   "rank": 357
   },
   {
    "id": "null_line_quotient",
@@ -18589,7 +18861,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 352
+   "rank": 358
   },
   {
    "id": "ps_central_charge_fv_family",
@@ -18644,7 +18916,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 353
+   "rank": 359
   },
   {
    "id": "rt_energy_sundman_clock",
@@ -18690,7 +18962,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 354
+   "rank": 360
   },
   {
    "id": "s_mirror",
@@ -18732,7 +19004,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 355
+   "rank": 361
   },
   {
    "id": "xp2dof_maupertuis_finsler",
@@ -18771,7 +19043,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 356
+   "rank": 362
   },
   {
    "id": "arithmetic_hodge_index_null_quotient",
@@ -18814,7 +19086,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 357
+   "rank": 363
   },
   {
    "id": "chebyshev_bias_boson_fermion",
@@ -18864,7 +19136,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 358
+   "rank": 364
   },
   {
    "id": "closed_geodesics",
@@ -18912,7 +19184,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 359
+   "rank": 365
   },
   {
    "id": "conformal_symplectic_no_hamiltonian",
@@ -18945,7 +19217,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 360
+   "rank": 366
   },
   {
    "id": "density_volume",
@@ -18992,7 +19264,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 361
+   "rank": 367
   },
   {
    "id": "dent_is_charge_move",
@@ -19037,7 +19309,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 362
+   "rank": 368
   },
   {
    "id": "dirichlet_primes_are_chi4",
@@ -19080,7 +19352,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 363
+   "rank": 369
   },
   {
    "id": "fv_is_dbn_flow",
@@ -19125,7 +19397,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 364
+   "rank": 370
   },
   {
    "id": "gram_factor_channel_bound",
@@ -19175,7 +19447,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 365
+   "rank": 371
   },
   {
    "id": "hecke_indefinite_as_min_definite",
@@ -19214,7 +19486,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 366
+   "rank": 372
   },
   {
    "id": "imaginary_shift_positive_tensor",
@@ -19251,7 +19523,46 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 367
+   "rank": 373
+  },
+  {
+   "id": "kepler_jacobi_trichotomy",
+   "name": "Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone",
+   "aliases": [],
+   "plain": "Positive for bound (E<0), flat at E=0, negative for scattering (E>0). Collision is a cone of angle pi (deficit pi); Levi-Civita z=w^2 unfolds it to the smooth oscillator metric 8(1+E|w|^2)|dw|^2 with K(0)=-E/4.",
+   "label": "Theorem",
+   "core": "Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 4.1 (0.6·significance + 0.4·probability of progress, each on 0–5)"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "analogue-of",
+     "to": "modular_tower_platonic",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 374
   },
   {
    "id": "kepler_two_degenerations",
@@ -19293,7 +19604,46 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 368
+   "rank": 375
+  },
+  {
+   "id": "l4l5_isospectral_symmetric_damping",
+   "name": "L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force",
+   "aliases": [],
+   "plain": "In the circular restricted three-body problem the linearizations at L4 and L5 differ only by the sign of the off-diagonal Hessian entry. Conjugating by diag(1, −1) and transposing shows det(λ² + λ(2J + Γ) − H) = det(λ² + λ(−2J + Γ) − H) for any symmetric damping Γ and symmetric stiffness H, so pure velocity damping −γv keeps the two points exactly isospectral (checked numerically). Breaking the symmetry needs a non-symmetric positional (circulatory) term, which drag relative to a sheared gas flow supplies. The conservative symmetry is the reversing symmetry (x, y, t) → (x, −y, −t).",
+   "label": "Theorem",
+   "core": "L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 3.4 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "l4_routh_krein",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 376
   },
   {
    "id": "local_hardy_constants_no_glue",
@@ -19342,7 +19692,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 369
+   "rank": 377
   },
   {
    "id": "modular_lengths_quadratic_units",
@@ -19385,7 +19735,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 370
+   "rank": 378
   },
   {
    "id": "modularity_observability_link",
@@ -19425,7 +19775,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 371
+   "rank": 379
   },
   {
    "id": "penning_trap_l4_twin",
@@ -19470,7 +19820,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 372
+   "rank": 380
   },
   {
    "id": "prime_step_sign_gap_excess",
@@ -19512,7 +19862,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 373
+   "rank": 381
   },
   {
    "id": "primon_fock_unique_factorization",
@@ -19551,7 +19901,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 374
+   "rank": 382
   },
   {
    "id": "principalization",
@@ -19594,7 +19944,46 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 375
+   "rank": 383
+  },
+  {
+   "id": "rational_frequency_ratio_quadratic_mu",
+   "name": "L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²",
+   "aliases": [],
+   "plain": "The two L4 frequencies satisfy ω_s² + ω_l² = 1 and ω_s²ω_l² = (27/4)μ(1 − μ), so ω_s/ω_l = k iff 27μ(1 − μ) = 4k²/(1 + k²)². k = 1 is the Routh value μ_R = (9 − √69)/18, k = 2 and k = 3 are the Deprit–Deprit-Bartholomé exceptional values 0.0242939 (in ℚ(√1833)) and 0.0135160 (in ℚ(√213)). The Kepler (Laplace–Runge–Lenz) 1:1 degeneracy and the Routh 1:1 collision are both rational; what separates them is the Krein sign (same sign, protected by SO(4), against opposite signs, a Hamiltonian–Hopf collision), not rationality.",
+   "label": "Theorem",
+   "core": "L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)². Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 2.92 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "contrasts-with",
+     "to": "lrl_hidden_symmetry_trichotomy",
+     "note": "same rationality, opposite Krein structure"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 384
   },
   {
    "id": "spec_z_terminal",
@@ -19637,7 +20026,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 376
+   "rank": 385
   },
   {
    "id": "spinor_route",
@@ -19680,7 +20069,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 377
+   "rank": 386
   },
   {
    "id": "srl_hyperbolic_sundman_clock",
@@ -19720,7 +20109,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 378
+   "rank": 387
   },
   {
    "id": "support_property_wall",
@@ -19762,7 +20151,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 379
+   "rank": 388
   },
   {
    "id": "three_indices_not_conflated",
@@ -19806,7 +20195,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 380
+   "rank": 389
   },
   {
    "id": "weil_rosetta",
@@ -19847,7 +20236,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 381
+   "rank": 390
   },
   {
    "id": "window_nonextensivity",
@@ -19895,7 +20284,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 382
+   "rank": 391
   },
   {
    "id": "xp_liouville_wall",
@@ -19939,7 +20328,81 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 383
+   "rank": 392
+  },
+  {
+   "id": "abs_a_is_infinite_place_of_trace",
+   "name": "Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}",
+   "aliases": [],
+   "plain": "By the product formula |a|_∞ = Π_ℓ |a|_ℓ⁻¹ depends on the factorization of a_p at primes ℓ ≠ p, while √q = |q|_∞^{1/2} = |q|_p^{−1/2} ties the archimedean norm to the place p itself; only the second is compatible with the functional equation. Under |a| the local factor becomes x² ∓ x + q/a²: the trace is forced to ±1 but the discriminant (a² − 4q)/a² keeps the sign of a² − 4q (420/420 good primes of L(11a) below e⁸; Hasse ⇔ q/a² > 1/4), and the normalization is undefined at the 8 supersingular primes 19, 29, 199, 569, 809, 1289, 1439, 2539. For ζ (degree 1, a_p = 1) the two normalizations coincide.",
+   "label": "Theorem",
+   "core": "Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem / Restatement",
+    "research-note score: 3.16 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 393
+  },
+  {
+   "id": "background_density_raises_routh",
+   "name": "A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²",
+   "aliases": [],
+   "plain": "Let a uniform background density act on all bodies as a potential κr²/2, with κ = ρ/ρ̄ and ρ̄ = 3M/(4πa³). The binary then rotates at n² = 1 + κ, the equilateral points are unchanged, and the L4 characteristic equation becomes λ⁴ + (1 + 4κ)λ² + (27/4)μ(1 − μ) = 0, so linear stability holds iff 27μ(1 − μ) < (1 + 4κ)² (μ_R = 0.05653 at κ = 0.05 and 0.13944 at κ = 0.2, matching the numerics to 10⁻⁷). A positive smooth energy density is stabilising, not destabilising.",
+   "label": "Theorem",
+   "core": "A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)². Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem + Numerical",
+    "research-note score: 3.08 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "physics analogue",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "extends",
+     "to": "two_walls_parabolic_routh",
+     "note": ""
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 394
   },
   {
    "id": "cr3bp_morse_count",
@@ -19972,7 +20435,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 384
+   "rank": 395
   },
   {
    "id": "escape_direction_pair",
@@ -20012,7 +20475,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 385
+   "rank": 396
   },
   {
    "id": "euler_product_omega_parity_split",
@@ -20054,7 +20517,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 386
+   "rank": 397
   },
   {
    "id": "flag_curvature_gauge_dependent",
@@ -20094,7 +20557,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 387
+   "rank": 398
   },
   {
    "id": "fq_newton_polygon_false_positives",
@@ -20133,7 +20596,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 388
+   "rank": 399
   },
   {
    "id": "hecke_mass_stability",
@@ -20173,7 +20636,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 389
+   "rank": 400
   },
   {
    "id": "hopf_lax_maupertuis_duality",
@@ -20206,7 +20669,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 390
+   "rank": 401
   },
   {
    "id": "j0_l4",
@@ -20246,7 +20709,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 391
+   "rank": 402
   },
   {
    "id": "jacobi_factor_flat_every_place",
@@ -20285,46 +20748,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 392
-  },
-  {
-   "id": "kepler_jacobi_trichotomy",
-   "name": "Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone",
-   "aliases": [],
-   "plain": "Positive for bound (E<0), flat at E=0, negative for scattering (E>0). Collision is a cone of angle pi (deficit pi); Levi-Civita z=w^2 unfolds it to the smooth oscillator metric 8(1+E|w|^2)|dw|^2 with K(0)=-E/4.",
-   "label": "Theorem",
-   "core": "Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone.",
-   "formula": "",
-   "numbers": [
-    "research-note score: 4.1 (0.6·significance + 0.4·probability of progress, each on 0–5)"
-   ],
-   "axes": [
-    "physics analogue",
-    "structure/frame (Ax1)"
-   ],
-   "uncertain": "",
-   "proved": "",
-   "tests": "",
-   "pitfalls": [],
-   "lemmas": [],
-   "rels": [
-    {
-     "type": "analogue-of",
-     "to": "modular_tower_platonic",
-     "note": ""
-    }
-   ],
-   "priority": 0.325,
-   "ranking": {
-    "gap_significance": 0.2,
-    "gap": "",
-    "sensitivity": 1.0,
-    "specificity": 0.5,
-    "tractability": 0.6,
-    "evidence": 1,
-    "quadrant": "true but ghost-blind/untested"
-   },
-   "rank": 393
+   "rank": 403
   },
   {
    "id": "ks_polarization_dictionary",
@@ -20364,7 +20788,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 394
+   "rank": 404
   },
   {
    "id": "lambda_019_gate",
@@ -20404,7 +20828,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 395
+   "rank": 405
   },
   {
    "id": "lee_yang_multivariate_restriction",
@@ -20442,7 +20866,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 396
+   "rank": 406
   },
   {
    "id": "legendre_poincare_criterion",
@@ -20483,7 +20907,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 397
+   "rank": 407
   },
   {
    "id": "modular_tower_platonic",
@@ -20516,7 +20940,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 398
+   "rank": 408
   },
   {
    "id": "non_coercive_metric_loses_spectrum",
@@ -20553,7 +20977,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 399
+   "rank": 409
   },
   {
    "id": "piston_window_free_energy",
@@ -20597,7 +21021,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 400
+   "rank": 410
   },
   {
    "id": "polymath15_barrier_not_bottleneck",
@@ -20639,7 +21063,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 401
+   "rank": 411
   },
   {
    "id": "sqrt_factorization_one_sided_wick",
@@ -20679,7 +21103,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 402
+   "rank": 412
   },
   {
    "id": "srl_lagrangian",
@@ -20720,7 +21144,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 403
+   "rank": 413
   },
   {
    "id": "sundman_clock_hyperbolic_length",
@@ -20761,7 +21185,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 404
+   "rank": 414
   },
   {
    "id": "sundman_linear_kepler",
@@ -20800,7 +21224,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 405
+   "rank": 415
   },
   {
    "id": "sundman_livsic_obstruction",
@@ -20839,7 +21263,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 406
+   "rank": 416
   },
   {
    "id": "telegrapher_distortionless",
@@ -20881,7 +21305,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 407
+   "rank": 417
   },
   {
    "id": "two_component_lee_yang_can_fail",
@@ -20919,7 +21343,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 408
+   "rank": 418
   },
   {
    "id": "vladimirov_derivative_is_prime_term",
@@ -20960,7 +21384,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 409
+   "rank": 419
   },
   {
    "id": "window_ground_state_simple_even",
@@ -20998,7 +21422,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 410
+   "rank": 420
   },
   {
    "id": "xp_distortionless_constant_divergence",
@@ -21041,7 +21465,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 411
+   "rank": 421
   },
   {
    "id": "zeta_collisions_type_one",
@@ -21080,7 +21504,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 412
+   "rank": 422
   },
   {
    "id": "cohesion",
@@ -21118,7 +21542,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 413
+   "rank": 423
   },
   {
    "id": "serre_positivity_local_not_hodge",
@@ -21153,7 +21577,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 414
+   "rank": 424
   },
   {
    "id": "kramers_kronig",
@@ -21204,7 +21628,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 415
+   "rank": 425
   },
   {
    "id": "no_ghost_gupta_bleuler_analogy",
@@ -21260,7 +21684,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 416
+   "rank": 426
   },
   {
    "id": "ep_gap_across_collision",
@@ -21316,7 +21740,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 417
+   "rank": 427
   },
   {
    "id": "gribov",
@@ -21367,7 +21791,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 418
+   "rank": 428
   },
   {
    "id": "metaplectic",
@@ -21423,7 +21847,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 419
+   "rank": 429
   },
   {
    "id": "half_tate_twist",
@@ -21496,7 +21920,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 420
+   "rank": 430
   },
   {
    "id": "functional_equation",
@@ -21549,7 +21973,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 421
+   "rank": 431
   },
   {
    "id": "kms_bost_connes",
@@ -21612,7 +22036,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 422
+   "rank": 432
   },
   {
    "id": "gauss_sum_unitarity",
@@ -21682,7 +22106,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 423
+   "rank": 433
   },
   {
    "id": "e2_anomaly",
@@ -21740,7 +22164,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 424
+   "rank": 434
   },
   {
    "id": "half_turn_sign_flip",
@@ -21804,7 +22228,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 425
+   "rank": 435
   },
   {
    "id": "lps_hecke_on_s3",
@@ -21871,7 +22295,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 426
+   "rank": 436
   },
   {
    "id": "moser_orbit_space_s2xs2",
@@ -21942,7 +22366,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 427
+   "rank": 437
   },
   {
    "id": "nash_kuiper_onsager",
@@ -22002,7 +22426,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 428
+   "rank": 438
   },
   {
    "id": "apsides_gap_form",
@@ -22066,7 +22490,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 429
+   "rank": 439
   },
   {
    "id": "cup_product",
@@ -22117,7 +22541,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 430
+   "rank": 440
   },
   {
    "id": "hecke",
@@ -22174,7 +22598,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 431
+   "rank": 441
   },
   {
    "id": "pv_ts_symplectomorphism",
@@ -22238,7 +22662,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 432
+   "rank": 442
   },
   {
    "id": "real_forms_compact_vs_boost",
@@ -22312,7 +22736,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 433
+   "rank": 443
   },
   {
    "id": "archimedean_place",
@@ -22364,7 +22788,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 434
+   "rank": 444
   },
   {
    "id": "cusp_forms_petersson",
@@ -22414,7 +22838,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 435
+   "rank": 445
   },
   {
    "id": "euler_char_chi",
@@ -22474,7 +22898,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 436
+   "rank": 446
   },
   {
    "id": "herbrand_ribet",
@@ -22538,7 +22962,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 437
+   "rank": 447
   },
   {
    "id": "mazur_wiles",
@@ -22591,7 +23015,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 438
+   "rank": 448
   },
   {
    "id": "cc21_archimedean_positivity",
@@ -22652,7 +23076,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 439
+   "rank": 449
   },
   {
    "id": "f1_square_constructions",
@@ -22722,7 +23146,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 440
+   "rank": 450
   },
   {
    "id": "n_factorial_bridge_all_places",
@@ -22777,7 +23201,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 441
+   "rank": 451
   },
   {
    "id": "ramanujan_691",
@@ -22838,7 +23262,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 442
+   "rank": 452
   },
   {
    "id": "self_duality_push_shear",
@@ -22902,7 +23326,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 443
+   "rank": 453
   },
   {
    "id": "standing_frame_so22_ads3",
@@ -22961,7 +23385,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 444
+   "rank": 454
   },
   {
    "id": "tate_count",
@@ -23011,7 +23435,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 445
+   "rank": 455
   },
   {
    "id": "thermo_geometry_ruppeiner_contact",
@@ -23078,7 +23502,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 446
+   "rank": 456
   },
   {
    "id": "weil_pencil_jacobi_integral",
@@ -23123,7 +23547,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 447
+   "rank": 457
   },
   {
    "id": "consani_archimedean_cohomology",
@@ -23176,7 +23600,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 448
+   "rank": 458
   },
   {
    "id": "lambda2_monotone_nested_windows",
@@ -23225,7 +23649,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 449
+   "rank": 459
   },
   {
    "id": "thermo_shift_invariance",
@@ -23270,7 +23694,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 450
+   "rank": 460
   },
   {
    "id": "window_mechanical_stability",
@@ -23324,7 +23748,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 451
+   "rank": 461
   },
   {
    "id": "hodge_star_square_fermion_parity",
@@ -23371,7 +23795,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 452
+   "rank": 462
   },
   {
    "id": "maxplus_weil_diagonal_dominance",
@@ -23415,7 +23839,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 453
+   "rank": 463
   },
   {
    "id": "riesz_nonnormal_residue_gauge",
@@ -23476,7 +23900,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 454
+   "rank": 464
   },
   {
    "id": "primary_sign_rule",
@@ -23541,7 +23965,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 455
+   "rank": 465
   },
   {
    "id": "gaussian_filter_ghost_blind",
@@ -23601,7 +24025,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 456
+   "rank": 466
   },
   {
    "id": "arch_threshold",
@@ -23657,7 +24081,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 457
+   "rank": 467
   },
   {
    "id": "gap_labelling_fv_check",
@@ -23704,7 +24128,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 458
+   "rank": 468
   },
   {
    "id": "maass_selberg",
@@ -23753,7 +24177,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 459
+   "rank": 469
   },
   {
    "id": "pole_plane_polarization",
@@ -23797,7 +24221,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 460
+   "rank": 470
   },
   {
    "id": "arithmetic_topology_linking_matrix",
@@ -23845,7 +24269,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 461
+   "rank": 471
   },
   {
    "id": "coefficient_ilc_ghost_blind",
@@ -23898,7 +24322,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 462
+   "rank": 472
   },
   {
    "id": "fisher_curvature_operator_ghost_blind",
@@ -23941,7 +24365,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 463
+   "rank": 473
   },
   {
    "id": "gap_width_vs_label",
@@ -24003,7 +24427,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 464
+   "rank": 474
   },
   {
    "id": "pole_plane_repair_negative",
@@ -24045,7 +24469,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 465
+   "rank": 475
   },
   {
    "id": "slack_ledger_cf",
@@ -24097,7 +24521,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 466
+   "rank": 476
   },
   {
    "id": "dbn_monotone_functionals",
@@ -24140,7 +24564,7 @@
     "evidence": 0.64,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 467
+   "rank": 477
   },
   {
    "id": "gap_width_wall_exponent",
@@ -24196,7 +24620,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 468
+   "rank": 478
   },
   {
    "id": "genuine_l_criticality",
@@ -24247,7 +24671,7 @@
     "evidence": 0.6,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 469
+   "rank": 479
   },
   {
    "id": "tropical_hodge_index_conjecture",
@@ -24292,7 +24716,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 470
+   "rank": 480
   },
   {
    "id": "grading_supporting_functional",
@@ -24341,7 +24765,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 471
+   "rank": 481
   },
   {
    "id": "perelman_template_dbn",
@@ -24387,7 +24811,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 472
+   "rank": 482
   },
   {
    "id": "hopf_fibration_spec_z",
@@ -24434,7 +24858,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 473
+   "rank": 483
   },
   {
    "id": "identity_not_estimate",
@@ -24476,7 +24900,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 474
+   "rank": 484
   },
   {
    "id": "edge_boundary_cycle",
@@ -24520,7 +24944,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 475
+   "rank": 485
   },
   {
    "id": "kahler_package_one_liner",
@@ -24565,7 +24989,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 476
+   "rank": 486
   },
   {
    "id": "phase_branch_selection",
@@ -24604,7 +25028,48 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 477
+   "rank": 487
+  },
+  {
+   "id": "routh_q_sqrt69_numerology",
+   "name": "μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)",
+   "aliases": [],
+   "plain": "μ_R = (9 − √69)/18 has minimal polynomial 27μ² − 27μ + 1 with discriminant 621 = 27·23 = 25² − 4; ℚ(√69) has class number 1, narrow class number 2 and fundamental unit (25 + 3√69)/2 of trace 25, so μ_R’s field is attached to the trace-25 hyperbolic class of the discriminant-space dictionary. Every real quadratic field arises from some trace, so this is recorded as numerology with no mechanism.",
+   "label": "Heuristic",
+   "core": "μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism). Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Numerology",
+    "research-note score: 1.0 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [
+    "Numerology: no mechanism links the Routh value to the trace-25 geodesic."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "related",
+     "to": "rational_frequency_ratio_quadratic_mu",
+     "note": "numerology"
+    }
+   ],
+   "priority": 0.271,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.7,
+    "specificity": 0.5,
+    "tractability": 0.5,
+    "evidence": 0.6,
+    "quadrant": "background"
+   },
+   "rank": 488
   },
   {
    "id": "half_density",
@@ -24663,7 +25128,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 478
+   "rank": 489
   },
   {
    "id": "theta_inversion",
@@ -24728,7 +25193,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 479
+   "rank": 490
   },
   {
    "id": "apsidal_sweep_eccentricity",
@@ -24796,7 +25261,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 480
+   "rank": 491
   },
   {
    "id": "dbn_local_flow_fv_sweep",
@@ -24844,7 +25309,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 481
+   "rank": 492
   },
   {
    "id": "eisenstein_ct",
@@ -24895,7 +25360,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 482
+   "rank": 493
   },
   {
    "id": "gauss_half",
@@ -24969,7 +25434,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 483
+   "rank": 494
   },
   {
    "id": "hilbert_reciprocity_at_2",
@@ -25041,7 +25506,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 484
+   "rank": 495
   },
   {
    "id": "prime_two_wild",
@@ -25104,7 +25569,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 485
+   "rank": 496
   },
   {
    "id": "scattering_phi",
@@ -25159,7 +25624,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 486
+   "rank": 497
   },
   {
    "id": "four_squares_eisenstein_lift",
@@ -25225,7 +25690,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 487
+   "rank": 498
   },
   {
    "id": "fundamental_domain_three_phases",
@@ -25278,7 +25743,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 488
+   "rank": 499
   },
   {
    "id": "ks_quaternion_lift",
@@ -25338,7 +25803,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 489
+   "rank": 500
   },
   {
    "id": "maslov_legendre_fourier",
@@ -25402,7 +25867,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 490
+   "rank": 501
   },
   {
    "id": "sl2fp_half_representations",
@@ -25471,7 +25936,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 491
+   "rank": 502
   },
   {
    "id": "yoshida",
@@ -25530,7 +25995,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 492
+   "rank": 503
   },
   {
    "id": "count_positivity",
@@ -25575,7 +26040,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 493
+   "rank": 504
   },
   {
    "id": "incommensurable_lehmer_zero",
@@ -25623,7 +26088,7 @@
     "evidence": 0.8,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 494
+   "rank": 505
   },
   {
    "id": "one_cusp_three_readings",
@@ -25679,7 +26144,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 495
+   "rank": 506
   },
   {
    "id": "push_shear_balance",
@@ -25735,7 +26200,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 496
+   "rank": 507
   },
   {
    "id": "quartet_capacity_sp4",
@@ -25791,7 +26256,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 497
+   "rank": 508
   },
   {
    "id": "cm_gaussian_hasse_triangle",
@@ -25833,7 +26298,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 498
+   "rank": 509
   },
   {
    "id": "cm_split_inert_duality",
@@ -25886,7 +26351,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 499
+   "rank": 510
   },
   {
    "id": "dbn_deficit_time_to_cusp",
@@ -25942,7 +26407,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 500
+   "rank": 511
   },
   {
    "id": "dbn_product_cross_term",
@@ -25986,7 +26451,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 501
+   "rank": 512
   },
   {
    "id": "gauss_sum_canonical_root",
@@ -26040,7 +26505,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 502
+   "rank": 513
   },
   {
    "id": "johnson_lippmann_supercharge",
@@ -26090,7 +26555,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 503
+   "rank": 514
   },
   {
    "id": "kk_circle_and_adelic_solenoids",
@@ -26139,7 +26604,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 504
+   "rank": 515
   },
   {
    "id": "one_twentyfourth_identities",
@@ -26197,7 +26662,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 505
+   "rank": 516
   },
   {
    "id": "weight_ladder",
@@ -26244,7 +26709,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 506
+   "rank": 517
   },
   {
    "id": "weil_hill_topology_signature_only",
@@ -26290,7 +26755,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 507
+   "rank": 518
   },
   {
    "id": "chirality_star_gamma5_hodge_index",
@@ -26331,7 +26796,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 508
+   "rank": 519
   },
   {
    "id": "dbn_bohlin_decay",
@@ -26375,7 +26840,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 509
+   "rank": 520
   },
   {
    "id": "dbn_loggas_entropy_production",
@@ -26419,7 +26884,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 510
+   "rank": 521
   },
   {
    "id": "eta_chain",
@@ -26459,7 +26924,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 511
+   "rank": 522
   },
   {
    "id": "euler_factor_passive_lossy",
@@ -26502,7 +26967,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 512
+   "rank": 523
   },
   {
    "id": "exactness_monge_ampere",
@@ -26541,7 +27006,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 513
+   "rank": 524
   },
   {
    "id": "flat_bochner_curvature_ghost_blind",
@@ -26592,7 +27057,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 514
+   "rank": 525
   },
   {
    "id": "galois_obstruction_is_curvature",
@@ -26641,7 +27106,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 515
+   "rank": 526
   },
   {
    "id": "hardy_z_critical_line_wave",
@@ -26690,7 +27155,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 516
+   "rank": 527
   },
   {
    "id": "hodge_C_star_eighth_turn",
@@ -26735,7 +27200,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 517
+   "rank": 528
   },
   {
    "id": "kronecker_limit_E2star",
@@ -26790,7 +27255,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 518
+   "rank": 529
   },
   {
    "id": "local_dbn_slack",
@@ -26840,7 +27305,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 519
+   "rank": 530
   },
   {
    "id": "prime_torus_nonresonance",
@@ -26874,7 +27339,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 520
+   "rank": 531
   },
   {
    "id": "w2_cech",
@@ -26919,7 +27384,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 521
+   "rank": 532
   },
   {
    "id": "archimedean_weyl_kernel",
@@ -26963,7 +27428,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 522
+   "rank": 533
   },
   {
    "id": "beta_dequantization_entropy",
@@ -27011,7 +27476,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 523
+   "rank": 534
   },
   {
    "id": "chi_minus_one_half_pole",
@@ -27058,7 +27523,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 524
+   "rank": 535
   },
   {
    "id": "hecke_toy_contraction",
@@ -27103,7 +27568,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 525
+   "rank": 536
   },
   {
    "id": "jacobi_curvature_trace_only",
@@ -27144,7 +27609,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 526
+   "rank": 537
   },
   {
    "id": "k_order_ghost_blind",
@@ -27189,7 +27654,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 527
+   "rank": 538
   },
   {
    "id": "kepler_so4_contraction",
@@ -27229,7 +27694,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 528
+   "rank": 539
   },
   {
    "id": "knauf_ferromagnetic_spin_chain",
@@ -27267,7 +27732,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 529
+   "rank": 540
   },
   {
    "id": "newman_class_P_fails_for_phi",
@@ -27308,7 +27773,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 530
+   "rank": 541
   },
   {
    "id": "prime_clocks",
@@ -27356,7 +27821,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 531
+   "rank": 542
   },
   {
    "id": "primon_box_ts_pv",
@@ -27400,7 +27865,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 532
+   "rank": 543
   },
   {
    "id": "rt_energy_monotone_but_blind",
@@ -27445,7 +27910,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 533
+   "rank": 544
   },
   {
    "id": "sector_map_w",
@@ -27492,7 +27957,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 534
+   "rank": 545
   },
   {
    "id": "window_contact_legendre_surface",
@@ -27541,7 +28006,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 535
+   "rank": 546
   },
   {
    "id": "conic_compactness",
@@ -27580,7 +28045,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 536
+   "rank": 547
   },
   {
    "id": "dbn_kernel_not_pf5",
@@ -27618,7 +28083,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 537
+   "rank": 548
   },
   {
    "id": "euler_product_saddle_additivity",
@@ -27663,7 +28128,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 538
+   "rank": 549
   },
   {
    "id": "finite_guinand_weil_dictionary",
@@ -27701,7 +28166,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 539
+   "rank": 550
   },
   {
    "id": "flip45_is_real_structure",
@@ -27741,7 +28206,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 540
+   "rank": 551
   },
   {
    "id": "fourier_quarter_turn",
@@ -27784,7 +28249,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 541
+   "rank": 552
   },
   {
    "id": "fourth_roots_supersingular",
@@ -27823,7 +28288,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 542
+   "rank": 553
   },
   {
    "id": "frame_clock_invariance",
@@ -27865,7 +28330,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 543
+   "rank": 554
   },
   {
    "id": "frobenius_angles_quantized",
@@ -27905,7 +28370,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 544
+   "rank": 555
   },
   {
    "id": "gross_zagier_rank_one_positivity",
@@ -27939,7 +28404,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 545
+   "rank": 556
   },
   {
    "id": "levy_khintchine_mass_gap",
@@ -27984,7 +28449,48 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 546
+   "rank": 557
+  },
+  {
+   "id": "local_lattice_hasse_only",
+   "name": "The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable",
+   "aliases": [],
+   "plain": "The orthogonal sum of the binary forms (1, −a/√q, 1) of the normalized Euler factors is positive definite for L(11a) at 428/428 good primes below e⁸ (Hasse/Deligne), while ζ·ζ at t = 0 sits on the local wall at every prime ((x − y)², discriminant 0, degenerate). Davenport–Heilbronn’s pseudo-factors (1, −a(p), 1), a(p) ∈ {±1, ±0.284}, are all positive definite, so local positivity cannot separate it from ζ. Gram forms built from local data alone, without the archimedean factor, are indefinite at every L (n₋ from 27 to 220 for ζ on L = 1.5–8).",
+   "label": "Theorem",
+   "core": "The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note label: Theorem (cited) + Numerical",
+    "research-note score: 3.28 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-blind",
+    "geometry over F_q"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "hasse_parabolic_routh_forbidden_by_rosati",
+     "note": ""
+    }
+   ],
+   "priority": 0.267,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": 558
   },
   {
    "id": "mobius_is_witten_parity",
@@ -28027,7 +28533,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 547
+   "rank": 559
   },
   {
    "id": "orbifold_vs_descartes_deficits",
@@ -28068,7 +28574,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 548
+   "rank": 560
   },
   {
    "id": "prime_torus_euler_characteristic_zero",
@@ -28108,7 +28614,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 549
+   "rank": 561
   },
   {
    "id": "real_axis_log_convexity_not_rh",
@@ -28147,7 +28653,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 550
+   "rank": 562
   },
   {
    "id": "rs_blind_to_sign_flips",
@@ -28192,7 +28698,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 551
+   "rank": 563
   },
   {
    "id": "rs_explicit_formula_positive_lattice_form",
@@ -28229,7 +28735,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 552
+   "rank": 564
   },
   {
    "id": "ruled_quadric_null_lines",
@@ -28272,7 +28778,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 553
+   "rank": 565
   },
   {
    "id": "so4_chirality_split",
@@ -28311,7 +28817,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 554
+   "rank": 566
   },
   {
    "id": "spin_theta",
@@ -28360,7 +28866,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 555
+   "rank": 567
   },
   {
    "id": "three_lenses_one_flow",
@@ -28399,7 +28905,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 556
+   "rank": 568
   },
   {
    "id": "zero_gas_forced_functionals",
@@ -28442,7 +28948,7 @@
     "evidence": 1,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 557
+   "rank": 569
   },
   {
    "id": "cocycle_principle",
@@ -28485,7 +28991,7 @@
     "evidence": 0.6,
     "quadrant": "background"
    },
-   "rank": 558
+   "rank": 570
   },
   {
    "id": "wedge_flip_animation",
@@ -28539,7 +29045,7 @@
     "evidence": 0.48,
     "quadrant": "background"
    },
-   "rank": 559
+   "rank": 571
   },
   {
    "id": "purity_distortionless",
@@ -28598,7 +29104,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 560
+   "rank": 572
   },
   {
    "id": "ferromagnetic_gyroscopic_stiffness",
@@ -28660,7 +29166,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 561
+   "rank": 573
   },
   {
    "id": "hodge_index_lagrange_points",
@@ -28714,7 +29220,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 562
+   "rank": 574
   },
   {
    "id": "ghost_as_dispersion",
@@ -28753,7 +29259,7 @@
     "evidence": 0.5,
     "quadrant": "sharp but interpretive"
    },
-   "rank": 563
+   "rank": 575
   },
   {
    "id": "weil_radius_trichotomy",
@@ -28800,7 +29306,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 564
+   "rank": 576
   },
   {
    "id": "hasse_triangle_newton",
@@ -28850,7 +29356,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 565
+   "rank": 577
   },
   {
    "id": "imaginary_field_susceptibility",
@@ -28893,7 +29399,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 566
+   "rank": 578
   },
   {
    "id": "net_force_orientation",
@@ -28933,7 +29439,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 567
+   "rank": 579
   },
   {
    "id": "sharpened_missing_piece",
@@ -28969,7 +29475,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 568
+   "rank": 580
   },
   {
    "id": "zeta_local_factors_no_rotation",
@@ -29015,7 +29521,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 569
+   "rank": 581
   },
   {
    "id": "ghost_count_rh_restatement",
@@ -29055,7 +29561,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 570
+   "rank": 582
   },
   {
    "id": "weil_form_momentum_dictionary",
@@ -29096,7 +29602,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 571
+   "rank": 583
   },
   {
    "id": "anisotropic_part_weil",
@@ -29136,7 +29642,51 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 572
+   "rank": 584
+  },
+  {
+   "id": "hill_neck_lambda2",
+   "name": "Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0",
+   "aliases": [],
+   "plain": "Treat V(v) = vᵀZ_L v on the unit sphere as a potential at the Jacobi level 0. Its critical points are the eigenvectors (v_k has Morse index k − 1), and the region {V < 0} is empty when n₋ = 0, two antipodal caps when n₋ = 1, and connected through a neck when n₋ ≥ 2, the moment the index-1 saddle v₂ reaches the level. Davenport–Heilbronn goes from closed to necked within one resolution step (L = 3.850 → 3.900), its Krein-negative pair.",
+   "label": "Restatement",
+   "core": "Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0. Sources: TAA research notes, Oct 2026.",
+   "formula": "",
+   "numbers": [
+    "research-note score: 3.04 (0.6·significance + 0.4·probability, each on 0–4)"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "physics analogue"
+   ],
+   "uncertain": "",
+   "proved": "",
+   "tests": "",
+   "pitfalls": [],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "uses",
+     "to": "hamiltonian_krein_index_weil",
+     "note": ""
+    },
+    {
+     "type": "analogue-of",
+     "to": "kepler_jacobi_trichotomy",
+     "note": ""
+    }
+   ],
+   "priority": 0.24,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": 585
   },
   {
    "id": "lc_square_xi",
@@ -29182,7 +29732,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 573
+   "rank": 586
   },
   {
    "id": "pontryagin_exactly_two",
@@ -29222,7 +29772,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 574
+   "rank": 587
   },
   {
    "id": "prime_torus_action_angle_degenerate",
@@ -29268,7 +29818,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 575
+   "rank": 588
   },
   {
    "id": "product_formula_rest_frame",
@@ -29315,7 +29865,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 576
+   "rank": 589
   },
   {
    "id": "sundman_regularized_rt_energy",
@@ -29357,7 +29907,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 577
+   "rank": 590
   },
   {
    "id": "supercharge_laplacian_restates_positivity",
@@ -29399,7 +29949,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 578
+   "rank": 591
   },
   {
    "id": "hodge_index_shear_subtracts",
@@ -29443,7 +29993,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 579
+   "rank": 592
   },
   {
    "id": "infinitely_divisible_rh_criterion",
@@ -29481,7 +30031,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 580
+   "rank": 593
   },
   {
    "id": "ks_trichotomy_xp",
@@ -29520,7 +30070,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 581
+   "rank": 594
   },
   {
    "id": "riemann_roch_sorting",
@@ -29559,7 +30109,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 582
+   "rank": 595
   },
   {
    "id": "rt_renormalization_count_drift",
@@ -29601,7 +30151,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 583
+   "rank": 596
   },
   {
    "id": "signed_energy_noncircular_sign",
@@ -29641,7 +30191,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 584
+   "rank": 597
   },
   {
    "id": "weil_braket_pairing",
@@ -29681,7 +30231,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 585
+   "rank": 598
   },
   {
    "id": "zeta_zero_fv_quadratic",
@@ -29722,7 +30272,7 @@
     "evidence": 1,
     "quadrant": "RH-sharp"
    },
-   "rank": 586
+   "rank": 599
   },
   {
    "id": "archimedes",
@@ -29772,7 +30322,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 587
+   "rank": 600
   },
   {
    "id": "distortionless",
@@ -29827,7 +30377,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 588
+   "rank": 601
   },
   {
    "id": "einstein_cartan_torsion_spin",
@@ -29866,7 +30416,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 589
+   "rank": 602
   },
   {
    "id": "heaviside",
@@ -29917,7 +30467,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 590
+   "rank": 603
   },
   {
    "id": "archimedean_third_body_analogy",
@@ -29961,7 +30511,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 591
+   "rank": 604
   },
   {
    "id": "log_gas_frozen_limit",
@@ -30005,7 +30555,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 592
+   "rank": 605
   },
   {
    "id": "mass_density",
@@ -30046,7 +30596,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 593
+   "rank": 606
   },
   {
    "id": "serre_derivative_analogy",
@@ -30084,7 +30634,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 594
+   "rank": 607
   },
   {
    "id": "half_density_tension_dictionary",
@@ -30123,7 +30673,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 595
+   "rank": 608
   },
   {
    "id": "tree_band_edge_zero_velocity",
@@ -30168,7 +30718,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 596
+   "rank": 609
   },
   {
    "id": "archimedean_symbol_dispersion",
@@ -30207,7 +30757,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 597
+   "rank": 610
   },
   {
    "id": "dpt_quantitative_template",
@@ -30246,7 +30796,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 598
+   "rank": 611
   },
   {
    "id": "einstein_de_haas_lesson",
@@ -30286,7 +30836,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 599
+   "rank": 612
   },
   {
    "id": "frobenius_similitude_shell",
@@ -30319,7 +30869,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 600
+   "rank": 613
   },
   {
    "id": "larmor_onsager_rotation_sector",
@@ -30358,7 +30908,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 601
+   "rank": 614
   },
   {
    "id": "viscosity_baroclinic",
@@ -30396,7 +30946,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 602
+   "rank": 615
   },
   {
    "id": "hill_region_dictionary",
@@ -30429,7 +30979,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 603
+   "rank": 616
   },
   {
    "id": "lrl_hidden_symmetry_trichotomy",
@@ -30505,7 +31055,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 604
+   "rank": 617
   },
   {
    "id": "su2xsu2_peter_weyl_surface",
@@ -30576,7 +31126,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 605
+   "rank": 618
   },
   {
    "id": "higgs_negative_mass2",
@@ -30634,7 +31184,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 606
+   "rank": 619
   },
   {
    "id": "klein_gordon_charge",
@@ -30694,7 +31244,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 607
+   "rank": 620
   },
   {
    "id": "anomalous_dispersion",
@@ -30749,7 +31299,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 608
+   "rank": 621
   },
   {
    "id": "convolution_square_root",
@@ -30784,7 +31334,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 609
+   "rank": 622
   },
   {
    "id": "anticipation_law_fluctuation",
@@ -30833,7 +31383,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 610
+   "rank": 623
   },
   {
    "id": "signed_local_energy_trace",
@@ -30881,7 +31431,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 611
+   "rank": 624
   },
   {
    "id": "height_positivity_equals_rh_positivity",
@@ -30925,7 +31475,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 612
+   "rank": 625
   },
   {
    "id": "krein_laguerre_count",
@@ -30965,7 +31515,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 613
+   "rank": 626
   },
   {
    "id": "weil_as_special_cycle_self_intersection",
@@ -31009,7 +31559,7 @@
     "evidence": 0.4,
     "quadrant": "RH-sharp"
    },
-   "rank": 614
+   "rank": 627
   },
   {
    "id": "zeta_on_the_wall",
@@ -31043,7 +31593,7 @@
     "evidence": 0.5,
     "quadrant": "RH-sharp"
    },
-   "rank": 615
+   "rank": 628
   },
   {
    "id": "missing_square_spec_z",
@@ -31125,7 +31675,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 616
+   "rank": 629
   },
   {
    "id": "buoyancy_reading",
@@ -31164,7 +31714,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 617
+   "rank": 630
   },
   {
    "id": "lamb_cutoff",
@@ -31220,7 +31770,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 618
+   "rank": 631
   },
   {
    "id": "two_chis",
@@ -31277,7 +31827,7 @@
     "evidence": 0.4,
     "quadrant": "background"
    },
-   "rank": 619
+   "rank": 632
   },
   {
    "id": "sha_as_holonomy_defect",
@@ -31323,7 +31873,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 620
+   "rank": 633
   },
   {
    "id": "ramanujan_691_degeneration",
@@ -31367,7 +31917,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 621
+   "rank": 634
   },
   {
    "id": "tate_twist_as_hbar",
@@ -31401,7 +31951,7 @@
     "evidence": 0.5,
     "quadrant": "background"
    },
-   "rank": 622
+   "rank": 635
   },
   {
    "id": "barrier_certificate_bypass",
@@ -31448,7 +31998,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 623
+   "rank": 636
   },
   {
    "id": "ps_tilt_central_charge_target",
@@ -31490,7 +32040,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 624
+   "rank": 637
   },
   {
    "id": "cs_for_spec_z_formulations",
@@ -31530,7 +32080,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 625
+   "rank": 638
   },
   {
    "id": "rings_purity_restates_positivity",
@@ -31580,7 +32130,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 626
+   "rank": 639
   },
   {
    "id": "standard_conj",
@@ -31626,7 +32176,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 627
+   "rank": 640
   },
   {
    "id": "thermodynamic_J_direction",
@@ -31676,7 +32226,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 628
+   "rank": 641
   },
   {
    "id": "both_at_once",
@@ -31716,7 +32266,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 629
+   "rank": 642
   },
   {
    "id": "chaotic_2dof_xp_route",
@@ -31757,7 +32307,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 630
+   "rank": 643
   },
   {
    "id": "hermite_barrier_route",
@@ -31796,7 +32346,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 631
+   "rank": 644
   },
   {
    "id": "integrality_support_bypass",
@@ -31836,7 +32386,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 632
+   "rank": 645
   },
   {
    "id": "jacobi_finsler_positivity_route",
@@ -31878,7 +32428,7 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 633
+   "rank": 646
   },
   {
    "id": "regularized_xp_foliation_route",
@@ -31917,11 +32467,11 @@
     "evidence": 0.5,
     "quadrant": "true but ghost-blind/untested"
    },
-   "rank": 634
+   "rank": 647
   }
  ],
  "counts": {
-  "concepts": 634,
-  "relations": 1425
+  "concepts": 647,
+  "relations": 1444
  }
 }
