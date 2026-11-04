@@ -31,7 +31,15 @@ A concept is a genuine RH-detector only if it scores high on both.
 
 The square root is a geometric mean: a concept with sensitivity 1 but specificity near 0 (true for ζ, but equally true for the fakes) gets almost no significance, however close it sits to a missing piece. The 0.6 / 0.4 weighting of significance against probability of progress is the convention used throughout the TAA programme.
 
-**Rank** is the position in descending priority. Ties are broken by gap significance, then by the number of relations the concept has, then alphabetically by id, so the order is reproducible.
+**Rank** is the position in descending priority. Since v1.16, ties at equal priority are broken in this order, so the order is reproducible:
+
+1. higher gap significance first;
+2. **circular entries last**: an entry tagged ⇔ RH, labelled Restatement, or whose name or plain statement says it is RH (for example “RH ⇔”, “which is RH”, “equivalent to RH”, “ℚ: RH”). For such an entry, progress means proving RH directly;
+3. **no-go controls next to last**: entries on the no-go / refuted axis, since a control is a test, not a route;
+4. more relations first;
+5. alphabetically by id.
+
+Keys 2 and 3 act only inside a tie and change no priority value. This supersedes the earlier rule (gap significance, then relation count, then id), used up to v1.15. There are no manual exceptions: the rank-1 pin used from v1.5 to v1.15 was removed in v1.16 after external review.
 
 ## The diagnostic quadrants
 

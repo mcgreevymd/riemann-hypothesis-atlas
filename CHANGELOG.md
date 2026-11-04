@@ -1,5 +1,14 @@
 # Changelog — The RH Atlas
 
+## v1.16 — 3 Nov 2026
+
+- 869 concepts (+8) and 1771 typed relations (+9). Folds one set of research notes (Hecke-tree quotients, Gross CM periods, thermodynamic positivity criteria).
+- Manual rank-1 pin removed (kept since v1.5). The ferromagnetic Φ / Lee–Yang entry is unchanged in content, with a demotion note; it now sits at rank 289 (priority 0.380).
+- New tie-break inside equal priority: circular entries last, no-go controls next to last, then relation count, then id. Rank 1 is now `kahler_triple_polarization` [Theorem, 0.720]. No priority values changed.
+- scores.md: states the v1.16 tie-break order and that it supersedes the earlier rule.
+- README: new top section (rank 1, the formula, truth vs progress probability, top 10 with sig and prob, demotion criteria); pin wording and the top-15 table updated.
+- RH is not proved.
+
 ## v1.15 — 3 Nov 2026
 
 - 861 concepts (+72) and 1762 typed relations (+78). Folds eight sets of research notes of 3–4 Nov 2026 (cohen 6, weight12 6, phase 10, classgroup 10, weitzenbock 7, jacobi_fv 7, no_ghost 15, lee_yang 10 concepts) and one new entry, the refined missing piece. (1) The no-ghost theorem and ζ (15): RH ⇔ no negative-norm states of the scaling-reduced Weil form; II₁,₁ ↔ pole pair; transverse positivity = slot 2; V♮ as the FLM ℤ/2 orbifold (2²⁴ fixed points, 2¹² twisted ground states, 196884 = 98580 + 98304); coisotropic reduction = the Goddard–Thorn quotient; DDF and c = 26 gaps; Jacobi parabolas D = 3, 4 = cone points; T_p ≡ F + V mod p. (2) Weitzenböck / BKN (7): sharp but circular split; curvature is Γ data; Davenport–Heilbronn’s negatives sit at the off-line ordinate; no first-order operator. (3) Eichler–Zagier U_l, V_l, T_p (7): identities verified; V_p*V_p factorization; edge-only positivity; no F/V pair; Davenport–Heilbronn invisible on the Jacobi side. (4) Weight 12 (6): index 691, Hecke congruence module, ⟨Δ,Δ⟩ = 1.03536205680432…e−6, period ratio 691/2¹⁰. (5) Cohen’s H(r, N) (6): constant terms ζ(1−2r), 691 at the boundary rung. (6) Riemann–Siegel phase (10): ±π/8 by parity; off-line zeros only in S(t). (7) Class groups and units (10): narrow vs wide class number, B₁₂ boundary objects, Mazur–Wiles squeeze vs positivity. (8) Lee–Yang Φ bridge test (10): single-spin Lee–Yang for Φ is RH, many-spin ferromagnetic Lee–Yang adds nothing; Davenport–Heilbronn’s off-line zero is pulled onto the axis by coupling; GHS, moment, Turán, Jensen and cumulant tests are blind; no λ-invariant condition implies Lee–Yang; correction: Newman 1976 does not state RH ⇔ Lee–Yang for Φ (4 entries annotated). 
