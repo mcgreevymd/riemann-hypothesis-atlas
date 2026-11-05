@@ -2,38 +2,74 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.16 · 3 Nov 2026
+Version 1.17 · 4 Nov 2026
 
-## Rank 1 (new in v1.16): a polarization for ζ
+## Most significant findings (v1.17)
 
-> **The Riemann Hypothesis is not proved.** v1.16 removes the manual rank-1 pin. Rank 1 is now set by the atlas’s own computed priority, with a documented tie-break. Nothing here is a new theorem.
+> **The Riemann Hypothesis is not proved.** These are the results of the latest round of research notes and external review that most sharpen the target, ordered by research-note score (0.6·significance + 0.4·probability of progress, on 0–4). This list is editorial; the computed atlas ranking is unchanged in method (see “Rank 1” below).
 
-**Rank 1 [Theorem; priority 0.720 = 0.6·0.80 + 0.4·0.60].** *Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved.* A positive form on phase space needs a choice of complex structure on top of the symplectic pairing; over finite fields the polarization provides it, for ζ it is missing. A positive form on phase space is extra data beyond the symplectic pairing ω: a compatible complex structure J with g = ω(·, J·) > 0. For an abelian variety this is the polarization (Riemann form E with E(ix, x) > 0), and it makes the Rosati involution positive. Over 𝔽_q, Frobenius/√q is elliptic and preserves the positive norm form m² + amn + qn² exactly when a² < 4q, which is the Riemann Hypothesis for the curve. For ζ the analogous J is not known. That missing J is the transverse positive space H₊ of the missing-piece statement below, read as a polarization.
+| # | finding | label · score | what it says |
+|---|---|---|---|
+| 1 | **Euler product ⇔ Hecke eigenform is the only ζ-vs-Davenport–Heilbronn discriminator found.** [entry](ATLAS.md#euler-iff-hecke-dh-not-eigen) | Theorem 3.50 | Davenport–Heilbronn is a fixed combination of L(χ) and L(χ̄) mod 5 and is not a Hecke eigenform; the free energy of the prime comb is additive over primes exactly for an Euler product. Any forcing mechanism must use multiplicativity. |
+| 2 | **The Weil form splits as the pole plane (signature (1,1)) plus its complement.** [entry](ATLAS.md#haynsworth-pole-plane-split-windows) | Theorem 3.50 | Scaling acts on the pole plane as a Lorentz boost. ζ’s complement is ≥ 0 in every window tested; Davenport–Heilbronn has two negative directions from L ≈ 3.8, half its four off-line zeros. “Complement ≥ 0 for all L” is RH itself. |
+| 3 | **Over 𝔽_q, positivity of point counts does not force RH; the surface does.** [entry](ATLAS.md#beurling-curve-fakes) | Numerical 3.50 | Davenport–Heilbronn-type fakes built from two genuine L-polynomials over 𝔽₉₇ keep the functional equation and positive, integral, subfield-monotone point counts (m ≤ 40), yet have roots off the circle (25×25 Toeplitz λ_min down to −2·10²²). What forces RH for curves is the Hodge index on C×C. |
+| 4 | **RH for Fermat curves is a degree-one phenomenon.** [entry](ATLAS.md#degree-one-accident) | Theorem 3.40 | Each Hecke-character L-polynomial of a Fermat curve over 𝔽_q is 1 − J·T, and |J| = √q follows from the Gauss-sum identity |g|² = q. Unitarity pins one root. For ζ the same unitarity (|ε| = 1) also holds for Davenport–Heilbronn, so phase arguments are ghost-blind. |
+| 5 | **Each prime extends positivity by exactly its own support.** [entry](ATLAS.md#semilocal-edges-track-next-prime) | Numerical 3.40 | Semilocal Weil forms stay positive up to L ≈ 0.748 / 1.121 / 1.629 / 2.416 for S = ∅ / {2} / {2,3} / {2,3,5,7}, against log of the next prime 0.693 / 1.099 / 1.609 / 2.398. Davenport–Heilbronn has no such tower. The step mechanism is open. |
+| 6 | **The Faltings–Hriljac template: local terms indefinite, global sum positive.** [entry](ATLAS.md#mechanism-global-object) | Open 3.20 | For elliptic curves the Néron local terms are indefinite at every place and only their sum (the canonical height) is positive, by the Hodge index. ζ has the local terms and the product formula (the explicit formula); it lacks the points and the Tate limit. Truncated Euler sums freeze; they do not converge to a height. |
+| 7 | **There is no uniform gap, so positivity must come from an identity.** [entry](ATLAS.md#margins-force-identity) | Heuristic 3.00 | ζ’s own smallest eigenvalue closes doubly exponentially (2.31·10⁻¹⁷ at W = 1.6, 2.38·10⁻²⁹ at W = 2), as does the Schur complement. No domination argument can work; the positive part must be a norm by construction. |
+| 8 | **Signature, not determinant, is the invariant.** [entry](ATLAS.md#signature-not-det-three-ways) | Restatement 2.90 | The CM height (discriminant and determinant), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson: the determinant sees only parity, the signature sees the ghost. |
 
-**Two probabilities, kept apart.** The score has a *truth* part and a *progress* part. sens is the chance that the statement holds for ζ (for a Theorem it is 1). prob (tractability) is the chance that work on the entry gives provable progress. **The ranking uses prob**, together with sig; it does not rank by how likely RH is.
+## The refined missing piece (v1.17)
 
-**Formula, exactly as computed.** priority = 0.6·sig + 0.4·prob, with sig = gs·√(sens·spec) and prob = tractability. gs = 1.0 for a missing-piece entry, 0.8 next to one, 0.5 at distance two, 0.2 otherwise; sens (does it hold for ζ) is 1.0 for Theorem, Cited, Numerical, Restatement, Open and Conjecture, 0.7 for Heuristic, 0.6 for Analogy; spec (does it fail for the fakes) is 1.0 if ghost-sensitive or ⇔ RH, 0.05 if ghost-blind, else 0.5; prob is 0.25 for missing-piece entries, 0.2 for Open and Conjecture, otherwise Numerical 0.7, Theorem 0.6, Cited 0.6, Heuristic 0.5, Analogy 0.4, Restatement 0.3.
+[![The refined missing piece](figures/hero_v117/refined_missing_piece.png)](figures/hero_v117/refined_missing_piece.png)
 
-**Why this entry, and why the order changed.** 11 entries tie at 0.720 (gs 0.8, sens 1, spec 1, prob 0.6). Earlier releases broke the tie by relation count, which favours entries that are equivalent to RH. v1.16 adds two keys, applied only inside a tie and before relation count. (a) Circular entries go last: an entry tagged ⇔ RH, labelled Restatement, or whose statement says it is RH. For such an entry, progress means proving RH directly. (b) No-go controls come next to last, because a control is a test, not a route. Then relation count, then id. Four entries survive (a) and (b). The polarization entry has the most relations (13). It is also the one that names a construction aimed at the conditions the week’s evidence left open: (3) non-place-local, built from all Euler factors and Γ together; and (4) absent for Davenport–Heilbronn and Beurling systems. The tests behind this were: the Lee–Yang Φ bridge test, which left Φ a Restatement; the tree-quotient notes, where Ramanujan for a single Hecke tree is local and only the global quotient carries the content; and the external-review synthesis of the week’s figures, which recommends an Euler-product × functional-equation ablation. No priority changed; only ranks changed. No new number was introduced.
+<p align="center"><img src="figures/hero_v117/refined_missing_piece.gif" width="760" alt="Boost on the pole plane and the complement of the pole plane, ζ vs Davenport–Heilbronn"></p>
 
-**What would demote it.** It would be demoted by any of the following. (i) A proposed J or polarization for ζ that is also positive for Davenport–Heilbronn or a Beurling system (fails condition 4). (ii) One that is assembled place by place (fails condition 3). (iii) One that is shown to be equivalent to RH only, with no independent construction, which would flag it as circular. If the tie-break rule itself is rejected, the order returns to relation count, and rank 1 becomes the Weil positivity criterion.
+> **The Riemann Hypothesis is not proved.** Stated with the explicit-formula functional, following the definitions note on the arithmetic action.
 
-**Top 10 under v1.16** (sig = gs·√(sens·spec), prob = tractability; both on 0–1):
+**The functional.** S[f] = ĝ(0) + ĝ(1) − Σ_v W_v(g) = Σ_ρ ĝ(ρ): the pole pair, minus one local term per place (∞ and every prime), equals the sum over zeros (Weil’s explicit formula) [Theorem]. RH ⇔ S[f ∗ f̃] ≥ 0 on the annihilator of the pole pair [Restatement].
 
-| # | priority | concept | label | sig | prob | circular | control | relations |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 0.720 | [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization) | Theorem | 0.80 | 0.60 | no | no | 13 |
-| 2 | 0.720 | [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](ATLAS.md#frobenius-graph-lattice) | Theorem | 0.80 | 0.60 | no | no | 12 |
-| 3 | 0.720 | [Definite cup square / Krein one-liner](ATLAS.md#definite-cup-square) | Theorem | 0.80 | 0.60 | no | no | 8 |
-| 4 | 0.720 | [Davenport–Heilbronn function](ATLAS.md#davenport-heilbronn) | Theorem | 0.80 | 0.60 | no | yes | 58 |
-| 5 | 0.720 | [Weil positivity criterion](ATLAS.md#weil-positivity) | Cited | 0.80 | 0.60 | yes | no | 84 |
-| 6 | 0.720 | [Connes trace formula](ATLAS.md#connes-trace) | Cited | 0.80 | 0.60 | yes | no | 15 |
-| 7 | 0.720 | [ψ(x) − x (explicit formula, deviation from the pole)](ATLAS.md#psi-minus-x) | Cited | 0.80 | 0.60 | yes | no | 13 |
-| 8 | 0.720 | [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](ATLAS.md#two-verschiebungs-dual-vs-adjoint) | Theorem | 0.80 | 0.60 | yes | no | 13 |
-| 9 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | 0.80 | 0.60 | yes | no | 12 |
-| 10 | 0.720 | [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](ATLAS.md#kahler-identities-foliated) | Theorem | 0.80 | 0.60 | yes | no | 10 |
+**The pole plane.** The pole term is 2 Re(u v̄): a plane of signature (1,1), a Minkowski plane on which scaling acts as a Lorentz boost [Restatement 3.4]. Everything else is its complement [Theorem 3.5 (Haynsworth)].
 
-**The former rank 1.** The ferromagnetic Φ / Lee–Yang entry keeps its place in the atlas and its statement. Its computed priority is 0.380 [Open], and it now sits at rank 289. The pin had been kept since v1.5. It was removed after the Lee–Yang Φ bridge test. That test showed that single-spin Lee–Yang for Φ is RH itself, that the many-spin version adds nothing, and that the GHS and moment tests are passed by Davenport–Heilbronn too.
+**What is missing [Conjecture 2.6].** A reason the complement is ≥ 0 that (1) holds by construction, as a norm, since ζ’s own margin closes doubly exponentially and no uniform gap exists; (2) sees the Euler product, the only ζ-vs-Davenport–Heilbronn discriminator found; (3) is global, since every local term is indefinite on its own; (4) fails for Davenport–Heilbronn and Beurling systems.
+
+**The template.** For curves over number fields the Faltings–Hriljac theorem does exactly this: indefinite Néron local terms, a Tate limit, the product formula, divisors of degree 0, and the Hodge index forcing the global sum ≥ 0. For ζ the local terms and the product formula exist; the points (Deninger’s conjectured cohomology) and the limit do not.
+
+**The barrier.** Certified finite-window positivity runs into the Zhu barrier T₁ = 2πe^{A} (A = Σ|prime weights| in the window): below it the prime comb has dense wells, so positivity there is a band-limited non-concentration statement, equivalent to the target [Restatement 3.3].
+
+*Figure panels:* (a) the pieces of S[f]; (b) the pole plane with boost hyperbolas; (c) smallest eigenvalue on the complement, ζ vs Davenport–Heilbronn [Numerical]; (d) the Faltings–Hriljac template vs ζ; (e) additivity defect of the prime-comb free energy [Theorem + Numerical]; (f) Fermat cubic over 𝔽₉₇ vs fakes [Numerical]. Colours: F red, V green, light cone orange, Sato–Tate violet, ghost/Davenport–Heilbronn blue.
+
+## A global statement about local places (v1.17)
+
+**[ξ as the global product over places](ATLAS.md#xi-global-product-over-places) [Cited: Tate 1950].** Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) is a product of one local factor per place. At ∞, π^{−s/2}Γ(s/2) is the partition function of a continuum; at each prime, (1 − p^{−s})^{−1} is a single bosonic mode at energy log p. The functional equation Λ(s) = Λ(1 − s) comes from Poisson summation on the adèles and the product formula ∏_v |x|_v = 1.
+
+**What this does and does not give.** It makes the ingredients thermodynamic: one partition function per place, and the Euler product is the extensivity of the free energy. It does not make the positivity thermodynamic. The functional equation and the Γ factor are shared by Davenport–Heilbronn, and no local factor is positive on its own. The missing statement would be a global positivity about all local places together, of the same kind as the product formula but for the Weil form.
+
+## What does not force positivity (v1.17)
+
+> Each row was tested against ζ and Davenport–Heilbronn (DH). “Circular” means the statement is equivalent to RH or uses zero locations.
+
+| mechanism | result | verdict |
+|---|---|---|
+| Determinant / discriminant | sign det W = (−1)^{n₋}: parity only | DH-blind [Theorem 3.2] |
+| Heat capacity, entropy, Lévy measure | Weil kernel = x·Lévy measure at β = ½ (literal), but the form is not a relative entropy; Re Λ′/Λ > 0 at β = 1.05, 1.5 for ζ and DH alike | edge-only [Theorem 3.5, Numerical 3.3] |
+| KMS, passivity, Tolman | passivity ⇔ zero locations (Lagarias) | circular [Restatement 2.0] |
+| Bost–Connes | Hagedorn β_H = 1; the Weil form lives at β = ½, below the phase transition | no positivity supplied [Theorem 3.2] |
+| Spinor / Witten | Lichnerowicz pieces indefinite; Witten index 1/ζ(β); (1,1) splits identical for ζ and DH | content-free [Theorem 2.0–2.6] |
+| Ruppeiner geometry | (β, hΩ) family: ζ positive-definite (R ≈ +0.22–0.26), χ₋₄ negative-definite, DH indefinite | stability ≠ RH [Numerical 3.2] |
+| Reflection positivity (Osterwalder–Schrader) | pole reflection-positive (rank 2), archimedean term exactly anti-RP, primes indefinite; the total is not RP even under RH | not a mechanism [Theorem 3.3] |
+| Cramér complete monotonicity | RH ⇔ V(iu) = Σ e^{−γu} completely monotone; finite-order prime-side tests (n ≤ 12) do not separate ζ and DH | circular [Restatement 3.2] |
+| Floor depth | order ζ ≪ χ₋₄ < DH (2.4·10⁻²⁹, 7.4·10⁻⁷, 4.3·10⁻⁵ at W = 2) follows conductor and first zero (γ₁ = 14.13, 6.02, 5.09) | bookkeeping, RH-blind [Numerical 3.4] |
+| ζ / DH signature “swap” | basis noise plus the rank-2 shift of the pole term (Weyl interlacing, 0 ≤ Δsig ≤ 4); a Hodge reading scores 1.2 | not structural [Theorem 3.3] |
+| Positive point counts (𝔽_q) | fakes keep the functional equation and positive integral counts, yet fail RH | insufficient [Numerical 3.5] |
+| Truncated Euler energies | indefinite until P > e^L, then frozen; not a Tate limit | no limit [Numerical 3.2] |
+| Domination / uniform gap | ζ’s margin closes doubly exponentially | impossible [Numerical 3.4] |
+
+<p align="center"><a href="figures/v117/dh_floor.png"><img src="figures/v117/dh_floor.png" width="430" alt="Floor depth"></a> <a href="figures/v117/cm_swap.png"><img src="figures/v117/cm_swap.png" width="430" alt="Cramér CM and the signature swap"></a><br><sub>Left: floor depth orders by conductor and first zero, not by RH. Right: finite-order complete monotonicity for ζ and DH; the ζ/DH signature “swap” is the pole’s rank-2 shift plus basis noise.</sub></p>
+
+## Rank 1 (computed priority, since v1.16)
+
+**[Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization)** [Theorem; priority 0.720]. A positive form on phase space needs a choice of complex structure on top of the symplectic pairing; over finite fields the polarization provides it, for ζ it is missing. Rank 1 is set by the computed priority (0.6·sig + 0.4·prob) and the tie-break in [scores.md](scores.md): inside a tie, circular entries and no-go controls go last, then relation count. The former pinned Φ / Lee–Yang entry sits at rank 310 (priority 0.380). It would be demoted by a proposed polarization for ζ that is also positive for Davenport–Heilbronn or a Beurling system, one assembled place by place, or one only shown equivalent to RH. RH is not proved.
 
 ## The missing piece (refined in v1.15)
 
@@ -67,6 +103,7 @@ Version 1.16 · 3 Nov 2026
 | **Statistical mechanics / thermodynamics** (primon gas, Lee–Yang / Newman Φ, de Bruijn–Newman, contact / Legendre) | the former rank-1 entry (pin removed in v1.16): a ferromagnetic / Lee–Yang reason for the global cancellation; Fock space of unique factorization | condition (1); slot 2 candidate | primon Fock space 3.4 [Theorem]; former rank-1 Φ entry [Open, priority 0.380, now rank 289] | Φ > 0 holds for Davenport–Heilbronn too (fails (4)); per-prime ferromagnetic signs refuted; Newman class 𝒫 fails; real-field thermodynamics is RH-blind; Lee–Yang Φ test done: single-spin = RH (Restatement 3.4), many-spin adds nothing, GHS/moments blind (3.1/3.4), no λ-invariant local condition suffices (Theorem 3.7); ferromagnetic coupling heals DH like positive de Bruijn time (3.3). |
 | **String / VOA no-ghost** (Goddard–Thorn, Borcherds, the V♮ orbifold) | the shape of the missing piece: constraint + Lorentzian II₁,₁ + positive transverse factor ⇒ no ghosts | slot 1 (exists), slot 2 (missing); conditions (2), (4) via DDF and c = 26 | RH ⇔ no-ghost 3.40 [Restatement]; II₁,₁ ↔ pole pair 3.20 [Analogy] | no DDF analogue (Open 2.28), no c = 26 analogue (Open 1.76); no-ghost transports positivity, it does not create it |
 | **Classical mechanics / geometry** (Jacobi constant, Lagrange points, Kepler, light cone / Hodge-index skeleton) | dictionaries: elliptic / parabolic / hyperbolic ⇔ a² vs 4q; the first-class constraint surface is coisotropic and its reduction is the Goddard–Thorn quotient | slot 1 frame; interpretation of conditions (2), (4) | coisotropic reduction 3.0 [Theorem]; zero velocity ↔ null states 2.2 [Analogy] | analogies only; ghost-blind (they see a ghost only when it arrives) |
+| **Function fields / Fermat curves** (Weil 1949 Jacobi sums, Hasse–Davenport, Bombieri–Stepanov, FLT / R = T) | RH over 𝔽_q is literal: &#124;J&#124; = √q from &#124;g&#124;² = q, one root per Hecke-character L-polynomial; Davenport–Heilbronn-type fakes over 𝔽_q keep the functional equation and positive integral point counts yet fail RH | condition (4) located: the surface (Hodge index on C×C), not counting positivity | Numerical 3.5; Theorem 3.4 | over ℚ the Fermat L-functions are Hecke L-functions whose RH is as open as ζ’s; R = T forces automorphy, which ζ already has |
 
 ## Latest results (v1.15)
 
@@ -200,6 +237,8 @@ Version 1.16 · 3 Nov 2026
 <tr><td width="50%" valign="top"><a href="figures/heat_flow_energy/rodgers_tao_sundman_clock.png"><img src="figures/heat_flow_energy/rodgers_tao_sundman_clock.png" width="420" alt="The Rodgers–Tao energy is an exact Sundman clock with speed limit 4, but monotone for every real configuration"></a><br><sub>The Rodgers–Tao energy is an exact Sundman clock with speed limit 4, but monotone for every real configuration; the near-collision law separates Davenport–Heilbronn from ζ. <b>[Theorem + Numerical · 4.4]</b></sub></td><td width="50%" valign="top"><a href="figures/hardy_constant/hardy_constant_primes.png"><img src="figures/hardy_constant/hardy_constant_primes.png" width="420" alt="A Hardy constant for the primes is window positivity restated"></a><br><sub>A Hardy constant for the primes is window positivity restated: ζ’s margin closes (critical), Davenport–Heilbronn crosses 1 near ℓ = 4–5, and local constants do not glue. <b>[Theorem + Numerical · 3.9]</b></sub></td></tr>
 <tr><td width="50%" valign="top"><a href="figures/sundman_clock/sundman_levi_civita_clock.png"><img src="figures/sundman_clock/sundman_levi_civita_clock.png" width="420" alt="Sundman/Levi-Civita clock"></a><br><sub>Sundman/Levi-Civita clock: the F/V collision becomes a turning point and real τ bounces; positivity is the clock staying real, i.e. RH restated. <b>[Theorem · 4.7 (circular as a proof route, Restatement 4.4)]</b></sub></td><td width="50%" valign="top"><a href="figures/sundman_clock/two_kepler_degenerations.png"><img src="figures/sundman_clock/two_kepler_degenerations.png" width="420" alt="Two Kepler degenerations"></a><br><sub>Two Kepler degenerations: F = V is the circular orbit (e = 0), not the Levi-Civita centre collision (e = 1); both share the square-root map. <b>[Theorem · 4.4]</b></sub></td></tr>
 </table>
+
+> **New in v1.17** (see [CHANGELOG.md](CHANGELOG.md)): the front matter is reorganised. The most significant findings come first, then the refined missing piece with a new figure and animation, a thread on ξ as the global product over places, and a table of mechanisms that do not force positivity. Nineteen sets of research notes and external review are folded in (133 concepts, 99 relations): 1002 concepts, 1870 typed relations. No existing priority changed; rank 1 is unchanged. RH is not proved.
 
 > **New in v1.16** (see [CHANGELOG.md](CHANGELOG.md)): the manual rank-1 pin is removed. Rank 1 is now the polarization entry (Kähler triple ω, J, g), set by the computed priority with a documented progress tie-break; see the top section. One set of research notes on Hecke-tree quotients and thermodynamic positivity is folded in (8 concepts, 9 relations): 869 concepts, 1771 typed relations. RH is not proved.
 

@@ -1,5 +1,13 @@
 # Changelog — The RH Atlas
 
+## v1.17 — 4 Nov 2026
+
+- 1002 concepts (+133) and 1870 typed relations (+99). Folds nineteen sets of research notes (Kramers–Kronig and passivity, the Weil form with a third axis, Bost–Connes and the Lévy measure, graded primon gas, primon thermodynamics, Hodge-index signature, Faltings–Hriljac, CM heights and discriminants, Legendre / spinor structure, the semilocal Sonin route, the first rung, the Zhu barrier, relativistic thermodynamics, the arithmetic-action definitions, reflection positivity, the Schur test and Ruppeiner geometry, floor depth, the Cramér test, and a synthesis with a Fermat-curve test), and a new entry on ξ as the global product over places (Tate 1950).
+- README front matter reorganised: Most significant findings; the refined missing piece (new figure and animation); a global statement about local places; What does not force positivity; a short rank-1 section. Older material follows. New perspective row: function fields / Fermat curves.
+- Research-note labels normalised to the atlas vocabulary (first label word; “circular” or “RH-equivalent” → Restatement; definitions → Restatement; Theorem/Heuristic → Heuristic). One relation whose target is not in the atlas was dropped.
+- Ranking recomputed with the v1.16 rule; no existing priority changed; rank 1 is still `kahler_triple_polarization`.
+- RH is not proved.
+
 ## v1.16 — 3 Nov 2026
 
 - 869 concepts (+8) and 1771 typed relations (+9). Folds one set of research notes (Hecke-tree quotients, Gross CM periods, thermodynamic positivity criteria).
