@@ -2,7 +2,21 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.17 · 4 Nov 2026
+Version 1.18 · 6 Nov 2026
+
+## Latest results (v1.18)
+
+> **The Riemann Hypothesis is not proved.** Night of 5–6 Nov 2026. Rank 1 is unchanged: `kahler_triple_polarization`. What is still missing over ℚ is a zeros-blind arithmetic pair (ω, J) whose compatible metric g reproduces the Weil form W_L. Open ~1.8.
+
+**Dictionary.** The Weil window form on the pole annihilator is a Morse-index / discriminant criterion (a restatement, not a sign source). On mixes in S₂(Γ₀(23)) the discriminant wall Σ is a U-curve with a fold and a ghost-recombination branch switch; Levinson’s 1 − |k_M|² is a local defining function of that wall. Over 𝔽_q, Levinson / PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product. An alias lock splits the analytic half (U) — functional equation, Toeplitz structure, Kramers–Kronig — from the sign half (P) — Hodge, Rosati, a compatible J, with Källén–Lehmann as the name of the output.
+
+**No combinatorial toy certificate.** On the genus-1 Beurling pencil, Waterhouse occupancy against integer fakes (931 genuine / 72 interior / 312 exterior, across 39 prime powers) shows that face-incidence of the Hasse walls does not certify a curve. The 72 interior gaps sit inside formal Q = m² − tmn + qn² ≽ 0, with Morse index 0 and a compatible J, and still are not curves. Maxwell–Cremona on the discretized Σ graph is too thin to lift. Wall rigidity is a shadow of (P), not a source.
+
+**Overnight packaging.** (P) is the symmetric partner g of a skew form ω, glued by a compatible J via g(u, v) = ω(u, Jv). The Weil form W_L is that g on ker P, not the canonical symplectic 2-form (a name collision with Weil–Petersson / phase-space area). An occupied lattice does not force holes; a positive metric forces topological holes to sit as harmonic classes in a Euclidean chamber. A CR3BP dictionary — Hessian of U_eff, Morse index, Hill zero-velocity pinches — is the classical shape of that chamber and its valve. Zeros-blind input is the data package “masses + force law,” not a literal equation. Cusp-form vanishing is not the geometric cusp; a residual congruence in Spec T is a pinch-twin of Σ.
+
+<p align="center"><a href="figures/v118/figA_beurling_chamber.png"><img src="figures/v118/figA_beurling_chamber.png" width="860" alt="Beurling chamber versus occupancy"></a><br><img src="figures/v118/figA_beurling_chamber.gif" width="760" alt="Beurling chamber occupancy animation"><br><sub>Beurling chamber versus occupancy. Formal Q ≽ 0 is the elliptic chamber of the Hasse walls, a shadow of (P), not a certificate of a curve. Interior Waterhouse gaps (red crosses), including the normalized gaps at k = 0 and k = ±1/2, sit inside the chamber and still are not curves. <b>The Riemann Hypothesis is not proved.</b> Animation: <a href="figures/v118/figA_beurling_chamber.gif">GIF</a> · <a href="figures/v118/figA_beurling_chamber.mp4">MP4</a> · <a href="figures/v118/figA_beurling_chamber.pdf">PDF</a>.</sub></p>
+
+<p align="center"><a href="figures/v118/figB_kahler_zvc.png"><img src="figures/v118/figB_kahler_zvc.png" width="860" alt="Kähler triple and a Hill zero-velocity pinch"></a><br><img src="figures/v118/figB_kahler_zvc.gif" width="760" alt="Kähler triple and Hill-valve animation"><br><sub>Kähler triple: g(u, v) = ω(u, Jv). W_L is that compatible metric on ker P, not the canonical symplectic form. Right: a Hill zero-velocity pinch as the classical shape of the Hasse / Σ valve. <b>The Riemann Hypothesis is not proved.</b> Animation: <a href="figures/v118/figB_kahler_zvc.gif">GIF</a> · <a href="figures/v118/figB_kahler_zvc.mp4">MP4</a> · <a href="figures/v118/figB_kahler_zvc.pdf">PDF</a>.</sub></p>
 
 ## Most significant findings (v1.17)
 
@@ -69,7 +83,7 @@ Version 1.17 · 4 Nov 2026
 
 ## Rank 1 (computed priority, since v1.16)
 
-**[Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization)** [Theorem; priority 0.720]. A positive form on phase space needs a choice of complex structure on top of the symplectic pairing; over finite fields the polarization provides it, for ζ it is missing. Rank 1 is set by the computed priority (0.6·sig + 0.4·prob) and the tie-break in [scores.md](scores.md): inside a tie, circular entries and no-go controls go last, then relation count. The former pinned Φ / Lee–Yang entry sits at rank 310 (priority 0.380). It would be demoted by a proposed polarization for ζ that is also positive for Davenport–Heilbronn or a Beurling system, one assembled place by place, or one only shown equivalent to RH. RH is not proved.
+**[Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](ATLAS.md#kahler-triple-polarization)** [Theorem; priority 0.720]. A positive form on phase space needs a choice of complex structure on top of the symplectic pairing; over finite fields the polarization provides it, for ζ it is missing. Rank 1 is set by the computed priority (0.6·sig + 0.4·prob) and the tie-break in [scores.md](scores.md): inside a tie, circular entries and no-go controls go last, then relation count. The former pinned Φ / Lee–Yang entry sits at rank 321 (priority 0.380). It would be demoted by a proposed polarization for ζ that is also positive for Davenport–Heilbronn or a Beurling system, one assembled place by place, or one only shown equivalent to RH. v1.18 packaging leaves this entry unchanged: W_L is the compatible g in g(u, v) = ω(u, Jv), not the canonical symplectic form. RH is not proved.
 
 ## The missing piece (refined in v1.15)
 
@@ -609,12 +623,12 @@ A concept ranks high only if it is both true for ζ and false for the fakes. The
 | 9 | 0.720 | [Lagarias/Hinkkanen criterion](ATLAS.md#lagarias) | Cited | RH-sharp |
 | 10 | 0.720 | [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](ATLAS.md#kahler-identities-foliated) | Theorem | RH-sharp |
 | 11 | 0.720 | [Primitive part V₀ = U^⊥](ATLAS.md#primitive-part) | Theorem | RH-sharp |
-| 12 | 0.700 | [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](ATLAS.md#mp-flow-h1) | Open | RH-sharp |
-| 13 | 0.700 | [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a &#124;·&#124;²)](ATLAS.md#mp-castelnuovo) | Open | RH-sharp |
-| 14 | 0.700 | [Missing: a Néron–Severi strictly larger than U containing the Frobenius classes Ψ_λ](ATLAS.md#mp-ns-psi) | Open | RH-sharp |
-| 15 | 0.700 | [Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)](ATLAS.md#mp-d8) | Open | RH-sharp |
+| 12 | 0.720 | [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](ATLAS.md#ff-levinson-parcor-hodge-bound) | Theorem | RH-sharp |
+| 13 | 0.700 | [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](ATLAS.md#mp-flow-h1) | Open | RH-sharp |
+| 14 | 0.700 | [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a &#124;·&#124;²)](ATLAS.md#mp-castelnuovo) | Open | RH-sharp |
+| 15 | 0.700 | [Missing: a Néron–Severi strictly larger than U containing the Frobenius classes Ψ_λ](ATLAS.md#mp-ns-psi) | Open | RH-sharp |
 
-Ties at the same priority are broken by gap significance; then (since v1.16) circular entries (⇔ RH, Restatement, or stated as RH) go last and no-go controls next to last; then by number of relations (counted in this public edition); then alphabetically by id. The full rule is in scores.md.
+Ties at the same priority are broken by gap significance; then (since v1.16) circular entries (⇔ RH, Restatement, or stated as RH) go last and no-go controls next to last; then by number of relations (counted in this public edition); then alphabetically by id. The full rule is in scores.md. v1.18 does not reorder an existing tie: the new Hodge/PARCOR theorem has priority 0.720 and is placed after the eleven entries already in that tie, so rank 1 is unchanged.
 
 ## The ten missing pieces
 
@@ -646,7 +660,7 @@ Each is stated precisely in [ATLAS.md](ATLAS.md#missing-pieces), with what is pr
 
 ## How to cite
 
-J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.14 (3 Nov 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
+J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Mathematics and Physics That Touch the Riemann Hypothesis, Classified by Positivity, Sign and Unitarity*, version 1.18 (6 Nov 2026), https://github.com/mcgreevymd/riemann-hypothesis-atlas
 
 ## Files
 
@@ -658,7 +672,7 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 | `scores.md` | The scoring method behind the ordering. |
 | `CHANGELOG.md` | Version history. |
 | `build_public_md.py` | Regenerates `ATLAS.md` from `atlas.json`: `python3 build_public_md.py`. |
-| `figures/` | `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/`, `lemma184/`, `lemma185/` (figures from TAA Lemmas 181, 182, 184 and 185), `narrowed_missing_piece/` (research-note figures for the v1.7 narrowing), `heat_flow_energy/`, `nc_torus_fv/`, `hardy_constant/` and `sundman_clock/` (research-note figures for v1.8, shown in the “Previous results (v1.8)” gallery near the top), `regularized_xp/` (research-note figures for v1.9, shown in the “Previous results (v1.9)” gallery near the top), `weil_trichotomy/`, `librations_krein/`, `positivity_cup/` , `relativity_shear/`, `sos_morse/` and `two_walls/` (research-note figures for v1.10, shown in the “Previous results (v1.10)” gallery near the top), `hero_v111/` (the v1.11 headline figure: PNG, GIF, MP4), `krein_index/`, `legendre_jacobi/`, `discriminant_space/`, `euler_routh/`, `archimedean_cone/` and `thermo_dbn/` (research-note figures for v1.11, shown in the “Previous results (v1.11)” gallery near the top; the v1.11 headline figure stays at the top), `normalizations/` and `trojans_drag/` (research-note figures for v1.12, shown in the “Previous results (v1.12)” gallery near the top), `hero_v113/` (the v1.13 headline figure: PNG, GIF and MP4, at the top), `lorentzian_frame/`, `function_field_gram/` and `lrl_jacobi/` (research-note figures for v1.13, shown in the “Previous results (v1.13)” gallery near the top), `hero_v114/` (the v1.14 headline figure: PNG, GIF and MP4, at the top), `weight_half/`, `maass_selberg/` and `window_flow/` (research-note figures for v1.14, shown in the “Latest results (v1.14)” gallery at the top). |
+| `figures/` | `v118/` (v1.18 Beurling chamber and Kähler / Hill-valve figures: PNG, PDF, GIF, MP4), `animation_labelled/` (concept-colour set), `animation_detailed/` (detailed-annotation set), `kk/` (Kramers–Kronig figure), `fixed_point/` (eigenvalue plane vs upper half-plane), `flip45/` (the 45° flip), `new_idea_map/` (brainstorm map and the abut animation), `allowed_vs_aligned/` (Frobenius-angle figures and the θ animation), `lemma181/`, `lemma182/`, `lemma184/`, `lemma185/` (figures from TAA Lemmas 181, 182, 184 and 185), `narrowed_missing_piece/` (research-note figures for the v1.7 narrowing), `heat_flow_energy/`, `nc_torus_fv/`, `hardy_constant/` and `sundman_clock/` (research-note figures for v1.8, shown in the “Previous results (v1.8)” gallery near the top), `regularized_xp/` (research-note figures for v1.9, shown in the “Previous results (v1.9)” gallery near the top), `weil_trichotomy/`, `librations_krein/`, `positivity_cup/` , `relativity_shear/`, `sos_morse/` and `two_walls/` (research-note figures for v1.10, shown in the “Previous results (v1.10)” gallery near the top), `hero_v111/` (the v1.11 headline figure: PNG, GIF, MP4), `krein_index/`, `legendre_jacobi/`, `discriminant_space/`, `euler_routh/`, `archimedean_cone/` and `thermo_dbn/` (research-note figures for v1.11, shown in the “Previous results (v1.11)” gallery near the top; the v1.11 headline figure stays at the top), `normalizations/` and `trojans_drag/` (research-note figures for v1.12, shown in the “Previous results (v1.12)” gallery near the top), `hero_v113/` (the v1.13 headline figure: PNG, GIF and MP4, at the top), `lorentzian_frame/`, `function_field_gram/` and `lrl_jacobi/` (research-note figures for v1.13, shown in the “Previous results (v1.13)” gallery near the top), `hero_v114/` (the v1.14 headline figure: PNG, GIF and MP4, at the top), `weight_half/`, `maass_selberg/` and `window_flow/` (research-note figures for v1.14, shown in the “Latest results (v1.14)” gallery at the top). |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0), full legal text. |
 | `q.py` | Command-line query tool: `python3 q.py rosati`, `python3 q.py --axis ghost-blind`, `python3 q.py --list`, `python3 q.py --quadrant RH-sharp`, `python3 q.py --missing`. Python 3, standard library only. |
 
@@ -666,4 +680,4 @@ J. W. McGreevy, *The RH Atlas: A Systematic Accounting of the Structures in Math
 
 © 2026 J. W. McGreevy. Formalization by Grok Bot.
 
-The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.14, CC BY 4.0”.
+The RH Atlas (text, data and figures) is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE). You may share and adapt it for any purpose if you give appropriate credit, link to the license, and indicate if changes were made. Suggested credit: “J. W. McGreevy, The RH Atlas, v1.18, CC BY 4.0”.
