@@ -1,0 +1,146 @@
+===== charge1912/checks1912.py =====
+(a) |F|^2-(|F+|^2+|F-|^2)= 0  F∧F/vol-(|F+|^2-|F-|^2)= 0
+    |F|^2 - |F∧F|/vol = 2|F∓|^2 >=0: 0 0
+(b) real(1,1): [f12, f24, -f23, f23, f24, f34]  primitive α: *α+α = [0, 0, 0, 0, 0, 0]  α∧α/vol+|α|^2 = 0
+(c) Hess at BPS =2J^TJ: True  eig [12, 2, 0]
+    non-BPS crit pt origin of (x^2+y^2-1)^2: Hess eig [-4]
+(d) P1xP1: H.D= 0  D^2= -2  signature eig [-1, 1]
+    Bl P2: D=2H+E D^2= 3  D.E= -1  (not ample by Nakai)
+(e) <h,v>-perp Gram of Δ,Γ: Matrix([[-2, -a], [-a, -2*p]])  det= -a**2 + 4*p
+    p,a= (5, 2)  eig [-10.4721, -1.5279]
+    p,a= (5, 4)  eig [-11.6569, -0.3431]
+    p,a= (5, 5)  eig [-12.4031, 0.4031]
+exit:0
+===== vir1914/checks1914.py =====
+norm L_-1|h> = 2*h  expected 2*h
+norm L_-2|h> = c/2 + 4*h  expected c/2 + 4*h
+norm L_-3|h> = 2*c + 6*h  expected 2*c + 6*h
+level-2 Gram Matrix([[c/2 + 4*h, 6*h], [6*h, 8*h**2 + 4*h]])  det 2*h*(2*c*h + c + 16*h**2 - 10*h)
+ h=-1 (string level 2, intercept 1): det = 2*(c - 26)
+ chi=(L_-2+3/2 L_-1^2)|-1>: norm (c - 26)/2
+ L1 chi, L2 chi coefficients: [{(-1,): 3}, {(-1,): 4*h + 2}]
+exit:0
+===== string1915/checks1915.py =====
+(1) A†A f = (-d²+W'²-W'') f : True
+(2) eig of {Q,Q†} block: {2*H - 2*Z: 1, 2*H + 2*Z: 1}  ⇒ H ≥ |Z|; BPS (H=|Z|) iff one combination Q_- annihilates
+(3) covariant level-1 norms (D=4 toy): [-1, 1, 1, 1]  transverse (i=1..D-2) all +1
+exit:0
+===== pairs1904/checks1904.py =====
+[H,S_p]-log p S_p : 1.3322676295501878e-15
+S_p*S_p - I       : 0.0
+S_pS_p* - P_p     : 0.0
+S_p*S_q - S_qS_p* : 0.0
+[X,Y]+(i/2)(I-P_p): 1.3877787807814457e-17
+[H,X]-i log p Y   : 6.661338147750939e-16
+phi_beta(P_p) vs p^-beta: 0.11106610036462303 0.1111111111111111
+[D,e^u]g + i e^u g = 0
+[H,L]-2L 0.0  [L,Lam]-H 0.0
+ample^2 2  primitive^2 -2
+exit:0
+===== obs1902/checks1902.py =====
+[Q,T_a]g - a T_a g = 0
+[D,T_a]g = 0
+[Q,D]g - i g = 0
+Weyl e^{isQ}T_a - e^{isa}T_a e^{isQ} = 0
+T_a M_xi T_-a - M_{xi e^-a} = 0
+T_a on ev_s: integrand shift factor exp(a*(s - 1/2))
+O(F)*=O(F#), F#(a)=conj F(-a): standard (convolution adjoint); real F selfadjoint iff even
+exit:0
+===== quartet1906/checks1906.py =====
+0.5 -3.33200459468 -3.33200459468 -3.33200459468
+3 -0.74424405974 -0.74424405974 -0.74424405974
+14.13 0.810214255539 0.810214255539 0.810214255539
+50 2.07412927119 2.07412927119 2.07412927119
+F(x∂+½)F^-1 = -(y∂+½): True
+D_log = -i(x∂+½): True
+exit:0
+===== paired1888/verify1888.py =====
+1 L e^{±u/2}: [0, 0]
+  L(u e^{u/2}), L(u e^{-u/2}): [1, -1]
+  symbol: -(xi^2+1/4) at s=1/2+i xi equals s(s-1)? 0
+2 [L,Q]-2d: 0
+  pole kernel killed: L_x cosh((x-y)/2)= 0
+3 Fourier Q0 on m*H minus m*i*H': 0
+4 moments f: [1.42108547e-16 5.68434189e-17]
+  supp f [-2.952  2.664]  supp g=L^-1 f [-2.914  2.632]  max|g| outside [-3.05,2.75]: 7.28583859910259e-17
+  ||L g - f||/||f|| = 1.3590379693160434e-05
+5 moments Q0 f: [-6.53551177e-08  4.17147650e-08]  vs moments Q f: [ 0.39213069 -0.25028858]
+  ||[Q0,D]f - i f||/||f|| (interior): 2.7705393301222797e-05
+6 G0(Q0f,f2)-G0(f,Q0f2): 7.974042964126182e-09  scale 0.019647627977767285
+  L2(Q0f,f2)-L2(f,Q0f2): 0.21949657336953254  scale 0.1330163883579947
+7 J^2+1: 2.220446049250313e-16  omega(.,J.)-g: 0.0  J^T Om J - Om: 2.220446049250313e-16
+  pure Gaussian: eig(V+iΩ/2) min -1.1449924795817707e-16  #zero 5 of 10
+  RS saturation on Riesz pair (q,Gq): VarQ*VarP= 53.932865639924884  (1/4)<q,p>^2= 53.93286563992487
+exit:0
+===== deform1894/verify1894.py =====
+A1 ev_s(L F) - s(s-1) ev_s(F) = 0
+A2 polar chars of translate delta_a: ev_0, ev_1 = [exp(-a/2), exp(a/2)] (boost on E/E0)
+A3 s=0: ev(f*g)=0.70029896  ev(f)ev(g)=0.70029896
+A3 s=1: ev(f*g)=0.26680109  ev(f)ev(g)=0.26680109
+A3 s=0.3: ev(f*g)=0.53841411  ev(f)ev(g)=0.53841411
+A4 sharp: ev_0(f(-u))= 2.9233550072218297  ev_1(f)= 2.9233550072218297
+A5 (1+eF)(1+eG) mod e^2 = F*epsilon + G*epsilon + 1
+A6 B(k*f,g)-B(f,k#*g)= 0.0   B sym: -8.881784197001252e-16
+C1 D^2 - 2 d1 d2 + 2 A B = 0
+C2 q=5 genuine a=1+2i,b=1-2i: max D^2 on degree-0 = -0.04447350927785577
+   q=5 ghost a=3,b=5/3 (ab=q, a+b=14/3 not integer-Hasse): max D^2 on degree-0 = 1.7158755795419243
+exit:0
+===== geometry1897/star1897.py =====
+(a) conformal-symplectic residual 0.0  [Θ,J] 0.0  Θ+Θ^T−I 0.0  Re eig [0.5 0.5 0.5 0.5 0.5 0.5]
+(b) ghost conformal-symplectic: Matrix([[0, 0], [0, 0]])
+    commutant of Θ_ghost (β≠1/2): Matrix([[x11, 0], [0, x22]])   J^2=-1 solvable? [(-I, -I), (-I, I), (I, -I), (I, I)]
+    invariant Krein form h (signature (1,1)) with Θ^T h + h Θ = h: Matrix([[0, 0], [0, 0]])
+exit:0
+===== ground1896/checks1896.py =====
+(1) c=0.0: first n with negative norm^2 going down: -1  → consistent only if ladder stops where n+c=0 (c integer, relabel ⇒ c=0)
+(1) c=0.3: first n with negative norm^2 going down: -1  → consistent only if ladder stops where n+c=0 (c integer, relabel ⇒ c=0)
+(1) c=-0.7: first n with negative norm^2 going down: 0  → consistent only if ladder stops where n+c=0 (c integer, relabel ⇒ c=0)
+(2) tr[X,P] = -0.0  vs tr(i I)= 5i ⇒ no finite CCR; truncated a,a†: [a,a†] = [ 1.  1.  1.  1.  1. -5.]
+(3) V''(0) = -8 (classically unstable at 0); E0 = -1.710355, E1 = -1.247930; u0>0: True
+    ∫|f′|²+(V−E0)|f|² = 3.331217   ∫u0²|(f/u0)′|² = 3.331164
+    constant shift H+C: E0→E0+C, eigenvectors/commutators/Hessian unchanged (trivial)
+(4) h>0: True; <f,Hf>−λ0|f|² = 124.5170848334  ground-state rep = 124.5170848334
+    with one negative jump weight: ground vector sign-definite? False
+(5) E0 has no nonzero f ≥ 0: ∫ f e^{u/2} = 0 with f ≥ 0 ⇒ f = 0 (trivial); positive vacuum must lie outside E0
+exit:0
+===== tate1905/checks1905.py =====
+U_a V_b - psi(-ab) V_b U_a = 0
+finite S C = w^-1 C S: True
+DFT: F S F^-1 = C^{+-1}: True
+(θ(g)f)(0) = f(0) ev_0 : 2.304190006177156 2.304190006177156
+(θ(g)f)^(0) = fhat(0) ev_1 : 5.52979976537304 5.529799775002593
+exit:0
+===== compat1907/checks1907.py =====
+(1) b(Ff) = swap b(f): [2.14413149594, 0.705346681380] [2.14413149594, 0.705346681380]
+(2) b(R_A f)=diag(1,A)b(f): True True
+(3) F U_A = U_{A^-1} F : True
+(4) generic  ev0,ev1= [1.62185677 3.02354051]  b(Θf)= [1.14397129 6.48283384]  diag·b= [1.14397129 6.48286844]
+(4) LG (E0)  ev0,ev1= [1.e-08 1.e-08]  b(Θf)= [0.e+00 1.e-08]  diag·b= [0.e+00 1.e-08]
+(5) FΘ_F = Θ_{F(-u)}F at y0: (-0.2008981-1.1036101j) (-0.2009057-1.1036226j)
+(6) D†HD-H = [[-h11 + h11/A, 0], [0, h22*(A - 1)]]   σ†Hσ-H = [[-h11 + h22, -z + conjugate(z)], [z - conjugate(z), h11 - h22]]  => h11=h22=0, z real: H=z[[0,1],[1,0]], eigen ±z (signature (1,1))
+(7) δ=0.1 R=10  ψ(0)=0.0e+00 ∫ψ=0.0e+00  ‖ψ-φ‖₂=0.5159
+(7) δ=0.01 R=100  ψ(0)=0.0e+00 ∫ψ=0.0e+00  ‖ψ-φ‖₂=0.1447
+(7) δ=0.001 R=1000  ψ(0)=0.0e+00 ∫ψ=-4.4e-16  ‖ψ-φ‖₂=0.0460
+(7) δ=0.0001 R=10000  ψ(0)=0.0e+00 ∫ψ=0.0e+00  ‖ψ-φ‖₂=0.0145
+(8) R=4 corr coeffs (1.55e-01, 1.14e-01)  ‖corr‖₂≈2.15e-01
+(8) R=8 corr coeffs (2.13e-02, 1.58e-02)  ‖corr‖₂≈2.96e-02
+(8) R=12 corr coeffs (2.88e-03, 2.13e-03)  ‖corr‖₂≈4.01e-03
+(8) R=16 corr coeffs (3.90e-04, 2.89e-04)  ‖corr‖₂≈5.43e-04
+(8) window L=2: dist(Φ,E0_L)=0.8202 (>0: E0_L closed codim 2)
+(8) window L=4: dist(Φ,E0_L)=0.3461 (>0: E0_L closed codim 2)
+(8) window L=8: dist(Φ,E0_L)=0.0498 (>0: E0_L closed codim 2)
+exit:0
+===== interactions1890/check1890.py =====
+K(0)= -5.3721834192256654  closed form psi(1/4)-log pi = -5.3721834192256654
+(1) r=0.5: K(r)=-3.3320045947  K(0)+2∫k(1-cos)=-3.3320045947
+(1) r=3.0: K(r)=-0.7442440597  K(0)+2∫k(1-cos)=-0.7442440599
+(1) r=10.0: K(r)=0.4642906269  K(0)+2∫k(1-cos)=0.4642906266
+(2) -2<F,TF>= -0.8762835030259682  ||F-TF||^2-2||F||^2= -0.8762845242328514
+(3) L=0.6: λmin(W/L2)=7.273e-01  λmin(W/G0)=3.773e+03  M_A=5.372  λmin(Dir)=λmin+M_A=6.0995  ratio λmin/M_A=1.35e-01
+(3) L=1.0: λmin(W/L2)=1.708e-02  λmin(W/G0)=1.265e+01  M_A=6.352  λmin(Dir)=λmin+M_A=6.3695  ratio λmin/M_A=2.69e-03
+(3) L=2.0: λmin(W/L2)=1.787e-05  λmin(W/G0)=1.264e-03  M_A=11.225  λmin(Dir)=λmin+M_A=11.2247  ratio λmin/M_A=1.59e-06
+(3) L=3.0: λmin(W/L2)=4.561e-06  λmin(W/G0)=5.991e-05  M_A=18.388  λmin(Dir)=λmin+M_A=18.3878  ratio λmin/M_A=2.48e-07
+(3) L=4.0: λmin(W/L2)=1.123e-06  λmin(W/G0)=5.473e-06  M_A=29.755  λmin(Dir)=λmin+M_A=29.7555  ratio λmin/M_A=3.78e-08
+(3) L=6.0: λmin(W/L2)=2.663e-07  λmin(W/G0)=2.857e-07  M_A=80.563  λmin(Dir)=λmin+M_A=80.5627  ratio λmin/M_A=3.31e-09
+exit:0
+===== spinor1908/notes1908.md =====

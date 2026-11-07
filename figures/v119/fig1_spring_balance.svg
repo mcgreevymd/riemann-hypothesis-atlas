@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1160" viewBox="0 0 680 1160" role="img" aria-labelledby="title desc">
+<title id="title">Spring energy versus the counterterm</title>
+<desc id="desc">On the pole annihilator, W equals nonnegative spring energy minus a counterterm M times the norm squared. That global comparison is the domination target and is open. Separately, after the counterterm, the prime contribution follows the sign of the autocorrelation. K=8 Galerkin minima 0.06734 at full width A=1 and 1.65e-8 at A=2 are upper bounds, not certificates. RH is not proved.</desc>
+<rect width="680" height="1160" fill="#f7f4ee"/>
+<rect x="28" y="28" width="624" height="78" fill="#1c1915"/>
+<text x="44" y="58" fill="#f7f4ee" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">The target is global spring domination.</text>
+<text x="44" y="88" fill="#f3efe4" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">A shrinking margin is a diagnostic, not a verdict.</text>
+<text x="36" y="128" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">On the pole annihilator the Weil form of ζ splits, exactly, as</text>
+<text x="36" y="154" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">spring energy minus a counterterm. Every spring is</text>
+<text x="36" y="180" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">nonnegative. Whether the springs win for every test function</text>
+<text x="36" y="206" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">is the open comparison.</text>
+<rect x="28" y="250" width="624" height="168" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="44" y="280" fill="#4a453c" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">On E0, where the pole term is off</text>
+<text x="44" y="318" fill="#1c1915" font-size="24" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">W(F)  =  E_springs(F)  −  M ||F||²</text>
+<text x="44" y="358" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">M = −K(0) + 2 Σ aₙ,    aₙ = Λ(n) · n^(−1/2)</text>
+<text x="44" y="382" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">K(0) = Re ψ(1/4) − log π</text>
+<rect x="28" y="440" width="300" height="280" rx="8" fill="#e5f2ea" stroke="#145c3a" stroke-width="1.5"/>
+<text x="44" y="472" fill="#145c3a" font-size="20" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Springs, each ≥ 0</text>
+<text x="44" y="508" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Archimedean integral:</text>
+<text x="44" y="530" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">k(a) ||F − T_a F||² da</text>
+<text x="44" y="552" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Each prime:</text>
+<text x="44" y="574" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">aₙ ||F − T_{log n} F||²</text>
+<text x="44" y="596" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Both ≥ 0. M removes</text>
+<text x="44" y="618" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">the diagonal.</text>
+<rect x="48" y="648" width="190" height="16" fill="#145c3a"/>
+<rect x="246" y="648" width="58" height="16" fill="#145c3a" opacity="0.55"/>
+<text x="48" y="684" fill="#145c3a" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">archimedean</text>
+<text x="246" y="684" fill="#145c3a" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">primes</text>
+<rect x="352" y="440" width="300" height="280" rx="8" fill="#f8efd8" stroke="#7a4a06" stroke-width="1.5"/>
+<text x="368" y="472" fill="#7a4a06" font-size="20" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Net prime term, signed</text>
+<text x="368" y="508" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">After M takes the diagonal,</text>
+<text x="368" y="530" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">the quotient keeps</text>
+<text x="368" y="552" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">−2 aₙ ρ(log n).</text>
+<text x="368" y="574" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">ρ can help or hurt.</text>
+<text x="368" y="596" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">That sign is not</text>
+<text x="368" y="618" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">the spring energy.</text>
+<line x1="380" y1="648" x2="620" y2="648" stroke="#1c1915" stroke-width="1.5"/>
+<line x1="430" y1="648" x2="430" y2="608" stroke="#145c3a" stroke-width="6" stroke-linecap="round"/>
+<line x1="500" y1="648" x2="500" y2="684" stroke="#7a2e2e" stroke-width="6" stroke-linecap="round"/>
+<line x1="575" y1="648" x2="575" y2="620" stroke="#145c3a" stroke-width="6" stroke-linecap="round"/>
+<text x="500" y="708" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">up helps, down hurts</text>
+<rect x="28" y="742" width="624" height="270" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="44" y="774" fill="#1c1915" font-size="20" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Near cancellation, one basis, not a certificate</text>
+<text x="44" y="810" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">K = 8 exact-E0 Galerkin. A is the full width of the interval</text>
+<text x="44" y="834" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">[−A/2, A/2]. Smallest Rayleigh quotient of W:</text>
+<text x="44" y="880" fill="#1c1915" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">A = 1     0.06734</text>
+<text x="44" y="912" fill="#1c1915" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">A = 2     1.65 × 10⁻⁸</text>
+<text x="44" y="960" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Positive finite minima are upper bounds. They do not certify</text>
+<text x="44" y="984" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">positivity, and they do not control K → ∞. K = 12 and K = 14 are a</text>
+<text x="44" y="1008" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">different legend.</text>
+<text x="36" y="1048" fill="#4a453c" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">RH is not proved. No ample class, compatible J,</text>
+<text x="36" y="1070" fill="#4a453c" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">or metric matching W is constructed.</text>
+</svg>

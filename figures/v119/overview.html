@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RH Atlas v1.19 — springs, boundary, and the missing sign</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #4a453c;
+    --paper: #f7f4ee;
+    --card: #fffdf8;
+    --line: #d9d2c5;
+    --green: #145c3a;
+    --green-bg: #e5f2ea;
+    --amber: #7a4a06;
+    --amber-bg: #f8efd8;
+    --blue: #163a66;
+    --blue-bg: #e7eef6;
+    --red: #7a2e2e;
+    --red-bg: #f8e8e6;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 18px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "DejaVu Serif", "Liberation Serif", Palatino, serif;
+    line-height: 1.45;
+  }
+  a { color: var(--blue); }
+  a:focus, button:focus { outline: 3px solid var(--blue); outline-offset: 2px; }
+  header, main, footer { max-width: 52rem; margin: 0 auto; padding: 1.25rem 1.1rem; }
+  header { padding-bottom: 0; }
+  .status {
+    background: var(--ink);
+    color: #f7f4ee;
+    padding: 1rem 1.1rem;
+    border-radius: 8px;
+  }
+  .status strong { font-size: 1.15rem; }
+  h1 { font-size: 1.85rem; line-height: 1.15; margin: 1rem 0 0.4rem; }
+  h2 { font-size: 1.35rem; margin: 1.6rem 0 0.4rem; }
+  h3 { font-size: 1.1rem; margin: 0 0 0.35rem; }
+  p { margin: 0.55rem 0; }
+  .lede { font-size: 1.15rem; }
+  figure {
+    margin: 1rem 0 1.4rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  figure img, figure object, figure svg { width: 100%; height: auto; display: block; }
+  figcaption { color: var(--muted); font-size: 0.95rem; padding: 0.4rem 0.3rem 0.2rem; }
+  .grid { display: grid; gap: 0.8rem; }
+  @media (min-width: 800px) {
+    .grid.two { grid-template-columns: 1fr 1fr; }
+  }
+  .card { border-radius: 8px; padding: 0.85rem 1rem; border: 1px solid var(--line); background: var(--card); }
+  .card.green { background: var(--green-bg); border-color: var(--green); }
+  .card.amber { background: var(--amber-bg); border-color: var(--amber); }
+  .card.blue { background: var(--blue-bg); border-color: var(--blue); }
+  .card.red { background: var(--red-bg); border-color: var(--red); }
+  ul { margin: 0.4rem 0 0.4rem 1.1rem; padding: 0; }
+  li { margin: 0.35rem 0; }
+  code, .math { font-family: "STIX Two Math", "Cambria Math", Palatino, serif; }
+  footer { color: var(--muted); font-size: 0.95rem; }
+  #scale-dot {
+    offset-path: path("M 36 96 C 50 40, 80 22, 140 18 S 250 16, 290 14");
+    offset-distance: 0%;
+    animation: travel 8s linear infinite;
+  }
+  @keyframes travel { to { offset-distance: 100%; } }
+  @media (prefers-reduced-motion: reduce) {
+    #scale-dot { animation: none; offset-distance: 42%; }
+    .motion-note { display: none; }
+  }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<a class="sr" href="#story">Skip to the overview</a>
+<header>
+  <p style="letter-spacing:0.04em;text-transform:uppercase;font-size:0.85rem;margin:0;">RH Atlas · version 1.19 · 7 Nov 2026</p>
+  <h1>Where a sign for the Weil form would have to come from</h1>
+  <div class="status" role="note">
+    <strong>The Riemann Hypothesis is not proved.</strong>
+    <p style="margin:0.35rem 0 0;">Structural refinements and consistency tests from the night of 6 Nov 2026. No new independent positivity theorem. No ample class, compatible complex structure, or metric that reproduces the Weil form was constructed.</p>
+  </div>
+</header>
+<main id="story">
+  <h2>Analogy first</h2>
+  <p class="lede">Weil’s form wants to be the energy of a collection of springs, minus a counterterm that grows as more primes enter the window. Every spring we can write down is nonnegative. The open question is whether those springs dominate the counterterm for every test function. That comparison is the target. A numerical margin that shrinks toward zero tells you the balance is tight. It does not certify the inequality, and it does not refute it.</p>
+  <p>Several famous positivity machines have a family resemblance to this picture: a quantum covariance, a Bogomolny bound, the Hodge index on a surface over a finite field, and the no-ghost theorem. They are cousins. They are not one formula, and none of them has been built for the zeta function.</p>
+
+  <h2>1. Springs and the counterterm</h2>
+  <div class="grid two">
+    <article class="card green">
+      <h3>Nonnegative springs</h3>
+      <p>On a window, for real test functions,</p>
+      <p class="math">W(F) = P(F) + E<sub>springs</sub>(F) − M ||F||<sup>2</sup>.</p>
+      <p>E<sub>springs</sub> adds the archimedean pieces ∫ k(a) ||F − T<sub>a</sub>F||<sup>2</sup> da and the prime pieces a<sub>n</sub> ||F − T<sub>log n</sub>F||<sup>2</sup>. Each is ≥ 0. The counterterm is M = −K(0) + 2 Σ a<sub>n</sub>, with a<sub>n</sub> = Λ(n) n<sup>−1/2</sup> and K(0) = Re ψ(1/4) − log π. On the pole annihilator E0 the pole term P is zero, so positivity is exactly spring domination.</p>
+    </article>
+    <article class="card amber">
+      <h3>Signed net prime term</h3>
+      <p>Group the same quadratic form the other way and the diagonal sits inside M. What remains of each prime is</p>
+      <p class="math">−2 a<sub>n</sub> ρ(log n), &nbsp; ρ(b) = ⟨F, T<sub>b</sub>F⟩ / ||F||<sup>2</sup>.</p>
+      <p>The archimedean density still contributes through (2 − 2ρ) ≥ 0. The prime term helps or hurts with the sign of the autocorrelation. That sign is not the spring energy.</p>
+    </article>
+  </div>
+  <figure>
+    <img src="fig1_spring_balance.svg" alt="Diagram. The Weil form on the pole annihilator equals nonnegative spring energy minus a counterterm. A second panel shows that the net prime term is signed. K=8 Galerkin values are upper bounds, not certificates.">
+    <figcaption>Figure 1. Domination is the target. The signed autocorrelation is a different grouping of the same form. The two K = 8 numbers are Galerkin upper bounds on one basis. Download: <a href="fig1_spring_balance.svg">SVG</a>.</figcaption>
+  </figure>
+  <p>An explicit anharmonic functional has Hessian at the origin equal to W, and away from the origin its Hessian is W plus a nonnegative quartic term. A Hessian identity restates W. It does not sign it. The archimedean Lévy representation was already in the atlas. What is sharpened here is the split between nonnegative spring energy and the signed remainder, and the warning on the numerics.</p>
+
+  <h2>2. The boundary is hyperbolic</h2>
+  <p>Tate’s two boundary numbers, the value at 0 and the integral, are moved by the Fourier transform (they swap) and by unitary scaling (they are multiplied by opposite powers of |a|). The only Hermitian form on those two numbers invariant under both moves is a real multiple of the off-diagonal form. Nonzero, it has signature (1, 1). Zero, it is degenerate. Boundary data do not give a positive sign.</p>
+  <div class="grid two">
+    <article class="card">
+      <h3>Global L²</h3>
+      <p>The moment functionals are unbounded, so E0 is dense. Smooth functions in E0 are not an L²-closed set. There is no global orthogonal projection that “removes the poles.”</p>
+    </article>
+    <article class="card">
+      <h3>One fixed window</h3>
+      <p>Both exponentials are square-integrable, so the kernel is closed and has codimension 2. The projection depends on the window.</p>
+    </article>
+  </div>
+  <figure>
+    <img src="fig2_boundary_topology.svg" alt="The plane of two boundary numbers, with hyperbolas of the invariant form, a Fourier diagonal, and discrete finite-field sample points. Below, global density contrasted with a closed window kernel.">
+    <figcaption>Figure 2. Hyperbolic boundary form. Globally, E0 is dense and not closed. On one window, the kernel is closed. Amber points are finite-field samples on the same hyperbola, not Mellin integrals. Download: <a href="fig2_boundary_topology.svg">SVG</a>.</figcaption>
+  </figure>
+  <figure aria-labelledby="motioncap">
+    <svg viewBox="0 0 320 120" width="100%" height="120" role="img" aria-labelledby="motioncap">
+      <title id="motioncap">Unitary scaling travels on the hyperbola b₀ b₁ = 1</title>
+      <line x1="20" y1="100" x2="300" y2="100" stroke="#1c1915" stroke-width="1"/>
+      <line x1="20" y1="100" x2="20" y2="12" stroke="#1c1915" stroke-width="1"/>
+      <path id="hyp" d="M 36 96 C 50 40, 80 22, 140 18 S 250 16, 290 14" fill="none" stroke="#163a66" stroke-width="2"/>
+      <circle id="scale-dot" r="6" fill="#7a4a06"/>
+      <text x="28" y="116" font-size="14" fill="#4a453c" font-family="Palatino, serif">b₀</text>
+      <text x="8" y="24" font-size="14" fill="#4a453c" font-family="Palatino, serif">b₁</text>
+    </svg>
+    <figcaption id="motioncap">Optional motion. Unitary scaling runs along a hyperbola of constant b₀ b₁. If your system asks for reduced motion, the point stays still. The static figure above is the record.</figcaption>
+  </figure>
+  <p class="motion-note">The moving point is the only animation on this page.</p>
+  <p>The operator L = ∂² − 1/4 sends compactly supported smooth functions bijectively onto E0 inside that class and preserves support hulls. That is Connes–Consani 2021, Lemma 3.3, already prior. On a fixed window, self-adjoint realizations of the dilation still depend on boundary conditions of the domain. A real test function defines a self-adjoint convolution only when it equals its own sharp involution.</p>
+
+  <h2>3. Cousins, not one mechanism</h2>
+  <div class="grid two">
+    <article class="card green">
+      <h3>Robertson–Schrödinger</h3>
+      <p>A positive state or weight has a positive covariance Gram. Noncommutativity is needed only for a nonzero commutator. It is not needed for an independent positive functional. Translations commute, so a larger noncommutative algebra is a choice for that commutator, not a requirement for positivity. Because W is unbounded, the right object is a weight on the test-function algebra, not a normalized state on bounded translations.</p>
+    </article>
+    <article class="card blue">
+      <h3>BPS and Hodge, two geometries</h3>
+      <p>On a Kähler surface, primitive real (1,1) forms are anti-self-dual, and the norm comes from the metric. On an algebraic surface over a finite field, the Hodge index is an intersection form: one positive direction, the rest negative. Those are related architectures. They are not the same theorem. The determinant of a block can be positive while the block is negative definite; inertia is the sign.</p>
+    </article>
+    <article class="card">
+      <h3>No-ghost</h3>
+      <p>The theorem transports positivity from a transverse space that is already positive. It does not create the sign. The pole plane as a Lorentzian II₁,₁ lattice is an analogy. No such arithmetic lattice is constructed.</p>
+    </article>
+    <article class="card amber">
+      <h3>What would count</h3>
+      <p>A map from window test functions in E0 into a Hilbert space, or a semidefinite quotient, with norm squared exactly equal to W, is Weil positivity. That existence statement is the hypothesis, restated. Extra demands — an independent reason for the norm, scaling and window consistency, a global build from Euler factors and gamma data, failure on Davenport–Heilbronn — are criteria for a useful construction. They are not theorems that the hypothesis automatically provides.</p>
+    </article>
+  </div>
+  <figure>
+    <img src="fig3_architectures.svg" alt="Four architectures side by side: a positive Gram, an anti-self-dual square, a Hodge inertia pattern, and a no-ghost quotient. A banner says they are not the single identity of a square plus an indefinite boundary.">
+    <figcaption>Figure 3. Related architectures. The universal formula is withdrawn. Download: <a href="fig3_architectures.svg">SVG</a>.</figcaption>
+  </figure>
+
+  <h2>Precision second</h2>
+  <ul>
+    <li><strong>Exact.</strong> The spring completion and the autocorrelation formula are the same quadratic form. Prime spring energy is ≥ 0. The net prime contribution after the counterterm is signed.</li>
+    <li><strong>Exact.</strong> The invariant boundary form is hyperbolic or zero. E0 is dense in L² and not closed. On one window it is closed of codimension 2.</li>
+    <li><strong>Exact finite-field control.</strong> On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram. That Gram is negative semidefinite precisely for Hasse traces. A positive determinant does not mean a positive form. The Frobenius samples obey the same diagonal scaling law and are not continuous moments.</li>
+    <li><strong>Numerical, not certified.</strong> K = 8 Galerkin minima of W on the exact-E0 basis are about 0.067 at full width A = 1 and about 1.7×10⁻⁸ at A = 2. Positive minima are upper bounds. They do not control the limit in the basis size. Negative Rayleigh quotients in the session notes are strong witnesses inside that arithmetic. Call one certified only with a rigorous error bound.</li>
+    <li><strong>Prior literature, not a new theorem.</strong> The archimedean Lévy kernel, the L-bijection of Connes–Consani, the characteristic-p projection order in Connes 1999, the archimedean Sonin comparison of Connes–Consani 2021, the Hodge index for curves, and the no-ghost theorem are cited, not reproved.</li>
+    <li><strong>Open.</strong> An independent map whose square is W. A compatible J whose metric is W. Deninger’s positive leafwise star. A semilocal energy inequality. Rank 1 of the atlas is unchanged: the Kähler triple, and the missing J over ℚ.</li>
+    <li><strong>Not claimed.</strong> Trace-norm leakage cannot be negative; the draft test that looked for a negative leakage was not run. The ratio of completed zeta values Λ(1/2−it)/Λ(1/2+it) is identically 1 by the functional equation, so it has no group delay. The local archimedean phase delay remains the kernel K. Vacuum spectral density is not asserted. Theta functions are not asserted to change sign at the zeros. Torsion corrections are convention-dependent. Clifford multiplication exists for an indefinite metric, so it is not a source of positivity.</li>
+  </ul>
+
+  <h2>Use this as a prompt</h2>
+  <p>The reusable instructions for a later pass are in the repository at <a href="../../notes/v119/OVERVIEW_PROMPT.md">notes/v119/OVERVIEW_PROMPT.md</a>. The corrected narrative, the source notes, the limitations file, and the scripts are beside it. Raw session folders are archived under <a href="../../notes/v119/provenance/SUPERSEDED.md">provenance</a> and are marked superseded.</p>
+</main>
+<footer>
+  <p>J. W. McGreevy; formalization by Grok Bot. The Riemann Hypothesis is not proved. This page is the readable front for atlas v1.19. The machine-readable entries are in <code>atlas.json</code>.</p>
+</footer>
+</body>
+</html>

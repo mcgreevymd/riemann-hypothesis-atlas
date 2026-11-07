@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="309.6pt" viewBox="0 0 1008 309.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T22:18:54.211043</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 309.6 
+L 1008 309.6 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 126 61.71984 
+L 243.18 61.71984 
+L 243.18 41.91984 
+L 126 41.91984 
+z
+" style="fill: #cccccc; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="184.59" y="53.898277" transform="rotate(-0 184.59 53.898277)">mechanism</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 243.18 61.71984 
+L 438.48 61.71984 
+L 438.48 41.91984 
+L 243.18 41.91984 
+z
+" style="fill: #cccccc; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="340.83" y="53.898277" transform="rotate(-0 340.83 53.898277)">positive square (source of ≥0)</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 438.48 61.71984 
+L 586.908 61.71984 
+L 586.908 41.91984 
+L 438.48 41.91984 
+z
+" style="fill: #cccccc; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="512.694" y="53.898277" transform="rotate(-0 512.694 53.898277)">indefinite / topological term</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 586.908 61.71984 
+L 743.148 61.71984 
+L 743.148 41.91984 
+L 586.908 41.91984 
+z
+" style="fill: #cccccc; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="665.028" y="53.898277" transform="rotate(-0 665.028 53.898277)">independent positive input</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 743.148 61.71984 
+L 907.2 61.71984 
+L 907.2 41.91984 
+L 743.148 41.91984 
+z
+" style="fill: #cccccc; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="825.174" y="53.898277" transform="rotate(-0 825.174 53.898277)">status for ζ</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 126 81.51984 
+L 243.18 81.51984 
+L 243.18 61.71984 
+L 126 61.71984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="73.698277" transform="rotate(-0 137.718 73.698277)">Robertson–Schrödinger</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 243.18 81.51984 
+L 438.48 81.51984 
+L 438.48 61.71984 
+L 243.18 61.71984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="73.698277" transform="rotate(-0 262.71 73.698277)">w=V+iħσ/2 ≥0 (state)</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 438.48 81.51984 
+L 586.908 81.51984 
+L 586.908 61.71984 
+L 438.48 61.71984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="73.698277" transform="rotate(-0 453.3228 73.698277)">σ (commutator) antisym.</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 586.908 81.51984 
+L 743.148 81.51984 
+L 743.148 61.71984 
+L 586.908 61.71984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="73.698277" transform="rotate(-0 602.532 73.698277)">positive state φ</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 743.148 81.51984 
+L 907.2 81.51984 
+L 907.2 61.71984 
+L 743.148 61.71984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="73.698277" transform="rotate(-0 759.5532 73.698277)">no φ built from primes/Γ</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 126 101.31984 
+L 243.18 101.31984 
+L 243.18 81.51984 
+L 126 81.51984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="93.498277" transform="rotate(-0 137.718 93.498277)">Bogomolny / instanton</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 243.18 101.31984 
+L 438.48 101.31984 
+L 438.48 81.51984 
+L 243.18 81.51984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="93.515777" transform="rotate(-0 262.71 93.515777)">‖F^∓‖² (Hodge star of a metric)</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 438.48 101.31984 
+L 586.908 101.31984 
+L 586.908 81.51984 
+L 438.48 81.51984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="93.498277" transform="rotate(-0 453.3228 93.498277)">top. charge k (orientation)</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 586.908 101.31984 
+L 743.148 101.31984 
+L 743.148 81.51984 
+L 586.908 81.51984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="93.498277" transform="rotate(-0 602.532 93.498277)">Riemannian metric</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 743.148 101.31984 
+L 907.2 101.31984 
+L 907.2 81.51984 
+L 743.148 81.51984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="93.498277" transform="rotate(-0 759.5532 93.498277)">no arithmetic Hodge star</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 126 121.11984 
+L 243.18 121.11984 
+L 243.18 101.31984 
+L 126 101.31984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="113.298277" transform="rotate(-0 137.718 113.298277)">Hodge index (F_q: C×C)</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 243.18 121.11984 
+L 438.48 121.11984 
+L 438.48 101.31984 
+L 243.18 101.31984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="113.315777" transform="rotate(-0 262.71 113.315777)">primitive (1,1) = ASD ⇒ D²=−‖α‖²</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 438.48 121.11984 
+L 586.908 121.11984 
+L 586.908 101.31984 
+L 438.48 101.31984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="113.298277" transform="rotate(-0 453.3228 113.298277)">2b₀b₁ boundary (h,v)</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 586.908 121.11984 
+L 743.148 121.11984 
+L 743.148 101.31984 
+L 586.908 101.31984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="113.298277" transform="rotate(-0 602.532 113.298277)">ample class / Kähler ω</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 743.148 121.11984 
+L 907.2 121.11984 
+L 907.2 101.31984 
+L 743.148 101.31984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="113.298277" transform="rotate(-0 759.5532 113.298277)">surface Spec Z×Spec Z absent</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 126 140.91984 
+L 243.18 140.91984 
+L 243.18 121.11984 
+L 126 121.11984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="133.098277" transform="rotate(-0 137.718 133.098277)">No-ghost (GT 1972)</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 243.18 140.91984 
+L 438.48 140.91984 
+L 438.48 121.11984 
+L 243.18 121.11984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="133.098277" transform="rotate(-0 262.71 133.098277)">transverse Fock norms</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 438.48 140.91984 
+L 586.908 140.91984 
+L 586.908 121.11984 
+L 438.48 121.11984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="133.098277" transform="rotate(-0 453.3228 133.098277)">II₁,₁ light cone, c=26</text>
+    </g>
+    <g id="patch_25">
+     <path d="M 586.908 140.91984 
+L 743.148 140.91984 
+L 743.148 121.11984 
+L 586.908 121.11984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="133.098277" transform="rotate(-0 602.532 133.098277)">positive transverse factor</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 743.148 140.91984 
+L 907.2 140.91984 
+L 907.2 121.11984 
+L 743.148 121.11984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="133.098277" transform="rotate(-0 759.5532 133.098277)">H₊ not constructed (v1.15)</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 126 160.71984 
+L 243.18 160.71984 
+L 243.18 140.91984 
+L 126 140.91984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="152.898277" transform="rotate(-0 137.718 152.898277)">SUSY {Q,Q†}</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 243.18 160.71984 
+L 438.48 160.71984 
+L 438.48 140.91984 
+L 243.18 140.91984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="152.915777" transform="rotate(-0 262.71 152.915777)">‖Qψ‖²+‖Q†ψ‖² ⇒ H≥|Z|</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 438.48 160.71984 
+L 586.908 160.71984 
+L 586.908 140.91984 
+L 438.48 140.91984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="152.898277" transform="rotate(-0 453.3228 152.898277)">central charge Z</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 586.908 160.71984 
+L 743.148 160.71984 
+L 743.148 140.91984 
+L 586.908 140.91984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="152.898277" transform="rotate(-0 602.532 152.898277)">Hilbert space + Q</text>
+    </g>
+    <g id="patch_31">
+     <path d="M 743.148 160.71984 
+L 907.2 160.71984 
+L 907.2 140.91984 
+L 743.148 140.91984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="152.898277" transform="rotate(-0 759.5532 152.898277)">no arithmetic Q</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 126 180.51984 
+L 243.18 180.51984 
+L 243.18 160.71984 
+L 126 160.71984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="172.698277" transform="rotate(-0 137.718 172.698277)">Connes 1999 Thm 5</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 243.18 180.51984 
+L 438.48 180.51984 
+L 438.48 160.71984 
+L 243.18 160.71984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="172.698277" transform="rotate(-0 262.71 172.698277)">Tr(S_Λ V(f∗f*)) = 2(f∗f*)(1)·log′Λ</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 438.48 180.51984 
+L 586.908 180.51984 
+L 586.908 160.71984 
+L 438.48 160.71984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="172.698277" transform="rotate(-0 453.3228 172.698277)">subtraction Q′_{Λ,0}</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 586.908 180.51984 
+L 743.148 180.51984 
+L 743.148 160.71984 
+L 586.908 160.71984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="172.698277" transform="rotate(-0 602.532 172.698277)">order Q′_{Λ,0}≤S_Λ</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 743.148 180.51984 
+L 907.2 180.51984 
+L 907.2 160.71984 
+L 743.148 160.71984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="172.698277" transform="rotate(-0 759.5532 172.698277)">proved char p only; ⇔ RH</text>
+    </g>
+    <g id="patch_37">
+     <path d="M 126 200.31984 
+L 243.18 200.31984 
+L 243.18 180.51984 
+L 126 180.51984 
+z
+" style="fill: #ffffff; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="137.718" y="192.498277" transform="rotate(-0 137.718 192.498277)">CC21 Sonin (∞)</text>
+    </g>
+    <g id="patch_38">
+     <path d="M 243.18 200.31984 
+L 438.48 200.31984 
+L 438.48 180.51984 
+L 243.18 180.51984 
+z
+" style="fill: #dff0d8; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="262.71" y="192.529527" transform="rotate(-0 262.71 192.529527)">Tr(ϑ(g)Sϑ(g)*) ≥0</text>
+    </g>
+    <g id="patch_39">
+     <path d="M 438.48 200.31984 
+L 586.908 200.31984 
+L 586.908 180.51984 
+L 438.48 180.51984 
+z
+" style="fill: #fde2e2; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="453.3228" y="192.498277" transform="rotate(-0 453.3228 192.498277)">vanishing at ±i/2, 0</text>
+    </g>
+    <g id="patch_40">
+     <path d="M 586.908 200.31984 
+L 743.148 200.31984 
+L 743.148 180.51984 
+L 586.908 180.51984 
+z
+" style="fill: #d9edf7; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="602.532" y="192.498277" transform="rotate(-0 602.532 192.498277)">compression to Sonin space</text>
+    </g>
+    <g id="patch_41">
+     <path d="M 743.148 200.31984 
+L 907.2 200.31984 
+L 907.2 180.51984 
+L 743.148 180.51984 
+z
+" style="fill: #eeeeee; stroke: #888888; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="759.5532" y="192.498277" transform="rotate(-0 759.5532 192.498277)">archimedean, small support</text>
+    </g>
+   </g>
+   <g id="text_41">
+    <g id="patch_42">
+     <path d="M 145.556719 276.539148 
+L 887.643281 276.539148 
+Q 890.343281 276.539148 890.343281 273.839148 
+L 890.343281 241.353015 
+Q 890.343281 238.653015 887.643281 238.653015 
+L 145.556719 238.653015 
+Q 142.856719 238.653015 142.856719 241.353015 
+L 142.856719 273.839148 
+Q 142.856719 276.539148 145.556719 276.539148 
+z
+" style="fill: #fff8dc; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(145.556719 249.131863)">Common pattern (each row is a standard result in its own setting): Q = ‖Φ·‖² + (indefinite boundary/charge term), with ‖·‖ from an INDEPENDENT positive structure.</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(228.691406 259.934324)">Arithmetic target (OPEN, not constructed): Φ: E0 → H₊ built from Euler factors + Γ data, scaling-equivariant, window-consistent,</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif" transform="translate(279.460547 270.77616)">with ‖Φg‖² = W(g∗g♯) exactly and failing for Davenport–Heilbronn. Any such exact Φ is equivalent to RH.</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="516.6" y="31.152" transform="rotate(-0 516.6 31.152)">Fig. 3  Positive-square mechanisms converge on one missing independent map (schematic of checked statements; nothing here is constructed for ζ)</text>
+   </g>
+  </g>
+ </g>
+</svg>

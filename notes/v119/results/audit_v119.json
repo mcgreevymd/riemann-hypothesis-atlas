@@ -1,0 +1,68 @@
+{
+ "rh_proved": false,
+ "checks": {
+  "boundary_invariant_form": {
+   "ok": true,
+   "solution": "[{a: 0, b: 0, y: 0}]",
+   "note": "Nonzero multiples are z * [[0,1],[1,0]], z real. The zero form is the degenerate solution."
+  },
+  "boundary_signature_1_1": {
+   "ok": true,
+   "eigenvalues": "[-1, 1]",
+   "zero_form_eigenvalues": "[0, 0]"
+  },
+  "clifford_does_not_choose_signature": {
+   "ok": true,
+   "indefinite_Cl_1_1": true,
+   "euclidean_Cl_2": true,
+   "note": "The Clifford relation is not a positivity source."
+  },
+  "spring_completion_matches_signed_term": {
+   "ok": true,
+   "note": "Prime spring energy stays nonnegative. After the counterterm removes 2 a ||F||^2, the leftover is -2 a <F, TF>, signed with the autocorrelation."
+  },
+  "perp_det_formula": {
+   "ok": true,
+   "det": "-a**2 + 4*q"
+  },
+  "fq_inertia_not_determinant": {
+   "ok": true,
+   "n_samples": 56,
+   "det_can_be_positive_while_negative_definite": true,
+   "note": "Negative semidefinite tracks the Hasse inequality. det > 0 is not positivity. Discrete samples are not Mellin moments; this check does not identify them."
+  },
+  "trace_norm_nonnegative_signed_remainder_separate": {
+   "ok": true,
+   "nuclear_norm": 4,
+   "signed_quadratic": -2,
+   "note": "A trace-norm leakage cannot be given a negative sign. Report the nonnegative norm and, separately, any signed quadratic remainder. The draft S={infinity,2} leakage test was not run."
+  },
+  "bps_toy_hessian": {
+   "ok": true,
+   "hessian_of_charge": "0",
+   "hessian_of_square_at_zero": "0",
+   "note": "Toy of the architecture only. Not an arithmetic instanton, and not a sign for W."
+  },
+  "completed_zeta_ratio_is_one": {
+   "ok": true,
+   "ratios": {
+    "1": [
+     1.0,
+     7.810927646840968e-17
+    ],
+    "5": [
+     1.0,
+     -2.820006126115191e-17
+    ]
+   },
+   "note": "Meromorphic consequence of \u039b(s) = \u039b(1-s). No group-delay positivity. The local archimedean phase delay is a different function, K."
+  },
+  "virasoro_h_minus_one_is_algebra": {
+   "ok": true,
+   "norm_squared": "c/2 - 13",
+   "det": "2*h*(2*c*h + c + 16*h**2 - 10*h)",
+   "note": "Null at c=26. This is not a unitarity proof. c here is the Virasoro central charge, not a speed and not a topological charge."
+  }
+ },
+ "all_ok": true
+}

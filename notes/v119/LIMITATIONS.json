@@ -1,0 +1,54 @@
+{
+  "version": "1.19",
+  "date": "2026-11-07",
+  "rh_proved": false,
+  "ample_class_or_J_or_metric_matching_W": false,
+  "new_independent_positivity_theorem": false,
+  "status_sentence": "RH unproved; structural refinements and consistency tests; no new independent positivity theorem.",
+  "certificate_rule": {
+    "positive_galerkin_minimum": "upper bound on that matrix, not a certificate of positivity, and not a controlled limit in the basis size",
+    "negative_explicit_vector": "strong numerical witness inside the arithmetic and quadrature error of the run; certified only if a rigorous error bound is attached",
+    "this_integration_attaches_an_error_bound": false
+  },
+  "window_convention": {
+    "A": "full width of the interval [-A/2, A/2] in the spring and signature scripts",
+    "L_in_boundary_checks": "half-width of [-L, L]",
+    "do_not_mix_K": [8, 12, 14]
+  },
+  "reproduced": {
+    "spring_K8_exact_E0": {
+      "A1_mu_L2": "0.0673395762411",
+      "A2_mu_L2": "1.65055568024e-8",
+      "matches_session_log": true
+    },
+    "test1_Fq_split": "151 rows, negative-semidefinite iff Hasse, reproduced",
+    "audit_v119": "all checks passed; see results/audit_v119.json"
+  },
+  "not_run": {
+    "trace_norm_leakage_S_infinity_and_2": "Ill-posed as drafted. A trace norm is nonnegative, so leakage cannot be assigned a negative sign. A future test must bound the nonnegative norm and, separately, a signed quadratic remainder, and only then discuss decay."
+  },
+  "corrections_applied_on_top_of_the_bundle": [
+    "Status is not 'nothing claims progress.' The night contributes a sharper target and consistency tests, and no new positivity theorem.",
+    "The spring target is global domination E_springs >= M||F||^2. Near cancellation is the diagnostic. Prime spring energy is always >= 0. The net prime term after the counterterm is signed with the autocorrelation.",
+    "E0 is dense in L2 and not closed. The fixed-window kernel is closed of codimension 2. Smooth E0 is not an L2-closed set.",
+    "Finite-field samples are not continuous Mellin moments.",
+    "There is no universal identity 'every mechanism is a square plus an indefinite boundary.'",
+    "Connes 1999 projection order is characteristic p. The number-field comparison is equivalent to RH. Subtraction is not automatically positive.",
+    "II_{1,1} is an analogy. No arithmetic lattice is constructed.",
+    "Kähler anti-self-dual geometry and the finite-field Hodge index are different theorems.",
+    "The sought arithmetic correspondence geometry is not built. Do not say the Connes-Consani square of sites does not exist.",
+    "Norm identity, semidefinite quotient allowed, is Weil positivity hence RH. The four construction criteria are not automatic consequences of RH.",
+    "Place-local squares cannot match signed local terms one place at a time. A global coupled use of primes, Euler factors, and gamma data is allowed.",
+    "Neither a positive representation nor G0 selects W.",
+    "Trace-norm leakage is nonnegative.",
+    "Only-Hodge-as-sign-source is false.",
+    "Torsion signs are convention-dependent.",
+    "Lambda(1/2-it)/Lambda(1/2+it) = 1 by the functional equation. No group-delay positivity.",
+    "Vacuum density proportional to |Lambda|^2 is omitted.",
+    "Theta sign-change at zeros is omitted.",
+    "h = -1 Virasoro norm is algebra, not a unitarity proof. Central charge is not a speed and not a topological charge.",
+    "Semilocal Sonin is one candidate, not the unique arithmetic energy condition.",
+    "Q0 and D commute on the core with G0. Fixed-window self-adjointness needs boundary conditions. Real F gives a self-adjoint convolution only if F sharp equals F. Translations are abelian."
+  ],
+  "raw_session_notes": "notes/v119/provenance/session is archived and superseded by SYNTHESIS_CORRECTED.md"
+}
