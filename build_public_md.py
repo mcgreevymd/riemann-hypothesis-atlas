@@ -9,7 +9,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, 'atlas.json'), encoding='utf-8'))
 C = sorted(D['concepts'], key=lambda c: c['rank'])
 BY = {c['id']: c for c in C}
-VERSION, VDATE = '1.19', '7 Nov 2026'
+VERSION, VDATE = '1.19', '7 Nov 2026 (UTC)'
 
 REL = {'same-mechanism-as': 'same mechanism as', 'special-case-of': 'special case of',
        'analogue-of': 'analogue of', 'implies': 'implies', 'equivalent-to-RH': 'equivalent to RH',
@@ -110,7 +110,7 @@ L = ['# The RH Atlas — full public edition', '',
      '- (3) Φ is a non-place-local intertwiner built only from Euler factors and Γ data (a sum Σ_v Φ_v*Φ_v over places is ruled out: every local term is indefinite);',
      '- (4) the construction fails for Davenport–Heilbronn (no Euler product) and for the Beurling control (the analogue of c = 26).',
      '',
-     '**Note (v1.19).** The norm identity alone, allowing a semidefinite quotient, is Weil positivity, hence the Riemann Hypothesis, restated. The four bullets are construction criteria. They are not theorems that the Riemann Hypothesis supplies automatically. Place-local squares still cannot match the signed local terms one place at a time. A global coupling built from Euler factors and Γ data is allowed. The II₁,₁ reading of the pole plane is an analogy; no arithmetic lattice is constructed.',
+     '**Note (v1.19).** For ζ, the norm identity on all compactly supported tests in E0, on every window, allowing a semidefinite quotient, is Weil positivity for ζ. An abstract GNS construction assuming RH can inherit formal compatibilities of W and is circular as a proof. Independent positivity of H₊, identified with W without assuming W ≥ 0, is what is missing. Not every further demand, including an unspecified Hecke action or a Beurling control, is claimed to follow automatically, and it is not claimed that no compatibility follows from RH. Place-local squares still cannot match the signed local terms one place at a time. The II₁,₁ reading of the pole plane is an analogy; no arithmetic lattice is constructed.',
      '',
      '**Equivalently [Restatement, 3.40]:** RH ⇔ the scaling-reduced Weil form has no negative-norm (ghost) states (Weil 1952; Bombieri 2000: the number of negative directions is half the number of off-line zeros). The target is a *no-ghost theorem for the scaling reduction*, with the pole pair (signature (1,1)) as the Lorentzian II₁,₁ part [Analogy, 3.20; baseline slot 1, exists] and H₊ as the positive transverse factor, the analogue of V♮ in Borcherds’ use of the Goddard–Thorn theorem [Restatement, 3.04; baseline slot 2, missing]. The constraint is already known: scaling by the idele class group, whose reduction makes the zeros appear as an absorption spectrum (Connes 1999) [Analogy, 2.92]. **No-ghost transports positivity; it does not create it**, so H₊ must be known positive independently or the argument is circular. There is no ζ analogue yet of the DDF operators [Open, 2.28] or of c = 26 [Open, 1.76].',
      '',

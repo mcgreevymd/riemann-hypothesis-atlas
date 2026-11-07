@@ -4,9 +4,9 @@ The 6 Nov 2026 session opened the items in §1–§4 and recorded equation-level
 
 ## 1. Opened in the session, and already carried by the atlas
 
-1. A. Connes, “Trace formula in noncommutative geometry and the zeros of the Riemann zeta function,” Selecta Mathematica (N.S.) 5 (1999) 29–106. Atlas entry `connes_trace`: the global trace formula is equivalent to RH; Theorem 5 is the characteristic-p statement. This integration keeps that distinction. Projection order in characteristic p is a theorem there. It is not the number-field result. Subtraction of the pole contribution is not, by itself, a positivity proof.
+1. A. Connes, “Trace formula in noncommutative geometry and the zeros of the Riemann zeta function,” Selecta Mathematica (N.S.) 5 (1999) 29–106. The global trace formula is equivalent to the Riemann Hypothesis for all Grössencharakter L-functions. Over ℚ that class is ζ together with every Dirichlet L-function. Weil positivity for the trivial character is the ζ case of this atlas. Theorem 5 is the characteristic-p statement: Δ_Λ subtracts the projection Q′_{Λ,0} from S_Λ, and the order Q′_{Λ,0} ≤ S_Λ makes the difference of positive type. Subtracting a positive operator does not by itself make the difference positive. That order is not the number-field theorem.
 2. A. Connes and C. Consani, “Weil positivity and trace formula, the archimedean place,” Selecta Mathematica 27 (2021), arXiv:2006.13771. Atlas entry `cc21_archimedean_positivity`: Theorem 1, small support, vanishing conditions. Lemma 3.3 and Proposition 3.5 are the prior L-bijection and the transport of positivity onto E0. Not re-proved here.
-3. A. Connes, C. Consani, and H. Moscovici, “Zeta zeros and prolate wave operators,” arXiv:2310.18423. The semilocal Sonin space is a cited construction. The inequality that would compare it with the Weil form is open in the atlas (`needed_semilocal_sonin_inequality`). It is one candidate, not a unique energy condition.
+3. A. Connes, C. Consani, and H. Moscovici, “Zeta zeros and prolate wave operators: semilocal adelic operators,” arXiv:2310.18423. The semilocal Sonin space is a cited construction. The inequality that would compare it with the Weil form is open in the atlas (`needed_semilocal_sonin_inequality`). It is one candidate, not a unique energy condition.
 4. C. Deninger, “Some analogies between number theory and dynamical systems on foliated spaces,” Documenta Mathematica, Extra Volume ICM 1998, Vol. I, 163–186. Atlas entry `deninger`: a positive leafwise star commuting with the flow would force the critical line; the star is conjectural.
 
 ## 2. Session readings not re-opened here
@@ -29,7 +29,7 @@ These were listed as “not opened” in the session manifest. Citation details 
 
 ## 4. Atlas entries this integration cross-links
 
-`kahler_triple_polarization` (rank 1), `no_ghost_missing_piece` (v1.15, four construction criteria, with the correction that the norm identity alone is the equivalence and the four criteria are not automatic), `pole_plane_hyperbolic_complement_positive` (the free-basis one-negative direction), `hodge_index` and TAA Lemma 162, `connes_trace`, `cc21_archimedean_positivity`, `deninger`, `weil_positivity`, `levy_khintchine_mass_gap`, `arch_levy_khintchine_sos`, `weil_kernel_is_levy_measure`, `margins_force_identity`, `archimedean_weyl_kernel`, `needed_semilocal_sonin_inequality`, `ii11_pole_pair`, `einstein_cartan_torsion_spin`.
+`kahler_triple_polarization` (rank 1), `no_ghost_missing_piece` (v1.15 H₊, with the correction that an abstract GNS factorization assuming RH can inherit formal compatibilities and is circular as a proof; independent positivity of H₊ is the missing piece), `pole_plane_hyperbolic_complement_positive` (the free-basis one-negative direction), `hodge_index` on C×C and TAA Lemma 162, `connes_trace`, `cc21_archimedean_positivity`, `deninger`, `weil_positivity`, `levy_khintchine_mass_gap`, `arch_levy_khintchine_sos`, `weil_kernel_is_levy_measure`, `margins_force_identity`, `archimedean_weyl_kernel`, `needed_semilocal_sonin_inequality`, `ii11_pole_pair`, `einstein_cartan_torsion_spin`.
 
 ## 5. Scripts
 

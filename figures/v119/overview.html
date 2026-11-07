@@ -83,7 +83,7 @@
 <body>
 <a class="sr" href="#story">Skip to the overview</a>
 <header>
-  <p style="letter-spacing:0.04em;text-transform:uppercase;font-size:0.85rem;margin:0;">RH Atlas · version 1.19 · 7 Nov 2026</p>
+  <p style="letter-spacing:0.04em;text-transform:uppercase;font-size:0.85rem;margin:0;">RH Atlas · version 1.19 · 7 Nov 2026 (UTC)</p>
   <h1>Where a sign for the Weil form would have to come from</h1>
   <div class="status" role="note">
     <strong>The Riemann Hypothesis is not proved.</strong>
@@ -100,37 +100,37 @@
     <article class="card green">
       <h3>Nonnegative springs</h3>
       <p>On a window, for real test functions,</p>
-      <p class="math">W(F) = P(F) + E<sub>springs</sub>(F) − M ||F||<sup>2</sup>.</p>
-      <p>E<sub>springs</sub> adds the archimedean pieces ∫ k(a) ||F − T<sub>a</sub>F||<sup>2</sup> da and the prime pieces a<sub>n</sub> ||F − T<sub>log n</sub>F||<sup>2</sup>. Each is ≥ 0. The counterterm is M = −K(0) + 2 Σ a<sub>n</sub>, with a<sub>n</sub> = Λ(n) n<sup>−1/2</sup> and K(0) = Re ψ(1/4) − log π. On the pole annihilator E0 the pole term P is zero, so positivity is exactly spring domination.</p>
+      <p class="math">W(F) = P(F) + E<sub>N</sub>(F) − M<sub>N</sub> ||F||<sup>2</sup>.</p>
+      <p>F is zero outside a window of full width A, and N ≥ e<sup>A</sup>. E<sub>N</sub> adds the archimedean pieces ∫ k(a) ||F − T<sub>a</sub>F||<sup>2</sup> da and the prime pieces a<sub>n</sub> ||F − T<sub>log n</sub>F||<sup>2</sup> for n ≤ N. Each is ≥ 0. The counterterm is the finite sum M<sub>N</sub> = −K(0) + 2 Σ<sub>n≤N</sub> a<sub>n</sub>. The sum over all n would diverge. Couplings that leave the window cancel. On E0 the pole term is off, so positivity is spring domination of this finite counterterm.</p>
     </article>
     <article class="card amber">
       <h3>Signed net prime term</h3>
-      <p>Group the same quadratic form the other way and the diagonal sits inside M. What remains of each prime is</p>
+      <p>Group the same quadratic form the other way and the diagonal sits inside M<sub>N</sub>. What remains of each prime n ≤ N is</p>
       <p class="math">−2 a<sub>n</sub> ρ(log n), &nbsp; ρ(b) = ⟨F, T<sub>b</sub>F⟩ / ||F||<sup>2</sup>.</p>
       <p>The archimedean density still contributes through (2 − 2ρ) ≥ 0. The prime term helps or hurts with the sign of the autocorrelation. That sign is not the spring energy.</p>
     </article>
   </div>
   <figure>
     <img src="fig1_spring_balance.svg" alt="Diagram. The Weil form on the pole annihilator equals nonnegative spring energy minus a counterterm. A second panel shows that the net prime term is signed. K=8 Galerkin values are upper bounds, not certificates.">
-    <figcaption>Figure 1. Domination is the target. The signed autocorrelation is a different grouping of the same form. The two K = 8 numbers are Galerkin upper bounds on one basis. Download: <a href="fig1_spring_balance.svg">SVG</a>.</figcaption>
+    <figcaption>Figure 1. Couplings on the window, the finite identity with M<sub>N</sub>, and two K = 8 points with no fitted curve. Upper bounds, not a certificate. Download: <a href="fig1_spring_balance.svg">SVG</a>.</figcaption>
   </figure>
-  <p>An explicit anharmonic functional has Hessian at the origin equal to W, and away from the origin its Hessian is W plus a nonnegative quartic term. A Hessian identity restates W. It does not sign it. The archimedean Lévy representation was already in the atlas. What is sharpened here is the split between nonnegative spring energy and the signed remainder, and the warning on the numerics.</p>
+  <p>An explicit anharmonic functional has Hessian at the origin equal to W. Away from the origin, for a quartic coupling λ ≥ 0, the Hessian is W plus a nonnegative term coming from that potential. The Hessian stays quadratic in the variation. A Hessian identity restates W. It does not sign it.</p>
 
   <h2>2. The boundary is hyperbolic</h2>
   <p>Tate’s two boundary numbers, the value at 0 and the integral, are moved by the Fourier transform (they swap) and by unitary scaling (they are multiplied by opposite powers of |a|). The only Hermitian form on those two numbers invariant under both moves is a real multiple of the off-diagonal form. Nonzero, it has signature (1, 1). Zero, it is degenerate. Boundary data do not give a positive sign.</p>
   <div class="grid two">
     <article class="card">
-      <h3>Global L²</h3>
-      <p>The moment functionals are unbounded, so E0 is dense. Smooth functions in E0 are not an L²-closed set. There is no global orthogonal projection that “removes the poles.”</p>
+      <h3>Global L², on the log line</h3>
+      <p>The moments ev<sub>0</sub>(F) and ev<sub>1</sub>(F) are unbounded on L²(du), so E0 is dense and smooth functions in E0 are not closed. There is no global orthogonal projection that removes them. These moments are not Tate’s b(f).</p>
     </article>
     <article class="card">
-      <h3>One fixed window</h3>
-      <p>Both exponentials are square-integrable, so the kernel is closed and has codimension 2. The projection depends on the window.</p>
+      <h3>One fixed log-line window</h3>
+      <p>There both exponentials are square-integrable, so the kernel is closed and has codimension 2. The projection depends on the window.</p>
     </article>
   </div>
   <figure>
     <img src="fig2_boundary_topology.svg" alt="The plane of two boundary numbers, with hyperbolas of the invariant form, a Fourier diagonal, and discrete finite-field sample points. Below, global density contrasted with a closed window kernel.">
-    <figcaption>Figure 2. Hyperbolic boundary form. Globally, E0 is dense and not closed. On one window, the kernel is closed. Amber points are finite-field samples on the same hyperbola, not Mellin integrals. Download: <a href="fig2_boundary_topology.svg">SVG</a>.</figcaption>
+    <figcaption>Figure 2. Tate’s b(f) and the log-line moments, linked by smearing. Amber points are q = 5, n = 0, 1, 2. Download: <a href="fig2_boundary_topology.svg">SVG</a>.</figcaption>
   </figure>
   <figure aria-labelledby="motioncap">
     <svg viewBox="0 0 320 120" width="100%" height="120" role="img" aria-labelledby="motioncap">
@@ -151,7 +151,7 @@
   <div class="grid two">
     <article class="card green">
       <h3>Robertson–Schrödinger</h3>
-      <p>A positive state or weight has a positive covariance Gram. Noncommutativity is needed only for a nonzero commutator. It is not needed for an independent positive functional. Translations commute, so a larger noncommutative algebra is a choice for that commutator, not a requirement for positivity. Because W is unbounded, the right object is a weight on the test-function algebra, not a normalized state on bounded translations.</p>
+      <p>A covariance Gram is positive because a state or a weight is positive. A generic positive Gram need not include a commutator. A nonzero Robertson–Schrödinger commutator needs noncommuting operators. An independent positive functional may still be commutative. W is unbounded, so a covariance realization would be a weight on test functions, not a normalized state on bounded translations. That positivity is not known: W is the target, not a weight already.</p>
     </article>
     <article class="card blue">
       <h3>BPS and Hodge, two geometries</h3>
@@ -168,16 +168,16 @@
   </div>
   <figure>
     <img src="fig3_architectures.svg" alt="Four architectures side by side: a positive Gram, an anti-self-dual square, a Hodge inertia pattern, and a no-ghost quotient. A banner says they are not the single identity of a square plus an indefinite boundary.">
-    <figcaption>Figure 3. Related architectures. The universal formula is withdrawn. Download: <a href="fig3_architectures.svg">SVG</a>.</figcaption>
+    <figcaption>Figure 3. Four architectures point at a sign for W that is not constructed. Download: <a href="fig3_architectures.svg">SVG</a>.</figcaption>
   </figure>
 
   <h2>Precision second</h2>
   <ul>
-    <li><strong>Exact.</strong> The spring completion and the autocorrelation formula are the same quadratic form. Prime spring energy is ≥ 0. The net prime contribution after the counterterm is signed.</li>
-    <li><strong>Exact.</strong> The invariant boundary form is hyperbolic or zero. E0 is dense in L² and not closed. On one window it is closed of codimension 2.</li>
+    <li><strong>Exact.</strong> For F zero outside a window of width A and N ≥ e<sup>A</sup>, W = P + E<sub>N</sub> − M<sub>N</sub> ||F||<sup>2</sup> with M<sub>N</sub> = −K(0) + 2 Σ<sub>n≤N</sub> a<sub>n</sub>. The uncutoff sum diverges. Prime spring energy is ≥ 0. The net prime contribution after M<sub>N</sub> is signed.</li>
+    <li><strong>Exact.</strong> The invariant form on Tate’s b(f) is hyperbolic or zero. Log-line moments are a different space, linked by smearing. On that log line, E0 is dense in L² and not closed; on one window it is closed of codimension 2.</li>
     <li><strong>Exact finite-field control.</strong> On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram. That Gram is negative semidefinite precisely for Hasse traces. A positive determinant does not mean a positive form. The Frobenius samples obey the same diagonal scaling law and are not continuous moments.</li>
     <li><strong>Numerical, not certified.</strong> K = 8 Galerkin minima of W on the exact-E0 basis are about 0.067 at full width A = 1 and about 1.7×10⁻⁸ at A = 2. Positive minima are upper bounds. They do not control the limit in the basis size. Negative Rayleigh quotients in the session notes are strong witnesses inside that arithmetic. Call one certified only with a rigorous error bound.</li>
-    <li><strong>Prior literature, not a new theorem.</strong> The archimedean Lévy kernel, the L-bijection of Connes–Consani, the characteristic-p projection order in Connes 1999, the archimedean Sonin comparison of Connes–Consani 2021, the Hodge index for curves, and the no-ghost theorem are cited, not reproved.</li>
+    <li><strong>Prior literature, not a new theorem.</strong> The archimedean Lévy kernel, the L-bijection of Connes–Consani, the characteristic-p projection order in Connes 1999 (Δ<sub>Λ</sub> subtracts Q′<sub>Λ,0</sub> from S<sub>Λ</sub>; the global trace formula is equivalent to RH for all Grössencharakter L-functions), the archimedean Sonin comparison of Connes–Consani 2021, the Hodge index on C×C (used in Weil’s RH for curves), and the no-ghost theorem are cited, not reproved.</li>
     <li><strong>Open.</strong> An independent map whose square is W. A compatible J whose metric is W. Deninger’s positive leafwise star. A semilocal energy inequality. Rank 1 of the atlas is unchanged: the Kähler triple, and the missing J over ℚ.</li>
     <li><strong>Not claimed.</strong> Trace-norm leakage cannot be negative; the draft test that looked for a negative leakage was not run. The ratio of completed zeta values Λ(1/2−it)/Λ(1/2+it) is identically 1 by the functional equation, so it has no group delay. The local archimedean phase delay remains the kernel K. Vacuum spectral density is not asserted. Theta functions are not asserted to change sign at the zeros. Torsion corrections are convention-dependent. Clifford multiplication exists for an indefinite metric, so it is not a source of positivity.</li>
   </ul>

@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Code-generated diagrams for atlas v1.19.
+"""Diagrams for atlas v1.19. Text is SVG text. RH is not proved.
 
-Geometric and typographic figures only. Text is SVG text (not outlined).
-Outputs fig1_spring_balance.svg, fig2_boundary_topology.svg, fig3_architectures.svg.
-RH is not proved. Numbers cited in fig. 1 are the K=8 reproduction only.
+Figure 1 draws the window couplings and the two reproduced K=8 minima.
+The counterterm is the finite M_N, N >= exp(A). No trend line is drawn.
 """
 import math
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-
 INK = "#1c1915"
 PAPER = "#f7f4ee"
 GREEN = "#145c3a"
@@ -19,9 +17,9 @@ AMBER_BG = "#f8efd8"
 BLUE = "#163a66"
 BLUE_BG = "#e7eef6"
 RED = "#7a2e2e"
-RED_BG = "#f8e8e6"
 RULE = "#1c1915"
 MUTED = "#4a453c"
+FONT = "DejaVu Serif, Liberation Serif, serif"
 
 
 def esc(s):
@@ -29,30 +27,10 @@ def esc(s):
             .replace('"', "&quot;"))
 
 
-def text(x, y, s, size=18, fill=INK, weight="400", anchor="start", style=""):
+def text(x, y, s, size=18, fill=INK, weight="400", anchor="start"):
     fw = f' font-weight="{weight}"' if weight != "400" else ""
-    return (f'<text x="{x}" y="{y}" fill="{fill}" font-size="{size}" '
-            f'font-family="DejaVu Serif, Liberation Serif, serif"'
-            f'{fw} text-anchor="{anchor}"{style}>{esc(s)}</text>')
-
-
-def lines(x, y, rows, size=18, fill=INK, leading=None, weight="400", anchor="start"):
-    leading = leading or int(size * 1.35)
-    return "\n".join(text(x, y + i * leading, s, size, fill, weight, anchor) for i, s in enumerate(rows))
-
-
-def wrap(s, width):
-    out, cur = [], ""
-    for w in s.split():
-        trial = w if not cur else cur + " " + w
-        if len(trial) > width and cur:
-            out.append(cur)
-            cur = w
-        else:
-            cur = trial
-    if cur:
-        out.append(cur)
-    return out
+    return (f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}" font-size="{size}" '
+            f'font-family="{FONT}"{fw} text-anchor="{anchor}">{esc(s)}</text>')
 
 
 def svg_doc(w, h, title, desc, body):
@@ -66,231 +44,303 @@ def svg_doc(w, h, title, desc, body):
 '''
 
 
+def panel(b, x, y, w, h, fill, stroke):
+    b.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>')
+
+
 def fig1():
-    w, h = 680, 1160
+    w, h = 720, 1280
     b = []
-    b.append(f'<rect x="28" y="28" width="624" height="78" fill="{INK}"/>')
-    b.append(lines(44, 58, ["The target is global spring domination."], 22, PAPER, weight="700"))
-    b.append(lines(44, 88, ["A shrinking margin is a diagnostic, not a verdict."], 18, "#f3efe4"))
-    body_y = 128
-    b.append(lines(36, body_y, wrap(
-        "On the pole annihilator the Weil form of ζ splits, exactly, as spring energy minus a counterterm. Every spring is nonnegative. Whether the springs win for every test function is the open comparison.",
-        62), 18, leading=26))
-    # identity card
-    b.append(f'<rect x="28" y="250" width="624" height="168" rx="8" fill="#fff" stroke="{RULE}" stroke-width="1.5"/>')
-    b.append(lines(44, 280, ["On E0, where the pole term is off"], 16, MUTED))
-    b.append(lines(44, 318, ["W(F)  =  E_springs(F)  −  M ||F||²"], 24, INK, weight="700"))
-    b.append(lines(44, 358, [
-        "M = −K(0) + 2 Σ aₙ,    aₙ = Λ(n) · n^(−1/2)",
-        "K(0) = Re ψ(1/4) − log π",
-    ], 16, leading=24))
-    # two columns
-    b.append(f'<rect x="28" y="440" width="300" height="280" rx="8" fill="{GREEN_BG}" stroke="{GREEN}" stroke-width="1.5"/>')
-    b.append(lines(44, 472, ["Springs, each ≥ 0"], 20, GREEN, weight="700"))
-    b.append(lines(44, 508, [
-        "Archimedean integral:",
-        "k(a) ||F − T_a F||² da",
-        "Each prime:",
-        "aₙ ||F − T_{log n} F||²",
-        "Both ≥ 0. M removes",
-        "the diagonal.",
-    ], 16, leading=22))
-    # geometric bars
-    b.append(f'<rect x="48" y="648" width="190" height="16" fill="{GREEN}"/>')
-    b.append(f'<rect x="246" y="648" width="58" height="16" fill="{GREEN}" opacity="0.55"/>')
-    b.append(text(48, 684, "archimedean", 14, GREEN))
-    b.append(text(246, 684, "primes", 14, GREEN))
+    b.append(f'<rect x="24" y="20" width="672" height="64" fill="{INK}"/>')
+    b.append(text(40, 48, "Springs on a window, and two computed margins", 22, PAPER, "700"))
+    b.append(text(40, 72, "The counterterm is finite. The points are the data.", 16, "#f3efe4"))
 
-    b.append(f'<rect x="352" y="440" width="300" height="280" rx="8" fill="{AMBER_BG}" stroke="{AMBER}" stroke-width="1.5"/>')
-    b.append(lines(368, 472, ["Net prime term, signed"], 20, AMBER, weight="700"))
-    b.append(lines(368, 508, [
-        "After M takes the diagonal,",
-        "the quotient keeps",
-        "−2 aₙ ρ(log n).",
-        "ρ can help or hurt.",
-        "That sign is not",
-        "the spring energy.",
-    ], 16, leading=22))
-    # stem schematic
-    axis_y = 648
-    b.append(f'<line x1="380" y1="{axis_y}" x2="620" y2="{axis_y}" stroke="{INK}" stroke-width="1.5"/>')
-    stems = [(430, 40, GREEN, "+"), (500, -36, RED, "−"), (575, 28, GREEN, "+")]
-    for x, dy, col, lab in stems:
-        y2 = axis_y - dy
-        b.append(f'<line x1="{x}" y1="{axis_y}" x2="{x}" y2="{y2}" stroke="{col}" stroke-width="6" stroke-linecap="round"/>')
-    b.append(text(500, 708, "up helps, down hurts", 14, MUTED, anchor="middle"))
+    # --- coupling diagram ---
+    panel(b, 24, 100, 672, 250, "#fff", RULE)
+    b.append(text(40, 128, "Couplings inside a window of full width A", 18, INK, "700"))
+    y0 = 230
+    xs = [70, 155, 240, 325, 410, 495, 580]
+    b.append(f'<line x1="60" y1="{y0}" x2="640" y2="{y0}" stroke="{INK}" stroke-width="2"/>')
+    b.append(text(60, y0 + 22, "−A/2", 14, MUTED))
+    b.append(text(600, y0 + 22, "A/2", 14, MUTED))
+    # archimedean density as a band under the line
+    b.append(f'<rect x="70" y="{y0 + 28}" width="510" height="22" fill="{GREEN}" opacity="0.28"/>')
+    b.append(text(70, y0 + 68, "archimedean density k(a) ≥ 0 along the window", 14, GREEN))
+    # prime couplings: arcs of two lags
+    def arc(x1, x2, lift, color):
+        mid = (x1 + x2) / 2
+        b.append(f'<path d="M {x1:.1f} {y0} Q {mid:.1f} {y0 - lift:.1f} {x2:.1f} {y0}" fill="none" stroke="{color}" stroke-width="2.2"/>')
+    for i in range(len(xs) - 2):
+        arc(xs[i], xs[i + 2], 36, GREEN)
+    for i in range(len(xs) - 3):
+        arc(xs[i], xs[i + 3], 62, "#2e7d4f")
+    for x in xs:
+        b.append(f'<circle cx="{x}" cy="{y0}" r="5" fill="{INK}"/>')
+    b.append(text(70, y0 - 78, "arcs: prime springs aₙ ||F − T_{log n} F||² ≥ 0", 14, GREEN))
+    b.append(text(430, 156, "schematic of the lags, not a mode", 14, MUTED))
 
-    # near cancellation
-    b.append(f'<rect x="28" y="742" width="624" height="270" rx="8" fill="#fff" stroke="{RULE}" stroke-width="1.5"/>')
-    b.append(lines(44, 774, ["Near cancellation, one basis, not a certificate"], 20, weight="700"))
-    b.append(lines(44, 810, wrap(
-        "K = 8 exact-E0 Galerkin. A is the full width of the interval [−A/2, A/2]. Smallest Rayleigh quotient of W:",
-        64), 16, leading=24))
-    b.append(lines(44, 880, [
-        "A = 1     0.06734",
-        "A = 2     1.65 × 10⁻⁸",
-    ], 22, leading=32, weight="700"))
-    b.append(lines(44, 960, wrap(
-        "Positive finite minima are upper bounds. They do not certify positivity, and they do not control K → ∞. K = 12 and K = 14 are a different legend.",
-        68), 16, leading=24))
-    b.append(lines(36, 1048, [
-        "RH is not proved. No ample class, compatible J,",
-        "or metric matching W is constructed.",
-    ], 16, MUTED, leading=22))
-    desc = ("On the pole annihilator, W equals nonnegative spring energy minus a counterterm M times the norm squared. "
-            "That global comparison is the domination target and is open. Separately, after the counterterm, the prime contribution "
-            "follows the sign of the autocorrelation. K=8 Galerkin minima 0.06734 at full width A=1 and 1.65e-8 at A=2 are upper bounds, not certificates. RH is not proved.")
+    # --- identity ---
+    panel(b, 24, 366, 672, 210, GREEN_BG, GREEN)
+    b.append(text(40, 396, "Finite cutoff. The sum over all n would diverge.", 18, GREEN, "700"))
+    for i, line in enumerate([
+        "F is zero outside the window. Take N ≥ exp(A).",
+        "W(F) = P(F) + E_N(F) − M_N ||F||²",
+        "M_N = −K(0) + 2 Σ_{n≤N} aₙ",
+        "E_N = ∫ k(a) ||F−T_a F||² da + Σ_{n≤N} aₙ ||F−T_{log n} F||²",
+        "Pieces of E_N are ≥ 0. Terms past the window cancel.",
+    ]):
+        b.append(text(40, 428 + i * 26, line, 16 if i != 1 else 18, INK, "700" if i == 1 else "400"))
+
+    # --- two points ---
+    panel(b, 24, 592, 672, 430, "#fff", RULE)
+    b.append(text(40, 624, "K = 8, exact E0. Two minima, no fitted curve.", 18, INK, "700"))
+    # axes
+    left, right, top, bot = 110, 640, 680, 900
+    b.append(f'<line x1="{left}" y1="{top}" x2="{left}" y2="{bot}" stroke="{INK}" stroke-width="1.5"/>')
+    b.append(f'<line x1="{left}" y1="{bot}" x2="{right}" y2="{bot}" stroke="{INK}" stroke-width="1.5"/>')
+    # log10 from 0 down to -8
+    def Y(logv):
+        return top + (0 - logv) / 8 * (bot - top)
+    def X(A):
+        return left + (A - 0.6) / 1.8 * (right - left)
+    for tick in (0, -2, -4, -6, -8):
+        yy = Y(tick)
+        b.append(f'<line x1="{left - 6}" y1="{yy:.1f}" x2="{left}" y2="{yy:.1f}" stroke="{INK}"/>')
+        b.append(text(left - 12, yy + 5, str(tick), 14, MUTED, anchor="end"))
+    for A in (1, 2):
+        xx = X(A)
+        b.append(f'<line x1="{xx:.1f}" y1="{bot}" x2="{xx:.1f}" y2="{bot + 6}" stroke="{INK}"/>')
+        b.append(text(xx, bot + 24, f"A = {A}", 16, INK, "700", "middle"))
+    pts = [(1, 0.0673395762411, "0.06734"), (2, 1.65055568024e-8, "1.65×10⁻⁸")]
+    for A, mu, label in pts:
+        xx, yy = X(A), Y(math.log10(mu))
+        b.append(f'<circle cx="{xx:.1f}" cy="{yy:.1f}" r="7" fill="{INK}"/>')
+        b.append(text(xx + 14, yy - 10, label, 16, INK, "700"))
+    b.append(text(left, top - 16, "log10 of the smallest Rayleigh quotient", 14, MUTED))
+    b.append(text(40, 960, "Full width A of the interval [−A/2, A/2].", 16, INK))
+    b.append(text(40, 986, "Positive values are upper bounds, not a certificate.", 16, INK))
+
+    # signed reminder, one line, not a second essay
+    panel(b, 24, 1040, 672, 120, AMBER_BG, AMBER)
+    b.append(text(40, 1072, "After M_N takes the diagonal, the prime term is signed.", 18, AMBER, "700"))
+    b.append(text(40, 1104, "−2 aₙ ρ(log n) helps or hurts with ρ.", 16, INK))
+    b.append(text(40, 1130, "The spring energy E_N stays nonnegative either way.", 16, INK))
+
+    b.append(text(40, 1200, "On E0 the pole term is off, so domination of M_N by E_N is the target.", 16, INK))
+    b.append(text(40, 1232, "RH is not proved. No J or metric matching W is constructed.", 16, MUTED))
+
+    desc = ("Window couplings: archimedean density and prime springs, each nonnegative. "
+            "Identity uses finite M_N = -K(0)+2 sum_{n<=N} a_n with N at least exp(A), "
+            "F zero outside the window, and tails past the window cancelling. "
+            "Two K=8 exact-E0 minima: 0.06734 at full width A=1 and 1.65e-8 at A=2. "
+            "No curve is drawn. Upper bounds, not a certificate. RH is not proved.")
     open(os.path.join(HERE, "fig1_spring_balance.svg"), "w", encoding="utf-8").write(
-        svg_doc(w, h, "Spring energy versus the counterterm", desc, "\n".join(b)))
-
-
-def hyperbola(c, x0, x1, n=80):
-    pts = []
-    for i in range(n):
-        x = x0 + (x1 - x0) * i / (n - 1)
-        if abs(x) < 1e-6:
-            continue
-        y = c / x
-        pts.append((x, y))
-    return pts
+        svg_doc(w, h, "Finite spring energy and two Galerkin margins", desc, "\n".join(b)))
 
 
 def fig2():
-    w, h = 680, 1240
+    w, h = 720, 1320
     b = []
-    b.append(f'<rect x="28" y="24" width="624" height="78" fill="{BLUE}"/>')
-    b.append(lines(44, 54, ["Two boundary numbers."], 24, PAPER, weight="700"))
-    b.append(lines(44, 86, ["One hyperbolic form. Two different topologies."], 18, "#e7eef6"))
+    b.append(f'<rect x="24" y="18" width="672" height="58" fill="{BLUE}"/>')
+    b.append(text(40, 54, "Two function spaces, one smearing map", 22, PAPER, "700"))
 
-    # plane
-    ox, oy, s = 340, 430, 78  # origin and scale: math (x,y) -> (ox+s*x, oy-s*y)
+    # Tate box
+    panel(b, 24, 92, 300, 168, BLUE_BG, BLUE)
+    b.append(text(40, 122, "Tate data", 18, BLUE, "700"))
+    for i, line in enumerate([
+        "Schwartz–Bruhat f",
+        "b(f) = (f(0), ∫ f)",
+        "Fourier swaps them.",
+        "Scaling: |a|^(∓1/2).",
+    ]):
+        b.append(text(40, 150 + i * 24, line, 15, INK))
+
+    # arrow
+    b.append(f'<line x1="336" y1="170" x2="384" y2="170" stroke="{INK}" stroke-width="1.6" marker-end="url(#arr)"/>')
+    b.append(text(360, 158, "Θ_F", 14, INK, "700", "middle"))
+
+    # log-line box — height fits every line
+    panel(b, 396, 92, 300, 168, "#fff", RULE)
+    b.append(text(412, 122, "Log-line test F", 18, INK, "700"))
+    for i, line in enumerate([
+        "ev₀ = ∫ F e^(−u/2) du",
+        "ev₁ = ∫ F e^(u/2) du",
+        "E0: both moments zero.",
+        "Not the same as b(f).",
+    ]):
+        b.append(text(412, 150 + i * 24, line, 15, INK))
+
+    # smearing line, its own band so it cannot collide
+    panel(b, 24, 274, 672, 72, "#fff", RULE)
+    b.append(text(40, 304, "Smearing links them: b(Θ_F f) = diag(ev₀ F, ev₁ F) b(f).", 16, INK))
+    b.append(text(40, 328, "Θ_F preserves the kernel of b for every f precisely when F is in E0.", 15, MUTED))
+
+    # hyperbola of b, first quadrant, n = 0,1,2
+    panel(b, 24, 360, 420, 430, "#fff", RULE)
+    b.append(text(40, 388, "b-plane, form b₀ b₁", 16, BLUE, "700"))
+    ox, oy, s = 70, 740, 62
     def X(x): return ox + s * x
     def Y(y): return oy - s * y
-    b.append(f'<rect x="48" y="124" width="584" height="470" fill="#fff" stroke="{RULE}" stroke-width="1.25"/>')
-    # axes
-    b.append(f'<line x1="{X(-2.6)}" y1="{Y(0)}" x2="{X(2.6)}" y2="{Y(0)}" stroke="{INK}" stroke-width="1.4"/>')
-    b.append(f'<line x1="{X(0)}" y1="{Y(-2.5)}" x2="{X(0)}" y2="{Y(2.5)}" stroke="{INK}" stroke-width="1.4"/>')
-    b.append(text(X(2.15), Y(0) - 10, "b₀ = f(0)", 16, INK, anchor="end"))
-    b.append(text(X(0) - 8, Y(2.15), "b₁ = ∫ f", 16, INK, anchor="end"))
-    # hyperbolas b0*b1 = ±1
-    for c, col in ((1, BLUE), (-1, RED)):
-        for branch in hyperbola(c, 0.38, 2.5):
-            pass
-        parts = []
-        for x0, x1 in ((0.4, 2.45), (-2.45, -0.4)):
-            pts = hyperbola(c, x0, x1, 60)
-            d = "M " + " L ".join(f"{X(x):.1f},{Y(y):.1f}" for x, y in pts if -2.55 <= y <= 2.55)
-            parts.append(f'<path d="{d}" fill="none" stroke="{col}" stroke-width="2"/>')
-        b.extend(parts)
-    b.append(text(X(1.55), Y(0.78), "b₀ b₁ = 1", 15, BLUE))
-    b.append(text(X(-1.7), Y(0.85), "b₀ b₁ = −1", 15, RED))
-    # Fourier diagonal
-    b.append(f'<line x1="{X(-2.2)}" y1="{Y(-2.2)}" x2="{X(2.2)}" y2="{Y(2.2)}" stroke="{INK}" stroke-width="1" stroke-dasharray="5 4"/>')
-    b.append(text(X(1.15), Y(1.85), "Fourier swap", 15, INK))
-    # discrete Fq samples on b0 b1 = 1: (q^{-n/2}, q^{n/2})
-    q = 5
-    for n in (-1, 0, 1):
-        x = q ** (-n / 2)
-        y = q ** (n / 2)
-        if abs(x) < 2.4 and abs(y) < 2.4:
-            b.append(f'<circle cx="{X(x):.1f}" cy="{Y(y):.1f}" r="5" fill="{AMBER}" stroke="{INK}"/>')
-    b.append(text(56, 620, "Amber points: q = 5, n = −1, 0, 1. Discrete graph pairings.", 15, AMBER))
-    b.append(text(56, 642, "Same diagonal law as scaling. Not Mellin integrals.", 15, AMBER))
+    # axes 0 to 5.4
+    b.append(f'<line x1="{X(0):.1f}" y1="{Y(0):.1f}" x2="{X(5.3):.1f}" y2="{Y(0):.1f}" stroke="{INK}" stroke-width="1.4"/>')
+    b.append(f'<line x1="{X(0):.1f}" y1="{Y(0):.1f}" x2="{X(0):.1f}" y2="{Y(5.2):.1f}" stroke="{INK}" stroke-width="1.4"/>')
+    b.append(text(X(4.6), Y(0) + 18, "b₀ = f(0)", 13, MUTED))
+    b.append(text(X(1.15), Y(5.05), "b₁ = ∫ f", 13, INK))
+    pts = []
+    for i in range(80):
+        x = 0.22 + (5.1 - 0.22) * i / 79
+        y = 1 / x
+        if y <= 5.15:
+            pts.append((X(x), Y(y)))
+    d = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    b.append(f'<path d="{d}" fill="none" stroke="{BLUE}" stroke-width="2"/>')
+    b.append(text(X(1.6), Y(0.85), "b₀ b₁ = 1", 14, BLUE))
+    q = 5.0
+    for n in (0, 1, 2):
+        bx, by = q ** (-n / 2), q ** (n / 2)
+        b.append(f'<circle cx="{X(bx):.1f}" cy="{Y(by):.1f}" r="5.5" fill="{AMBER}" stroke="{INK}"/>')
+        dy = 16 if n == 2 else -8
+        b.append(text(X(bx) + 10, Y(by) + dy, f"n={n}", 13, AMBER, "700"))
+    b.append(text(40, 768, "q = 5, Frobenius iterates n = 0, 1, 2.", 14, AMBER))
 
-    b.append(f'<rect x="28" y="668" width="624" height="150" rx="8" fill="{BLUE_BG}" stroke="{BLUE}"/>')
-    b.append(lines(44, 698, ["Invariant Hermitian forms"], 20, BLUE, weight="700"))
-    b.append(lines(44, 732, wrap(
-        "The only Hermitian forms on these two numbers that stay fixed under every unitary scaling and under the Fourier swap are real multiples of the off-diagonal matrix. A nonzero multiple has signature (1, 1). The zero multiple is degenerate. The boundary does not supply a positive sign.",
-        64), 16, leading=24))
+    # signature box sized to its lines
+    sig_lines = [
+        "Invariant forms on b",
+        "are real multiples of",
+        "the off-diagonal matrix.",
+        "Nonzero: signature (1, 1).",
+        "Zero multiple: degenerate.",
+        "This boundary does not",
+        "give a positive sign.",
+    ]
+    sig_top, sig_h = 360, 36 + 24 * len(sig_lines) + 20
+    panel(b, 460, sig_top, 236, sig_h, BLUE_BG, BLUE)
+    for i, line in enumerate(sig_lines):
+        weight = "700" if i == 0 else "400"
+        b.append(text(476, sig_top + 32 + i * 24, line, 15, BLUE if i == 0 else INK, weight))
 
-    b.append(f'<rect x="28" y="836" width="300" height="230" rx="8" fill="#fff" stroke="{RULE}"/>')
-    b.append(lines(44, 866, ["Global L²"], 20, weight="700"))
-    b.append(lines(44, 900, wrap(
-        "The two moment functionals are unbounded. E0 is dense. Smooth functions in E0 are not an L²-closed subspace. There is no global orthogonal projection onto a pole-free subspace.",
-        30), 16, leading=24))
-    b.append(f'<rect x="352" y="836" width="300" height="230" rx="8" fill="#fff" stroke="{RULE}"/>')
-    b.append(lines(368, 866, ["One fixed window"], 20, weight="700"))
-    b.append(lines(368, 900, wrap(
-        "On a finite interval both exponentials are square-integrable, so the kernel is closed and has codimension 2. That projection depends on the window. It is not translation-covariant.",
-        30), 16, leading=24))
-    b.append(lines(36, 1090, wrap(
-        "A is the full width of [−A/2, A/2]. In the boundary checks, L is the half-width of [−L, L]. Read the interval. Prior: the operator d²/du² − 1/4 sends smooth functions of compact support bijectively onto E0 in that class (Connes–Consani 2021, Lemma 3.3).",
-        70), 16, leading=24))
-    b.append(lines(36, 1200, ["RH is not proved. The pole plane as an II₁,₁ lattice is an analogy only."], 16, MUTED))
-    desc = ("Boundary data (f(0), integral of f) carry a hyperbolic Hermitian form of signature (1,1), or zero. "
-            "Globally E0 is dense in L2 and not closed. On a fixed window the kernel is closed of codimension 2. "
-            "Finite-field points on the same hyperbola are discrete samples, not Mellin integrals. RH is not proved.")
+    # two topology panels, explicit lines, boxes tall enough
+    g_lines = [
+        "Global L² of the log line",
+        "ev₀ and ev₁ are unbounded",
+        "on L²(du), so E0 is dense.",
+        "Smooth E0 is not closed.",
+        "No global orthogonal",
+        "projection removes them.",
+        "These moments are not b(f).",
+    ]
+    w_lines = [
+        "One fixed log window",
+        "e^(±u/2) lie in L² there,",
+        "so the kernel is closed",
+        "and has codimension 2.",
+        "The projection depends",
+        "on that window.",
+    ]
+    row = 860
+    gh = 28 + 22 * len(g_lines) + 16
+    wh = 28 + 22 * len(w_lines) + 16
+    panel(b, 24, row, 330, gh, "#fff", RULE)
+    panel(b, 366, row, 330, max(gh, wh), "#fff", RULE)
+    for i, line in enumerate(g_lines):
+        b.append(text(40, row + 32 + i * 22, line, 15, INK, "700" if i == 0 else "400"))
+    for i, line in enumerate(w_lines):
+        b.append(text(382, row + 32 + i * 22, line, 15, INK, "700" if i == 0 else "400"))
+
+    foot = row + max(gh, wh) + 36
+    b.append(text(40, foot, "A is the full width of [−A/2, A/2]. In the boundary", 15, MUTED))
+    b.append(text(40, foot + 22, "checks, L is the half-width of [−L, L].", 15, MUTED))
+    b.append(text(40, foot + 48, "RH is not proved. II₁,₁ for the pole plane is an analogy.", 15, MUTED))
+
+    desc = ("Tate boundary values b(f)=(f(0), integral f) and log-line moments ev0, ev1 are different. "
+            "Smearing links them. The invariant form on b is hyperbolic or zero. "
+            "Amber points are q=5 Frobenius iterates n=0,1,2, not an inverse graph and not Mellin moments. "
+            "On the log line, E0 is dense in L2; on one window it is closed of codimension 2. RH is not proved.")
+    marker = '''<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs>'''
     open(os.path.join(HERE, "fig2_boundary_topology.svg"), "w", encoding="utf-8").write(
-        svg_doc(w, h, "Boundary form and two topologies", desc, "\n".join(b)))
-
-
-def card(b, x, y, w, hgt, title, rows, accent):
-    b.append(f'<rect x="{x}" y="{y}" width="{w}" height="{hgt}" rx="8" fill="#fff" stroke="{accent}" stroke-width="2"/>')
-    b.append(f'<rect x="{x}" y="{y}" width="8" height="{hgt}" fill="{accent}"/>')
-    b.append(lines(x + 24, y + 32, [title], 20, accent, weight="700"))
-    b.append(lines(x + 24, y + 64, rows, 16, leading=23))
+        svg_doc(w, h, "Tate boundary and log-line moments", desc, marker + "\n".join(b)))
 
 
 def fig3():
-    w, h = 680, 1240
+    w, h = 720, 1180
     b = []
-    b.append(f'<rect x="28" y="24" width="624" height="78" fill="{INK}"/>')
-    b.append(lines(44, 54, ["Related architectures."], 24, PAPER, weight="700"))
-    b.append(lines(44, 86, ["Not one identity."], 22, "#f3efe4"))
-    b.append(f'<rect x="28" y="120" width="624" height="110" rx="8" fill="{RED_BG}" stroke="{RED}"/>')
-    b.append(lines(44, 150, ["Not a theorem:"], 16, RED, weight="700"))
-    b.append(lines(44, 180, ["“Every mechanism is  Q = ‖Φ‖²  +  indefinite boundary.”"], 18, RED, weight="700"))
-    b.append(lines(44, 208, ["A family resemblance is not a universal formula."], 16, RED))
+    b.append(f'<rect x="24" y="18" width="672" height="58" fill="{INK}"/>')
+    b.append(text(40, 54, "Where a sign would have to be carried from", 22, PAPER, "700"))
 
-    # four small geometric marks + text
-    # 1 positive ellipse
-    b.append(f'<rect x="28" y="250" width="624" height="168" rx="8" fill="#fff" stroke="{GREEN}" stroke-width="1.5"/>')
-    b.append(f'<ellipse cx="92" cy="334" rx="48" ry="32" fill="none" stroke="{GREEN}" stroke-width="2.5"/>')
-    b.append(lines(160, 286, ["Robertson–Schrödinger"], 20, GREEN, weight="700"))
-    b.append(lines(160, 318, wrap(
-        "A positive Gram of a state or a weight. The commutator is optional: a commutative positive functional can be independent. W is unbounded, so the object is a weight on test functions, not a normalized state on bounded translations.",
-        48), 16, leading=23))
+    # central target
+    panel(b, 210, 96, 300, 88, AMBER_BG, AMBER)
+    b.append(text(360, 130, "Sign for W", 20, AMBER, "700", "middle"))
+    b.append(text(360, 158, "not constructed", 16, INK, "400", "middle"))
 
-    b.append(f'<rect x="28" y="434" width="624" height="168" rx="8" fill="#fff" stroke="{BLUE}" stroke-width="1.5"/>')
-    # ASD icon: square and a diagonal
-    b.append(f'<rect x="60" y="478" width="64" height="64" fill="none" stroke="{BLUE}" stroke-width="2"/>')
-    b.append(f'<line x1="60" y1="542" x2="124" y2="478" stroke="{BLUE}" stroke-width="2"/>')
-    b.append(text(92, 560, "ASD", 13, BLUE, "700", "middle"))
-    b.append(lines(160, 470, ["BPS, on a complex surface"], 20, BLUE, weight="700"))
-    b.append(lines(160, 502, wrap(
-        "The norm is the metric square. Primitive real (1,1) forms on a Kähler surface are anti-self-dual. Topological charge labels a sector. This is Riemannian geometry of a complex surface.",
-        48), 16, leading=23))
+    sources = [
+        (90, GREEN, "RS Gram", "state or weight"),
+        (250, BLUE, "BPS norm", "Kähler metric"),
+        (410, AMBER, "Hodge index", "finite field"),
+        (570, INK, "No-ghost", "transverse norm"),
+    ]
+    for x, col, title, sub in sources:
+        panel(b, x - 70, 230, 150, 78, "#fff", col)
+        b.append(text(x + 5, 262, title, 16, col, "700", "middle"))
+        b.append(text(x + 5, 286, sub, 13, INK, "400", "middle"))
+        # arrow up toward the target box (target spans x 210-510, y 96-184)
+        b.append(f'<line x1="{x + 5}" y1="230" x2="360" y2="184" stroke="{col}" stroke-width="1.6" marker-end="url(#arr)"/>')
 
-    b.append(f'<rect x="28" y="618" width="624" height="168" rx="8" fill="#fff" stroke="{AMBER}" stroke-width="1.5"/>')
-    # inertia icon + - 
-    b.append(text(78, 690, "+", 28, GREEN, "700", "middle"))
-    b.append(text(78, 724, "− − −", 18, RED, "700", "middle"))
-    b.append(lines(160, 654, ["Hodge index, over a finite field"], 20, AMBER, weight="700"))
-    b.append(lines(160, 686, wrap(
-        "The intersection form on an algebraic surface. Inertia sees the sign. A positive determinant can belong to a negative-definite block. Not the same object as the Kähler anti-self-dual equation.",
-        48), 16, leading=23))
+    # geometric icons under the four labels, in a linked row
+    # 1 ellipse
+    b.append(f'<ellipse cx="100" cy="390" rx="36" ry="22" fill="none" stroke="{GREEN}" stroke-width="2.4"/>')
+    # 2 ASD square
+    b.append(f'<rect x="232" y="364" width="48" height="48" fill="none" stroke="{BLUE}" stroke-width="2.2"/>')
+    b.append(f'<line x1="232" y1="412" x2="280" y2="364" stroke="{BLUE}" stroke-width="2"/>')
+    # 3 inertia
+    b.append(text(425, 386, "+", 22, GREEN, "700", "middle"))
+    b.append(text(425, 412, "− − −", 16, RED, "700", "middle"))
+    # 4 quotient arrow
+    b.append(f'<line x1="540" y1="392" x2="620" y2="392" stroke="{INK}" stroke-width="2" marker-end="url(#arr)"/>')
+    b.append(text(580, 380, "quotient", 13, INK, "400", "middle"))
 
-    b.append(f'<rect x="28" y="802" width="624" height="168" rx="8" fill="#fff" stroke="{INK}" stroke-width="1.5"/>')
-    b.append(f'<line x1="56" y1="886" x2="130" y2="886" stroke="{INK}" stroke-width="1.5" marker-end="url(#arr)"/>')
-    b.append(text(70, 870, "quotient", 14, INK, anchor="start"))
-    b.append(lines(160, 838, ["No-ghost"], 20, weight="700"))
-    b.append(lines(160, 870, wrap(
-        "A quotient. Positivity is carried in from an already positive transverse space. Calling the pole plane an II₁,₁ lattice is an analogy. No arithmetic lattice is constructed.",
-        48), 16, leading=23))
+    # explanations sized as full-width bands, lines hand-broken
+    bands = [
+        (GREEN, GREEN_BG, "Robertson–Schrödinger", [
+            "The Gram is positive because a state or a weight is positive.",
+            "A generic positive Gram need not include a commutator.",
+            "A nonzero RS commutator needs noncommuting operators.",
+            "W is a target for such a weight, not a weight already.",
+        ]),
+        (BLUE, "#fff", "BPS and the finite-field Hodge index", [
+            "On a Kähler surface the norm is the metric square.",
+            "Primitive real (1,1) forms there are anti-self-dual.",
+            "Over a finite field the sign is an intersection form.",
+            "Inertia sees it. Those are two geometries, linked here only as cousins.",
+        ]),
+        (INK, "#fff", "No-ghost", [
+            "The quotient carries in a transverse norm that is already positive.",
+            "It does not create the sign. The pole plane as a lattice is an analogy.",
+        ]),
+    ]
+    y = 450
+    for col, fill, title, rows in bands:
+        bh = 36 + 24 * len(rows) + 18
+        panel(b, 24, y, 672, bh, fill, col)
+        b.append(text(40, y + 28, title, 17, col, "700"))
+        for i, line in enumerate(rows):
+            b.append(text(40, y + 56 + i * 24, line, 15, INK))
+        y += bh + 14
 
-    b.append(lines(36, 1000, wrap(
-        "Connes 1999: in characteristic p the trace comparison is positive because of projection order. The number-field statement is equivalent to RH. Subtraction alone is not a sign. Semilocal Sonin is one candidate energy condition, not the unique one.",
-        70), 16, leading=24))
-    b.append(lines(36, 1100, wrap(
-        "The sought arithmetic correspondence geometry — a polarization whose compatible metric reproduces W — is not built. Rank 1 is still that missing J. RH is not proved.",
-        70), 16, leading=24))
-    # arrow marker
-    marker = '''<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-<path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs>'''
-    desc = ("Robertson–Schrödinger, BPS on a Kähler surface, the Hodge index over a finite field, and the no-ghost quotient are related architectures, not the single identity Q = norm squared plus an indefinite boundary. "
-            "The arithmetic polarization that would match W is not constructed. RH is not proved.")
+    b.append(text(40, y + 8, "Connes 1999: the global trace formula matches RH for every", 15, INK))
+    b.append(text(40, y + 28, "Grössencharakter L-function, not for ζ alone.", 15, INK))
+    b.append(text(40, y + 48, "In char. p, Δ subtracts Q′ from S. Order gives the sign.", 15, INK))
+    b.append(text(40, y + 72, "Rank 1 is still the missing compatible J. RH is not proved.", 16, MUTED))
+
+    desc = ("Four architectures point at a sign for W that is not constructed: "
+            "a Robertson-Schrodinger Gram of a positive state or weight "
+            "(a commutator is optional for a generic positive Gram, and required for a nonzero RS term), "
+            "a BPS metric square on a Kaehler surface, the finite-field Hodge index, "
+            "and a no-ghost quotient. W is not asserted to be a positive weight. RH is not proved.")
+    marker = '''<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs>'''
+    # height must include the last caption
+    h = y + 100
     open(os.path.join(HERE, "fig3_architectures.svg"), "w", encoding="utf-8").write(
-        svg_doc(w, h, "Related positivity architectures", desc, marker + "\n".join(b)))
+        svg_doc(w, h, "Architectures linked to a missing sign", desc, marker + "\n".join(b)))
 
 
 if __name__ == "__main__":

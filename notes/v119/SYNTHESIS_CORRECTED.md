@@ -12,41 +12,39 @@ A positive value of a finite Galerkin minimum is an upper bound on the smallest 
 
 A negative Rayleigh quotient on an explicit vector is a strong numerical witness that the matrix is indefinite, inside the arithmetic and quadrature error of that run. Call it certified only when a rigorous error bound is attached. This integration does not attach one.
 
-Do not put K = 12 and K = 14 on the same legend. In the spring scripts, A is the full width of the interval [−A/2, A/2]. In the boundary checks, L is the half-width of [−L, L]. Read the interval, not the letter.
+The published pair is K = 8. A in the spring scripts is the full width of [−A/2, A/2]. In the boundary checks, L is the half-width of [−L, L].
 
 ## Analogy
 
-Think of W as the energy of many springs, minus a counterterm. Each spring is a squared difference of a test function and a translate, weighted by a nonnegative density: the archimedean Lévy density, or a prime weight a_n = Λ(n) n^{−1/2}. The counterterm M ‖F‖² collects the diagonal of those squares, with M = −K(0) + 2 Σ a_n and K(0) = Re ψ(1/4) − log π.
+Think of W as the energy of many springs, minus a counterterm. Each spring is a squared difference of a test function and a translate, weighted by a nonnegative density: the archimedean Lévy density, or a prime weight a_n = Λ(n) n^{−1/2}. For F extended by zero outside a window of full width A, the counterterm that appears is the finite sum M_N ‖F‖² with M_N = −K(0) + 2 Σ_{n≤N} a_n and N ≥ e^A. The sum over every n, with no cutoff, diverges. Couplings that leave the window cancel. K(0) = Re ψ(1/4) − log π.
 
 On the pole annihilator the pole term is off, so W ≥ 0 for every test function if and only if the spring energy dominates the counterterm. That global comparison is the target. It is Weil positivity rewritten. A margin that shrinks toward zero, as the windows in the Galerkin runs do, is a picture of how tight the balance is. It is not a proof, and it is not a disproof.
 
-The same quadratic form can be grouped another way. After the diagonal has gone into M, each prime leaves a term −2 a_n ρ(log n), where ρ is the autocorrelation. That term helps or hurts with the sign of ρ. The spring energy itself stays nonnegative. Those are two statements. They must not be collapsed into “the primes have a sign” or into “there is no domination.”
+The same quadratic form can be grouped another way. After the diagonal has gone into M_N, each prime n ≤ N leaves a term −2 a_n ρ(log n), where ρ is the autocorrelation. That term helps or hurts with the sign of ρ. The spring energy itself stays nonnegative. Those are two statements. They must not be collapsed into “the primes have a sign” or into “there is no domination.”
 
 Famous positivity machines — a quantum covariance, a Bogomolny bound, the Hodge index over a finite field, the no-ghost theorem — are related architectures. They are not the single identity “every mechanism is a square plus an indefinite boundary.”
 
 ## 1. The spring identity (exact, and prior in pieces)
 
-For real F supported in a window of full width A, and N ≥ e^A,
+For real F extended by zero outside a window of full width A, and N ≥ e^A,
 
 W(F) = P(F) + ∫₀^∞ k_∞(a) ‖F − T_a F‖² da + Σ_{n≤N} a_n ‖F − T_{log n} F‖² − M_N ‖F‖²,
 
-with k_∞(a) = e^{−a/2} / (1 − e^{−2a}), M_N = −K(0) + 2 Σ_{n≤N} a_n, and P the pole term. The tails cancel on that window. Each summand of the spring energy is ≥ 0.
+with k_∞(a) = e^{−a/2} / (1 − e^{−2a}), M_N = −K(0) + 2 Σ_{n≤N} a_n, and P the pole term. Without the cutoff N the prime sum diverges. Terms that reach past the window cancel. Each summand of the spring energy E_N is ≥ 0.
 
 The archimedean Lévy representation K(r) = K(0) + 2 ∫ k_∞(a) (1 − cos r a) da is prior (atlas entries on the Lévy kernel and the jump-minus-mass split). Completing the square for the prime translations is the same quadratic form, not a new inequality.
 
-Equivalently, as a Rayleigh quotient,
+Equivalently, as a Rayleigh quotient for F in E0, where the pole term is zero,
 
-W(F)/‖F‖² = K(0) + ∫ k_∞(a) (2 − 2ρ(F, a)) da − 2 Σ a_n ρ(F, log n).
+W(F)/‖F‖² = K(0) + ∫ k_∞(a) (2 − 2ρ(F, a)) da − 2 Σ_{n≤N} a_n ρ(F, log n).
+
+Off E0 the same grouping keeps the pole term P(F)/‖F‖² on the right-hand side.
 
 The weight (2 − 2ρ) is nonnegative. The coefficient −2 a_n ρ is the signed net prime contribution. The map from weights (K(0), k_∞, a_n) to the bottom of the spectrum is concave, so the set of weights that stay nonnegative is convex. That is a fact about this family of forms. It does not decide membership for the arithmetic weights.
 
-An explicit anharmonic functional, a quadratic spring potential plus a quartic, has Hessian at the origin equal to W. Away from the origin the Hessian is W plus a nonnegative quartic term. A Hessian identity restates W.
+An explicit anharmonic functional, a quadratic spring potential plus a quartic potential with coupling λ ≥ 0, has Hessian at the origin equal to W. Away from the origin the Hessian is W plus a nonnegative term coming from that quartic potential. The Hessian stays quadratic in the variation; the quartic sits in the potential. A Hessian identity restates W.
 
-**Numerical, K = 8, exact-E0 basis, reproduced in this integration.** Smallest Rayleigh quotient of W: full width A = 1 gives 0.0673395762411; A = 2 gives 1.65055568024×10⁻⁸. Both are positive upper bounds. The mass M is about 6.35 and 11.22. The same script’s session notes at other K show the minimum still falling. Those notes are not a controlled limit, and they are not this K = 8 series.
-
-Session notes at A = 3, K = 12, record that dropping any single prime n ≤ 13 produced a negative direction on that basis. Treat that as a strong numerical witness of those matrices, not as a certified eigenvalue.
-
-Hat-basis runs (spacing 0.05) give different minima, for example about 1.7×10⁻² at full width 1. They are a third legend. Do not mix them with K = 8 or K = 12.
+**Numerical, K = 8, exact-E0 basis, reproduced in this integration.** Smallest Rayleigh quotient of W: full width A = 1 gives 0.0673395762411; A = 2 gives 1.65055568024×10⁻⁸. Both are positive upper bounds, not a certificate and not a limit in K. The printed mass in that run is the finite M_N for primes with log n < A, about 6.35 and 11.22. The figure shows these two points and no fitted curve.
 
 The older atlas sentence that “no domination argument can work” remains true of a uniform spectral gap: the margin closes, and a surplus independent of the test function is not on offer. It is not a ban on the identity W = E_springs − M ‖F‖². That identity is the domination target, and it is open.
 
@@ -60,7 +58,7 @@ On one fixed window the exponentials e^{±u/2} lie in L², so the kernel is clos
 
 The operator L = ∂² − 1/4 bijects compactly supported smooth functions onto E0 in that class and preserves support hulls, and positivity of W on the window intersection with the ideal is equivalent to positivity of the transported form. That is Connes–Consani 2021, Lemma 3.3 and Proposition 3.5 (**prior**). This integration does not claim it as a new theorem.
 
-On the core with the reference form G0, the pair (Q0, D) with Q0 = L Q L^{−1} is the Schrödinger representation relabelled, and the commutator identities hold there. A fixed window still needs a boundary condition before an operator is self-adjoint. A real convolution by F is self-adjoint only when F^♯ = F. Translations commute with each other. A noncommutative enlargement is needed if one wants a nonzero Robertson–Schrödinger commutator. It is not needed for an independent positive functional.
+On the test core (E0, G0), Q0 = L Q L^{−1} and the dilation satisfy [Q0, D] = i. They do not commute. A fixed-window self-adjoint realization still depends on boundary conditions of the domain. A real convolution by F is self-adjoint only when F^♯ = F. Translations commute with each other. A noncommutative enlargement is needed if one wants a nonzero Robertson–Schrödinger commutator. It is not needed for an independent positive functional.
 
 Finite-field Frobenius graphs, normalized by q^{−n/2}, have boundary pairings (q^{−n/2}, q^{n/2}). That is the same diagonal law. They are discrete samples. They are not the continuous Mellin moments.
 
@@ -78,7 +76,7 @@ Finite-field Frobenius graphs, normalized by q^{−n/2}, have boundary pairings 
 
 **No-ghost and Virasoro.** The level-2 Gram determinant 2h (16h² + 2(c − 5)h + c) is an algebraic identity. At h = −1 the vector L_{−2} + (3/2) L_{−1}² has norm squared (c − 26)/2, hence is null at c = 26. That calculation is not a unitarity proof. Here c is the Virasoro central charge. It is not a speed of light and not a topological charge. The no-ghost theorem (Goddard–Thorn, Physics Letters B 40 (1972) 235–238; Brower, Physical Review D 6 (1972) 1655–1662) transports positivity from a transverse space that is already positive. The pole plane as an II_{1,1} lattice is an **analogy**. No arithmetic lattice is constructed.
 
-**Connes 1999.** In characteristic p, the projection order Q′_{Λ,0} ≤ S_Λ makes the subtracted trace of positive type (Theorem 5, as recorded in the atlas: characteristic p). The global number-field trace formula is equivalent to RH. Subtraction by itself is not a sign. A negative sign in front of a term does not make a quotient positive.
+**Connes 1999.** The global trace formula is equivalent to the Riemann Hypothesis for all Grössencharakter L-functions. Over ℚ that is ζ and every Dirichlet L-function, not ζ alone. Weil positivity for the trivial character is the ζ case treated here. In characteristic p, the comparison Δ_Λ subtracts the projection Q′_{Λ,0} from S_Λ, and the order Q′_{Λ,0} ≤ S_Λ makes that difference of positive type (Theorem 5, as recorded in the atlas). Subtracting a positive operator does not by itself make the difference positive. The projection order does.
 
 **Connes–Consani 2021.** At the archimedean place, for small support and the vanishing conditions of their Theorem 1, the archimedean Weil form dominates a trace on Sonin space. The support restriction matters. This is prior.
 
@@ -94,14 +92,11 @@ Finite-field Frobenius graphs, normalized by q^{−n/2}, have boundary pairings 
 
 ## 4. The target, stated at the right strength (open)
 
-Weil positivity on E0 asks for the quadratic form W to be positive semidefinite. Equivalently, there exists a map from those test functions into a Hilbert space, or a semidefinite quotient of one, whose squared norm equals W(g ∗ g^♯) exactly, with the divergent counterterm handled as in a cutoff of Connes’ type. A semidefinite quotient is allowed. That existence statement is Weil positivity, hence the Riemann Hypothesis. It is a restatement.
+Weil positivity for ζ asks for W ≥ 0 on all compactly supported test functions in E0, on every window, not on one window. Equivalently, there is a map of that whole class into a Hilbert space, or a semidefinite quotient, whose squared norm equals W(g ∗ g^♯) exactly, with the divergent counterterm handled as in a cutoff of Connes’ type. A semidefinite quotient is allowed. That existence statement, for the whole class, is Weil positivity for ζ. It is a restatement.
 
-Four further demands make a construction useful, and they are not theorems that the Riemann Hypothesis hands you for free:
+The Riemann Hypothesis gives an abstract GNS factorization of W. Covariance and compatibility with restriction of the window follow from W, and W itself is already written by the zeros-blind explicit formula in primes and gamma data. Those formal compatibilities are not the missing source of the sign. An abstract GNS construction that assumes RH can inherit them, and is circular as a proof. This does not say that no compatibility follows from RH, and it does not say that every further demand, including an unspecified Hecke action or a Beurling control, follows automatically.
 
-1. The target space is positive for a reason that does not use the zeros. A Cholesky factor of a window matrix is circular.
-2. The map intertwines scaling and is consistent under restriction of the window.
-3. The map is built by a global coupling of Euler factors and gamma data. Place-local squares cannot equal the signed local terms one place at a time, because each local term is indefinite. A global coupled construction may still use primes, Euler factors, and gamma data. Those are legitimate zeros-blind inputs. There is no blanket ban on them.
-4. The construction fails for Davenport–Heilbronn, which has a functional equation and no Euler product.
+What is still missing is an independent proof of the positivity: a space H₊ known to be positive without assuming W ≥ 0, identified with W. Place-local squares still cannot match the signed local terms one place at a time. A global coupling may use primes, Euler factors, and gamma data; those are legitimate zeros-blind inputs. Failure on Davenport–Heilbronn remains a demand on a useful construction, not a formal compatibility inherited for free.
 
 A positive representation does not pick W. The reference form G0 does not pick W. Rank 1 of the atlas is unchanged: the missing object over ℚ is still a compatible J whose metric g(u, v) = ω(u, Jv) reproduces W on the pole annihilator. The sought arithmetic correspondence geometry — a surface, in the sense of a cohomology carrying that polarization — is not built. Connes–Consani have a square of sites. It does not yet carry this Hodge package. Saying “Spec ℤ × Spec ℤ is absent” would overstate that fact.
 
@@ -112,7 +107,7 @@ The pole plane remains signature (1, 1). Calling it the II_{1,1} summand of a la
 | Test | What it is | What it is not |
 |---|---|---|
 | Finite-field split, reproduced | Exact identity and inertia on E×E | A sign for ζ |
-| Free-basis signature, K = 8, A = 1 and A = 2 | W − P has one negative Rayleigh quotient (about −1.524 and −3.280) on an explicit vector; W’s Galerkin minimum is positive (about 1.4×10⁻⁴ and 4.4×10⁻¹²) | A certificate. No integral error bound is attached. Uses W itself, so not an independent sign. Same pattern as atlas entry on the free basis with one negative direction |
+| Free basis, off E0, K = 8, A = 1 and A = 2 | The matrix of W − P has exactly one negative Galerkin eigenvalue (about −1.524 and −3.280) with an explicit eigenvector. Numerical, not a certified enclosure. W’s Galerkin minimum on that same free basis is positive (about 1.4×10⁻⁴ and 4.4×10⁻¹²). Distinct from the exact-E0 spring basis | A certificate, and not the E0 spring computation |
 | Spring K = 8, exact E0, reproduced | Minima 0.06734 and 1.65×10⁻⁸ | A certificate or a limit in K |
 | Audit script | Boundary inertia, Clifford for both signatures, spring completion, finite-field inertia versus determinant, nonnegativity of a trace norm beside a signed remainder, a BPS toy Hessian, the completed-zeta ratio, the h = −1 Virasoro norm | An independent positivity theorem |
 | Trace-norm leakage at S = {∞, 2} | Not run | A well-posed falsifier in the form “leakage of negative sign.” A trace norm is nonnegative. A future test would have to bound that norm and, separately, a signed quadratic remainder, and only then talk about decay |
