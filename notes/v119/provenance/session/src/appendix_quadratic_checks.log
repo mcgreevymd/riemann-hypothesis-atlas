@@ -1,0 +1,5 @@
+Cl(1,1): True
+D^2 = Delta (Euclidean): True
+[1, 0, 0, 1] det 1  leading minors [1, 1]
+[-1, 0, 0, -1] det 1  leading minors [-1, 1]
+[-2, -1, -1, -10] det 19  leading minors [-2, 19]

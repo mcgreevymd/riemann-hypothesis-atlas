@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="994" viewBox="0 0 720 994" role="img" aria-labelledby="title desc">
+<title id="title">Architectures linked to a missing sign</title>
+<desc id="desc">Four architectures point at a sign for W that is not constructed: a Robertson-Schrodinger Gram of a positive state or weight (a commutator is optional for a generic positive Gram, and required for a nonzero RS term), a BPS metric square on a Kaehler surface, the finite-field Hodge index, and a no-ghost quotient. W is not asserted to be a positive weight. RH is not proved.</desc>
+<rect width="720" height="994" fill="#f7f4ee"/>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs><rect x="24" y="18" width="672" height="58" fill="#1c1915"/>
+<text x="40.0" y="54.0" fill="#f7f4ee" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Where a sign would have to be carried from</text>
+<rect x="210" y="96" width="300" height="88" rx="8" fill="#f8efd8" stroke="#7a4a06" stroke-width="1.5"/>
+<text x="360.0" y="130.0" fill="#7a4a06" font-size="20" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">Sign for W</text>
+<text x="360.0" y="158.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">not constructed</text>
+<rect x="20" y="230" width="150" height="78" rx="8" fill="#fff" stroke="#145c3a" stroke-width="1.5"/>
+<text x="95.0" y="262.0" fill="#145c3a" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">RS Gram</text>
+<text x="95.0" y="286.0" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">state or weight</text>
+<line x1="95" y1="230" x2="360" y2="184" stroke="#145c3a" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="180" y="230" width="150" height="78" rx="8" fill="#fff" stroke="#163a66" stroke-width="1.5"/>
+<text x="255.0" y="262.0" fill="#163a66" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">BPS norm</text>
+<text x="255.0" y="286.0" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">Kähler metric</text>
+<line x1="255" y1="230" x2="360" y2="184" stroke="#163a66" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="340" y="230" width="150" height="78" rx="8" fill="#fff" stroke="#7a4a06" stroke-width="1.5"/>
+<text x="415.0" y="262.0" fill="#7a4a06" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">Hodge index</text>
+<text x="415.0" y="286.0" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">finite field</text>
+<line x1="415" y1="230" x2="360" y2="184" stroke="#7a4a06" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="500" y="230" width="150" height="78" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="575.0" y="262.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">No-ghost</text>
+<text x="575.0" y="286.0" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">transverse norm</text>
+<line x1="575" y1="230" x2="360" y2="184" stroke="#1c1915" stroke-width="1.6" marker-end="url(#arr)"/>
+<ellipse cx="100" cy="390" rx="36" ry="22" fill="none" stroke="#145c3a" stroke-width="2.4"/>
+<rect x="232" y="364" width="48" height="48" fill="none" stroke="#163a66" stroke-width="2.2"/>
+<line x1="232" y1="412" x2="280" y2="364" stroke="#163a66" stroke-width="2"/>
+<text x="425.0" y="386.0" fill="#145c3a" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">+</text>
+<text x="425.0" y="412.0" fill="#7a2e2e" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">− − −</text>
+<line x1="540" y1="392" x2="620" y2="392" stroke="#1c1915" stroke-width="2" marker-end="url(#arr)"/>
+<text x="580.0" y="380.0" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="middle">quotient</text>
+<rect x="24" y="450" width="672" height="150" rx="8" fill="#e5f2ea" stroke="#145c3a" stroke-width="1.5"/>
+<text x="40.0" y="478.0" fill="#145c3a" font-size="17" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Robertson–Schrödinger</text>
+<text x="40.0" y="506.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">The Gram is positive because a state or a weight is positive.</text>
+<text x="40.0" y="530.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">A generic positive Gram need not include a commutator.</text>
+<text x="40.0" y="554.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">A nonzero RS commutator needs noncommuting operators.</text>
+<text x="40.0" y="578.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">W is a target for such a weight, not a weight already.</text>
+<rect x="24" y="614" width="672" height="150" rx="8" fill="#fff" stroke="#163a66" stroke-width="1.5"/>
+<text x="40.0" y="642.0" fill="#163a66" font-size="17" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">BPS and the finite-field Hodge index</text>
+<text x="40.0" y="670.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">On a Kähler surface the norm is the metric square.</text>
+<text x="40.0" y="694.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Primitive real (1,1) forms there are anti-self-dual.</text>
+<text x="40.0" y="718.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Over a finite field the sign is an intersection form.</text>
+<text x="40.0" y="742.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Inertia sees it. Those are two geometries, linked here only as cousins.</text>
+<rect x="24" y="778" width="672" height="102" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="806.0" fill="#1c1915" font-size="17" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">No-ghost</text>
+<text x="40.0" y="834.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">The quotient carries in a transverse norm that is already positive.</text>
+<text x="40.0" y="858.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">It does not create the sign. The pole plane as a lattice is an analogy.</text>
+<text x="40.0" y="902.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Connes 1999: the global trace formula matches RH for every</text>
+<text x="40.0" y="922.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Grössencharakter L-function, not for ζ alone.</text>
+<text x="40.0" y="942.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">In char. p, Δ subtracts Q′ from S. Order gives the sign.</text>
+<text x="40.0" y="966.0" fill="#4a453c" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Rank 1 is still the missing compatible J. RH is not proved.</text>
+</svg>

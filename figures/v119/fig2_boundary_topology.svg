@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1320" viewBox="0 0 720 1320" role="img" aria-labelledby="title desc">
+<title id="title">Tate boundary and log-line moments</title>
+<desc id="desc">Tate boundary values b(f)=(f(0), integral f) and log-line moments ev0, ev1 are different. Smearing links them. The invariant form on b is hyperbolic or zero. Amber points are q=5 Frobenius iterates n=0,1,2, not an inverse graph and not Mellin moments. The L2 moment kernel on a fixed window is closed of codimension 2; smooth E0 is dense in it. RH is not proved.</desc>
+<rect width="720" height="1320" fill="#f7f4ee"/>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs><rect x="24" y="18" width="672" height="58" fill="#163a66"/>
+<text x="40.0" y="54.0" fill="#f7f4ee" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Two function spaces, one smearing map</text>
+<rect x="24" y="92" width="300" height="168" rx="8" fill="#e7eef6" stroke="#163a66" stroke-width="1.5"/>
+<text x="40.0" y="122.0" fill="#163a66" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Tate data</text>
+<text x="40.0" y="150.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Schwartz–Bruhat f</text>
+<text x="40.0" y="174.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">b(f) = (f(0), ∫ f)</text>
+<text x="40.0" y="198.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Fourier swaps them.</text>
+<text x="40.0" y="222.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Scaling: |a|^(∓1/2).</text>
+<line x1="336" y1="170" x2="384" y2="170" stroke="#1c1915" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="360.0" y="158.0" fill="#1c1915" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">Θ_F</text>
+<rect x="396" y="92" width="300" height="168" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="412.0" y="122.0" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Log-line test F</text>
+<text x="412.0" y="150.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">ev₀ = ∫ F e^(−u/2) du</text>
+<text x="412.0" y="174.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">ev₁ = ∫ F e^(u/2) du</text>
+<text x="412.0" y="198.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">E0: both moments zero.</text>
+<text x="412.0" y="222.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Not the same as b(f).</text>
+<rect x="24" y="274" width="672" height="72" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="304.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Smearing links them: b(Θ_F f) = diag(ev₀ F, ev₁ F) b(f).</text>
+<text x="40.0" y="328.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Θ_F maps the entire Schwartz–Bruhat space into ker b iff F ∈ E0.</text>
+<rect x="24" y="360" width="420" height="430" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="388.0" fill="#163a66" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">b-plane, form b₀ b₁</text>
+<line x1="70.0" y1="740.0" x2="398.6" y2="740.0" stroke="#1c1915" stroke-width="1.4"/>
+<line x1="70.0" y1="740.0" x2="70.0" y2="417.6" stroke="#1c1915" stroke-width="1.4"/>
+<text x="355.2" y="758.0" fill="#4a453c" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">b₀ = f(0)</text>
+<text x="141.3" y="426.9" fill="#1c1915" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">b₁ = ∫ f</text>
+<path d="M 83.6,458.2 L 87.5,520.0 L 91.3,559.5 L 95.1,587.0 L 99.0,607.3 L 102.8,622.8 L 106.6,635.0 L 110.4,645.0 L 114.3,653.2 L 118.1,660.1 L 121.9,666.0 L 125.8,671.1 L 129.6,675.5 L 133.4,679.4 L 137.3,682.8 L 141.1,685.9 L 144.9,688.7 L 148.7,691.2 L 152.6,693.4 L 156.4,695.5 L 160.2,697.4 L 164.1,699.1 L 167.9,700.7 L 171.7,702.2 L 175.6,703.6 L 179.4,704.9 L 183.2,706.0 L 187.0,707.2 L 190.9,708.2 L 194.7,709.2 L 198.5,710.1 L 202.4,711.0 L 206.2,711.8 L 210.0,712.5 L 213.9,713.3 L 217.7,714.0 L 221.5,714.6 L 225.3,715.3 L 229.2,715.9 L 233.0,716.4 L 236.8,717.0 L 240.7,717.5 L 244.5,718.0 L 248.3,718.4 L 252.2,718.9 L 256.0,719.3 L 259.8,719.7 L 263.6,720.1 L 267.5,720.5 L 271.3,720.9 L 275.1,721.3 L 279.0,721.6 L 282.8,721.9 L 286.6,722.3 L 290.5,722.6 L 294.3,722.9 L 298.1,723.1 L 301.9,723.4 L 305.8,723.7 L 309.6,724.0 L 313.4,724.2 L 317.3,724.5 L 321.1,724.7 L 324.9,724.9 L 328.8,725.1 L 332.6,725.4 L 336.4,725.6 L 340.2,725.8 L 344.1,726.0 L 347.9,726.2 L 351.7,726.4 L 355.6,726.5 L 359.4,726.7 L 363.2,726.9 L 367.1,727.1 L 370.9,727.2 L 374.7,727.4 L 378.5,727.5 L 382.4,727.7 L 386.2,727.8" fill="none" stroke="#163a66" stroke-width="2"/>
+<text x="169.2" y="687.3" fill="#163a66" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">b₀ b₁ = 1</text>
+<circle cx="132.0" cy="678.0" r="5.5" fill="#7a4a06" stroke="#1c1915"/>
+<text x="142.0" y="670.0" fill="#7a4a06" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">n=0</text>
+<circle cx="97.7" cy="601.4" r="5.5" fill="#7a4a06" stroke="#1c1915"/>
+<text x="107.7" y="593.4" fill="#7a4a06" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">n=1</text>
+<circle cx="82.4" cy="430.0" r="5.5" fill="#7a4a06" stroke="#1c1915"/>
+<text x="92.4" y="446.0" fill="#7a4a06" font-size="13" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">n=2</text>
+<text x="40.0" y="768.0" fill="#7a4a06" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">q = 5, Frobenius iterates n = 0, 1, 2.</text>
+<rect x="460" y="360" width="236" height="224" rx="8" fill="#e7eef6" stroke="#163a66" stroke-width="1.5"/>
+<text x="476.0" y="392.0" fill="#163a66" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Invariant forms on b</text>
+<text x="476.0" y="416.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">are real multiples of</text>
+<text x="476.0" y="440.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">the off-diagonal matrix.</text>
+<text x="476.0" y="464.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Nonzero: signature (1, 1).</text>
+<text x="476.0" y="488.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Zero multiple: degenerate.</text>
+<text x="476.0" y="512.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">This boundary does not</text>
+<text x="476.0" y="536.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">give a positive sign.</text>
+<rect x="24" y="860" width="330" height="198" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<rect x="366" y="860" width="330" height="198" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="892.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Global L² of the log line</text>
+<text x="40.0" y="914.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">ev₀ and ev₁ are unbounded</text>
+<text x="40.0" y="936.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">on L²(du), so E0 is dense.</text>
+<text x="40.0" y="958.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Smooth E0 is not closed.</text>
+<text x="40.0" y="980.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">No global orthogonal</text>
+<text x="40.0" y="1002.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">projection removes them.</text>
+<text x="40.0" y="1024.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">These moments are not b(f).</text>
+<text x="382.0" y="892.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">One fixed log window</text>
+<text x="382.0" y="914.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">e^(±u/2) lie in L² there,</text>
+<text x="382.0" y="936.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">so the kernel is closed</text>
+<text x="382.0" y="958.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">and has codimension 2.</text>
+<text x="382.0" y="980.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">The projection depends</text>
+<text x="382.0" y="1002.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">on that window.</text>
+<text x="40.0" y="1094.0" fill="#4a453c" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">A is the full width of [−A/2, A/2]. In the boundary</text>
+<text x="40.0" y="1116.0" fill="#4a453c" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">checks, L is the half-width of [−L, L].</text>
+<text x="40.0" y="1142.0" fill="#4a453c" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">RH is not proved. II₁,₁ for the pole plane is an analogy.</text>
+</svg>

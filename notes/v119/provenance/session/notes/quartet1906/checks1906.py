@@ -1,0 +1,16 @@
+import mpmath as mp, sympy as sp
+# (1) K(t)=Re psi(1/4+it/2)-log pi equals 2*theta'(t) (Riemann-Siegel theta) = -(d/dt) arg gamma(1/2+it), gamma(s)=Γ_R(1-s)/Γ_R(s)
+GR=lambda s: mp.pi**(-s/2)*mp.gamma(s/2)
+for t in [0.5,3,14.13,50]:
+    K=mp.re(mp.digamma(0.25+0.5j*t))-mp.log(mp.pi)
+    th1=mp.diff(mp.siegeltheta,t)
+    dargg=mp.diff(lambda x: mp.im(mp.log(GR(0.5-1j*x)/GR(0.5+1j*x))),t)
+    print(t, mp.nstr(K,12), mp.nstr(2*th1,12), mp.nstr(-dargg,12))
+# (2) dilation generator: x∂+1/2 under Fourier -> -(y∂+1/2)  (f = Gaussian*poly)
+x,y=sp.symbols('x y',real=True); f=(1+x+x**2)*sp.exp(-sp.pi*x**2)
+FT=lambda h: sp.simplify(sp.integrate(h*sp.exp(-2*sp.pi*sp.I*x*y),(x,-sp.oo,sp.oo)))
+lhs=FT(x*sp.diff(f,x)+f/2); fh=FT(f); rhs=-(y*sp.diff(fh,y)+fh/2)
+print('F(x∂+½)F^-1 = -(y∂+½):',sp.simplify(lhs-rhs)==0)
+# (3) half-density log-line: ∂_u[e^{u/2} g(e^u)] = e^{u/2}((x∂+½)g)(e^u)
+u=sp.symbols('u',real=True); g=sp.Function('g')
+print('D_log = -i(x∂+½):',sp.simplify(sp.diff(sp.exp(u/2)*g(sp.exp(u)),u)-sp.exp(u/2)*(sp.exp(u)*sp.Subs(sp.diff(g(x),x),x,sp.exp(u)).doit()+g(sp.exp(u))/2))==0)

@@ -1,0 +1,50 @@
+{
+ "rh_proved": false,
+ "basis": "free (constrained=False), K=8, full width A of [-A/2, A/2]",
+ "certificate_status": "negative Rayleigh quotients are strong numerical witnesses without a rigorous integral error bound; positive minima are Galerkin upper bounds",
+ "Fq_minusD2_eigs": [
+  -7.314502,
+  0.367843,
+  1.0,
+  5.946659
+ ],
+ "Fq_W_eigs": [
+  0.0,
+  0.0,
+  1.527864,
+  10.472136
+ ],
+ "zeta_A=1": {
+  "W_minus_P_eigs": [
+   "-1.52372",
+   "0.0251095",
+   "0.258915"
+  ],
+  "n_neg_W_minus_P": 1,
+  "W_eigs": [
+   "0.000137191",
+   "0.00901497",
+   "0.332744"
+  ],
+  "n_neg_W": 0,
+  "witness_rayleigh": "-1.5237219",
+  "P_on_that_vector": "1.5873369"
+ },
+ "zeta_A=2": {
+  "W_minus_P_eigs": [
+   "-3.28031",
+   "2.00952e-8",
+   "4.48298e-7"
+  ],
+  "n_neg_W_minus_P": 1,
+  "W_eigs": [
+   "4.42209e-12",
+   "1.48275e-10",
+   "3.0679e-8"
+  ],
+  "n_neg_W": 0,
+  "witness_rayleigh": "-3.2803056",
+  "P_on_that_vector": "3.3111359"
+ }
+}
+EXIT:0

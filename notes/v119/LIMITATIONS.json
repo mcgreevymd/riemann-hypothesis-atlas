@@ -1,0 +1,49 @@
+{
+ "version": "1.19",
+ "date": "2026-11-07 UTC; session night 2026-11-06 America/Chicago",
+ "rh_proved": false,
+ "ample_class_or_J_or_metric_matching_W": false,
+ "new_independent_positivity_theorem": false,
+ "status_sentence": "RH unproved; structural refinements and consistency tests; no new independent positivity theorem.",
+ "certificate_rule": {
+  "positive_galerkin_minimum": "upper bound on that matrix, not a certificate of positivity, and not a controlled limit in the basis size",
+  "negative_explicit_vector": "strong numerical witness inside the arithmetic and quadrature error of the run; certified only if a rigorous error bound is attached",
+  "this_integration_attaches_an_error_bound": false
+ },
+ "window_convention": {
+  "A": "full width of the interval [-A/2, A/2] in the spring and signature scripts",
+  "L_in_boundary_checks": "half-width of [-L, L]",
+  "published_figure": "K=8 exact-E0, two points A=1 and A=2, no fitted curve"
+ },
+ "reproduced": {
+  "spring_K8_exact_E0": {
+   "A1_mu_L2": "0.0673395762411",
+   "A2_mu_L2": "1.65055568024e-8",
+   "matches_session_log": true
+  },
+  "test1_Fq_split": "151 rows, negative-semidefinite iff Hasse, reproduced",
+  "audit_v119": "all checks passed; see results/audit_v119.json"
+ },
+ "not_run": {
+  "trace_norm_leakage_S_infinity_and_2": "Ill-posed as drafted. A trace norm is nonnegative, so leakage cannot be assigned a negative sign. A future test must bound the nonnegative norm and, separately, a signed quadratic remainder, and only then discuss decay."
+ },
+ "corrections_applied_on_top_of_the_bundle": [
+  "Status is not 'nothing claims progress.' Structural refinements and consistency tests; no new positivity theorem.",
+  "Counterterm is finite: M_N = -K(0) + 2 sum_{n<=N} a_n, N >= exp(A), F zero outside the window. The uncutoff sum diverges. Tails past the window cancel.",
+  "Rayleigh form without the pole is for F in E0. Off E0 the pole term remains.",
+  "E0 on the log line is dense in L2 and not closed. Tate b(f) is a different space, linked by smearing.",
+  "Finite-field samples are not continuous Mellin moments. The figure uses Frobenius iterates n=0,1,2.",
+  "There is no universal identity 'every mechanism is a square plus an indefinite boundary.'",
+  "Connes 1999: global trace formula <=> RH for all Groessencharakter L-functions (over Q: zeta and all Dirichlet). In char p, Delta subtracts Q'_{Lambda,0} from S_Lambda. Subtracting a positive operator does not by itself make the difference positive.",
+  "II_{1,1} is an analogy. No arithmetic lattice is constructed.",
+  "Kaehler anti-self-dual geometry and the Hodge index on C x C (used in Weil RH for curves) are different theorems.",
+  "Abstract GNS factorization assuming RH can inherit formal compatibilities and is circular as a proof. The missing piece is independent positivity of H+ identified with W. Not every further demand follows automatically.",
+  "On the test core, [Q0, D] = i. They do not commute. Fixed-window self-adjointness needs boundary conditions. Real F is a self-adjoint convolution only if F sharp equals F.",
+  "Trace-norm leakage is nonnegative.",
+  "Hessian off the origin is W plus a nonnegative term from a quartic potential with lambda >= 0. The Hessian stays quadratic in the variation.",
+  "Free-basis K=8: exactly one negative Galerkin eigenvalue of W-P, numerical, not the exact-E0 spring basis.",
+  "Lambda(1/2-it)/Lambda(1/2+it) = 1 by the functional equation.",
+  "h=-1 Virasoro norm is algebra, not a unitarity proof."
+ ],
+ "raw_session_notes": "notes/v119/provenance/session is archived and superseded by SYNTHESIS_CORRECTED.md"
+}

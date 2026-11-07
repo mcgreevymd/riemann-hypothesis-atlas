@@ -1,0 +1,39 @@
+{
+ "i_boundary_law": [
+  true,
+  true
+ ],
+ "ii_split_identity": true,
+ "ii_cross_term_zero": true,
+ "perp_gram": "Matrix([[-2, -a], [-a, -2*q]])",
+ "perp_det": "-a**2 + 4*q",
+ "iii_neg_semidef_iff_hasse_all_rows": true,
+ "iii_rows": 151,
+ "iii_det_positive_but_negative_definite_examples": [
+  [
+   2,
+   -2
+  ],
+  [
+   2,
+   -1
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   2,
+   1
+  ],
+  [
+   2,
+   2
+  ]
+ ],
+ "iii_det_alone_cannot_tell_sign": "det(-I2)=det(+I2)=1; here det=4q-a^2>0 occurs with signature (0,2); positivity needs inertia/principal minors",
+ "iii_boundary_signature": [
+  -1,
+  1
+ ]
+}

@@ -1,0 +1,26 @@
+# charge1912 — can a sign enter through a topological charge (instanton / monopole)? (t1912; RH not proved)
+Checks: checks1912.py (sympy, exact). Conventions: Euclidean R⁴, vol=e1234, ⟨e_ij,e_ij⟩=1, F=F⁺+F⁻, *F^±=±F^±.
+
+## Exact (checked)
+(a) Bogomolny, pointwise: |F|² = |F⁺|²+|F⁻|², F∧F = (|F⁺|²−|F⁻|²)vol ⇒ |F|² ∓ F∧F/vol = 2|F^∓|² ≥ 0.
+   Integrated (YM, conventional normalisation S=(1/2g²)∫tr|F|², k=(1/8π²)∫tr F∧F): S ≥ 8π²|k|/g², equality iff F=±*F (SD/ASD sector).
+   • Sign of k = orientation; |k| is a bound, not an energy sign. The POSITIVITY is the kinetic term |F|² (Hodge star of a Riemannian metric); topology only selects the sector.
+(c) BPS Hessian: Φ = ‖M(x)‖² + C_top, C_top locally constant (δk=0 under compactly supported variations, δ∫F∧F = 2∫d tr(δA∧F) = 0). At M=0: Hess Φ = 2 dMᵀdM ≥ 0 (toy: eig 12,2,0; the 0 is the "gauge/moduli" direction). Positivity comes from the SQUARE factorisation, not from C_top. Non-BPS critical points in a sector can be unstable: (x²+y²−1)² at 0 has Hess eig −4.
+(b) EXACT BRIDGE Hodge index ⇔ ASD: on C² with Kähler ω=e12+e34 (self-dual), real (1,1) = Rω ⊕ Λ⁻ and every primitive real (1,1) α is ASD: *α=−α, α∧α = −|α|²vol (checked). With α = harmonic rep of c₁ (α=iF_A/2π, real, primitive): D² = ∫α∧α = −‖α‖²_{L²} ≤ 0. So: a primitive harmonic U(1) curvature on a Kähler surface IS an abelian ASD instanton; its charge equals minus its action. Hodge index sign (1, h^{1,1}−1) = "kinetic positivity of ⋆ restricted to the polarisation-primitive sector". The sign source is ω (polarisation), not c₁.
+(d) Integral charge ≠ positivity: c₁ integral (Dirac quantisation / prequantum ω/2π) does not imply ampleness. Curve: deg>0 ⇒ ample. Surface: Bl_pt P², D=2H+E: D²=3>0 but D·E=−1 ⇒ not ample (Nakai–Moishezon). P¹×P¹, D=(1,−1) primitive for H=(1,1): D²=−2.
+(e) Finite field, E×E over F_p (basis h,v,Δ,Γ_Frob): Gram on ⟨h,v⟩^⊥ of Δ,Γ = [[−2,−a],[−a,−2p]], det 4p−a² (= atlas L162). Negative definite ⇔ a² < 4p (p=5: a=2,4 ok; fake a=5: eig +0.403 ⇒ "anti-instanton" violation). This is the q-case "charge = −action" in finite form; algebraic (Mattuck–Tate / Grothendieck 1958), not differential gauge theory.
+
+## Analogy ledger (precision second)
+- Monopole: E = ½∫|B|²+|Dφ|² = ½∫|B∓Dφ|² ± ∫B·Dφ; last term = boundary flux at S²_∞ ∝ v·m. Same structure: square + boundary charge. Compat1907 parallel: our boundary data b ∈ C² carries the (1,1) hyperbolic form = the "flux at infinity"; E0 = {b=0} is the k=0 sector, where C_top vanishes. So on E0 the charge term is gone and positivity must be the bulk square — the same missing sign, no new source.
+- Dirac/index: ind = n₊ − n₋ counts a difference; it is not a positivity statement.
+- Instanton moduli: hyperkähler quotient μ=0 is BPS; the L² metric on moduli is positive because inherited from L² (kinetic) — again independent source required + matching W absent.
+- Root number ε (±1, |ε|=1) is charge-like (orientation/Z₂) but carries no positivity; DH also has |ε|=1. SUSY central charge H ≥ |Z| analogy: do NOT identify Z with ε.
+- Arithmetic real instance: Faltings–Hriljac arithmetic Hodge index: on a regular arithmetic surface X→Spec O_K, for M of degree 0 on X_K and ⊥ all vertical divisors, M² = −2ĥ_NT(M) ≤ 0 (Faltings 1984 Ann. Math.; Hriljac 1985 Amer. J. Math 107; stated as Thm 1.1 in Yuan–Zhang, "Arithmetic Hodge index theorem for adelic line bundles I"). Here the archimedean contribution is a Green-function (Dirichlet, kinetic) energy and positivity comes from the Néron–Tate height (ample theta). It lives on arithmetic surfaces over Spec Z, not on "Spec Z × Spec Z", so it does not give ζ's sign.
+
+## Precise conclusion
+Topological charge fixes a sector and appears as an indefinite boundary/intersection term; positivity always comes from a square (‖F^∓‖², ‖M‖², ‖Qψ‖²) built from a metric/polarisation. For quadratic W, Hess at vacuum g=0 is 2W itself, so "Hessian ≥ 0 in the k=0 sector" = Weil positivity on E0 = RH (restatement, circular). Instanton analogy adds content only via an INDEPENDENT M.
+
+## Proposed route (not launched)
+Arithmetic BPS target: W(g∗g*) = ‖M g‖² + C_top(b(g)), C_top = compat1907 hyperbolic boundary form (zero on E0), with M (i) built from Euler/Γ data, not zeros, (ii) intertwining scaling (deformation complex 0→Lie(C_Q¹-scaling)→E0 →dM→ 𝓗 →0, Hess=2‖dM·‖² on slice), (iii) trace identification Tr(M*M V(g∗g*)) = W proved, (iv) failing for DH. Abstract existence of M on E0 ⇔ RH; content = construction. Candidate M: primitive-projection P_prim on a hypothetical arithmetic surface's H² (the "ASD part"), approximated semilocally by the Sonin compression (CC21 gives one-sided W_∞ ≥ Tr(ϑSϑ*) at ∞).
+Test (not launched): at S={∞,2}, compute δ_S(g) = W_S(g∗g*) − Tr(ϑ_S(g)S_Sϑ_S(g)*) on E0 windows ≤ log4 with ϑ_S the CCM semilocal map; record min eigenvalue vs window. Known: naive W−Son at 2 fails (R26 λ_min = −log2/√2); this variant tests whether the failing direction lies in the C_top (boundary) span — i.e. whether projecting b out first removes the R26 negative eigenvector. Falsified if λ_min stays < 0 on E0 proper.
+Sources: Faltings, Calculus on arithmetic surfaces, Ann. Math. 119 (1984); Hriljac, Amer. J. Math. 107 (1985) doi:10.2307/2374455; Yuan–Zhang hodge-I (web.math.princeton.edu/~shouwu/publications/hodge-I-version2.pdf); CC21 arXiv 2006.13771.

@@ -1,0 +1,11 @@
+# spinor1908 — Witten/Dirac positivity looped back (t1908; after tate1905/quartet1906; compat1907 not seen by this worker)
+Recovered prior: BASELINE_wall_at_infinity_20261102.md (4 slots: boundary ∞=Γ+pole "mass"; interior positivity at finite places; first-order D; asymptotic condition, Stirling candidate); atlas witten_constant_window (−R ≤ c·T), weitzenbock_curvature_density (pointwise Witten condition FAILS), spinor_root_open (generic root circular), lichnerowicz_is_gamma_shift (k/4=a/2 archimedean), flat_bochner_curvature_ghost_blind; STATE: W={Q,Q*} ⇔ W≥0 (circular), skew-torsion Lichnerowicz −2s²‖H‖² (against positivity), Dirac-sea Hardy fill (circular as criterion).
+GR (standard; normalizations vary): Lichnerowicz D²=∇*∇+R/4. Witten: on asymptotically flat initial data with DEC μ≥|J|, solve Witten eq. Dψ=0, ψ→ψ0 (existence = elliptic/Lichnerowicz input); integrated identity
+  ∮_∞ (Nester form) = ∫_Σ |∇ψ|² + ¼⟨ψ,(μ+J_iγ^0γ^i)ψ⟩·c ≥ 0  ⇒ ⟨ψ0,(E+P·γ)ψ0⟩ ≥ 0 ∀ψ0 ⇒ E ≥ |P|.
+Sign supplied by DEC (bulk) + Dψ=0 + asymptotics; spinor alone supplies only the square.
+Source check CCM arXiv:2310.18423 (opened): prolate W_λ = −S² + 2πλ²(4N+1) − ¼ (S scaling generator, N Hermite grading), = metaplectic h²+4πλ²k−¼; spectral triple of cyclic pair (S,ξ); semilocal spectral measure dm_S=|∏_{v∈S}L_v(½−is)|²ds; Sonin = negative spectrum; strategy "compare the trace functional of the operator — automatically positive — with the Weil functional". Shape: positive potential MINUS Dirac square (opposite Lichnerowicz sign).
+Schematic arithmetic Witten identity (TARGET, not a theorem), g ∈ E0∩C_c^∞(window), Φ_g=U(g)ξ_S ∈ L²(X_S):
+  W_S(g*g^♯) = ‖𝒟Φ_g‖² + ⟨Φ_g, 𝓡_S Φ_g⟩ + B_∞(g)     [pole boundary f(0),∫f killed by E0 (tate1905 F2); not ADM]
+Missing object replacing DEC: a GLOBAL operator inequality 𝓡_S ≥ 0 (not per prime), concretely the semilocal Sonin inequality
+  W_S(g*g*) ≥ Tr(ϑ_S(g) Π_S ϑ_S(g)*) − c_S|ĝ(0)|²   (CC21 Thm 1/6.11 at S={∞}; atlas needed_semilocal_sonin_inequality OPEN; R26: naive Π_S fails, λ_min −log2/√2).
+Witten-equation analogue = existence/self-adjointness of semilocal prolate (CCM: forthcoming second candidate). Doubling L or Schur complement → G0 energy or relocated sign, not W.

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img" aria-labelledby="title desc">
+<title id="title">Finite spring energy and two Galerkin margins</title>
+<desc id="desc">Window couplings: archimedean density and prime springs, each nonnegative. Identity uses finite M_N = -K(0)+2 sum_{n&lt;=N} a_n with N at least exp(A), F zero outside the window, and tails past the window cancelling. Two K=8 exact-E0 minima: 0.06734 at full width A=1 and 1.65e-8 at A=2. No curve is drawn. Upper bounds, not a certificate. RH is not proved.</desc>
+<rect width="720" height="1280" fill="#f7f4ee"/>
+<rect x="24" y="20" width="672" height="64" fill="#1c1915"/>
+<text x="40.0" y="48.0" fill="#f7f4ee" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Springs on a window, and two computed margins</text>
+<text x="40.0" y="72.0" fill="#f3efe4" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">The counterterm is finite. The points are the data.</text>
+<rect x="24" y="100" width="672" height="250" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="128.0" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Couplings inside a window of full width A</text>
+<line x1="60" y1="230" x2="640" y2="230" stroke="#1c1915" stroke-width="2"/>
+<text x="60.0" y="252.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">−A/2</text>
+<text x="600.0" y="252.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">A/2</text>
+<rect x="70" y="258" width="510" height="22" fill="#145c3a" opacity="0.28"/>
+<text x="70.0" y="298.0" fill="#145c3a" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">archimedean density k(a) ≥ 0 along the window</text>
+<path d="M 70.0 230 Q 155.0 194.0 240.0 230" fill="none" stroke="#145c3a" stroke-width="2.2"/>
+<path d="M 155.0 230 Q 240.0 194.0 325.0 230" fill="none" stroke="#145c3a" stroke-width="2.2"/>
+<path d="M 240.0 230 Q 325.0 194.0 410.0 230" fill="none" stroke="#145c3a" stroke-width="2.2"/>
+<path d="M 325.0 230 Q 410.0 194.0 495.0 230" fill="none" stroke="#145c3a" stroke-width="2.2"/>
+<path d="M 410.0 230 Q 495.0 194.0 580.0 230" fill="none" stroke="#145c3a" stroke-width="2.2"/>
+<path d="M 70.0 230 Q 197.5 168.0 325.0 230" fill="none" stroke="#2e7d4f" stroke-width="2.2"/>
+<path d="M 155.0 230 Q 282.5 168.0 410.0 230" fill="none" stroke="#2e7d4f" stroke-width="2.2"/>
+<path d="M 240.0 230 Q 367.5 168.0 495.0 230" fill="none" stroke="#2e7d4f" stroke-width="2.2"/>
+<path d="M 325.0 230 Q 452.5 168.0 580.0 230" fill="none" stroke="#2e7d4f" stroke-width="2.2"/>
+<circle cx="70" cy="230" r="5" fill="#1c1915"/>
+<circle cx="155" cy="230" r="5" fill="#1c1915"/>
+<circle cx="240" cy="230" r="5" fill="#1c1915"/>
+<circle cx="325" cy="230" r="5" fill="#1c1915"/>
+<circle cx="410" cy="230" r="5" fill="#1c1915"/>
+<circle cx="495" cy="230" r="5" fill="#1c1915"/>
+<circle cx="580" cy="230" r="5" fill="#1c1915"/>
+<text x="70.0" y="152.0" fill="#145c3a" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">arcs: prime springs aₙ ||F − T_{log n} F||² ≥ 0</text>
+<text x="430.0" y="156.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">schematic of the lags, not a mode</text>
+<rect x="24" y="366" width="672" height="210" rx="8" fill="#e5f2ea" stroke="#145c3a" stroke-width="1.5"/>
+<text x="40.0" y="396.0" fill="#145c3a" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Finite cutoff. The sum over all n would diverge.</text>
+<text x="40.0" y="428.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">F is zero outside the window. Take N ≥ exp(A).</text>
+<text x="40.0" y="454.0" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">W(F) = P(F) + E_N(F) − M_N ||F||²</text>
+<text x="40.0" y="480.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">M_N = −K(0) + 2 Σ_{n≤N} aₙ</text>
+<text x="40.0" y="506.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">E_N = ∫ k(a) ||F−T_a F||² da + Σ_{n≤N} aₙ ||F−T_{log n} F||²</text>
+<text x="40.0" y="532.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Pieces of E_N are ≥ 0. Terms past the window cancel.</text>
+<rect x="24" y="592" width="672" height="430" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
+<text x="40.0" y="624.0" fill="#1c1915" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">K = 8, exact E0. Two minima, no fitted curve.</text>
+<line x1="110" y1="680" x2="110" y2="900" stroke="#1c1915" stroke-width="1.5"/>
+<line x1="110" y1="900" x2="640" y2="900" stroke="#1c1915" stroke-width="1.5"/>
+<line x1="104" y1="680.0" x2="110" y2="680.0" stroke="#1c1915"/>
+<text x="98.0" y="685.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="end">0</text>
+<line x1="104" y1="735.0" x2="110" y2="735.0" stroke="#1c1915"/>
+<text x="98.0" y="740.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="end">-2</text>
+<line x1="104" y1="790.0" x2="110" y2="790.0" stroke="#1c1915"/>
+<text x="98.0" y="795.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="end">-4</text>
+<line x1="104" y1="845.0" x2="110" y2="845.0" stroke="#1c1915"/>
+<text x="98.0" y="850.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="end">-6</text>
+<line x1="104" y1="900.0" x2="110" y2="900.0" stroke="#1c1915"/>
+<text x="98.0" y="905.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="end">-8</text>
+<line x1="227.8" y1="900" x2="227.8" y2="906" stroke="#1c1915"/>
+<text x="227.8" y="924.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">A = 1</text>
+<line x1="522.2" y1="900" x2="522.2" y2="906" stroke="#1c1915"/>
+<text x="522.2" y="924.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="middle">A = 2</text>
+<circle cx="227.8" cy="712.2" r="7" fill="#1c1915"/>
+<text x="241.8" y="702.2" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">0.06734</text>
+<circle cx="522.2" cy="894.0" r="7" fill="#1c1915"/>
+<text x="536.2" y="884.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">1.65×10⁻⁸</text>
+<text x="110.0" y="664.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">log10 of the smallest Rayleigh quotient</text>
+<text x="40.0" y="960.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Full width A of the interval [−A/2, A/2].</text>
+<text x="40.0" y="986.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Positive values are upper bounds, not a certificate.</text>
+<rect x="24" y="1040" width="672" height="120" rx="8" fill="#f8efd8" stroke="#7a4a06" stroke-width="1.5"/>
+<text x="40.0" y="1072.0" fill="#7a4a06" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">After M_N takes the diagonal, the prime term is signed.</text>
+<text x="40.0" y="1104.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">−2 aₙ ρ(log n) helps or hurts with ρ.</text>
+<text x="40.0" y="1130.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">The spring energy E_N stays nonnegative either way.</text>
+<text x="40.0" y="1200.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">On E0 the pole term is off, so domination of M_N by E_N is the target.</text>
+<text x="40.0" y="1232.0" fill="#4a453c" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">RH is not proved. No J or metric matching W is constructed.</text>
+</svg>
