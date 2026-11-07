@@ -173,7 +173,7 @@ def fig2():
     # smearing line, its own band so it cannot collide
     panel(b, 24, 274, 672, 72, "#fff", RULE)
     b.append(text(40, 304, "Smearing links them: b(Θ_F f) = diag(ev₀ F, ev₁ F) b(f).", 16, INK))
-    b.append(text(40, 328, "Θ_F preserves the kernel of b for every f precisely when F is in E0.", 15, MUTED))
+    b.append(text(40, 328, "Θ_F maps the entire Schwartz–Bruhat space into ker b iff F ∈ E0.", 14, MUTED))
 
     # hyperbola of b, first quadrant, n = 0,1,2
     panel(b, 24, 360, 420, 430, "#fff", RULE)
@@ -255,7 +255,7 @@ def fig2():
     desc = ("Tate boundary values b(f)=(f(0), integral f) and log-line moments ev0, ev1 are different. "
             "Smearing links them. The invariant form on b is hyperbolic or zero. "
             "Amber points are q=5 Frobenius iterates n=0,1,2, not an inverse graph and not Mellin moments. "
-            "On the log line, E0 is dense in L2; on one window it is closed of codimension 2. RH is not proved.")
+            "The L2 moment kernel on a fixed window is closed of codimension 2; smooth E0 is dense in it. RH is not proved.")
     marker = '''<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs>'''
     open(os.path.join(HERE, "fig2_boundary_topology.svg"), "w", encoding="utf-8").write(
         svg_doc(w, h, "Tate boundary and log-line moments", desc, marker + "\n".join(b)))

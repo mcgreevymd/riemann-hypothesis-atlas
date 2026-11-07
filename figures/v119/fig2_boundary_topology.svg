@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="1320" viewBox="0 0 720 1320" role="img" aria-labelledby="title desc">
 <title id="title">Tate boundary and log-line moments</title>
-<desc id="desc">Tate boundary values b(f)=(f(0), integral f) and log-line moments ev0, ev1 are different. Smearing links them. The invariant form on b is hyperbolic or zero. Amber points are q=5 Frobenius iterates n=0,1,2, not an inverse graph and not Mellin moments. On the log line, E0 is dense in L2; on one window it is closed of codimension 2. RH is not proved.</desc>
+<desc id="desc">Tate boundary values b(f)=(f(0), integral f) and log-line moments ev0, ev1 are different. Smearing links them. The invariant form on b is hyperbolic or zero. Amber points are q=5 Frobenius iterates n=0,1,2, not an inverse graph and not Mellin moments. The L2 moment kernel on a fixed window is closed of codimension 2; smooth E0 is dense in it. RH is not proved.</desc>
 <rect width="720" height="1320" fill="#f7f4ee"/>
 <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1c1915"/></marker></defs><rect x="24" y="18" width="672" height="58" fill="#163a66"/>
 <text x="40.0" y="54.0" fill="#f7f4ee" font-size="22" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">Two function spaces, one smearing map</text>
@@ -21,7 +21,7 @@
 <text x="412.0" y="222.0" fill="#1c1915" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Not the same as b(f).</text>
 <rect x="24" y="274" width="672" height="72" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
 <text x="40.0" y="304.0" fill="#1c1915" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Smearing links them: b(Θ_F f) = diag(ev₀ F, ev₁ F) b(f).</text>
-<text x="40.0" y="328.0" fill="#4a453c" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Θ_F preserves the kernel of b for every f precisely when F is in E0.</text>
+<text x="40.0" y="328.0" fill="#4a453c" font-size="14" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start">Θ_F maps the entire Schwartz–Bruhat space into ker b iff F ∈ E0.</text>
 <rect x="24" y="360" width="420" height="430" rx="8" fill="#fff" stroke="#1c1915" stroke-width="1.5"/>
 <text x="40.0" y="388.0" fill="#163a66" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" font-weight="700" text-anchor="start">b-plane, form b₀ b₁</text>
 <line x1="70.0" y1="740.0" x2="398.6" y2="740.0" stroke="#1c1915" stroke-width="1.4"/>
