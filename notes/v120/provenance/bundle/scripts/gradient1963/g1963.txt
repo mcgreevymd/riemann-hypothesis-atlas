@@ -1,0 +1,8 @@
+omega=dq^dp: 1
+i_X omega = dH: Matrix([[0, 0]])
+X=-J grad: Matrix([[0, 0]])  JX=grad: Matrix([[0, 0]])  grad.X= 0
+ham eig {-sqrt(-a*b): 1, sqrt(-a*b): 1}  det exp(tA_H)= 1
+neg-grad det= exp(tau*(-a - b))  = exp(-int Lap H)
+saddle a=2,b=-1: ham eig {-sqrt(2): 1, sqrt(2): 1}  grad eig {-2: 1, 1: 1}  det exp(-tau)
+Gaussian overlap exp(-t**2/2)
+uniform overlap Piecewise((sin(t)/t, (t > 0) | (t < 0)), (1, True))

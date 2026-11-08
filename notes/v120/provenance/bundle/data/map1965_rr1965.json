@@ -1,0 +1,8 @@
+{
+ "v0_min/max": 0.0,
+ "v0_nonneg_frac": 1.0,
+ "best_min_ratio_with_0_null": 0.017121619019782642,
+ "best_min_ratio_with_3_null": 0.01807525762882471,
+ "best_min_ratio_with_9_null": 0.024404399044540916,
+ "best_min_ratio_with_10_null": 0.04091486503878383
+}

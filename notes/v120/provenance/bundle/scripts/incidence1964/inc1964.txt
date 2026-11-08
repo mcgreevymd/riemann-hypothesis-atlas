@@ -1,0 +1,8 @@
+detG*4 - F = 0
+grad F = Matrix([[-2*t, 4]])  |grad|^2 = 4*t**2 + 16  (never 0)
+X_F=-J grad = Matrix([[4, 2*t]])  X.grad = 0
+rank G on wall q=t^2/4: 1  Jacobian rank of F there: 1
+G v on wall = Matrix([[0, 0]])
+Feynman-Hellmann d lam/dq = <v,G_q v>/<v,v> = 4/(t**2 + 4)
+d lam/dt at wall = -2*t/(t**2 + 4)
+level-set speed for phi=F-c(s): V_n = c'/|grad F| = 1/(2*sqrt(t**2 + 4)) * c'(s)

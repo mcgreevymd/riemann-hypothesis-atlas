@@ -1,0 +1,12 @@
+slope p=f'(t): t/2
+Legendre f*(p)= -c/4 + p**2   f''*f*''= 1
+grad incidence: [-p, 1, 2*p - t]  (dL/dq=1, never all zero)
+envelope dL/dp=0 -> [t/2] ; q on envelope = c/4 + t**2/4
+disc_p(p^2-tp+q-c/4)= c - 4*q + t**2  = -(4q-t^2-c)
+projection (t,p)->(t,q) Jacobian det = -2*p + t
+closure: -4*Q*Z + T**2 + Z**2*c  det M= -4  eig {1: 1, c/2 - sqrt(c**2 + 16)/2: 1, c/2 + sqrt(c**2 + 16)/2: 1}
+grad at [0:1:0]: [0, 0, -4]
+dual conic: -c*v**2/4 + u**2 - v*w
+tangent line (p,-1,-f*) on dual: 0 ; Z=0 line: 0
+x^T M x at [t:q:1], c=0: -4*q + t**2  = Delta
+tangent slopes from (t,q) to wall (c=0) = roots of p^2-tp+q: [t/2 - sqrt(-4*q + t**2)/2, t/2 + sqrt(-4*q + t**2)/2]

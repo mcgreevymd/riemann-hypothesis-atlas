@@ -1,0 +1,17 @@
+import sympy as sp
+t,q,p,c,T,Q,Z,u,v,w=sp.symbols('t q p c T Q Z u v w',real=True)
+f=t**2/4+c/4
+print('slope p=f\'(t):',sp.diff(f,t))
+fs=sp.simplify((p*t-f).subs(t,2*p)); print('Legendre f*(p)=',fs,'  f\'\'*f*\'\'=',sp.diff(f,t,2)*sp.diff(fs,p,2))
+L=q-(p*t-p**2+c/4)                       # incidence surface in (t,q,p)
+print('grad incidence:',[sp.diff(L,x) for x in (t,q,p)],' (dL/dq=1, never all zero)')
+print('envelope dL/dp=0 ->',sp.solve(sp.diff(L,p),p),'; q on envelope =',sp.expand((p*t-p**2+c/4).subs(p,t/2)))
+print('disc_p(p^2-tp+q-c/4)=',sp.expand(sp.discriminant(p**2-t*p+q-c/4,p)),' = -(4q-t^2-c)')
+print('projection (t,p)->(t,q) Jacobian det =',sp.Matrix([[1,0],[sp.diff(p*t-p**2+c/4,t),sp.diff(p*t-p**2+c/4,p)]]).det())
+M=sp.Matrix([[1,0,0],[0,0,-2],[0,-2,c]]); X=sp.Matrix([T,Q,Z])
+print('closure:',sp.expand((X.T*M*X)[0]),' det M=',M.det(),' eig',M.eigenvals())
+print('grad at [0:1:0]:',[sp.diff((X.T*M*X)[0],x).subs({T:0,Q:1,Z:0}) for x in (T,Q,Z)])
+Mi=M.inv(); U=sp.Matrix([u,v,w]); print('dual conic:',sp.expand((U.T*Mi*U)[0]))
+print('tangent line (p,-1,-f*) on dual:',sp.simplify((sp.Matrix([p,-1,-fs]).T*Mi*sp.Matrix([p,-1,-fs]))[0]),'; Z=0 line:',(sp.Matrix([0,0,1]).T*Mi*sp.Matrix([0,0,1]))[0])
+print('x^T M x at [t:q:1], c=0:',sp.expand((sp.Matrix([t,q,1]).T*M.subs(c,0)*sp.Matrix([t,q,1]))[0]),' = Delta')
+print('tangent slopes from (t,q) to wall (c=0) = roots of p^2-tp+q:',sp.solve(p**2-t*p+q,p))

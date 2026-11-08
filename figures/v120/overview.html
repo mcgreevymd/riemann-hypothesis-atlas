@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RH Atlas v1.20 — the ledger, two failed bridges, and a model conic</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #4a453c;
+    --paper: #f6f3ec;
+    --card: #fffdf8;
+    --line: #d9d2c5;
+    --green: #145c3a;
+    --green-bg: #e7f3ec;
+    --amber: #7a4a06;
+    --amber-bg: #f8efd8;
+    --blue: #163a66;
+    --blue-bg: #e7eef6;
+    --red: #7a2e2e;
+    --red-bg: #f8e8e6;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 18px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "DejaVu Serif", "Liberation Serif", Palatino, Georgia, serif;
+    line-height: 1.45;
+  }
+  a { color: var(--blue); }
+  a:focus, button:focus { outline: 3px solid var(--blue); outline-offset: 2px; }
+  header, main, footer { max-width: 52rem; margin: 0 auto; padding: 1.25rem 1.1rem; }
+  header { padding-bottom: 0; }
+  .status {
+    background: var(--ink);
+    color: #f7f4ee;
+    padding: 1rem 1.1rem;
+    border-radius: 8px;
+  }
+  .status strong { font-size: 1.2rem; }
+  h1 { font-size: 1.85rem; line-height: 1.15; margin: 1rem 0 0.4rem; }
+  h2 { font-size: 1.35rem; margin: 1.7rem 0 0.45rem; }
+  h3 { font-size: 1.08rem; margin: 0 0 0.35rem; }
+  p { margin: 0.55rem 0; }
+  .lede { font-size: 1.12rem; }
+  figure {
+    margin: 1rem 0 1.3rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+  figure img { width: 100%; height: auto; display: block; }
+  figcaption { color: var(--muted); font-size: 0.92rem; padding: 0.45rem 0.25rem 0.15rem; }
+  .grid { display: grid; gap: 0.8rem; }
+  @media (min-width: 800px) {
+    .grid.two { grid-template-columns: 1fr 1fr; }
+    .frames { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .frames { display: grid; gap: 0.5rem; }
+  .frames figure { margin: 0; }
+  .card { border-radius: 8px; padding: 0.85rem 1rem; border: 1px solid var(--line); background: var(--card); }
+  .card.green { background: var(--green-bg); border-color: var(--green); }
+  .card.amber { background: var(--amber-bg); border-color: var(--amber); }
+  .card.blue { background: var(--blue-bg); border-color: var(--blue); }
+  .card.red { background: var(--red-bg); border-color: var(--red); }
+  ul { margin: 0.4rem 0 0.4rem 1.15rem; padding: 0; }
+  li { margin: 0.35rem 0; }
+  footer { color: var(--muted); font-size: 0.95rem; }
+  .gif-wrap, .css-demo { display: none; }
+  .ellipse {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: stretch 8s ease-in-out infinite alternate;
+  }
+  @keyframes stretch {
+    from { transform: scale(1, 0.55); }
+    to { transform: scale(1, 1); }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .gif-wrap, .css-demo { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ellipse { animation: none; transform: none; }
+    .gif-wrap, .css-demo { display: none; }
+  }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<a class="sr" href="#story">Skip to the overview</a>
+<header>
+  <p style="letter-spacing:0.04em;text-transform:uppercase;font-size:0.85rem;margin:0;">RH Atlas · version 1.20 · 8 Nov 2026 (UTC)</p>
+  <h1>A ledger for the Weil form, and the bridge that is still missing</h1>
+  <div class="status" role="note">
+    <strong>The Riemann Hypothesis is not proved.</strong>
+    <p style="margin:0.4rem 0 0;">No new positivity theorem. Rank 1 is unchanged. The open score near 1.8 is unchanged. The geometric map for W is missing. This page does not claim that a proof is close.</p>
+  </div>
+</header>
+<main id="story">
+  <h2>Analogy first</h2>
+  <p class="lede">Think of the Weil form as a ledger with two pages. One page is the pole: a product of two moments. The other page is bulk energy: many springs, each pulling the right way, minus a counterterm that sits on the diagonal. Tests that kill the poles throw away the first page. They leave the counterterm on the second page. The open question is whether that second page stays nonnegative. The identities below do not answer it.</p>
+  <p>The programme would like this ledger to be a real energy, built without looking at the zeros, so that nonnegativity would be a mechanism. That thermodynamic picture, and the unitarity picture that asks for the same sign, are the goal. They are not an established physical theory.</p>
+
+  <h2>1. The exact ledger</h2>
+  <div class="grid two">
+    <article class="card green">
+      <h3>Two pages</h3>
+      <p>W = P + B. The pole is P = 2 Re(C₊ conjugate C₋) = 2(|C|² − |S|²). For real F this is 2 ev₊ ev₋ = 2(C² − S²). The bulk is B = H_A − M_A ‖F‖². H_A adds archimedean springs and prime springs. Each is ≥ 0. M_A = −K₀ + 2 Σ a_n, and K₀ = ψ(1/4) − log π = −5.37218.</p>
+    </article>
+    <article class="card amber">
+      <h3>What E0 removes</h3>
+      <p>E0 kills P and leaves the diagonal inside B. Off E0, W and B differ. On one window the kernel is closed of codimension 2. On the whole line the moments are unbounded, so E0 is dense. Positive local covariances are subtracted. They explain the rows. They do not sign the total.</p>
+    </article>
+  </div>
+  <figure>
+    <img src="fig1_ledger.svg" alt="Left: the identities W = P + B, with E0 killing only P. Right: one uncertified window where the prime contributions nearly cancel.">
+    <figcaption>Figure 1. The ledger, and one numerical window. Colored bars are the covariance ledger (sum 0.1793). Spring and Fourier totals are 0.1788. The gap of about 4.6×10⁻⁴ is uncertified and is not rounding. <a href="fig1_ledger.svg">SVG</a> · <a href="fig1_ledger.png">PNG</a>.</figcaption>
+  </figure>
+
+  <h2>2. A count, not yet a construction</h2>
+  <p>For a finite invertible symmetric matrix B and one nonzero constraint, the form on the constraint’s hyperplane is positive semidefinite in two cases only. Either B itself has no negative direction, or it has exactly one and the scalar q = cᵀ B⁻¹ c is at most zero. A positive definite matrix has q positive, and the restriction is still positive semidefinite. Two negative directions cannot be removed by one constraint. On a reflection-invariant finite Galerkin space with invertible blocks, B is nonnegative on E0 exactly when the even sector and the odd sector each pass that test. The vector B⁻¹ c is built from B, so it is not an independent bridge, and the infinite-dimensional inverse is not proved. A fixed finite cohomology cannot carry W because, at high frequency, B is positive definite on an infinite-dimensional subspace of smooth E0. Unboundedness alone does not prove infinite rank. Finitely many negative directions on one window is not a sign.</p>
+  <div class="grid two">
+    <article class="card">
+      <h3>Exact failures</h3>
+      <p>The candidate cosh on the window fails. The proof splits the integral at a fixed small distance: the untruncated comparison with the smooth continuation of cosh diverges, and after the split the edge is a logarithm. The Dirichlet candidate, at width 1, fails by a kink of slope 0.06191 where log 2 translates the edge into the window.</p>
+    </article>
+    <article class="card red">
+      <h3>Not a general ban</h3>
+      <p>Those are two candidates. The 6.92 percent residual at width 0.6 is numerical only. A law for every representer, a universal 1/log profile, and a Gamma-only no-go are conjectures. E0 minima are estimates, not certified brackets. The reported figures are absolute cosines, not squared overlaps. At width 2 the tiny values from two bases disagree. Neither is certified.</p>
+    </article>
+  </div>
+  <figure>
+    <img src="fig3_candidates.svg" alt="Left: response over cosh diverges as the edge is approached. Right: a residual with kinks at the prime-2 translates of the edge.">
+    <figcaption>Figure 3. Two candidates fail. The jump 0.06191 is exact at width 1. The curves are numerical. <a href="fig3_candidates.svg">SVG</a> · <a href="fig3_candidates.png">PNG</a>.</figcaption>
+  </figure>
+
+  <h2>3. One form, as a model</h2>
+  <p>A single quadratic form can be negative on one vector and positive on that vector’s polar. The zero set is a smooth conic. In an affine chart it looks like a parabola. That curve is a discriminant boundary of the model. It is not the parabolic wall, not the Routh wall, not the Hasse wall of the Beurling pencil, and not a sheet of Σ. Focus and directrix are extra Euclidean structure. The point at infinity is smooth, and its polar does not meet the affine chart.</p>
+  <p>On a product of curves the skew pairing of the curve becomes a symmetric pairing, I = −E ⊗ E. One real primitive class of mixed type squares to −8. Another, in types (2,0) and (0,2), squares to +8. The model has both signs. It does not build a map from E0. The Hodge index, as a cited pattern, is Hartshorne, Algebraic Geometry, GTM 52, Chapter V, Theorem 1.9, not a Wikipedia article and not a constructor for W.</p>
+  <figure>
+    <img src="fig2_polarity.svg" alt="Left: the model null conic and its polar. Right: the two signs of the product pairing.">
+    <figcaption>Figure 2. A model of the sign pattern. Not a constructor. <a href="fig2_polarity.svg">SVG</a> · <a href="fig2_polarity.png">PNG</a>.</figcaption>
+  </figure>
+
+  <h2 id="gauges">4. The same point, two gauges</h2>
+  <p>The moving point is h_s = (0 : 1 : s). On that homogeneous representative, Q = −4s. Drawn in the affine chart, the height is q = 1/s and the value is Q = −4/s. At s = 1 both read −4. At s = 0.05 they read −0.2 and −80. The sign stays negative, and the projective limit is the null point at infinity. The two numbers are not substitutes for each other.</p>
+  <p>On the right, the curve is the level set v_T² + 4 s v_Q² = 1. It lengthens toward a pair of lines. The shaded set is the sublevel, where the form is at most 1. That shaded set lengthens toward a strip. The level curve does not become the strip.</p>
+  <div class="frames">
+    <figure>
+      <img src="frame_s1.00.png" alt="Frame s=1. Homogeneous Q and affine Q both equal −4. The sublevel is a round ellipse.">
+      <figcaption>s = 1. Both gauges equal −4. <a href="frame_s1.00.svg">SVG</a></figcaption>
+    </figure>
+    <figure>
+      <img src="frame_s0.50.png" alt="Frame s=0.5. Homogeneous Q is −2. Affine Q is −8. The ellipse is taller.">
+      <figcaption>s = 0.5. Gauges −2 and −8. <a href="frame_s0.50.svg">SVG</a></figcaption>
+    </figure>
+    <figure>
+      <img src="frame_s0.05.png" alt="Frame s=0.05. Homogeneous Q is −0.2. Affine Q is −80. The filled sublevel is elongated. The level curve is not a strip.">
+      <figcaption>s = 0.05. Gauges −0.2 and −80. <a href="frame_s0.05.svg">SVG</a></figcaption>
+    </figure>
+  </div>
+  <figure class="gif-wrap">
+    <img src="anim_polarity.gif" alt="Animation from s=1 to s=0.05. The filled sublevel stretches. The level curve stretches toward two vertical lines.">
+    <figcaption>Optional motion, 48 frames. If your system asks for reduced motion, this picture stays off and the three frames above are the record. <a href="anim_polarity.gif">GIF</a>.</figcaption>
+  </figure>
+  <figure class="css-demo" aria-labelledby="schemecap">
+    <svg viewBox="0 0 320 150" width="100%" role="img" aria-labelledby="schemecap">
+      <title id="schemecap">Schematic sublevel stretching toward a strip</title>
+      <line x1="70" y1="12" x2="70" y2="138" stroke="#555" stroke-dasharray="3 3"/>
+      <line x1="250" y1="12" x2="250" y2="138" stroke="#555" stroke-dasharray="3 3"/>
+      <ellipse class="ellipse" cx="160" cy="75" rx="90" ry="58" fill="#7b2d8e" fill-opacity="0.28" stroke="#7b2d8e" stroke-width="2"/>
+      <text x="16" y="20" font-size="13" fill="#4a453c" font-family="Palatino, serif">lines: limit of the level set</text>
+    </svg>
+    <figcaption id="schemecap">A second, schematic motion of the filled sublevel. The dashed lines are the limit of the level set. Reduced motion leaves this drawing still.</figcaption>
+  </figure>
+
+  <h2>Precision second</h2>
+  <ul>
+    <li><strong>Exact.</strong> W = P + B. E0 kills P only. M_A is a sum of local means, not a global idele coupling; a sum over all prime powers sums over those primes. The h1 edge splits at a fixed small a₀. The twisted star is (χ f)* = χ⁻¹ f*. Nonnegativity on E0 needs both parity sectors. The prime-2 jump at width 1 is 0.06191. The Künneth squares are −8 and +8. The two gauges of h_s differ by the square of the scaling factor.</li>
+    <li><strong>Cited, not reproved.</strong> Connes 1999, Theorem VII.4, semilocal only. Haynsworth’s inertia additivity. Rankin–Selberg unfolding, which produces τ(n)² and not W. Auslander–Buchsbaum: regular local rings are UFDs, which does not make a global ring principal.</li>
+    <li><strong>Numerical, uncertified.</strong> The window bars, the E0 estimates (not certified brackets), the absolute cosines 0.970, 0.991, and 0.997, the 6.92 percent residual, the finite-difference 0.06189, and every picture of the width-2 cluster.</li>
+    <li><strong>Missing.</strong> An h_A built without inverting B, negative on itself, with both sectors under control. A non-stationary J. A target large enough for W. Rank 1 and Open ~1.8 are unchanged.</li>
+    <li><strong>Not claimed.</strong> A proof of RH, a spectral gap, a universal no-go, a Hodge structure for the formal graph, a global phase c ≡ 1, or a thermodynamic theory.</li>
+  </ul>
+  <p>The corrected narrative is <a href="../../notes/v120/SYNTHESIS_CORRECTED.md">notes/v120/SYNTHESIS_CORRECTED.md</a>. Raw notes are archived as historical under <a href="../../notes/v120/provenance/SUPERSEDED.md">provenance</a>.</p>
+</main>
+<footer>
+  <p>J. W. McGreevy; formalization by Grok Bot. The Riemann Hypothesis is not proved. This page is the readable front for the proposed atlas v1.20. It is not a release.</p>
+</footer>
+</body>
+</html>
