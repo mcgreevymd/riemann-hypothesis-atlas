@@ -261,6 +261,26 @@ record(
     note="The curve Q=1 meets v_T near 0 only at large |v_Q|. Its limit is two lines. The inequality Q<=1 fills the region between them.",
 )
 
+# 14b. Figure 1 and the front use the complex pole identity, not the real chain.
+svg = (ROOT / "figures" / "v120" / "fig1_ledger.svg").read_text(encoding="utf-8")
+html = (ROOT / "figures" / "v120" / "overview.html").read_text(encoding="utf-8")
+front = (ROOT / "notes" / "v120" / "FRONT.md").read_text(encoding="utf-8")
+readme = (ROOT / "README.md").read_text(encoding="utf-8")
+real_chain = "2 ev+ ev- = 2(C^2 - S^2) = 2 Re"
+front_chain = "2 ev₊ ev₋ = 2(C² − S²) = 2 Re"
+record(
+    "fig1_complex_pole_identity",
+    ("|C|^2-|S|^2" in svg)
+    and ("ev}_+" not in svg)
+    and ("2(|C|² − |S|²) = 2 Re" in html)
+    and ("2(C² − S²)" not in html)
+    and ("2(|C|² − |S|²) = 2 Re" in front)
+    and (front_chain not in front)
+    and (front_chain not in readme)
+    and (real_chain not in (ROOT / "atlas.json").read_text(encoding="utf-8")),
+    note="P = 2(|C|^2-|S|^2) = 2 Re(C+ conjugate C-) for general complex F. The real reduction is not chained into that identity.",
+)
+
 # 15. Schema of the atlas after insertion
 atlas = json.loads((ROOT / "atlas.json").read_text(encoding="utf-8"))
 concepts = atlas["concepts"]

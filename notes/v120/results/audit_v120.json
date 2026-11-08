@@ -130,6 +130,10 @@
    "semi_axis": 2.23606797749979,
    "note": "The curve Q=1 meets v_T near 0 only at large |v_Q|. Its limit is two lines. The inequality Q<=1 fills the region between them."
   },
+  "fig1_complex_pole_identity": {
+   "ok": true,
+   "note": "P = 2(|C|^2-|S|^2) = 2 Re(C+ conjugate C-) for general complex F. The real reduction is not chained into that identity."
+  },
   "atlas_schema": {
    "ok": true,
    "concepts": 1044,

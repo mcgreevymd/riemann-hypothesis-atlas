@@ -36337,14 +36337,14 @@
   },
   {
    "id": "pole_form_P_2ReCplusCminus",
-   "name": "The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)",
+   "name": "The pole term is 2(|C| squared minus |S| squared)",
    "aliases": [
     "P = 2 Re(C+ conjugate C-)"
    ],
-   "plain": "The pole contribution is the product of the two exponential moments. In real even and odd coordinates it is 2(C squared minus S squared). In complex coordinates it is twice the real part of C+ times the conjugate of C-. It is the term that E0 is built to kill.",
+   "plain": "For a general complex test, P = 2(|C| squared minus |S| squared), which equals 2 Re(C+ times the conjugate of C-). For real F that agrees with 2 ev+ ev- = 2(C squared minus S squared). The equality of those real expressions with the complex form is not claimed unless F is real. P is the term E0 is built to kill.",
    "label": "Theorem",
-   "core": "ev±(F) = integral F(u) exp(±u/2) du. P(F) = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conjugate C-). On a centered window, reflection splits this into a rank-one positive update on the even sector and a rank-one negative update on the odd sector: W_even = B_even + 2 c c^T and W_odd = B_odd - 2 s s^T. Globally the moment functionals are unbounded, so E0 is dense in L2. On one finite window both exponentials are square-integrable, so the kernel is closed of codimension 2. That topological distinction is already in v1.19.",
-   "formula": "P = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conj C-)",
+   "core": "ev±(F) = integral F(u) exp(±u/2) du. For general complex F, P(F) = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-). For real F, P(F) = 2 ev+ ev- = 2(C^2 - S^2). On a centered window, reflection splits this into a rank-one positive update on the even sector and a rank-one negative update on the odd sector: W_even = B_even + 2 c c^T and W_odd = B_odd - 2 s s^T. Globally the moment functionals are unbounded, so E0 is dense among square-integrable functions. On one finite window both exponentials are square-integrable, so the kernel is closed of codimension 2. That topological distinction is already in v1.19.",
+   "formula": "P = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-); real F: 2 ev+ ev- = 2(C^2 - S^2)",
    "numbers": [],
    "axes": [
     "reference/pole/cusp",
@@ -36671,7 +36671,7 @@
    ],
    "plain": "On a log window the Weil form splits as a pole term P plus a bulk form B. The bulk form is nonnegative spring energy minus a diagonal counterterm. Killing the poles removes P and leaves the counterterm in place. The split is an identity. It does not sign W.",
    "label": "Theorem",
-   "core": "For a window test F, W(F) = P(F) + B(F). P = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conjugate C-). B = H_A - M_A times the norm squared, and the same B is (1/2 pi) times the integral of m_A |Fourier F|^2. H_A adds the archimedean Levy springs and the prime springs for log n < A; each spring is nonnegative. M_A = -K0 + 2 sum Lambda(n) n^(-1/2), with K0 = psi(1/4) - log pi = -5.37218. The formula for B is valid off E0 as well as on it. W equals B on the joint kernel of the two moment functionals, which contains E0. This restates the v1.19 spring identity with the pole term kept visible off E0.",
+   "core": "For a window test F, W(F) = P(F) + B(F). For a general complex window test, P = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-). For real F, P = 2 ev+ ev- = 2(C^2 - S^2). B = H_A - M_A times the norm squared, and the same B is (1/2 pi) times the integral of m_A |Fourier F|^2. H_A adds the archimedean Levy springs and the prime springs for log n < A; each spring is nonnegative. M_A = -K0 + 2 sum Lambda(n) n^(-1/2), with K0 = psi(1/4) - log pi = -5.37218. The formula for B is valid off E0 as well as on it. W equals B on the joint kernel of the two moment functionals, which contains E0. This restates the v1.19 spring identity with the pole term kept visible off E0.",
    "formula": "W = P + B, B = H_A - M_A ||F||^2, E0 kills P only",
    "numbers": [
     "K0 = psi(1/4) - log pi = -5.3721834192256654, from the session ledger."

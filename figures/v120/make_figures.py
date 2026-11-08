@@ -52,7 +52,7 @@ ax[0].set_ylim(0, 1)
 ax[0].axis("off")
 lines = [
     r"$W(F)=P(F)+B(F)$",
-    r"$P=2\,\mathrm{ev}_+\mathrm{ev}_-=2(C^2-S^2)=2\,\mathrm{Re}(C_+\overline{C_-})$",
+    r"$P=2(|C|^2-|S|^2)=2\,\mathrm{Re}(C_+\overline{C_-})$",
     r"$B=H_A-M_A\|F\|^2=\frac{1}{2\pi}\int m_A|\hat F|^2$",
     r"$H_A=$ archimedean springs $+$ prime springs, each $\geq 0$",
     r"$M_A=-K_0+2\sum_{\log n<A}\Lambda(n)\,n^{-1/2}$",
@@ -94,6 +94,8 @@ fig.text(
 fig.text(0.99, 0.02, FOOT, ha="right", color="#9b2c2c", fontsize=10, va="bottom")
 fig.tight_layout(rect=(0, 0.07, 1, 1))
 save(fig, "fig1_ledger")
+if os.environ.get("ONLY_FIG1"):
+    raise SystemExit(0)
 
 
 # ---------- Figure 2: one form, two jobs ----------

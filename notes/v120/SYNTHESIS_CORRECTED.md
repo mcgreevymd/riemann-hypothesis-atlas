@@ -14,7 +14,7 @@ For a window test F,
 
 W(F) = P(F) + B(F).
 
-P = 2 ev₊ ev₋ = 2(C² − S²) = 2 Re(C₊ conjugate C₋).
+P = 2(|C|² − |S|²) = 2 Re(C₊ conjugate C₋). For real F this agrees with 2 ev₊ ev₋ = 2(C² − S²). That reduction is not claimed for a general complex test.
 
 B = H_A − M_A ‖F‖² = (1/2π) ∫ m_A |F̂|².
 
