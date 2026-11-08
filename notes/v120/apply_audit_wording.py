@@ -99,7 +99,7 @@ by["conic_polarity_one_form"]["plain"] = by["conic_polarity_one_form"]["plain"].
     "That curve is the model discriminant conic.",
 )
 
-obs = " Observation, not a theorem: the OU rate (2j+1)/2 is the distance from 1/2 to the pole s = -2j of the archimedean Gamma factor. For j at least 1 those poles are cancelled in xi by the trivial zeros. The j = 0 pole at s = 0 survives in Lambda and is the moment removed by E0."
+obs = " Observation, not a theorem: the OU rate 2j + 1/2 is the distance from 1/2 to the pole s = -2j of the archimedean Gamma factor. For j at least 1 those poles are cancelled in xi by the trivial zeros. The j = 0 pole at s = 0 survives in Lambda and is the moment removed by E0."
 if "Observation, not a theorem" not in by["local_product_state_covariance"]["core"]:
     by["local_product_state_covariance"]["core"] += obs
 

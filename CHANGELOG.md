@@ -7,7 +7,7 @@
 - E0 minima are estimates, not certified brackets. Absolute cosines 0.970, 0.991, and 0.997 are not squared overlaps. The width-2 cluster is unresolved. h2 at width 0.6 is numerical only. No universal Gamma-only no-go.
 - Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Rank 1 remains `kahler_triple_polarization`. Open ~1.8 is unchanged. No existing closed Jacobian, Rosati, or Picard path is reopened.
 - **Front matter.** `notes/v120/`, three figures and a 48-frame animation in `figures/v120/`, static frames, and `figures/v120/overview.html` (motion off under reduced motion). Raw notes and the aligned bundle are under `notes/v120/provenance/`. The independent manuscript audit is archived there and is not a paper in this repository.
-- **Formula correction, before review merge.** The pole identity used on Figure 1 and in the front section is the complex form P = 2(|C|² − |S|²) = 2 Re(C₊ conjugate C₋). The real reduction 2 ev₊ ev₋ = 2(C² − S²) is not chained to it unless F is real.
+- **Formula correction, before review merge.** The pole identity is P = 2 Re(C₊ conjugate C₋) = 2(|C|² − |S|²). For real F this is 2 ev₊ ev₋ = 2(C² − S²). The OU rates are 2j + 1/2. The Figure 1 gap between the covariance sum 0.1793 and the spring/Fourier total 0.1788 is an uncertified discrepancy of about 4.6×10⁻⁴, not rounding. T² − 27 is singular only at p = 3. The twisted-star note corrects an earlier scratch pairing; Connes’ semilocal formula is unchanged.
 - **Intended release, after review.** Proposed tag `v1.20` on the reviewed merge commit. This branch does not merge, tag, or publish a release. The Riemann Hypothesis is not proved.
 
 ## v1.19 — 7 Nov 2026 (UTC)

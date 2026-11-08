@@ -132,7 +132,7 @@
   },
   "fig1_complex_pole_identity": {
    "ok": true,
-   "note": "P = 2(|C|^2-|S|^2) = 2 Re(C+ conjugate C-) for general complex F. The real reduction is not chained into that identity."
+   "note": "Complex pole identity, qualified real reduction, OU rate 2j+1/2, anchors, and the three small audit notes."
   },
   "atlas_schema": {
    "ok": true,

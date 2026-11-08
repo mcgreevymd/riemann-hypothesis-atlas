@@ -52,7 +52,7 @@ ax[0].set_ylim(0, 1)
 ax[0].axis("off")
 lines = [
     r"$W(F)=P(F)+B(F)$",
-    r"$P=2(|C|^2-|S|^2)=2\,\mathrm{Re}(C_+\overline{C_-})$",
+    r"$P=2\,\mathrm{Re}(C_+\overline{C_-})=2(|C|^2-|S|^2)$",
     r"$B=H_A-M_A\|F\|^2=\frac{1}{2\pi}\int m_A|\hat F|^2$",
     r"$H_A=$ archimedean springs $+$ prime springs, each $\geq 0$",
     r"$M_A=-K_0+2\sum_{\log n<A}\Lambda(n)\,n^{-1/2}$",
@@ -65,7 +65,7 @@ for i, s in enumerate(lines):
     ax[0].text(0.02, 0.96 - i * 0.095, s, va="top", fontsize=12, transform=ax[0].transAxes)
 ax[0].set_title("Exact window ledger", loc="left", fontweight="bold")
 
-labels = ["arch", "p = 2", "p = 3", "p = 5", "total W"]
+labels = ["arch", "p = 2", "p = 3", "p = 5", "spring W"]
 values = [0.090, 9.092, -9.001, -0.0016, 0.1788]
 colors = ["#2b83ba", "#1a9641", "#d7191c", "#d7191c", "#222222"]
 bars = ax[1].bar(labels, values, color=colors, width=0.72)
@@ -87,7 +87,7 @@ ax[1].set_title("One window, uncertified", loc="left", fontweight="bold")
 fig.text(
     0.08,
     0.02,
-    "A = 2, sin⁸ test. Rounded bars sum to 0.1794; session total 0.1788. Not a certificate.",
+    "Covariance bars sum to 0.1793. Spring/Fourier: 0.1788. Gap ~4.6e-4, not rounding.",
     fontsize=9,
     va="bottom",
 )

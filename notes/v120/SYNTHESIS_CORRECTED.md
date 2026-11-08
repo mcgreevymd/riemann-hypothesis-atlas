@@ -14,7 +14,7 @@ For a window test F,
 
 W(F) = P(F) + B(F).
 
-P = 2(|C|² − |S|²) = 2 Re(C₊ conjugate C₋). For real F this agrees with 2 ev₊ ev₋ = 2(C² − S²). That reduction is not claimed for a general complex test.
+P = 2 Re(C₊ conjugate C₋) = 2(|C|² − |S|²). For real F this is 2 ev₊ ev₋ = 2(C² − S²). That real reduction is not claimed for a general complex test.
 
 B = H_A − M_A ‖F‖² = (1/2π) ∫ m_A |F̂|².
 
@@ -26,7 +26,7 @@ Reflection splits the pole update: the even block of W is the even block of B pl
 
 ## 2. Local product states
 
-Each prime term is log p times (‖F‖² − ⟨F, P_p F⟩), and P_p = Σ_k p^{−|k|/2} T_{k log p} is positive semidefinite. The archimedean place is an Ornstein–Uhlenbeck tower. M_A is a sum of local means of log |x|_v, one place at a time. There is no coupling on principal ideles, so this is not a proved product-formula defect. Written over all prime powers with k log p < A, the prime contribution is 2 Σ_{p < e^A} of the local capped mean, not a single-prime expression. An observation, not a theorem: the rate (2j+1)/2 is the distance from 1/2 to the pole s = −2j of the archimedean factor. For j ≥ 1 those poles are cancelled in ξ by the trivial zeros. The pole at s = 0 survives in Λ and is the moment E0 removes.
+Each prime term is log p times (‖F‖² − ⟨F, P_p F⟩), and P_p = Σ_k p^{−|k|/2} T_{k log p} is positive semidefinite. The archimedean place is an Ornstein–Uhlenbeck tower. M_A is a sum of local means of log |x|_v, one place at a time. There is no coupling on principal ideles, so this is not a proved product-formula defect. Written over all prime powers with k log p < A, the prime contribution is 2 Σ_{p < e^A} of the local capped mean, not a single-prime expression. An observation, not a theorem: the rate 2j + 1/2 is the distance from 1/2 to the pole s = −2j of the archimedean factor. For j ≥ 1 those poles are cancelled in ξ by the trivial zeros. The pole at s = 0 survives in Λ and is the moment E0 removes.
 
 The positive covariances are subtracted. They match the lines of the ledger. They are not a sign. That route is closed as a sign source. A positive compression that was compared with W on a few tests did not match W. The comparison is numerical. It is not a theorem that every compression fails.
 

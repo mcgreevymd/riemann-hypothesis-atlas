@@ -24691,7 +24691,7 @@
     "ghost-blind"
    ],
    "uncertain": "Self-adjointness, compact resolvent, and discrete spectrum of the infinite-dimensional operator B are not proved. Finite Galerkin matrices are the setting of the inertia counts.",
-   "proved": "The quadratic-form identity is the ledger. Unboundedness of the symbol is the reason a finite-rank pullback cannot match B on E0.",
+   "proved": "The quadratic-form identity is the ledger. Growth of the symbol to +infinity at high frequency, once m_A is at least 1 for large |x|, is the reason a finite-rank pullback cannot match B on E0.",
    "tests": "Do not promote a finite positive Galerkin matrix to analytic positivity.",
    "pitfalls": [
     "Do not write unbounded, therefore not finite rank.",
@@ -36125,7 +36125,7 @@
    ],
    "plain": "A power-series ring over the p-adic integers is regular of dimension 2. Quotienting by one equation leaves a regular ring exactly when that equation is nonzero in m/m squared. That is a Jacobian condition. The Iwasawa numbers mu, lambda, and nu measure growth. They are not this Jacobian class, and they do not carry a sign. A regular local ring is a unique factorization domain. A global ring of integers need not be. Noetherian is a finiteness condition on ideals, not a Noether charge in mechanics.",
    "label": "Theorem",
-   "core": "Lambda = Z_p[[T]] is regular local of dimension 2. Lambda/(f) is regular if and only if f is not in m squared. The element T squared - 27 is a singular example, an arithmetic cusp in that local model. Auslander-Buchsbaum says a regular local ring is a UFD. Z[sqrt(-5)] is Noetherian and not a UFD: 6 = 2·3 = (1+sqrt(-5))(1-sqrt(-5)), and 2 and 1+sqrt(-5) are irreducible because no element has norm 2. This does not reopen a global Jacobian, a Rosati involution, or a Picard lattice. Those routes stay at whatever status the atlas already gave them. The toy separates a growth invariant from a rank in m/m squared. It supplies no positivity.",
+   "core": "Lambda = Z_p[[T]] is regular local of dimension 2. Lambda/(f) is regular if and only if f is not in m squared. The element T squared - 27 is singular at p = 3. For every other p it is a unit. Auslander-Buchsbaum says a regular local ring is a UFD. Z[sqrt(-5)] is Noetherian and not a UFD: 6 = 2·3 = (1+sqrt(-5))(1-sqrt(-5)), and 2 and 1+sqrt(-5) are irreducible because no element has norm 2. This does not reopen a global Jacobian, a Rosati involution, or a Picard lattice. Those routes stay at whatever status the atlas already gave them. The toy separates a growth invariant from a rank in m/m squared. It supplies no positivity.",
    "formula": "regular local <=> f not in m^2; regular local => UFD; not conversely for global rings",
    "numbers": [
     "Norm form a^2 + 5 b^2 never equals 2. Class number 2 for Q(sqrt(-5)) is the classical citation, not recomputed here."
@@ -36237,11 +36237,11 @@
    ],
    "plain": "Every local piece of the ledger has a product-state reading. A prime contributes log p times the norm squared minus a positive AR(1) covariance. The archimedean place is an Ornstein-Uhlenbeck tower. The positive covariances enter with a minus sign. They account for the terms. They do not make B positive.",
    "label": "Theorem",
-   "core": "W_p(F) = log p ( ||F||^2 - <F, P_p F> ), where P_p = sum_k p^(-|k|/2) T_{k log p} is positive semidefinite, the covariance of a critical boson, or an AR(1) process. The archimedean symbol is the OU tower with rates (2j+1)/2. E0 is the statement that the rate-1/2 OU response is supported in the window. The individual prime responses leak: their local poles cancel only when all places are kept together. This is an exact term-by-term reading. As a source of the sign it is closed. Observation, not a theorem: the OU rate (2j+1)/2 is the distance from 1/2 to the pole s = -2j of the archimedean Gamma factor. For j at least 1 those poles are cancelled in xi by the trivial zeros. The j = 0 pole at s = 0 survives in Lambda and is the moment removed by E0.",
+   "core": "W_p(F) = log p ( ||F||^2 - <F, P_p F> ), where P_p = sum_k p^(-|k|/2) T_{k log p} is positive semidefinite, the covariance of a critical boson, or an AR(1) process. The archimedean symbol is the OU tower with rates 2j + 1/2. E0 is the statement that the rate-1/2 OU response is supported in the window. The individual prime responses leak: their local poles cancel only when all places are kept together. This is an exact term-by-term reading. As a source of the sign it is closed. Observation, not a theorem: the OU rate 2j + 1/2 is the distance from 1/2 to the pole s = -2j of the archimedean Gamma factor. For j at least 1 those poles are cancelled in xi by the trivial zeros. The j = 0 pole at s = 0 survives in Lambda and is the moment removed by E0.",
    "formula": "W_p = log p (||F||^2 - <F, P_p F>), P_p positive semidefinite",
    "numbers": [
     "Session, A = 2, G = sin^8, uncertified: arch +0.090, p = 2 about +9.092, p = 3 about -9.001, p = 5 about -0.0016, spring total 0.1788.",
-    "Rounded displayed parts sum to 0.1794. The cancellation is the point of the figure, not a certificate."
+    "Covariance-ledger sum 0.17925. Spring and Fourier evaluations 0.1788. The gap of about 4.6e-4 is an uncertified discrepancy between calculations, not rounding."
    ],
    "axes": [
     "sign/positivity (Ax2)",
@@ -36337,14 +36337,14 @@
   },
   {
    "id": "pole_form_P_2ReCplusCminus",
-   "name": "The pole term is 2(|C| squared minus |S| squared)",
+   "name": "The pole term is 2 Re(C+ conjugate C-); for real F, 2 ev+ ev- = 2(C squared minus S squared)",
    "aliases": [
     "P = 2 Re(C+ conjugate C-)"
    ],
-   "plain": "For a general complex test, P = 2(|C| squared minus |S| squared), which equals 2 Re(C+ times the conjugate of C-). For real F that agrees with 2 ev+ ev- = 2(C squared minus S squared). The equality of those real expressions with the complex form is not claimed unless F is real. P is the term E0 is built to kill.",
+   "plain": "For a general complex test, P = 2 Re(C+ conjugate C-) = 2(|C| squared minus |S| squared). For real F this is 2 ev+ ev- = 2(C squared minus S squared). That real reduction is not claimed for a general complex test. P is the term E0 is built to kill.",
    "label": "Theorem",
-   "core": "ev±(F) = integral F(u) exp(±u/2) du. For general complex F, P(F) = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-). For real F, P(F) = 2 ev+ ev- = 2(C^2 - S^2). On a centered window, reflection splits this into a rank-one positive update on the even sector and a rank-one negative update on the odd sector: W_even = B_even + 2 c c^T and W_odd = B_odd - 2 s s^T. Globally the moment functionals are unbounded, so E0 is dense among square-integrable functions. On one finite window both exponentials are square-integrable, so the kernel is closed of codimension 2. That topological distinction is already in v1.19.",
-   "formula": "P = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-); real F: 2 ev+ ev- = 2(C^2 - S^2)",
+   "core": "ev±(F) = integral F(u) exp(±u/2) du. For general complex F, P(F) = 2 Re(C+ conjugate C-) = 2(|C|^2 - |S|^2). For real F, P(F) = 2 ev+ ev- = 2(C^2 - S^2). On a centered window, reflection splits this into a rank-one positive update on the even sector and a rank-one negative update on the odd sector: W_even = B_even + 2 c c^T and W_odd = B_odd - 2 s s^T. Globally the moment functionals are unbounded, so E0 is dense among square-integrable functions. On one finite window both exponentials are square-integrable, so the kernel is closed of codimension 2. That topological distinction is already in v1.19.",
+   "formula": "P = 2 Re(C+ conjugate C-) = 2(|C|^2 - |S|^2); for real F, 2 ev+ ev- = 2(C^2 - S^2)",
    "numbers": [],
    "axes": [
     "reference/pole/cusp",
@@ -36640,9 +36640,9 @@
    "lemmas": [],
    "rels": [
     {
-     "type": "corrects",
+     "type": "refines",
      "to": "connes_trace",
-     "note": "semilocal pairing is tau of chi times (f1 convolved with f2 star), not the naive star"
+     "note": "corrects the earlier scratch pairing; Connes' semilocal formula itself is unchanged"
     },
     {
      "type": "distinguishes",
@@ -36671,7 +36671,7 @@
    ],
    "plain": "On a log window the Weil form splits as a pole term P plus a bulk form B. The bulk form is nonnegative spring energy minus a diagonal counterterm. Killing the poles removes P and leaves the counterterm in place. The split is an identity. It does not sign W.",
    "label": "Theorem",
-   "core": "For a window test F, W(F) = P(F) + B(F). For a general complex window test, P = 2(|C|^2 - |S|^2) = 2 Re(C+ conjugate C-). For real F, P = 2 ev+ ev- = 2(C^2 - S^2). B = H_A - M_A times the norm squared, and the same B is (1/2 pi) times the integral of m_A |Fourier F|^2. H_A adds the archimedean Levy springs and the prime springs for log n < A; each spring is nonnegative. M_A = -K0 + 2 sum Lambda(n) n^(-1/2), with K0 = psi(1/4) - log pi = -5.37218. The formula for B is valid off E0 as well as on it. W equals B on the joint kernel of the two moment functionals, which contains E0. This restates the v1.19 spring identity with the pole term kept visible off E0.",
+   "core": "For a window test F, W(F) = P(F) + B(F). P = 2 Re(C+ conjugate C-) = 2(|C|^2 - |S|^2). For real F, P = 2 ev+ ev- = 2(C^2 - S^2). B = H_A - M_A times the norm squared, and the same B is (1/2 pi) times the integral of m_A |Fourier F|^2. H_A adds the archimedean Levy springs and the prime springs for log n < A; each spring is nonnegative. M_A = -K0 + 2 sum Lambda(n) n^(-1/2), with K0 = psi(1/4) - log pi = -5.37218. The formula for B is valid off E0 as well as on it. W equals B on the joint kernel of the two moment functionals, which contains E0. This restates the v1.19 spring identity with the pole term kept visible off E0.",
    "formula": "W = P + B, B = H_A - M_A ||F||^2, E0 kills P only",
    "numbers": [
     "K0 = psi(1/4) - log pi = -5.3721834192256654, from the session ledger."

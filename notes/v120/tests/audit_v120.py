@@ -266,19 +266,55 @@ svg = (ROOT / "figures" / "v120" / "fig1_ledger.svg").read_text(encoding="utf-8"
 html = (ROOT / "figures" / "v120" / "overview.html").read_text(encoding="utf-8")
 front = (ROOT / "notes" / "v120" / "FRONT.md").read_text(encoding="utf-8")
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
-real_chain = "2 ev+ ev- = 2(C^2 - S^2) = 2 Re"
-front_chain = "2 ev₊ ev₋ = 2(C² − S²) = 2 Re"
+atlas_txt = (ROOT / "atlas.json").read_text(encoding="utf-8")
+atlas_md = (ROOT / "ATLAS.md").read_text(encoding="utf-8")
+synth = (ROOT / "notes" / "v120" / "SYNTHESIS_CORRECTED.md").read_text(encoding="utf-8")
+complex_front = "P = 2 Re(C₊ conjugate C₋) = 2(|C|² − |S|²). For real F this is 2 ev₊ ev₋ = 2(C² − S²)."
+unqualified = "2 ev+ ev- = 2(C^2 - S^2) = 2 Re"
+unqualified_front = "2 ev₊ ev₋ = 2(C² − S²) = 2 Re"
+ids = {
+    "window-energy-ledger",
+    "pole-form-p-2recpluscminus",
+    "bulk-form-b-off-e0",
+    "local-product-state-covariance",
+    "product-formula-defect-mean",
+    "twisted-star-convolution",
+    "semilocal-scattering-phase-time-delay",
+    "connes-cutoff-pair-two-hankel",
+    "bordered-inertia-moment-criterion",
+    "even-odd-sector-constraints",
+    "near-null-cluster-a2",
+    "independent-representer-test",
+    "prime-edge-kink-orbit",
+    "conic-polarity-one-form",
+    "polar-family-h-s-degeneration",
+    "kunneth-skew-to-symmetric",
+    "nonstationary-j-obstruction",
+    "iwasawa-regularity-class",
+    "rankin-selberg-square-calibration",
+}
+linked = set(__import__("re").findall(r"ATLAS.md#([a-z0-9-]+)", front))
 record(
     "fig1_complex_pole_identity",
-    ("|C|^2-|S|^2" in svg)
+    ("Re}(C_+\\overline{C_-})=2(|C|^2-|S|^2)" in svg)
     and ("ev}_+" not in svg)
-    and ("2(|C|² − |S|²) = 2 Re" in html)
-    and ("2(C² − S²)" not in html)
-    and ("2(|C|² − |S|²) = 2 Re" in front)
-    and (front_chain not in front)
-    and (front_chain not in readme)
-    and (real_chain not in (ROOT / "atlas.json").read_text(encoding="utf-8")),
-    note="P = 2(|C|^2-|S|^2) = 2 Re(C+ conjugate C-) for general complex F. The real reduction is not chained into that identity.",
+    and (complex_front in html)
+    and (complex_front in front)
+    and (complex_front in readme)
+    and (complex_front.split(". For real")[0] in synth)
+    and ("For real F this is 2 ev₊ ev₋ = 2(C² − S²)" in synth)
+    and (unqualified not in atlas_txt)
+    and (unqualified_front not in front)
+    and ("(2j+1)/2" not in atlas_txt)
+    and ("2j + 1/2" in atlas_txt)
+    and ("pole-form-p-2reccpluscminus" not in front)
+    and ("pole-form-p-2reccpluscminus" not in atlas_md)
+    and (linked == ids)
+    and ("not a rounding" in front)
+    and ("singular at p = 3" in atlas_txt)
+    and ("Connes' semilocal formula itself is unchanged" in atlas_txt)
+    and ("Growth of the symbol to +infinity at high frequency" in atlas_txt),
+    note="Complex pole identity, qualified real reduction, OU rate 2j+1/2, anchors, and the three small audit notes.",
 )
 
 # 15. Schema of the atlas after insertion
