@@ -1,8 +1,41 @@
 # The RH Atlas — full public edition
 
-Version 1.19 · 7 Nov 2026 (UTC) · J. W. McGreevy; formalization by Grok Bot
+Version 1.20 · 8 Nov 2026 (UTC) · J. W. McGreevy; formalization by Grok Bot
 
 > **The Riemann Hypothesis is NOT proved here.** This atlas is a classification of known structures, criteria and open problems, not a proof.
+
+## Latest results (v1.20)
+
+> **The Riemann Hypothesis is not proved.** Night of 7 Nov 2026 (America/Chicago), integrated 8 Nov 2026 (UTC). No new positivity theorem. Rank 1 is unchanged: `kahler_triple_polarization`. Open ~1.8 is unchanged. The full geometric map that would carry W is missing. Nothing here is close to a proof, and no distance to a proof is claimed.
+
+**The aim, still a programme.** The thermodynamic picture, and the RH-unitarity picture, want the Weil form on log-window tests to be an energy whose positive part is built independently of the zeros. Window by window, W ≥ 0 on E0 would then be a sign mechanism rather than an assumption. That is the goal. It is not an established physical theory, and it is not a theorem.
+
+**Analogy.** Keep two pages in one ledger. The pole page P is the product of the two exponential moments. The bulk page B is a sum of springs, each nonnegative, minus a diagonal counterterm M_A. Tests in E0 throw away the pole page and leave the counterterm where it is. Local product states explain every line of the ledger, and their covariances are subtracted. A subtracted positive term does not pay the bill. The conic drawn below is a model of the shape a sign would have: one negative direction, a positive complement, a null boundary. It is a picture, not a machine that produces the sign.
+
+**What is exact.** W = P + B off E0, and W = B on E0. P = 2 ev₊ ev₋ = 2(C² − S²) = 2 Re(C₊ conjugate C₋). B = H_A − M_A ‖F‖², with H_A the archimedean springs plus the prime springs for log n < A, and M_A = −K₀ + 2 Σ a_n, K₀ = ψ(1/4) − log π = −5.37218. M_A is a sum of local means. It is not a proved product-formula defect, and there is no coupling on principal ideles. If the prime sum runs over all prime powers, it is a sum over those primes. For a finite invertible symmetric matrix and one constraint c ≠ 0, the restriction is positive semidefinite if and only if the negative index is 0, or the negative index is 1 and q = cᵀ B⁻¹ c ≤ 0. Index 0 forces q > 0. Index 2 or more cannot be saved by one constraint. On a reflection-invariant finite Galerkin space with invertible blocks, B ≥ 0 on E0 if and only if both the even sector and the odd sector pass that test. The vector B⁻¹ c is not an independent constructor, and invertibility of the infinite-dimensional operator is not proved. A fixed finite H^{1,1} cannot carry W because high frequency makes B positive definite on an infinite-dimensional subspace of smooth E0; unboundedness alone is not the reason. Finitely many negative directions on one window is not positivity. The semilocal trace, with the twisted involution (χ f)* = χ⁻¹ f*, equals W − P when the place set covers the window. It is not Hodge positivity, and no global phase c ≡ 1 is claimed. The Hodge index, cited as a pattern and not as a constructor, is Hartshorne, Algebraic Geometry, GTM 52, Chapter V, Theorem 1.9. On the model discriminant conic, Q(h) = −4 for h = (0:1:1), the polar is positive, and x_∞ is a smooth null point whose polar does not meet the affine chart. On a product of curves, I = −E ⊗ E: the mixed real primitive class squares to −8 and the real (2,0)+(0,2) class squares to +8.
+
+**Two candidates, and no general ban.** h₁ = cosh · 1_window fails at A = 0.6 and at A = 1. The proof splits the archimedean integral at a fixed small a₀. The untruncated integral against the smooth continuation of cosh diverges. After the split, the edge produces (1/2) log(1/d). h₂, the Dirichlet cosh, fails at A = 1 by a slope jump a₂ sinh(A/4)/2 = 0.06191 where the edge is translated by log 2. A finite difference gives 0.06189. At A = 0.6 the h₂ residual is 6.92 percent, numerical only. Polynomial E0 tests are piecewise and not smooth; where a smooth disproof is claimed, it uses the annihilator lemma. A universal edge orbit, a 1/log law, and a Gamma-only no-go are conjectures.
+
+**What is only numerical.** Per-place contributions at A = 2 for one test: arch about +0.090, prime 2 about +9.092, prime 3 about −9.001, prime 5 about −0.0016, spring total 0.1788. Rounded bars add to 0.1794. E0 minima are estimates, not certified brackets: a Ritz upper estimate about 0.697 at A = 0.6 and 0.01315 at A = 1, and lower-bound-inspired values about 0.6919 and 0.0119. The absolute cosine with a computed even mode is about 0.970, 0.991, and 0.997 at those widths and at A = 2. That is not a squared overlap, and the width-2 figure is inside the unresolved cluster. Neither picture of that cluster is an eigenvalue of B, and an apparent second mode is not a certified gap. Positive finite matrices are not analytic positivity. A positive compression mismatched W on the tests that were run. That is not a universal impossibility.
+
+**The missing theorem.** On a fixed window, build h_A from Gamma data, prime data, and the boundary, without inverting B, so that the response equals the moment constraint, including M_A and every prime-translated edge; with B(h_A, h_A) < 0; and with the bordered count in both sectors. The count is the fragile, RH-strength half. A fixed finite H^{1,1} cannot carry W, by the high-frequency argument above, not by the slogan that an unbounded form has infinite rank. The right infinite-dimensional target is not constructed.
+
+**Closed, in the stated scope.** Local covariances as a sign source. The two representers above. Translation-invariant J on E0. Moments alone as a gap. A formal global phase c ≡ 1. A formal graph read as cycles. Sigma-convexity of log |ξ| and the weight-12 selector. Iwasawa invariants as a sign. Rankin–Selberg square coefficients as a formula for W. The Petersson norm of Δ is finite and positive; cusp decay is convergence, not degeneration. Noetherian is not a Noether charge, and a local UFD is not a global principal generator. Jacobian, Rosati, and Picard paths that the atlas already closed stay closed.
+
+**Walls that stay separate.** The parabolic wall, the Routh wall, the Beurling-pencil Hasse wall, and the primary and secondary sheets of Σ are four different nodes. The curve in the polarity figure is a fifth object: the model null conic Q = 0, a discriminant boundary of that model. It is smooth at infinity. Focus and directrix are extra Euclidean structure of the affine chart.
+
+**Read next.** Corrected narrative: [notes/v120/SYNTHESIS_CORRECTED.md](notes/v120/SYNTHESIS_CORRECTED.md). Prompt: [notes/v120/OVERVIEW_PROMPT.md](notes/v120/OVERVIEW_PROMPT.md). Parent math audit, copied with the bundle: [notes/v120/provenance/bundle/PUBLICATION_AUDIT_matching1983.md](notes/v120/provenance/bundle/PUBLICATION_AUDIT_matching1983.md). Raw notes are historical: [notes/v120/provenance/SUPERSEDED.md](notes/v120/provenance/SUPERSEDED.md). The browser page, with static frames and optional motion that stops under reduced motion, is [figures/v120/overview.html](figures/v120/overview.html).
+
+<p align="center"><a href="figures/v120/fig1_ledger.svg"><img src="figures/v120/fig1_ledger.png" width="720" alt="Exact ledger W equals P plus B, and one uncertified window of per-place contributions"></a><br><sub>Figure 1. W = P + B. E0 kills P only. Positive local covariances are subtracted. The bars are one uncertified window; rounded parts sum to 0.1794 and the session total is 0.1788. <b>The Riemann Hypothesis is not proved.</b> <a href="figures/v120/fig1_ledger.svg">SVG</a>.</sub></p>
+
+<p align="center"><a href="figures/v120/fig2_polarity.svg"><img src="figures/v120/fig2_polarity.png" width="720" alt="Model null conic and the two signs on a product of curves"></a><br><sub>Figure 2. One model form. The curve Q = 0 is a discriminant boundary of the model, not a Hasse wall and not the parabolic wall. Focus and directrix are extra Euclidean structure. The product pairing takes both signs, −8 and +8. <b>The Riemann Hypothesis is not proved.</b> <a href="figures/v120/fig2_polarity.svg">SVG</a>.</sub></p>
+
+<p align="center"><a href="figures/v120/fig3_candidates.svg"><img src="figures/v120/fig3_candidates.png" width="720" alt="Two representer candidates fail, by an edge logarithm and by a prime-2 kink"></a><br><sub>Figure 3. h1 fails by a logarithm at the edge. h2 at width 1 fails by the exact jump 0.06191. Only these two candidates. The 6.92 percent residual at width 0.6 is numerical. <b>The Riemann Hypothesis is not proved.</b> <a href="figures/v120/fig3_candidates.svg">SVG</a>.</sub></p>
+
+<p align="center"><img src="figures/v120/frame_s1.00.png" width="240" alt="Polarity frame at s=1, both gauges equal −4"> <img src="figures/v120/frame_s0.50.png" width="240" alt="Polarity frame at s=0.5, homogeneous Q=-2 and affine Q=-8"> <img src="figures/v120/frame_s0.05.png" width="240" alt="Polarity frame at s=0.05, homogeneous Q=-0.2 and affine Q=-80"><br><img src="figures/v120/anim_polarity.gif" width="720" alt="Animation of the polar family. The filled sublevel lengthens toward a strip. The level curve lengthens toward two lines."><br><sub>Same projective point, two gauges. Homogeneous Q(h_s) = −4s on h_s = (0, 1, s). Affine height q = 1/s has Q = −4/s. The sign stays negative and the limit point is the null point x_∞. The filled set is the sublevel and tends to a strip. The level curve tends to two lines and does not itself become the strip. Frames: <a href="figures/v120/frame_s1.00.png">s = 1</a> · <a href="figures/v120/frame_s0.50.png">s = 0.5</a> · <a href="figures/v120/frame_s0.05.png">s = 0.05</a>. Motion: <a href="figures/v120/anim_polarity.gif">GIF</a>. Schematic algebra, not a recording. <b>The Riemann Hypothesis is not proved.</b></sub></p>
+
+Entries: [ledger](ATLAS.md#window-energy-ledger), [pole term](ATLAS.md#pole-form-p-2reccpluscminus), [bulk form](ATLAS.md#bulk-form-b-off-e0), [subtracted covariance](ATLAS.md#local-product-state-covariance), [local means](ATLAS.md#product-formula-defect-mean), [twisted star](ATLAS.md#twisted-star-convolution), [semilocal delay](ATLAS.md#semilocal-scattering-phase-time-delay), [Hankel split](ATLAS.md#connes-cutoff-pair-two-hankel), [bordered inertia](ATLAS.md#bordered-inertia-moment-criterion), [both sectors](ATLAS.md#even-odd-sector-constraints), [unresolved cluster](ATLAS.md#near-null-cluster-a2), [two candidates](ATLAS.md#independent-representer-test), [prime-2 kink](ATLAS.md#prime-edge-kink-orbit), [model conic](ATLAS.md#conic-polarity-one-form), [two gauges](ATLAS.md#polar-family-h-s-degeneration), [Künneth signs](ATLAS.md#kunneth-skew-to-symmetric), [no stationary J](ATLAS.md#nonstationary-j-obstruction), [local regularity](ATLAS.md#iwasawa-regularity-class), [square coefficients](ATLAS.md#rankin-selberg-square-calibration).
+
 
 ## Latest results (v1.19)
 
@@ -508,7 +541,7 @@ Figures from the research notes folded into v1.8. The Riemann Hypothesis is not 
 
 *Two Kepler degenerations: F = V is the circular orbit (e = 0), not the Levi-Civita centre collision (e = 1); both share the square-root map.* [Theorem · 4.4]
 
-1025 concepts · 1990 typed relations · 10 missing pieces. Generated from `atlas.json` by `build_public_md.py`.
+1044 concepts · 2051 typed relations · 10 missing pieces. Generated from `atlas.json` by `build_public_md.py`.
 
 **Order.** Every section lists its entries in descending priority. Headers read `#rank · priority · name`. Priority comes from the Heuristic scoring layer described in [scores.md](scores.md): priority = 0.6 · (gap significance × √(sensitivity · specificity)) + 0.4 · tractability. The scores are judgment calls, shown component by component so any reader can disagree with them.
 
@@ -521,17 +554,17 @@ Figures from the research notes folded into v1.8. The Riemann Hypothesis is not 
 - [Missing pieces](#missing-pieces)
 - [Diagnostic quadrants](#diagnostic-quadrants)
 - [Concepts by primary axis](#concepts-by-primary-axis)
-  - [sign/positivity (Ax2)](#axis-sign-positivity-ax2) (118)
-  - [geometry over F_q](#axis-geometry-over-f-q) (39)
+  - [sign/positivity (Ax2)](#axis-sign-positivity-ax2) (124)
+  - [geometry over F_q](#axis-geometry-over-f-q) (40)
   - [no-go / refuted](#axis-no-go-refuted) (39)
   - [Spec ℤ gap](#axis-spec-gap) (31)
-  - [reference/pole/cusp](#axis-reference-pole-cusp) (40)
-  - [numerics/certificate](#axis-numerics-certificate) (182)
-  - [physics analogue](#axis-physics-analogue) (177)
+  - [reference/pole/cusp](#axis-reference-pole-cusp) (42)
+  - [numerics/certificate](#axis-numerics-certificate) (183)
+  - [physics analogue](#axis-physics-analogue) (179)
   - [restatement ⇔ RH](#axis-restatement-rh) (75)
   - [ghost-sensitive](#axis-ghost-sensitive) (33)
-  - [structure/frame (Ax1)](#axis-structure-frame-ax1) (179)
-  - [open target](#axis-open-target) (54)
+  - [structure/frame (Ax1)](#axis-structure-frame-ax1) (185)
+  - [open target](#axis-open-target) (55)
   - [phase/unitarity (Ax3)](#axis-phase-unitarity-ax3) (38)
   - [ghost-blind](#axis-ghost-blind) (10)
 - [Index by rank](#index-by-rank)
@@ -600,7 +633,7 @@ These are the objects that, as far as this atlas can tell, would have to exist f
 - same mechanism as → [Hilbert–Pólya](#hilbert-polya)
 - special case of → [Ax1–Ax3 axioms (Yoneda specification)](#ax123) — Ax2 + Ax3 jointly
 
-**Relations (incoming):** [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](#kahler-triple-polarization) (lives in); [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (feeds); [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](#mp-flow-h1) (same mechanism as); [Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)](#mp-d8) (special case of); [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) (feeds); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (feeds); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (feeds); [Rosati = time reversal composed with a Krein grading: P = SΓ is positive and invariant exactly while the flow is elliptic](#rosati-time-reversal-krein) (constrains); [Rosati-like involution = Krein-signed compatible complex structure](#krein-rosati-iota) (constrains); [The shape of the missing piece: ten necessary properties (P1–P10)](#missing-piece-shape-list) (constrains); [Zeros-blind input is the data package “masses + force law”, not a literal equation](#zeros-blind-masses-force-package) (feeds); [Herbrand–Ribet and the Iwasawa main conjecture: the spectral half without a polarization](#herbrand-ribet-spectral-no-positivity) (contrasts with)
+**Relations (incoming):** [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](#kahler-triple-polarization) (lives in); [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (feeds); [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](#mp-flow-h1) (same mechanism as); [Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)](#mp-d8) (special case of); [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) (feeds); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (feeds); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (feeds); [Rosati = time reversal composed with a Krein grading: P = SΓ is positive and invariant exactly while the flow is elliptic](#rosati-time-reversal-krein) (constrains); [Rosati-like involution = Krein-signed compatible complex structure](#krein-rosati-iota) (constrains); [The shape of the missing piece: ten necessary properties (P1–P10)](#missing-piece-shape-list) (constrains); [Zeros-blind input is the data package “masses + force law”, not a literal equation](#zeros-blind-masses-force-package) (feeds); [Herbrand–Ribet and the Iwasawa main conjecture: the spectral half without a polarization](#herbrand-ribet-spectral-no-positivity) (contrasts with); [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) (constrains); [A translation-invariant complex structure does not preserve the window kernel](#nonstationary-j-obstruction) (contrasts with)
 
 ### #15 · 0.700 · Missing: a Néron–Severi strictly larger than U containing the Frobenius classes Ψ_λ <a id="mp-ns-psi"></a>
 
@@ -660,7 +693,7 @@ These are the objects that, as far as this atlas can tell, would have to exist f
 - same mechanism as → [Missing: quadratic Riemann–Roch + “ampleness ⇒ effectivity” on the square](#mp-quadratic-rr)
 - special case of → [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)](#mp-castelnuovo)
 
-**Relations (incoming):** [Missing: RR/GRR on an arithmetic Spec ℤ × Spec ℤ producing the sign (RG-5, “the missing row”)](#mp-rg5) (same mechanism as); [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) (same mechanism as)
+**Relations (incoming):** [Missing: RR/GRR on an arithmetic Spec ℤ × Spec ℤ producing the sign (RG-5, “the missing row”)](#mp-rg5) (same mechanism as); [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) (constrains); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (constrains); [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) (same mechanism as)
 
 ### #17 · 0.700 · Missing: a BRST-type complex Q with H(Q) = U^⊥ positive (PM-3) <a id="mp-brst"></a>
 
@@ -848,8 +881,8 @@ Sensitivity asks whether a statement holds for ζ (is necessary for, or implied 
 
 | | specificity ≥ 0.8 (fails for the fakes) | specificity < 0.8 (ghost-blind or untested) |
 |---|---|---|
-| **sensitivity ≥ 0.8** (true for ζ) | RH-sharp: 359 | true but ghost-blind/untested: 540 |
-| **sensitivity < 0.8** (interpretive) | sharp but interpretive: 22 | background: 104 |
+| **sensitivity ≥ 0.8** (true for ζ) | RH-sharp: 359 | true but ghost-blind/untested: 557 |
+| **sensitivity < 0.8** (interpretive) | sharp but interpretive: 22 | background: 106 |
 
 ### RH-sharp: true for ζ and fails for the fakes (359)
 
@@ -1140,80 +1173,80 @@ Sensitivity asks whether a statement holds for ζ (is necessary for, or implied 
 - #477 · 0.360 · [Shear-to-push density r = T/(2ℓ₊ℓ₋): RH iff r ≤ 1 for push > 0; sup r = 1 unconditionally (log-Gaussians)](#shear-push-density) [Theorem]
 - #478 · 0.360 · [In Li's variable ξ is a self-reciprocal series with positive coefficients](#li-variable-self-reciprocal-series) [Theorem]
 - #479 · 0.360 · [Zeta zeros as modular-surface scattering resonances](#modular-resonances-half-zeros) [Cited]
-- #865 · 0.240 · [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) [Restatement]
-- #866 · 0.240 · [RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole](#sharpened-missing-piece) [Restatement]
-- #867 · 0.240 · [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros) [Restatement]
-- #868 · 0.240 · [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split) [Restatement]
-- #869 · 0.240 · [Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular](#height-positivity-circular) [Restatement]
-- #870 · 0.240 · [Hasse triangle and Newton's dT/dθ = L²](#hasse-triangle-newton) [Restatement]
-- #871 · 0.240 · [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) [Restatement]
-- #872 · 0.240 · [Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters](#imaginary-field-susceptibility) [Restatement]
-- #873 · 0.240 · [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation) [Restatement]
-- #874 · 0.240 · [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular) [Restatement]
-- #875 · 0.240 · [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation) [Restatement]
-- #876 · 0.240 · [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) [Restatement]
-- #877 · 0.240 · [RH as a negative-square count (restatement)](#ghost-count-rh-restatement) [Restatement]
-- #878 · 0.240 · [Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0](#hill-neck-lambda2) [Restatement]
-- #879 · 0.240 · [Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH](#hodge-index-zeta-restatement) [Restatement]
-- #880 · 0.240 · [Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information](#multispin-adds-nothing) [Restatement]
-- #881 · 0.240 · [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement) [Restatement]
-- #882 · 0.240 · [No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2](#transverse-positivity-slot2) [Restatement]
-- #883 · 0.240 · [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary) [Restatement]
-- #884 · 0.240 · [Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel](#anisotropic-part-weil) [Restatement]
-- #885 · 0.240 · [sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece](#boundary-signature-neutral) [Restatement]
-- #886 · 0.240 · [S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization)](#def-arithmetic-action) [Restatement]
-- #887 · 0.240 · [(S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane](#def-thermodynamic-arithmetic-action) [Restatement]
-- #888 · 0.240 · [KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1)](#kms-positivity-not-forcing) [Restatement]
-- #889 · 0.240 · [Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH](#lc-square-xi) [Restatement]
-- #890 · 0.240 · [Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted](#pole-plane-lorentz-boost) [Restatement]
-- #891 · 0.240 · [Invariant maximal non-positive subspaces: exactly two](#pontryagin-exactly-two) [Restatement]
-- #892 · 0.240 · [Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular](#positivity-is-nonconcentration) [Restatement]
-- #893 · 0.240 · [The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e](#product-formula-rest-frame) [Restatement]
-- #894 · 0.240 · [Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight)](#stationary-phase-split) [Restatement]
-- #895 · 0.240 · [A nilpotent supercharge with W = {Q, Q*} restates positivity](#supercharge-laplacian-restates-positivity) [Restatement]
-- #896 · 0.240 · [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin) [Restatement]
-- #897 · 0.240 · [Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular](#thermo-only-extensivity) [Restatement]
-- #898 · 0.240 · [Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π](#trig-hyperbolic-trace-dictionary) [Restatement]
-- #899 · 0.240 · [Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH](#weil-energy-spectrum-zeros) [Restatement]
-- #900 · 0.240 · [Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line](#zagier-e2-edge-dictionary) [Restatement]
-- #901 · 0.240 · [RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked](#cramer-cm-iff-rh) [Restatement]
-- #902 · 0.240 · [Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1}](#euler-half-exponent-tame-symbol) [Restatement]
-- #903 · 0.240 · [No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement)](#fv-operator-pair-refuted) [Restatement]
-- #904 · 0.240 · [Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²](#hodge-index-shear-subtracts) [Restatement]
-- #905 · 0.240 · [RH as infinite divisibility](#infinitely-divisible-rh-criterion) [Restatement]
-- #906 · 0.240 · [KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp](#ks-trichotomy-xp) [Restatement]
-- #907 · 0.240 · [In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight](#lambda-as-norm) [Restatement]
-- #908 · 0.240 · [RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts](#prime-side-cramer-cm) [Restatement]
-- #909 · 0.240 · [RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH](#reciprocal-xi-pf-ensemble) [Restatement]
-- #910 · 0.240 · [Riemann-Roch sorts the two conditions](#riemann-roch-sorting) [Restatement]
-- #911 · 0.240 · [Rodgers-Tao renormalization needs the zero count (Turing)](#rt-renormalization-count-drift) [Restatement]
-- #912 · 0.240 · [Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson](#signature-not-det-three-ways) [Restatement]
-- #913 · 0.240 · [Which sign statements for zeta are non-circular](#signed-energy-noncircular-sign) [Restatement]
-- #914 · 0.240 · [The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module](#virasoro-halving-is-central-charge-change) [Restatement]
-- #915 · 0.240 · [⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite](#weil-braket-pairing) [Restatement]
-- #916 · 0.240 · [Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)](#zeta-zero-fv-quadratic) [Restatement]
-- #917 · 0.240 · [Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only](#corrections) [Restatement]
-- #918 · 0.240 · [Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio](#honest-l-as-partition-ratio) [Restatement]
-- #919 · 0.240 · [Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity](#kronecker-hurwitz-eichler-selberg) [Restatement]
-- #920 · 0.240 · [W = covariance of φ̂_i under Σδ_γ iff zeros real](#weil-form-as-fisher-metric-circular) [Restatement]
-- #921 · 0.240 · [Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful](#dh-no-brandt-control) [Restatement]
-- #922 · 0.240 · [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) [Restatement]
-- #923 · 0.240 · [Sundman-regularized Rodgers-Tao energy](#sundman-regularized-rt-energy) [Restatement]
-- #924 · 0.240 · [The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on](#negative-cone-topology) [Restatement]
-- #985 · 0.200 · [Convolution square root](#convolution-square-root) [Open]
-- #986 · 0.200 · [Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk](#anticipation-law-fluctuation) [Conjecture]
-- #987 · 0.200 · [Weighted signed energy trace from the heat-flowed function](#signed-local-energy-trace) [Open]
-- #988 · 0.200 · [A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known](#slot2-thermodynamic-target) [Open]
-- #989 · 0.200 · [Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture)](#krein-laguerre-count) [Conjecture]
-- #990 · 0.200 · [Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling](#noncircular-noghost-conjecture) [Conjecture]
-- #991 · 0.200 · [Weil functional as a special-cycle self-intersection (program)](#weil-as-special-cycle-self-intersection) [Conjecture]
-- #992 · 0.200 · [TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH](#taa-thesis) [Conjecture]
-- #993 · 0.200 · [No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8](#entropy-bound-insufficient) [Conjecture]
-- #994 · 0.200 · [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) [Conjecture]
-- #995 · 0.200 · [zeta on the wall of deformation families](#zeta-on-the-wall) [Conjecture]
-- #996 · 0.200 · [“RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor](#never-focuses-conjecture-downgraded) [Conjecture]
+- #883 · 0.240 · [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) [Restatement]
+- #884 · 0.240 · [RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole](#sharpened-missing-piece) [Restatement]
+- #885 · 0.240 · [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros) [Restatement]
+- #886 · 0.240 · [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split) [Restatement]
+- #887 · 0.240 · [Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular](#height-positivity-circular) [Restatement]
+- #888 · 0.240 · [Hasse triangle and Newton's dT/dθ = L²](#hasse-triangle-newton) [Restatement]
+- #889 · 0.240 · [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) [Restatement]
+- #890 · 0.240 · [Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters](#imaginary-field-susceptibility) [Restatement]
+- #891 · 0.240 · [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation) [Restatement]
+- #892 · 0.240 · [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular) [Restatement]
+- #893 · 0.240 · [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation) [Restatement]
+- #894 · 0.240 · [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) [Restatement]
+- #895 · 0.240 · [RH as a negative-square count (restatement)](#ghost-count-rh-restatement) [Restatement]
+- #896 · 0.240 · [Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0](#hill-neck-lambda2) [Restatement]
+- #897 · 0.240 · [Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH](#hodge-index-zeta-restatement) [Restatement]
+- #898 · 0.240 · [Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information](#multispin-adds-nothing) [Restatement]
+- #899 · 0.240 · [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement) [Restatement]
+- #900 · 0.240 · [No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2](#transverse-positivity-slot2) [Restatement]
+- #901 · 0.240 · [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary) [Restatement]
+- #902 · 0.240 · [Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel](#anisotropic-part-weil) [Restatement]
+- #903 · 0.240 · [sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece](#boundary-signature-neutral) [Restatement]
+- #904 · 0.240 · [S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization)](#def-arithmetic-action) [Restatement]
+- #905 · 0.240 · [(S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane](#def-thermodynamic-arithmetic-action) [Restatement]
+- #906 · 0.240 · [KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1)](#kms-positivity-not-forcing) [Restatement]
+- #907 · 0.240 · [Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH](#lc-square-xi) [Restatement]
+- #908 · 0.240 · [Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted](#pole-plane-lorentz-boost) [Restatement]
+- #909 · 0.240 · [Invariant maximal non-positive subspaces: exactly two](#pontryagin-exactly-two) [Restatement]
+- #910 · 0.240 · [Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular](#positivity-is-nonconcentration) [Restatement]
+- #911 · 0.240 · [The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e](#product-formula-rest-frame) [Restatement]
+- #912 · 0.240 · [Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight)](#stationary-phase-split) [Restatement]
+- #913 · 0.240 · [A nilpotent supercharge with W = {Q, Q*} restates positivity](#supercharge-laplacian-restates-positivity) [Restatement]
+- #914 · 0.240 · [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin) [Restatement]
+- #915 · 0.240 · [Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular](#thermo-only-extensivity) [Restatement]
+- #916 · 0.240 · [Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π](#trig-hyperbolic-trace-dictionary) [Restatement]
+- #917 · 0.240 · [Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH](#weil-energy-spectrum-zeros) [Restatement]
+- #918 · 0.240 · [Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line](#zagier-e2-edge-dictionary) [Restatement]
+- #919 · 0.240 · [RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked](#cramer-cm-iff-rh) [Restatement]
+- #920 · 0.240 · [Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1}](#euler-half-exponent-tame-symbol) [Restatement]
+- #921 · 0.240 · [No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement)](#fv-operator-pair-refuted) [Restatement]
+- #922 · 0.240 · [Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²](#hodge-index-shear-subtracts) [Restatement]
+- #923 · 0.240 · [RH as infinite divisibility](#infinitely-divisible-rh-criterion) [Restatement]
+- #924 · 0.240 · [KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp](#ks-trichotomy-xp) [Restatement]
+- #925 · 0.240 · [In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight](#lambda-as-norm) [Restatement]
+- #926 · 0.240 · [RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts](#prime-side-cramer-cm) [Restatement]
+- #927 · 0.240 · [RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH](#reciprocal-xi-pf-ensemble) [Restatement]
+- #928 · 0.240 · [Riemann-Roch sorts the two conditions](#riemann-roch-sorting) [Restatement]
+- #929 · 0.240 · [Rodgers-Tao renormalization needs the zero count (Turing)](#rt-renormalization-count-drift) [Restatement]
+- #930 · 0.240 · [Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson](#signature-not-det-three-ways) [Restatement]
+- #931 · 0.240 · [Which sign statements for zeta are non-circular](#signed-energy-noncircular-sign) [Restatement]
+- #932 · 0.240 · [The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module](#virasoro-halving-is-central-charge-change) [Restatement]
+- #933 · 0.240 · [⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite](#weil-braket-pairing) [Restatement]
+- #934 · 0.240 · [Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)](#zeta-zero-fv-quadratic) [Restatement]
+- #935 · 0.240 · [Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only](#corrections) [Restatement]
+- #936 · 0.240 · [Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio](#honest-l-as-partition-ratio) [Restatement]
+- #937 · 0.240 · [Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity](#kronecker-hurwitz-eichler-selberg) [Restatement]
+- #938 · 0.240 · [W = covariance of φ̂_i under Σδ_γ iff zeros real](#weil-form-as-fisher-metric-circular) [Restatement]
+- #939 · 0.240 · [Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful](#dh-no-brandt-control) [Restatement]
+- #940 · 0.240 · [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) [Restatement]
+- #941 · 0.240 · [Sundman-regularized Rodgers-Tao energy](#sundman-regularized-rt-energy) [Restatement]
+- #942 · 0.240 · [The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on](#negative-cone-topology) [Restatement]
+- #1004 · 0.200 · [Convolution square root](#convolution-square-root) [Open]
+- #1005 · 0.200 · [Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk](#anticipation-law-fluctuation) [Conjecture]
+- #1006 · 0.200 · [Weighted signed energy trace from the heat-flowed function](#signed-local-energy-trace) [Open]
+- #1007 · 0.200 · [A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known](#slot2-thermodynamic-target) [Open]
+- #1008 · 0.200 · [Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture)](#krein-laguerre-count) [Conjecture]
+- #1009 · 0.200 · [Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling](#noncircular-noghost-conjecture) [Conjecture]
+- #1010 · 0.200 · [Weil functional as a special-cycle self-intersection (program)](#weil-as-special-cycle-self-intersection) [Conjecture]
+- #1011 · 0.200 · [TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH](#taa-thesis) [Conjecture]
+- #1012 · 0.200 · [No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8](#entropy-bound-insufficient) [Conjecture]
+- #1013 · 0.200 · [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) [Conjecture]
+- #1014 · 0.200 · [zeta on the wall of deformation families](#zeta-on-the-wall) [Conjecture]
+- #1015 · 0.200 · [“RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor](#never-focuses-conjecture-downgraded) [Conjecture]
 
-### True for ζ but ghost-blind or untested against the fakes (540)
+### True for ζ but ghost-blind or untested against the fakes (557)
 
 - #23 · 0.619 · [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) [Numerical]
 - #63 · 0.579 · [Deninger’s foliated program](#deninger) [Cited]
@@ -1403,358 +1436,375 @@ Sensitivity asks whether a statement holds for ζ (is necessary for, or implied 
 - #491 · 0.347 · [Base-regularity test (B) and the B* no-go: B* (Euler product + counting error O(x^θ), θ < ½ ⇒ RH) appears false — a deterministic discretization of a continuous Beurling system keeps an exact zero at 0.75 ± 10i while the measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ (Numerical refutation; asymptotic θ < ½ not proved); integer-counting error over 9 systems: ℤ bounded (≤ 1), Davenport–Heilbronn bounded, Epstein and ζ_Q(i) θ̂ ≈ 0.32, random discretizations at order √x](#beurling-counting-test-bstar) [Numerical]
 - #492 · 0.347 · [Signed Maslov path on the Weil Gram matrix: not positivity-preserving; tropical end passes DH](#maslov-path-weil-matrix) [Numerical]
 - #493 · 0.347 · [The OS transfer operator on the positive reflected part is not a positive contraction for ζ, 11a or Davenport–Heilbronn alike; matrix-pencil detection of off-line zeros is unreliable](#os-transfer-no-signal) [Numerical]
-- #494 · 0.325 · [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) [Theorem]
-- #495 · 0.325 · [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) [Theorem]
-- #496 · 0.325 · [Toeplitz / Verblunsky coefficients](#toeplitz-verblunsky) [Theorem]
-- #497 · 0.325 · [Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity](#zeros-as-frames-trichotomy) [Theorem]
-- #498 · 0.325 · [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) [Theorem]
-- #499 · 0.325 · [Sundman clock for the F/V collision](#fv-sundman-oscillator) [Theorem]
-- #500 · 0.325 · [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) [Theorem]
-- #501 · 0.325 · [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) [Cited]
-- #502 · 0.325 · [Equation of state of the window Weil operator](#window-equation-of-state) [Theorem]
-- #503 · 0.325 · [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) [Theorem]
-- #504 · 0.325 · [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) [Theorem]
-- #505 · 0.325 · [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame) [Theorem]
-- #506 · 0.325 · [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) [Theorem]
-- #507 · 0.325 · [Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6](#conductor-uniform-shift) [Theorem]
-- #508 · 0.325 · [Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations](#definite-vs-indefinite-strong-stability) [Theorem]
-- #509 · 0.325 · [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) [Theorem]
-- #510 · 0.325 · [F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4](#frobenius-verschiebung-rotation-split) [Theorem]
-- #511 · 0.325 · [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy) [Theorem]
-- #512 · 0.325 · [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) [Theorem]
-- #513 · 0.325 · [The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC](#jordan-shear-dtdc) [Theorem]
-- #514 · 0.325 · [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy) [Theorem]
-- #515 · 0.325 · [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) [Theorem]
-- #516 · 0.325 · [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite) [Theorem]
-- #517 · 0.325 · [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) [Theorem]
-- #518 · 0.325 · [Selberg resonances](#selberg-resonances) [Theorem]
-- #519 · 0.325 · [√2 family](#sqrt2-family) [Theorem]
-- #520 · 0.325 · [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) [Theorem]
-- #521 · 0.325 · [Levi-Civita regularization of zero collisions](#calogero-pair-levi-civita) [Theorem]
-- #522 · 0.325 · [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) [Theorem]
-- #523 · 0.325 · [Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability](#count-vs-stability-gyroscopic) [Theorem]
-- #524 · 0.325 · [Cusp ≠ archimedean place](#cusp-vs-infinity) [Theorem]
-- #525 · 0.325 · [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism) [Theorem]
-- #526 · 0.325 · [F₁ base](#f1-base) [Cited]
-- #527 · 0.325 · [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) [Theorem]
-- #528 · 0.325 · [Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π]](#frobenius-on-cm-lattice-11a) [Theorem]
-- #529 · 0.325 · [Norm as the product of two K-theory states](#fv-two-states-sector) [Theorem]
-- #530 · 0.325 · [Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line](#jacobi-theta-decomposition-hinge) [Theorem]
-- #531 · 0.325 · [Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound](#ks-stokes-hasse) [Theorem]
-- #532 · 0.325 · [Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant](#lagrange-clock-rates) [Theorem]
-- #533 · 0.325 · [Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang](#lambda-invariance-nogo) [Theorem]
-- #534 · 0.325 · [Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured](#lrl-rational-closure) [Theorem]
-- #535 · 0.325 · [No real-coefficient Weil cohomology for arithmetic curves](#no-real-weil-cohomology-arithmetic) [Theorem]
-- #536 · 0.325 · [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) [Theorem]
-- #537 · 0.325 · [Null-line quotient (Gupta-Bleuler form)](#null-line-quotient) [Theorem]
-- #538 · 0.325 · [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) [Theorem]
-- #539 · 0.325 · [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) [Theorem]
-- #540 · 0.325 · [Principalization](#principalization) [Theorem]
-- #541 · 0.325 · [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) [Theorem]
-- #542 · 0.325 · [Rodgers-Tao Hamiltonian as a Sundman clock](#rt-energy-sundman-clock) [Theorem]
-- #543 · 0.325 · [S-mirror ρ ↦ 1 − ρ̄](#s-mirror) [Theorem]
-- #544 · 0.325 · [The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions](#sitting-still) [Theorem]
-- #545 · 0.325 · [Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0](#vstar-v-edge-positivity) [Theorem]
-- #546 · 0.325 · [Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry](#xp2dof-maupertuis-finsler) [Theorem]
-- #547 · 0.325 · [Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd)](#arch-symbol-bose-kernel) [Theorem]
-- #548 · 0.325 · [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) [Theorem]
-- #549 · 0.325 · [Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄)](#chebyshev-bias-boson-fermion) [Cited]
-- #550 · 0.325 · [Closed geodesics on the modular surface](#closed-geodesics) [Theorem]
-- #551 · 0.325 · [Density / volume reading](#density-volume) [Theorem]
-- #552 · 0.325 · [A dent moves a zero charge sideways; geometric deformations only rotate](#dent-is-charge-move) [Theorem]
-- #553 · 0.325 · [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4) [Theorem]
-- #554 · 0.325 · [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement) [Cited]
-- #555 · 0.325 · [The F/V sweep is a de Bruijn-Newman flow](#fv-is-dbn-flow) [Theorem]
-- #556 · 0.325 · [log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ](#graded-gas-is-free-energy) [Theorem]
-- #557 · 0.325 · [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) [Theorem]
-- #558 · 0.325 · [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite) [Theorem]
-- #559 · 0.325 · [Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution](#hopf-lax-maupertuis-duality) [Theorem]
-- #560 · 0.325 · [Positive conserved tensor from an imaginary shift (local smoothing paper)](#imaginary-shift-positive-tensor) [Cited]
-- #561 · 0.325 · [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12) [Theorem]
-- #562 · 0.325 · [Two Kepler degenerations on the F/V gap axis](#kepler-two-degenerations) [Theorem]
-- #563 · 0.325 · [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign) [Theorem]
-- #564 · 0.325 · [L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force](#l4l5-isospectral-symmetric-damping) [Theorem]
-- #565 · 0.325 · [Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities](#local-logderiv-indefinite) [Theorem]
-- #566 · 0.325 · [Modularity as the observability link](#modularity-observability-link) [Theorem]
-- #567 · 0.325 · [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) [Theorem]
-- #568 · 0.325 · [Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T](#plus-space-ms-is-sl2-doubled) [Theorem]
-- #569 · 0.325 · [The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional](#pole-kernel-schmidt) [Theorem]
-- #570 · 0.325 · [L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²](#rational-frequency-ratio-quadratic-mu) [Theorem]
-- #571 · 0.325 · [Spec ℤ is terminal](#spec-z-terminal) [Theorem]
-- #572 · 0.325 · [Spinor/Clifford route](#spinor-route) [Theorem]
-- #573 · 0.325 · [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock) [Theorem]
-- #574 · 0.325 · [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall) [Theorem]
-- #575 · 0.325 · [Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge](#three-indices-not-conflated) [Theorem]
-- #576 · 0.325 · [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once) [Theorem]
-- #577 · 0.325 · [Weil Rosetta stone](#weil-rosetta) [Cited]
-- #578 · 0.325 · [Regularized xp on an energy level is a particle hitting an exponential wall](#xp-liouville-wall) [Theorem]
-- #579 · 0.325 · [The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form](#zeta-k-block-sum-conductor-shift) [Theorem]
-- #580 · 0.325 · [Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}](#abs-a-is-infinite-place-of-trace) [Theorem]
-- #581 · 0.325 · [Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier)](#arakelov-green-capacity) [Cited]
-- #582 · 0.325 · [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) [Theorem]
-- #583 · 0.325 · [CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean)](#cm-height-disc-det-split) [Theorem]
-- #584 · 0.325 · [Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields](#cmr-explicit-cft) [Cited]
-- #585 · 0.325 · [First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N](#coisotropic-reduction-pn) [Theorem]
-- #586 · 0.325 · [Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4](#correction-semilocal-pattern-known) [Cited]
-- #587 · 0.325 · [Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points)](#cr3bp-morse-count) [Theorem]
-- #588 · 0.325 · [The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist](#cross-term-correction) [Theorem]
-- #589 · 0.325 · [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) [Theorem]
-- #590 · 0.325 · [Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis](#escape-direction-pair) [Theorem]
-- #591 · 0.325 · [Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0](#euler-impedance-positive-real) [Theorem]
-- #592 · 0.325 · [Ω-parity split of the Euler product](#euler-product-omega-parity-split) [Theorem]
-- #593 · 0.325 · [Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids)](#finite-window-nonuniqueness) [Theorem]
-- #594 · 0.325 · [Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks](#genus-two-part-is-phase) [Theorem]
-- #595 · 0.325 · [BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it](#hagedorn-bc) [Theorem]
-- #596 · 0.325 · [T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures](#hecke-congruence-module-691) [Theorem]
-- #597 · 0.325 · [Indefinite norm as minimal mass over stability conditions](#hecke-mass-stability) [Theorem]
-- #598 · 0.325 · [Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5](#hill-topology-disc) [Theorem]
-- #599 · 0.325 · [A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s](#holomorphic-polarization-theta) [Theorem]
-- #600 · 0.325 · [Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s)](#ihara-rh-is-local-ramanujan) [Theorem]
-- #601 · 0.325 · [L4/L5 are the j = 0 point of the cross-ratio for every mass ratio](#j0-l4) [Theorem]
-- #602 · 0.325 · [Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷](#kac-formula-verified) [Theorem]
-- #603 · 0.325 · [Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip](#kk-ghost-blind-only-right-of-zeros) [Theorem]
-- #604 · 0.325 · [Kepler eccentricity as a degree of polarization (KS dictionary)](#ks-polarization-dictionary) [Theorem]
-- #605 · 0.325 · [What Lambda <= 0.19 would actually need](#lambda-019-gate) [Cited]
-- #606 · 0.325 · [Real-rooted exponential sums are restricted Lee–Yang polynomials](#lee-yang-multivariate-restriction) [Theorem]
-- #607 · 0.325 · [Legendre criterion for Poincare time changes of xp](#legendre-poincare-criterion) [Theorem]
-- #608 · 0.325 · [Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do](#lemma21-slack-identity) [Theorem]
-- #609 · 0.325 · [Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise](#mellin-partition-function) [Theorem]
-- #610 · 0.325 · [X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus](#modular-tower-platonic) [Theorem]
-- #611 · 0.325 · [The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230)](#narrow-wide-sign-at-infinity) [Theorem]
-- #612 · 0.325 · [The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996)](#negdir-is-pole-plane-interlacing) [Theorem]
-- #613 · 0.325 · [A positive but non-coercive metric loses the zeros](#non-coercive-metric-loses-spectrum) [Theorem]
-- #614 · 0.325 · [Piston free energy of the window Weil operator](#piston-window-free-energy) [Theorem]
-- #615 · 0.325 · [A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1](#pnt-by-norm-blowup) [Theorem]
-- #616 · 0.325 · [Polymath15: the barrier is not the bottleneck for upper bounds on Lambda](#polymath15-barrier-not-bottleneck) [Cited]
-- #617 · 0.325 · [Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge](#rallis-point-edge-or-boundary) [Cited]
-- #618 · 0.325 · [Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle](#routh27-from-right-triangles) [Theorem]
-- #619 · 0.325 · [Square-root factorization with a one-sided Wick flip](#sqrt-factorization-one-sided-wick) [Theorem]
-- #620 · 0.325 · [Lagrangian of the regularized xp (massive square-root form)](#srl-lagrangian) [Theorem]
-- #621 · 0.325 · [Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit](#stark-unit-leading-coefficient) [Cited]
-- #622 · 0.325 · [The gap-squared clock is hyperbolic arc length](#sundman-clock-hyperbolic-length) [Theorem]
-- #623 · 0.325 · [Kepler in Sundman time is linear: r″ = 2E r + k](#sundman-linear-kepler) [Theorem]
-- #624 · 0.325 · [Distortionless telegrapher line as a conformally symplectic flow](#telegrapher-distortionless) [Theorem]
-- #625 · 0.325 · [L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line](#theta-fe-centre-on-line) [Theorem]
-- #626 · 0.325 · [Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform](#third-axis-is-half-plane) [Theorem]
-- #627 · 0.325 · [The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it)](#unitary-axis-s-eq-s-plus-k4) [Theorem]
-- #628 · 0.325 · [|disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter](#vandermonde-log-gas) [Theorem]
-- #629 · 0.325 · [Window Weil form: simple even ground state, certified](#window-ground-state-simple-even) [Theorem]
-- #630 · 0.325 · [Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1](#witten-index-inverse-zeta) [Theorem]
-- #631 · 0.325 · [Distortionless criterion for the xp family: constant divergence](#xp-distortionless-constant-divergence) [Theorem]
-- #632 · 0.325 · [Zeta zero collisions are double-root type only](#zeta-collisions-type-one) [Theorem]
-- #633 · 0.325 · [Cohesion (arena)](#cohesion) [Theorem]
-- #634 · 0.325 · [U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84](#discriminant-family-invariance) [Theorem]
-- #635 · 0.325 · [EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly](#ez-operators-verified) [Theorem]
-- #636 · 0.325 · [T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them](#frobenius-up-verschiebung-down) [Theorem]
-- #637 · 0.325 · [Finite-window prime comb: time distribution = torus law (checked to 2e−3)](#kronecker-weyl-comb-law) [Theorem]
-- #638 · 0.325 · [In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward](#nested-window-family-morse-monotone) [Theorem]
-- #639 · 0.325 · [A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III](#nilpotent-must-be-orthogonal) [Theorem]
-- #640 · 0.325 · [A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost](#no-isotropic-no-nilpotent) [Theorem]
-- #641 · 0.325 · [Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n](#parabola-cone-points) [Theorem]
-- #642 · 0.325 · [Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here](#rung1-covered-by-certified-preprint) [Cited]
-- #643 · 0.325 · [Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign)](#trace-norm-form-signature) [Theorem]
-- #644 · 0.325 · [U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical)](#u-isometry) [Theorem]
-- #645 · 0.325 · [V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884](#vnat-flm-count) [Theorem]
-- #646 · 0.325 · [X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24](#x0p-components-meet) [Cited]
-- #647 · 0.325 · [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square) [Theorem]
-- #648 · 0.325 · [Local-to-global failure](#local-global) [Theorem]
-- #649 · 0.325 · [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) [Theorem]
-- #650 · 0.325 · [Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R](#routh-not-kac-wall) [Theorem]
-- #651 · 0.325 · [Conformally symplectic flows have exact forms and no Hamiltonian](#conformal-symplectic-no-hamiltonian) [Theorem]
-- #652 · 0.325 · [Multi-channel first-order factors are bounded by the SOS fit](#gram-factor-channel-bound) [Theorem]
-- #653 · 0.325 · [Local stability constants do not glue](#local-hardy-constants-no-glue) [Theorem]
-- #654 · 0.325 · [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) [Theorem]
-- #655 · 0.325 · [Modular-surface geodesic lengths are logs of quadratic units, not log p](#modular-lengths-quadratic-units) [Theorem]
-- #656 · 0.325 · [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) [Theorem]
-- #657 · 0.325 · [Prime term = alpha-derivative of the conjugated Vladimirov symbol](#vladimirov-derivative-is-prime-term) [Theorem]
-- #658 · 0.325 · [The window Weil operator is not extensive](#window-nonextensivity) [Theorem]
-- #659 · 0.325 · [Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H](#flag-curvature-gauge-dependent) [Theorem]
-- #660 · 0.325 · [Archimedean Newton polygon of P(T) misreports true curves](#fq-newton-polygon-false-positives) [Theorem]
-- #661 · 0.325 · [A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction](#gram-ab-rank-one) [Theorem]
-- #662 · 0.325 · [Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros](#jacobi-factor-flat-every-place) [Theorem]
-- #663 · 0.325 · [A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity](#ramond-g0-square) [Theorem]
-- #664 · 0.325 · [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) [Theorem]
-- #665 · 0.325 · [No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants)](#sundman-livsic-obstruction) [Theorem]
-- #666 · 0.325 · [Two-component Lee–Yang can fail](#two-component-lee-yang-can-fail) [Theorem]
-- #667 · 0.325 · [For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy](#gl1-monodromy-zero) [Theorem]
-- #668 · 0.325 · [Serre intersection positivity (2026 preprint) is local, not a global Hodge index](#serre-positivity-local-not-hodge) [Cited]
-- #669 · 0.325 · [λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular)](#box-to-limit-trivial-no-uniform-gap) [Theorem]
-- #670 · 0.325 · [Sign of a prime step is the sign of the prime-gap excess](#prime-step-sign-gap-excess) [Theorem]
-- #671 · 0.325 · [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) [Theorem]
-- #685 · 0.307 · [Metaplectic / Kubota cocycle](#metaplectic) [Theorem]
-- #686 · 0.307 · [Half Tate twist ℚ(½)](#half-tate-twist) [Theorem]
-- #687 · 0.307 · [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) [Theorem]
-- #688 · 0.307 · [Bost–Connes KMS states](#kms-bost-connes) [Cited]
-- #689 · 0.307 · [Archimedean place and Γ_ℝ factor](#archimedean-place) [Theorem]
-- #690 · 0.307 · [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) [Theorem]
-- #691 · 0.307 · [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) [Cited]
-- #692 · 0.307 · [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles) [Cited]
-- #693 · 0.307 · [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) [Theorem]
-- #694 · 0.307 · [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) [Theorem]
-- #695 · 0.307 · [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) [Theorem]
-- #696 · 0.307 · [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) [Theorem]
-- #697 · 0.307 · [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) [Cited]
-- #698 · 0.307 · [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) [Theorem]
-- #699 · 0.307 · [Cup product / Poincaré duality pairing](#cup-product) [Theorem]
-- #700 · 0.307 · [Cusp forms & Petersson positivity](#cusp-forms-petersson) [Theorem]
-- #701 · 0.307 · [Hecke operators](#hecke) [Theorem]
-- #702 · 0.307 · [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) [Theorem]
-- #703 · 0.307 · [Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic](#real-forms-compact-vs-boost) [Theorem]
-- #704 · 0.307 · [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) [Cited]
-- #705 · 0.307 · [Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)](#euler-char-chi) [Theorem]
-- #706 · 0.307 · [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) [Cited]
-- #707 · 0.307 · [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) [Cited]
-- #708 · 0.307 · [The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once](#n-factorial-bridge-all-places) [Theorem]
-- #709 · 0.307 · [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) [Theorem]
-- #710 · 0.307 · [Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal)](#standing-frame-so22-ads3) [Theorem]
-- #711 · 0.307 · [Tate count / Picard number (ghost-blind)](#tate-count) [Theorem]
-- #712 · 0.307 · [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) [Theorem]
-- #713 · 0.307 · [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) [Theorem]
-- #714 · 0.307 · [Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial](#consani-archimedean-cohomology) [Cited]
-- #715 · 0.307 · [λ₂ is monotone under nested windows (Cauchy interlacing)](#lambda2-monotone-nested-windows) [Theorem]
-- #716 · 0.307 · [The Hodge star squares to the fermion parity in even dimension](#hodge-star-square-fermion-parity) [Theorem]
-- #717 · 0.307 · [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) [Theorem]
-- #718 · 0.307 · [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) [Theorem]
-- #719 · 0.307 · [Mechanical stability of the window is not positivity](#window-mechanical-stability) [Theorem]
-- #720 · 0.307 · [Max-plus Weil functional is dominated by the diagonal, hence ghost-blind](#maxplus-weil-diagonal-dominance) [Theorem]
-- #721 · 0.307 · [Non-normal residue ||P - P*|| is a gauge quantity and a collision detector](#riesz-nonnormal-residue-gauge) [Theorem]
-- #722 · 0.307 · [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) [Numerical]
-- #723 · 0.307 · [Maass–Selberg relations](#maass-selberg) [Numerical]
-- #724 · 0.307 · [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) [Numerical]
-- #725 · 0.307 · [Archimedean thresholds a*](#arch-threshold) [Numerical]
-- #726 · 0.307 · [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) [Numerical]
-- #727 · 0.307 · [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) [Numerical]
-- #728 · 0.307 · [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) [Numerical]
-- #729 · 0.307 · [Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4](#birth-from-near-null-floor) [Numerical]
-- #730 · 0.307 · [Gap widths approaching the wall](#gap-width-wall-exponent) [Numerical]
-- #731 · 0.307 · [The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros](#isotropic-line-kinematic) [Numerical]
-- #732 · 0.307 · [Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind](#gaussian-filter-ghost-blind) [Numerical]
-- #733 · 0.307 · [Edge-prime repair of the pole plane: refuted](#pole-plane-repair-negative) [Numerical]
-- #734 · 0.307 · [Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity](#arithmetic-topology-linking-matrix) [Numerical]
-- #735 · 0.307 · [Iterated log-concavity is ghost- and DH-blind](#coefficient-ilc-ghost-blind) [Numerical]
-- #736 · 0.307 · [The Fisher curvature operator on bivectors is ghost-blind](#fisher-curvature-operator-ghost-blind) [Numerical]
-- #737 · 0.307 · [Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes](#dbn-monotone-functionals) [Numerical]
-- #738 · 0.307 · [The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄](#raychaudhuri-curvature-no-discrimination) [Numerical]
-- #739 · 0.307 · [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) [Theorem]
-- #740 · 0.307 · [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) [Theorem]
-- #741 · 0.307 · [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) [Theorem]
-- #745 · 0.292 · [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) [Open]
-- #746 · 0.292 · [Where the Krein grading lives: the supporting functional of the Weil cone at ζ](#grading-supporting-functional) [Conjecture]
-- #747 · 0.292 · [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) [Open]
-- #748 · 0.292 · [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn) [Open]
-- #749 · 0.292 · [Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages](#bypass-u-direction-gap) [Open]
-- #750 · 0.292 · [Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow](#hopf-fibration-spec-z) [Conjecture]
-- #751 · 0.292 · [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) [Conjecture]
-- #752 · 0.292 · [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) [Conjecture]
-- #753 · 0.292 · [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) [Open]
-- #770 · 0.267 · [Half-density normalization |x|^{½}](#half-density) [Theorem]
-- #771 · 0.267 · [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) [Theorem]
-- #772 · 0.267 · [The prime 2 as the wild place](#prime-two-wild) [Theorem]
-- #773 · 0.267 · [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) [Theorem]
-- #774 · 0.267 · [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep) [Theorem]
-- #775 · 0.267 · [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) [Theorem]
-- #776 · 0.267 · [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) [Theorem]
-- #777 · 0.267 · [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) [Theorem]
-- #778 · 0.267 · [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) [Cited]
-- #779 · 0.267 · [Scattering unitarity |φ| = 1](#scattering-phi) [Theorem]
-- #780 · 0.267 · [Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics)](#fundamental-domain-three-phases) [Theorem]
-- #781 · 0.267 · [Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0](#kepler-so4-contraction) [Theorem]
-- #782 · 0.267 · [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) [Theorem]
-- #783 · 0.267 · [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) [Theorem]
-- #784 · 0.267 · [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) [Theorem]
-- #785 · 0.267 · [Yoshida window positivity](#yoshida) [Cited]
-- #786 · 0.267 · [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero) [Theorem]
-- #787 · 0.267 · [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) [Theorem]
-- #788 · 0.267 · [Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)](#push-shear-balance) [Theorem]
-- #789 · 0.267 · [Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts](#quartet-capacity-sp4) [Theorem]
-- #790 · 0.267 · [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only) [Theorem]
-- #791 · 0.267 · [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) [Cited]
-- #792 · 0.267 · [CM case: the Hasse triangle is Fermat's two-squares triangle](#cm-gaussian-hasse-triangle) [Theorem]
-- #793 · 0.267 · [Split/inert duality for a CM curve (32a1)](#cm-split-inert-duality) [Theorem]
-- #794 · 0.267 · [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) [Theorem]
-- #795 · 0.267 · [Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p](#dbn-product-cross-term) [Theorem]
-- #796 · 0.267 · [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) [Theorem]
-- #797 · 0.267 · [Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian](#johnson-lippmann-supercharge) [Cited]
-- #798 · 0.267 · [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids) [Theorem]
-- #799 · 0.267 · [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) [Theorem]
-- #800 · 0.267 · [Weight ladder (modular weights)](#weight-ladder) [Theorem]
-- #801 · 0.267 · [On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH](#chirality-star-gamma5-hodge-index) [Theorem]
-- #802 · 0.267 · [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) [Theorem]
-- #803 · 0.267 · [Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares)](#dbn-loggas-entropy-production) [Theorem]
-- #804 · 0.267 · [η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential](#eta-chain) [Theorem]
-- #805 · 0.267 · [Euler factors as passive but lossy sections](#euler-factor-passive-lossy) [Theorem]
-- #806 · 0.267 · [(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²](#exactness-monge-ampere) [Theorem]
-- #807 · 0.267 · [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature) [Theorem]
-- #808 · 0.267 · [The critical-line wave: Hardy Z and the Riemann–Siegel phase](#hardy-z-critical-line-wave) [Theorem]
-- #809 · 0.267 · [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn) [Theorem]
-- #810 · 0.267 · [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) [Theorem]
-- #811 · 0.267 · [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack) [Theorem]
-- #812 · 0.267 · [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only) [Theorem]
-- #813 · 0.267 · [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh) [Theorem]
-- #814 · 0.267 · [Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift](#prime-torus-nonresonance) [Theorem]
-- #815 · 0.267 · [w₂ / Čech class (TAA Lemma 138)](#w2-cech) [Theorem]
-- #816 · 0.267 · [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) [Theorem]
-- #817 · 0.267 · [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) [Theorem]
-- #818 · 0.267 · [The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄)](#chi-minus-one-half-pole) [Theorem]
-- #819 · 0.267 · [Number-theoretical ferromagnetic spin chain](#knauf-ferromagnetic-spin-chain) [Theorem]
-- #820 · 0.267 · [Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH](#newman-class-p-fails-for-phi) [Cited]
-- #821 · 0.267 · [One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction](#prime-clocks) [Theorem]
-- #822 · 0.267 · [Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV](#primon-box-ts-pv) [Theorem]
-- #823 · 0.267 · [Sector map w = e^{iπs/2}](#sector-map-w) [Theorem]
-- #824 · 0.267 · [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) [Theorem]
-- #825 · 0.267 · [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) [Theorem]
-- #826 · 0.267 · [Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves](#conic-compactness) [Theorem]
-- #827 · 0.267 · [Finite Guinand–Weil dictionary for truncated Weil forms](#finite-guinand-weil-dictionary) [Theorem]
-- #828 · 0.267 · [The 45-degree flip is a real structure, not a star](#flip45-is-real-structure) [Theorem]
-- #829 · 0.267 · [The factorial of one half and the Fourier quarter-turn](#fourier-quarter-turn) [Theorem]
-- #830 · 0.267 · [Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)](#fourth-roots-supersingular) [Theorem]
-- #831 · 0.267 · [Frame and clock invariance of Krein data at L4](#frame-clock-invariance) [Theorem]
-- #832 · 0.267 · [Frobenius angles are already quantized](#frobenius-angles-quantized) [Theorem]
-- #833 · 0.267 · [Gross-Zagier as rank-one positivity](#gross-zagier-rank-one-positivity) [Cited]
-- #834 · 0.267 · [Window Weil form as jump kinetic energy minus a mass plus a pole](#levy-khintchine-mass-gap) [Theorem]
-- #835 · 0.267 · [Möbius function as fermion parity of the primon gas](#mobius-is-witten-parity) [Theorem]
-- #836 · 0.267 · [Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)](#orbifold-vs-descartes-deficits) [Theorem]
-- #837 · 0.267 · [Rankin-Selberg is blind to sign flips](#rs-blind-to-sign-flips) [Theorem]
-- #838 · 0.267 · [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) [Theorem]
-- #839 · 0.267 · [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) [Theorem]
-- #840 · 0.267 · [so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²](#so4-chirality-split) [Theorem]
-- #841 · 0.267 · [Spin structure & theta characteristic](#spin-theta) [Theorem]
-- #842 · 0.267 · [Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products](#three-lenses-one-flow) [Theorem]
-- #843 · 0.267 · [Counts vs quadratic positivity](#count-positivity) [Theorem]
-- #844 · 0.267 · [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) [Theorem]
-- #845 · 0.267 · [Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)](#hecke-toy-contraction) [Theorem]
-- #846 · 0.267 · [Jacobi curvature sees only the trace of the log-Hessian of kinetic energy](#jacobi-curvature-trace-only) [Theorem]
-- #847 · 0.267 · [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind) [Theorem]
-- #848 · 0.267 · [The monotone log-gas energy cannot certify real zeros](#rt-energy-monotone-but-blind) [Theorem]
-- #849 · 0.267 · [The de Bruijn–Newman kernel is not PF5](#dbn-kernel-not-pf5) [Theorem]
-- #850 · 0.267 · [Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive](#euler-product-saddle-additivity) [Theorem]
-- #851 · 0.267 · [Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count](#prime-torus-euler-characteristic-zero) [Theorem]
-- #852 · 0.267 · [Real-axis log-convexity of L(sigma) measures coefficient signs, not RH](#real-axis-log-convexity-not-rh) [Theorem]
-- #853 · 0.267 · [Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)](#zero-gas-forced-functionals) [Theorem]
-- #854 · 0.267 · [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) [Theorem]
-- #997 · 0.187 · [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) [Open]
-- #1004 · 0.165 · [Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object](#mechanism-global-object) [Open]
-- #1005 · 0.165 · [Zero-free window certificates as heat-flow barriers](#barrier-certificate-bypass) [Open]
-- #1006 · 0.165 · [Order as a stability condition (target shape)](#ps-tilt-central-charge-target) [Open]
-- #1007 · 0.165 · [Candidate formulations of Castelnuovo-Severi over the integers](#cs-for-spec-z-formulations) [Open]
-- #1008 · 0.165 · [Ring-preserving supercharge and RH as purity](#rings-purity-restates-positivity) [Conjecture]
-- #1009 · 0.165 · [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open) [Open]
-- #1010 · 0.165 · [Standard conjectures (Hodge type)](#standard-conj) [Open]
-- #1011 · 0.165 · [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) [Open]
-- #1012 · 0.165 · [Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1](#weil-as-height-restriction) [Open]
-- #1013 · 0.165 · [One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya](#both-at-once) [Open]
-- #1014 · 0.165 · [No ζ analogue of c=26 (no unitary c fits the Weil form)](#c26-gap) [Open]
-- #1015 · 0.165 · [No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1)](#ddf-gap) [Open]
-- #1016 · 0.165 · [F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge)](#fv-level-change-gap) [Open]
-- #1017 · 0.165 · [Integrality instead of positivity (45-degree direction)](#integrality-support-bypass) [Open]
-- #1018 · 0.165 · [Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality](#needed-semilocal-sonin-inequality) [Open]
-- #1019 · 0.165 · [Regularized xp foliation as a route](#regularized-xp-foliation-route) [Open]
-- #1020 · 0.165 · [A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction](#siegel-zero-as-small-boundary-mass) [Conjecture]
-- #1021 · 0.165 · [Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors](#two-steps-to-baseline) [Open]
-- #1022 · 0.165 · [Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula](#xside-vs-rside-obstruction) [Open]
-- #1023 · 0.165 · [Chaotic 2-DOF regularized xp as a route](#chaotic-2dof-xp-route) [Open]
-- #1024 · 0.165 · [Route: Hermite barrier certificate to lower Lambda](#hermite-barrier-route) [Open]
-- #1025 · 0.165 · [Route: Jacobi/Finsler geometry of xp as a positivity source](#jacobi-finsler-positivity-route) [Open]
+- #494 · 0.347 · [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) [Theorem]
+- #495 · 0.347 · [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) [Theorem]
+- #496 · 0.347 · [A translation-invariant complex structure does not preserve the window kernel](#nonstationary-j-obstruction) [Theorem]
+- #497 · 0.325 · [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) [Theorem]
+- #498 · 0.325 · [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) [Theorem]
+- #499 · 0.325 · [Toeplitz / Verblunsky coefficients](#toeplitz-verblunsky) [Theorem]
+- #500 · 0.325 · [Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity](#zeros-as-frames-trichotomy) [Theorem]
+- #501 · 0.325 · [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) [Theorem]
+- #502 · 0.325 · [Sundman clock for the F/V collision](#fv-sundman-oscillator) [Theorem]
+- #503 · 0.325 · [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) [Theorem]
+- #504 · 0.325 · [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) [Cited]
+- #505 · 0.325 · [Equation of state of the window Weil operator](#window-equation-of-state) [Theorem]
+- #506 · 0.325 · [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) [Theorem]
+- #507 · 0.325 · [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) [Theorem]
+- #508 · 0.325 · [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame) [Theorem]
+- #509 · 0.325 · [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) [Theorem]
+- #510 · 0.325 · [Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6](#conductor-uniform-shift) [Theorem]
+- #511 · 0.325 · [Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations](#definite-vs-indefinite-strong-stability) [Theorem]
+- #512 · 0.325 · [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) [Theorem]
+- #513 · 0.325 · [F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4](#frobenius-verschiebung-rotation-split) [Theorem]
+- #514 · 0.325 · [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy) [Theorem]
+- #515 · 0.325 · [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) [Theorem]
+- #516 · 0.325 · [The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC](#jordan-shear-dtdc) [Theorem]
+- #517 · 0.325 · [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy) [Theorem]
+- #518 · 0.325 · [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) [Theorem]
+- #519 · 0.325 · [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite) [Theorem]
+- #520 · 0.325 · [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) [Theorem]
+- #521 · 0.325 · [Selberg resonances](#selberg-resonances) [Theorem]
+- #522 · 0.325 · [√2 family](#sqrt2-family) [Theorem]
+- #523 · 0.325 · [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) [Theorem]
+- #524 · 0.325 · [Levi-Civita regularization of zero collisions](#calogero-pair-levi-civita) [Theorem]
+- #525 · 0.325 · [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) [Theorem]
+- #526 · 0.325 · [Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability](#count-vs-stability-gyroscopic) [Theorem]
+- #527 · 0.325 · [Cusp ≠ archimedean place](#cusp-vs-infinity) [Theorem]
+- #528 · 0.325 · [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism) [Theorem]
+- #529 · 0.325 · [F₁ base](#f1-base) [Cited]
+- #530 · 0.325 · [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) [Theorem]
+- #531 · 0.325 · [Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π]](#frobenius-on-cm-lattice-11a) [Theorem]
+- #532 · 0.325 · [Norm as the product of two K-theory states](#fv-two-states-sector) [Theorem]
+- #533 · 0.325 · [Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line](#jacobi-theta-decomposition-hinge) [Theorem]
+- #534 · 0.325 · [Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound](#ks-stokes-hasse) [Theorem]
+- #535 · 0.325 · [Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant](#lagrange-clock-rates) [Theorem]
+- #536 · 0.325 · [Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang](#lambda-invariance-nogo) [Theorem]
+- #537 · 0.325 · [Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured](#lrl-rational-closure) [Theorem]
+- #538 · 0.325 · [No real-coefficient Weil cohomology for arithmetic curves](#no-real-weil-cohomology-arithmetic) [Theorem]
+- #539 · 0.325 · [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) [Theorem]
+- #540 · 0.325 · [Null-line quotient (Gupta-Bleuler form)](#null-line-quotient) [Theorem]
+- #541 · 0.325 · [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) [Theorem]
+- #542 · 0.325 · [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) [Theorem]
+- #543 · 0.325 · [Principalization](#principalization) [Theorem]
+- #544 · 0.325 · [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) [Theorem]
+- #545 · 0.325 · [Rodgers-Tao Hamiltonian as a Sundman clock](#rt-energy-sundman-clock) [Theorem]
+- #546 · 0.325 · [S-mirror ρ ↦ 1 − ρ̄](#s-mirror) [Theorem]
+- #547 · 0.325 · [The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions](#sitting-still) [Theorem]
+- #548 · 0.325 · [Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0](#vstar-v-edge-positivity) [Theorem]
+- #549 · 0.325 · [Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry](#xp2dof-maupertuis-finsler) [Theorem]
+- #550 · 0.325 · [Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd)](#arch-symbol-bose-kernel) [Theorem]
+- #551 · 0.325 · [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) [Theorem]
+- #552 · 0.325 · [Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄)](#chebyshev-bias-boson-fermion) [Cited]
+- #553 · 0.325 · [Closed geodesics on the modular surface](#closed-geodesics) [Theorem]
+- #554 · 0.325 · [Density / volume reading](#density-volume) [Theorem]
+- #555 · 0.325 · [A dent moves a zero charge sideways; geometric deformations only rotate](#dent-is-charge-move) [Theorem]
+- #556 · 0.325 · [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4) [Theorem]
+- #557 · 0.325 · [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement) [Cited]
+- #558 · 0.325 · [The F/V sweep is a de Bruijn-Newman flow](#fv-is-dbn-flow) [Theorem]
+- #559 · 0.325 · [log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ](#graded-gas-is-free-energy) [Theorem]
+- #560 · 0.325 · [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) [Theorem]
+- #561 · 0.325 · [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite) [Theorem]
+- #562 · 0.325 · [Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution](#hopf-lax-maupertuis-duality) [Theorem]
+- #563 · 0.325 · [Positive conserved tensor from an imaginary shift (local smoothing paper)](#imaginary-shift-positive-tensor) [Cited]
+- #564 · 0.325 · [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12) [Theorem]
+- #565 · 0.325 · [Two Kepler degenerations on the F/V gap axis](#kepler-two-degenerations) [Theorem]
+- #566 · 0.325 · [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign) [Theorem]
+- #567 · 0.325 · [L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force](#l4l5-isospectral-symmetric-damping) [Theorem]
+- #568 · 0.325 · [Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities](#local-logderiv-indefinite) [Theorem]
+- #569 · 0.325 · [Modularity as the observability link](#modularity-observability-link) [Theorem]
+- #570 · 0.325 · [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) [Theorem]
+- #571 · 0.325 · [Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T](#plus-space-ms-is-sl2-doubled) [Theorem]
+- #572 · 0.325 · [The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional](#pole-kernel-schmidt) [Theorem]
+- #573 · 0.325 · [L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²](#rational-frequency-ratio-quadratic-mu) [Theorem]
+- #574 · 0.325 · [Spec ℤ is terminal](#spec-z-terminal) [Theorem]
+- #575 · 0.325 · [Spinor/Clifford route](#spinor-route) [Theorem]
+- #576 · 0.325 · [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock) [Theorem]
+- #577 · 0.325 · [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall) [Theorem]
+- #578 · 0.325 · [Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge](#three-indices-not-conflated) [Theorem]
+- #579 · 0.325 · [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once) [Theorem]
+- #580 · 0.325 · [Weil Rosetta stone](#weil-rosetta) [Cited]
+- #581 · 0.325 · [Regularized xp on an energy level is a particle hitting an exponential wall](#xp-liouville-wall) [Theorem]
+- #582 · 0.325 · [The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form](#zeta-k-block-sum-conductor-shift) [Theorem]
+- #583 · 0.325 · [Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}](#abs-a-is-infinite-place-of-trace) [Theorem]
+- #584 · 0.325 · [Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier)](#arakelov-green-capacity) [Cited]
+- #585 · 0.325 · [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) [Theorem]
+- #586 · 0.325 · [CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean)](#cm-height-disc-det-split) [Theorem]
+- #587 · 0.325 · [Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields](#cmr-explicit-cft) [Cited]
+- #588 · 0.325 · [First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N](#coisotropic-reduction-pn) [Theorem]
+- #589 · 0.325 · [Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4](#correction-semilocal-pattern-known) [Cited]
+- #590 · 0.325 · [Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points)](#cr3bp-morse-count) [Theorem]
+- #591 · 0.325 · [The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist](#cross-term-correction) [Theorem]
+- #592 · 0.325 · [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) [Theorem]
+- #593 · 0.325 · [Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis](#escape-direction-pair) [Theorem]
+- #594 · 0.325 · [Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0](#euler-impedance-positive-real) [Theorem]
+- #595 · 0.325 · [Ω-parity split of the Euler product](#euler-product-omega-parity-split) [Theorem]
+- #596 · 0.325 · [Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids)](#finite-window-nonuniqueness) [Theorem]
+- #597 · 0.325 · [Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks](#genus-two-part-is-phase) [Theorem]
+- #598 · 0.325 · [BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it](#hagedorn-bc) [Theorem]
+- #599 · 0.325 · [T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures](#hecke-congruence-module-691) [Theorem]
+- #600 · 0.325 · [Indefinite norm as minimal mass over stability conditions](#hecke-mass-stability) [Theorem]
+- #601 · 0.325 · [Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5](#hill-topology-disc) [Theorem]
+- #602 · 0.325 · [A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s](#holomorphic-polarization-theta) [Theorem]
+- #603 · 0.325 · [Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s)](#ihara-rh-is-local-ramanujan) [Theorem]
+- #604 · 0.325 · [L4/L5 are the j = 0 point of the cross-ratio for every mass ratio](#j0-l4) [Theorem]
+- #605 · 0.325 · [Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷](#kac-formula-verified) [Theorem]
+- #606 · 0.325 · [Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip](#kk-ghost-blind-only-right-of-zeros) [Theorem]
+- #607 · 0.325 · [Kepler eccentricity as a degree of polarization (KS dictionary)](#ks-polarization-dictionary) [Theorem]
+- #608 · 0.325 · [What Lambda <= 0.19 would actually need](#lambda-019-gate) [Cited]
+- #609 · 0.325 · [Real-rooted exponential sums are restricted Lee–Yang polynomials](#lee-yang-multivariate-restriction) [Theorem]
+- #610 · 0.325 · [Legendre criterion for Poincare time changes of xp](#legendre-poincare-criterion) [Theorem]
+- #611 · 0.325 · [Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do](#lemma21-slack-identity) [Theorem]
+- #612 · 0.325 · [Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise](#mellin-partition-function) [Theorem]
+- #613 · 0.325 · [X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus](#modular-tower-platonic) [Theorem]
+- #614 · 0.325 · [The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230)](#narrow-wide-sign-at-infinity) [Theorem]
+- #615 · 0.325 · [The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996)](#negdir-is-pole-plane-interlacing) [Theorem]
+- #616 · 0.325 · [A positive but non-coercive metric loses the zeros](#non-coercive-metric-loses-spectrum) [Theorem]
+- #617 · 0.325 · [Piston free energy of the window Weil operator](#piston-window-free-energy) [Theorem]
+- #618 · 0.325 · [A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1](#pnt-by-norm-blowup) [Theorem]
+- #619 · 0.325 · [Polymath15: the barrier is not the bottleneck for upper bounds on Lambda](#polymath15-barrier-not-bottleneck) [Cited]
+- #620 · 0.325 · [Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge](#rallis-point-edge-or-boundary) [Cited]
+- #621 · 0.325 · [Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle](#routh27-from-right-triangles) [Theorem]
+- #622 · 0.325 · [Square-root factorization with a one-sided Wick flip](#sqrt-factorization-one-sided-wick) [Theorem]
+- #623 · 0.325 · [Lagrangian of the regularized xp (massive square-root form)](#srl-lagrangian) [Theorem]
+- #624 · 0.325 · [Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit](#stark-unit-leading-coefficient) [Cited]
+- #625 · 0.325 · [The gap-squared clock is hyperbolic arc length](#sundman-clock-hyperbolic-length) [Theorem]
+- #626 · 0.325 · [Kepler in Sundman time is linear: r″ = 2E r + k](#sundman-linear-kepler) [Theorem]
+- #627 · 0.325 · [Distortionless telegrapher line as a conformally symplectic flow](#telegrapher-distortionless) [Theorem]
+- #628 · 0.325 · [L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line](#theta-fe-centre-on-line) [Theorem]
+- #629 · 0.325 · [Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform](#third-axis-is-half-plane) [Theorem]
+- #630 · 0.325 · [The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it)](#unitary-axis-s-eq-s-plus-k4) [Theorem]
+- #631 · 0.325 · [|disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter](#vandermonde-log-gas) [Theorem]
+- #632 · 0.325 · [Window Weil form: simple even ground state, certified](#window-ground-state-simple-even) [Theorem]
+- #633 · 0.325 · [Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1](#witten-index-inverse-zeta) [Theorem]
+- #634 · 0.325 · [Distortionless criterion for the xp family: constant divergence](#xp-distortionless-constant-divergence) [Theorem]
+- #635 · 0.325 · [Zeta zero collisions are double-root type only](#zeta-collisions-type-one) [Theorem]
+- #636 · 0.325 · [Cohesion (arena)](#cohesion) [Theorem]
+- #637 · 0.325 · [U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84](#discriminant-family-invariance) [Theorem]
+- #638 · 0.325 · [EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly](#ez-operators-verified) [Theorem]
+- #639 · 0.325 · [T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them](#frobenius-up-verschiebung-down) [Theorem]
+- #640 · 0.325 · [Finite-window prime comb: time distribution = torus law (checked to 2e−3)](#kronecker-weyl-comb-law) [Theorem]
+- #641 · 0.325 · [In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward](#nested-window-family-morse-monotone) [Theorem]
+- #642 · 0.325 · [A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III](#nilpotent-must-be-orthogonal) [Theorem]
+- #643 · 0.325 · [A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost](#no-isotropic-no-nilpotent) [Theorem]
+- #644 · 0.325 · [Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n](#parabola-cone-points) [Theorem]
+- #645 · 0.325 · [Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here](#rung1-covered-by-certified-preprint) [Cited]
+- #646 · 0.325 · [Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign)](#trace-norm-form-signature) [Theorem]
+- #647 · 0.325 · [U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical)](#u-isometry) [Theorem]
+- #648 · 0.325 · [V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884](#vnat-flm-count) [Theorem]
+- #649 · 0.325 · [X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24](#x0p-components-meet) [Cited]
+- #650 · 0.325 · [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square) [Theorem]
+- #651 · 0.325 · [Local-to-global failure](#local-global) [Theorem]
+- #652 · 0.325 · [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) [Theorem]
+- #653 · 0.325 · [Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R](#routh-not-kac-wall) [Theorem]
+- #654 · 0.325 · [Conformally symplectic flows have exact forms and no Hamiltonian](#conformal-symplectic-no-hamiltonian) [Theorem]
+- #655 · 0.325 · [Multi-channel first-order factors are bounded by the SOS fit](#gram-factor-channel-bound) [Theorem]
+- #656 · 0.325 · [Local stability constants do not glue](#local-hardy-constants-no-glue) [Theorem]
+- #657 · 0.325 · [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) [Theorem]
+- #658 · 0.325 · [Modular-surface geodesic lengths are logs of quadratic units, not log p](#modular-lengths-quadratic-units) [Theorem]
+- #659 · 0.325 · [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) [Theorem]
+- #660 · 0.325 · [Prime term = alpha-derivative of the conjugated Vladimirov symbol](#vladimirov-derivative-is-prime-term) [Theorem]
+- #661 · 0.325 · [The window Weil operator is not extensive](#window-nonextensivity) [Theorem]
+- #662 · 0.325 · [Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H](#flag-curvature-gauge-dependent) [Theorem]
+- #663 · 0.325 · [Archimedean Newton polygon of P(T) misreports true curves](#fq-newton-polygon-false-positives) [Theorem]
+- #664 · 0.325 · [A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction](#gram-ab-rank-one) [Theorem]
+- #665 · 0.325 · [Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros](#jacobi-factor-flat-every-place) [Theorem]
+- #666 · 0.325 · [A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity](#ramond-g0-square) [Theorem]
+- #667 · 0.325 · [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) [Theorem]
+- #668 · 0.325 · [No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants)](#sundman-livsic-obstruction) [Theorem]
+- #669 · 0.325 · [Two-component Lee–Yang can fail](#two-component-lee-yang-can-fail) [Theorem]
+- #670 · 0.325 · [For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy](#gl1-monodromy-zero) [Theorem]
+- #671 · 0.325 · [Serre intersection positivity (2026 preprint) is local, not a global Hodge index](#serre-positivity-local-not-hodge) [Cited]
+- #672 · 0.325 · [λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular)](#box-to-limit-trivial-no-uniform-gap) [Theorem]
+- #673 · 0.325 · [Sign of a prime step is the sign of the prime-gap excess](#prime-step-sign-gap-excess) [Theorem]
+- #674 · 0.325 · [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) [Theorem]
+- #688 · 0.307 · [Metaplectic / Kubota cocycle](#metaplectic) [Theorem]
+- #689 · 0.307 · [Half Tate twist ℚ(½)](#half-tate-twist) [Theorem]
+- #690 · 0.307 · [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) [Theorem]
+- #691 · 0.307 · [Bost–Connes KMS states](#kms-bost-connes) [Cited]
+- #692 · 0.307 · [Archimedean place and Γ_ℝ factor](#archimedean-place) [Theorem]
+- #693 · 0.307 · [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) [Theorem]
+- #694 · 0.307 · [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) [Cited]
+- #695 · 0.307 · [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles) [Cited]
+- #696 · 0.307 · [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) [Theorem]
+- #697 · 0.307 · [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) [Theorem]
+- #698 · 0.307 · [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) [Theorem]
+- #699 · 0.307 · [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) [Theorem]
+- #700 · 0.307 · [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) [Cited]
+- #701 · 0.307 · [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) [Theorem]
+- #702 · 0.307 · [Cup product / Poincaré duality pairing](#cup-product) [Theorem]
+- #703 · 0.307 · [Cusp forms & Petersson positivity](#cusp-forms-petersson) [Theorem]
+- #704 · 0.307 · [Hecke operators](#hecke) [Theorem]
+- #705 · 0.307 · [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) [Theorem]
+- #706 · 0.307 · [Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic](#real-forms-compact-vs-boost) [Theorem]
+- #707 · 0.307 · [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) [Cited]
+- #708 · 0.307 · [Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)](#euler-char-chi) [Theorem]
+- #709 · 0.307 · [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) [Cited]
+- #710 · 0.307 · [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) [Cited]
+- #711 · 0.307 · [The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once](#n-factorial-bridge-all-places) [Theorem]
+- #712 · 0.307 · [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) [Theorem]
+- #713 · 0.307 · [Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal)](#standing-frame-so22-ads3) [Theorem]
+- #714 · 0.307 · [Tate count / Picard number (ghost-blind)](#tate-count) [Theorem]
+- #715 · 0.307 · [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) [Theorem]
+- #716 · 0.307 · [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) [Theorem]
+- #717 · 0.307 · [Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial](#consani-archimedean-cohomology) [Cited]
+- #718 · 0.307 · [λ₂ is monotone under nested windows (Cauchy interlacing)](#lambda2-monotone-nested-windows) [Theorem]
+- #719 · 0.307 · [The Hodge star squares to the fermion parity in even dimension](#hodge-star-square-fermion-parity) [Theorem]
+- #720 · 0.307 · [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) [Theorem]
+- #721 · 0.307 · [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) [Theorem]
+- #722 · 0.307 · [Mechanical stability of the window is not positivity](#window-mechanical-stability) [Theorem]
+- #723 · 0.307 · [Max-plus Weil functional is dominated by the diagonal, hence ghost-blind](#maxplus-weil-diagonal-dominance) [Theorem]
+- #724 · 0.307 · [Non-normal residue ||P - P*|| is a gauge quantity and a collision detector](#riesz-nonnormal-residue-gauge) [Theorem]
+- #725 · 0.307 · [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) [Numerical]
+- #726 · 0.307 · [Maass–Selberg relations](#maass-selberg) [Numerical]
+- #727 · 0.307 · [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) [Numerical]
+- #728 · 0.307 · [Archimedean thresholds a*](#arch-threshold) [Numerical]
+- #729 · 0.307 · [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) [Numerical]
+- #730 · 0.307 · [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) [Numerical]
+- #731 · 0.307 · [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) [Numerical]
+- #732 · 0.307 · [Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4](#birth-from-near-null-floor) [Numerical]
+- #733 · 0.307 · [Gap widths approaching the wall](#gap-width-wall-exponent) [Numerical]
+- #734 · 0.307 · [The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros](#isotropic-line-kinematic) [Numerical]
+- #735 · 0.307 · [Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind](#gaussian-filter-ghost-blind) [Numerical]
+- #736 · 0.307 · [Edge-prime repair of the pole plane: refuted](#pole-plane-repair-negative) [Numerical]
+- #737 · 0.307 · [Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity](#arithmetic-topology-linking-matrix) [Numerical]
+- #738 · 0.307 · [Iterated log-concavity is ghost- and DH-blind](#coefficient-ilc-ghost-blind) [Numerical]
+- #739 · 0.307 · [The Fisher curvature operator on bivectors is ghost-blind](#fisher-curvature-operator-ghost-blind) [Numerical]
+- #740 · 0.307 · [Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes](#dbn-monotone-functionals) [Numerical]
+- #741 · 0.307 · [The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄](#raychaudhuri-curvature-no-discrimination) [Numerical]
+- #742 · 0.307 · [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) [Theorem]
+- #743 · 0.307 · [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) [Theorem]
+- #744 · 0.307 · [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) [Theorem]
+- #745 · 0.307 · [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) [Theorem]
+- #746 · 0.307 · [Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder](#connes-cutoff-pair-two-hankel) [Theorem]
+- #747 · 0.307 · [Regularity of a local ring is not a global principal generator, and not a sign](#iwasawa-regularity-class) [Theorem]
+- #748 · 0.307 · [A skew pairing on H1 becomes symmetric on the product, with both signs](#kunneth-skew-to-symmetric) [Theorem]
+- #749 · 0.307 · [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) [Theorem]
+- #750 · 0.307 · [At width 2 the near-null cluster is unresolved across bases](#near-null-cluster-a2) [Numerical]
+- #751 · 0.307 · [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) [Theorem]
+- #752 · 0.307 · [At width 1 the second candidate fails by a prime-2 kink of slope 0.06191](#prime-edge-kink-orbit) [Theorem]
+- #753 · 0.307 · [The counterterm adds local mean statistics; it is not a global idele coupling](#product-formula-defect-mean) [Theorem]
+- #754 · 0.307 · [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) [Cited]
+- #755 · 0.307 · [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) [Theorem]
+- #756 · 0.307 · [The semilocal pairing uses a twisted involution, not the naive star of chi f](#twisted-star-convolution) [Theorem]
+- #757 · 0.307 · [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) [Theorem]
+- #761 · 0.292 · [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) [Open]
+- #762 · 0.292 · [Where the Krein grading lives: the supporting functional of the Weil cone at ζ](#grading-supporting-functional) [Conjecture]
+- #763 · 0.292 · [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) [Open]
+- #764 · 0.292 · [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn) [Open]
+- #765 · 0.292 · [Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages](#bypass-u-direction-gap) [Open]
+- #766 · 0.292 · [Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow](#hopf-fibration-spec-z) [Conjecture]
+- #767 · 0.292 · [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) [Conjecture]
+- #768 · 0.292 · [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) [Conjecture]
+- #769 · 0.292 · [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) [Open]
+- #786 · 0.267 · [Half-density normalization |x|^{½}](#half-density) [Theorem]
+- #787 · 0.267 · [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) [Theorem]
+- #788 · 0.267 · [The prime 2 as the wild place](#prime-two-wild) [Theorem]
+- #789 · 0.267 · [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) [Theorem]
+- #790 · 0.267 · [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep) [Theorem]
+- #791 · 0.267 · [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) [Theorem]
+- #792 · 0.267 · [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) [Theorem]
+- #793 · 0.267 · [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) [Theorem]
+- #794 · 0.267 · [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) [Cited]
+- #795 · 0.267 · [Scattering unitarity |φ| = 1](#scattering-phi) [Theorem]
+- #796 · 0.267 · [Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics)](#fundamental-domain-three-phases) [Theorem]
+- #797 · 0.267 · [Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0](#kepler-so4-contraction) [Theorem]
+- #798 · 0.267 · [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) [Theorem]
+- #799 · 0.267 · [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) [Theorem]
+- #800 · 0.267 · [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) [Theorem]
+- #801 · 0.267 · [Yoshida window positivity](#yoshida) [Cited]
+- #802 · 0.267 · [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero) [Theorem]
+- #803 · 0.267 · [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) [Theorem]
+- #804 · 0.267 · [Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)](#push-shear-balance) [Theorem]
+- #805 · 0.267 · [Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts](#quartet-capacity-sp4) [Theorem]
+- #806 · 0.267 · [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only) [Theorem]
+- #807 · 0.267 · [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) [Cited]
+- #808 · 0.267 · [CM case: the Hasse triangle is Fermat's two-squares triangle](#cm-gaussian-hasse-triangle) [Theorem]
+- #809 · 0.267 · [Split/inert duality for a CM curve (32a1)](#cm-split-inert-duality) [Theorem]
+- #810 · 0.267 · [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) [Theorem]
+- #811 · 0.267 · [Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p](#dbn-product-cross-term) [Theorem]
+- #812 · 0.267 · [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) [Theorem]
+- #813 · 0.267 · [Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian](#johnson-lippmann-supercharge) [Cited]
+- #814 · 0.267 · [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids) [Theorem]
+- #815 · 0.267 · [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) [Theorem]
+- #816 · 0.267 · [Weight ladder (modular weights)](#weight-ladder) [Theorem]
+- #817 · 0.267 · [On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH](#chirality-star-gamma5-hodge-index) [Theorem]
+- #818 · 0.267 · [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) [Theorem]
+- #819 · 0.267 · [Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares)](#dbn-loggas-entropy-production) [Theorem]
+- #820 · 0.267 · [η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential](#eta-chain) [Theorem]
+- #821 · 0.267 · [Euler factors as passive but lossy sections](#euler-factor-passive-lossy) [Theorem]
+- #822 · 0.267 · [(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²](#exactness-monge-ampere) [Theorem]
+- #823 · 0.267 · [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature) [Theorem]
+- #824 · 0.267 · [The critical-line wave: Hardy Z and the Riemann–Siegel phase](#hardy-z-critical-line-wave) [Theorem]
+- #825 · 0.267 · [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn) [Theorem]
+- #826 · 0.267 · [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) [Theorem]
+- #827 · 0.267 · [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack) [Theorem]
+- #828 · 0.267 · [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only) [Theorem]
+- #829 · 0.267 · [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh) [Theorem]
+- #830 · 0.267 · [Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift](#prime-torus-nonresonance) [Theorem]
+- #831 · 0.267 · [w₂ / Čech class (TAA Lemma 138)](#w2-cech) [Theorem]
+- #832 · 0.267 · [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) [Theorem]
+- #833 · 0.267 · [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) [Theorem]
+- #834 · 0.267 · [The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄)](#chi-minus-one-half-pole) [Theorem]
+- #835 · 0.267 · [Number-theoretical ferromagnetic spin chain](#knauf-ferromagnetic-spin-chain) [Theorem]
+- #836 · 0.267 · [Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH](#newman-class-p-fails-for-phi) [Cited]
+- #837 · 0.267 · [One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction](#prime-clocks) [Theorem]
+- #838 · 0.267 · [Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV](#primon-box-ts-pv) [Theorem]
+- #839 · 0.267 · [Sector map w = e^{iπs/2}](#sector-map-w) [Theorem]
+- #840 · 0.267 · [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) [Theorem]
+- #841 · 0.267 · [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) [Theorem]
+- #842 · 0.267 · [Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves](#conic-compactness) [Theorem]
+- #843 · 0.267 · [Finite Guinand–Weil dictionary for truncated Weil forms](#finite-guinand-weil-dictionary) [Theorem]
+- #844 · 0.267 · [The 45-degree flip is a real structure, not a star](#flip45-is-real-structure) [Theorem]
+- #845 · 0.267 · [The factorial of one half and the Fourier quarter-turn](#fourier-quarter-turn) [Theorem]
+- #846 · 0.267 · [Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)](#fourth-roots-supersingular) [Theorem]
+- #847 · 0.267 · [Frame and clock invariance of Krein data at L4](#frame-clock-invariance) [Theorem]
+- #848 · 0.267 · [Frobenius angles are already quantized](#frobenius-angles-quantized) [Theorem]
+- #849 · 0.267 · [Gross-Zagier as rank-one positivity](#gross-zagier-rank-one-positivity) [Cited]
+- #850 · 0.267 · [Window Weil form as jump kinetic energy minus a mass plus a pole](#levy-khintchine-mass-gap) [Theorem]
+- #851 · 0.267 · [Möbius function as fermion parity of the primon gas](#mobius-is-witten-parity) [Theorem]
+- #852 · 0.267 · [Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)](#orbifold-vs-descartes-deficits) [Theorem]
+- #853 · 0.267 · [Rankin-Selberg is blind to sign flips](#rs-blind-to-sign-flips) [Theorem]
+- #854 · 0.267 · [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) [Theorem]
+- #855 · 0.267 · [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) [Theorem]
+- #856 · 0.267 · [so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²](#so4-chirality-split) [Theorem]
+- #857 · 0.267 · [Spin structure & theta characteristic](#spin-theta) [Theorem]
+- #858 · 0.267 · [Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products](#three-lenses-one-flow) [Theorem]
+- #859 · 0.267 · [Counts vs quadratic positivity](#count-positivity) [Theorem]
+- #860 · 0.267 · [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) [Theorem]
+- #861 · 0.267 · [Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)](#hecke-toy-contraction) [Theorem]
+- #862 · 0.267 · [Jacobi curvature sees only the trace of the log-Hessian of kinetic energy](#jacobi-curvature-trace-only) [Theorem]
+- #863 · 0.267 · [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind) [Theorem]
+- #864 · 0.267 · [The monotone log-gas energy cannot certify real zeros](#rt-energy-monotone-but-blind) [Theorem]
+- #865 · 0.267 · [The de Bruijn–Newman kernel is not PF5](#dbn-kernel-not-pf5) [Theorem]
+- #866 · 0.267 · [Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive](#euler-product-saddle-additivity) [Theorem]
+- #867 · 0.267 · [Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count](#prime-torus-euler-characteristic-zero) [Theorem]
+- #868 · 0.267 · [Real-axis log-convexity of L(sigma) measures coefficient signs, not RH](#real-axis-log-convexity-not-rh) [Theorem]
+- #869 · 0.267 · [Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)](#zero-gas-forced-functionals) [Theorem]
+- #870 · 0.267 · [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) [Theorem]
+- #871 · 0.267 · [Both parity sectors carry a constraint; the even test is not E0](#even-odd-sector-constraints) [Theorem]
+- #1016 · 0.187 · [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) [Open]
+- #1023 · 0.165 · [Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object](#mechanism-global-object) [Open]
+- #1024 · 0.165 · [Zero-free window certificates as heat-flow barriers](#barrier-certificate-bypass) [Open]
+- #1025 · 0.165 · [Order as a stability condition (target shape)](#ps-tilt-central-charge-target) [Open]
+- #1026 · 0.165 · [Candidate formulations of Castelnuovo-Severi over the integers](#cs-for-spec-z-formulations) [Open]
+- #1027 · 0.165 · [Ring-preserving supercharge and RH as purity](#rings-purity-restates-positivity) [Conjecture]
+- #1028 · 0.165 · [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open) [Open]
+- #1029 · 0.165 · [Standard conjectures (Hodge type)](#standard-conj) [Open]
+- #1030 · 0.165 · [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) [Open]
+- #1031 · 0.165 · [Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1](#weil-as-height-restriction) [Open]
+- #1032 · 0.165 · [One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya](#both-at-once) [Open]
+- #1033 · 0.165 · [No ζ analogue of c=26 (no unitary c fits the Weil form)](#c26-gap) [Open]
+- #1034 · 0.165 · [No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1)](#ddf-gap) [Open]
+- #1035 · 0.165 · [F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge)](#fv-level-change-gap) [Open]
+- #1036 · 0.165 · [Integrality instead of positivity (45-degree direction)](#integrality-support-bypass) [Open]
+- #1037 · 0.165 · [Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality](#needed-semilocal-sonin-inequality) [Open]
+- #1038 · 0.165 · [Regularized xp foliation as a route](#regularized-xp-foliation-route) [Open]
+- #1039 · 0.165 · [A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction](#siegel-zero-as-small-boundary-mass) [Conjecture]
+- #1040 · 0.165 · [Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors](#two-steps-to-baseline) [Open]
+- #1041 · 0.165 · [Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula](#xside-vs-rside-obstruction) [Open]
+- #1042 · 0.165 · [Chaotic 2-DOF regularized xp as a route](#chaotic-2dof-xp-route) [Open]
+- #1043 · 0.165 · [Route: Hermite barrier certificate to lower Lambda](#hermite-barrier-route) [Open]
+- #1044 · 0.165 · [Route: Jacobi/Finsler geometry of xp as a positivity source](#jacobi-finsler-positivity-route) [Open]
 
 ### Separates ζ from the fakes, but the claim itself is interpretive (Analogy/Heuristic) (22)
 
@@ -1769,19 +1819,19 @@ Sensitivity asks whether a statement holds for ζ (is necessary for, or implied 
 - #316 · 0.392 · [Time delay (Wigner)](#time-delay) [Analogy]
 - #317 · 0.392 · [Källén–Lehmann spectral positivity](#kallen-lehmann) [Analogy]
 - #318 · 0.392 · [Clausius as candidate positivity: Γ ≥ 0 is automatic, RH = Γ ≡ 0 (reversible / lossless); the working positivity is passivity (ghosts = gain), with Foster ⇔ Laguerre on the line](#clausius-gamma-reversibility) [Analogy]
-- #742 · 0.300 · [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) [Heuristic]
-- #743 · 0.300 · [Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it](#dual-system-quotient-is-pole-plane) [Heuristic]
-- #744 · 0.300 · [baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity)](#slot-mapping) [Heuristic]
-- #857 · 0.253 · [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) [Analogy]
-- #858 · 0.253 · [L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin](#l4-krein-indefinite-not-zeta) [Analogy]
-- #859 · 0.253 · [The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn](#collinear-dh-odd-window) [Analogy]
-- #860 · 0.253 · [(β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair](#fermion-pair-beta-2beta) [Analogy]
-- #861 · 0.253 · [Ghost pair as dispersion (frequency-dependent decay)](#ghost-as-dispersion) [Analogy]
-- #862 · 0.253 · [Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind](#einstein-cartan) [Analogy]
-- #863 · 0.253 · [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) [Analogy]
-- #864 · 0.253 · [Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall](#ferromagnetic-gyroscopic-stiffness) [Analogy]
+- #758 · 0.300 · [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) [Heuristic]
+- #759 · 0.300 · [Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it](#dual-system-quotient-is-pole-plane) [Heuristic]
+- #760 · 0.300 · [baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity)](#slot-mapping) [Heuristic]
+- #874 · 0.253 · [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) [Analogy]
+- #875 · 0.253 · [L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin](#l4-krein-indefinite-not-zeta) [Analogy]
+- #876 · 0.253 · [The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn](#collinear-dh-odd-window) [Analogy]
+- #877 · 0.253 · [(β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair](#fermion-pair-beta-2beta) [Analogy]
+- #878 · 0.253 · [Ghost pair as dispersion (frequency-dependent decay)](#ghost-as-dispersion) [Analogy]
+- #879 · 0.253 · [Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind](#einstein-cartan) [Analogy]
+- #880 · 0.253 · [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) [Analogy]
+- #881 · 0.253 · [Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall](#ferromagnetic-gyroscopic-stiffness) [Analogy]
 
-### Background: interpretive and not separating (104)
+### Background: interpretive and not separating (106)
 
 - #193 · 0.423 · [BRST / Gupta–Bleuler physical quotient](#brst) [Analogy]
 - #194 · 0.423 · [Weil template, standing assignment (Missing Piece v5): Deninger's foliation = one factor (½), the Connes–Consani square = the product (½ ⊗ ½), 1 ⊕ 0 = the splitting of the product by the ample class, cusp part split off](#weil-template-factor-product) [Analogy]
@@ -1790,103 +1840,105 @@ Sensitivity asks whether a statement holds for ζ (is necessary for, or implied 
 - #327 · 0.377 · [Formal intersection lattice vs geometric surface (ghost-blind vs proof-bearing)](#formal-vs-geometric-lattice) [Heuristic]
 - #328 · 0.377 · [Preserved-leaf contribution χ(L)/|e^{κt} − 1| (Álvarez López–Kordyukov–Leichtnam Thm 1.3.10) has the shape of the archimedean term](#deninger-preserved-leaf-term) [Heuristic]
 - #329 · 0.377 · [Band criterion γ < 2T_M](#band-criterion) [Heuristic]
-- #672 · 0.324 · [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) [Analogy]
-- #673 · 0.324 · [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) [Analogy]
-- #674 · 0.324 · [Kramers–Kronig relations](#kramers-kronig) [Analogy]
-- #675 · 0.324 · [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) [Analogy]
-- #676 · 0.324 · [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) [Analogy]
-- #677 · 0.324 · [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) [Analogy]
-- #678 · 0.324 · [Gribov ambiguity](#gribov) [Analogy]
-- #679 · 0.324 · [Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like)](#integrable-vs-kam-reading) [Analogy]
-- #680 · 0.324 · [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) [Analogy]
-- #681 · 0.324 · [Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms](#primes-as-knots-no-linking-in-zeta) [Analogy]
-- #682 · 0.324 · [Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity)](#ep-gap-across-collision) [Analogy]
-- #683 · 0.324 · [Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity](#weil-realtime-not-euclidean) [Analogy]
-- #684 · 0.324 · [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) [Analogy]
-- #754 · 0.271 · [Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack](#identity-not-estimate) [Heuristic]
-- #755 · 0.271 · [The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)](#edge-boundary-cycle) [Heuristic]
-- #756 · 0.271 · [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) [Heuristic]
-- #757 · 0.271 · [Branch selection by arithmetic](#phase-branch-selection) [Heuristic]
-- #758 · 0.271 · [Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible](#bost-connes-phase-mismatch) [Heuristic]
-- #759 · 0.271 · [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) [Heuristic]
-- #760 · 0.271 · [The adele class space can host the KK response, but no non-circular positivity source was found](#adelic-kk-no-noncircular-mechanism) [Heuristic]
-- #761 · 0.271 · [Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin](#coupling-is-heat-time) [Heuristic]
-- #762 · 0.271 · [Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed)](#h6-shimura-image-e12) [Heuristic]
-- #763 · 0.271 · [RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin)](#candidates-abcd) [Heuristic]
-- #764 · 0.271 · [Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ](#fq-periodic-poles-many-negatives) [Heuristic]
-- #765 · 0.271 · [Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8](#index-vs-dimension) [Heuristic]
-- #766 · 0.271 · [Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead](#thermo-ledger) [Heuristic]
-- #767 · 0.271 · [The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive](#weil-form-marginal-not-coercive) [Heuristic]
-- #768 · 0.271 · [μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)](#routh-q-sqrt69-numerology) [Heuristic]
-- #769 · 0.271 · [12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12](#twelve-numerology) [Heuristic]
-- #855 · 0.256 · ["Cocycles give structure, not sign"](#cocycle-principle) [Heuristic]
-- #856 · 0.256 · [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) [Heuristic]
-- #925 · 0.226 · [Buoyancy / Archimedes principle](#archimedes) [Analogy]
-- #926 · 0.226 · [Distortionless line R/L = G/C](#distortionless) [Analogy]
-- #927 · 0.226 · [Einstein–Cartan: spin enters as torsion](#einstein-cartan-torsion-spin) [Analogy]
-- #928 · 0.226 · [Heaviside RLGC line](#heaviside) [Analogy]
-- #929 · 0.226 · [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) [Analogy]
-- #930 · 0.226 · [The archimedean place as the "third body"](#archimedean-third-body-analogy) [Analogy]
-- #931 · 0.226 · [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) [Analogy]
-- #932 · 0.226 · [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) [Analogy]
-- #933 · 0.226 · [One log-gas and its frozen limit](#log-gas-frozen-limit) [Analogy]
-- #934 · 0.226 · [The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions](#lrl-fock-gram-conserved) [Analogy]
-- #935 · 0.226 · [Mass-density positivity](#mass-density) [Analogy]
-- #936 · 0.226 · [Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned](#serre-derivative-analogy) [Analogy]
-- #937 · 0.226 · [Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2](#archimedean-symbol-dispersion) [Analogy]
-- #938 · 0.226 · [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) [Analogy]
-- #939 · 0.226 · [Tension and amplitude dictionary](#half-density-tension-dictionary) [Analogy]
-- #940 · 0.226 · [45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s](#hecke-mellin-lightcone-bypass) [Analogy]
-- #941 · 0.226 · [z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover](#levi-civita-branched-cover) [Analogy]
-- #942 · 0.226 · [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) [Analogy]
-- #943 · 0.226 · [Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ](#shimura-waldspurger-template-map) [Analogy]
-- #944 · 0.226 · [Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not](#thermo-dictionary-grades) [Analogy]
-- #945 · 0.226 · [Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing)](#thermo-forcing-grades) [Analogy]
-- #946 · 0.226 · [Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again](#tree-band-edge-zero-velocity) [Analogy]
-- #947 · 0.226 · [691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open](#adjoint-691-eisenstein-not-cuspidal) [Analogy]
-- #948 · 0.226 · [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) [Analogy]
-- #949 · 0.226 · [Discriminant as self-intersection of a polarization (arithmetic Hodge index)](#discriminant-polarization-height) [Analogy]
-- #950 · 0.226 · [Divergence-free positive tensors as a quantitative tool once positivity is known](#dpt-quantitative-template) [Analogy]
-- #951 · 0.226 · [Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit](#einstein-de-haas-lesson) [Analogy]
-- #952 · 0.226 · [sqrt(q) normalization as fixing the energy shell](#frobenius-similitude-shell) [Analogy]
-- #953 · 0.226 · [Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points](#hodge-morse-analogy) [Analogy]
-- #954 · 0.226 · [Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane)](#ii11-pole-pair) [Analogy]
-- #955 · 0.226 · [KS/oscillator realisation as a positivity source for the Weil form](#ks-oscillator-positivity-source) [Analogy]
-- #956 · 0.226 · [Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel](#larmor-onsager-rotation-sector) [Analogy]
-- #957 · 0.226 · [The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places](#lichnerowicz-is-gamma-shift) [Analogy]
-- #958 · 0.226 · [Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given)](#maslov-reading) [Analogy]
-- #959 · 0.226 · [Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH)](#no-ghost-template) [Analogy]
-- #960 · 0.226 · [Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0](#plus-minus-units-bernoulli) [Analogy]
-- #961 · 0.226 · [pole cancels the one arithmetic ghost](#pole-as-counterterm-not-tachyon) [Analogy]
-- #962 · 0.226 · [prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S](#prime-mode-energy-quantum) [Analogy]
-- #963 · 0.226 · [The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t)](#rs-phase-not-per-prime) [Analogy]
-- #964 · 0.226 · [λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion](#sato-tate-angle-as-conserved-c) [Analogy]
-- #965 · 0.226 · [Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ](#viscosity-baroclinic) [Analogy]
-- #966 · 0.226 · [Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999)](#constraint-scaling) [Analogy]
-- #967 · 0.226 · [Per-prime curvatures σ_p² do not reproduce H(D) weights](#curvature-vs-class-numbers) [Analogy]
-- #968 · 0.226 · [(1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles](#duplication-fixed-point-pole) [Analogy]
-- #969 · 0.226 · [Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers](#eponymic-chain-linear-transfers) [Analogy]
-- #970 · 0.226 · [Euler product = independence over places, not Markov in log-time](#euler-markov) [Analogy]
-- #971 · 0.226 · [Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis](#kepler-lagrange-kapteyn-analogy) [Analogy]
-- #972 · 0.226 · [β* as work reserve → 0 at barrier (Carnot limit), log p as heat](#margin-work-reserve) [Analogy]
-- #973 · 0.226 · [T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant](#planck-ott-landsberg-reading) [Analogy]
-- #974 · 0.226 · [FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part](#r-equals-t-wrong-slot) [Analogy]
-- #975 · 0.226 · [T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy](#t1-boltzmann-reading) [Analogy]
-- #976 · 0.226 · [Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets](#zero-velocity-null-states) [Analogy]
-- #977 · 0.226 · [Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically](#aps-type-split-analogue) [Analogy]
-- #978 · 0.226 · [Hill-region stratification vs prime filtration](#hill-region-dictionary) [Analogy]
-- #979 · 0.226 · [2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴)](#two-is-half-only-mod3) [Analogy]
-- #980 · 0.212 · [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) [Analogy]
-- #981 · 0.212 · [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) [Analogy]
-- #982 · 0.212 · [Higgs mechanism: negative mass² at the symmetric point](#higgs-negative-mass2) [Analogy]
-- #983 · 0.212 · [Klein–Gordon indefinite charge](#klein-gordon-charge) [Analogy]
-- #984 · 0.212 · [Anomalous dispersion](#anomalous-dispersion) [Analogy]
-- #998 · 0.181 · [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading) [Analogy]
-- #999 · 0.181 · [Lamb cutoff](#lamb-cutoff) [Analogy]
-- #1000 · 0.181 · [Two different χ’s: Euler characteristic vs class-group character](#two-chis) [Analogy]
-- #1001 · 0.181 · [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) [Analogy]
-- #1002 · 0.181 · [Ramanujan's 691 as a degeneration of the pole line](#ramanujan-691-degeneration) [Analogy]
-- #1003 · 0.181 · [Tate twist as hbar](#tate-twist-as-hbar) [Analogy]
+- #675 · 0.324 · [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) [Analogy]
+- #676 · 0.324 · [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) [Analogy]
+- #677 · 0.324 · [Kramers–Kronig relations](#kramers-kronig) [Analogy]
+- #678 · 0.324 · [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) [Analogy]
+- #679 · 0.324 · [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) [Analogy]
+- #680 · 0.324 · [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) [Analogy]
+- #681 · 0.324 · [Gribov ambiguity](#gribov) [Analogy]
+- #682 · 0.324 · [Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like)](#integrable-vs-kam-reading) [Analogy]
+- #683 · 0.324 · [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) [Analogy]
+- #684 · 0.324 · [Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms](#primes-as-knots-no-linking-in-zeta) [Analogy]
+- #685 · 0.324 · [Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity)](#ep-gap-across-collision) [Analogy]
+- #686 · 0.324 · [Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity](#weil-realtime-not-euclidean) [Analogy]
+- #687 · 0.324 · [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) [Analogy]
+- #770 · 0.271 · [Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack](#identity-not-estimate) [Heuristic]
+- #771 · 0.271 · [The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)](#edge-boundary-cycle) [Heuristic]
+- #772 · 0.271 · [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) [Heuristic]
+- #773 · 0.271 · [Branch selection by arithmetic](#phase-branch-selection) [Heuristic]
+- #774 · 0.271 · [Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible](#bost-connes-phase-mismatch) [Heuristic]
+- #775 · 0.271 · [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) [Heuristic]
+- #776 · 0.271 · [The adele class space can host the KK response, but no non-circular positivity source was found](#adelic-kk-no-noncircular-mechanism) [Heuristic]
+- #777 · 0.271 · [Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin](#coupling-is-heat-time) [Heuristic]
+- #778 · 0.271 · [Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed)](#h6-shimura-image-e12) [Heuristic]
+- #779 · 0.271 · [RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin)](#candidates-abcd) [Heuristic]
+- #780 · 0.271 · [Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ](#fq-periodic-poles-many-negatives) [Heuristic]
+- #781 · 0.271 · [Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8](#index-vs-dimension) [Heuristic]
+- #782 · 0.271 · [Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead](#thermo-ledger) [Heuristic]
+- #783 · 0.271 · [The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive](#weil-form-marginal-not-coercive) [Heuristic]
+- #784 · 0.271 · [μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)](#routh-q-sqrt69-numerology) [Heuristic]
+- #785 · 0.271 · [12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12](#twelve-numerology) [Heuristic]
+- #872 · 0.256 · ["Cocycles give structure, not sign"](#cocycle-principle) [Heuristic]
+- #873 · 0.256 · [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) [Heuristic]
+- #882 · 0.243 · [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) [Analogy]
+- #943 · 0.226 · [Buoyancy / Archimedes principle](#archimedes) [Analogy]
+- #944 · 0.226 · [Distortionless line R/L = G/C](#distortionless) [Analogy]
+- #945 · 0.226 · [Einstein–Cartan: spin enters as torsion](#einstein-cartan-torsion-spin) [Analogy]
+- #946 · 0.226 · [Heaviside RLGC line](#heaviside) [Analogy]
+- #947 · 0.226 · [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) [Analogy]
+- #948 · 0.226 · [The archimedean place as the "third body"](#archimedean-third-body-analogy) [Analogy]
+- #949 · 0.226 · [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) [Analogy]
+- #950 · 0.226 · [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) [Analogy]
+- #951 · 0.226 · [One log-gas and its frozen limit](#log-gas-frozen-limit) [Analogy]
+- #952 · 0.226 · [The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions](#lrl-fock-gram-conserved) [Analogy]
+- #953 · 0.226 · [Mass-density positivity](#mass-density) [Analogy]
+- #954 · 0.226 · [Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned](#serre-derivative-analogy) [Analogy]
+- #955 · 0.226 · [Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2](#archimedean-symbol-dispersion) [Analogy]
+- #956 · 0.226 · [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) [Analogy]
+- #957 · 0.226 · [Tension and amplitude dictionary](#half-density-tension-dictionary) [Analogy]
+- #958 · 0.226 · [45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s](#hecke-mellin-lightcone-bypass) [Analogy]
+- #959 · 0.226 · [z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover](#levi-civita-branched-cover) [Analogy]
+- #960 · 0.226 · [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) [Analogy]
+- #961 · 0.226 · [Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ](#shimura-waldspurger-template-map) [Analogy]
+- #962 · 0.226 · [Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not](#thermo-dictionary-grades) [Analogy]
+- #963 · 0.226 · [Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing)](#thermo-forcing-grades) [Analogy]
+- #964 · 0.226 · [Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again](#tree-band-edge-zero-velocity) [Analogy]
+- #965 · 0.226 · [691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open](#adjoint-691-eisenstein-not-cuspidal) [Analogy]
+- #966 · 0.226 · [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) [Analogy]
+- #967 · 0.226 · [Discriminant as self-intersection of a polarization (arithmetic Hodge index)](#discriminant-polarization-height) [Analogy]
+- #968 · 0.226 · [Divergence-free positive tensors as a quantitative tool once positivity is known](#dpt-quantitative-template) [Analogy]
+- #969 · 0.226 · [Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit](#einstein-de-haas-lesson) [Analogy]
+- #970 · 0.226 · [sqrt(q) normalization as fixing the energy shell](#frobenius-similitude-shell) [Analogy]
+- #971 · 0.226 · [Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points](#hodge-morse-analogy) [Analogy]
+- #972 · 0.226 · [Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane)](#ii11-pole-pair) [Analogy]
+- #973 · 0.226 · [KS/oscillator realisation as a positivity source for the Weil form](#ks-oscillator-positivity-source) [Analogy]
+- #974 · 0.226 · [Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel](#larmor-onsager-rotation-sector) [Analogy]
+- #975 · 0.226 · [The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places](#lichnerowicz-is-gamma-shift) [Analogy]
+- #976 · 0.226 · [Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given)](#maslov-reading) [Analogy]
+- #977 · 0.226 · [Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH)](#no-ghost-template) [Analogy]
+- #978 · 0.226 · [Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0](#plus-minus-units-bernoulli) [Analogy]
+- #979 · 0.226 · [pole cancels the one arithmetic ghost](#pole-as-counterterm-not-tachyon) [Analogy]
+- #980 · 0.226 · [prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S](#prime-mode-energy-quantum) [Analogy]
+- #981 · 0.226 · [The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t)](#rs-phase-not-per-prime) [Analogy]
+- #982 · 0.226 · [λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion](#sato-tate-angle-as-conserved-c) [Analogy]
+- #983 · 0.226 · [Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ](#viscosity-baroclinic) [Analogy]
+- #984 · 0.226 · [Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999)](#constraint-scaling) [Analogy]
+- #985 · 0.226 · [Per-prime curvatures σ_p² do not reproduce H(D) weights](#curvature-vs-class-numbers) [Analogy]
+- #986 · 0.226 · [(1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles](#duplication-fixed-point-pole) [Analogy]
+- #987 · 0.226 · [Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers](#eponymic-chain-linear-transfers) [Analogy]
+- #988 · 0.226 · [Euler product = independence over places, not Markov in log-time](#euler-markov) [Analogy]
+- #989 · 0.226 · [Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis](#kepler-lagrange-kapteyn-analogy) [Analogy]
+- #990 · 0.226 · [β* as work reserve → 0 at barrier (Carnot limit), log p as heat](#margin-work-reserve) [Analogy]
+- #991 · 0.226 · [T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant](#planck-ott-landsberg-reading) [Analogy]
+- #992 · 0.226 · [FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part](#r-equals-t-wrong-slot) [Analogy]
+- #993 · 0.226 · [T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy](#t1-boltzmann-reading) [Analogy]
+- #994 · 0.226 · [Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets](#zero-velocity-null-states) [Analogy]
+- #995 · 0.226 · [Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically](#aps-type-split-analogue) [Analogy]
+- #996 · 0.226 · [Hill-region stratification vs prime filtration](#hill-region-dictionary) [Analogy]
+- #997 · 0.226 · [2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴)](#two-is-half-only-mod3) [Analogy]
+- #998 · 0.212 · [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) [Analogy]
+- #999 · 0.212 · [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) [Analogy]
+- #1000 · 0.212 · [Higgs mechanism: negative mass² at the symmetric point](#higgs-negative-mass2) [Analogy]
+- #1001 · 0.212 · [Klein–Gordon indefinite charge](#klein-gordon-charge) [Analogy]
+- #1002 · 0.212 · [Anomalous dispersion](#anomalous-dispersion) [Analogy]
+- #1003 · 0.212 · [A polar family shrinks to the null point at infinity, in two gauges](#polar-family-h-s-degeneration) [Analogy]
+- #1017 · 0.181 · [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading) [Analogy]
+- #1018 · 0.181 · [Lamb cutoff](#lamb-cutoff) [Analogy]
+- #1019 · 0.181 · [Two different χ’s: Euler characteristic vs class-group character](#two-chis) [Analogy]
+- #1020 · 0.181 · [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) [Analogy]
+- #1021 · 0.181 · [Ramanujan's 691 as a degeneration of the pole line](#ramanujan-691-degeneration) [Analogy]
+- #1022 · 0.181 · [Tate twist as hbar](#tate-twist-as-hbar) [Analogy]
 
 ## Concepts by primary axis
 
@@ -1912,6 +1964,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 > ⚠ **Correction / caution.** The J preserved by an elliptic M is forced by M (unique up to scale); the arithmetic content is that the polarization supplies the same g for all Frobenius powers.
 
+> ⚠ **Correction / caution.** v1.20. No compatible J on E0 is constructed. A translation-invariant Hilbert-transform J does not preserve compact support or E0. Open ~1.8 is unchanged. Rank 1 is unchanged. The Riemann Hypothesis is not proved.
+
 **Relations (outgoing):**
 
 - same mechanism as → [Compatible complex structure J commuting with Frobenius](#compatible-j)
@@ -1921,7 +1975,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](#two-verschiebungs-dual-vs-adjoint)
 - analogue of → [Metaplectic / Kubota cocycle](#metaplectic) — metaplectic preserves ω only
 
-**Relations (incoming):** [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](#kahler-identities-foliated) (same mechanism as); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (related to); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (refines); [Dirac sea: one global Hardy polarization fills for ζ; Davenport–Heilbronn leaves n₋/2 holes](#dirac-hardy-sea) (analogue of); [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram whose sign is inertia, not the determinant](#fq-split-inertia-not-determinant) (illustrates); [Zeros-blind input is the data package “masses + force law”, not a literal equation](#zeros-blind-masses-force-package) (feeds); [Weil window form on the pole annihilator, as a Morse-index / discriminant criterion](#weil-morse-discriminant-dictionary) (related to); [W_L is the compatible metric g = ω(·, J·), not the canonical symplectic form](#weil-form-is-compatible-g) (restates); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (constrains); [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) (related to); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (analogue of); [Metaplectic / Kubota cocycle](#metaplectic) (same mechanism as); [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) (same mechanism as); [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) (analogue of); [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) (analogue of)
+**Relations (incoming):** [Kähler identities → Serre/Deninger–Singhof unitarity → MP4 in degree 1 ⇔ the flow preserves a leafwise Hodge splitting](#kahler-identities-foliated) (same mechanism as); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (related to); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (refines); [Dirac sea: one global Hardy polarization fills for ζ; Davenport–Heilbronn leaves n₋/2 holes](#dirac-hardy-sea) (analogue of); [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram whose sign is inertia, not the determinant](#fq-split-inertia-not-determinant) (illustrates); [Zeros-blind input is the data package “masses + force law”, not a literal equation](#zeros-blind-masses-force-package) (feeds); [Weil window form on the pole annihilator, as a Morse-index / discriminant criterion](#weil-morse-discriminant-dictionary) (related to); [W_L is the compatible metric g = ω(·, J·), not the canonical symplectic form](#weil-form-is-compatible-g) (restates); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (constrains); [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) (constrains); [A translation-invariant complex structure does not preserve the window kernel](#nonstationary-j-obstruction) (constrains); [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) (related to); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (analogue of); [Metaplectic / Kubota cocycle](#metaplectic) (same mechanism as); [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) (same mechanism as); [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) (analogue of); [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) (analogue of)
 
 ### #3 · 0.720 · Definite cup square / Krein one-liner <a id="definite-cup-square"></a>
 
@@ -1989,7 +2043,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Two-point form g + iω ≥ 0](#two-point) — TAA Lemma 103: g + iω ≥ 0 ⇔ Weil
 - analogue of → [Definite (Kepler/apsidal) vs gyroscopic (TAA Lemma 4) stability: TAA Lemma 4 has indefinite energy held by the work-free Coriolis J; opposite Krein signs collide at Gascheau–Routh μ = 0.0385209 (Hamiltonian–Hopf quadruple); any dissipation destroys it (Kelvin–Tait–Chetaev); Weil positivity says ζ-type stability must be definite — DH ≈ TAA Lemma 4 past Routh](#gyroscopic-vs-definite-stability)
 
-**Relations (incoming):** [Connes trace formula](#connes-trace) (same mechanism as); [Missing: an inequality consequence of automorphy (SC-E / HS-1)](#mp-automorphy-ineq) (implies); [Relative Gram matrix G_rel](#relative-gram) (same mechanism as); [Riemann–Roch strategy: RH ⇔ s(f,f) ≤ 0](#rr-strategy-sff) (same mechanism as); [Block-wise Weil-form diagnostic (BR-2): R-symmetric tilt blocks detect DH’s off-line pairs from the prime side](#blockwise-weil-diagnostic) (lives in); [Euler product and functional equation work only together: the window positivity test](#euler-fe-conjunction) (tests); [Primitive-part Weil spectrometer: the TAA Lemma 149 Weil Gram restricted to kerP = {∫f e^{±u/2} = 0} (pole/cusp functionals): ζ’s only negative direction without the pole row is the pole direction (index 1, removed by kerP); ζ, L(χ₅) PSD on full and kerP to W = 16; DH’s failure is primitive: same onset (3.875 at h = 0.025, 5.7 at h = 0.05) and essentially the same index (24 / 14 at W ≈ 16) on kerP](#primitive-part-weil-spectrometer) (special case of); [Hyperbolic loops are the primes; zeros are an elliptic action on H¹; a hyperbolic action on H¹ is a ghost](#hyperbolic-orbits-elliptic-h1) (related to); [With D*D the positive archimedean part (or Stirling's log-order multiplier), the curvature K is essentially the prime part: indefinite with about half its eigenvalues negative for ζ, Davenport–Heilbronn and χ₋₄ alike, in every basis](#curvature-sign-no-separation) (related to); [Over F_q a positive similitude CᵀGC = qG exists for every tested curve and for no ghost (semidefinite test)](#fq-similitude-sdp) (restates); [The admissible prime-coupling window around κ = 1 pinches for ζ and L(11a) but closes for Davenport–Heilbronn and a Beurling control (circular)](#prime-coupling-window-pinch) (restates); [ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime](#weil-two-sided-rigidity-all-directions) (equivalent to RH); [Tautology boundary (zero side vs prime side)](#tautology-boundary) (same mechanism as); [Trace part = polarization (projection onto span{h,v}, ample ω = h + v, ω² = 2), positivity = definiteness of the primitive part relative to it; together = Hodge index on E×E (primitive Gram [[−2,−a],[−a,−2q]] definite ⇔ a² < 4q)](#trace-polarization-primitive-positivity) (refines); [Hermite form counts ghosts in a window](#hermite-window-ghost-count) (analogy of); [Cole–Hopf: Ψ = H′/H obeys backward Burgers ∂_tΨ = −Ψ″ − 2ΨΨ′; at one prime the Toeplitz sequence 2T_k(x_t) is positive-definite iff t ≥ Λ_p; product cross-term −2tΨ_pΨ_q](#burgers-local-toeplitz) (refines); [Inertia of a compressed Weil form gives 2/3 on the line](#compressed-weil-inertia-two-thirds) (refines); [Arithmetic unitarity ("RH = unitarity")](#arith-unitarity) (same mechanism as); [Levinson/Verblunsky causal coordinates for the window Weil form: ghost = first super-luminal step](#levinson-causal-coordinates) (refines); [Hardy/KLMN constant of the window Weil form](#hardy-constant-window-weil) (refines); [Li criterion](#li-criterion) (same mechanism as); [Lossy Weil pencil: with any loss, the number of growing modes equals n₋(Z_L) (Ostrowski–Schneider), so robustness to dissipation is Krein-definiteness](#lossy-weil-pencil-inertia) (restates); [A positive-tensor representation of the Weil form is equivalent to positivity](#positive-tensor-iff-positivity) (refines); [Linear positivity equals Weil positivity on exponential type](#linear-equals-weil-positivity) (refines); [Lorentzian index for pole-free L-functions: n+ = N+](#lorentzian-index-pole-free) (restates); [Adding primes in order to ∞ + pole first increases the negative count and positivity appears only once every prime up to e^L is present](#cumulative-primes-grow-then-collapse) (no-progress-on); [ζ sits on the boundary of the Weil cone in every prime direction](#weil-cone-prime-rigidity) (refines); [Gluing curvature sees a ghost only through positivity](#gluing-curvature-tracks-positivity) (instance of); [The pole-orthogonal margin of ζ_K shows no stable relation to h(−d) or L(1, χ) on windows L ≤ 8](#zeta-k-primitive-no-class-number-signal) (no-progress-on); [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian) (refines); [The one-box axis: F(ℓ) = W(1_[0,ℓ]) has a uniform rescaled margin on [1, 10], but only by a 1-in-9400 cancellation](#single-box-axis-criterion) (restates); [Legendre strata: support function / Fenchel–Moreau as a definiteness detector](#legendre-support-function) (lives in); [The archimedean side of the Weil form has a one-sided cone; odd Γ = even Γ + π sech(πr)](#weil-archimedean-one-sided-cone) (refines); [SL₂(ℤ) scattering: φ(s) = ξ(2s−1)/ξ(2s), |φ| = 1 on Re s = ½, and Res_{s=1} φ = 3/π = 1/area](#sl2z-scattering-area) (related to); [Brandt/isogeny-graph Hecke spectra match weight-2 newforms (20/20 characteristic polynomials, q ≤ 389, ℓ ≤ 7) and satisfy |λ|/√ℓ ≤ 2 (max 1.9712): the sharp bound is local and already Deligne's theorem](#tree-quotient-ramanujan-local) (contrasts with); [At β = ½ the Weil kernel (prime lines log p·p^{−m/2} at m log p and the archimedean density e^{−y/2}/(1−e^{−2y})) is the x-weighted Lévy measure of the logarithm of the completed Bost–Connes/Γ partition function; the pole term renormalizes its Hagedorn tail e^{x/2}](#weil-kernel-is-levy-measure) (restates); [Gross's formula checked on supersingular isogeny graphs: the squared CM period ⟨c_D,f⟩² divided by u²√|D|·L(f,1)L(f⊗χ_D,1) is constant in D to 4e−15 (11a, 37b, 67a) and vanishes exactly with the twisted central value; a global positivity at the centre only](#gross-cm-period-square) (contrasts with); [The local zeta of one planar Lyapunov orbit has its zeros on the lines Re s = −(m+1)λ](#local-ruelle-lines) (no-progress-on); [Maxwell construction / convex effective potential](#maxwell-effective-potential) (analogue of); [Single-prime step of the window Weil form](#prime-step-operator-indefinite) (refines); [The Weil form is not a relative entropy or its Hessian: the entropy Hessian is diagonal and positive, the Weil prime term is minus a convolution pairing that is indefinite even at β = 2 (Re(−ζ′/ζ)(2+it) has minimum −0.351), and β = ½ lies below the phase transition where no Gibbs state exists](#weil-not-relative-entropy) (contrasts with); [Osterwalder–Schrader reflection positivity](#os-reflection-positivity) (same mechanism as); [No place-by-place positive Hodge star realizes the Weil form: every local block is indefinite](#no-place-local-hodge-star) (tests); [Definite (Kepler/apsidal) vs gyroscopic (TAA Lemma 4) stability: TAA Lemma 4 has indefinite energy held by the work-free Coriolis J; opposite Krein signs collide at Gascheau–Routh μ = 0.0385209 (Hamiltonian–Hopf quadruple); any dissipation destroys it (Kelvin–Tait–Chetaev); Weil positivity says ζ-type stability must be definite — DH ≈ TAA Lemma 4 past Routh](#gyroscopic-vs-definite-stability) (analogue of); [Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector](#rh-hodge-index-zero-margin) (restates); [Density × density: Weil’s form read off the diagonal and its log n translates](#density-times-density-diagonal) (restates); [Witten-type best constant: −R ≤ c·T for the kinetic cushion T](#witten-constant-window) (equivalent to RH); [Central-charge positivity from the explicit formula](#central-charge-positivity-weil) (instance of); [On a symmetric window the Weil Gram splits as (A+H) ⊕ (A−H), H the reflected (Hankel) form; window positivity ⇔ reflection ratio |μ| < 1](#os-even-odd-split) (uses); [Weil form as kinetic minus potential: Z = T - V on ker P](#weil-schroedinger-split) (restates); [Weil criterion in push/shear language: pole terms = (hyperbolic) push, −Σ_ρ f̂(ρ) = shear, primes + archimedean = total; degree-0 test functions remove the push; RH ⇔ shear ≤ 0](#weil-shear-subtracts) (restates); [With D built from the archimedean place, positivity of the Weil form on a window splits into a boundary block (pole and primes cover the archimedean-negative modes) and a relative bound ρ = max(−K/D*D) ≤ 1 on the high-frequency block; ζ and χ₋₄ saturate ρ = 1.0000, so the split is sharp and equivalent to Weil positivity](#weitzenbock-split-sharp-circular) (restates); [On the modular surface the zeros of ζ are poles of the cusp scattering matrix φ(s) = ξ(2s−1)/ξ(2s)](#cusp-scattering-zeros-as-resonances) (related to); [Moving the Selberg-side J to ζ: the pole-plane frame transfers, positivity of the complement does not](#j-transplant) (no-progress-on); [Two-point form g + iω ≥ 0](#two-point) (same mechanism as); [The ladder of constant terms ζ(−1), ζ(−3), …, ζ(−11) is boundary (cusp-at-∞) data only: values at negative odd integers, no information on zeros of Re s = ½](#constant-term-ladder-boundary-only) (no-progress-on); [Saddle-chain Melnikov pairing: chaining the Euler factors as hyperbolic saddles gives the Weil form on a modulated family (circular)](#melnikov-pairing-weil-restricted) (restates); [A positive star with Z_L = BᵀB exists iff Z_L ⪰ 0: the circularity moves into the existence of the star](#star-existence-is-weil-positivity) (restates); [Adelic orbit space as a route](#adelic-orbit-space-route) (analogy of); [With tree edges of length log p, the Hecke correspondence T_N is the sphere of radius log N, the abscissa of the explicit-formula atom; the product of trees has no metric without such weights](#log-p-tree-metric-hecke-sphere) (related to); [Tropical abscissa Theta from coefficients: detects DH but restates RH](#tropical-abscissa-restatement) (instance of); [Dispersion test as a route](#ghost-dispersion-route) (analogy of); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (restates); [Källén–Lehmann spectral positivity](#kallen-lehmann) (same mechanism as); [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (restates); [A square root G with G*G = Z_L is trivial if Z_L ≥ 0; a non-circular G must be zero-free, non-local, equivariant and independently positive](#square-root-constraints) (restates); [Width → area → 2-form: (1/2π)Δ log|ξ| dσ∧dt = Σ δ_ρ](#zero-count-two-form) (same mechanism as); [The Maass–Selberg truncated norm for SL₂(ℤ) verified by direct integration over the truncated fundamental domain, and positive for all T ≥ 1](#maass-selberg-norm-verified) (contrasts with); [With the conductor removed, a smaller L(1, χ_{−d}) gives a larger Weil-form margin; up to L ≈ 4 this is the window’s own small-prime average of χ](#margin-tracks-small-prime-chi) (no-progress-on); [First 10⁵ ζ zeros: nearest-neighbour spacings are GUE-like (KS 0.021 against 0.298 for Poisson), with the residual shrinking with height](#zeta-spacing-gue-drift) (no-progress-on); [The twist Gram is blind off the centre: identical rows for twists with different L(E_D, s) at s = 1.5, 2](#twist-gram-blind-off-centre) (fails for); [The OS transfer operator on the positive reflected part is not a positive contraction for ζ, 11a or Davenport–Heilbronn alike; matrix-pencil detection of off-line zeros is unreliable](#os-transfer-no-signal) (no-progress-on); [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) (analogue of); [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) (contrasts with); [Archimedean place and Γ_ℝ factor](#archimedean-place) (lives in); [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) (refines); [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) (contrasts with); [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) (refines); [Mechanical stability of the window is not positivity](#window-mechanical-stability) (analogy of); [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) (refines); [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) (refines); [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) (refines); [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) (contrasts with); [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) (constrains)
+**Relations (incoming):** [Connes trace formula](#connes-trace) (same mechanism as); [Missing: an inequality consequence of automorphy (SC-E / HS-1)](#mp-automorphy-ineq) (implies); [Relative Gram matrix G_rel](#relative-gram) (same mechanism as); [Riemann–Roch strategy: RH ⇔ s(f,f) ≤ 0](#rr-strategy-sff) (same mechanism as); [Block-wise Weil-form diagnostic (BR-2): R-symmetric tilt blocks detect DH’s off-line pairs from the prime side](#blockwise-weil-diagnostic) (lives in); [Euler product and functional equation work only together: the window positivity test](#euler-fe-conjunction) (tests); [Primitive-part Weil spectrometer: the TAA Lemma 149 Weil Gram restricted to kerP = {∫f e^{±u/2} = 0} (pole/cusp functionals): ζ’s only negative direction without the pole row is the pole direction (index 1, removed by kerP); ζ, L(χ₅) PSD on full and kerP to W = 16; DH’s failure is primitive: same onset (3.875 at h = 0.025, 5.7 at h = 0.05) and essentially the same index (24 / 14 at W ≈ 16) on kerP](#primitive-part-weil-spectrometer) (special case of); [Hyperbolic loops are the primes; zeros are an elliptic action on H¹; a hyperbolic action on H¹ is a ghost](#hyperbolic-orbits-elliptic-h1) (related to); [With D*D the positive archimedean part (or Stirling's log-order multiplier), the curvature K is essentially the prime part: indefinite with about half its eigenvalues negative for ζ, Davenport–Heilbronn and χ₋₄ alike, in every basis](#curvature-sign-no-separation) (related to); [Over F_q a positive similitude CᵀGC = qG exists for every tested curve and for no ghost (semidefinite test)](#fq-similitude-sdp) (restates); [The admissible prime-coupling window around κ = 1 pinches for ζ and L(11a) but closes for Davenport–Heilbronn and a Beurling control (circular)](#prime-coupling-window-pinch) (restates); [ζ’s window Weil form is on the cone boundary in every non-positive direction, archimedean or prime](#weil-two-sided-rigidity-all-directions) (equivalent to RH); [Tautology boundary (zero side vs prime side)](#tautology-boundary) (same mechanism as); [Trace part = polarization (projection onto span{h,v}, ample ω = h + v, ω² = 2), positivity = definiteness of the primitive part relative to it; together = Hodge index on E×E (primitive Gram [[−2,−a],[−a,−2q]] definite ⇔ a² < 4q)](#trace-polarization-primitive-positivity) (refines); [Hermite form counts ghosts in a window](#hermite-window-ghost-count) (analogy of); [Cole–Hopf: Ψ = H′/H obeys backward Burgers ∂_tΨ = −Ψ″ − 2ΨΨ′; at one prime the Toeplitz sequence 2T_k(x_t) is positive-definite iff t ≥ Λ_p; product cross-term −2tΨ_pΨ_q](#burgers-local-toeplitz) (refines); [Inertia of a compressed Weil form gives 2/3 on the line](#compressed-weil-inertia-two-thirds) (refines); [Arithmetic unitarity ("RH = unitarity")](#arith-unitarity) (same mechanism as); [Levinson/Verblunsky causal coordinates for the window Weil form: ghost = first super-luminal step](#levinson-causal-coordinates) (refines); [Hardy/KLMN constant of the window Weil form](#hardy-constant-window-weil) (refines); [Li criterion](#li-criterion) (same mechanism as); [Lossy Weil pencil: with any loss, the number of growing modes equals n₋(Z_L) (Ostrowski–Schneider), so robustness to dissipation is Krein-definiteness](#lossy-weil-pencil-inertia) (restates); [A positive-tensor representation of the Weil form is equivalent to positivity](#positive-tensor-iff-positivity) (refines); [Linear positivity equals Weil positivity on exponential type](#linear-equals-weil-positivity) (refines); [Lorentzian index for pole-free L-functions: n+ = N+](#lorentzian-index-pole-free) (restates); [Adding primes in order to ∞ + pole first increases the negative count and positivity appears only once every prime up to e^L is present](#cumulative-primes-grow-then-collapse) (no-progress-on); [ζ sits on the boundary of the Weil cone in every prime direction](#weil-cone-prime-rigidity) (refines); [Gluing curvature sees a ghost only through positivity](#gluing-curvature-tracks-positivity) (instance of); [The pole-orthogonal margin of ζ_K shows no stable relation to h(−d) or L(1, χ) on windows L ≤ 8](#zeta-k-primitive-no-class-number-signal) (no-progress-on); [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian) (refines); [The one-box axis: F(ℓ) = W(1_[0,ℓ]) has a uniform rescaled margin on [1, 10], but only by a 1-in-9400 cancellation](#single-box-axis-criterion) (restates); [Legendre strata: support function / Fenchel–Moreau as a definiteness detector](#legendre-support-function) (lives in); [The archimedean side of the Weil form has a one-sided cone; odd Γ = even Γ + π sech(πr)](#weil-archimedean-one-sided-cone) (refines); [SL₂(ℤ) scattering: φ(s) = ξ(2s−1)/ξ(2s), |φ| = 1 on Re s = ½, and Res_{s=1} φ = 3/π = 1/area](#sl2z-scattering-area) (related to); [Brandt/isogeny-graph Hecke spectra match weight-2 newforms (20/20 characteristic polynomials, q ≤ 389, ℓ ≤ 7) and satisfy |λ|/√ℓ ≤ 2 (max 1.9712): the sharp bound is local and already Deligne's theorem](#tree-quotient-ramanujan-local) (contrasts with); [At β = ½ the Weil kernel (prime lines log p·p^{−m/2} at m log p and the archimedean density e^{−y/2}/(1−e^{−2y})) is the x-weighted Lévy measure of the logarithm of the completed Bost–Connes/Γ partition function; the pole term renormalizes its Hagedorn tail e^{x/2}](#weil-kernel-is-levy-measure) (restates); [Gross's formula checked on supersingular isogeny graphs: the squared CM period ⟨c_D,f⟩² divided by u²√|D|·L(f,1)L(f⊗χ_D,1) is constant in D to 4e−15 (11a, 37b, 67a) and vanishes exactly with the twisted central value; a global positivity at the centre only](#gross-cm-period-square) (contrasts with); [The local zeta of one planar Lyapunov orbit has its zeros on the lines Re s = −(m+1)λ](#local-ruelle-lines) (no-progress-on); [Maxwell construction / convex effective potential](#maxwell-effective-potential) (analogue of); [Single-prime step of the window Weil form](#prime-step-operator-indefinite) (refines); [The Weil form is not a relative entropy or its Hessian: the entropy Hessian is diagonal and positive, the Weil prime term is minus a convolution pairing that is indefinite even at β = 2 (Re(−ζ′/ζ)(2+it) has minimum −0.351), and β = ½ lies below the phase transition where no Gibbs state exists](#weil-not-relative-entropy) (contrasts with); [Osterwalder–Schrader reflection positivity](#os-reflection-positivity) (same mechanism as); [No place-by-place positive Hodge star realizes the Weil form: every local block is indefinite](#no-place-local-hodge-star) (tests); [Definite (Kepler/apsidal) vs gyroscopic (TAA Lemma 4) stability: TAA Lemma 4 has indefinite energy held by the work-free Coriolis J; opposite Krein signs collide at Gascheau–Routh μ = 0.0385209 (Hamiltonian–Hopf quadruple); any dissipation destroys it (Kelvin–Tait–Chetaev); Weil positivity says ζ-type stability must be definite — DH ≈ TAA Lemma 4 past Routh](#gyroscopic-vs-definite-stability) (analogue of); [Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector](#rh-hodge-index-zero-margin) (restates); [Density × density: Weil’s form read off the diagonal and its log n translates](#density-times-density-diagonal) (restates); [Witten-type best constant: −R ≤ c·T for the kinetic cushion T](#witten-constant-window) (equivalent to RH); [Central-charge positivity from the explicit formula](#central-charge-positivity-weil) (instance of); [On a symmetric window the Weil Gram splits as (A+H) ⊕ (A−H), H the reflected (Hankel) form; window positivity ⇔ reflection ratio |μ| < 1](#os-even-odd-split) (uses); [Weil form as kinetic minus potential: Z = T - V on ker P](#weil-schroedinger-split) (restates); [Weil criterion in push/shear language: pole terms = (hyperbolic) push, −Σ_ρ f̂(ρ) = shear, primes + archimedean = total; degree-0 test functions remove the push; RH ⇔ shear ≤ 0](#weil-shear-subtracts) (restates); [With D built from the archimedean place, positivity of the Weil form on a window splits into a boundary block (pole and primes cover the archimedean-negative modes) and a relative bound ρ = max(−K/D*D) ≤ 1 on the high-frequency block; ζ and χ₋₄ saturate ρ = 1.0000, so the split is sharp and equivalent to Weil positivity](#weitzenbock-split-sharp-circular) (restates); [On the modular surface the zeros of ζ are poles of the cusp scattering matrix φ(s) = ξ(2s−1)/ξ(2s)](#cusp-scattering-zeros-as-resonances) (related to); [Moving the Selberg-side J to ζ: the pole-plane frame transfers, positivity of the complement does not](#j-transplant) (no-progress-on); [Two-point form g + iω ≥ 0](#two-point) (same mechanism as); [The ladder of constant terms ζ(−1), ζ(−3), …, ζ(−11) is boundary (cusp-at-∞) data only: values at negative odd integers, no information on zeros of Re s = ½](#constant-term-ladder-boundary-only) (no-progress-on); [Saddle-chain Melnikov pairing: chaining the Euler factors as hyperbolic saddles gives the Weil form on a modulated family (circular)](#melnikov-pairing-weil-restricted) (restates); [A positive star with Z_L = BᵀB exists iff Z_L ⪰ 0: the circularity moves into the existence of the star](#star-existence-is-weil-positivity) (restates); [Adelic orbit space as a route](#adelic-orbit-space-route) (analogy of); [With tree edges of length log p, the Hecke correspondence T_N is the sphere of radius log N, the abscissa of the explicit-formula atom; the product of trees has no metric without such weights](#log-p-tree-metric-hecke-sphere) (related to); [Tropical abscissa Theta from coefficients: detects DH but restates RH](#tropical-abscissa-restatement) (instance of); [Dispersion test as a route](#ghost-dispersion-route) (analogy of); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (restates); [Källén–Lehmann spectral positivity](#kallen-lehmann) (same mechanism as); [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (restates); [A square root G with G*G = Z_L is trivial if Z_L ≥ 0; a non-circular G must be zero-free, non-local, equivariant and independently positive](#square-root-constraints) (restates); [Width → area → 2-form: (1/2π)Δ log|ξ| dσ∧dt = Σ δ_ρ](#zero-count-two-form) (same mechanism as); [The Maass–Selberg truncated norm for SL₂(ℤ) verified by direct integration over the truncated fundamental domain, and positive for all T ≥ 1](#maass-selberg-norm-verified) (contrasts with); [With the conductor removed, a smaller L(1, χ_{−d}) gives a larger Weil-form margin; up to L ≈ 4 this is the window’s own small-prime average of χ](#margin-tracks-small-prime-chi) (no-progress-on); [First 10⁵ ζ zeros: nearest-neighbour spacings are GUE-like (KS 0.021 against 0.298 for Poisson), with the residual shrinking with height](#zeta-spacing-gue-drift) (no-progress-on); [The twist Gram is blind off the centre: identical rows for twists with different L(E_D, s) at s = 1.5, 2](#twist-gram-blind-off-centre) (fails for); [The OS transfer operator on the positive reflected part is not a positive contraction for ζ, 11a or Davenport–Heilbronn alike; matrix-pencil detection of off-line zeros is unreliable](#os-transfer-no-signal) (no-progress-on); [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) (analogue of); [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) (contrasts with); [Archimedean place and Γ_ℝ factor](#archimedean-place) (lives in); [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) (refines); [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) (contrasts with); [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) (refines); [Mechanical stability of the window is not positivity](#window-mechanical-stability) (analogy of); [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) (refines); [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) (refines); [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) (constrains); [Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder](#connes-cutoff-pair-two-hankel) (contrasts with); [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) (contrasts with); [The counterterm adds local mean statistics; it is not a global idele coupling](#product-formula-defect-mean) (uses); [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) (contrasts with); [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) (refines); [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) (refines); [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) (contrasts with); [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) (constrains)
 
 ### #8 · 0.720 · Two Verschiebungs: pairing dual V^∨ vs positive adjoint V† <a id="two-verschiebungs-dual-vs-adjoint"></a>
 
@@ -2685,6 +2739,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 > ⚠ **Correction / caution.** Correction (v1.14): Davenport–Heilbronn’s first Weil-window crossings move to L ≈ 3.63 (even) / 3.65 (odd) on fine bases (fine grid M = 320; h = 0.0083), and the second pair to ≈ 4.19/4.21 (h = 0.0083); the values 3.80–3.925 (and 6.3–7.4 for the second pair) quoted here are basis values at h = 0.025 or coarser, where the hat factor s(γh)⁴ attenuates the ghost ordinate. The qualitative statements are unchanged; see dh_crossing_basis_dependence.
 
+> ⚠ **Correction / caution.** v1.20. This parabolic wall and the Routh wall stay distinct from each other, from the Beurling-pencil Hasse wall, and from the primary and secondary sheets of Sigma. The model null conic in the v1.20 polarity figure is a discriminant boundary of that model. It is not captioned as either of these walls.
+
 **Relations (outgoing):**
 
 - refines → [Levinson/Schur steps are SU(1,1) boosts: Weil positivity = every step subluminal](#levinson-su11-boosts) — Levinson |k| = 1 is the parabolic wall
@@ -2693,7 +2749,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Krein collisions (how ghosts are born)](#krein-collision)
 - tests → [Davenport–Heilbronn function](#davenport-heilbronn) — parabolic wall, then an TAA Lemma 4-like window, then Hopf quartets
 
-**Relations (incoming):** [Krein mass ratio μ_eff(L): ζ stays at μ = 0, Davenport–Heilbronn’s secondary is born at L*](#krein-mass-ratio-mu-eff) (illustrates); [Euler product does not keep the Krein mass ratio below the Routh wall (Beurling control)](#euler-product-not-sufficient-routh) (instance of); [Two failure channels: W∞–pole at r ≈ 0 and W∞–primes in the first zero-free gap; pole deformations stay parabolic](#weil-two-failure-channels) (instance of); [KS lift of the two walls: parabolic = a frequency reaches 0; Routh = opposite-Krein frequencies meet](#ks-lift-two-walls) (lives in); [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) (refines); [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) (illustrates); [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) (extends); [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) (refines); [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) (illustrates)
+**Relations (incoming):** [Krein mass ratio μ_eff(L): ζ stays at μ = 0, Davenport–Heilbronn’s secondary is born at L*](#krein-mass-ratio-mu-eff) (illustrates); [Euler product does not keep the Krein mass ratio below the Routh wall (Beurling control)](#euler-product-not-sufficient-routh) (instance of); [Two failure channels: W∞–pole at r ≈ 0 and W∞–primes in the first zero-free gap; pole deformations stay parabolic](#weil-two-failure-channels) (instance of); [KS lift of the two walls: parabolic = a frequency reaches 0; Routh = opposite-Krein frequencies meet](#ks-lift-two-walls) (lives in); [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) (refines); [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) (illustrates); [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) (extends); [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) (refines); [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) (illustrates); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (distinguishes)
 
 ### #107 · 0.540 · Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1) <a id="hamiltonian-krein-index-weil"></a>
 
@@ -2976,7 +3032,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - lives in → [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u) — complement of U
 - analogue of → [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface)
 
-**Relations (incoming):** [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](#frobenius-graph-lattice) (special case of); [Weil positivity criterion](#weil-positivity) (same mechanism as); [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (uses); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (uses); [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u) (lives in); [Surface + ample + RR ⇒ Hodge index (D8)](#surface-ample-rr) (implies); [Ax1–Ax3 axioms (Yoneda specification)](#ax123) (same mechanism as); [Parity argument: linear χ cannot see D²](#parity-linear-chi) (fails for); [MP4 headline: the Euler product, taken as geometry (the Frobenius correspondence: graph classes on the square with an ample class), not as counting data, induces the Hodge splitting of the square, with its sign](#mp4-euler-induces-hodge) (same mechanism as); [Castelnuovo–Severi inequality](#castelnuovo-severi) (special case of); [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian) (analogue of); [Function-field test of the MP4 headline: over F_q, point counts + functional equation + non-negative integer closed-point counts (an Euler product with positive multiplicities, which implies Ihara’s constraints) do NOT induce the Hodge sign; the sign on the Frobenius-graph Gram comes from the surface C×C (Hodge index), not from the counts](#ff-counts-do-not-induce-sign) (special case of); [Over F_q the Weil form is the Gram matrix of the Frobenius orbit in H¹ for the Rosati / Hodge-index form](#ff-weil-form-is-h1-gram) (uses); [Deligne's route: Lefschetz pencils, monodromy and Rankin's tensor-power trick](#deligne-tensor-power) (analogue of); [On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram whose sign is inertia, not the determinant](#fq-split-inertia-not-determinant) (reconfirms); [BRST / Gupta–Bleuler physical quotient](#brst) (same mechanism as); [Curvature as cup square: convexity ↔ Rosati positivity](#curvature-cup-square) (analogue of); [Källén–Lehmann spectral positivity](#kallen-lehmann) (same mechanism as); [Log-det Hessian curvature on prime directions is negative for genuine forms](#hessian-curvature-negative-genuine) (analogy of); [No-go: a ferromagnetic sign pattern fixes the shape of the unstable mode, not the number of unstable modes](#ferromagnetic-sign-not-count) (fails for); [Over F_q, tropical PSD of the Weil Toeplitz form is the Weil bound (Restatement of RH for curves)](#tropical-psd-fq-weil-bound) (illustrates); [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) (analogue of); [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) (instance of); [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) (instance of); [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) (analogue of); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (analogue of); [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) (analogue of); [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) (analogue of); [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) (refines); [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) (uses); [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) (instance of); [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) (analogue of); [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) (related to); [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) (analogue of); [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) (analogy of); [Standard conjectures (Hodge type)](#standard-conj) (special case of)
+**Relations (incoming):** [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](#frobenius-graph-lattice) (special case of); [Weil positivity criterion](#weil-positivity) (same mechanism as); [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (uses); [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (uses); [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u) (lives in); [Surface + ample + RR ⇒ Hodge index (D8)](#surface-ample-rr) (implies); [Ax1–Ax3 axioms (Yoneda specification)](#ax123) (same mechanism as); [Parity argument: linear χ cannot see D²](#parity-linear-chi) (fails for); [MP4 headline: the Euler product, taken as geometry (the Frobenius correspondence: graph classes on the square with an ample class), not as counting data, induces the Hodge splitting of the square, with its sign](#mp4-euler-induces-hodge) (same mechanism as); [Castelnuovo–Severi inequality](#castelnuovo-severi) (special case of); [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian) (analogue of); [Function-field test of the MP4 headline: over F_q, point counts + functional equation + non-negative integer closed-point counts (an Euler product with positive multiplicities, which implies Ihara’s constraints) do NOT induce the Hodge sign; the sign on the Frobenius-graph Gram comes from the surface C×C (Hodge index), not from the counts](#ff-counts-do-not-induce-sign) (special case of); [Over F_q the Weil form is the Gram matrix of the Frobenius orbit in H¹ for the Rosati / Hodge-index form](#ff-weil-form-is-h1-gram) (uses); [Deligne's route: Lefschetz pencils, monodromy and Rankin's tensor-power trick](#deligne-tensor-power) (analogue of); [On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram whose sign is inertia, not the determinant](#fq-split-inertia-not-determinant) (reconfirms); [BRST / Gupta–Bleuler physical quotient](#brst) (same mechanism as); [Curvature as cup square: convexity ↔ Rosati positivity](#curvature-cup-square) (analogue of); [Källén–Lehmann spectral positivity](#kallen-lehmann) (same mechanism as); [Log-det Hessian curvature on prime directions is negative for genuine forms](#hessian-curvature-negative-genuine) (analogy of); [No-go: a ferromagnetic sign pattern fixes the shape of the unstable mode, not the number of unstable modes](#ferromagnetic-sign-not-count) (fails for); [Over F_q, tropical PSD of the Weil Toeplitz form is the Weil bound (Restatement of RH for curves)](#tropical-psd-fq-weil-bound) (illustrates); [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) (analogue of); [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) (instance of); [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) (instance of); [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) (analogue of); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (analogue of); [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) (analogue of); [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) (analogue of); [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) (refines); [A skew pairing on H1 becomes symmetric on the product, with both signs](#kunneth-skew-to-symmetric) (illustrates); [A skew pairing on H1 becomes symmetric on the product, with both signs](#kunneth-skew-to-symmetric) (contrasts with); [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) (contrasts with); [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) (uses); [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) (instance of); [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) (analogue of); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (analogue of); [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) (related to); [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) (analogue of); [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) (analogy of); [Standard conjectures (Hodge type)](#standard-conj) (special case of)
 
 ### #144 · 0.452 · Legendre strata: support function / Fenchel–Moreau as a definiteness detector <a id="legendre-support-function"></a>
 
@@ -3987,7 +4043,43 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Why the area is π: the circle in every zero count (Basel as common origin)](#circle-pi-in-zero-counts) (same mechanism as)
 
-### #496 · 0.325 · Toeplitz / Verblunsky coefficients <a id="toeplitz-verblunsky"></a>
+### #494 · 0.347 · The bulk form B keeps the diagonal counterterm, on E0 and off it <a id="bulk-form-b-off-e0"></a>
+
+**Label:** Theorem · **id:** `bulk_form_B_off_E0` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* B is the spring energy minus M_A times the norm squared. It is defined for every window test, not only for E0. On E0 it coincides with W, because P has been killed. Off E0, W and B differ by P.
+
+**Core.** B(F) = H_A(F) - M_A ||F||^2 = (1/2 pi) integral m_A(x) |Fourier F(x)|^2 dx, with m_A the archimedean symbol minus the cosine sum over log n < A. Do not infer infinite rank from unboundedness alone: a finite-rank form made of unbounded linear functionals can be unbounded. The corrected reason uses high frequency. Re psi(1/4 + i x/2) tends to +infinity, while the prime cosine sum is bounded by 2 sum a_n, so some X has m_A(x) at least 1 for |x| at least X. Then B(F) is at least ||F||^2 minus (1+M_A) times the form of the compact time-band-limiting operator K_X, the window compression of the Fourier cutoff |frequency| < X. On the closed finite-codimension subspace where K_X is smaller than 1/(2(1+M_A)), B is at least half the norm squared. That subspace meets smooth E0 on the window in an infinite-dimensional set. So on E0, where W equals B, the form is positive definite on an infinite-dimensional subspace. A map into a finite-dimensional V whose pulled-back pairing equals W would vanish on a kernel of codimension at most dim V, and that kernel would meet the positive subspace. A fixed finite H^{1,1} cannot carry W. The same estimate says B has only finitely many negative directions on one window. That is an analytic description of one window. It is not Weil positivity, and it is not a claim that the form is close to being positive. The geometric target of the right size is not constructed.
+
+**Formula.** B = H_A - M_A ||F||^2 = (1/2 pi) integral m_A |F-hat|^2
+
+**What is proved around it.** The quadratic-form identity is the ledger. Unboundedness of the symbol is the reason a finite-rank pullback cannot match B on E0.
+
+**Tests it must pass.** Do not promote a finite positive Galerkin matrix to analytic positivity.
+
+**Also known as:** B = H_A - M_A norm squared
+
+**Axes:** sign/positivity (Ax2), structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.8 (nearest gap: surface + ample class + Riemann–Roch for Spec ℤ (D8)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.347
+
+> ⚠ **Correction / caution.** Do not write unbounded, therefore not finite rank.
+
+> ⚠ **Correction / caution.** Finitely many negative directions on one window is not a sign theorem.
+
+> ⚠ **Correction / caution.** B inverse applied to the constraint is not an independent constructor, and the infinite-dimensional domain is unproved.
+
+> ❓ **Not verified / open.** Self-adjointness, compact resolvent, and discrete spectrum of the infinite-dimensional operator B are not proved. Finite Galerkin matrices are the setting of the inertia counts.
+
+**Relations (outgoing):**
+
+- refines → [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) — B survives on E0, diagonal included
+- contrasts with → [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) — off E0, W is B plus P
+- constrains → [Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)](#mp-d8) — a fixed finite H^{1,1} cannot carry W, by the high-frequency band-limit; unboundedness alone is not the reason; nothing here constructs a replacement
+
+**Relations (incoming):** [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) (uses); [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) (constrains); [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) (refines)
+
+### #499 · 0.325 · Toeplitz / Verblunsky coefficients <a id="toeplitz-verblunsky"></a>
 
 **Label:** Theorem · **id:** `toeplitz_verblunsky` · **quadrant:** true but ghost-blind/untested
 
@@ -4013,7 +4105,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (uses); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (uses); [Frobenius as a boost (rapidity ½ log q)](#frobenius-boost) (analogue of); [Levinson/Verblunsky causal coordinates for the window Weil form: ghost = first super-luminal step](#levinson-causal-coordinates) (instance of); [Li criterion](#li-criterion) (same mechanism as); [de Branges spaces](#de-branges) (same mechanism as); [Levinson/Schur steps are SU(1,1) boosts: Weil positivity = every step subluminal](#levinson-su11-boosts) (refines); [Euler factors as passive but lossy sections](#euler-factor-passive-lossy) (analogy of); [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) (refines)
 
-### #498 · 0.325 · Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable <a id="hasse-parabolic-routh-forbidden-by-rosati"></a>
+### #501 · 0.325 · Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable <a id="hasse-parabolic-routh-forbidden-by-rosati"></a>
 
 **Label:** Theorem · **id:** `hasse_parabolic_routh_forbidden_by_rosati` · **quadrant:** true but ghost-blind/untested
 
@@ -4034,7 +4126,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (same mechanism as); [Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1)](#hamiltonian-krein-index-weil) (extends); [Hecke p-power recursion as a lattice Klein–Gordon (lossless LC-ladder) transfer matrix: Hasse = passband, and ζ’s local factors sit at the massless band edge](#hecke-lattice-klein-gordon) (same mechanism as); [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) (instance of); [F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4](#frobenius-verschiebung-rotation-split) (feeds); [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only) (refines)
 
-### #508 · 0.325 · Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations <a id="definite-vs-indefinite-strong-stability"></a>
+### #511 · 0.325 · Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations <a id="definite-vs-indefinite-strong-stability"></a>
 
 **Label:** Theorem · **id:** `definite_vs_indefinite_strong_stability` · **quadrant:** true but ghost-blind/untested
 
@@ -4056,7 +4148,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) (related to)
 
-### #548 · 0.325 · Arithmetic Hodge index: definite after quotienting an isotropic line <a id="arithmetic-hodge-index-null-quotient"></a>
+### #551 · 0.325 · Arithmetic Hodge index: definite after quotienting an isotropic line <a id="arithmetic-hodge-index-null-quotient"></a>
 
 **Label:** Theorem · **id:** `arithmetic_hodge_index_null_quotient` · **quadrant:** true but ghost-blind/untested
 
@@ -4073,7 +4165,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [Hodge index theorem](#hodge-index)
 - analogy of → [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy)
 
-### #572 · 0.325 · Spinor/Clifford route <a id="spinor-route"></a>
+### #575 · 0.325 · Spinor/Clifford route <a id="spinor-route"></a>
 
 **Label:** Theorem · **id:** `spinor_route` · **quadrant:** true but ghost-blind/untested
 
@@ -4095,7 +4187,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Compatible complex structure J commuting with Frobenius](#compatible-j) (same mechanism as)
 
-### #592 · 0.325 · Ω-parity split of the Euler product <a id="euler-product-omega-parity-split"></a>
+### #595 · 0.325 · Ω-parity split of the Euler product <a id="euler-product-omega-parity-split"></a>
 
 **Label:** Theorem · **id:** `euler_product_omega_parity_split` · **quadrant:** true but ghost-blind/untested
 
@@ -4117,7 +4209,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #608 · 0.325 · Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do <a id="lemma21-slack-identity"></a>
+### #611 · 0.325 · Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do <a id="lemma21-slack-identity"></a>
 
 **Label:** Theorem · **id:** `lemma21_slack_identity` · **quadrant:** true but ghost-blind/untested
 
@@ -4135,7 +4227,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece](#boundary-signature-neutral)
 
-### #615 · 0.325 · A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1 <a id="pnt-by-norm-blowup"></a>
+### #618 · 0.325 · A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1 <a id="pnt-by-norm-blowup"></a>
 
 **Label:** Theorem · **id:** `pnt_by_norm_blowup` · **quadrant:** true but ghost-blind/untested
 
@@ -4153,7 +4245,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [The Maass–Selberg truncated norm for SL₂(ℤ) verified by direct integration over the truncated fundamental domain, and positive for all T ≥ 1](#maass-selberg-norm-verified)
 
-### #629 · 0.325 · Window Weil form: simple even ground state, certified <a id="window-ground-state-simple-even"></a>
+### #632 · 0.325 · Window Weil form: simple even ground state, certified <a id="window-ground-state-simple-even"></a>
 
 **Label:** Theorem · **id:** `window_ground_state_simple_even` · **quadrant:** true but ghost-blind/untested
 
@@ -4169,7 +4261,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [One Perron mode against the pole](#pole-perron-one-mode)
 
-### #668 · 0.325 · Serre intersection positivity (2026 preprint) is local, not a global Hodge index <a id="serre-positivity-local-not-hodge"></a>
+### #671 · 0.325 · Serre intersection positivity (2026 preprint) is local, not a global Hodge index <a id="serre-positivity-local-not-hodge"></a>
 
 **Label:** Cited · **id:** `serre_positivity_local_not_hodge` · **quadrant:** true but ghost-blind/untested
 
@@ -4185,7 +4277,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 > ⚠ **Correction / caution.** Unrefereed preprint; local proper-intersection positivity does not give the signature statement of a Hodge index theorem.
 
-### #670 · 0.325 · Sign of a prime step is the sign of the prime-gap excess <a id="prime-step-sign-gap-excess"></a>
+### #673 · 0.325 · Sign of a prime step is the sign of the prime-gap excess <a id="prime-step-sign-gap-excess"></a>
 
 **Label:** Theorem · **id:** `prime_step_sign_gap_excess` · **quadrant:** true but ghost-blind/untested
 
@@ -4207,7 +4299,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) (constrains)
 
-### #671 · 0.325 · A covariance of W would be a weight, not a normalized state; that positivity is not established <a id="positive-weight-not-normalized-state"></a>
+### #674 · 0.325 · A covariance of W would be a weight, not a normalized state; that positivity is not established <a id="positive-weight-not-normalized-state"></a>
 
 **Label:** Theorem · **id:** `positive_weight_not_normalized_state` · **quadrant:** true but ghost-blind/untested
 
@@ -4239,7 +4331,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - contrasts with → [A nilpotent supercharge with W = {Q, Q*} restates positivity](#supercharge-laplacian-restates-positivity) — a square root restates positivity; commutativity does not forbid an independent functional
 - uses → [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) — local phase delay is K; the completed ratio is identically 1
 
-### #695 · 0.307 · Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree <a id="lps-hecke-on-s3"></a>
+**Relations (incoming):** [A translation-invariant complex structure does not preserve the window kernel](#nonstationary-j-obstruction) (contrasts with); [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) (contrasts with)
+
+### #698 · 0.307 · Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree <a id="lps-hecke-on-s3"></a>
 
 **Label:** Theorem · **id:** `lps_hecke_on_s3` · **quadrant:** true but ghost-blind/untested
 
@@ -4270,7 +4364,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No-go items 27–32 (Missing Piece v5): per-prime SU(2)/Satake data; per-prime norm identities (a_p² + |α−ᾱ|² = 4p, the ζ mass shell, Kepler's |A|² + 2m|E|L² = (mk)²); correspondence alone (Jacquet–Langlands via Shimizu, functoriality); KMS/coefficient positivity; a compact real form on the zero side as input; single-place data of n!](#nogo-v5-per-prime-and-places) (analogue of); [Hecke operators](#hecke) (lives in); [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) (lives in); [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) (lives in)
 
-### #700 · 0.307 · Cusp forms & Petersson positivity <a id="cusp-forms-petersson"></a>
+### #703 · 0.307 · Cusp forms & Petersson positivity <a id="cusp-forms-petersson"></a>
 
 **Label:** Theorem · **id:** `cusp_forms_petersson` · **quadrant:** true but ghost-blind/untested
 
@@ -4295,9 +4389,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Hodge–Riemann bilinear relations](#hodge-riemann)
 - fails for → [Riemann hypothesis (target node)](#rh) — ghost-blind
 
-**Relations (incoming):** [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (same mechanism as); [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) (analogy of); [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) (related to); [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) (analogue of); [Weight ladder (modular weights)](#weight-ladder) (same mechanism as)
+**Relations (incoming):** [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (same mechanism as); [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) (analogy of); [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) (related to); [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) (illustrates); [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) (analogue of); [Weight ladder (modular weights)](#weight-ladder) (same mechanism as)
 
-### #704 · 0.307 · Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}]) <a id="cc21-archimedean-positivity"></a>
+### #707 · 0.307 · Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}]) <a id="cc21-archimedean-positivity"></a>
 
 **Label:** Cited · **id:** `cc21_archimedean_positivity` · **quadrant:** true but ghost-blind/untested
 
@@ -4324,7 +4418,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No place-by-place positive Hodge star realizes the Weil form: every local block is indefinite](#no-place-local-hodge-star) (contrasts with); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (uses); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (contrasts with); [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) (uses); [Yoshida window positivity](#yoshida) (analogue of)
 
-### #712 · 0.307 · Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has <a id="thermo-geometry-ruppeiner-contact"></a>
+### #715 · 0.307 · Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has <a id="thermo-geometry-ruppeiner-contact"></a>
 
 **Label:** Theorem · **id:** `thermo_geometry_ruppeiner_contact` · **quadrant:** true but ghost-blind/untested
 
@@ -4355,7 +4449,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) (instance of)
 
-### #713 · 0.307 · The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v <a id="weil-pencil-jacobi-integral"></a>
+### #716 · 0.307 · The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v <a id="weil-pencil-jacobi-integral"></a>
 
 **Label:** Theorem · **id:** `weil_pencil_jacobi_integral` · **quadrant:** true but ghost-blind/untested
 
@@ -4376,7 +4470,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hamiltonian–Krein index for the Weil pencil: n₋ = N_real + 2N_quart + 2N_Krein−, so positivity is stability plus Krein-definiteness (grading Γ = 1)](#hamiltonian-krein-index-weil) (refines); [Saddle-chain Melnikov pairing: chaining the Euler factors as hyperbolic saddles gives the Weil form on a modulated family (circular)](#melnikov-pairing-weil-restricted) (restates); [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only) (uses)
 
-### #724 · 0.307 · Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded) <a id="pole-plane-polarization"></a>
+### #727 · 0.307 · Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded) <a id="pole-plane-polarization"></a>
 
 **Label:** Numerical · **id:** `pole_plane_polarization` · **quadrant:** true but ghost-blind/untested
 
@@ -4400,7 +4494,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Genus-1 Hasse bound = positivity of a coherency (Stokes) matrix](#coherency-hasse) (same mechanism as); [A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s](#holomorphic-polarization-theta) (related to); [Edge-prime repair of the pole plane: refuted](#pole-plane-repair-negative) (corrects)
 
-### #740 · 0.307 · After the counterterm, the net prime contribution has the sign of the autocorrelation <a id="signed-prime-autocorrelation"></a>
+### #743 · 0.307 · After the counterterm, the net prime contribution has the sign of the autocorrelation <a id="signed-prime-autocorrelation"></a>
 
 **Label:** Theorem · **id:** `signed_prime_autocorrelation` · **quadrant:** true but ghost-blind/untested
 
@@ -4430,7 +4524,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Exact-E0 Galerkin minima shrink with the window and are not certificates](#spring-galerkin-near-cancellation) (illustrates)
 
-### #741 · 0.307 · Window Weil form as nonnegative spring energy minus a counterterm <a id="spring-energy-counterterm-split"></a>
+### #744 · 0.307 · Window Weil form as nonnegative spring energy minus a counterterm <a id="spring-energy-counterterm-split"></a>
 
 **Label:** Theorem · **id:** `spring_energy_counterterm_split` · **quadrant:** true but ghost-blind/untested
 
@@ -4464,9 +4558,148 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - distinguishes → [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) — no uniform gap; the remaining target is spring energy against the counterterm
 - refines → [Weil positivity criterion](#weil-positivity) — on E0 the inequality is Weil positivity rewritten; the identity does not prove it
 
-**Relations (incoming):** [Exact-E0 Galerkin minima shrink with the window and are not certificates](#spring-galerkin-near-cancellation) (illustrates); [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) (distinguishes)
+**Relations (incoming):** [Exact-E0 Galerkin minima shrink with the window and are not certificates](#spring-galerkin-near-cancellation) (illustrates); [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) (distinguishes); [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) (refines)
 
-### #742 · 0.300 · Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free <a id="genuine-l-criticality"></a>
+### #745 · 0.307 · Finite bordered inertia: index 0, or index 1 with q at most 0 <a id="bordered-inertia-moment-criterion"></a>
+
+**Label:** Theorem · **id:** `bordered_inertia_moment_criterion` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* For a finite invertible symmetric matrix B and one nonzero constraint c, positivity on the hyperplane c perpendicular holds in exactly two cases. Either B is already positive semidefinite, or B has exactly one negative direction and the scalar q = c^T B inverse c is less than or equal to zero. Two or more negative directions cannot be removed by one constraint. This is linear algebra. It is not yet a theorem about the infinite-dimensional bulk form.
+
+**Core.** Let B be real symmetric and invertible, c nonzero, q = c^T B inverse c. The negative index of B on the kernel of c is n-(B) - 1 + 1 when q > 0, and n-(B) - 1 when q <= 0. The nullity of the restriction is 1 when q = 0 and 0 otherwise. The restriction is therefore positive semidefinite if and only if n-(B) = 0, in which case q is necessarily positive, or n-(B) = 1 and q <= 0. If n-(B) >= 2 the restriction still has a negative direction. The parent audit gives the congruence proof. Infinite-dimensional use needs B invertible on a stated domain and c in the domain of B inverse. Those hypotheses are not verified for the window operator. The vector B inverse c is defined from B. It is not an independent constructor.
+
+**Formula.** n-(B on c-perp) = n-(B) - 1 + [q > 0], q = c^T B^{-1} c
+
+**Numbers.** Session |cosine| between cosh and a computed even mode, not a squared overlap: about 0.970 at A = 0.6, 0.991 at A = 1, and 0.997 at A = 2. The width-2 figure sits in the unresolved cluster and is not an eigenvalue. · E0 minima are estimates, not certified brackets. Ritz upper estimates about 0.697 at A = 0.6 and 0.01315 at A = 1. Lower-bound-inspired values about 0.6919 and 0.0119. No interval is certified. · A = 2 is unresolved. Do not quote a second eigenvalue as certified.
+
+**What is proved around it.** The finite-dimensional inertia count is Haynsworth's congruence, specialized in the parent audit and rechecked on sample matrices by the v1.20 audit, including the index-0 case where q is positive and the restriction is still positive semidefinite.
+
+**Tests it must pass.** Both parity sectors are required. An even-only condition is not E0.
+
+**Also known as:** Haynsworth on one constraint; q = c^T B inverse c
+
+**Axes:** sign/positivity (Ax2), structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** The blanket slogan n- <= 1 and q <= 0 is wrong at index 0: a positive definite B has q > 0 and the restriction is positive semidefinite.
+
+> ⚠ **Correction / caution.** q is not a free parameter. If the index is 0, q is positive automatically.
+
+> ⚠ **Correction / caution.** Do not quote an apparent second eigenvalue at A = 2, from either basis, as a verified eigenvalue. The two session pictures disagree and neither is certified.
+
+> ⚠ **Correction / caution.** Do not draw the Ritz value and the lower-bound-inspired value as the ends of a certified bracket.
+
+> ❓ **Not verified / open.** Operator invertibility and the existence of B inverse applied to cosh, in infinite dimensions, are unproved.
+
+**Relations (outgoing):**
+
+- uses → [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) — inertia additivity for a bordered symmetric matrix; here one constraint and an invertible finite B
+- constrains → [Weil positivity criterion](#weil-positivity) — finite-matrix shape of the comparison; not an infinite-dimensional theorem
+- constrains → [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) — B inverse c requires an invertibility hypothesis that is unproved for the operator
+
+**Relations (incoming):** [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) (illustrates); [At width 2 the near-null cluster is unresolved across bases](#near-null-cluster-a2) (obstructs); [Both parity sectors carry a constraint; the even test is not E0](#even-odd-sector-constraints) (refines)
+
+### #749 · 0.307 · Each local term is a product-state covariance, and that covariance is subtracted <a id="local-product-state-covariance"></a>
+
+**Label:** Theorem · **id:** `local_product_state_covariance` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* Every local piece of the ledger has a product-state reading. A prime contributes log p times the norm squared minus a positive AR(1) covariance. The archimedean place is an Ornstein-Uhlenbeck tower. The positive covariances enter with a minus sign. They account for the terms. They do not make B positive.
+
+**Core.** W_p(F) = log p ( ||F||^2 - <F, P_p F> ), where P_p = sum_k p^(-|k|/2) T_{k log p} is positive semidefinite, the covariance of a critical boson, or an AR(1) process. The archimedean symbol is the OU tower with rates (2j+1)/2. E0 is the statement that the rate-1/2 OU response is supported in the window. The individual prime responses leak: their local poles cancel only when all places are kept together. This is an exact term-by-term reading. As a source of the sign it is closed. Observation, not a theorem: the OU rate (2j+1)/2 is the distance from 1/2 to the pole s = -2j of the archimedean Gamma factor. For j at least 1 those poles are cancelled in xi by the trivial zeros. The j = 0 pole at s = 0 survives in Lambda and is the moment removed by E0.
+
+**Formula.** W_p = log p (||F||^2 - <F, P_p F>), P_p positive semidefinite
+
+**Numbers.** Session, A = 2, G = sin^8, uncertified: arch +0.090, p = 2 about +9.092, p = 3 about -9.001, p = 5 about -0.0016, spring total 0.1788. · Rounded displayed parts sum to 0.1794. The cancellation is the point of the figure, not a certificate.
+
+**What is proved around it.** The prime identity is completion of the square against a positive Toeplitz covariance. Positivity of a finite section is linear algebra and is rechecked for a short AR(1) block in the v1.20 audit.
+
+**Tests it must pass.** Must not be quoted as a sign mechanism. The covariance is subtracted.
+
+**Also known as:** AR(1) prime covariance; OU tower
+
+**Axes:** sign/positivity (Ax2), physics analogue, ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Closed as a sign source, on this reading: a subtracted positive form does not dominate the diagonal by itself.
+
+> ⚠ **Correction / caution.** Not a universal theorem that no positive compression can ever match W. The tested compressions mismatched W. That is a smaller statement.
+
+**Relations (outgoing):**
+
+- refines → [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) — place-by-place reading of the same ledger
+- contrasts with → [Weil positivity criterion](#weil-positivity) — closed as a sign source; covariances are subtracted
+- contrasts with → [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) — a positive weight for W is still only a target; these local covariances are already signed into the explicit formula
+
+**Relations (incoming):** [The counterterm adds local mean statistics; it is not a global idele coupling](#product-formula-defect-mean) (refines)
+
+### #752 · 0.307 · At width 1 the second candidate fails by a prime-2 kink of slope 0.06191 <a id="prime-edge-kink-orbit"></a>
+
+**Label:** Theorem · **id:** `prime_edge_kink_orbit` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* The Dirichlet candidate is smooth inside the window, so the archimedean part of its response is smooth there. The shift by log 2 brings a kink of the window edge into the interior. The slope jumps by a_2 sinh(A/4)/2. A combination of cosh and sinh has no jump, so the candidate is not a representer. The same sentence for every representer, at every width, is a conjecture.
+
+**Core.** Hypotheses: A = 1, so log 2 < A < log 3 and the only prime power in the sum is n = 2. h2 is Lipschitz, with kinks at the two window edges, hence in the form domain. On the open window the archimedean integrals are analytic in the edge distances, and h2 itself is analytic. The translate by log 2 is supported up to A/2 - log 2 and contributes a slope jump a_2 sinh(A/4)/2 = 0.06191, with a_2 = log(2)/sqrt(2). The opposite edge gives the symmetric jump. No other shift enters. The annihilator lemma then excludes span{cosh, sinh}. For a general width, several shifts can land on the same point and cancel. No claim is made. The guess that every representer carries a finite singular orbit, or that the edge profile is a universal 1/log law, needs a propagation argument that is not given.
+
+**Formula.** jump = a_2 sinh(A/4)/2 = 0.06191 at A = 1, n = 2 only
+
+**Numbers.** Finite difference at spacing 10^(-4): 0.06189. At spacing 10^(-3): 0.06172. Prediction 0.06190632.
+
+**What is proved around it.** The jump computation and the annihilator step, under the hypotheses above. The audit script recomputes the exact jump and one finite difference.
+
+**Also known as:** edge kink; a_2 sinh(A/4)/2
+
+**Axes:** sign/positivity (Ax2), numerics/certificate, ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Exact only for this width, where a single prime power enters.
+
+> ⚠ **Correction / caution.** The numerical residual of h2 at A = 0.6 is not this exact jump.
+
+> ❓ **Not verified / open.** A finite edge-orbit ansatz, a universal 1/log law, and a Gamma-only no-go are conjectures.
+
+**Relations (outgoing):**
+
+- obstructs → [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) — h2 fails at A = 1 by this jump; h1 fails by the log edge; h2 at A = 0.6 is numerical only
+- contrasts with → [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) — the universal orbit, the 1/log law, and a Gamma-only no-go stay conjectural
+
+### #757 · 0.307 · Exact window ledger: the Weil form is the pole term plus a bulk form <a id="window-energy-ledger"></a>
+
+**Label:** Theorem · **id:** `window_energy_ledger` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* On a log window the Weil form splits as a pole term P plus a bulk form B. The bulk form is nonnegative spring energy minus a diagonal counterterm. Killing the poles removes P and leaves the counterterm in place. The split is an identity. It does not sign W.
+
+**Core.** For a window test F, W(F) = P(F) + B(F). P = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conjugate C-). B = H_A - M_A times the norm squared, and the same B is (1/2 pi) times the integral of m_A |Fourier F|^2. H_A adds the archimedean Levy springs and the prime springs for log n < A; each spring is nonnegative. M_A = -K0 + 2 sum Lambda(n) n^(-1/2), with K0 = psi(1/4) - log pi = -5.37218. The formula for B is valid off E0 as well as on it. W equals B on the joint kernel of the two moment functionals, which contains E0. This restates the v1.19 spring identity with the pole term kept visible off E0.
+
+**Formula.** W = P + B, B = H_A - M_A ||F||^2, E0 kills P only
+
+**Numbers.** K0 = psi(1/4) - log pi = -5.3721834192256654, from the session ledger.
+
+**What is proved around it.** Algebraic completion of the square for real translations, on the prior archimedean Levy kernel. Checked again in notes/v120/tests/audit_v120.py for K0 and for P vanishing on E0.
+
+**Tests it must pass.** A sign for B on every window test in E0 would be Weil positivity. The identity does not supply it.
+
+**Also known as:** W = P + B; window energy ledger
+
+**Axes:** sign/positivity (Ax2), structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Do not write W = B off E0. Full W is B + P.
+
+> ⚠ **Correction / caution.** Do not say that E0 removes the counterterm. E0 kills P. The diagonal M_A ||F||^2 remains inside B.
+
+**Relations (outgoing):**
+
+- refines → [Weil positivity criterion](#weil-positivity) — on E0 the inequality is Weil positivity rewritten; the ledger does not prove it
+- refines → [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) — same completed square, with P kept visible off E0
+- distinguishes → [Pole plane / Tate poles at s = 0, 1](#pole-plane) — P is the pole term; B is the bulk, including the diagonal counterterm
+
+**Relations (incoming):** [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) (refines); [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) (refines); [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) (refines); [The counterterm adds local mean statistics; it is not a global idele coupling](#product-formula-defect-mean) (illustrates)
+
+### #758 · 0.300 · Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free <a id="genuine-l-criticality"></a>
 
 **Label:** Heuristic · **id:** `genuine_l_criticality` · **quadrant:** sharp but interpretive
 
@@ -4486,7 +4719,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh)
 - uses → [de Bruijn–Newman constant Λ](#debruijn-newman) — Λ ≥ 0 (Rodgers–Tao)
 
-### #751 · 0.292 · Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded) <a id="tropical-hodge-index-conjecture"></a>
+### #767 · 0.292 · Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded) <a id="tropical-hodge-index-conjecture"></a>
 
 **Label:** Conjecture · **id:** `tropical_hodge_index_conjecture` · **quadrant:** true but ghost-blind/untested
 
@@ -4507,7 +4740,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined: the source must keep phases and live on a finite-rank H1](#finite-rank-phase-keeping-source) (refines); [Signed Maslov path on the Weil Gram matrix: not positivity-preserving; tropical end passes DH](#maslov-path-weil-matrix) (obstructs); [Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros](#jacobi-factor-flat-every-place) (corrects); [Max-plus Weil functional is dominated by the diagonal, hence ghost-blind](#maxplus-weil-diagonal-dominance) (obstructs); [Real-axis log-convexity of L(sigma) measures coefficient signs, not RH](#real-axis-log-convexity-not-rh) (obstructs)
 
-### #752 · 0.292 · One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square <a id="one-doubling-per-rung"></a>
+### #768 · 0.292 · One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square <a id="one-doubling-per-rung"></a>
 
 **Label:** Conjecture · **id:** `one_doubling_per_rung` · **quadrant:** true but ghost-blind/untested
 
@@ -4528,7 +4761,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The ladder of constant terms ζ(−1), ζ(−3), …, ζ(−11) is boundary (cusp-at-∞) data only: values at negative odd integers, no information on zeros of Re s = ½](#constant-term-ladder-boundary-only) (related to); [ζ=[ζ/ζ(2·)]ζ(2·); fermion sector negative from log4, 54 neg at L=6; pair lines indefinite 77/83; only the sum is positive](#boson-fermion-pair-split) (analogue of)
 
-### #767 · 0.271 · The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive <a id="weil-form-marginal-not-coercive"></a>
+### #783 · 0.271 · The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive <a id="weil-form-marginal-not-coercive"></a>
 
 **Label:** Heuristic · **id:** `weil_form_marginal_not_coercive` · **quadrant:** background
 
@@ -4542,7 +4775,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.7 · specificity 0.5 · tractability 0.5 · evidence 0.6 → priority 0.271
 
-### #790 · 0.267 · Hill topology of the Weil form sees only signature events, not Routh quartets <a id="weil-hill-topology-signature-only"></a>
+### #806 · 0.267 · Hill topology of the Weil form sees only signature events, not Routh quartets <a id="weil-hill-topology-signature-only"></a>
 
 **Label:** Theorem · **id:** `weil_hill_topology_signature_only` · **quadrant:** true but ghost-blind/untested
 
@@ -4565,7 +4798,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count](#prime-torus-euler-characteristic-zero) (feeds); [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) (analogue of); [Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again](#tree-band-edge-zero-velocity) (extends)
 
-### #805 · 0.267 · Euler factors as passive but lossy sections <a id="euler-factor-passive-lossy"></a>
+### #821 · 0.267 · Euler factors as passive but lossy sections <a id="euler-factor-passive-lossy"></a>
 
 **Label:** Theorem · **id:** `euler_factor_passive_lossy` · **quadrant:** true but ghost-blind/untested
 
@@ -4586,7 +4819,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) (constrains)
 
-### #820 · 0.267 · Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH <a id="newman-class-p-fails-for-phi"></a>
+### #836 · 0.267 · Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH <a id="newman-class-p-fails-for-phi"></a>
 
 **Label:** Cited · **id:** `newman_class_P_fails_for_phi` · **quadrant:** true but ghost-blind/untested
 
@@ -4610,7 +4843,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The de Bruijn–Newman kernel is not PF5](#dbn-kernel-not-pf5) (refines)
 
-### #833 · 0.267 · Gross-Zagier as rank-one positivity <a id="gross-zagier-rank-one-positivity"></a>
+### #849 · 0.267 · Gross-Zagier as rank-one positivity <a id="gross-zagier-rank-one-positivity"></a>
 
 **Label:** Cited · **id:** `gross_zagier_rank_one_positivity` · **quadrant:** true but ghost-blind/untested
 
@@ -4628,7 +4861,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) (analogy of)
 
-### #834 · 0.267 · Window Weil form as jump kinetic energy minus a mass plus a pole <a id="levy-khintchine-mass-gap"></a>
+### #850 · 0.267 · Window Weil form as jump kinetic energy minus a mass plus a pole <a id="levy-khintchine-mass-gap"></a>
 
 **Label:** Theorem · **id:** `levy_khintchine_mass_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -4652,7 +4885,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) (refines)
 
-### #837 · 0.267 · Rankin-Selberg is blind to sign flips <a id="rs-blind-to-sign-flips"></a>
+### #853 · 0.267 · Rankin-Selberg is blind to sign flips <a id="rs-blind-to-sign-flips"></a>
 
 **Label:** Theorem · **id:** `rs_blind_to_sign_flips` · **quadrant:** true but ghost-blind/untested
 
@@ -4674,7 +4907,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Convolution square root](#convolution-square-root)
 
-### #838 · 0.267 · Rankin–Selberg explicit formula yields a positive-definite lattice form <a id="rs-explicit-formula-positive-lattice-form"></a>
+### #854 · 0.267 · Rankin–Selberg explicit formula yields a positive-definite lattice form <a id="rs-explicit-formula-positive-lattice-form"></a>
 
 **Label:** Theorem · **id:** `rs_explicit_formula_positive_lattice_form` · **quadrant:** true but ghost-blind/untested
 
@@ -4690,7 +4923,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Convolution square root](#convolution-square-root)
 
-### #849 · 0.267 · The de Bruijn–Newman kernel is not PF5 <a id="dbn-kernel-not-pf5"></a>
+**Relations (incoming):** [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) (distinguishes)
+
+### #865 · 0.267 · The de Bruijn–Newman kernel is not PF5 <a id="dbn-kernel-not-pf5"></a>
 
 **Label:** Theorem · **id:** `dbn_kernel_not_pf5` · **quadrant:** true but ghost-blind/untested
 
@@ -4706,7 +4941,39 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH](#newman-class-p-fails-for-phi)
 
-### #877 · 0.240 · RH as a negative-square count (restatement) <a id="ghost-count-rh-restatement"></a>
+### #871 · 0.267 · Both parity sectors carry a constraint; the even test is not E0 <a id="even-odd-sector-constraints"></a>
+
+**Label:** Theorem · **id:** `even_odd_sector_constraints` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* On a reflection-invariant finite Galerkin space whose even and odd blocks are invertible, B is positive semidefinite on E0 exactly when each sector passes the bordered test: negative index 0, or negative index 1 with q at most 0. The even test alone is not E0. The odd index seen in two runs is numerical.
+
+**Core.** For an R-invariant finite Galerkin space with invertible sector blocks, B is at least 0 on E0(I) if and only if [n-(B_even) = 0, or n-(B_even) = 1 and q_even <= 0] and [n-(B_odd) = 0, or n-(B_odd) = 1 and q_odd <= 0]. This is the parent audit's Lemma 2. The reflection RF(u) = F(-u) commutes with B, because the symbol is even, and it commutes with P. Cosh is the even constraint and sinh is the odd constraint. In the A = 0.6 and A = 1 runs the odd block had negative index 0. That is numerical, not a general fact. Full-window W is a different question: if the even block has index 1 and is invertible, W_even is positive semidefinite if and only if q_even <= -1/2. If the odd block is positive definite, W_odd is positive semidefinite if and only if q_odd <= 1/2.
+
+**Formula.** B >= 0 on E0 iff both sectors pass: index 0, or index 1 and q <= 0
+
+**Numbers.** Odd-sector negative index 0 at A = 0.6 and A = 1 is numerical, uncertified, and not claimed in general.
+
+**What is proved around it.** The splitting is symmetry of an even symbol. The inertia conditions are the finite bordered lemma applied twice. Rechecked as linear algebra in the audit, not as an operator theorem.
+
+**Tests it must pass.** An estimate that uses only even tests does not see E0.
+
+**Also known as:** even cosh and odd sinh
+
+**Axes:** sign/positivity (Ax2), structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.267
+
+> ⚠ **Correction / caution.** q_even near -1/2 sits at the Sherman-Morrison threshold for full W. No claim about positivity of full W is made from that numerical proximity.
+
+> ⚠ **Correction / caution.** Full W near a threshold is not a statement that W is positive.
+
+**Relations (outgoing):**
+
+- refines → [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) — one application in each parity sector
+- illustrates → [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) — even update +2cc^T, odd update -2ss^T
+- distinguishes → [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) — two constraints on one window; not one even condition
+
+### #895 · 0.240 · RH as a negative-square count (restatement) <a id="ghost-count-rh-restatement"></a>
 
 **Label:** Restatement · **id:** `ghost_count_rh_restatement` · **quadrant:** RH-sharp
 
@@ -4728,7 +4995,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [λ₂ is monotone under nested windows (Cauchy interlacing)](#lambda2-monotone-nested-windows) (refines); [Invariant maximal non-positive subspaces: exactly two](#pontryagin-exactly-two) (refines)
 
-### #878 · 0.240 · Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0 <a id="hill-neck-lambda2"></a>
+### #896 · 0.240 · Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0 <a id="hill-neck-lambda2"></a>
 
 **Label:** Restatement · **id:** `hill_neck_lambda2` · **quadrant:** RH-sharp
 
@@ -4751,7 +5018,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [A synthetic real off-line zero pair (Siegel-type) adds exactly one negative direction, at the window where the base margin collapses, with no second neck](#synthetic-siegel-single-timelike) (contrasts with)
 
-### #891 · 0.240 · Invariant maximal non-positive subspaces: exactly two <a id="pontryagin-exactly-two"></a>
+### #909 · 0.240 · Invariant maximal non-positive subspaces: exactly two <a id="pontryagin-exactly-two"></a>
 
 **Label:** Restatement · **id:** `pontryagin_exactly_two` · **quadrant:** RH-sharp
 
@@ -4773,7 +5040,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Pontryagin spaces of entire functions](#pontryagin-de-branges-spaces) (analogy of)
 
-### #904 · 0.240 · Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)² <a id="hodge-index-shear-subtracts"></a>
+### #922 · 0.240 · Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)² <a id="hodge-index-shear-subtracts"></a>
 
 **Label:** Restatement · **id:** `hodge_index_shear_subtracts` · **quadrant:** RH-sharp
 
@@ -4975,6 +5242,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.5 (nearest gap: a Néron–Severi strictly larger than U containing the Frobenius classes Ψ_λ) · sensitivity 1.0 · specificity 1.0 · tractability 0.6 · evidence 1 → priority 0.540
 
+> ⚠ **Correction / caution.** v1.20. This entry is the point-counting form, an ellipse because the form counts points, which is the Hasse bound for that form. It is not the null conic Q = 0 of the polarity model, and that model point at infinity is not a modular cusp.
+
 **Relations (outgoing):**
 
 - same mechanism as → [Frobenius-graph lattice on E×E (relative counts = intersections with Δ)](#frobenius-graph-lattice) — det −(4q−a²); (1,3) vs (2,2)
@@ -4982,7 +5251,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Counts vs quadratic positivity](#count-positivity) — deg counts a kernel
 - fails for → [Fake Weil polynomials (finite ghosts)](#fake-weil-poly) — fakes give a hyperbola
 
-**Relations (incoming):** [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (refines); [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) (refines); [Verschiebung as the positive adjoint of Frobenius (F† = V)](#verschiebung-positive-adjoint) (same mechanism as); [Block-wise Weil-form diagnostic (BR-2): R-symmetric tilt blocks detect DH’s off-line pairs from the prime side](#blockwise-weil-diagnostic) (same mechanism as); [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [Poincaré disk: period domain, cusp degeneration and the trace classification](#poincare-disk-period-domain) (same mechanism as); [Legendre strata: support function / Fenchel–Moreau as a definiteness detector](#legendre-support-function) (same mechanism as); [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) (same mechanism as); [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) (same mechanism as)
+**Relations (incoming):** [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (refines); [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) (refines); [Verschiebung as the positive adjoint of Frobenius (F† = V)](#verschiebung-positive-adjoint) (same mechanism as); [Block-wise Weil-form diagnostic (BR-2): R-symmetric tilt blocks detect DH’s off-line pairs from the prime side](#blockwise-weil-diagnostic) (same mechanism as); [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [Poincaré disk: period domain, cusp degeneration and the trace classification](#poincare-disk-period-domain) (same mechanism as); [Legendre strata: support function / Fenchel–Moreau as a definiteness detector](#legendre-support-function) (same mechanism as); [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) (same mechanism as); [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) (same mechanism as); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (distinguishes); [A polar family shrinks to the null point at infinity, in two gauges](#polar-family-h-s-degeneration) (distinguishes)
 
 ### #91 · 0.540 · Fake Weil polynomials (finite ghosts) <a id="fake-weil-poly"></a>
 
@@ -5372,7 +5641,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Archimedean Newton polygon of P(T) misreports true curves](#fq-newton-polygon-false-positives) (constrains)
 
-### #510 · 0.325 · F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4 <a id="frobenius-verschiebung-rotation-split"></a>
+### #513 · 0.325 · F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4 <a id="frobenius-verschiebung-rotation-split"></a>
 
 **Label:** Theorem · **id:** `frobenius_verschiebung_rotation_split` · **quadrant:** true but ghost-blind/untested
 
@@ -5392,7 +5661,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hecke p-power recursion as a lattice Klein–Gordon (lossless LC-ladder) transfer matrix: Hasse = passband, and ζ’s local factors sit at the massless band edge](#hecke-lattice-klein-gordon) (same mechanism as); [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) (extends); [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation) (contrasts with)
 
-### #528 · 0.325 · Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π] <a id="frobenius-on-cm-lattice-11a"></a>
+### #531 · 0.325 · Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π] <a id="frobenius-on-cm-lattice-11a"></a>
 
 **Label:** Theorem · **id:** `frobenius_on_cm_lattice_11a` · **quadrant:** true but ghost-blind/untested
 
@@ -5413,7 +5682,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Brandt-vector Gram over 56 twists of 11a is positive with rank 2 = h; its cusp-form part is rank 1](#twist-gram-rank-h) (related to)
 
-### #536 · 0.325 · Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2) <a id="ns-exe-signature"></a>
+### #539 · 0.325 · Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2) <a id="ns-exe-signature"></a>
 
 **Label:** Theorem · **id:** `ns_exe_signature` · **quadrant:** true but ghost-blind/untested
 
@@ -5433,7 +5702,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [RH for curves over F_q (Weil)](#fq-curves)
 - extends → [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram)
 
-### #660 · 0.325 · Archimedean Newton polygon of P(T) misreports true curves <a id="fq-newton-polygon-false-positives"></a>
+### #663 · 0.325 · Archimedean Newton polygon of P(T) misreports true curves <a id="fq-newton-polygon-false-positives"></a>
 
 **Label:** Theorem · **id:** `fq_newton_polygon_false_positives` · **quadrant:** true but ghost-blind/untested
 
@@ -5451,7 +5720,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [Over F_q, tropical PSD of the Weil Toeplitz form is the Weil bound (Restatement of RH for curves)](#tropical-psd-fq-weil-bound)
 
-### #690 · 0.307 · Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity) <a id="gauss-sum-unitarity"></a>
+### #693 · 0.307 · Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity) <a id="gauss-sum-unitarity"></a>
 
 **Label:** Theorem · **id:** `gauss_sum_unitarity` · **quadrant:** true but ghost-blind/untested
 
@@ -5483,7 +5752,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) (same mechanism as); [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) (same mechanism as); [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) (lives in); [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) (same mechanism as)
 
-### #711 · 0.307 · Tate count / Picard number (ghost-blind) <a id="tate-count"></a>
+### #714 · 0.307 · Tate count / Picard number (ghost-blind) <a id="tate-count"></a>
 
 **Label:** Theorem · **id:** `tate_count` · **quadrant:** true but ghost-blind/untested
 
@@ -5510,7 +5779,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ψ(x) − x (explicit formula, deviation from the pole)](#psi-minus-x) (analogue of); [Invariant (χ-type) vs refined (h-type) counts: Lefschetz/GRR totals, N(T), box counts are FE-determined and ghost-blind; the on-line count changes only at collisions; RH ⇔ refined = invariant](#invariant-vs-refined-count) (same mechanism as); [S(T) = (1/π) arg ζ(½+iT): the fluctuating remainder of N(T)](#s-of-t-remainder) (analogue of)
 
-### #722 · 0.307 · Primary sign rule for a_p of y² = x³ − x <a id="primary-sign-rule"></a>
+### #725 · 0.307 · Primary sign rule for a_p of y² = x³ − x <a id="primary-sign-rule"></a>
 
 **Label:** Numerical · **id:** `primary_sign_rule` · **quadrant:** true but ghost-blind/untested
 
@@ -5543,7 +5812,37 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Chebyshev bias for elliptic curves (averaged sign of a_p)](#elliptic-chebyshev-bias) (analogue of)
 
-### #764 · 0.271 · Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ <a id="fq-periodic-poles-many-negatives"></a>
+### #748 · 0.307 · A skew pairing on H1 becomes symmetric on the product, with both signs <a id="kunneth-skew-to-symmetric"></a>
+
+**Label:** Theorem · **id:** `kunneth_skew_to_symmetric` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* On a curve the intersection of 1-forms is alternating. On the product of the curve with itself, the Kunneth rule turns that into a symmetric form, minus the product of the two pairings. For an elliptic curve of area 1 the mixed real primitive class of type (1,1) squares to -8. The real class in types (2,0) and (0,2) squares to +8. One sign pattern, two signs. Not every class is negative.
+
+**Core.** E(u, v) = integral u wedge v. Holomorphic and antiholomorphic forms are isotropic, and i times the integral of alpha wedge its conjugate is positive on H^{1,0}. The product pairing is I(a tensor b, c tensor d) = -E(a, c) E(b, d). With E(dz, d z-bar) = -2i, the mixed vector dz tensor d z-bar plus d z-bar tensor dz has square -8. The vector dz tensor dz plus d z-bar tensor d z-bar has square +8. The mixed sector is not the whole primitive H^{1,1}. This is hand algebra for one normalization. It is not a map from E0.
+
+**Formula.** I = -E ⊗ E; mixed real primitive square -8; (2,0)+(0,2) square +8
+
+**Numbers.** Area-1 normalization. Exact, rechecked symbolically in the v1.20 audit.
+
+**What is proved around it.** Bilinear expansion of the Kunneth rule on the two real vectors. Finite dimensional. Not a theorem about W.
+
+**Also known as:** I = -E tensor E; mixed (1,1) versus (2,0)+(0,2)
+
+**Axes:** geometry over F_q, sign/positivity (Ax2), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: surface + ample class + Riemann–Roch for Spec ℤ (D8)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Do not say that all of H^{1,0} tensor H^{0,1} is negative.
+
+> ⚠ **Correction / caution.** Do not identify this calculation with a polarization for zeta.
+
+**Relations (outgoing):**
+
+- illustrates → [Hodge index theorem](#hodge-index) — a finite sign pattern with both a negative and a positive direction
+- contrasts with → [Hodge index theorem](#hodge-index) — the mixed vector is not the whole primitive lattice
+- analogue of → [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) — same moral, different model: one form, two signs, no constructor
+
+### #780 · 0.271 · Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ <a id="fq-periodic-poles-many-negatives"></a>
 
 **Label:** Heuristic · **id:** `fq_periodic_poles_many_negatives` · **quadrant:** background
 
@@ -5557,7 +5856,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.7 · specificity 0.5 · tractability 0.5 · evidence 0.6 → priority 0.271
 
-### #777 · 0.267 · Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula <a id="gauss-half"></a>
+### #793 · 0.267 · Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula <a id="gauss-half"></a>
 
 **Label:** Theorem · **id:** `gauss_half` · **quadrant:** true but ghost-blind/untested
 
@@ -5591,7 +5890,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) (same mechanism as); [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) (same mechanism as)
 
-### #784 · 0.267 · Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites <a id="sl2fp-half-representations"></a>
+### #800 · 0.267 · Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites <a id="sl2fp-half-representations"></a>
 
 **Label:** Theorem · **id:** `sl2fp_half_representations` · **quadrant:** true but ghost-blind/untested
 
@@ -5625,7 +5924,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once](#n-factorial-bridge-all-places) (analogue of)
 
-### #786 · 0.267 · Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class) <a id="incommensurable-lehmer-zero"></a>
+### #802 · 0.267 · Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class) <a id="incommensurable-lehmer-zero"></a>
 
 **Label:** Theorem · **id:** `incommensurable_lehmer_zero` · **quadrant:** true but ghost-blind/untested
 
@@ -5652,7 +5951,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector](#rh-hodge-index-zero-margin) (feeds); [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) (refines); [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack) (feeds)
 
-### #792 · 0.267 · CM case: the Hasse triangle is Fermat's two-squares triangle <a id="cm-gaussian-hasse-triangle"></a>
+### #808 · 0.267 · CM case: the Hasse triangle is Fermat's two-squares triangle <a id="cm-gaussian-hasse-triangle"></a>
 
 **Label:** Theorem · **id:** `cm_gaussian_hasse_triangle` · **quadrant:** true but ghost-blind/untested
 
@@ -5674,7 +5973,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4) (analogy of); [Split/inert duality for a CM curve (32a1)](#cm-split-inert-duality) (refines); [Hasse triangle and Newton's dT/dθ = L²](#hasse-triangle-newton) (refines)
 
-### #793 · 0.267 · Split/inert duality for a CM curve (32a1) <a id="cm-split-inert-duality"></a>
+### #809 · 0.267 · Split/inert duality for a CM curve (32a1) <a id="cm-split-inert-duality"></a>
 
 **Label:** Theorem · **id:** `cm_split_inert_duality` · **quadrant:** true but ghost-blind/untested
 
@@ -5703,7 +6002,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Passive arithmetic response of 32a1 (Λ′/Λ as a Foster function)](#arithmetic-response-passivity-32a1) (analogy of); [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) (refines)
 
-### #830 · 0.267 · Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p) <a id="fourth-roots-supersingular"></a>
+### #846 · 0.267 · Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p) <a id="fourth-roots-supersingular"></a>
 
 **Label:** Theorem · **id:** `fourth_roots_supersingular` · **quadrant:** true but ghost-blind/untested
 
@@ -5721,7 +6020,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - illustrates → [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep)
 
-### #870 · 0.240 · Hasse triangle and Newton's dT/dθ = L² <a id="hasse-triangle-newton"></a>
+### #888 · 0.240 · Hasse triangle and Newton's dT/dθ = L² <a id="hasse-triangle-newton"></a>
 
 **Label:** Restatement · **id:** `hasse_triangle_newton` · **quadrant:** RH-sharp
 
@@ -5746,7 +6045,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Allowed locally ≠ aligned globally: every Frobenius angle is allowed, but only the genuine assignment keeps the window form positive (Δ and 11a1)](#allowed-locally-not-aligned-globally) (refines); [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) (refines)
 
-### #931 · 0.226 · |L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E) <a id="lagrange-hasse-gram"></a>
+### #949 · 0.226 · |L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E) <a id="lagrange-hasse-gram"></a>
 
 **Label:** Analogy · **id:** `lagrange_hasse_gram` · **quadrant:** background
 
@@ -5767,7 +6066,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) (extends)
 
-### #1010 · 0.165 · Standard conjectures (Hodge type) <a id="standard-conj"></a>
+### #1029 · 0.165 · Standard conjectures (Hodge type) <a id="standard-conj"></a>
 
 **Label:** Open · **id:** `standard_conj` · **quadrant:** true but ghost-blind/untested
 
@@ -6123,7 +6422,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - no-progress-on → [Weil positivity criterion](#weil-positivity)
 
-### #647 · 0.325 · GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values <a id="sqrt-lift-gl1-linear-not-square"></a>
+### #650 · 0.325 · GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values <a id="sqrt-lift-gl1-linear-not-square"></a>
 
 **Label:** Theorem · **id:** `sqrt_lift_gl1_linear_not_square` · **quadrant:** true but ghost-blind/untested
 
@@ -6144,7 +6443,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) (related to); [Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful](#dh-no-brandt-control) (related to); [Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ](#shimura-waldspurger-template-map) (uses)
 
-### #648 · 0.325 · Local-to-global failure <a id="local-global"></a>
+### #651 · 0.325 · Local-to-global failure <a id="local-global"></a>
 
 **Label:** Theorem · **id:** `local_global` · **quadrant:** true but ghost-blind/untested
 
@@ -6164,7 +6463,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Completeness rigidity: one missing prime creates many unstable modes](#completeness-rigidity-one-prime) (refines); [No single prime frame is positive in the window model](#no-single-prime-frame-positive) (instance of); [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) (instance of)
 
-### #649 · 0.325 · OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates <a id="os-failure-two-senses"></a>
+### #652 · 0.325 · OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates <a id="os-failure-two-senses"></a>
 
 **Label:** Theorem · **id:** `os_failure_two_senses` · **quadrant:** true but ghost-blind/untested
 
@@ -6184,7 +6483,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative)
 - related to → [Archimedean place and Γ_ℝ factor](#archimedean-place)
 
-### #653 · 0.325 · Local stability constants do not glue <a id="local-hardy-constants-no-glue"></a>
+### #656 · 0.325 · Local stability constants do not glue <a id="local-hardy-constants-no-glue"></a>
 
 **Label:** Theorem · **id:** `local_hardy_constants_no_glue` · **quadrant:** true but ghost-blind/untested
 
@@ -6207,7 +6506,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [No per-prime positive allocation of the smooth part](#per-prime-psd-allocation-nogo)
 - refines → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #655 · 0.325 · Modular-surface geodesic lengths are logs of quadratic units, not log p <a id="modular-lengths-quadratic-units"></a>
+### #658 · 0.325 · Modular-surface geodesic lengths are logs of quadratic units, not log p <a id="modular-lengths-quadratic-units"></a>
 
 **Label:** Theorem · **id:** `modular_lengths_quadratic_units` · **quadrant:** true but ghost-blind/untested
 
@@ -6229,7 +6528,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Selberg orbit sum is uncorrelated with S(T) of zeta](#selberg-sum-vs-zeta-uncorrelated) (instance of)
 
-### #661 · 0.325 · A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction <a id="gram-ab-rank-one"></a>
+### #664 · 0.325 · A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction <a id="gram-ab-rank-one"></a>
 
 **Label:** Theorem · **id:** `gram_ab_rank_one` · **quadrant:** true but ghost-blind/untested
 
@@ -6243,7 +6542,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Brandt-vector Gram over 56 twists of 11a is positive with rank 2 = h; its cusp-form part is rank 1](#twist-gram-rank-h) (corrects)
 
-### #663 · 0.325 · A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity <a id="ramond-g0-square"></a>
+### #666 · 0.325 · A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity <a id="ramond-g0-square"></a>
 
 **Label:** Theorem · **id:** `ramond_G0_square` · **quadrant:** true but ghost-blind/untested
 
@@ -6259,7 +6558,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [Kohnen–Zagier for 11a: L(E_D,1)√|D| = κ c(|D|)² for all 56 admissible D ≥ −399](#waldspurger-squares-11a)
 
-### #665 · 0.325 · No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants) <a id="sundman-livsic-obstruction"></a>
+### #668 · 0.325 · No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants) <a id="sundman-livsic-obstruction"></a>
 
 **Label:** Theorem · **id:** `sundman_livsic_obstruction` · **quadrant:** true but ghost-blind/untested
 
@@ -6277,7 +6576,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy)
 
-### #717 · 0.307 · The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike <a id="os-form-half-negative"></a>
+### #720 · 0.307 · The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike <a id="os-form-half-negative"></a>
 
 **Label:** Theorem · **id:** `os_form_half_negative` · **quadrant:** true but ghost-blind/untested
 
@@ -6298,7 +6597,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) (refines); [Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity](#weil-realtime-not-euclidean) (uses)
 
-### #720 · 0.307 · Max-plus Weil functional is dominated by the diagonal, hence ghost-blind <a id="maxplus-weil-diagonal-dominance"></a>
+### #723 · 0.307 · Max-plus Weil functional is dominated by the diagonal, hence ghost-blind <a id="maxplus-weil-diagonal-dominance"></a>
 
 **Label:** Theorem · **id:** `maxplus_weil_diagonal_dominance` · **quadrant:** true but ghost-blind/untested
 
@@ -6317,7 +6616,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - obstructs → [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture)
 - constrains → [Davenport–Heilbronn function](#davenport-heilbronn)
 
-### #721 · 0.307 · Non-normal residue ||P - P*|| is a gauge quantity and a collision detector <a id="riesz-nonnormal-residue-gauge"></a>
+### #724 · 0.307 · Non-normal residue ||P - P*|| is a gauge quantity and a collision detector <a id="riesz-nonnormal-residue-gauge"></a>
 
 **Label:** Theorem · **id:** `riesz_nonnormal_residue_gauge` · **quadrant:** true but ghost-blind/untested
 
@@ -6340,7 +6639,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Hilbert–Pólya](#hilbert-polya)
 - analogy of → [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind)
 
-### #733 · 0.307 · Edge-prime repair of the pole plane: refuted <a id="pole-plane-repair-negative"></a>
+### #736 · 0.307 · Edge-prime repair of the pole plane: refuted <a id="pole-plane-repair-negative"></a>
 
 **Label:** Numerical · **id:** `pole_plane_repair_negative` · **quadrant:** true but ghost-blind/untested
 
@@ -6360,7 +6659,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Davenport–Heilbronn’s ghost 2-plane: the archimedean part is positive, the ghost comes from the prime side](#dh-ghost-plane-separation) (refines); [Adding primes in order to ∞ + pole first increases the negative count and positivity appears only once every prime up to e^L is present](#cumulative-primes-grow-then-collapse) (analogue of)
 
-### #738 · 0.307 · The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄ <a id="raychaudhuri-curvature-no-discrimination"></a>
+### #741 · 0.307 · The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄ <a id="raychaudhuri-curvature-no-discrimination"></a>
 
 **Label:** Numerical · **id:** `raychaudhuri_curvature_no_discrimination` · **quadrant:** true but ghost-blind/untested
 
@@ -6374,7 +6673,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.05 · tractability 0.7 · evidence 0.8 → priority 0.307
 
-### #768 · 0.271 · μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism) <a id="routh-q-sqrt69-numerology"></a>
+### #784 · 0.271 · μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism) <a id="routh-q-sqrt69-numerology"></a>
 
 **Label:** Heuristic · **id:** `routh_q_sqrt69_numerology` · **quadrant:** background
 
@@ -6394,7 +6693,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²](#rational-frequency-ratio-quadratic-mu) — numerology
 
-### #769 · 0.271 · 12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12 <a id="twelve-numerology"></a>
+### #785 · 0.271 · 12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12 <a id="twelve-numerology"></a>
 
 **Label:** Heuristic · **id:** `twelve_numerology` · **quadrant:** background
 
@@ -6414,7 +6713,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy)
 
-### #843 · 0.267 · Counts vs quadratic positivity <a id="count-positivity"></a>
+### #859 · 0.267 · Counts vs quadratic positivity <a id="count-positivity"></a>
 
 **Label:** Theorem · **id:** `count_positivity` · **quadrant:** true but ghost-blind/untested
 
@@ -6438,7 +6737,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Conic type decided at infinity: degree positivity ⇒ ellipse ⇒ Hasse](#conic-type-at-infinity) (same mechanism as); [Epstein zeta no-go](#epstein) (same mechanism as); [Invariant (χ-type) vs refined (h-type) counts: Lefschetz/GRR totals, N(T), box counts are FE-determined and ghost-blind; the on-line count changes only at collisions; RH ⇔ refined = invariant](#invariant-vs-refined-count) (analogue of); [Tate count / Picard number (ghost-blind)](#tate-count) (same mechanism as)
 
-### #845 · 0.267 · Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1) <a id="hecke-toy-contraction"></a>
+### #861 · 0.267 · Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1) <a id="hecke-toy-contraction"></a>
 
 **Label:** Theorem · **id:** `hecke_toy_contraction` · **quadrant:** true but ghost-blind/untested
 
@@ -6457,7 +6756,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - illustrates → [Hecke operators](#hecke)
 - obstructs → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #847 · 0.267 · The K-theory order is automatic and ghost-blind <a id="k-order-ghost-blind"></a>
+### #863 · 0.267 · The K-theory order is automatic and ghost-blind <a id="k-order-ghost-blind"></a>
 
 **Label:** Theorem · **id:** `k_order_ghost_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -6481,7 +6780,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Non-normal residue ||P - P*|| is a gauge quantity and a collision detector](#riesz-nonnormal-residue-gauge) (analogy of)
 
-### #848 · 0.267 · The monotone log-gas energy cannot certify real zeros <a id="rt-energy-monotone-but-blind"></a>
+### #864 · 0.267 · The monotone log-gas energy cannot certify real zeros <a id="rt-energy-monotone-but-blind"></a>
 
 **Label:** Theorem · **id:** `rt_energy_monotone_but_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -6503,7 +6802,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Rodgers-Tao renormalization needs the zero count (Turing)](#rt-renormalization-count-drift) (refines)
 
-### #850 · 0.267 · Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive <a id="euler-product-saddle-additivity"></a>
+### #866 · 0.267 · Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive <a id="euler-product-saddle-additivity"></a>
 
 **Label:** Theorem · **id:** `euler_product_saddle_additivity` · **quadrant:** true but ghost-blind/untested
 
@@ -6525,7 +6824,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #852 · 0.267 · Real-axis log-convexity of L(sigma) measures coefficient signs, not RH <a id="real-axis-log-convexity-not-rh"></a>
+### #868 · 0.267 · Real-axis log-convexity of L(sigma) measures coefficient signs, not RH <a id="real-axis-log-convexity-not-rh"></a>
 
 **Label:** Theorem · **id:** `real_axis_log_convexity_not_rh` · **quadrant:** true but ghost-blind/untested
 
@@ -6543,7 +6842,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - obstructs → [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture)
 
-### #853 · 0.267 · Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0) <a id="zero-gas-forced-functionals"></a>
+### #869 · 0.267 · Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0) <a id="zero-gas-forced-functionals"></a>
 
 **Label:** Theorem · **id:** `zero_gas_forced_functionals` · **quadrant:** true but ghost-blind/untested
 
@@ -6565,7 +6864,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn)
 
-### #921 · 0.240 · Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful <a id="dh-no-brandt-control"></a>
+### #939 · 0.240 · Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful <a id="dh-no-brandt-control"></a>
 
 **Label:** Restatement · **id:** `dh_no_brandt_control` · **quadrant:** RH-sharp
 
@@ -6582,7 +6881,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [DH prime-side Gram test](#dh-prime-side-gram)
 - related to → [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square)
 
-### #924 · 0.240 · The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on <a id="negative-cone-topology"></a>
+### #942 · 0.240 · The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on <a id="negative-cone-topology"></a>
 
 **Label:** Restatement · **id:** `negative_cone_topology` · **quadrant:** RH-sharp
 
@@ -6600,7 +6899,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points)
 
-### #979 · 0.226 · 2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴) <a id="two-is-half-only-mod3"></a>
+### #997 · 0.226 · 2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴) <a id="two-is-half-only-mod3"></a>
 
 **Label:** Analogy · **id:** `two_is_half_only_mod3` · **quadrant:** background
 
@@ -6641,7 +6940,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [Half Tate twist ℚ(½)](#half-tate-twist) — |g|^{½}
 - same mechanism as → [Missing: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)](#mp-flow-h1) — RH ⇔ nothing missing from the positive space
 
-**Relations (incoming):** [Weil Gram matrix of prime-localised bumps (mutual-inductance matrix), computed from primes and ∞ only](#weil-gram-coupling-matrix) (restates); [Deninger’s foliated program](#deninger) (analogue of); [Adelic gluing: ℍ at ∞ and Bruhat–Tits trees at p in GL₂(ℚ)∖GL₂(𝔸)](#adelic-gluing-bruhat-tits) (analogue of); [ℤ̂ in the dictionary: Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂; ℚ⧵𝔸 ≅ (ℝ × ℤ̂)/ℤ; C_ℚ ≅ ℝ₊* × ℤ̂*](#profinite-integers-adelic-solenoid) (analogue of); [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (same mechanism as); [Adele-class orbits of length log p (Connes trace formula)](#connes-adelic-orbits-logp) (instance of); [Explicit-formula sign is cohomological, not a Maslov phase](#riemann-sign-cohomological) (refines); [Gutzwiller weights give shifted copies; p^{-k/2} is the half-density](#gutzwiller-weights-shifted-copies) (refines); [log p enters the modular surface as a Hecke angle, θ_p = t log p, on the spectral side, not as a geodesic length](#hecke-angle-t-log-p) (analogue of); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (uses); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (uses); [Bost–Connes KMS states](#kms-bost-connes) (analogue of); [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) (analogue of)
+**Relations (incoming):** [Weil Gram matrix of prime-localised bumps (mutual-inductance matrix), computed from primes and ∞ only](#weil-gram-coupling-matrix) (restates); [Deninger’s foliated program](#deninger) (analogue of); [Adelic gluing: ℍ at ∞ and Bruhat–Tits trees at p in GL₂(ℚ)∖GL₂(𝔸)](#adelic-gluing-bruhat-tits) (analogue of); [ℤ̂ in the dictionary: Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂; ℚ⧵𝔸 ≅ (ℝ × ℤ̂)/ℤ; C_ℚ ≅ ℝ₊* × ℤ̂*](#profinite-integers-adelic-solenoid) (analogue of); [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (same mechanism as); [Adele-class orbits of length log p (Connes trace formula)](#connes-adelic-orbits-logp) (instance of); [Explicit-formula sign is cohomological, not a Maslov phase](#riemann-sign-cohomological) (refines); [Gutzwiller weights give shifted copies; p^{-k/2} is the half-density](#gutzwiller-weights-shifted-copies) (refines); [log p enters the modular surface as a Hecke angle, θ_p = t log p, on the spectral side, not as a geodesic length](#hecke-angle-t-log-p) (analogue of); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (uses); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (uses); [Bost–Connes KMS states](#kms-bost-connes) (analogue of); [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) (analogue of); [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) (uses); [The semilocal pairing uses a twisted involution, not the naive star of chi f](#twisted-star-convolution) (corrects); [The semilocal pairing uses a twisted involution, not the naive star of chi f](#twisted-star-convolution) (distinguishes)
 
 ### #50 · 0.580 · Why the tropical test passes over F_q and fails over Z: finite diagonal <a id="tropical-needs-finite-diagonal"></a>
 
@@ -7121,9 +7420,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet)
 - contrasts with → [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)](#mp-castelnuovo) — spectral half proved, no positive involution
 
-**Relations (incoming):** [With D*D the positive archimedean part (or Stirling's log-order multiplier), the curvature K is essentially the prime part: indefinite with about half its eigenvalues negative for ζ, Davenport–Heilbronn and χ₋₄ alike, in every basis](#curvature-sign-no-separation) (related to); [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) (related to)
+**Relations (incoming):** [With D*D the positive archimedean part (or Stirling's log-order multiplier), the curvature K is essentially the prime part: indefinite with about half its eigenvalues negative for ζ, Davenport–Heilbronn and χ₋₄ alike, in every basis](#curvature-sign-no-separation) (related to); [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) (related to); [Regularity of a local ring is not a global principal generator, and not a sign](#iwasawa-regularity-class) (contrasts with)
 
-### #526 · 0.325 · F₁ base <a id="f1-base"></a>
+### #529 · 0.325 · F₁ base <a id="f1-base"></a>
 
 **Label:** Cited · **id:** `f1_base` · **quadrant:** true but ghost-blind/untested
 
@@ -7151,7 +7450,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Spec ℤ is terminal](#spec-z-terminal) (same mechanism as); [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) (analogue of)
 
-### #540 · 0.325 · Principalization <a id="principalization"></a>
+### #543 · 0.325 · Principalization <a id="principalization"></a>
 
 **Label:** Theorem · **id:** `principalization` · **quadrant:** true but ghost-blind/untested
 
@@ -7173,7 +7472,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weil operator C = i^{p−q} = Wick rotation](#weil-operator) (analogue of); [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) (analogue of)
 
-### #549 · 0.325 · Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄) <a id="chebyshev-bias-boson-fermion"></a>
+### #552 · 0.325 · Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄) <a id="chebyshev-bias-boson-fermion"></a>
 
 **Label:** Cited · **id:** `chebyshev_bias_boson_fermion` · **quadrant:** true but ghost-blind/untested
 
@@ -7196,7 +7495,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Chebyshev bias for elliptic curves (averaged sign of a_p)](#elliptic-chebyshev-bias)
 - refines → [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4)
 
-### #571 · 0.325 · Spec ℤ is terminal <a id="spec-z-terminal"></a>
+### #574 · 0.325 · Spec ℤ is terminal <a id="spec-z-terminal"></a>
 
 **Label:** Theorem · **id:** `spec_z_terminal` · **quadrant:** true but ghost-blind/untested
 
@@ -7218,7 +7517,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [F₁ base](#f1-base) (same mechanism as)
 
-### #577 · 0.325 · Weil Rosetta stone <a id="weil-rosetta"></a>
+### #580 · 0.325 · Weil Rosetta stone <a id="weil-rosetta"></a>
 
 **Label:** Cited · **id:** `weil_rosetta` · **quadrant:** true but ghost-blind/untested
 
@@ -7240,7 +7539,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [RH for curves over F_q (Weil)](#fq-curves) (lives in)
 
-### #633 · 0.325 · Cohesion (arena) <a id="cohesion"></a>
+### #636 · 0.325 · Cohesion (arena) <a id="cohesion"></a>
 
 **Label:** Theorem · **id:** `cohesion` · **quadrant:** true but ghost-blind/untested
 
@@ -7258,7 +7557,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 > ⚠ **Correction / caution.** Heaviside ≠ cohesion one-to-one.
 
-### #705 · 0.307 · Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR) <a id="euler-char-chi"></a>
+### #708 · 0.307 · Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR) <a id="euler-char-chi"></a>
 
 **Label:** Theorem · **id:** `euler_char_chi` · **quadrant:** true but ghost-blind/untested
 
@@ -7288,7 +7587,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Invariant (χ-type) vs refined (h-type) counts: Lefschetz/GRR totals, N(T), box counts are FE-determined and ghost-blind; the on-line count changes only at collisions; RH ⇔ refined = invariant](#invariant-vs-refined-count) (same mechanism as); [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles) (analogue of); [Two different χ’s: Euler characteristic vs class-group character](#two-chis) (analogue of)
 
-### #707 · 0.307 · What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ <a id="f1-square-constructions"></a>
+### #710 · 0.307 · What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ <a id="f1-square-constructions"></a>
 
 **Label:** Cited · **id:** `f1_square_constructions` · **quadrant:** true but ghost-blind/untested
 
@@ -7320,7 +7619,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - lives in → [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z)
 - analogue of → [Verschiebung as the positive adjoint of Frobenius (F† = V)](#verschiebung-positive-adjoint) — Witt F/V: pairing side only
 
-### #997 · 0.187 · The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5) <a id="missing-square-spec-z"></a>
+### #1016 · 0.187 · The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5) <a id="missing-square-spec-z"></a>
 
 **Label:** Open · **id:** `missing_square_spec_z` · **quadrant:** true but ghost-blind/untested
 
@@ -7353,7 +7652,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) (analogue of); [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) (lives in); [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) (analogue of)
 
-### #1000 · 0.181 · Two different χ’s: Euler characteristic vs class-group character <a id="two-chis"></a>
+### #1019 · 0.181 · Two different χ’s: Euler characteristic vs class-group character <a id="two-chis"></a>
 
 **Label:** Analogy · **id:** `two_chis` · **quadrant:** background
 
@@ -7556,7 +7855,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u)
 - same mechanism as → [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1)
 
-**Relations (incoming):** [Primitive-part Weil spectrometer: the TAA Lemma 149 Weil Gram restricted to kerP = {∫f e^{±u/2} = 0} (pole/cusp functionals): ζ’s only negative direction without the pole row is the pole direction (index 1, removed by kerP); ζ, L(χ₅) PSD on full and kerP to W = 16; DH’s failure is primitive: same onset (3.875 at h = 0.025, 5.7 at h = 0.05) and essentially the same index (24 / 14 at W ≈ 16) on kerP](#primitive-part-weil-spectrometer) (same mechanism as); [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u) (same mechanism as); [On windows L ≤ 8 the planes span{e^{±(β−½)x}} and span{e^{±x/2}} nearly coincide, so overlap with the pole plane cannot identify a Siegel zero](#siegel-pole-planes-coincide) (related to); [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) (same mechanism as); [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) (refines); [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) (related to); [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) (related to); [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) (refines); [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) (refines); [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) (illustrates)
+**Relations (incoming):** [Primitive-part Weil spectrometer: the TAA Lemma 149 Weil Gram restricted to kerP = {∫f e^{±u/2} = 0} (pole/cusp functionals): ζ’s only negative direction without the pole row is the pole direction (index 1, removed by kerP); ζ, L(χ₅) PSD on full and kerP to W = 16; DH’s failure is primitive: same onset (3.875 at h = 0.025, 5.7 at h = 0.05) and essentially the same index (24 / 14 at W ≈ 16) on kerP](#primitive-part-weil-spectrometer) (same mechanism as); [Light cone U = ⟨𝟙, 𝕃⟩ (pole plane, null rays)](#light-cone-u) (same mechanism as); [On windows L ≤ 8 the planes span{e^{±(β−½)x}} and span{e^{±x/2}} nearly coincide, so overlap with the pole plane cannot identify a Siegel zero](#siegel-pole-planes-coincide) (related to); [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) (same mechanism as); [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) (refines); [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) (related to); [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) (related to); [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) (refines); [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) (refines); [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) (refines); [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) (distinguishes); [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) (illustrates)
 
 ### #152 · 0.452 · The pole kernel is the symmetrised product of the forward and backward translation-cogenerator defects at rate ½ <a id="hotel-defect-pole-plane"></a>
 
@@ -7649,7 +7948,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ψ(x) − x (explicit formula, deviation from the pole)](#psi-minus-x) (same mechanism as); [Goldfeld’s theorem (Euler product at s = 1 ⇒ RH, analytic order)](#goldfeld-bsd) (analogue of); [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) (same mechanism as); [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) (same mechanism as); [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) (same mechanism as); [Buoyancy / Archimedes principle](#archimedes) (analogue of)
 
-### #500 · 0.325 · Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only <a id="h0-zeta-minus-one-orbifold-euler"></a>
+### #503 · 0.325 · Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only <a id="h0-zeta-minus-one-orbifold-euler"></a>
 
 **Label:** Theorem · **id:** `h0_zeta_minus_one_orbifold_euler` · **quadrant:** true but ghost-blind/untested
 
@@ -7668,7 +7967,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [At β = ½ the Weil kernel (prime lines log p·p^{−m/2} at m log p and the archimedean density e^{−y/2}/(1−e^{−2y})) is the x-weighted Lévy measure of the logarithm of the completed Bost–Connes/Γ partition function; the pole term renormalizes its Hagedorn tail e^{x/2}](#weil-kernel-is-levy-measure) (related to); [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) (extends); [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) (related to); [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) (uses)
 
-### #501 · 0.325 · Pole of ζ at s = 1 (residue / 3/π) <a id="pole-s1"></a>
+### #504 · 0.325 · Pole of ζ at s = 1 (residue / 3/π) <a id="pole-s1"></a>
 
 **Label:** Cited · **id:** `pole_s1` · **quadrant:** true but ghost-blind/untested
 
@@ -7698,7 +7997,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Pole plane / Tate poles at s = 0, 1](#pole-plane) (same mechanism as); [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) (same mechanism as); [The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄)](#chi-minus-one-half-pole) (refines)
 
-### #517 · 0.325 · The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane <a id="pole-block-hyperbolic-plane"></a>
+### #520 · 0.325 · The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane <a id="pole-block-hyperbolic-plane"></a>
 
 **Label:** Theorem · **id:** `pole_block_hyperbolic_plane` · **quadrant:** true but ghost-blind/untested
 
@@ -7719,7 +8018,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hyperbolic loops are the primes; zeros are an elliptic action on H¹; a hyperbolic action on H¹ is a ghost](#hyperbolic-orbits-elliptic-h1) (uses); [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh) (uses); [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) (same mechanism as)
 
-### #518 · 0.325 · Selberg resonances <a id="selberg-resonances"></a>
+### #521 · 0.325 · Selberg resonances <a id="selberg-resonances"></a>
 
 **Label:** Theorem · **id:** `selberg_resonances` · **quadrant:** true but ghost-blind/untested
 
@@ -7741,7 +8040,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Zeta zeros as modular-surface scattering resonances](#modular-resonances-half-zeros) (instance of); [Closed geodesics on the modular surface](#closed-geodesics) (same mechanism as); [Modular-surface geodesic lengths are logs of quadratic units, not log p](#modular-lengths-quadratic-units) (refines)
 
-### #519 · 0.325 · √2 family <a id="sqrt2-family"></a>
+### #522 · 0.325 · √2 family <a id="sqrt2-family"></a>
 
 **Label:** Theorem · **id:** `sqrt2_family` · **quadrant:** true but ghost-blind/untested
 
@@ -7768,7 +8067,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The prime 2 as the wild place](#prime-two-wild) (same mechanism as); [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) (same mechanism as)
 
-### #524 · 0.325 · Cusp ≠ archimedean place <a id="cusp-vs-infinity"></a>
+### #527 · 0.325 · Cusp ≠ archimedean place <a id="cusp-vs-infinity"></a>
 
 **Label:** Theorem · **id:** `cusp_vs_infinity` · **quadrant:** true but ghost-blind/untested
 
@@ -7792,7 +8091,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Poincaré disk: period domain, cusp degeneration and the trace classification](#poincare-disk-period-domain) (corrects); [Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics)](#fundamental-domain-three-phases) (same mechanism as)
 
-### #539 · 0.325 · The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction <a id="pole-transfer-pair"></a>
+### #542 · 0.325 · The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction <a id="pole-transfer-pair"></a>
 
 **Label:** Theorem · **id:** `pole_transfer_pair` · **quadrant:** true but ghost-blind/untested
 
@@ -7812,7 +8111,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [The pole kernel is the symmetrised product of the forward and backward translation-cogenerator defects at rate ½](#hotel-defect-pole-plane)
 - related to → [Pole plane / Tate poles at s = 0, 1](#pole-plane)
 
-### #550 · 0.325 · Closed geodesics on the modular surface <a id="closed-geodesics"></a>
+### #553 · 0.325 · Closed geodesics on the modular surface <a id="closed-geodesics"></a>
 
 **Label:** Theorem · **id:** `closed_geodesics` · **quadrant:** true but ghost-blind/untested
 
@@ -7838,7 +8137,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [√2 family](#sqrt2-family) (special case of)
 
-### #551 · 0.325 · Density / volume reading <a id="density-volume"></a>
+### #554 · 0.325 · Density / volume reading <a id="density-volume"></a>
 
 **Label:** Theorem · **id:** `density_volume` · **quadrant:** true but ghost-blind/untested
 
@@ -7866,7 +8165,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) (analogue of)
 
-### #568 · 0.325 · Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T <a id="plus-space-ms-is-sl2-doubled"></a>
+### #571 · 0.325 · Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T <a id="plus-space-ms-is-sl2-doubled"></a>
 
 **Label:** Theorem · **id:** `plus_space_ms_is_sl2_doubled` · **quadrant:** true but ghost-blind/untested
 
@@ -7887,7 +8186,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Maass–Selberg relations](#maass-selberg)
 - uses → [The Maass–Selberg truncated norm for SL₂(ℤ) verified by direct integration over the truncated fundamental domain, and positive for all T ≥ 1](#maass-selberg-norm-verified)
 
-### #569 · 0.325 · The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional <a id="pole-kernel-schmidt"></a>
+### #572 · 0.325 · The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional <a id="pole-kernel-schmidt"></a>
 
 **Label:** Theorem · **id:** `pole_kernel_schmidt` · **quadrant:** true but ghost-blind/untested
 
@@ -7907,7 +8206,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The pole kernel is the symmetrised product of the forward and backward translation-cogenerator defects at rate ½](#hotel-defect-pole-plane) (related to)
 
-### #576 · 0.325 · Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂ <a id="weight-half-eisenstein-doubles-once"></a>
+### #579 · 0.325 · Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂ <a id="weight-half-eisenstein-doubles-once"></a>
 
 **Label:** Theorem · **id:** `weight_half_eisenstein_doubles_once` · **quadrant:** true but ghost-blind/untested
 
@@ -7929,7 +8228,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it)](#unitary-axis-s-eq-s-plus-k4) (corrects)
 
-### #625 · 0.325 · L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line <a id="theta-fe-centre-on-line"></a>
+### #628 · 0.325 · L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line <a id="theta-fe-centre-on-line"></a>
 
 **Label:** Theorem · **id:** `theta_fe_centre_on_line` · **quadrant:** true but ghost-blind/untested
 
@@ -7947,7 +8246,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion)
 
-### #689 · 0.307 · Archimedean place and Γ_ℝ factor <a id="archimedean-place"></a>
+### #692 · 0.307 · Archimedean place and Γ_ℝ factor <a id="archimedean-place"></a>
 
 **Label:** Theorem · **id:** `archimedean_place` · **quadrant:** true but ghost-blind/untested
 
@@ -7974,7 +8273,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [∞ + pole is positive up to L = 0.750 and gains a negative at 0.775, just after p = 2 enters the window; p = 2 alone removes it](#archimedean-needs-p2) (related to); [The archimedean block has exactly 2L negative eigenvalues, matching a Landau–Widom count](#archimedean-negative-count-landau) (refines); [Cusp ≠ archimedean place](#cusp-vs-infinity) (corrects); [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) (related to); [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) (lives in); [Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial](#consani-archimedean-cohomology) (lives in); [Archimedean thresholds a*](#arch-threshold) (special case of); [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) (uses)
 
-### #691 · 0.307 · Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k <a id="herbrand-ribet"></a>
+### #694 · 0.307 · Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k <a id="herbrand-ribet"></a>
 
 **Label:** Cited · **id:** `herbrand_ribet` · **quadrant:** true but ghost-blind/untested
 
@@ -8008,7 +8307,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Gross's formula checked on supersingular isogeny graphs: the squared CM period ⟨c_D,f⟩² divided by u²√|D|·L(f,1)L(f⊗χ_D,1) is constant in D to 4e−15 (11a, 37b, 67a) and vanishes exactly with the twisted central value; a global positivity at the centre only](#gross-cm-period-square) (related to); [Herbrand–Ribet and the Iwasawa main conjecture: the spectral half without a polarization](#herbrand-ribet-spectral-no-positivity) (refines); [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) (special case of); [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) (extends); [Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0](#plus-minus-units-bernoulli) (extends); [Two different χ’s: Euler characteristic vs class-group character](#two-chis) (analogue of)
 
-### #692 · 0.307 · Mazur–Wiles main conjecture ("Euler characteristic = L-value") <a id="mazur-wiles"></a>
+### #695 · 0.307 · Mazur–Wiles main conjecture ("Euler characteristic = L-value") <a id="mazur-wiles"></a>
 
 **Label:** Cited · **id:** `mazur_wiles` · **quadrant:** true but ghost-blind/untested
 
@@ -8037,7 +8336,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) (uses); [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) (uses); [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) (related to); [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) (special case of); [Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)](#euler-char-chi) (analogue of); [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn) (analogy of); [Two different χ’s: Euler characteristic vs class-group character](#two-chis) (analogue of)
 
-### #693 · 0.307 · E₂ anomaly (E₂* = E₂ − 3/(πy)) <a id="e2-anomaly"></a>
+### #696 · 0.307 · E₂ anomaly (E₂* = E₂ − 3/(πy)) <a id="e2-anomaly"></a>
 
 **Label:** Theorem · **id:** `e2_anomaly` · **quadrant:** true but ghost-blind/untested
 
@@ -8067,7 +8366,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Displaced reference (subtracting the pole)](#displaced-reference) (same mechanism as); [Automorphy defect (TAA Lemma 144)](#automorphy-defect) (same mechanism as); [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) (same mechanism as); [Weight ladder (modular weights)](#weight-ladder) (same mechanism as); [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) (same mechanism as)
 
-### #706 · 0.307 · Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂) <a id="ramanujan-691"></a>
+### #709 · 0.307 · Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂) <a id="ramanujan-691"></a>
 
 **Label:** Cited · **id:** `ramanujan_691` · **quadrant:** true but ghost-blind/untested
 
@@ -8099,7 +8398,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) (implies); [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) (refines); [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) (extends)
 
-### #739 · 0.307 · E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2 <a id="e0-dense-window-kernel-closed"></a>
+### #742 · 0.307 · E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2 <a id="e0-dense-window-kernel-closed"></a>
 
 **Label:** Theorem · **id:** `e0_dense_window_kernel_closed` · **quadrant:** true but ghost-blind/untested
 
@@ -8134,7 +8433,69 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Pole plane / Tate poles at s = 0, 1](#pole-plane) — global versus window topology of the same two functionals
 - distinguishes → [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) — the form is hyperbolic; the projection that cuts it out is not global
 
-### #787 · 0.267 · One cusp, three readings: orbifold, Tate curve, archimedean monodromy <a id="one-cusp-three-readings"></a>
+**Relations (incoming):** [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) (distinguishes); [Both parity sectors carry a constraint; the even test is not E0](#even-odd-sector-constraints) (distinguishes)
+
+### #751 · 0.307 · The pole term is 2 ev+ ev-, equally 2(C squared minus S squared) <a id="pole-form-p-2recpluscminus"></a>
+
+**Label:** Theorem · **id:** `pole_form_P_2ReCplusCminus` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* The pole contribution is the product of the two exponential moments. In real even and odd coordinates it is 2(C squared minus S squared). In complex coordinates it is twice the real part of C+ times the conjugate of C-. It is the term that E0 is built to kill.
+
+**Core.** ev±(F) = integral F(u) exp(±u/2) du. P(F) = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conjugate C-). On a centered window, reflection splits this into a rank-one positive update on the even sector and a rank-one negative update on the odd sector: W_even = B_even + 2 c c^T and W_odd = B_odd - 2 s s^T. Globally the moment functionals are unbounded, so E0 is dense in TAA Lemma 2. On one finite window both exponentials are square-integrable, so the kernel is closed of codimension 2. That topological distinction is already in v1.19.
+
+**Formula.** P = 2 ev+ ev- = 2(C^2 - S^2) = 2 Re(C+ conj C-)
+
+**What is proved around it.** Definition of the pole term in the explicit formula, rewritten in even-odd and complex coordinates.
+
+**Also known as:** P = 2 Re(C+ conjugate C-)
+
+**Axes:** reference/pole/cusp, structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: surface + ample class + Riemann–Roch for Spec ℤ (D8)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** The even formula alone is not E0. The odd sector has its own constraint.
+
+**Relations (outgoing):**
+
+- refines → [Pole plane / Tate poles at s = 0, 1](#pole-plane) — same pole term, written as a product of moments
+- distinguishes → [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) — E0 kills P; density is global and closed codimension 2 is one window
+- refines → [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) — P is the first summand
+
+**Relations (incoming):** [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) (contrasts with); [Both parity sectors carry a constraint; the even test is not E0](#even-odd-sector-constraints) (illustrates)
+
+### #753 · 0.307 · The counterterm adds local mean statistics; it is not a global idele coupling <a id="product-formula-defect-mean"></a>
+
+**Label:** Theorem · **id:** `product_formula_defect_mean` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* M_A is a sum of separate local means, one place at a time. There is no coupling on principal ideles in this identity, so it is not a proved product-formula defect. If the prime sum runs over all prime powers inside the cutoff, the capped mean is a sum over those primes, not a one-prime expression.
+
+**Core.** Each place contributes its own truncated expectation of log |x|_v. The archimedean mean is K0 = psi(1/4) - log pi. For the primes, a_n = Lambda(n) n^(-1/2) already sums prime powers. Written as a Gibbs capped mean over every prime power with k log p < A, the diagonal is 2 times the sum over p < exp(A) of the local mean of log p times min(N_p, K_p(A)). A formula that shows only one p on the right-hand side does not match a sum over all such prime powers. The classical product formula, product over places of |x|_v = 1, is a different statement. It is not a coupling that has been constructed on principal ideles, and it is not the source of the sign.
+
+**Formula.** M_A = -K0 + 2 sum_{log n < A} a_n = -2 sum_v (local mean_v); prime part sums over p
+
+**Numbers.** At A = 2 the session records M_A = 11.22465. At A = 1, M_A = 6.35244. At A = 0.6, with no prime inside, M_A = -K0 = 5.37218.
+
+**What is proved around it.** The second expression is the definition of M_A used throughout the ledger. The expectation form is the audited reading of that constant.
+
+**Also known as:** local means of log modulus; capped prime-power mean
+
+**Axes:** reference/pole/cusp, structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Do not call this a proved product-formula defect.
+
+> ⚠ **Correction / caution.** No global idele coupling is claimed.
+
+> ⚠ **Correction / caution.** A single-prime right-hand side is the wrong way to write the sum over all prime powers.
+
+**Relations (outgoing):**
+
+- refines → [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) — the diagonal is the sum of the local expectations
+- illustrates → [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) — M_A is the counterterm in B
+- uses → [Weil positivity criterion](#weil-positivity) — bookkeeping only
+
+### #803 · 0.267 · One cusp, three readings: orbifold, Tate curve, archimedean monodromy <a id="one-cusp-three-readings"></a>
 
 **Label:** Theorem · **id:** `one_cusp_three_readings` · **quadrant:** true but ghost-blind/untested
 
@@ -8160,7 +8521,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids) (refines); [The critical-line wave: Hardy Z and the Riemann–Siegel phase](#hardy-z-critical-line-wave) (analogy of)
 
-### #799 · 0.267 · The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight <a id="one-twentyfourth-identities"></a>
+### #815 · 0.267 · The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight <a id="one-twentyfourth-identities"></a>
 
 **Label:** Theorem · **id:** `one_twentyfourth_identities` · **quadrant:** true but ghost-blind/untested
 
@@ -8188,7 +8549,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) (uses)
 
-### #800 · 0.267 · Weight ladder (modular weights) <a id="weight-ladder"></a>
+### #816 · 0.267 · Weight ladder (modular weights) <a id="weight-ladder"></a>
 
 **Label:** Theorem · **id:** `weight_ladder` · **quadrant:** true but ghost-blind/untested
 
@@ -8211,7 +8572,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) (lives in); [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) (analogue of)
 
-### #804 · 0.267 · η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential <a id="eta-chain"></a>
+### #820 · 0.267 · η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential <a id="eta-chain"></a>
 
 **Label:** Theorem · **id:** `eta_chain` · **quadrant:** true but ghost-blind/untested
 
@@ -8231,7 +8592,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [d* = −⋆d⋆ (dim 4), ∂̄* = −⋆∂⋆, Δ = 2□, [Λ,∂̄] = −i∂*; Hodge-index sign D°² = −‖α_harm‖² from ⋆ = −1 on primitive (1,1)](#dolbeault-kahler-sign) (worked example of); [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) (refines)
 
-### #816 · 0.267 · W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ <a id="archimedean-weyl-kernel"></a>
+### #832 · 0.267 · W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ <a id="archimedean-weyl-kernel"></a>
 
 **Label:** Theorem · **id:** `archimedean_weyl_kernel` · **quadrant:** true but ghost-blind/untested
 
@@ -8252,7 +8613,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) (uses)
 
-### #818 · 0.267 · The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄) <a id="chi-minus-one-half-pole"></a>
+### #834 · 0.267 · The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄) <a id="chi-minus-one-half-pole"></a>
 
 **Label:** Theorem · **id:** `chi_minus_one_half_pole` · **quadrant:** true but ghost-blind/untested
 
@@ -8275,7 +8636,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - explains → [Dedekind zeta of ℚ(i): one pole, exactly one unstable mode, aligned with the pole vector](#dedekind-qi-one-mode)
 - refines → [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1)
 
-### #854 · 0.267 · The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero <a id="tate-boundary-only-hyperbolic"></a>
+### #870 · 0.267 · The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero <a id="tate-boundary-only-hyperbolic"></a>
 
 **Label:** Theorem · **id:** `tate_boundary_only_hyperbolic` · **quadrant:** true but ghost-blind/untested
 
@@ -8308,7 +8669,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [On E×E the intersection form splits as a hyperbolic boundary term plus a perpendicular Gram whose sign is inertia, not the determinant](#fq-split-inertia-not-determinant) (contrasts with); [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) (distinguishes)
 
-### #900 · 0.240 · Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line <a id="zagier-e2-edge-dictionary"></a>
+### #918 · 0.240 · Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line <a id="zagier-e2-edge-dictionary"></a>
 
 **Label:** Restatement · **id:** `zagier_e2_edge_dictionary` · **quadrant:** RH-sharp
 
@@ -8324,7 +8685,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The r = 1 (Zagier) series fails the holomorphic weight-3/2 transformation (relative error ≈ 2): the bottom rung needs a non-holomorphic completion](#zagier-rung-non-holomorphic) (refines); [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) (related to)
 
-### #937 · 0.226 · Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2 <a id="archimedean-symbol-dispersion"></a>
+### #955 · 0.226 · Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2 <a id="archimedean-symbol-dispersion"></a>
 
 **Label:** Analogy · **id:** `archimedean_symbol_dispersion` · **quadrant:** background
 
@@ -8344,7 +8705,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Place-by-place attribution of ζ’s Weil form: on the pole-removed negative vector every place is negative; on the full form’s bottom vector only the pole is positive](#place-attribution-pole-pays) (refines)
 
-### #968 · 0.226 · (1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles <a id="duplication-fixed-point-pole"></a>
+### #986 · 0.226 · (1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles <a id="duplication-fixed-point-pole"></a>
 
 **Label:** Analogy · **id:** `duplication_fixed_point_pole` · **quadrant:** background
 
@@ -8358,7 +8719,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #1002 · 0.181 · Ramanujan's 691 as a degeneration of the pole line <a id="ramanujan-691-degeneration"></a>
+### #1021 · 0.181 · Ramanujan's 691 as a degeneration of the pole line <a id="ramanujan-691-degeneration"></a>
 
 **Label:** Analogy · **id:** `ramanujan_691_degeneration` · **quadrant:** background
 
@@ -8410,7 +8771,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Fake Weil polynomials (finite ghosts)](#fake-weil-poly)
 - feeds → [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)](#mp-castelnuovo) — still no zeros-blind Q over Q; Open ~1.8
 
-**Relations (incoming):** [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (distinguishes); [Maxwell–Cremona on the discretized mix wall Σ is too thin to lift](#s2-wall-too-thin-for-cremona) (same mechanism as); [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) (related to); [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) (uses)
+**Relations (incoming):** [A positive metric forces holes to sit as harmonic classes; occupancy does not](#metric-forces-harmonic-holes) (distinguishes); [Maxwell–Cremona on the discretized mix wall Σ is too thin to lift](#s2-wall-too-thin-for-cremona) (same mechanism as); [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) (related to); [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) (uses); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (distinguishes)
 
 ### #32 · 0.580 · Block-wise Weil-form diagnostic (BR-2): R-symmetric tilt blocks detect DH’s off-line pairs from the prime side <a id="blockwise-weil-diagnostic"></a>
 
@@ -10205,6 +10566,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls)
 - related to → [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy)
 
+**Relations (incoming):** [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (distinguishes)
+
 ### #313 · 0.400 · Ghost-onset law on mixes needs a δ correction <a id="ghost-onset-mix23-delta-correction"></a>
 
 **Label:** Numerical · **id:** `ghost_onset_mix23_delta_correction` · **quadrant:** RH-sharp
@@ -10984,7 +11347,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.7 · evidence 0.8 → priority 0.365
 
-**Relations (incoming):** [Primitive integral period polynomials 36X¹⁰−691X⁸+2073X⁶−2073X⁴+691X²−36 and 4X⁹−25X⁷+42X⁵−25X³+4X; ⟨Δ,Δ⟩/(Ω⁺Ω⁻) = 691/2¹⁰ (residual 1e−41)](#period-ratio-691) (uses)
+> ⚠ **Correction / caution.** v1.20. This norm is finite and positive. Decay of the cusp integrand is the reason the integral converges. It is not a degeneration of the pairing, and it is not W.
+
+**Relations (incoming):** [Primitive integral period polynomials 36X¹⁰−691X⁸+2073X⁶−2073X⁴+691X²−36 and 4X⁹−25X⁷+42X⁵−25X³+4X; ⟨Δ,Δ⟩/(Ω⁺Ω⁻) = 691/2¹⁰ (residual 1e−41)](#period-ratio-691) (uses); [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) (distinguishes)
 
 ### #381 · 0.365 · On log2 < L ≤ log3 the p=2 term cancels the Γ+pole negative to the floor (1e−5 hat basis): positivity is a near-cancellation <a id="prime-term-supplies-positivity"></a>
 
@@ -11608,7 +11973,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - illustrates → [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation)
 - contrasts with → [‖P₂‖ = log2/√2 = 0.490 while λ_min(Γ+pole) = −0.423 at log 3: no surplus-vs-prime comparison proves rung 1](#crude-domination-fails) — different comparison; still not a certificate
 
-**Relations (incoming):** [Free basis, off E0: one negative Galerkin eigenvalue of W minus the pole, not a certificate](#window-signature-numerical-witness) (illustrates)
+**Relations (incoming):** [Free basis, off E0: one negative Galerkin eigenvalue of W minus the pole, not a certificate](#window-signature-numerical-witness) (illustrates); [At width 2 the near-null cluster is unresolved across bases](#near-null-cluster-a2) (contrasts with)
 
 ### #422 · 0.365 · Free basis, off E0: one negative Galerkin eigenvalue of W minus the pole, not a certificate <a id="window-signature-numerical-witness"></a>
 
@@ -11793,7 +12158,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - constrains → [Davenport–Heilbronn function](#davenport-heilbronn)
 - related to → [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier)
 
-### #605 · 0.325 · What Lambda <= 0.19 would actually need <a id="lambda-019-gate"></a>
+### #608 · 0.325 · What Lambda <= 0.19 would actually need <a id="lambda-019-gate"></a>
 
 **Label:** Cited · **id:** `lambda_019_gate` · **quadrant:** true but ghost-blind/untested
 
@@ -11811,7 +12176,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [de Bruijn–Newman constant Λ](#debruijn-newman)
 
-### #616 · 0.325 · Polymath15: the barrier is not the bottleneck for upper bounds on Lambda <a id="polymath15-barrier-not-bottleneck"></a>
+### #619 · 0.325 · Polymath15: the barrier is not the bottleneck for upper bounds on Lambda <a id="polymath15-barrier-not-bottleneck"></a>
 
 **Label:** Cited · **id:** `polymath15_barrier_not_bottleneck` · **quadrant:** true but ghost-blind/untested
 
@@ -11833,7 +12198,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [de Bruijn–Newman constant Λ](#debruijn-newman)
 
-### #652 · 0.325 · Multi-channel first-order factors are bounded by the SOS fit <a id="gram-factor-channel-bound"></a>
+### #655 · 0.325 · Multi-channel first-order factors are bounded by the SOS fit <a id="gram-factor-channel-bound"></a>
 
 **Label:** Theorem · **id:** `gram_factor_channel_bound` · **quadrant:** true but ghost-blind/untested
 
@@ -11856,7 +12221,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Weil Gram matrix of prime-localised bumps (mutual-inductance matrix), computed from primes and ∞ only](#weil-gram-coupling-matrix)
 - analogy of → [Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian](#johnson-lippmann-supercharge)
 
-### #725 · 0.307 · Archimedean thresholds a* <a id="arch-threshold"></a>
+### #728 · 0.307 · Archimedean thresholds a* <a id="arch-threshold"></a>
 
 **Label:** Numerical · **id:** `arch_threshold` · **quadrant:** true but ghost-blind/untested
 
@@ -11885,7 +12250,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Archimedean place and Γ_ℝ factor](#archimedean-place) (same mechanism as)
 
-### #726 · 0.307 · Hofstadter gap labels for F/V fluxes <a id="gap-labelling-fv-check"></a>
+### #729 · 0.307 · Hofstadter gap labels for F/V fluxes <a id="gap-labelling-fv-check"></a>
 
 **Label:** Numerical · **id:** `gap_labelling_fv_check` · **quadrant:** true but ghost-blind/untested
 
@@ -11911,7 +12276,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) (refines); [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) (corrects)
 
-### #727 · 0.307 · Hofstadter gap widths decay exponentially in |n|, not n^2 <a id="gap-width-vs-label"></a>
+### #730 · 0.307 · Hofstadter gap widths decay exponentially in |n|, not n^2 <a id="gap-width-vs-label"></a>
 
 **Label:** Numerical · **id:** `gap_width_vs_label` · **quadrant:** true but ghost-blind/untested
 
@@ -11934,7 +12299,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check)
 - corrects → [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) — gap widths are log-linear in |n|, not quadratic in n
 
-### #728 · 0.307 · Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z² <a id="slack-ledger-cf"></a>
+### #731 · 0.307 · Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z² <a id="slack-ledger-cf"></a>
 
 **Label:** Numerical · **id:** `slack_ledger_cf` · **quadrant:** true but ghost-blind/untested
 
@@ -11959,7 +12324,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack)
 - refines → [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero)
 
-### #729 · 0.307 · Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4 <a id="birth-from-near-null-floor"></a>
+### #732 · 0.307 · Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4 <a id="birth-from-near-null-floor"></a>
 
 **Label:** Numerical · **id:** `birth_from_near_null_floor` · **quadrant:** true but ghost-blind/untested
 
@@ -11977,7 +12342,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - corrects → [“RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor](#never-focuses-conjecture-downgraded)
 
-### #730 · 0.307 · Gap widths approaching the wall <a id="gap-width-wall-exponent"></a>
+### #733 · 0.307 · Gap widths approaching the wall <a id="gap-width-wall-exponent"></a>
 
 **Label:** Numerical · **id:** `gap_width_wall_exponent` · **quadrant:** true but ghost-blind/untested
 
@@ -11999,7 +12364,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy)
 
-### #732 · 0.307 · Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind <a id="gaussian-filter-ghost-blind"></a>
+### #735 · 0.307 · Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind <a id="gaussian-filter-ghost-blind"></a>
 
 **Label:** Numerical · **id:** `gaussian_filter_ghost_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -12023,7 +12388,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) (constrains)
 
-### #734 · 0.307 · Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity <a id="arithmetic-topology-linking-matrix"></a>
+### #737 · 0.307 · Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity <a id="arithmetic-topology-linking-matrix"></a>
 
 **Label:** Numerical · **id:** `arithmetic_topology_linking_matrix` · **quadrant:** true but ghost-blind/untested
 
@@ -12044,7 +12409,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - compared with → [Weil Gram matrix of prime-localised bumps (mutual-inductance matrix), computed from primes and ∞ only](#weil-gram-coupling-matrix)
 - constrains → [Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow](#hopf-fibration-spec-z)
 
-### #735 · 0.307 · Iterated log-concavity is ghost- and DH-blind <a id="coefficient-ilc-ghost-blind"></a>
+### #738 · 0.307 · Iterated log-concavity is ghost- and DH-blind <a id="coefficient-ilc-ghost-blind"></a>
 
 **Label:** Numerical · **id:** `coefficient_ilc_ghost_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -12068,7 +12433,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind) (analogy of)
 
-### #736 · 0.307 · The Fisher curvature operator on bivectors is ghost-blind <a id="fisher-curvature-operator-ghost-blind"></a>
+### #739 · 0.307 · The Fisher curvature operator on bivectors is ghost-blind <a id="fisher-curvature-operator-ghost-blind"></a>
 
 **Label:** Numerical · **id:** `fisher_curvature_operator_ghost_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -12092,7 +12457,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) (analogy of)
 
-### #737 · 0.307 · Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes <a id="dbn-monotone-functionals"></a>
+### #740 · 0.307 · Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes <a id="dbn-monotone-functionals"></a>
 
 **Label:** Numerical · **id:** `dbn_monotone_functionals` · **quadrant:** true but ghost-blind/untested
 
@@ -12116,7 +12481,36 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - tests → [de Bruijn–Newman constant Λ](#debruijn-newman)
 
-### #785 · 0.267 · Yoshida window positivity <a id="yoshida"></a>
+### #750 · 0.307 · At width 2 the near-null cluster is unresolved across bases <a id="near-null-cluster-a2"></a>
+
+**Label:** Numerical · **id:** `near_null_cluster_A2` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* Two numerical pictures of the same width disagree about a cluster of tiny values. One basis shows several eigenvalues near 10^(-3). Another shows values near 10^(-15). Both are uncertified. Neither number is an eigenvalue of the bulk form.
+
+**Core.** map1965, sine Galerkin, reports a cluster of small positive values around 8·10^(-4), and that picture moves when prime couplings are scaled by 1.002. moment1975 reports a near-null scale around 10^(-15). Different bases, different quadrature. The audit leaves both unresolved. A second even value that seems to cross through zero under a prime-2 scaling is a count in one matrix, not a certified gap. Finite positive Galerkin values remain upper bounds on minima when they come from a Rayleigh-Ritz projection. They are not analytic positivity. Calling a Ritz value and a tail estimate a bracket overstates what was proved.
+
+**Numbers.** Do not quote either cluster as spec(B). · |cosine| 0.970, 0.991, and 0.997, and the E0 estimates at A = 0.6 and A = 1, are uncertified. They are not squared overlaps and not brackets.
+
+**Tests it must pass.** A later certified enclosure would have to name its basis, its quadrature error, and an interval that both present pictures can meet. Nothing here does that.
+
+**Also known as:** A = 2 spectrum not certified
+
+**Axes:** numerics/certificate, sign/positivity (Ax2)
+
+**Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.05 · tractability 0.7 · evidence 0.8 → priority 0.307
+
+> ⚠ **Correction / caution.** Apparent lambda_2 is not a verified eigenvalue.
+
+> ⚠ **Correction / caution.** A positive finite matrix does not prove positivity of the form.
+
+> ❓ **Not verified / open.** No certified spectral gap at A = 2, and no certified second eigenvalue.
+
+**Relations (outgoing):**
+
+- obstructs → [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) — the index count at A = 2 is not certified, so the criterion cannot be evaluated there
+- contrasts with → [Exact-E0 Galerkin minima shrink with the window and are not certificates](#spring-galerkin-near-cancellation) — another finite positive minimum; still an upper bound, still not analytic positivity
+
+### #801 · 0.267 · Yoshida window positivity <a id="yoshida"></a>
 
 **Label:** Cited · **id:** `yoshida` · **quadrant:** true but ghost-blind/untested
 
@@ -12146,7 +12540,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Certified positivity windows](#certified-windows) (special case of); [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) (special case of); [Archimedean thresholds a*](#arch-threshold) (same mechanism as)
 
-### #911 · 0.240 · Rodgers-Tao renormalization needs the zero count (Turing) <a id="rt-renormalization-count-drift"></a>
+### #929 · 0.240 · Rodgers-Tao renormalization needs the zero count (Turing) <a id="rt-renormalization-count-drift"></a>
 
 **Label:** Restatement · **id:** `rt_renormalization_count_drift` · **quadrant:** RH-sharp
 
@@ -12922,7 +13316,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - lives in → [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh)
 - analogue of → [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) — maximally resonant vs non-resonant tensor products
 
-### #499 · 0.325 · Sundman clock for the F/V collision <a id="fv-sundman-oscillator"></a>
+### #502 · 0.325 · Sundman clock for the F/V collision <a id="fv-sundman-oscillator"></a>
 
 **Label:** Theorem · **id:** `fv_sundman_oscillator` · **quadrant:** true but ghost-blind/untested
 
@@ -12947,7 +13341,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock) (analogy of); [The gap-squared clock is hyperbolic arc length](#sundman-clock-hyperbolic-length) (refines); [Kepler in Sundman time is linear: r″ = 2E r + k](#sundman-linear-kepler) (refines); [Ghost pair as dispersion (frequency-dependent decay)](#ghost-as-dispersion) (analogy of)
 
-### #502 · 0.325 · Equation of state of the window Weil operator <a id="window-equation-of-state"></a>
+### #505 · 0.325 · Equation of state of the window Weil operator <a id="window-equation-of-state"></a>
 
 **Label:** Theorem · **id:** `window_equation_of_state` · **quadrant:** true but ghost-blind/untested
 
@@ -12974,7 +13368,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [A ghost makes the window mechanically unstable](#ghost-negative-compressibility) (instance of); [Genuine windows are baroclinic, controls barotropic](#window-barotropy) (instance of); [Piston free energy of the window Weil operator](#piston-window-free-energy) (refines); [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) (refines)
 
-### #513 · 0.325 · The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC <a id="jordan-shear-dtdc"></a>
+### #516 · 0.325 · The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC <a id="jordan-shear-dtdc"></a>
 
 **Label:** Theorem · **id:** `jordan_shear_dtdc` · **quadrant:** true but ghost-blind/untested
 
@@ -12995,7 +13389,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) (uses); [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) (related to)
 
-### #514 · 0.325 · Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone <a id="kepler-jacobi-trichotomy"></a>
+### #517 · 0.325 · Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone <a id="kepler-jacobi-trichotomy"></a>
 
 **Label:** Theorem · **id:** `kepler_jacobi_trichotomy` · **quadrant:** true but ghost-blind/untested
 
@@ -13015,7 +13409,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Planar and vertical Lyapunov families from L1/L2 (Earth–Moon, Sun–Jupiter), with halo bifurcations at ν_v = 1](#lyapunov-families-halo) (related to); [12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12](#twelve-numerology) (constrains); [Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0](#hill-neck-lambda2) (analogue of)
 
-### #515 · 0.325 · At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite <a id="l1-fundamental-symmetry"></a>
+### #518 · 0.325 · At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite <a id="l1-fundamental-symmetry"></a>
 
 **Label:** Theorem · **id:** `l1_fundamental_symmetry` · **quadrant:** true but ghost-blind/untested
 
@@ -13037,7 +13431,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Moving the Selberg-side J to ζ: the pole-plane frame transfers, positivity of the complement does not](#j-transplant) (related to)
 
-### #516 · 0.325 · At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant <a id="l4-veff-hessian-negative-definite"></a>
+### #519 · 0.325 · At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant <a id="l4-veff-hessian-negative-definite"></a>
 
 **Label:** Theorem · **id:** `l4_veff_hessian_negative_definite` · **quadrant:** true but ghost-blind/untested
 
@@ -13057,7 +13451,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Dissipation-induced instability at L4: any velocity damping destabilises the Krein-negative libration for every μ below the Routh value](#drag-destabilises-krein-minus-libration) (uses); [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) (contrasts with); [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) (analogue of)
 
-### #521 · 0.325 · Levi-Civita regularization of zero collisions <a id="calogero-pair-levi-civita"></a>
+### #524 · 0.325 · Levi-Civita regularization of zero collisions <a id="calogero-pair-levi-civita"></a>
 
 **Label:** Theorem · **id:** `calogero_pair_levi_civita` · **quadrant:** true but ghost-blind/untested
 
@@ -13079,7 +13473,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Rodgers-Tao Hamiltonian as a Sundman clock](#rt-energy-sundman-clock) (refines); [Sundman-regularized Rodgers-Tao energy](#sundman-regularized-rt-energy) (refines)
 
-### #523 · 0.325 · Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability <a id="count-vs-stability-gyroscopic"></a>
+### #526 · 0.325 · Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability <a id="count-vs-stability-gyroscopic"></a>
 
 **Label:** Theorem · **id:** `count_vs_stability_gyroscopic` · **quadrant:** true but ghost-blind/untested
 
@@ -13099,7 +13493,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [L4 linearization, Krein signatures and the Routh wall](#l4-routh-krein)
 - analogue of → [Gyroscopic pencil of the Weil form](#weil-gyroscopic-pencil) — count = Lefschetz, stability = positivity
 
-### #532 · 0.325 · Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant <a id="lagrange-clock-rates"></a>
+### #535 · 0.325 · Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant <a id="lagrange-clock-rates"></a>
 
 **Label:** Theorem · **id:** `lagrange_clock_rates` · **quadrant:** true but ghost-blind/untested
 
@@ -13122,7 +13516,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Twin clock along the heat flow: DH's light-cone crossing recedes to ∞ as its ghosts land](#dbn-light-cone-recession) (analogy of)
 
-### #534 · 0.325 · Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured <a id="lrl-rational-closure"></a>
+### #537 · 0.325 · Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured <a id="lrl-rational-closure"></a>
 
 **Label:** Theorem · **id:** `lrl_rational_closure` · **quadrant:** true but ghost-blind/untested
 
@@ -13143,7 +13537,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [LRL vector against the Jacobi constant: {A, C} splits exactly into a frame (Coriolis) part and a tidal part ∝ μ](#lrl-c-frame-tidal) (refines)
 
-### #542 · 0.325 · Rodgers-Tao Hamiltonian as a Sundman clock <a id="rt-energy-sundman-clock"></a>
+### #545 · 0.325 · Rodgers-Tao Hamiltonian as a Sundman clock <a id="rt-energy-sundman-clock"></a>
 
 **Label:** Theorem · **id:** `rt_energy_sundman_clock` · **quadrant:** true but ghost-blind/untested
 
@@ -13166,7 +13560,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The monotone log-gas energy cannot certify real zeros](#rt-energy-monotone-but-blind) (refines)
 
-### #544 · 0.325 · The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions <a id="sitting-still"></a>
+### #547 · 0.325 · The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions <a id="sitting-still"></a>
 
 **Label:** Theorem · **id:** `sitting_still` · **quadrant:** true but ghost-blind/untested
 
@@ -13187,7 +13581,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) (refines)
 
-### #546 · 0.325 · Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry <a id="xp2dof-maupertuis-finsler"></a>
+### #549 · 0.325 · Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry <a id="xp2dof-maupertuis-finsler"></a>
 
 **Label:** Theorem · **id:** `xp2dof_maupertuis_finsler` · **quadrant:** true but ghost-blind/untested
 
@@ -13207,7 +13601,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H](#flag-curvature-gauge-dependent) (constrains); [Route: Jacobi/Finsler geometry of xp as a positivity source](#jacobi-finsler-positivity-route) (refines)
 
-### #559 · 0.325 · Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution <a id="hopf-lax-maupertuis-duality"></a>
+### #562 · 0.325 · Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution <a id="hopf-lax-maupertuis-duality"></a>
 
 **Label:** Theorem · **id:** `hopf_lax_maupertuis_duality` · **quadrant:** true but ghost-blind/untested
 
@@ -13223,7 +13617,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Jacobi curvature sees only the trace of the log-Hessian of kinetic energy](#jacobi-curvature-trace-only) (analogue of); [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) (related to)
 
-### #560 · 0.325 · Positive conserved tensor from an imaginary shift (local smoothing paper) <a id="imaginary-shift-positive-tensor"></a>
+### #563 · 0.325 · Positive conserved tensor from an imaginary shift (local smoothing paper) <a id="imaginary-shift-positive-tensor"></a>
 
 **Label:** Cited · **id:** `imaginary_shift_positive_tensor` · **quadrant:** true but ghost-blind/untested
 
@@ -13245,7 +13639,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Divergence-free positive tensors as a quantitative tool once positivity is known](#dpt-quantitative-template) (instance of)
 
-### #562 · 0.325 · Two Kepler degenerations on the F/V gap axis <a id="kepler-two-degenerations"></a>
+### #565 · 0.325 · Two Kepler degenerations on the F/V gap axis <a id="kepler-two-degenerations"></a>
 
 **Label:** Theorem · **id:** `kepler_two_degenerations` · **quadrant:** true but ghost-blind/untested
 
@@ -13269,7 +13663,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) (refines)
 
-### #564 · 0.325 · L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force <a id="l4l5-isospectral-symmetric-damping"></a>
+### #567 · 0.325 · L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force <a id="l4l5-isospectral-symmetric-damping"></a>
 
 **Label:** Theorem · **id:** `l4l5_isospectral_symmetric_damping` · **quadrant:** true but ghost-blind/untested
 
@@ -13289,7 +13683,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Sub-Keplerian gas drag makes L4 less unstable than L5: a decay-rate asymmetry, not an accumulation](#headwind-drag-l4-preference) (contrasts with)
 
-### #567 · 0.325 · Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window <a id="penning-trap-l4-twin"></a>
+### #570 · 0.325 · Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window <a id="penning-trap-l4-twin"></a>
 
 **Label:** Theorem · **id:** `penning_trap_l4_twin` · **quadrant:** true but ghost-blind/untested
 
@@ -13308,7 +13702,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite)
 - illustrates → [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh)
 
-### #570 · 0.325 · L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)² <a id="rational-frequency-ratio-quadratic-mu"></a>
+### #573 · 0.325 · L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)² <a id="rational-frequency-ratio-quadratic-mu"></a>
 
 **Label:** Theorem · **id:** `rational_frequency_ratio_quadratic_mu` · **quadrant:** true but ghost-blind/untested
 
@@ -13328,7 +13722,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)](#routh-q-sqrt69-numerology) (related to)
 
-### #573 · 0.325 · Regularized xp as the hyperbolic Sundman clock <a id="srl-hyperbolic-sundman-clock"></a>
+### #576 · 0.325 · Regularized xp as the hyperbolic Sundman clock <a id="srl-hyperbolic-sundman-clock"></a>
 
 **Label:** Theorem · **id:** `srl_hyperbolic_sundman_clock` · **quadrant:** true but ghost-blind/untested
 
@@ -13348,7 +13742,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Regularized xp on an energy level is a particle hitting an exponential wall](#xp-liouville-wall) (refines)
 
-### #578 · 0.325 · Regularized xp on an energy level is a particle hitting an exponential wall <a id="xp-liouville-wall"></a>
+### #581 · 0.325 · Regularized xp on an energy level is a particle hitting an exponential wall <a id="xp-liouville-wall"></a>
 
 **Label:** Theorem · **id:** `xp_liouville_wall` · **quadrant:** true but ghost-blind/untested
 
@@ -13367,7 +13761,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock)
 - explains → [Semiclassical counting of xp regularizations vs Riemann-von Mangoldt](#xp-counting-orders)
 
-### #582 · 0.325 · A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)² <a id="background-density-raises-routh"></a>
+### #585 · 0.325 · A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)² <a id="background-density-raises-routh"></a>
 
 **Label:** Theorem · **id:** `background_density_raises_routh` · **quadrant:** true but ghost-blind/untested
 
@@ -13385,7 +13779,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - extends → [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh)
 
-### #604 · 0.325 · Kepler eccentricity as a degree of polarization (KS dictionary) <a id="ks-polarization-dictionary"></a>
+### #607 · 0.325 · Kepler eccentricity as a degree of polarization (KS dictionary) <a id="ks-polarization-dictionary"></a>
 
 **Label:** Theorem · **id:** `ks_polarization_dictionary` · **quadrant:** true but ghost-blind/untested
 
@@ -13403,7 +13797,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound](#ks-stokes-hasse)
 
-### #606 · 0.325 · Real-rooted exponential sums are restricted Lee–Yang polynomials <a id="lee-yang-multivariate-restriction"></a>
+### #609 · 0.325 · Real-rooted exponential sums are restricted Lee–Yang polynomials <a id="lee-yang-multivariate-restriction"></a>
 
 **Label:** Theorem · **id:** `lee_yang_multivariate_restriction` · **quadrant:** true but ghost-blind/untested
 
@@ -13419,7 +13813,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Branch selection by arithmetic](#phase-branch-selection)
 
-### #607 · 0.325 · Legendre criterion for Poincare time changes of xp <a id="legendre-poincare-criterion"></a>
+### #610 · 0.325 · Legendre criterion for Poincare time changes of xp <a id="legendre-poincare-criterion"></a>
 
 **Label:** Theorem · **id:** `legendre_poincare_criterion` · **quadrant:** true but ghost-blind/untested
 
@@ -13439,7 +13833,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary)
 
-### #614 · 0.325 · Piston free energy of the window Weil operator <a id="piston-window-free-energy"></a>
+### #617 · 0.325 · Piston free energy of the window Weil operator <a id="piston-window-free-energy"></a>
 
 **Label:** Theorem · **id:** `piston_window_free_energy` · **quadrant:** true but ghost-blind/untested
 
@@ -13463,7 +13857,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Equation of state of the window Weil operator](#window-equation-of-state)
 
-### #618 · 0.325 · Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle <a id="routh27-from-right-triangles"></a>
+### #621 · 0.325 · Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle <a id="routh27-from-right-triangles"></a>
 
 **Label:** Theorem · **id:** `routh27_from_right_triangles` · **quadrant:** true but ghost-blind/untested
 
@@ -13479,7 +13873,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [L4 linearization, Krein signatures and the Routh wall](#l4-routh-krein)
 
-### #620 · 0.325 · Lagrangian of the regularized xp (massive square-root form) <a id="srl-lagrangian"></a>
+### #623 · 0.325 · Lagrangian of the regularized xp (massive square-root form) <a id="srl-lagrangian"></a>
 
 **Label:** Theorem · **id:** `srl_lagrangian` · **quadrant:** true but ghost-blind/untested
 
@@ -13499,7 +13893,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary)
 
-### #622 · 0.325 · The gap-squared clock is hyperbolic arc length <a id="sundman-clock-hyperbolic-length"></a>
+### #625 · 0.325 · The gap-squared clock is hyperbolic arc length <a id="sundman-clock-hyperbolic-length"></a>
 
 **Label:** Theorem · **id:** `sundman_clock_hyperbolic_length` · **quadrant:** true but ghost-blind/untested
 
@@ -13519,7 +13913,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Sundman clock for the F/V collision](#fv-sundman-oscillator)
 
-### #623 · 0.325 · Kepler in Sundman time is linear: r″ = 2E r + k <a id="sundman-linear-kepler"></a>
+### #626 · 0.325 · Kepler in Sundman time is linear: r″ = 2E r + k <a id="sundman-linear-kepler"></a>
 
 **Label:** Theorem · **id:** `sundman_linear_kepler` · **quadrant:** true but ghost-blind/untested
 
@@ -13537,7 +13931,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Sundman clock for the F/V collision](#fv-sundman-oscillator)
 
-### #624 · 0.325 · Distortionless telegrapher line as a conformally symplectic flow <a id="telegrapher-distortionless"></a>
+### #627 · 0.325 · Distortionless telegrapher line as a conformally symplectic flow <a id="telegrapher-distortionless"></a>
 
 **Label:** Theorem · **id:** `telegrapher_distortionless` · **quadrant:** true but ghost-blind/untested
 
@@ -13557,7 +13951,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Conformally symplectic flows have exact forms and no Hamiltonian](#conformal-symplectic-no-hamiltonian)
 
-### #631 · 0.325 · Distortionless criterion for the xp family: constant divergence <a id="xp-distortionless-constant-divergence"></a>
+### #634 · 0.325 · Distortionless criterion for the xp family: constant divergence <a id="xp-distortionless-constant-divergence"></a>
 
 **Label:** Theorem · **id:** `xp_distortionless_constant_divergence` · **quadrant:** true but ghost-blind/untested
 
@@ -13577,7 +13971,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Tension and amplitude dictionary](#half-density-tension-dictionary)
 
-### #650 · 0.325 · Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R <a id="routh-not-kac-wall"></a>
+### #653 · 0.325 · Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R <a id="routh-not-kac-wall"></a>
 
 **Label:** Theorem · **id:** `routh_not_kac_wall` · **quadrant:** true but ghost-blind/untested
 
@@ -13596,7 +13990,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) (related to)
 
-### #658 · 0.325 · The window Weil operator is not extensive <a id="window-nonextensivity"></a>
+### #661 · 0.325 · The window Weil operator is not extensive <a id="window-nonextensivity"></a>
 
 **Label:** Theorem · **id:** `window_nonextensivity` · **quadrant:** true but ghost-blind/untested
 
@@ -13619,7 +14013,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state)
 - analogy of → [Gas positivities: positive weights ⇒ positive-definite KMS characteristic function and convex log Z; Euler product ⇒ infinitely divisible (free gas). DH fails all; Epstein and ζ(s)ζ(s+a) show none forces RH](#free-gas-positivity-ladder)
 
-### #659 · 0.325 · Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H <a id="flag-curvature-gauge-dependent"></a>
+### #662 · 0.325 · Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H <a id="flag-curvature-gauge-dependent"></a>
 
 **Label:** Theorem · **id:** `flag_curvature_gauge_dependent` · **quadrant:** true but ghost-blind/untested
 
@@ -13637,7 +14031,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry](#xp2dof-maupertuis-finsler)
 
-### #666 · 0.325 · Two-component Lee–Yang can fail <a id="two-component-lee-yang-can-fail"></a>
+### #669 · 0.325 · Two-component Lee–Yang can fail <a id="two-component-lee-yang-can-fail"></a>
 
 **Label:** Theorem · **id:** `two_component_lee_yang_can_fail` · **quadrant:** true but ghost-blind/untested
 
@@ -13653,7 +14047,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Lee–Yang vs Fisher zeros; single-spin Lee–Yang property of Φ ⇔ RH (Restatement) ⇔ Λ ≤ 0](#lee-yang-fisher-rh)
 
-### #672 · 0.324 · CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve <a id="cr3bp-zvc-hasse-dictionary"></a>
+### #675 · 0.324 · CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve <a id="cr3bp-zvc-hasse-dictionary"></a>
 
 **Label:** Analogy · **id:** `cr3bp_zvc_hasse_dictionary` · **quadrant:** background
 
@@ -13679,7 +14073,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [W_L is the compatible metric g = ω(·, J·), not the canonical symplectic form](#weil-form-is-compatible-g) (related to); [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) (related to)
 
-### #673 · 0.324 · Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ <a id="cuspform-residual-cong-as-pinch"></a>
+### #676 · 0.324 · Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ <a id="cuspform-residual-cong-as-pinch"></a>
 
 **Label:** Analogy · **id:** `cuspform_residual_cong_as_pinch` · **quadrant:** background
 
@@ -13700,7 +14094,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) — residual Spec T collision ↔ Σ / ZVC pinch (Analogy ~2.4–2.7)
 - uses → [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) — Waterhouse mod-p list is the occupancy arithmetic the Hessian cannot see
 
-### #674 · 0.324 · Kramers–Kronig relations <a id="kramers-kronig"></a>
+### #677 · 0.324 · Kramers–Kronig relations <a id="kramers-kronig"></a>
 
 **Label:** Analogy · **id:** `kramers_kronig` · **quadrant:** background
 
@@ -13725,7 +14119,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Passivity (positive real part)](#passivity) (implies); [Alias lock: (U) is the sign-neutral analytic half; (P) is positivity on the primitive part](#kl-polarization-alias-lock) (related to); [Zeros as Breit–Wigner resonances (line shapes, cusp doublets)](#breit-wigner-resonances) (same mechanism as); [Organizing split: ghost-blind = phase, ghost-sensitive = sign](#split-blind-sensitive) (same mechanism as); [Passive arithmetic response of 32a1 (Λ′/Λ as a Foster function)](#arithmetic-response-passivity-32a1) (counterexample to sufficiency of); [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) (analogy of); [Anomalous dispersion](#anomalous-dispersion) (same mechanism as)
 
-### #675 · 0.324 · No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy) <a id="no-ghost-gupta-bleuler-analogy"></a>
+### #678 · 0.324 · No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy) <a id="no-ghost-gupta-bleuler-analogy"></a>
 
 **Label:** Analogy · **id:** `no_ghost_gupta_bleuler_analogy` · **quadrant:** background
 
@@ -13749,7 +14143,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Conjecture: a no-ghost-type polarisation forced by an algebra with central term 24](#central-term-24-algebra-conjecture) (refines); [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) (analogy of)
 
-### #676 · 0.324 · The Shapovalov Gram per level as an analogue of the Weil form per window <a id="shapovalov-weil-window"></a>
+### #679 · 0.324 · The Shapovalov Gram per level as an analogue of the Weil form per window <a id="shapovalov-weil-window"></a>
 
 **Label:** Analogy · **id:** `shapovalov_weil_window` · **quadrant:** background
 
@@ -13769,7 +14163,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Kac gap at the c = 1 edge closes like N^{−1.04}, the ζ window gap like e^{−1.67L}: not alike](#c1-edge-power-law-vs-zeta-exponential) (constrains); [Weil negatives switch on one per step, while Kac walls flip p(N − rs) directions at once](#weil-onsets-simple-vs-kac-multiplicity) (constrains); [Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷](#kac-formula-verified) (feeds)
 
-### #677 · 0.324 · Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count <a id="mazur-wiles-squeeze-vs-positivity"></a>
+### #680 · 0.324 · Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count <a id="mazur-wiles-squeeze-vs-positivity"></a>
 
 **Label:** Analogy · **id:** `mazur_wiles_squeeze_vs_positivity` · **quadrant:** background
 
@@ -13789,7 +14183,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - contrasts with → [Weil positivity criterion](#weil-positivity)
 - related to → [Herbrand–Ribet and the Iwasawa main conjecture: the spectral half without a polarization](#herbrand-ribet-spectral-no-positivity)
 
-### #678 · 0.324 · Gribov ambiguity <a id="gribov"></a>
+### #681 · 0.324 · Gribov ambiguity <a id="gribov"></a>
 
 **Label:** Analogy · **id:** `gribov` · **quadrant:** background
 
@@ -13816,7 +14210,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [BRST / Gupta–Bleuler physical quotient](#brst)
 - fails for → [Källén–Lehmann spectral positivity](#kallen-lehmann) — spectral positivity violated
 
-### #679 · 0.324 · Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like) <a id="integrable-vs-kam-reading"></a>
+### #682 · 0.324 · Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like) <a id="integrable-vs-kam-reading"></a>
 
 **Label:** Analogy · **id:** `integrable_vs_kam_reading` · **quadrant:** background
 
@@ -13836,7 +14230,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) (constrains)
 
-### #680 · 0.324 · 691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26 <a id="six91-finite-place-glue"></a>
+### #683 · 0.324 · 691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26 <a id="six91-finite-place-glue"></a>
 
 **Label:** Analogy · **id:** `six91_finite_place_glue` · **quadrant:** background
 
@@ -13855,7 +14249,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [Cusp forms & Petersson positivity](#cusp-forms-petersson)
 - contrasts with → [Davenport–Heilbronn function](#davenport-heilbronn)
 
-### #681 · 0.324 · Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms <a id="primes-as-knots-no-linking-in-zeta"></a>
+### #684 · 0.324 · Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms <a id="primes-as-knots-no-linking-in-zeta"></a>
 
 **Label:** Analogy · **id:** `primes_as_knots_no_linking_in_zeta` · **quadrant:** background
 
@@ -13873,7 +14267,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [Deninger’s foliated program](#deninger)
 
-### #682 · 0.324 · Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity) <a id="ep-gap-across-collision"></a>
+### #685 · 0.324 · Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity) <a id="ep-gap-across-collision"></a>
 
 **Label:** Analogy · **id:** `ep_gap_across_collision` · **quadrant:** background
 
@@ -13901,7 +14295,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](#two-verschiebungs-dual-vs-adjoint)
 - lives in → [Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity](#zeros-as-frames-trichotomy)
 
-### #683 · 0.324 · Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity <a id="weil-realtime-not-euclidean"></a>
+### #686 · 0.324 · Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity <a id="weil-realtime-not-euclidean"></a>
 
 **Label:** Analogy · **id:** `weil_realtime_not_euclidean` · **quadrant:** background
 
@@ -13920,7 +14314,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [Hilbert–Pólya](#hilbert-polya)
 - uses → [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative)
 
-### #684 · 0.324 · Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity <a id="quadratic-architectures-related"></a>
+### #687 · 0.324 · Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity <a id="quadratic-architectures-related"></a>
 
 **Label:** Analogy · **id:** `quadratic_architectures_related` · **quadrant:** background
 
@@ -13954,7 +14348,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - contrasts with → [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) — Sonin compression is one archimedean candidate
 - uses → [Connes trace formula](#connes-trace) — characteristic-p order versus the number-field target
 
-### #688 · 0.307 · Bost–Connes KMS states <a id="kms-bost-connes"></a>
+### #691 · 0.307 · Bost–Connes KMS states <a id="kms-bost-connes"></a>
 
 **Label:** Cited · **id:** `kms_bost_connes` · **quadrant:** true but ghost-blind/untested
 
@@ -13982,7 +14376,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Gas positivities: positive weights ⇒ positive-definite KMS characteristic function and convex log Z; Euler product ⇒ infinitely divisible (free gas). DH fails all; Epstein and ζ(s)ζ(s+a) show none forces RH](#free-gas-positivity-ladder) (same mechanism as); [ℤ̂ in the dictionary: Gal(𝔽̄_q/𝔽_q) ≅ ℤ̂; ℚ⧵𝔸 ≅ (ℝ × ℤ̂)/ℤ; C_ℚ ≅ ℝ₊* × ℤ̂*](#profinite-integers-adelic-solenoid) (same mechanism as); [Epstein zeta no-go](#epstein) (fails for); [Lee–Yang vs Fisher zeros; single-spin Lee–Yang property of Φ ⇔ RH (Restatement) ⇔ Λ ≤ 0](#lee-yang-fisher-rh) (analogue of); [KMS/modular positivity is coefficient positivity: a KMS system with partition function F = Σ a_n n^{−β} exists ⇔ a_n ∈ ℤ≥0; then t ↦ F(β+it) is positive definite (|F(β+it)| ≤ F(β)). Compact pieces of the modular route: Tomita J (ℤ/2) and the imaginary-time circle; the BC modular group n^{it} is unitary but not periodic and acts on the prime side (log n)](#kms-bochner-coefficient-positivity) (lives in); [Boosts close into rotations only in imaginary time: Thomas–Wigner (boost commutators are rotations), Cartan duality H³ = SO(3,1)/SO(3) ↔ S³ = SO(4)/SO(3) (p ↦ ip), and Bisognano–Wichmann/Unruh: the Rindler boost is the modular flow of the wedge algebra; its Wick rotation is a Euclidean rotation whose 2π period is the KMS condition (T = a/2π) — arithmetic counterpart: ζ(β) as the primon-gas / Bost–Connes partition function, p^{−it} the time evolution](#boost-rotation-modular-kms) (lives in); [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) (same mechanism as); [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) (candidate setting for)
 
-### #696 · 0.307 · Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect <a id="moser-orbit-space-s2xs2"></a>
+### #699 · 0.307 · Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect <a id="moser-orbit-space-s2xs2"></a>
 
 **Label:** Theorem · **id:** `moser_orbit_space_s2xs2` · **quadrant:** true but ghost-blind/untested
 
@@ -14014,7 +14408,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weil template, standing assignment (Missing Piece v5): Deninger's foliation = one factor (½), the Connes–Consani square = the product (½ ⊗ ½), 1 ⊕ 0 = the splitting of the product by the ample class, cusp part split off](#weil-template-factor-product) (analogue of); [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) (lives in); [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) (analogue of)
 
-### #697 · 0.307 · Nash–Kuiper flexibility / Onsager threshold <a id="nash-kuiper-onsager"></a>
+### #700 · 0.307 · Nash–Kuiper flexibility / Onsager threshold <a id="nash-kuiper-onsager"></a>
 
 **Label:** Cited · **id:** `nash_kuiper_onsager` · **quadrant:** true but ghost-blind/untested
 
@@ -14038,7 +14432,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Osterwalder–Schrader reflection positivity](#os-reflection-positivity) (analogue of); [Organizing split: ghost-blind = phase, ghost-sensitive = sign](#split-blind-sensitive) (analogue of); [Curvature as cup square: convexity ↔ Rosati positivity](#curvature-cup-square) (analogue of)
 
-### #718 · 0.307 · Window thermodynamics cannot see where zero is <a id="thermo-shift-invariance"></a>
+### #721 · 0.307 · Window thermodynamics cannot see where zero is <a id="thermo-shift-invariance"></a>
 
 **Label:** Theorem · **id:** `thermo_shift_invariance` · **quadrant:** true but ghost-blind/untested
 
@@ -14061,7 +14455,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) (constrains)
 
-### #719 · 0.307 · Mechanical stability of the window is not positivity <a id="window-mechanical-stability"></a>
+### #722 · 0.307 · Mechanical stability of the window is not positivity <a id="window-mechanical-stability"></a>
 
 **Label:** Theorem · **id:** `window_mechanical_stability` · **quadrant:** true but ghost-blind/untested
 
@@ -14085,7 +14479,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Weil positivity criterion](#weil-positivity)
 - corrects → [A ghost makes the window mechanically unstable](#ghost-negative-compressibility) — the height-79.34 early warning is a finite-window artefact
 
-### #743 · 0.300 · Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it <a id="dual-system-quotient-is-pole-plane"></a>
+### #759 · 0.300 · Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it <a id="dual-system-quotient-is-pole-plane"></a>
 
 **Label:** Heuristic · **id:** `dual_system_quotient_is_pole_plane` · **quadrant:** sharp but interpretive
 
@@ -14105,7 +14499,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Semi-local (∞+pole+S) forms positive only while S covers all primes below e^L](#semilocal-positive-iff-primes-covered) (constrains)
 
-### #744 · 0.300 · baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity) <a id="slot-mapping"></a>
+### #760 · 0.300 · baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity) <a id="slot-mapping"></a>
 
 **Label:** Heuristic · **id:** `slot_mapping` · **quadrant:** sharp but interpretive
 
@@ -14124,7 +14518,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [The Riemann–Siegel constant is −π/8 for ζ (even) but +π/8 for Davenport–Heilbronn (odd); the constants differ by exactly π/4 from parity; all power-law terms 1/(48t), 7/(5760t³), … are identical](#pi8-not-shared-parity)
 - uses → [Off-line DH zeros (five pairs with γ ≤ 300, incl. 0.86953 + 240.40467i) appear only in the argument-principle S as +2 jumps; the line phase (sign changes of Z_DH) misses 2 per pair](#offline-invisible-to-line-phase)
 
-### #758 · 0.271 · Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible <a id="bost-connes-phase-mismatch"></a>
+### #774 · 0.271 · Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible <a id="bost-connes-phase-mismatch"></a>
 
 **Label:** Heuristic · **id:** `bost_connes_phase_mismatch` · **quadrant:** background
 
@@ -14143,7 +14537,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it](#hagedorn-bc)
 - related to → [At β = ½ the Weil kernel (prime lines log p·p^{−m/2} at m log p and the archimedean density e^{−y/2}/(1−e^{−2y})) is the x-weighted Lévy measure of the logarithm of the completed Bost–Connes/Γ partition function; the pole term renormalizes its Hagedorn tail e^{x/2}](#weil-kernel-is-levy-measure)
 
-### #759 · 0.271 · Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination <a id="margins-force-identity"></a>
+### #775 · 0.271 · Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination <a id="margins-force-identity"></a>
 
 **Label:** Heuristic · **id:** `margins_force_identity` · **quadrant:** background
 
@@ -14166,7 +14560,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) (distinguishes)
 
-### #760 · 0.271 · The adele class space can host the KK response, but no non-circular positivity source was found <a id="adelic-kk-no-noncircular-mechanism"></a>
+### #776 · 0.271 · The adele class space can host the KK response, but no non-circular positivity source was found <a id="adelic-kk-no-noncircular-mechanism"></a>
 
 **Label:** Heuristic · **id:** `adelic_kk_no_noncircular_mechanism` · **quadrant:** background
 
@@ -14182,7 +14576,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular) (feeds)
 
-### #761 · 0.271 · Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin <a id="coupling-is-heat-time"></a>
+### #777 · 0.271 · Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin <a id="coupling-is-heat-time"></a>
 
 **Label:** Heuristic · **id:** `coupling_is_heat_time` · **quadrant:** background
 
@@ -14200,7 +14594,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - explains → [Davenport–Heilbronn's off-line zero (h₀ = 2(ρ − ½) = 0.6170 + 171.3987i) is pulled onto the imaginary axis by complete-graph ferromagnetic coupling: 2-spin branches land at J ≈ 0.581 and 0.600, 3-spin at J ≈ 0.326; no low zero ever leaves the axis (window Im h < 200)](#dh-ferromagnetic-healing)
 
-### #762 · 0.271 · Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed) <a id="h6-shimura-image-e12"></a>
+### #778 · 0.271 · Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed) <a id="h6-shimura-image-e12"></a>
 
 **Label:** Heuristic · **id:** `h6_shimura_image_e12` · **quadrant:** background
 
@@ -14218,7 +14612,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [691 sits at the D = 0 rung: H_6/ζ(−11) has 691 in every coefficient denominator (N ≤ 200); τ(n) ≡ σ₁₁(n) mod 691 for n ≤ 60](#six91-at-boundary-rung)
 
-### #763 · 0.271 · RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin) <a id="candidates-abcd"></a>
+### #779 · 0.271 · RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin) <a id="candidates-abcd"></a>
 
 **Label:** Heuristic · **id:** `candidates_abcd` · **quadrant:** background
 
@@ -14232,7 +14626,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.7 · specificity 0.5 · tractability 0.5 · evidence 0.6 → priority 0.271
 
-### #765 · 0.271 · Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8 <a id="index-vs-dimension"></a>
+### #781 · 0.271 · Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8 <a id="index-vs-dimension"></a>
 
 **Label:** Heuristic · **id:** `index_vs_dimension` · **quadrant:** background
 
@@ -14246,7 +14640,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.7 · specificity 0.5 · tractability 0.5 · evidence 0.6 → priority 0.271
 
-### #766 · 0.271 · Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead <a id="thermo-ledger"></a>
+### #782 · 0.271 · Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead <a id="thermo-ledger"></a>
 
 **Label:** Heuristic · **id:** `thermo_ledger` · **quadrant:** background
 
@@ -14260,7 +14654,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.7 · specificity 0.5 · tractability 0.5 · evidence 0.6 → priority 0.271
 
-### #781 · 0.267 · Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0 <a id="kepler-so4-contraction"></a>
+### #797 · 0.267 · Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0 <a id="kepler-so4-contraction"></a>
 
 **Label:** Theorem · **id:** `kepler_so4_contraction` · **quadrant:** true but ghost-blind/untested
 
@@ -14280,7 +14674,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Kustaanheimo–Stiefel lift preserves signatures, Krein signs and the Krein index; no new connection appears](#ks-lift-invariance) (related to); [Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured](#lrl-rational-closure) (related to); [Two Kepler degenerations on the F/V gap axis](#kepler-two-degenerations) (analogy of); [The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions](#lrl-fock-gram-conserved) (instance of); [z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover](#levi-civita-branched-cover) (related to)
 
-### #797 · 0.267 · Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian <a id="johnson-lippmann-supercharge"></a>
+### #813 · 0.267 · Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian <a id="johnson-lippmann-supercharge"></a>
 
 **Label:** Cited · **id:** `johnson_lippmann_supercharge` · **quadrant:** true but ghost-blind/untested
 
@@ -14305,7 +14699,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Multi-channel first-order factors are bounded by the SOS fit](#gram-factor-channel-bound) (analogy of); [Einstein–Cartan: spin enters as torsion](#einstein-cartan-torsion-spin) (analogy of)
 
-### #803 · 0.267 · Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares) <a id="dbn-loggas-entropy-production"></a>
+### #819 · 0.267 · Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares) <a id="dbn-loggas-entropy-production"></a>
 
 **Label:** Theorem · **id:** `dbn_loggas_entropy_production` · **quadrant:** true but ghost-blind/untested
 
@@ -14326,7 +14720,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [dBN zero flow = gradient flow + Calogero–Moser symplectic lift; not conformally symplectic](#dbn-calogero-moser-not-conformal) (same mechanism as)
 
-### #817 · 0.267 · Beta integral, Maslov dequantization and entropy <a id="beta-dequantization-entropy"></a>
+### #833 · 0.267 · Beta integral, Maslov dequantization and entropy <a id="beta-dequantization-entropy"></a>
 
 **Label:** Theorem · **id:** `beta_dequantization_entropy` · **quadrant:** true but ghost-blind/untested
 
@@ -14349,7 +14743,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [One log-gas and its frozen limit](#log-gas-frozen-limit)
 - analogy of → [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids)
 
-### #819 · 0.267 · Number-theoretical ferromagnetic spin chain <a id="knauf-ferromagnetic-spin-chain"></a>
+### #835 · 0.267 · Number-theoretical ferromagnetic spin chain <a id="knauf-ferromagnetic-spin-chain"></a>
 
 **Label:** Theorem · **id:** `knauf_ferromagnetic_spin_chain` · **quadrant:** true but ghost-blind/untested
 
@@ -14367,7 +14761,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Möbius function as fermion parity of the primon gas](#mobius-is-witten-parity) (analogy of)
 
-### #822 · 0.267 · Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV <a id="primon-box-ts-pv"></a>
+### #838 · 0.267 · Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV <a id="primon-box-ts-pv"></a>
 
 **Label:** Theorem · **id:** `primon_box_ts_pv` · **quadrant:** true but ghost-blind/untested
 
@@ -14386,7 +14780,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) — arithmetic box gas
 - extends → [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) — PV = U/3
 
-### #824 · 0.267 · Contact form and Legendre surface of the window equation of state <a id="window-contact-legendre-surface"></a>
+### #840 · 0.267 · Contact form and Legendre surface of the window equation of state <a id="window-contact-legendre-surface"></a>
 
 **Label:** Theorem · **id:** `window_contact_legendre_surface` · **quadrant:** true but ghost-blind/untested
 
@@ -14409,7 +14803,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact)
 - refines → [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism)
 
-### #835 · 0.267 · Möbius function as fermion parity of the primon gas <a id="mobius-is-witten-parity"></a>
+### #851 · 0.267 · Möbius function as fermion parity of the primon gas <a id="mobius-is-witten-parity"></a>
 
 **Label:** Theorem · **id:** `mobius_is_witten_parity` · **quadrant:** true but ghost-blind/untested
 
@@ -14431,7 +14825,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Number-theoretical ferromagnetic spin chain](#knauf-ferromagnetic-spin-chain)
 
-### #846 · 0.267 · Jacobi curvature sees only the trace of the log-Hessian of kinetic energy <a id="jacobi-curvature-trace-only"></a>
+### #862 · 0.267 · Jacobi curvature sees only the trace of the log-Hessian of kinetic energy <a id="jacobi-curvature-trace-only"></a>
 
 **Label:** Theorem · **id:** `jacobi_curvature_trace_only` · **quadrant:** true but ghost-blind/untested
 
@@ -14451,7 +14845,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Shear, not curvature: the trace-free Hessian of log|Ξ| is the Turán/Laguerre quantity](#logxi-shear-turan) (explains)
 
-### #856 · 0.256 · J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge <a id="wedge-flip-animation"></a>
+### #873 · 0.256 · J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge <a id="wedge-flip-animation"></a>
 
 **Label:** Heuristic · **id:** `wedge_flip_animation` · **quadrant:** background
 
@@ -14477,7 +14871,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Verschiebung as the positive adjoint of Frobenius (F† = V)](#verschiebung-positive-adjoint) (analogue of); [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) (analogue of); [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) (corrects)
 
-### #857 · 0.253 · Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many <a id="hodge-index-lagrange-points"></a>
+### #874 · 0.253 · Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many <a id="hodge-index-lagrange-points"></a>
 
 **Label:** Analogy · **id:** `hodge_index_lagrange_points` · **quadrant:** sharp but interpretive
 
@@ -14501,7 +14895,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [A synthetic real off-line zero pair (Siegel-type) adds exactly one negative direction, at the window where the base margin collapses, with no second neck](#synthetic-siegel-single-timelike) (analogue of); [The Hamiltonian–Krein index count and the determinant-sign parity hold at all five Lagrange points for all μ (1215/1215)](#five-point-hki) (refines); [The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on](#negative-cone-topology) (related to)
 
-### #858 · 0.253 · L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin <a id="l4-krein-indefinite-not-zeta"></a>
+### #875 · 0.253 · L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin <a id="l4-krein-indefinite-not-zeta"></a>
 
 **Label:** Analogy · **id:** `l4_krein_indefinite_not_zeta` · **quadrant:** sharp but interpretive
 
@@ -14522,7 +14916,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian) (corrects); [LRL vector against the Jacobi constant: {A, C} splits exactly into a frame (Coriolis) part and a tidal part ∝ μ](#lrl-c-frame-tidal) (related to)
 
-### #860 · 0.253 · (β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair <a id="fermion-pair-beta-2beta"></a>
+### #877 · 0.253 · (β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair <a id="fermion-pair-beta-2beta"></a>
 
 **Label:** Analogy · **id:** `fermion_pair_beta_2beta` · **quadrant:** sharp but interpretive
 
@@ -14540,7 +14934,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [Maxwell relations = Hessian symmetry; Cauchy–Riemann gives det Hess log|f| < 0 for ζ and DH alike](#maxwell-cr-content-free)
 
-### #861 · 0.253 · Ghost pair as dispersion (frequency-dependent decay) <a id="ghost-as-dispersion"></a>
+### #878 · 0.253 · Ghost pair as dispersion (frequency-dependent decay) <a id="ghost-as-dispersion"></a>
 
 **Label:** Analogy · **id:** `ghost_as_dispersion` · **quadrant:** sharp but interpretive
 
@@ -14558,7 +14952,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Sundman clock for the F/V collision](#fv-sundman-oscillator)
 
-### #862 · 0.253 · Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind <a id="einstein-cartan"></a>
+### #879 · 0.253 · Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind <a id="einstein-cartan"></a>
 
 **Label:** Analogy · **id:** `einstein_cartan` · **quadrant:** sharp but interpretive
 
@@ -14572,7 +14966,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 1.0 · tractability 0.4 · evidence 0.5 → priority 0.253
 
-### #863 · 0.253 · Purity as distortionless transmission: weight strata = attenuation classes <a id="purity-distortionless"></a>
+### #880 · 0.253 · Purity as distortionless transmission: weight strata = attenuation classes <a id="purity-distortionless"></a>
 
 **Label:** Analogy · **id:** `purity_distortionless` · **quadrant:** sharp but interpretive
 
@@ -14597,7 +14991,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Zeros as Breit–Wigner resonances (line shapes, cusp doublets)](#breit-wigner-resonances) (analogue of); [Γ, the width of a zero: FWHM of its Breit–Wigner line](#gamma-fwhm-of-a-zero) (same mechanism as); [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) (analogue of); [Distortionless line R/L = G/C](#distortionless) (analogue of); [Ring-preserving supercharge and RH as purity](#rings-purity-restates-positivity) (analogy of)
 
-### #864 · 0.253 · Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall <a id="ferromagnetic-gyroscopic-stiffness"></a>
+### #881 · 0.253 · Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall <a id="ferromagnetic-gyroscopic-stiffness"></a>
 
 **Label:** Analogy · **id:** `ferromagnetic_gyroscopic_stiffness` · **quadrant:** sharp but interpretive
 
@@ -14624,7 +15018,49 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [L4 linearization, Krein signatures and the Routh wall](#l4-routh-krein) — heat-flow time ↔ Coriolis term
 - illustrates → [Lee–Yang vs Fisher zeros; single-spin Lee–Yang property of Φ ⇔ RH (Restatement) ⇔ Λ ≤ 0](#lee-yang-fisher-rh)
 
-### #872 · 0.240 · Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters <a id="imaginary-field-susceptibility"></a>
+### #882 · 0.243 · One model form: a null conic, a timelike point, and a positive polar <a id="conic-polarity-one-form"></a>
+
+**Label:** Analogy · **id:** `conic_polarity_one_form` · **quadrant:** background
+
+*In plain words:* A single quadratic form on a plane can be indefinite, negative on one vector, and positive on the polar of that vector. The zero set is a conic. Drawn in an affine chart it is the parabola q = t squared over 4. That curve is the model discriminant conic. It is not a Hasse wall, not the parabolic wall, not the Routh wall, and not a sheet of Sigma. Focus and directrix are extra Euclidean structure on the chart.
+
+**Core.** B(v, v) = v_T^2 - 4 v_Q v_Z. The null set Q = 0 is a smooth conic. The point h = (0:1:1) has Q(h) = -4. On its polar, Q = v_T^2 + 4 v_Z^2, which is positive definite. The axis span(h, x_infinity) has signature (1, 1), and x_infinity = (0:1:0) is null. Its polar is Z = 0, which contains x_infinity, so the complement is degenerate. Sylvester's law in this finite dimension: one negative square and Q(h, h) < 0 imply positivity on the polar. This is the shape the bordered criterion asks for. It constructs neither h nor a sign for W. The point-counting ellipse that the atlas already identifies with the Hasse bound is a different form.
+
+**Formula.** Q = T^2 - 4 Q Z; Q(h) = -4; Q on h-perp = v_T^2 + 4 v_Z^2
+
+**Numbers.** Hand algebra, rechecked by the v1.20 audit. Not a numerical fit.
+
+**What is proved around it.** The three-by-three algebra and Sylvester's law on that matrix. Nothing about zeta. The Hodge index, as a cited sign pattern and not as a constructor, is Hartshorne, Algebraic Geometry, GTM 52, Chapter V, Theorem 1.9. The harmonic-form sign is the Hodge-Riemann bilinear relations; a chapter-level pointer is Huybrechts, Complex Geometry, or Griffiths and Harris, Principles of Algebraic Geometry, Chapter 0. Those pages were not re-opened here. Wikipedia is not the source.
+
+**Tests it must pass.** Must not be read as a construction of a polarization for W.
+
+**Also known as:** model null conic Q = 0; polarity model
+
+**Axes:** physics analogue, sign/positivity (Ax2), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.8 (nearest gap: surface + ample class + Riemann–Roch for Spec ℤ (D8)) · sensitivity 0.6 · specificity 0.05 · tractability 0.4 · evidence 0.5 → priority 0.243
+
+> ⚠ **Correction / caution.** Do not call this null conic a Hasse wall.
+
+> ⚠ **Correction / caution.** Do not call it the parabolic wall or the Routh wall.
+
+> ⚠ **Correction / caution.** Interior focus and polar directrix are extra Euclidean structure of the affine parabola.
+
+> ⚠ **Correction / caution.** Smooth at infinity. Not a modular cusp. The polar of x_infinity has no affine intercept.
+
+**Relations (outgoing):**
+
+- analogue of → [Hodge index theorem](#hodge-index) — model of a sign pattern: one negative direction, positive complement; not a constructor
+- distinguishes → [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh) — parabolic wall and Routh wall stay separate from this model curve
+- distinguishes → [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) — the Jordan edge |trace| = 2 is not this picture
+- distinguishes → [Conic type decided at infinity: degree positivity ⇒ ellipse ⇒ Hasse](#conic-type-at-infinity) — the point-counting ellipse is the Hasse bound for that form; it is not this null conic
+- distinguishes → [Weil discriminant wall Σ on S₂(Γ₀(23)) mixes](#weil-discriminant-wall-s2-23) — primary and secondary sheets of Sigma stay separate
+- distinguishes → [Beurling wall incidence is not a zeros-blind certificate](#beurling-incidence-no-toy-certificate) — the Beurling-pencil Hasse wall is that pencil, not this model
+- constrains → [Missing: surface + ample class + Riemann–Roch for Spec ℤ (D8)](#mp-d8) — finite-dimensional model only; it cannot carry full-rank W
+
+**Relations (incoming):** [A skew pairing on H1 becomes symmetric on the product, with both signs](#kunneth-skew-to-symmetric) (analogue of); [A polar family shrinks to the null point at infinity, in two gauges](#polar-family-h-s-degeneration) (refines)
+
+### #890 · 0.240 · Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters <a id="imaginary-field-susceptibility"></a>
 
 **Label:** Restatement · **id:** `imaginary_field_susceptibility` · **quadrant:** RH-sharp
 
@@ -14645,7 +15081,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Twin clock along the heat flow: DH's light-cone crossing recedes to ∞ as its ghosts land](#dbn-light-cone-recession) (same mechanism as); [Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel](#larmor-onsager-rotation-sector) (refines)
 
-### #883 · 0.240 · Hamiltonian dictionary for the window Weil form <a id="weil-form-momentum-dictionary"></a>
+### #901 · 0.240 · Hamiltonian dictionary for the window Weil form <a id="weil-form-momentum-dictionary"></a>
 
 **Label:** Restatement · **id:** `weil_form_momentum_dictionary` · **quadrant:** RH-sharp
 
@@ -14669,7 +15105,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Legendre criterion for Poincare time changes of xp](#legendre-poincare-criterion) (refines); [Lagrangian of the regularized xp (massive square-root form)](#srl-lagrangian) (refines)
 
-### #906 · 0.240 · KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp <a id="ks-trichotomy-xp"></a>
+### #924 · 0.240 · KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp <a id="ks-trichotomy-xp"></a>
 
 **Label:** Restatement · **id:** `ks_trichotomy_xp` · **quadrant:** RH-sharp
 
@@ -14687,7 +15123,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [sqrt(q) normalization as fixing the energy shell](#frobenius-similitude-shell)
 
-### #914 · 0.240 · The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module <a id="virasoro-halving-is-central-charge-change"></a>
+### #932 · 0.240 · The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module <a id="virasoro-halving-is-central-charge-change"></a>
 
 **Label:** Restatement · **id:** `virasoro_halving_is_central_charge_change` · **quadrant:** RH-sharp
 
@@ -14705,7 +15141,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase)
 
-### #922 · 0.240 · Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind <a id="prime-torus-action-angle-degenerate"></a>
+### #940 · 0.240 · Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind <a id="prime-torus-action-angle-degenerate"></a>
 
 **Label:** Restatement · **id:** `prime_torus_action_angle_degenerate` · **quadrant:** RH-sharp
 
@@ -14724,7 +15160,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - extends → [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation)
 - refines → [Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift](#prime-torus-nonresonance)
 
-### #923 · 0.240 · Sundman-regularized Rodgers-Tao energy <a id="sundman-regularized-rt-energy"></a>
+### #941 · 0.240 · Sundman-regularized Rodgers-Tao energy <a id="sundman-regularized-rt-energy"></a>
 
 **Label:** Restatement · **id:** `sundman_regularized_rt_energy` · **quadrant:** RH-sharp
 
@@ -14746,7 +15182,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weighted signed energy trace from the heat-flowed function](#signed-local-energy-trace) (refines)
 
-### #925 · 0.226 · Buoyancy / Archimedes principle <a id="archimedes"></a>
+### #943 · 0.226 · Buoyancy / Archimedes principle <a id="archimedes"></a>
 
 **Label:** Analogy · **id:** `archimedes` · **quadrant:** background
 
@@ -14771,7 +15207,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Castelnuovo–Severi inequality](#castelnuovo-severi) (analogue of); [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) (analogue of); [Displaced reference (subtracting the pole)](#displaced-reference) (analogue of); [Lamb cutoff](#lamb-cutoff) (same mechanism as)
 
-### #926 · 0.226 · Distortionless line R/L = G/C <a id="distortionless"></a>
+### #944 · 0.226 · Distortionless line R/L = G/C <a id="distortionless"></a>
 
 **Label:** Analogy · **id:** `distortionless` · **quadrant:** background
 
@@ -14797,7 +15233,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) (analogue of); [Heaviside RLGC line](#heaviside) (same mechanism as)
 
-### #927 · 0.226 · Einstein–Cartan: spin enters as torsion <a id="einstein-cartan-torsion-spin"></a>
+### #945 · 0.226 · Einstein–Cartan: spin enters as torsion <a id="einstein-cartan-torsion-spin"></a>
 
 **Label:** Analogy · **id:** `einstein_cartan_torsion_spin` · **quadrant:** background
 
@@ -14821,7 +15257,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hodge energy on arithmetic cohomology, and a torsion term with forced sign](#deninger-hodge-energy-torsion-open) (analogy of); [Torsion/contorsion split of the gluing connection does not isolate sign flips](#connection-split-torsion-null) (refines); [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) (analogy of)
 
-### #928 · 0.226 · Heaviside RLGC line <a id="heaviside"></a>
+### #946 · 0.226 · Heaviside RLGC line <a id="heaviside"></a>
 
 **Label:** Analogy · **id:** `heaviside` · **quadrant:** background
 
@@ -14848,7 +15284,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Decay rate ¼](#decay-quarter) (same mechanism as); [Distortionless line R/L = G/C](#distortionless) (special case of)
 
-### #929 · 0.226 · The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one <a id="omega-c2-gamma-turning-point"></a>
+### #947 · 0.226 · The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one <a id="omega-c2-gamma-turning-point"></a>
 
 **Label:** Analogy · **id:** `omega_c2_gamma_turning_point` · **quadrant:** background
 
@@ -14869,7 +15305,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Place-by-place attribution of ζ’s Weil form: on the pole-removed negative vector every place is negative; on the full form’s bottom vector only the pole is positive](#place-attribution-pole-pays)
 - related to → [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame)
 
-### #930 · 0.226 · The archimedean place as the "third body" <a id="archimedean-third-body-analogy"></a>
+### #948 · 0.226 · The archimedean place as the "third body" <a id="archimedean-third-body-analogy"></a>
 
 **Label:** Analogy · **id:** `archimedean_third_body_analogy` · **quadrant:** background
 
@@ -14890,7 +15326,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Where the Krein grading lives: the supporting functional of the Weil cone at ζ](#grading-supporting-functional) (refines)
 
-### #932 · 0.226 · Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side <a id="legendre-momentum-side-linear-positivity"></a>
+### #950 · 0.226 · Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side <a id="legendre-momentum-side-linear-positivity"></a>
 
 **Label:** Analogy · **id:** `legendre_momentum_side_linear_positivity` · **quadrant:** background
 
@@ -14910,7 +15346,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Legendre strata: support function / Fenchel–Moreau as a definiteness detector](#legendre-support-function)
 - analogue of → [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame)
 
-### #933 · 0.226 · One log-gas and its frozen limit <a id="log-gas-frozen-limit"></a>
+### #951 · 0.226 · One log-gas and its frozen limit <a id="log-gas-frozen-limit"></a>
 
 **Label:** Analogy · **id:** `log_gas_frozen_limit` · **quadrant:** background
 
@@ -14934,7 +15370,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) (instance of); [The factorial of one half and the Fourier quarter-turn](#fourier-quarter-turn) (instance of)
 
-### #934 · 0.226 · The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions <a id="lrl-fock-gram-conserved"></a>
+### #952 · 0.226 · The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions <a id="lrl-fock-gram-conserved"></a>
 
 **Label:** Analogy · **id:** `lrl_fock_gram_conserved` · **quadrant:** background
 
@@ -14954,7 +15390,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy)
 - analogue of → [Gross/Brandt data for 11a: quaternion algebra (−1,−11), class number 2, Brandt matrix T(2) = [[1,2],[3,0]]](#gross-brandt-11a)
 
-### #935 · 0.226 · Mass-density positivity <a id="mass-density"></a>
+### #953 · 0.226 · Mass-density positivity <a id="mass-density"></a>
 
 **Label:** Analogy · **id:** `mass_density` · **quadrant:** background
 
@@ -14978,7 +15414,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Rosati positivity](#rosati) (analogue of); [Density / volume reading](#density-volume) (same mechanism as)
 
-### #936 · 0.226 · Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned <a id="serre-derivative-analogy"></a>
+### #954 · 0.226 · Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned <a id="serre-derivative-analogy"></a>
 
 **Label:** Analogy · **id:** `serre_derivative_analogy` · **quadrant:** background
 
@@ -14998,7 +15434,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential](#eta-chain) (extends); [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) (analogous to)
 
-### #938 · 0.226 · The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant) <a id="degenerate-discriminant-hill-topology"></a>
+### #956 · 0.226 · The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant) <a id="degenerate-discriminant-hill-topology"></a>
 
 **Label:** Analogy · **id:** `degenerate_discriminant_hill_topology` · **quadrant:** background
 
@@ -15017,7 +15453,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler)
 - analogue of → [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only)
 
-### #939 · 0.226 · Tension and amplitude dictionary <a id="half-density-tension-dictionary"></a>
+### #957 · 0.226 · Tension and amplitude dictionary <a id="half-density-tension-dictionary"></a>
 
 **Label:** Analogy · **id:** `half_density_tension_dictionary` · **quadrant:** background
 
@@ -15037,7 +15473,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Distortionless criterion for the xp family: constant divergence](#xp-distortionless-constant-divergence) (refines)
 
-### #941 · 0.226 · z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover <a id="levi-civita-branched-cover"></a>
+### #959 · 0.226 · z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover <a id="levi-civita-branched-cover"></a>
 
 **Label:** Analogy · **id:** `levi_civita_branched_cover` · **quadrant:** background
 
@@ -15057,7 +15493,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Kustaanheimo–Stiefel lift preserves signatures, Krein signs and the Krein index; no new connection appears](#ks-lift-invariance) (refines)
 
-### #942 · 0.226 · Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign <a id="principalization-conformal-hamiltonization"></a>
+### #960 · 0.226 · Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign <a id="principalization-conformal-hamiltonization"></a>
 
 **Label:** Analogy · **id:** `principalization_conformal_hamiltonization` · **quadrant:** background
 
@@ -15076,7 +15512,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [Principalization](#principalization)
 - related to → [Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution](#hopf-lax-maupertuis-duality)
 
-### #944 · 0.226 · Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not <a id="thermo-dictionary-grades"></a>
+### #962 · 0.226 · Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not <a id="thermo-dictionary-grades"></a>
 
 **Label:** Analogy · **id:** `thermo_dictionary_grades` · **quadrant:** background
 
@@ -15096,7 +15532,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing)](#thermo-forcing-grades) (extends)
 
-### #945 · 0.226 · Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing) <a id="thermo-forcing-grades"></a>
+### #963 · 0.226 · Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing) <a id="thermo-forcing-grades"></a>
 
 **Label:** Analogy · **id:** `thermo_forcing_grades` · **quadrant:** background
 
@@ -15116,7 +15552,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) (refines)
 
-### #946 · 0.226 · Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again <a id="tree-band-edge-zero-velocity"></a>
+### #964 · 0.226 · Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again <a id="tree-band-edge-zero-velocity"></a>
 
 **Label:** Analogy · **id:** `tree_band_edge_zero_velocity` · **quadrant:** background
 
@@ -15135,7 +15571,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [Hecke p-power recursion as a lattice Klein–Gordon (lossless LC-ladder) transfer matrix: Hasse = passband, and ζ’s local factors sit at the massless band edge](#hecke-lattice-klein-gordon)
 - extends → [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only)
 
-### #947 · 0.226 · 691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open <a id="adjoint-691-eisenstein-not-cuspidal"></a>
+### #965 · 0.226 · 691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open <a id="adjoint-691-eisenstein-not-cuspidal"></a>
 
 **Label:** Analogy · **id:** `adjoint_691_eisenstein_not_cuspidal` · **quadrant:** background
 
@@ -15153,7 +15589,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [Primitive integral period polynomials 36X¹⁰−691X⁸+2073X⁶−2073X⁴+691X²−36 and 4X⁹−25X⁷+42X⁵−25X³+4X; ⟨Δ,Δ⟩/(Ω⁺Ω⁻) = 691/2¹⁰ (residual 1e−41)](#period-ratio-691)
 
-### #948 · 0.226 · Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data <a id="capitulation-keeps-pole"></a>
+### #966 · 0.226 · Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data <a id="capitulation-keeps-pole"></a>
 
 **Label:** Analogy · **id:** `capitulation_keeps_pole` · **quadrant:** background
 
@@ -15171,7 +15607,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split)
 
-### #949 · 0.226 · Discriminant as self-intersection of a polarization (arithmetic Hodge index) <a id="discriminant-polarization-height"></a>
+**Relations (incoming):** [Regularity of a local ring is not a global principal generator, and not a sign](#iwasawa-regularity-class) (illustrates)
+
+### #967 · 0.226 · Discriminant as self-intersection of a polarization (arithmetic Hodge index) <a id="discriminant-polarization-height"></a>
 
 **Label:** Analogy · **id:** `discriminant_polarization_height` · **quadrant:** background
 
@@ -15189,7 +15627,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6](#conductor-uniform-shift)
 
-### #950 · 0.226 · Divergence-free positive tensors as a quantitative tool once positivity is known <a id="dpt-quantitative-template"></a>
+### #968 · 0.226 · Divergence-free positive tensors as a quantitative tool once positivity is known <a id="dpt-quantitative-template"></a>
 
 **Label:** Analogy · **id:** `dpt_quantitative_template` · **quadrant:** background
 
@@ -15207,7 +15645,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Positive conserved tensor from an imaginary shift (local smoothing paper)](#imaginary-shift-positive-tensor)
 
-### #951 · 0.226 · Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit <a id="einstein-de-haas-lesson"></a>
+### #969 · 0.226 · Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit <a id="einstein-de-haas-lesson"></a>
 
 **Label:** Analogy · **id:** `einstein_de_haas_lesson` · **quadrant:** background
 
@@ -15227,7 +15665,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - heuristically points to → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #952 · 0.226 · sqrt(q) normalization as fixing the energy shell <a id="frobenius-similitude-shell"></a>
+### #970 · 0.226 · sqrt(q) normalization as fixing the energy shell <a id="frobenius-similitude-shell"></a>
 
 **Label:** Analogy · **id:** `frobenius_similitude_shell` · **quadrant:** background
 
@@ -15243,7 +15681,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp](#ks-trichotomy-xp) (feeds)
 
-### #953 · 0.226 · Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points <a id="hodge-morse-analogy"></a>
+### #971 · 0.226 · Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points <a id="hodge-morse-analogy"></a>
 
 **Label:** Analogy · **id:** `hodge_morse_analogy` · **quadrant:** background
 
@@ -15259,7 +15697,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5](#hill-topology-disc) (feeds)
 
-### #954 · 0.226 · Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane) <a id="ii11-pole-pair"></a>
+### #972 · 0.226 · Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane) <a id="ii11-pole-pair"></a>
 
 **Label:** Analogy · **id:** `ii11_pole_pair` · **quadrant:** background
 
@@ -15277,7 +15715,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (uses); [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (distinguishes); [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) (analogue of)
 
-### #955 · 0.226 · KS/oscillator realisation as a positivity source for the Weil form <a id="ks-oscillator-positivity-source"></a>
+### #973 · 0.226 · KS/oscillator realisation as a positivity source for the Weil form <a id="ks-oscillator-positivity-source"></a>
 
 **Label:** Analogy · **id:** `ks_oscillator_positivity_source` · **quadrant:** background
 
@@ -15293,7 +15731,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign) (constrains)
 
-### #956 · 0.226 · Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel <a id="larmor-onsager-rotation-sector"></a>
+### #974 · 0.226 · Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel <a id="larmor-onsager-rotation-sector"></a>
 
 **Label:** Analogy · **id:** `larmor_onsager_rotation_sector` · **quadrant:** background
 
@@ -15311,7 +15749,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters](#imaginary-field-susceptibility)
 
-### #957 · 0.226 · The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places <a id="lichnerowicz-is-gamma-shift"></a>
+### #975 · 0.226 · The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places <a id="lichnerowicz-is-gamma-shift"></a>
 
 **Label:** Analogy · **id:** `lichnerowicz_is_gamma_shift` · **quadrant:** background
 
@@ -15329,7 +15767,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [The Bochner–Kodaira–Nakano curvature of yᵏ|F|² is k/y² for every holomorphic F (θ, θ_χ₋₄, θ_DH and random coefficients agree to 1.6e−4): it is Γ-factor data (k = 2a) and is positive for Davenport–Heilbronn too](#bkn-theta-curvature-universal)
 
-### #958 · 0.226 · Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given) <a id="maslov-reading"></a>
+### #976 · 0.226 · Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given) <a id="maslov-reading"></a>
 
 **Label:** Analogy · **id:** `maslov_reading` · **quadrant:** background
 
@@ -15347,7 +15785,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight)](#stationary-phase-split)
 
-### #959 · 0.226 · Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH) <a id="no-ghost-template"></a>
+### #977 · 0.226 · Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH) <a id="no-ghost-template"></a>
 
 **Label:** Analogy · **id:** `no_ghost_template` · **quadrant:** background
 
@@ -15367,7 +15805,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) (analogue of)
 
-### #960 · 0.226 · Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0 <a id="plus-minus-units-bernoulli"></a>
+### #978 · 0.226 · Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0 <a id="plus-minus-units-bernoulli"></a>
 
 **Label:** Analogy · **id:** `plus_minus_units_bernoulli` · **quadrant:** background
 
@@ -15385,7 +15823,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - extends → [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet)
 
-### #961 · 0.226 · pole cancels the one arithmetic ghost <a id="pole-as-counterterm-not-tachyon"></a>
+### #979 · 0.226 · pole cancels the one arithmetic ghost <a id="pole-as-counterterm-not-tachyon"></a>
 
 **Label:** Analogy · **id:** `pole_as_counterterm_not_tachyon` · **quadrant:** background
 
@@ -15401,7 +15839,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ζ: 0 negative directions with pole term, exactly 1 without (L=1..6); pole term signature (1,1); DH 2 from L≈4](#weil-gram-one-ghost) (feeds)
 
-### #962 · 0.226 · prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S <a id="prime-mode-energy-quantum"></a>
+### #980 · 0.226 · prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S <a id="prime-mode-energy-quantum"></a>
 
 **Label:** Analogy · **id:** `prime_mode_energy_quantum` · **quadrant:** background
 
@@ -15419,7 +15857,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [Semi-local Weil form (∞+pole+primes in S) first negative at L_S ≈ log(next prime)+0.012–0.052 (M=160); all primes: none on L≤6](#semilocal-loss-at-log-next-prime)
 
-### #963 · 0.226 · The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t) <a id="rs-phase-not-per-prime"></a>
+### #981 · 0.226 · The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t) <a id="rs-phase-not-per-prime"></a>
 
 **Label:** Analogy · **id:** `rs_phase_not_per_prime` · **quadrant:** background
 
@@ -15435,7 +15873,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Truncated sums −(1/π)Σ b(n) sin(t log n)/√n correlate with S at 0.92 (ζ, X = 2000) and 0.82 (DH, all n); prime-only truncation reaches 0.89 for ζ but saturates at ≈0.45 for DH (no Euler product)](#truncated-sum-correlation) (tests)
 
-### #964 · 0.226 · λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion <a id="sato-tate-angle-as-conserved-c"></a>
+### #982 · 0.226 · λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion <a id="sato-tate-angle-as-conserved-c"></a>
 
 **Label:** Analogy · **id:** `sato_tate_angle_as_conserved_c` · **quadrant:** background
 
@@ -15453,7 +15891,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Brandt/isogeny-graph Hecke spectra match weight-2 newforms (20/20 characteristic polynomials, q ≤ 389, ℓ ≤ 7) and satisfy |λ|/√ℓ ≤ 2 (max 1.9712): the sharp bound is local and already Deligne's theorem](#tree-quotient-ramanujan-local)
 
-### #965 · 0.226 · Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ <a id="viscosity-baroclinic"></a>
+### #983 · 0.226 · Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ <a id="viscosity-baroclinic"></a>
 
 **Label:** Analogy · **id:** `viscosity_baroclinic` · **quadrant:** background
 
@@ -15471,7 +15909,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - illustrates → [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation)
 
-### #966 · 0.226 · Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999) <a id="constraint-scaling"></a>
+### #984 · 0.226 · Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999) <a id="constraint-scaling"></a>
 
 **Label:** Analogy · **id:** `constraint_scaling` · **quadrant:** background
 
@@ -15485,7 +15923,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #967 · 0.226 · Per-prime curvatures σ_p² do not reproduce H(D) weights <a id="curvature-vs-class-numbers"></a>
+### #985 · 0.226 · Per-prime curvatures σ_p² do not reproduce H(D) weights <a id="curvature-vs-class-numbers"></a>
 
 **Label:** Analogy · **id:** `curvature_vs_class_numbers` · **quadrant:** background
 
@@ -15499,7 +15937,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #969 · 0.226 · Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers <a id="eponymic-chain-linear-transfers"></a>
+### #987 · 0.226 · Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers <a id="eponymic-chain-linear-transfers"></a>
 
 **Label:** Analogy · **id:** `eponymic_chain_linear_transfers` · **quadrant:** background
 
@@ -15513,7 +15951,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #970 · 0.226 · Euler product = independence over places, not Markov in log-time <a id="euler-markov"></a>
+### #988 · 0.226 · Euler product = independence over places, not Markov in log-time <a id="euler-markov"></a>
 
 **Label:** Analogy · **id:** `euler_markov` · **quadrant:** background
 
@@ -15527,7 +15965,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #971 · 0.226 · Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis <a id="kepler-lagrange-kapteyn-analogy"></a>
+### #989 · 0.226 · Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis <a id="kepler-lagrange-kapteyn-analogy"></a>
 
 **Label:** Analogy · **id:** `kepler_lagrange_kapteyn_analogy` · **quadrant:** background
 
@@ -15541,7 +15979,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #972 · 0.226 · β* as work reserve → 0 at barrier (Carnot limit), log p as heat <a id="margin-work-reserve"></a>
+### #990 · 0.226 · β* as work reserve → 0 at barrier (Carnot limit), log p as heat <a id="margin-work-reserve"></a>
 
 **Label:** Analogy · **id:** `margin_work_reserve` · **quadrant:** background
 
@@ -15555,7 +15993,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #973 · 0.226 · T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant <a id="planck-ott-landsberg-reading"></a>
+### #991 · 0.226 · T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant <a id="planck-ott-landsberg-reading"></a>
 
 **Label:** Analogy · **id:** `planck_ott_landsberg_reading` · **quadrant:** background
 
@@ -15569,7 +16007,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #974 · 0.226 · FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part <a id="r-equals-t-wrong-slot"></a>
+### #992 · 0.226 · FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part <a id="r-equals-t-wrong-slot"></a>
 
 **Label:** Analogy · **id:** `r_equals_t_wrong_slot` · **quadrant:** background
 
@@ -15583,7 +16021,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #975 · 0.226 · T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy <a id="t1-boltzmann-reading"></a>
+### #993 · 0.226 · T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy <a id="t1-boltzmann-reading"></a>
 
 **Label:** Analogy · **id:** `t1_boltzmann_reading` · **quadrant:** background
 
@@ -15597,7 +16035,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #976 · 0.226 · Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets <a id="zero-velocity-null-states"></a>
+### #994 · 0.226 · Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets <a id="zero-velocity-null-states"></a>
 
 **Label:** Analogy · **id:** `zero_velocity_null_states` · **quadrant:** background
 
@@ -15611,7 +16049,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.5 · tractability 0.4 · evidence 0.5 → priority 0.226
 
-### #977 · 0.226 · Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically <a id="aps-type-split-analogue"></a>
+### #995 · 0.226 · Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically <a id="aps-type-split-analogue"></a>
 
 **Label:** Analogy · **id:** `aps_type_split_analogue` · **quadrant:** background
 
@@ -15627,7 +16065,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The spectral asymmetry of the boundary piece (pole + ∞) is basis-stable; the interior (primes) and full-form asymmetries scale with basis size](#boundary-eta-stable-interior-not) (constrains)
 
-### #978 · 0.226 · Hill-region stratification vs prime filtration <a id="hill-region-dictionary"></a>
+### #996 · 0.226 · Hill-region stratification vs prime filtration <a id="hill-region-dictionary"></a>
 
 **Label:** Analogy · **id:** `hill_region_dictionary` · **quadrant:** background
 
@@ -15643,7 +16081,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) (analogue of)
 
-### #982 · 0.212 · Higgs mechanism: negative mass² at the symmetric point <a id="higgs-negative-mass2"></a>
+### #1000 · 0.212 · Higgs mechanism: negative mass² at the symmetric point <a id="higgs-negative-mass2"></a>
 
 **Label:** Analogy · **id:** `higgs_negative_mass2` · **quadrant:** background
 
@@ -15668,7 +16106,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Frobenius as a boost (rapidity ½ log q)](#frobenius-boost) (analogue of); [Zeros as Breit–Wigner resonances (line shapes, cusp doublets)](#breit-wigner-resonances) (analogue of)
 
-### #983 · 0.212 · Klein–Gordon indefinite charge <a id="klein-gordon-charge"></a>
+### #1001 · 0.212 · Klein–Gordon indefinite charge <a id="klein-gordon-charge"></a>
 
 **Label:** Analogy · **id:** `klein_gordon_charge` · **quadrant:** background
 
@@ -15692,7 +16130,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Osterwalder–Schrader reflection positivity](#os-reflection-positivity) (analogue of)
 
-### #984 · 0.212 · Anomalous dispersion <a id="anomalous-dispersion"></a>
+### #1002 · 0.212 · Anomalous dispersion <a id="anomalous-dispersion"></a>
 
 **Label:** Analogy · **id:** `anomalous_dispersion` · **quadrant:** background
 
@@ -15716,7 +16154,38 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Zeros as Breit–Wigner resonances (line shapes, cusp doublets)](#breit-wigner-resonances) (same mechanism as)
 
-### #998 · 0.181 · Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks <a id="buoyancy-reading"></a>
+### #1003 · 0.212 · A polar family shrinks to the null point at infinity, in two gauges <a id="polar-family-h-s-degeneration"></a>
+
+**Label:** Analogy · **id:** `polar_family_h_s_degeneration` · **quadrant:** background
+
+*In plain words:* Move the interior point from h = (0:1:1) toward x_infinity by h_s = (0:1:s), with s from 1 down toward 0. On that homogeneous representative, Q = -4s, which tends to 0. The same projective point, normalized to affine height q = 1/s, has Q = -4/s, which tends to minus infinity. Both statements are right. They are different normalizations. The sign stays negative for s > 0, and the projective limit is the null point x_infinity either way.
+
+**Core.** Q(0, 1, s) = -4s. The affine representative (0, 1/s, 1) has Q = -4/s. The ratio of the two numbers is the square of the scaling factor 1/s. On the polar v_Z = -s v_Q the form is v_T^2 + 4 s v_Q^2. Its level set equal to 1 is an ellipse. As s tends to 0 that ellipse lengthens toward the pair of lines v_T = ±1. The filled sublevel, the set where the form is at most 1, lengthens toward the strip |v_T| <= 1. The level set does not become the strip. At s = 0 the polar of x_infinity is the line Z = 0, which does not meet the affine chart. The conic is smooth at x_infinity: in the chart Q = 1 it is the parabola T^2 = 4Z. That point is not a cusp of the modular curve.
+
+**Formula.** Q(0,1,s) = -4s; Q(0, 1/s, 1) = -4/s; level set tends to lines, sublevel tends to a strip
+
+**Numbers.** At s = 1 the two gauges agree at -4. At s = 0.05 they read -0.2 and -80. Same point, same sign, different scale.
+
+**What is proved around it.** Homogeneous scaling of a quadratic form, Q(lambda v) = lambda^2 Q(v), and the elementary limit of the ellipse. Rechecked in the audit.
+
+**Also known as:** h_s = (0, 1, s); gauge of Q
+
+**Axes:** physics analogue, structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: surface + ample class + Riemann–Roch for Spec ℤ (D8)) · sensitivity 0.6 · specificity 0.05 · tractability 0.4 · evidence 0.5 → priority 0.212
+
+> ⚠ **Correction / caution.** Do not treat -4s and -4/s as the same measurement.
+
+> ⚠ **Correction / caution.** Do not say the level set becomes a strip. The filled sublevel does.
+
+> ⚠ **Correction / caution.** Not a physical recording. Schematic algebra.
+
+**Relations (outgoing):**
+
+- refines → [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) — the same model, with the gauge of h_s written twice
+- distinguishes → [Conic type decided at infinity: degree positivity ⇒ ellipse ⇒ Hasse](#conic-type-at-infinity) — x_infinity of this model is a smooth point; its polar has no affine intercept; not a modular cusp
+
+### #1017 · 0.181 · Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks <a id="buoyancy-reading"></a>
 
 **Label:** Analogy · **id:** `buoyancy_reading` · **quadrant:** background
 
@@ -15736,7 +16205,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves](#conic-compactness) (refines); [so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²](#so4-chirality-split) (corrects); [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation) (extends)
 
-### #999 · 0.181 · Lamb cutoff <a id="lamb-cutoff"></a>
+### #1018 · 0.181 · Lamb cutoff <a id="lamb-cutoff"></a>
 
 **Label:** Analogy · **id:** `lamb_cutoff` · **quadrant:** background
 
@@ -15764,7 +16233,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Half-density normalization |x|^{½}](#half-density) (same mechanism as)
 
-### #1001 · 0.181 · Sha as a locally trivial, globally nontrivial defect <a id="sha-as-holonomy-defect"></a>
+### #1020 · 0.181 · Sha as a locally trivial, globally nontrivial defect <a id="sha-as-holonomy-defect"></a>
 
 **Label:** Analogy · **id:** `sha_as_holonomy_defect` · **quadrant:** background
 
@@ -15785,7 +16254,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [Local-to-global failure](#local-global)
 - analogy of → [Gross-Zagier as rank-one positivity](#gross-zagier-rank-one-positivity)
 
-### #1003 · 0.181 · Tate twist as hbar <a id="tate-twist-as-hbar"></a>
+### #1022 · 0.181 · Tate twist as hbar <a id="tate-twist-as-hbar"></a>
 
 **Label:** Analogy · **id:** `tate_twist_as_hbar` · **quadrant:** background
 
@@ -15799,7 +16268,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 0.6 · specificity 0.05 · tractability 0.4 · evidence 0.5 → priority 0.181
 
-### #1011 · 0.165 · Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance <a id="thermodynamic-j-direction"></a>
+### #1030 · 0.165 · Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance <a id="thermodynamic-j-direction"></a>
 
 **Label:** Open · **id:** `thermodynamic_J_direction` · **quadrant:** true but ghost-blind/untested
 
@@ -16616,6 +17085,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Connes trace formula](#connes-trace) — cutoff bookkeeping for the counterterm, as in the characteristic-p comparison
 - uses → [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) — archimedean small-support comparison is prior, not the global map
 
+**Relations (incoming):** [Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder](#connes-cutoff-pair-two-hankel) (contrasts with)
+
 ### #468 · 0.360 · Signed (holomorphic) energy detects every ghost before it lands <a id="holomorphic-energy-ghost-criterion"></a>
 
 **Label:** Theorem · **id:** `holomorphic_energy_ghost_criterion` · **quadrant:** RH-sharp
@@ -16698,7 +17169,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Selberg resonances](#selberg-resonances)
 
-### #865 · 0.240 · Elliptic/parabolic/hyperbolic trichotomy and the Weil radius <a id="weil-radius-trichotomy"></a>
+### #883 · 0.240 · Elliptic/parabolic/hyperbolic trichotomy and the Weil radius <a id="weil-radius-trichotomy"></a>
 
 **Label:** Restatement · **id:** `weil_radius_trichotomy` · **quadrant:** RH-sharp
 
@@ -16723,7 +17194,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Gyroscopic pencil of the Weil form](#weil-gyroscopic-pencil) (refines); [Two walls: the parabolic (signature) wall and the Routh (Krein-collision) wall; RH = ζ never reaches the first](#two-walls-parabolic-routh) (refines); [Weil window form on the pole annihilator, as a Morse-index / discriminant criterion](#weil-morse-discriminant-dictionary) (related to); [Weil discriminant wall Σ on S₂(Γ₀(23)) mixes](#weil-discriminant-wall-s2-23) (related to); [ζ’s primitive gap closes like e^{−1.10L} without crossing; it is not a massless free field](#primitive-gap) (related to); [The positivity cup at E = 0: bowl / flat / peak = definite / semidefinite / indefinite](#positivity-cup) (same mechanism as); [Levinson/Schur steps are SU(1,1) boosts: Weil positivity = every step subluminal](#levinson-su11-boosts) (same mechanism as); [The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e](#product-formula-rest-frame) (restates)
 
-### #867 · 0.240 · Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH <a id="bochner-shell-measure-forced-zeros"></a>
+### #885 · 0.240 · Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH <a id="bochner-shell-measure-forced-zeros"></a>
 
 **Label:** Restatement · **id:** `bochner_shell_measure_forced_zeros` · **quadrant:** RH-sharp
 
@@ -16743,7 +17214,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [BC Gibbs (β=1.01, 2), CC21 W_∞, Haar×shell, ν_½: none matches Weil Gram (mismatch 6%–180%)](#zero-free-candidates-fail) (feeds); [Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids)](#finite-window-nonuniqueness) (constrains); [Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH](#weil-energy-spectrum-zeros) (restates); [Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula](#xside-vs-rside-obstruction) (explains)
 
-### #868 · 0.240 · The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30) <a id="class-number-formula-mass-split"></a>
+### #886 · 0.240 · The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30) <a id="class-number-formula-mass-split"></a>
 
 **Label:** Restatement · **id:** `class_number_formula_mass_split` · **quadrant:** RH-sharp
 
@@ -16764,7 +17235,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230)](#narrow-wide-sign-at-infinity) (refines); [Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit](#stark-unit-leading-coefficient) (extends); [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) (related to)
 
-### #869 · 0.240 · Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular <a id="height-positivity-circular"></a>
+### #887 · 0.240 · Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular <a id="height-positivity-circular"></a>
 
 **Label:** Restatement · **id:** `height_positivity_circular` · **quadrant:** RH-sharp
 
@@ -16784,7 +17255,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Extended Weil form Q_z(F)=∫|F|²Re f′/f(½+z+it): λ_min(z)>0 for ζ; DH negative exactly for z<β−½=0.3085 (jump through pole); M=117–317](#extended-weil-lambda-min) (instance of); [Negative inertia of the height-z Weil form counts off-line zeros with β−½>z](#inertia-counts-zeros) (explains); [λ_min(z) increasing for ζ but concave (not subharmonic); log det, Σ negative eigenvalues, dBN edge all separate only via zero location](#no-noncircular-monotone) (feeds); [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros) (extends)
 
-### #871 · 0.240 · Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive <a id="haynsworth-legendre-flip"></a>
+### #889 · 0.240 · Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive <a id="haynsworth-legendre-flip"></a>
 
 **Label:** Restatement · **id:** `haynsworth_legendre_flip` · **quadrant:** RH-sharp
 
@@ -16805,7 +17276,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) (extends); [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin) (refines)
 
-### #873 · 0.240 · Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down <a id="net-force-orientation"></a>
+### #891 · 0.240 · Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down <a id="net-force-orientation"></a>
 
 **Label:** Restatement · **id:** `net_force_orientation` · **quadrant:** RH-sharp
 
@@ -16825,7 +17296,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Shear-to-push density r = T/(2ℓ₊ℓ₋): RH iff r ≤ 1 for push > 0; sup r = 1 unconditionally (log-Gaussians)](#shear-push-density) (quantifies); [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) (uses); [Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ](#viscosity-baroclinic) (illustrates)
 
-### #874 · 0.240 · Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator <a id="passivity-separator-circular"></a>
+### #892 · 0.240 · Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator <a id="passivity-separator-circular"></a>
 
 **Label:** Restatement · **id:** `passivity_separator_circular` · **quadrant:** RH-sharp
 
@@ -16845,7 +17316,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [DH Re Λ′/Λ turns negative exactly in windows centred on off-line zero ordinates (85.699, 114.163, 166.479, 176.702, 240.405) for σ<β; ζ min margin positive, attained at t→0](#dh-active-windows) (instance of); [Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip](#kk-ghost-blind-only-right-of-zeros) (explains); [Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular](#height-positivity-circular) (extends)
 
-### #876 · 0.240 · One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function <a id="b12-four-boundary-objects"></a>
+### #894 · 0.240 · One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function <a id="b12-four-boundary-objects"></a>
 
 **Label:** Restatement · **id:** `b12_four_boundary_objects` · **quadrant:** RH-sharp
 
@@ -16865,7 +17336,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - extends → [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet)
 - related to → [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler)
 
-### #879 · 0.240 · Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH <a id="hodge-index-zeta-restatement"></a>
+### #897 · 0.240 · Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH <a id="hodge-index-zeta-restatement"></a>
 
 **Label:** Restatement · **id:** `hodge_index_zeta_restatement` · **quadrant:** RH-sharp
 
@@ -16881,7 +17352,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [DH: two negative directions from L≈3.8 peaked at γ≈85.7, surviving on the pole annihilator; = ½·(four off-line zeros) as in Bombieri 2000](#dh-ghost-quadruple-two-negatives) (contrasts with); [Weil Gram: pole term rank-2 signature (1,1); ζ without pole has exactly one negative direction (L 0.5–8, M=160); positive on the pole-functional annihilator](#pole-plane-hyperbolic-complement-positive) (instance of); [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) (restates)
 
-### #880 · 0.240 · Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information <a id="multispin-adds-nothing"></a>
+### #898 · 0.240 · Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information <a id="multispin-adds-nothing"></a>
 
 **Label:** Restatement · **id:** `multispin_adds_nothing` · **quadrant:** RH-sharp
 
@@ -16902,7 +17373,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Davenport–Heilbronn's off-line zero (h₀ = 2(ρ − ½) = 0.6170 + 171.3987i) is pulled onto the imaginary axis by complete-graph ferromagnetic coupling: 2-spin branches land at J ≈ 0.581 and 0.600, 3-spin at J ≈ 0.326; no low zero ever leaves the axis (window Im h < 200)](#dh-ferromagnetic-healing) (tests)
 
-### #881 · 0.240 · RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros) <a id="rh-no-ghost-restatement"></a>
+### #899 · 0.240 · RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros) <a id="rh-no-ghost-restatement"></a>
 
 **Label:** Restatement · **id:** `rh_no_ghost_restatement` · **quadrant:** RH-sharp
 
@@ -16918,7 +17389,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (restates); [First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N](#coisotropic-reduction-pn) (analogy of); [No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2](#transverse-positivity-slot2) (restates)
 
-### #882 · 0.240 · No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2 <a id="transverse-positivity-slot2"></a>
+### #900 · 0.240 · No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2 <a id="transverse-positivity-slot2"></a>
 
 **Label:** Restatement · **id:** `transverse_positivity_slot2` · **quadrant:** RH-sharp
 
@@ -16938,7 +17409,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (refines); [Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling](#noncircular-noghost-conjecture) (feeds)
 
-### #884 · 0.240 · Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel <a id="anisotropic-part-weil"></a>
+### #902 · 0.240 · Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel <a id="anisotropic-part-weil"></a>
 
 **Label:** Restatement · **id:** `anisotropic_part_weil` · **quadrant:** RH-sharp
 
@@ -16958,7 +17429,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Shear-to-push density r = T/(2ℓ₊ℓ₋): RH iff r ≤ 1 for push > 0; sup r = 1 unconditionally (log-Gaussians)](#shear-push-density) (density form of)
 
-### #885 · 0.240 · sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece <a id="boundary-signature-neutral"></a>
+### #903 · 0.240 · sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece <a id="boundary-signature-neutral"></a>
 
 **Label:** Restatement · **id:** `boundary_signature_neutral` · **quadrant:** RH-sharp
 
@@ -16978,7 +17449,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do](#lemma21-slack-identity) (restates); [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) (contrasts with)
 
-### #886 · 0.240 · S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization) <a id="def-arithmetic-action"></a>
+### #904 · 0.240 · S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization) <a id="def-arithmetic-action"></a>
 
 **Label:** Restatement · **id:** `def_arithmetic_action` · **quadrant:** RH-sharp
 
@@ -16998,7 +17469,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Θ = s↔1−s; OS form of S on positive log-time is a Hankel form; pole RP, archimedean exactly anti-RP (CM kernel), total not RP for ζ and DH](#os-form-hankel) (uses)
 
-### #887 · 0.240 · (S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane <a id="def-thermodynamic-arithmetic-action"></a>
+### #905 · 0.240 · (S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane <a id="def-thermodynamic-arithmetic-action"></a>
 
 **Label:** Restatement · **id:** `def_thermodynamic_arithmetic_action` · **quadrant:** RH-sharp
 
@@ -17017,7 +17488,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Comb free energy Λ_W additive over primes ⇔ Euler product; DH defect 0.76/2.77 at W=2.4/3.2 from n=6](#comb-free-energy-extensive)
 - uses → [Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd)](#arch-symbol-bose-kernel)
 
-### #888 · 0.240 · KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1) <a id="kms-positivity-not-forcing"></a>
+### #906 · 0.240 · KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1) <a id="kms-positivity-not-forcing"></a>
 
 **Label:** Restatement · **id:** `kms_positivity_not_forcing` · **quadrant:** RH-sharp
 
@@ -17037,7 +17508,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [RH for Fermat curves via Jacobi sums is a degree-one accident: each Hecke-character L-polynomial is 1 − J·T, so the Gauss-sum unitarity |g|² = q (an orthogonality/Parseval identity, i.e. the functional-equation factor) pins the single root; for ζ the same unitarity (|ε| = 1) is shared by Davenport–Heilbronn and pins nothing](#degree-one-accident) (contrasts with)
 
-### #889 · 0.240 · Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH <a id="lc-square-xi"></a>
+### #907 · 0.240 · Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH <a id="lc-square-xi"></a>
 
 **Label:** Restatement · **id:** `lc_square_xi` · **quadrant:** RH-sharp
 
@@ -17056,7 +17527,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - restates → [The Laguerre inequality Ξ′² − ΞΞ″ > 0 holds for ζ on [0,60] and fails exactly around the off-line zero of the Davenport–Heilbronn function](#laguerre-detects-offline-zero)
 - feeds → [Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture)](#krein-laguerre-count) — Laguerre windows in w = t²
 
-### #890 · 0.240 · Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted <a id="pole-plane-lorentz-boost"></a>
+### #908 · 0.240 · Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted <a id="pole-plane-lorentz-boost"></a>
 
 **Label:** Restatement · **id:** `pole_plane_lorentz_boost` · **quadrant:** RH-sharp
 
@@ -17076,7 +17547,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization)](#def-arithmetic-action) (uses)
 
-### #892 · 0.240 · Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular <a id="positivity-is-nonconcentration"></a>
+### #910 · 0.240 · Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular <a id="positivity-is-nonconcentration"></a>
 
 **Label:** Restatement · **id:** `positivity_is_nonconcentration` · **quadrant:** RH-sharp
 
@@ -17096,7 +17567,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1)](#kms-positivity-not-forcing) (uses)
 
-### #894 · 0.240 · Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight) <a id="stationary-phase-split"></a>
+### #912 · 0.240 · Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight) <a id="stationary-phase-split"></a>
 
 **Label:** Restatement · **id:** `stationary_phase_split` · **quadrant:** RH-sharp
 
@@ -17116,7 +17587,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given)](#maslov-reading) (analogue of)
 
-### #895 · 0.240 · A nilpotent supercharge with W = {Q, Q*} restates positivity <a id="supercharge-laplacian-restates-positivity"></a>
+### #913 · 0.240 · A nilpotent supercharge with W = {Q, Q*} restates positivity <a id="supercharge-laplacian-restates-positivity"></a>
 
 **Label:** Restatement · **id:** `supercharge_laplacian_restates_positivity` · **quadrant:** RH-sharp
 
@@ -17140,7 +17611,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Graded inertia of window forms: no index identity beyond positivity](#graded-inertia-null) (instance of); [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) (contrasts with)
 
-### #896 · 0.240 · T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only <a id="t-iff-semilocal-sonin"></a>
+### #914 · 0.240 · T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only <a id="t-iff-semilocal-sonin"></a>
 
 **Label:** Restatement · **id:** `t_iff_semilocal_sonin` · **quadrant:** RH-sharp
 
@@ -17160,7 +17631,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality](#needed-semilocal-sonin-inequality) (refines)
 
-### #897 · 0.240 · Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular <a id="thermo-only-extensivity"></a>
+### #915 · 0.240 · Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular <a id="thermo-only-extensivity"></a>
 
 **Label:** Restatement · **id:** `thermo_only_extensivity` · **quadrant:** RH-sharp
 
@@ -17179,7 +17650,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - restates → [Comb free energy Λ_W additive over primes ⇔ Euler product; DH defect 0.76/2.77 at W=2.4/3.2 from n=6](#comb-free-energy-extensive)
 - related to → [Euler ⇔ multiplicative ⇔ Hecke eigen; DH = ((1−iκ)L(χ)+(1+iκ)L(χ̄))/2 mod 5](#euler-iff-hecke-dh-not-eigen)
 
-### #899 · 0.240 · Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH <a id="weil-energy-spectrum-zeros"></a>
+### #917 · 0.240 · Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH <a id="weil-energy-spectrum-zeros"></a>
 
 **Label:** Restatement · **id:** `weil_energy_spectrum_zeros` · **quadrant:** RH-sharp
 
@@ -17199,7 +17670,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism) (contrasts with)
 
-### #901 · 0.240 · RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked <a id="cramer-cm-iff-rh"></a>
+### #919 · 0.240 · RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked <a id="cramer-cm-iff-rh"></a>
 
 **Label:** Restatement · **id:** `cramer_cm_iff_rh` · **quadrant:** RH-sharp
 
@@ -17215,7 +17686,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts](#prime-side-cramer-cm) (refines)
 
-### #903 · 0.240 · No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement) <a id="fv-operator-pair-refuted"></a>
+### #921 · 0.240 · No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement) <a id="fv-operator-pair-refuted"></a>
 
 **Label:** Restatement · **id:** `fv_operator_pair_refuted` · **quadrant:** RH-sharp
 
@@ -17233,7 +17704,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [V_p*V_p = p^{k−2}(p+1) + T_p = p^{−(k−2)}(p^{k−2}+α)(p^{k−2}+β), αβ = p^{2k−3} (φ10, φ12 exact integers; k=16 operator identity 5.8e−13/6.5e−9)](#vstar-v-satake-factorization)
 
-### #905 · 0.240 · RH as infinite divisibility <a id="infinitely-divisible-rh-criterion"></a>
+### #923 · 0.240 · RH as infinite divisibility <a id="infinitely-divisible-rh-criterion"></a>
 
 **Label:** Restatement · **id:** `infinitely_divisible_rh_criterion` · **quadrant:** RH-sharp
 
@@ -17249,7 +17720,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Convolution square root](#convolution-square-root)
 
-### #908 · 0.240 · RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts <a id="prime-side-cramer-cm"></a>
+### #926 · 0.240 · RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts <a id="prime-side-cramer-cm"></a>
 
 **Label:** Restatement · **id:** `prime_side_cramer_cm` · **quadrant:** RH-sharp
 
@@ -17267,7 +17738,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked](#cramer-cm-iff-rh)
 
-### #909 · 0.240 · RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH <a id="reciprocal-xi-pf-ensemble"></a>
+### #927 · 0.240 · RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH <a id="reciprocal-xi-pf-ensemble"></a>
 
 **Label:** Restatement · **id:** `reciprocal_xi_PF_ensemble` · **quadrant:** RH-sharp
 
@@ -17285,7 +17756,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [ζ: 0 negative directions with pole term, exactly 1 without (L=1..6); pole term signature (1,1); DH 2 from L≈4](#weil-gram-one-ghost) — both separate ζ/DH only at the off-line zero scale
 
-### #912 · 0.240 · Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson <a id="signature-not-det-three-ways"></a>
+### #930 · 0.240 · Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson <a id="signature-not-det-three-ways"></a>
 
 **Label:** Restatement · **id:** `signature_not_det_three_ways` · **quadrant:** RH-sharp
 
@@ -17303,7 +17774,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [sign det of the Weil Gram = (−1)^{n₋}: detects the pole plane, blind to DH paired negatives](#det-sign-parity-blind)
 
-### #913 · 0.240 · Which sign statements for zeta are non-circular <a id="signed-energy-noncircular-sign"></a>
+### #931 · 0.240 · Which sign statements for zeta are non-circular <a id="signed-energy-noncircular-sign"></a>
 
 **Label:** Restatement · **id:** `signed_energy_noncircular_sign` · **quadrant:** RH-sharp
 
@@ -17323,7 +17794,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Positivity as reality of the regularized clock](#positivity-real-clock-restatement)
 
-### #915 · 0.240 · ⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite <a id="weil-braket-pairing"></a>
+### #933 · 0.240 · ⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite <a id="weil-braket-pairing"></a>
 
 **Label:** Restatement · **id:** `weil_braket_pairing` · **quadrant:** RH-sharp
 
@@ -17341,7 +17812,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [Weil criterion in push/shear language: pole terms = (hyperbolic) push, −Σ_ρ f̂(ρ) = shear, primes + archimedean = total; degree-0 test functions remove the push; RH ⇔ shear ≤ 0](#weil-shear-subtracts)
 
-### #917 · 0.240 · Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only <a id="corrections"></a>
+### #935 · 0.240 · Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only <a id="corrections"></a>
 
 **Label:** Restatement · **id:** `corrections` · **quadrant:** RH-sharp
 
@@ -17355,7 +17826,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.3 · evidence 1 → priority 0.240
 
-### #918 · 0.240 · Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio <a id="honest-l-as-partition-ratio"></a>
+### #936 · 0.240 · Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio <a id="honest-l-as-partition-ratio"></a>
 
 **Label:** Restatement · **id:** `honest_l_as_partition_ratio` · **quadrant:** RH-sharp
 
@@ -17369,7 +17840,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.3 · evidence 1 → priority 0.240
 
-### #919 · 0.240 · Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity <a id="kronecker-hurwitz-eichler-selberg"></a>
+### #937 · 0.240 · Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity <a id="kronecker-hurwitz-eichler-selberg"></a>
 
 **Label:** Restatement · **id:** `kronecker_hurwitz_eichler_selberg` · **quadrant:** RH-sharp
 
@@ -17383,7 +17854,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.3 · evidence 1 → priority 0.240
 
-### #920 · 0.240 · W = covariance of φ̂_i under Σδ_γ iff zeros real <a id="weil-form-as-fisher-metric-circular"></a>
+### #938 · 0.240 · W = covariance of φ̂_i under Σδ_γ iff zeros real <a id="weil-form-as-fisher-metric-circular"></a>
 
 **Label:** Restatement · **id:** `weil_form_as_fisher_metric_circular` · **quadrant:** RH-sharp
 
@@ -17397,7 +17868,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.3 · evidence 1 → priority 0.240
 
-### #996 · 0.200 · “RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor <a id="never-focuses-conjecture-downgraded"></a>
+### #1015 · 0.200 · “RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor <a id="never-focuses-conjecture-downgraded"></a>
 
 **Label:** Conjecture · **id:** `never_focuses_conjecture_downgraded` · **quadrant:** RH-sharp
 
@@ -18188,7 +18659,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Birman–Krein bridge: scattering phase = spectral shift; −φ′/φ = spectral density = Wigner delay = Maass–Selberg intercept](#birman-krein-spectral-shift) — smooth vs fluctuating part
 - analogue of → [Tate count / Picard number (ghost-blind)](#tate-count)
 
-### #859 · 0.253 · The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn <a id="collinear-dh-odd-window"></a>
+### #876 · 0.253 · The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn <a id="collinear-dh-odd-window"></a>
 
 **Label:** Analogy · **id:** `collinear_dh_odd_window` · **quadrant:** sharp but interpretive
 
@@ -19126,7 +19597,41 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.6 · evidence 1 → priority 0.360
 
-### #495 · 0.325 · Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1) <a id="morse-lobes-wedges-windows"></a>
+### #496 · 0.347 · A translation-invariant complex structure does not preserve the window kernel <a id="nonstationary-j-obstruction"></a>
+
+**Label:** Theorem · **id:** `nonstationary_J_obstruction` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* If the metric is translation-invariant and nonnegative, the Hilbert transform supplies a complex structure compatible with it. That operator does not preserve compact support, and it does not preserve E0. A complex structure for the window form has to move with the window. None has been built. Rank 1 and the open score near 1.8 are unchanged.
+
+**Core.** On the line, a nonnegative translation-invariant symbol has the Hilbert transform as a compatible J: the Hamiltonian vector field is minus J times the gradient, and real and imaginary time differ by that J. The Hilbert transform of a compactly supported function is not compactly supported. The two moment constraints that cut out E0 are not preserved. So a J for the window sector, if it exists, is not a convolution operator. Robertson-Schrödinger positivity is positivity of a covariance, diagonals plus a determinant of a 2 by 2 block, once an observable is chosen. There is no canonical time operator in that identity. Weight-12 modular calibrations, including E10 = E4 E6, B10 = 5/66, and the Wronskian of Q^3 and R^2, were rechecked symbolically in the session. They do not select the archimedean counterterm: 2(psi(k/2) - log 2 pi) is not k/12.
+
+**Formula.** X_H = -J grad H; Hilbert J does not preserve C_c or E0
+
+**Numbers.** B10 = 5/66. The weight identity 2(psi(k/2) - log 2 pi) versus k/12 fails at the weights checked in k0_weight.txt.
+
+**What is proved around it.** The support obstruction for the Hilbert transform is classical Fourier analysis and is the exact finite-dimensional-versus-window point recorded here. The modular identities are symbolic and were already checked in the session script fam1954_exact.py; the weight mismatch is an inequality of special values.
+
+**Tests it must pass.** A proposed J that is a convolution, or that is positive for a Beurling system as well, does not answer rank 1.
+
+**Also known as:** Hilbert-transform J; non-stationary J
+
+**Axes:** structure/frame (Ax1), sign/positivity (Ax2), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.8 (nearest gap: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.347
+
+> ⚠ **Correction / caution.** This obstruction does not construct a non-stationary J.
+
+> ⚠ **Correction / caution.** Open ~1.8 is unchanged. Rank 1, kahler_triple_polarization, is unchanged.
+
+> ⚠ **Correction / caution.** Weight 12 is a calibration, not the counterterm K0.
+
+**Relations (outgoing):**
+
+- constrains → [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](#kahler-triple-polarization) — translation-invariant J is obstructed on E0; no replacement is built; rank 1 unchanged
+- contrasts with → [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)](#mp-castelnuovo) — no progress on the missing positive involution
+- contrasts with → [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) — a covariance identity still needs a chosen observable; it does not time the flow
+
+### #498 · 0.325 · Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1) <a id="morse-lobes-wedges-windows"></a>
 
 **Label:** Theorem · **id:** `morse_lobes_wedges_windows` · **quadrant:** true but ghost-blind/untested
 
@@ -19156,7 +19661,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) (lives in); [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) (analogue of)
 
-### #497 · 0.325 · Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity <a id="zeros-as-frames-trichotomy"></a>
+### #500 · 0.325 · Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity <a id="zeros-as-frames-trichotomy"></a>
 
 **Label:** Theorem · **id:** `zeros_as_frames_trichotomy` · **quadrant:** true but ghost-blind/untested
 
@@ -19187,7 +19692,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Krein collisions (how ghosts are born)](#krein-collision) (lives in); [Λ = 0 (⇔ RH, given Rodgers–Tao) puts ζ at the parabolic threshold of the de Bruijn–Newman family — at infinity: with simple zeros, forced collisions for t < 0 escape every compact set](#dbn-parabolic-threshold) (lives in); [Invariant (χ-type) vs refined (h-type) counts: Lefschetz/GRR totals, N(T), box counts are FE-determined and ghost-blind; the on-line count changes only at collisions; RH ⇔ refined = invariant](#invariant-vs-refined-count) (lives in); [Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity)](#ep-gap-across-collision) (lives in)
 
-### #503 · 0.325 · The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic) <a id="discriminant-space-trichotomy"></a>
+### #506 · 0.325 · The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic) <a id="discriminant-space-trichotomy"></a>
 
 **Label:** Theorem · **id:** `discriminant_space_trichotomy` · **quadrant:** true but ghost-blind/untested
 
@@ -19209,7 +19714,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Observability as Hecke-equivariance: a single modular-invariant observable can fail positivity, the class-group-averaged (Euler-product) ones do not](#hecke-equivariance-as-observability) (uses); [No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants)](#sundman-livsic-obstruction) (constrains)
 
-### #504 · 0.325 · Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point <a id="dual-conic"></a>
+### #507 · 0.325 · Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point <a id="dual-conic"></a>
 
 **Label:** Theorem · **id:** `dual_conic` · **quadrant:** true but ghost-blind/untested
 
@@ -19233,7 +19738,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) (same mechanism as); [Heaviside RLGC line](#heaviside) (analogue of)
 
-### #505 · 0.325 · Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form <a id="legendre-jacobi-split-rotating-frame"></a>
+### #508 · 0.325 · Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form <a id="legendre-jacobi-split-rotating-frame"></a>
 
 **Label:** Theorem · **id:** `legendre_jacobi_split_rotating_frame` · **quadrant:** true but ghost-blind/untested
 
@@ -19253,7 +19758,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite) (instance of); [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) (analogue of); [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) (related to); [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) (analogue of)
 
-### #506 · 0.325 · Unique factorization = the primon Fock decomposition is an isomorphism <a id="primon-fock-unique-factorization"></a>
+### #509 · 0.325 · Unique factorization = the primon Fock decomposition is an isomorphism <a id="primon-fock-unique-factorization"></a>
 
 **Label:** Theorem · **id:** `primon_fock_unique_factorization` · **quadrant:** true but ghost-blind/untested
 
@@ -19273,7 +19778,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No natural dictionary between Virasoro level and window length: dim Z_L grows linearly, p(N) and the primon count exponentially](#no-level-l-dictionary) (related to); [KS lift of the two walls: parabolic = a frequency reaches 0; Routh = opposite-Krein frequencies meet](#ks-lift-two-walls) (analogue of); [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) (extends); [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) (restates)
 
-### #507 · 0.325 · Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6 <a id="conductor-uniform-shift"></a>
+### #510 · 0.325 · Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6 <a id="conductor-uniform-shift"></a>
 
 **Label:** Theorem · **id:** `conductor_uniform_shift` · **quadrant:** true but ghost-blind/untested
 
@@ -19289,7 +19794,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [χ mod 5 and DH share conductor and Γ, but only DH has negatives: the ghost is the missing Euler product, not the conductor](#conductor-not-ghost-predictor) (constrains); [h_F^stab(CM) = ½L′/L(1,χ_D) + ¼log|D| − ½(γ+log 2π²), 9 class-number-1 fields to 1e−12](#cm-height-log-derivative) (explains); [W_{ζ_K} = W_ζ + W_{χ_D}: no negatives on the pole annihilator for 10 imaginary quadratic D](#zetak-weil-decomposition) (extends); [Discriminant as self-intersection of a polarization (arithmetic Hodge index)](#discriminant-polarization-height) (related to)
 
-### #509 · 0.325 · Gluing connections are flat; a signed curvature must live in the metric <a id="flat-gluing-curvature-in-metric"></a>
+### #512 · 0.325 · Gluing connections are flat; a signed curvature must live in the metric <a id="flat-gluing-curvature-in-metric"></a>
 
 **Label:** Theorem · **id:** `flat_gluing_curvature_in_metric` · **quadrant:** true but ghost-blind/untested
 
@@ -19312,7 +19817,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature) (refines); [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) (refines)
 
-### #511 · 0.325 · F/V trichotomy in Manin's dictionary <a id="fv-nc-torus-trichotomy"></a>
+### #514 · 0.325 · F/V trichotomy in Manin's dictionary <a id="fv-nc-torus-trichotomy"></a>
 
 **Label:** Theorem · **id:** `fv_nc_torus_trichotomy` · **quadrant:** true but ghost-blind/untested
 
@@ -19334,7 +19839,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) (instance of); [Gap widths approaching the wall](#gap-width-wall-exponent) (instance of); [Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)](#zeta-zero-fv-quadratic) (analogy of)
 
-### #512 · 0.325 · (p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p) <a id="half-unit-mp2-splitting"></a>
+### #515 · 0.325 · (p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p) <a id="half-unit-mp2-splitting"></a>
 
 **Label:** Theorem · **id:** `half_unit_mp2_splitting` · **quadrant:** true but ghost-blind/untested
 
@@ -19356,7 +19861,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1}](#euler-half-exponent-tame-symbol) (restates)
 
-### #520 · 0.325 · Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product <a id="amgm-discriminant-walls"></a>
+### #523 · 0.325 · Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product <a id="amgm-discriminant-walls"></a>
 
 **Label:** Theorem · **id:** `amgm_discriminant_walls` · **quadrant:** true but ghost-blind/untested
 
@@ -19380,7 +19885,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over 𝔽_q, Levinson/PARCOR steps are Cauchy–Schwarz in the Hodge-index / Rosati product](#ff-levinson-parcor-hodge-bound) (same mechanism as); [Maxwell–Cremona on the discretized mix wall Σ is too thin to lift](#s2-wall-too-thin-for-cremona) (related to); [Weil window form on the pole annihilator, as a Morse-index / discriminant criterion](#weil-morse-discriminant-dictionary) (related to); [Weil discriminant wall Σ on S₂(Γ₀(23)) mixes](#weil-discriminant-wall-s2-23) (related to); [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) (related to)
 
-### #522 · 0.325 · Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691 <a id="cohen-constant-terms-zeta-odd"></a>
+### #525 · 0.325 · Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691 <a id="cohen-constant-terms-zeta-odd"></a>
 
 **Label:** Theorem · **id:** `cohen_constant_terms_zeta_odd` · **quadrant:** true but ghost-blind/untested
 
@@ -19401,7 +19906,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [691 sits at the D = 0 rung: H_6/ζ(−11) has 691 in every coefficient denominator (N ≤ 200); τ(n) ≡ σ₁₁(n) mod 691 for n ≤ 60](#six91-at-boundary-rung) (uses)
 
-### #525 · 0.325 · Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient <a id="energy-positivity-mechanism"></a>
+### #528 · 0.325 · Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient <a id="energy-positivity-mechanism"></a>
 
 **Label:** Theorem · **id:** `energy_positivity_mechanism` · **quadrant:** true but ghost-blind/untested
 
@@ -19421,7 +19926,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier)](#arakelov-green-capacity) (feeds); [|disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter](#vandermonde-log-gas) (feeds)
 
-### #527 · 0.325 · The Frobenius quadratic is the focal quadratic of a conic <a id="focal-frobenius-quadratic"></a>
+### #530 · 0.325 · The Frobenius quadratic is the focal quadratic of a conic <a id="focal-frobenius-quadratic"></a>
 
 **Label:** Theorem · **id:** `focal_frobenius_quadratic` · **quadrant:** true but ghost-blind/untested
 
@@ -19444,7 +19949,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis](#escape-direction-pair) (analogue of)
 
-### #529 · 0.325 · Norm as the product of two K-theory states <a id="fv-two-states-sector"></a>
+### #532 · 0.325 · Norm as the product of two K-theory states <a id="fv-two-states-sector"></a>
 
 **Label:** Theorem · **id:** `fv_two_states_sector` · **quadrant:** true but ghost-blind/untested
 
@@ -19466,7 +19971,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite) (refines); [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall) (refines)
 
-### #530 · 0.325 · Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line <a id="jacobi-theta-decomposition-hinge"></a>
+### #533 · 0.325 · Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line <a id="jacobi-theta-decomposition-hinge"></a>
 
 **Label:** Theorem · **id:** `jacobi_theta_decomposition_hinge` · **quadrant:** true but ghost-blind/untested
 
@@ -19486,7 +19991,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) (refines); [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) (related to)
 
-### #531 · 0.325 · Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound <a id="ks-stokes-hasse"></a>
+### #534 · 0.325 · Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound <a id="ks-stokes-hasse"></a>
 
 **Label:** Theorem · **id:** `ks_stokes_hasse` · **quadrant:** true but ghost-blind/untested
 
@@ -19502,7 +20007,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Genus-1 Hasse bound = positivity of a coherency (Stokes) matrix](#coherency-hasse) (refines); [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) (same mechanism as); [Kepler eccentricity as a degree of polarization (KS dictionary)](#ks-polarization-dictionary) (refines)
 
-### #533 · 0.325 · Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang <a id="lambda-invariance-nogo"></a>
+### #536 · 0.325 · Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang <a id="lambda-invariance-nogo"></a>
 
 **Label:** Theorem · **id:** `lambda_invariance_nogo` · **quadrant:** true but ghost-blind/untested
 
@@ -19522,7 +20027,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - constrains → [A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known](#slot2-thermodynamic-target)
 - constrains → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece) — no damping-invariant (V‴, convexity in σ²) local condition can imply Lee–Yang for Φ
 
-### #535 · 0.325 · No real-coefficient Weil cohomology for arithmetic curves <a id="no-real-weil-cohomology-arithmetic"></a>
+### #538 · 0.325 · No real-coefficient Weil cohomology for arithmetic curves <a id="no-real-weil-cohomology-arithmetic"></a>
 
 **Label:** Theorem · **id:** `no_real_weil_cohomology_arithmetic` · **quadrant:** true but ghost-blind/untested
 
@@ -19540,7 +20045,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The zeta pole mode is the single unpaired negative square](#pole-mode-unpaired-degree0) (analogy of); [A quaternionic star on a finite form is a parity condition](#compatible-quaternionic-j-parity) (analogy of)
 
-### #537 · 0.325 · Null-line quotient (Gupta-Bleuler form) <a id="null-line-quotient"></a>
+### #540 · 0.325 · Null-line quotient (Gupta-Bleuler form) <a id="null-line-quotient"></a>
 
 **Label:** Theorem · **id:** `null_line_quotient` · **quadrant:** true but ghost-blind/untested
 
@@ -19564,7 +20069,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) (analogy of); [Ramanujan's 691 as a degeneration of the pole line](#ramanujan-691-degeneration) (analogy of)
 
-### #538 · 0.325 · At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips <a id="parabolic-edge"></a>
+### #541 · 0.325 · At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips <a id="parabolic-edge"></a>
 
 **Label:** Theorem · **id:** `parabolic_edge` · **quadrant:** true but ghost-blind/untested
 
@@ -19583,9 +20088,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - related to → [The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC](#jordan-shear-dtdc)
 - refines → [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing)
 
-**Relations (incoming):** [On the Hasse edge the companion-matrix similitude test gives a false negative; a semisimple Frobenius passes](#stein-edge-false-negative) (related to)
+**Relations (incoming):** [On the Hasse edge the companion-matrix similitude test gives a false negative; a semisimple Frobenius passes](#stein-edge-false-negative) (related to); [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) (distinguishes)
 
-### #541 · 0.325 · Polishchuk-Schwarz tilt as the wall limit of a central charge <a id="ps-central-charge-fv-family"></a>
+### #544 · 0.325 · Polishchuk-Schwarz tilt as the wall limit of a central charge <a id="ps-central-charge-fv-family"></a>
 
 **Label:** Theorem · **id:** `ps_central_charge_fv_family` · **quadrant:** true but ghost-blind/untested
 
@@ -19607,7 +20112,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [Order compatible with a form needs a Rosati involution](#order-form-rosati)
 - corrects → [Order as a stability condition (target shape)](#ps-tilt-central-charge-target) — the tilt slope is −1/θ (Morita image), not θ; Z_F = F·rk_{−1/F}
 
-### #545 · 0.325 · Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0 <a id="vstar-v-edge-positivity"></a>
+### #548 · 0.325 · Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0 <a id="vstar-v-edge-positivity"></a>
 
 **Label:** Theorem · **id:** `vstar_v_edge_positivity` · **quadrant:** true but ghost-blind/untested
 
@@ -19627,7 +20132,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [χ(D)-twisted Jacobi objects see only χ²; DH-type κφ_χ+κ̄φ_χ̄ stays Hecke-eigen and satisfies the V-identities; breaks only on integral-weight T_p (p ≡ 2,3 mod 5)](#dh-invisible-jacobi-side) (fails for); [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (uses)
 
-### #547 · 0.325 · Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd) <a id="arch-symbol-bose-kernel"></a>
+### #550 · 0.325 · Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd) <a id="arch-symbol-bose-kernel"></a>
 
 **Label:** Theorem · **id:** `arch_symbol_bose_kernel` · **quadrant:** true but ghost-blind/untested
 
@@ -19643,7 +20148,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) (uses); [(S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane](#def-thermodynamic-arithmetic-action) (uses)
 
-### #552 · 0.325 · A dent moves a zero charge sideways; geometric deformations only rotate <a id="dent-is-charge-move"></a>
+### #555 · 0.325 · A dent moves a zero charge sideways; geometric deformations only rotate <a id="dent-is-charge-move"></a>
 
 **Label:** Theorem · **id:** `dent_is_charge_move` · **quadrant:** true but ghost-blind/untested
 
@@ -19664,7 +20169,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature)
 - refines → [Ghost quartet ½ ± δ ± iγ](#ghost-quartet)
 
-### #553 · 0.325 · Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i] <a id="dirichlet-primes-are-chi4"></a>
+### #556 · 0.325 · Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i] <a id="dirichlet-primes-are-chi4"></a>
 
 **Label:** Theorem · **id:** `dirichlet_primes_are_chi4` · **quadrant:** true but ghost-blind/untested
 
@@ -19688,7 +20193,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄)](#chebyshev-bias-boson-fermion) (refines)
 
-### #554 · 0.325 · Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1) <a id="faltings-hriljac-statement"></a>
+### #557 · 0.325 · Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1) <a id="faltings-hriljac-statement"></a>
 
 **Label:** Cited · **id:** `faltings_hriljac_statement` · **quadrant:** true but ghost-blind/untested
 
@@ -19708,7 +20213,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean)](#cm-height-disc-det-split) (instance of)
 
-### #555 · 0.325 · The F/V sweep is a de Bruijn-Newman flow <a id="fv-is-dbn-flow"></a>
+### #558 · 0.325 · The F/V sweep is a de Bruijn-Newman flow <a id="fv-is-dbn-flow"></a>
 
 **Label:** Theorem · **id:** `fv_is_dbn_flow` · **quadrant:** true but ghost-blind/untested
 
@@ -19729,7 +20234,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - instance of → [de Bruijn–Newman constant Λ](#debruijn-newman)
 - refines → [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep)
 
-### #556 · 0.325 · log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ <a id="graded-gas-is-free-energy"></a>
+### #559 · 0.325 · log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ <a id="graded-gas-is-free-energy"></a>
 
 **Label:** Theorem · **id:** `graded_gas_is_free_energy` · **quadrant:** true but ghost-blind/untested
 
@@ -19745,7 +20250,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [(β,h·Ω) family: ζ pos-def R≈+0.22–0.26; χ−4 neg-def R −6…−42; DH indefinite; block family flat for ζ = Euler product](#ruppeiner-stability-not-rh) (no-progress-on); [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) (related to)
 
-### #557 · 0.325 · In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially <a id="haynsworth-pole-plane-split-windows"></a>
+### #560 · 0.325 · In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially <a id="haynsworth-pole-plane-split-windows"></a>
 
 **Label:** Theorem · **id:** `haynsworth_pole_plane_split_windows` · **quadrant:** true but ghost-blind/untested
 
@@ -19763,9 +20268,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - extends → [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip)
 
-**Relations (incoming):** [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) (extends)
+**Relations (incoming):** [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) (uses); [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) (extends)
 
-### #558 · 0.325 · Indefinite norm as a minimum of definite forms <a id="hecke-indefinite-as-min-definite"></a>
+### #561 · 0.325 · Indefinite norm as a minimum of definite forms <a id="hecke-indefinite-as-min-definite"></a>
 
 **Label:** Theorem · **id:** `hecke_indefinite_as_min_definite` · **quadrant:** true but ghost-blind/untested
 
@@ -19787,7 +20292,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Indefinite norm as minimal mass over stability conditions](#hecke-mass-stability) (refines)
 
-### #561 · 0.325 · [M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ <a id="index-691-weight12"></a>
+### #564 · 0.325 · [M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ <a id="index-691-weight12"></a>
 
 **Label:** Theorem · **id:** `index_691_weight12` · **quadrant:** true but ghost-blind/untested
 
@@ -19807,7 +20312,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures](#hecke-congruence-module-691) (same mechanism as)
 
-### #563 · 0.325 · Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity <a id="ks-lc-preserve-sign"></a>
+### #566 · 0.325 · Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity <a id="ks-lc-preserve-sign"></a>
 
 **Label:** Theorem · **id:** `ks_lc_preserve_sign` · **quadrant:** true but ghost-blind/untested
 
@@ -19827,7 +20332,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform](#third-axis-is-half-plane) (feeds)
 
-### #565 · 0.325 · Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities <a id="local-logderiv-indefinite"></a>
+### #568 · 0.325 · Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities <a id="local-logderiv-indefinite"></a>
 
 **Label:** Theorem · **id:** `local_logderiv_indefinite` · **quadrant:** true but ghost-blind/untested
 
@@ -19847,7 +20352,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [L(s,χ mod 5) passive in the window while DH, a combination of L(χ) and L(χ̄), is active](#chi-passive-dh-not) (feeds)
 
-### #566 · 0.325 · Modularity as the observability link <a id="modularity-observability-link"></a>
+### #569 · 0.325 · Modularity as the observability link <a id="modularity-observability-link"></a>
 
 **Label:** Theorem · **id:** `modularity_observability_link` · **quadrant:** true but ghost-blind/untested
 
@@ -19867,7 +20372,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Frobenius angles are already quantized](#frobenius-angles-quantized) (refines)
 
-### #574 · 0.325 · Support property dies at the wall; integrality replaces it on the wedge <a id="support-property-wall"></a>
+### #577 · 0.325 · Support property dies at the wall; integrality replaces it on the wedge <a id="support-property-wall"></a>
 
 **Label:** Theorem · **id:** `support_property_wall` · **quadrant:** true but ghost-blind/untested
 
@@ -19889,7 +20394,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Integrality instead of positivity (45-degree direction)](#integrality-support-bypass) (analogy of)
 
-### #575 · 0.325 · Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge <a id="three-indices-not-conflated"></a>
+### #578 · 0.325 · Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge <a id="three-indices-not-conflated"></a>
 
 **Label:** Theorem · **id:** `three_indices_not_conflated` · **quadrant:** true but ghost-blind/untested
 
@@ -19910,7 +20415,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Ghost count of the arithmetic side](#ghost-count-theorem) — the ghost count is a statement about κ = n₋
 - refines → [Pontryagin spaces of entire functions](#pontryagin-de-branges-spaces) — Pontryagin spaces carry the negative index κ
 
-### #579 · 0.325 · The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form <a id="zeta-k-block-sum-conductor-shift"></a>
+### #582 · 0.325 · The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form <a id="zeta-k-block-sum-conductor-shift"></a>
 
 **Label:** Theorem · **id:** `zeta_k_block_sum_conductor_shift` · **quadrant:** true but ghost-blind/untested
 
@@ -19929,7 +20434,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Dedekind zeta of ℚ(i): one pole, exactly one unstable mode, aligned with the pole vector](#dedekind-qi-one-mode)
 - uses → [ζ’s Weil form with the pole removed is exactly (n−1, 1) for L ≤ 8; the full form is positive; the negative lies in span{e^{±x/2}}](#pole-free-lorentzian)
 
-### #580 · 0.325 · Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2} <a id="abs-a-is-infinite-place-of-trace"></a>
+### #583 · 0.325 · Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2} <a id="abs-a-is-infinite-place-of-trace"></a>
 
 **Label:** Theorem · **id:** `abs_a_is_infinite_place_of_trace` · **quadrant:** true but ghost-blind/untested
 
@@ -19945,7 +20450,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [|a|-normalized prime terms against the true archimedean factor are indefinite from the first window](#abs-normalization-degenerate) (feeds)
 
-### #581 · 0.325 · Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier) <a id="arakelov-green-capacity"></a>
+### #584 · 0.325 · Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier) <a id="arakelov-green-capacity"></a>
 
 **Label:** Cited · **id:** `arakelov_green_capacity` · **quadrant:** true but ghost-blind/untested
 
@@ -19963,7 +20468,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism)
 
-### #583 · 0.325 · CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean) <a id="cm-height-disc-det-split"></a>
+### #586 · 0.325 · CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean) <a id="cm-height-disc-det-split"></a>
 
 **Label:** Theorem · **id:** `cm_height_disc_det_split` · **quadrant:** true but ghost-blind/untested
 
@@ -19981,7 +20486,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement)
 
-### #584 · 0.325 · Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields <a id="cmr-explicit-cft"></a>
+### #587 · 0.325 · Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields <a id="cmr-explicit-cft"></a>
 
 **Label:** Cited · **id:** `cmr_explicit_cft` · **quadrant:** true but ghost-blind/untested
 
@@ -19999,7 +20504,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [W_{ζ_K} = W_ζ + W_{χ_D}: no negatives on the pole annihilator for 10 imaginary quadratic D](#zetak-weil-decomposition)
 
-### #585 · 0.325 · First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N <a id="coisotropic-reduction-pn"></a>
+### #588 · 0.325 · First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N <a id="coisotropic-reduction-pn"></a>
 
 **Label:** Theorem · **id:** `coisotropic_reduction_pn` · **quadrant:** true but ghost-blind/untested
 
@@ -20017,7 +20522,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement)
 
-### #586 · 0.325 · Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4 <a id="correction-semilocal-pattern-known"></a>
+### #589 · 0.325 · Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4 <a id="correction-semilocal-pattern-known"></a>
 
 **Label:** Cited · **id:** `correction_semilocal_pattern_known` · **quadrant:** true but ghost-blind/untested
 
@@ -20035,7 +20540,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - corrects → [Semilocal edges L*(S) exceed log p_next(S) by 0.055/0.022/0.020/0.018 for S=∅,{2},{2,3},{2,3,5,7}](#semilocal-edges-track-next-prime)
 
-### #587 · 0.325 · Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points) <a id="cr3bp-morse-count"></a>
+### #590 · 0.325 · Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points) <a id="cr3bp-morse-count"></a>
 
 **Label:** Theorem · **id:** `cr3bp_morse_count` · **quadrant:** true but ghost-blind/untested
 
@@ -20051,7 +20556,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability](#count-vs-stability-gyroscopic) (refines)
 
-### #588 · 0.325 · The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist <a id="cross-term-correction"></a>
+### #591 · 0.325 · The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist <a id="cross-term-correction"></a>
 
 **Label:** Theorem · **id:** `cross_term_correction` · **quadrant:** true but ghost-blind/untested
 
@@ -20069,7 +20574,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [The Brandt-vector Gram over 56 twists of 11a is positive with rank 2 = h; its cusp-form part is rank 1](#twist-gram-rank-h)
 
-### #589 · 0.325 · Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star <a id="dec-betti-equals-harmonic"></a>
+### #592 · 0.325 · Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star <a id="dec-betti-equals-harmonic"></a>
 
 **Label:** Theorem · **id:** `dec_betti_equals_harmonic` · **quadrant:** true but ghost-blind/untested
 
@@ -20087,7 +20592,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [Hodge index theorem](#hodge-index)
 
-### #590 · 0.325 · Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis <a id="escape-direction-pair"></a>
+### #593 · 0.325 · Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis <a id="escape-direction-pair"></a>
 
 **Label:** Theorem · **id:** `escape_direction_pair` · **quadrant:** true but ghost-blind/untested
 
@@ -20105,7 +20610,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogue of → [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) — the conjugate pair meets on the fixed axis at the wall
 
-### #591 · 0.325 · Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0 <a id="euler-impedance-positive-real"></a>
+### #594 · 0.325 · Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0 <a id="euler-impedance-positive-real"></a>
 
 **Label:** Theorem · **id:** `euler_impedance_positive_real` · **quadrant:** true but ghost-blind/untested
 
@@ -20121,7 +20626,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities](#local-logderiv-indefinite) (constrains)
 
-### #593 · 0.325 · Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids) <a id="finite-window-nonuniqueness"></a>
+### #596 · 0.325 · Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids) <a id="finite-window-nonuniqueness"></a>
 
 **Label:** Theorem · **id:** `finite_window_nonuniqueness` · **quadrant:** true but ghost-blind/untested
 
@@ -20139,7 +20644,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - constrains → [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros)
 
-### #594 · 0.325 · Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks <a id="genus-two-part-is-phase"></a>
+### #597 · 0.325 · Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks <a id="genus-two-part-is-phase"></a>
 
 **Label:** Theorem · **id:** `genus_two_part_is_phase` · **quadrant:** true but ghost-blind/untested
 
@@ -20157,7 +20662,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Genus seen at resolution sigma](#genus-at-resolution)
 
-### #595 · 0.325 · BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it <a id="hagedorn-bc"></a>
+### #598 · 0.325 · BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it <a id="hagedorn-bc"></a>
 
 **Label:** Theorem · **id:** `hagedorn_bc` · **quadrant:** true but ghost-blind/untested
 
@@ -20173,7 +20678,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible](#bost-connes-phase-mismatch) (related to)
 
-### #596 · 0.325 · T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures <a id="hecke-congruence-module-691"></a>
+### #599 · 0.325 · T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures <a id="hecke-congruence-module-691"></a>
 
 **Label:** Theorem · **id:** `hecke_congruence_module_691` · **quadrant:** true but ghost-blind/untested
 
@@ -20191,7 +20696,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - same mechanism as → [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12)
 
-### #597 · 0.325 · Indefinite norm as minimal mass over stability conditions <a id="hecke-mass-stability"></a>
+### #600 · 0.325 · Indefinite norm as minimal mass over stability conditions <a id="hecke-mass-stability"></a>
 
 **Label:** Theorem · **id:** `hecke_mass_stability` · **quadrant:** true but ghost-blind/untested
 
@@ -20211,7 +20716,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite)
 
-### #598 · 0.325 · Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5 <a id="hill-topology-disc"></a>
+### #601 · 0.325 · Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5 <a id="hill-topology-disc"></a>
 
 **Label:** Theorem · **id:** `hill_topology_disc` · **quadrant:** true but ghost-blind/untested
 
@@ -20229,7 +20734,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points](#hodge-morse-analogy)
 
-### #599 · 0.325 · A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s <a id="holomorphic-polarization-theta"></a>
+### #602 · 0.325 · A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s <a id="holomorphic-polarization-theta"></a>
 
 **Label:** Theorem · **id:** `holomorphic_polarization_theta` · **quadrant:** true but ghost-blind/untested
 
@@ -20247,7 +20752,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization)
 
-### #600 · 0.325 · Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s) <a id="ihara-rh-is-local-ramanujan"></a>
+### #603 · 0.325 · Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s) <a id="ihara-rh-is-local-ramanujan"></a>
 
 **Label:** Theorem · **id:** `ihara_rh_is_local_ramanujan` · **quadrant:** true but ghost-blind/untested
 
@@ -20265,7 +20770,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [Brandt/isogeny-graph Hecke spectra match weight-2 newforms (20/20 characteristic polynomials, q ≤ 389, ℓ ≤ 7) and satisfy |λ|/√ℓ ≤ 2 (max 1.9712): the sharp bound is local and already Deligne's theorem](#tree-quotient-ramanujan-local)
 
-### #601 · 0.325 · L4/L5 are the j = 0 point of the cross-ratio for every mass ratio <a id="j0-l4"></a>
+### #604 · 0.325 · L4/L5 are the j = 0 point of the cross-ratio for every mass ratio <a id="j0-l4"></a>
 
 **Label:** Theorem · **id:** `j0_l4` · **quadrant:** true but ghost-blind/untested
 
@@ -20283,7 +20788,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - illustrates → [L4 linearization, Krein signatures and the Routh wall](#l4-routh-krein)
 
-### #602 · 0.325 · Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷ <a id="kac-formula-verified"></a>
+### #605 · 0.325 · Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷ <a id="kac-formula-verified"></a>
 
 **Label:** Theorem · **id:** `kac_formula_verified` · **quadrant:** true but ghost-blind/untested
 
@@ -20299,7 +20804,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window)
 
-### #603 · 0.325 · Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip <a id="kk-ghost-blind-only-right-of-zeros"></a>
+### #606 · 0.325 · Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip <a id="kk-ghost-blind-only-right-of-zeros"></a>
 
 **Label:** Theorem · **id:** `kk_ghost_blind_only_right_of_zeros` · **quadrant:** true but ghost-blind/untested
 
@@ -20317,7 +20822,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - explains → [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular)
 
-### #609 · 0.325 · Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise <a id="mellin-partition-function"></a>
+### #612 · 0.325 · Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise <a id="mellin-partition-function"></a>
 
 **Label:** Theorem · **id:** `mellin_partition_function` · **quadrant:** true but ghost-blind/untested
 
@@ -20333,7 +20838,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) (refines)
 
-### #610 · 0.325 · X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus <a id="modular-tower-platonic"></a>
+### #613 · 0.325 · X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus <a id="modular-tower-platonic"></a>
 
 **Label:** Theorem · **id:** `modular_tower_platonic` · **quadrant:** true but ghost-blind/untested
 
@@ -20349,7 +20854,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy) (analogue of)
 
-### #611 · 0.325 · The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230) <a id="narrow-wide-sign-at-infinity"></a>
+### #614 · 0.325 · The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230) <a id="narrow-wide-sign-at-infinity"></a>
 
 **Label:** Theorem · **id:** `narrow_wide_sign_at_infinity` · **quadrant:** true but ghost-blind/untested
 
@@ -20367,7 +20872,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split)
 
-### #612 · 0.325 · The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996) <a id="negdir-is-pole-plane-interlacing"></a>
+### #615 · 0.325 · The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996) <a id="negdir-is-pole-plane-interlacing"></a>
 
 **Label:** Theorem · **id:** `negdir_is_pole_plane_interlacing` · **quadrant:** true but ghost-blind/untested
 
@@ -20385,7 +20890,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - explains → [Weil Gram: pole term rank-2 signature (1,1); ζ without pole has exactly one negative direction (L 0.5–8, M=160); positive on the pole-functional annihilator](#pole-plane-hyperbolic-complement-positive)
 
-### #613 · 0.325 · A positive but non-coercive metric loses the zeros <a id="non-coercive-metric-loses-spectrum"></a>
+### #616 · 0.325 · A positive but non-coercive metric loses the zeros <a id="non-coercive-metric-loses-spectrum"></a>
 
 **Label:** Theorem · **id:** `non_coercive_metric_loses_spectrum` · **quadrant:** true but ghost-blind/untested
 
@@ -20401,7 +20906,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Compressed slogan: RH is the Hodge index theorem for Spec ℤ × Spec ℤ, holding with zero margin (Λ = 0); restates Bombieri's 'general index theorem' question; zero margin = dBN time, not a null vector](#rh-hodge-index-zero-margin)
 
-### #617 · 0.325 · Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge <a id="rallis-point-edge-or-boundary"></a>
+### #620 · 0.325 · Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge <a id="rallis-point-edge-or-boundary"></a>
 
 **Label:** Cited · **id:** `rallis_point_edge_or_boundary` · **quadrant:** true but ghost-blind/untested
 
@@ -20419,7 +20924,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - contrasts with → [Kohnen–Zagier for 11a: L(E_D,1)√|D| = κ c(|D|)² for all 56 admissible D ≥ −399](#waldspurger-squares-11a)
 
-### #619 · 0.325 · Square-root factorization with a one-sided Wick flip <a id="sqrt-factorization-one-sided-wick"></a>
+### #622 · 0.325 · Square-root factorization with a one-sided Wick flip <a id="sqrt-factorization-one-sided-wick"></a>
 
 **Label:** Theorem · **id:** `sqrt_factorization_one_sided_wick` · **quadrant:** true but ghost-blind/untested
 
@@ -20439,7 +20944,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation)
 
-### #621 · 0.325 · Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit <a id="stark-unit-leading-coefficient"></a>
+### #624 · 0.325 · Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit <a id="stark-unit-leading-coefficient"></a>
 
 **Label:** Cited · **id:** `stark_unit_leading_coefficient` · **quadrant:** true but ghost-blind/untested
 
@@ -20457,7 +20962,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - extends → [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split)
 
-### #626 · 0.325 · Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform <a id="third-axis-is-half-plane"></a>
+### #629 · 0.325 · Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform <a id="third-axis-is-half-plane"></a>
 
 **Label:** Theorem · **id:** `third_axis_is_half_plane` · **quadrant:** true but ghost-blind/untested
 
@@ -20475,7 +20980,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign)
 
-### #628 · 0.325 · |disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter <a id="vandermonde-log-gas"></a>
+### #631 · 0.325 · |disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter <a id="vandermonde-log-gas"></a>
 
 **Label:** Theorem · **id:** `vandermonde_log_gas` · **quadrant:** true but ghost-blind/untested
 
@@ -20493,7 +20998,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism)
 
-### #630 · 0.325 · Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1 <a id="witten-index-inverse-zeta"></a>
+### #633 · 0.325 · Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1 <a id="witten-index-inverse-zeta"></a>
 
 **Label:** Theorem · **id:** `witten_index_inverse_zeta` · **quadrant:** true but ghost-blind/untested
 
@@ -20511,7 +21016,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open)
 
-### #632 · 0.325 · Zeta zero collisions are double-root type only <a id="zeta-collisions-type-one"></a>
+### #635 · 0.325 · Zeta zero collisions are double-root type only <a id="zeta-collisions-type-one"></a>
 
 **Label:** Theorem · **id:** `zeta_collisions_type_one` · **quadrant:** true but ghost-blind/untested
 
@@ -20531,7 +21036,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [de Bruijn–Newman constant Λ](#debruijn-newman)
 
-### #634 · 0.325 · U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84 <a id="discriminant-family-invariance"></a>
+### #637 · 0.325 · U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84 <a id="discriminant-family-invariance"></a>
 
 **Label:** Theorem · **id:** `discriminant_family_invariance` · **quadrant:** true but ghost-blind/untested
 
@@ -20545,7 +21050,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #635 · 0.325 · EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly <a id="ez-operators-verified"></a>
+### #638 · 0.325 · EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly <a id="ez-operators-verified"></a>
 
 **Label:** Theorem · **id:** `ez_operators_verified` · **quadrant:** true but ghost-blind/untested
 
@@ -20559,7 +21064,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #636 · 0.325 · T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them <a id="frobenius-up-verschiebung-down"></a>
+### #639 · 0.325 · T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them <a id="frobenius-up-verschiebung-down"></a>
 
 **Label:** Theorem · **id:** `frobenius_up_verschiebung_down` · **quadrant:** true but ghost-blind/untested
 
@@ -20573,7 +21078,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #637 · 0.325 · Finite-window prime comb: time distribution = torus law (checked to 2e−3) <a id="kronecker-weyl-comb-law"></a>
+### #640 · 0.325 · Finite-window prime comb: time distribution = torus law (checked to 2e−3) <a id="kronecker-weyl-comb-law"></a>
 
 **Label:** Theorem · **id:** `kronecker_weyl_comb_law` · **quadrant:** true but ghost-blind/untested
 
@@ -20587,7 +21092,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #638 · 0.325 · In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward <a id="nested-window-family-morse-monotone"></a>
+### #641 · 0.325 · In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward <a id="nested-window-family-morse-monotone"></a>
 
 **Label:** Theorem · **id:** `nested_window_family_morse_monotone` · **quadrant:** true but ghost-blind/untested
 
@@ -20603,7 +21108,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weil window form on the pole annihilator, as a Morse-index / discriminant criterion](#weil-morse-discriminant-dictionary) (related to)
 
-### #639 · 0.325 · A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III <a id="nilpotent-must-be-orthogonal"></a>
+### #642 · 0.325 · A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III <a id="nilpotent-must-be-orthogonal"></a>
 
 **Label:** Theorem · **id:** `nilpotent_must_be_orthogonal` · **quadrant:** true but ghost-blind/untested
 
@@ -20617,7 +21122,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #640 · 0.325 · A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost <a id="no-isotropic-no-nilpotent"></a>
+### #643 · 0.325 · A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost <a id="no-isotropic-no-nilpotent"></a>
 
 **Label:** Theorem · **id:** `no_isotropic_no_nilpotent` · **quadrant:** true but ghost-blind/untested
 
@@ -20631,7 +21136,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #641 · 0.325 · Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n <a id="parabola-cone-points"></a>
+### #644 · 0.325 · Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n <a id="parabola-cone-points"></a>
 
 **Label:** Theorem · **id:** `parabola_cone_points` · **quadrant:** true but ghost-blind/untested
 
@@ -20645,7 +21150,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #642 · 0.325 · Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here <a id="rung1-covered-by-certified-preprint"></a>
+### #645 · 0.325 · Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here <a id="rung1-covered-by-certified-preprint"></a>
 
 **Label:** Cited · **id:** `rung1_covered_by_certified_preprint` · **quadrant:** true but ghost-blind/untested
 
@@ -20659,7 +21164,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #643 · 0.325 · Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign) <a id="trace-norm-form-signature"></a>
+### #646 · 0.325 · Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign) <a id="trace-norm-form-signature"></a>
 
 **Label:** Theorem · **id:** `trace_norm_form_signature` · **quadrant:** true but ghost-blind/untested
 
@@ -20673,7 +21178,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #644 · 0.325 · U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical) <a id="u-isometry"></a>
+### #647 · 0.325 · U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical) <a id="u-isometry"></a>
 
 **Label:** Theorem · **id:** `u_isometry` · **quadrant:** true but ghost-blind/untested
 
@@ -20687,7 +21192,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #645 · 0.325 · V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884 <a id="vnat-flm-count"></a>
+### #648 · 0.325 · V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884 <a id="vnat-flm-count"></a>
 
 **Label:** Theorem · **id:** `vnat_flm_count` · **quadrant:** true but ghost-blind/untested
 
@@ -20701,7 +21206,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #646 · 0.325 · X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24 <a id="x0p-components-meet"></a>
+### #649 · 0.325 · X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24 <a id="x0p-components-meet"></a>
 
 **Label:** Cited · **id:** `x0p_components_meet` · **quadrant:** true but ghost-blind/untested
 
@@ -20715,7 +21220,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #651 · 0.325 · Conformally symplectic flows have exact forms and no Hamiltonian <a id="conformal-symplectic-no-hamiltonian"></a>
+### #654 · 0.325 · Conformally symplectic flows have exact forms and no Hamiltonian <a id="conformal-symplectic-no-hamiltonian"></a>
 
 **Label:** Theorem · **id:** `conformal_symplectic_no_hamiltonian` · **quadrant:** true but ghost-blind/untested
 
@@ -20731,7 +21236,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [dBN zero flow = gradient flow + Calogero–Moser symplectic lift; not conformally symplectic](#dbn-calogero-moser-not-conformal) (instance of); [Distortionless telegrapher line as a conformally symplectic flow](#telegrapher-distortionless) (instance of)
 
-### #654 · 0.325 · Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists <a id="lp-branch-no-spacing"></a>
+### #657 · 0.325 · Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists <a id="lp-branch-no-spacing"></a>
 
 **Label:** Theorem · **id:** `lp_branch_no_spacing` · **quadrant:** true but ghost-blind/untested
 
@@ -20750,7 +21255,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles)
 - constrains → [Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like)](#integrable-vs-kam-reading)
 
-### #657 · 0.325 · Prime term = alpha-derivative of the conjugated Vladimirov symbol <a id="vladimirov-derivative-is-prime-term"></a>
+### #660 · 0.325 · Prime term = alpha-derivative of the conjugated Vladimirov symbol <a id="vladimirov-derivative-is-prime-term"></a>
 
 **Label:** Theorem · **id:** `vladimirov_derivative_is_prime_term` · **quadrant:** true but ghost-blind/untested
 
@@ -20772,7 +21277,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [∞ + pole is positive up to L = 0.750 and gains a negative at 0.775, just after p = 2 enters the window; p = 2 alone removes it](#archimedean-needs-p2) (related to)
 
-### #662 · 0.325 · Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros <a id="jacobi-factor-flat-every-place"></a>
+### #665 · 0.325 · Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros <a id="jacobi-factor-flat-every-place"></a>
 
 **Label:** Theorem · **id:** `jacobi_factor_flat_every_place` · **quadrant:** true but ghost-blind/untested
 
@@ -20790,7 +21295,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - corrects → [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture)
 
-### #664 · 0.325 · Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value <a id="reverse-substitution-dictionary"></a>
+### #667 · 0.325 · Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value <a id="reverse-substitution-dictionary"></a>
 
 **Label:** Theorem · **id:** `reverse_substitution_dictionary` · **quadrant:** true but ghost-blind/untested
 
@@ -20808,7 +21313,9 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles)
 
-### #667 · 0.325 · For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy <a id="gl1-monodromy-zero"></a>
+**Relations (incoming):** [Regularity of a local ring is not a global principal generator, and not a sign](#iwasawa-regularity-class) (distinguishes)
+
+### #670 · 0.325 · For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy <a id="gl1-monodromy-zero"></a>
 
 **Label:** Theorem · **id:** `gl1_monodromy_zero` · **quadrant:** true but ghost-blind/untested
 
@@ -20822,7 +21329,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.5 · tractability 0.6 · evidence 1 → priority 0.325
 
-### #669 · 0.325 · λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular) <a id="box-to-limit-trivial-no-uniform-gap"></a>
+### #672 · 0.325 · λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular) <a id="box-to-limit-trivial-no-uniform-gap"></a>
 
 **Label:** Theorem · **id:** `box_to_limit_trivial_no_uniform_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -20838,7 +21345,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) (extends)
 
-### #698 · 0.307 · Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i) <a id="apsides-gap-form"></a>
+### #701 · 0.307 · Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i) <a id="apsides-gap-form"></a>
 
 **Label:** Theorem · **id:** `apsides_gap_form` · **quadrant:** true but ghost-blind/untested
 
@@ -20869,7 +21376,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Two Verschiebungs: pairing dual V^∨ vs positive adjoint V†](#two-verschiebungs-dual-vs-adjoint) (same mechanism as); [Definite (Kepler/apsidal) vs gyroscopic (TAA Lemma 4) stability: TAA Lemma 4 has indefinite energy held by the work-free Coriolis J; opposite Krein signs collide at Gascheau–Routh μ = 0.0385209 (Hamiltonian–Hopf quadruple); any dissipation destroys it (Kelvin–Tait–Chetaev); Weil positivity says ζ-type stability must be definite — DH ≈ TAA Lemma 4 past Routh](#gyroscopic-vs-definite-stability) (lives in); [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) (lives in)
 
-### #702 · 0.307 · PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form <a id="pv-ts-symplectomorphism"></a>
+### #705 · 0.307 · PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form <a id="pv-ts-symplectomorphism"></a>
 
 **Label:** Theorem · **id:** `pv_ts_symplectomorphism` · **quadrant:** true but ghost-blind/untested
 
@@ -20902,7 +21409,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Equation of state of the window Weil operator](#window-equation-of-state) (instance of); [Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV](#primon-box-ts-pv) (instance of); [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) (refines)
 
-### #709 · 0.307 · Self-dual / anti-self-dual split as push / shear <a id="self-duality-push-shear"></a>
+### #712 · 0.307 · Self-dual / anti-self-dual split as push / shear <a id="self-duality-push-shear"></a>
 
 **Label:** Theorem · **id:** `self_duality_push_shear` · **quadrant:** true but ghost-blind/untested
 
@@ -20935,7 +21442,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hodge energy on arithmetic cohomology, and a torsion term with forced sign](#deninger-hodge-energy-torsion-open) (analogy of)
 
-### #710 · 0.307 · Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal) <a id="standing-frame-so22-ads3"></a>
+### #713 · 0.307 · Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal) <a id="standing-frame-so22-ads3"></a>
 
 **Label:** Theorem · **id:** `standing_frame_so22_ads3` · **quadrant:** true but ghost-blind/untested
 
@@ -20965,7 +21472,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic](#real-forms-compact-vs-boost) (lives in); [Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts](#quartet-capacity-sp4) (lives in)
 
-### #714 · 0.307 · Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial <a id="consani-archimedean-cohomology"></a>
+### #717 · 0.307 · Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial <a id="consani-archimedean-cohomology"></a>
 
 **Label:** Cited · **id:** `consani_archimedean_cohomology` · **quadrant:** true but ghost-blind/untested
 
@@ -20989,7 +21496,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Deninger’s foliated program](#deninger) (analogue of)
 
-### #715 · 0.307 · λ₂ is monotone under nested windows (Cauchy interlacing) <a id="lambda2-monotone-nested-windows"></a>
+### #718 · 0.307 · λ₂ is monotone under nested windows (Cauchy interlacing) <a id="lambda2-monotone-nested-windows"></a>
 
 **Label:** Theorem · **id:** `lambda2_monotone_nested_windows` · **quadrant:** true but ghost-blind/untested
 
@@ -21014,7 +21521,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The shape of the missing piece: ten necessary properties (P1–P10)](#missing-piece-shape-list) (uses)
 
-### #716 · 0.307 · The Hodge star squares to the fermion parity in even dimension <a id="hodge-star-square-fermion-parity"></a>
+### #719 · 0.307 · The Hodge star squares to the fermion parity in even dimension <a id="hodge-star-square-fermion-parity"></a>
 
 **Label:** Theorem · **id:** `hodge_star_square_fermion_parity` · **quadrant:** true but ghost-blind/untested
 
@@ -21037,7 +21544,172 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Deninger’s foliated program](#deninger)
 - analogy of → [The zeta pole mode is the single unpaired negative square](#pole-mode-unpaired-degree0)
 
-### #774 · 0.267 · De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p} <a id="dbn-local-flow-fv-sweep"></a>
+### #746 · 0.307 · Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder <a id="connes-cutoff-pair-two-hankel"></a>
+
+**Label:** Theorem · **id:** `connes_cutoff_pair_two_hankel` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* Once the semilocal traces are assumed to exist, W minus P splits as a difference of two cutoff operators minus a remainder X. A positive compression of a cutoff was compared with W on a few tests and did not match. That mismatch is numerical. It is not a theorem that every compression fails.
+
+**Core.** The audited identity, assuming the limiting traces exist for the test class: W - P = D_c - D_cbar - X. The positive compression Q = S P-hat S was larger than or equal to W on three tests at A = 1, and at A = 0.6 the compression still depended on the set S while W did not. Those comparisons are double precision and uncertified. They close the tested compressions. They are not a universal no-go.
+
+**Formula.** W - P = D_c - D_cbar - X, assuming the traces exist
+
+**Numbers.** Tested compressions: D depends on S at A = 0.6 while W does not; D is at least W on three tests at A = 1. Numerical, uncertified.
+
+**What is proved around it.** The splitting is exact inside that assumption. The comparison with W is numerical.
+
+**Tests it must pass.** Do not promote the mismatch to a theorem that no positive operator compression can equal W.
+
+**Also known as:** D_c - D_cbar - X
+
+**Axes:** structure/frame (Ax1), numerics/certificate, ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Positive on a finite compression is not analytic positivity, and it is not automatically W.
+
+> ❓ **Not verified / open.** The trace-class limit is assumed, not proved, for the signed-leakage reading.
+
+**Relations (outgoing):**
+
+- refines → [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) — Hankel form of the same semilocal trace, under a limit assumption
+- contrasts with → [Weil positivity criterion](#weil-positivity) — tested positive compressions mismatched W; not a universal impossibility
+- contrasts with → [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) — a compression that is positive and unequal to W does not meet the norm identity
+
+### #747 · 0.307 · Regularity of a local ring is not a global principal generator, and not a sign <a id="iwasawa-regularity-class"></a>
+
+**Label:** Theorem · **id:** `iwasawa_regularity_class` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* A power-series ring over the p-adic integers is regular of dimension 2. Quotienting by one equation leaves a regular ring exactly when that equation is nonzero in m/m squared. That is a Jacobian condition. The Iwasawa numbers mu, lambda, and nu measure growth. They are not this Jacobian class, and they do not carry a sign. A regular local ring is a unique factorization domain. A global ring of integers need not be. Noetherian is a finiteness condition on ideals, not a Noether charge in mechanics.
+
+**Core.** Lambda = Z_p[[T]] is regular local of dimension 2. Lambda/(f) is regular if and only if f is not in m squared. The element T squared - 27 is a singular example, an arithmetic cusp in that local model. Auslander-Buchsbaum says a regular local ring is a UFD. Z[sqrt(-5)] is Noetherian and not a UFD: 6 = 2·3 = (1+sqrt(-5))(1-sqrt(-5)), and 2 and 1+sqrt(-5) are irreducible because no element has norm 2. This does not reopen a global Jacobian, a Rosati involution, or a Picard lattice. Those routes stay at whatever status the atlas already gave them. The toy separates a growth invariant from a rank in m/m squared. It supplies no positivity.
+
+**Formula.** regular local <=> f not in m^2; regular local => UFD; not conversely for global rings
+
+**Numbers.** Norm form a^2 + 5 b^2 never equals 2. Class number 2 for Q(sqrt(-5)) is the classical citation, not recomputed here.
+
+**What is proved around it.** The norm obstruction in Z[sqrt(-5)] is rechecked by the audit. Auslander-Buchsbaum and the Iwasawa growth formula are cited.
+
+**Also known as:** Jacobian class in m/m^2; Noetherian is not Noether
+
+**Axes:** structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Do not translate Noetherian into a Noether charge.
+
+> ⚠ **Correction / caution.** Do not promote a local UFD to a global principal generator.
+
+> ⚠ **Correction / caution.** Closed Jacobian, Rosati, and Picard paths are not reopened.
+
+**Relations (outgoing):**
+
+- distinguishes → [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) — mu, lambda, nu are growth; the Jacobian condition is a class in m/m^2; neither signs W
+- illustrates → [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) — principalization can trivialize divisibility and still leave the pole; local factoriality is not global principality
+- contrasts with → [Herbrand–Ribet and the Iwasawa main conjecture: the spectral half without a polarization](#herbrand-ribet-spectral-no-positivity) — Iwasawa data without a polarization still do not give the sign
+
+### #754 · 0.307 · Rankin-Selberg unfolding produces square coefficients, not the Weil form <a id="rankin-selberg-square-calibration"></a>
+
+**Label:** Cited · **id:** `rankin_selberg_square_calibration` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* The integral of y to the 12, times |Delta| squared, times an Eisenstein series, unfolds to a Gamma factor times the Dirichlet series of tau(n) squared. The coefficients are squares because the interior pairing is positive and the unfolding is honest. Self-adjointness of Hecke operators makes tau(p) real. None of this is an identity for W. The Petersson norm of Delta is a finite positive number. Decay of the cusp integrand is why that integral converges. It is not a degeneration of the pairing.
+
+**Core.** Rankin (1939) and Selberg (1940): the integral of y^12 |Delta|^2 E(z, s) d mu equals Gamma(s+11) (4 pi)^(-(s+11)) times sum tau(n)^2 n^(-(s+11)). The atlas already records a positive Petersson norm, about 1.035·10^(-6). Congruences such as the one at 691 are arithmetic. They are not real positivity of W. A positive-definite lattice extracted from a Rankin-Selberg explicit formula is a different theorem and is not a formula for the Weil form on log-window tests.
+
+**Formula.** integral y^12 |Delta|^2 E(z,s) = Gamma(s+11) (4 pi)^(-(s+11)) sum tau(n)^2 n^(-(s+11))
+
+**Numbers.** <Delta, Delta> about 1.03536205680432e-6, already in the atlas, finite and positive.
+
+**What is proved around it.** Cited unfolding. Not reproved here. The negative statement is that the identity does not mention W.
+
+**Tests it must pass.** Must not be used as a bridge from square coefficients to Weil positivity.
+
+**Also known as:** tau(n) squared; Petersson norm stays positive
+
+**Axes:** structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: an inequality consequence of automorphy (SC-E / HS-1)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Square coefficients are not W.
+
+> ⚠ **Correction / caution.** Cusp decay is convergence of the integral, not degeneration of the norm.
+
+> ⚠ **Correction / caution.** The weight-12 calibration is not the archimedean counterterm.
+
+**Relations (outgoing):**
+
+- illustrates → [Cusp forms & Petersson positivity](#cusp-forms-petersson) — positive interior pairing, square coefficients, no information about zeta zeros
+- contrasts with → [Weil positivity criterion](#weil-positivity) — no identity with W
+- distinguishes → [⟨Δ,Δ⟩ = 1.0353620568043209223478168122e−6 (Fourier/incomplete-Γ, 40 digits; direct 2-D quadrature agrees to 18)](#petersson-delta-value) — a finite positive norm of Delta; cusp decay is not a degeneration
+- distinguishes → [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) — a positive Rankin-Selberg lattice is not the Weil form
+
+### #755 · 0.307 · Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem <a id="semilocal-scattering-phase-time-delay"></a>
+
+**Label:** Theorem · **id:** `semilocal_scattering_phase_time_delay` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* With finitely many places, enough to cover the window, the Connes trace identity says that a twisted pairing equals W minus P. The phase of that cutoff turns into the symbol of the bulk form by a logarithmic derivative. That is a scattering dictionary. It is not a sign theorem and it is not Hodge positivity.
+
+**Core.** Connes 1999, Theorem VII.4, is the semilocal trace formula. The dictionary used here: for S containing the archimedean place and every prime p < exp(A), -I_S(F, F) = W(F) - P(F) on window tests. The semilocal Fourier transform factors as M_c times J, with a phase c_S, and -i d/dy log c_S = -m_S, so the symbol of W is the negative of that Wigner time delay. The identity is semilocal. A global Gamma-Euler product with phase identically 1 is not claimed. The trace is not the Hodge index.
+
+**Formula.** -I_S(F,F) = W(F) - P(F) for S covering the window; -i d/dy log c_S = -m_S
+
+**What is proved around it.** The trace formula is cited, not reproved. The phase-to-symbol step is the audited dictionary, exact inside that semilocal normalization.
+
+**Tests it must pass.** Must not be quoted as RH, and must not be quoted as a Hodge-index theorem.
+
+**Also known as:** Connes cutoff phase; Wigner delay of m_S
+
+**Axes:** structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Semilocal only. Finite S containing infinity and every p < exp(A).
+
+> ⚠ **Correction / caution.** Not Hodge positivity.
+
+> ❓ **Not verified / open.** Convergence of the limiting traces is an assumption, flagged for any signed-leakage reading. X in the Hankel decomposition is numerical where a number is quoted.
+
+**Relations (outgoing):**
+
+- uses → [Connes trace formula](#connes-trace) — Connes 1999, Theorem VII.4, semilocal
+- refines → [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) — the bulk symbol is the negative Wigner delay of the semilocal phase
+- contrasts with → [Hodge index theorem](#hodge-index) — a trace identity is not the Hodge index
+- uses → [The semilocal pairing uses a twisted involution, not the naive star of chi f](#twisted-star-convolution) — the pairing in I_S uses the twisted star
+
+**Relations (incoming):** [Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder](#connes-cutoff-pair-two-hankel) (refines)
+
+### #756 · 0.307 · The semilocal pairing uses a twisted involution, not the naive star of chi f <a id="twisted-star-convolution"></a>
+
+**Label:** Theorem · **id:** `twisted_star_convolution` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* The weight chi(u) = exp(-u/2) has to sit inside the convolution in a definite way. The corrected involution satisfies (chi f) star = chi inverse times f star. Pairing two functions by the ordinary star of (chi f) with itself is a different, wrong, formula. No global phase c = 1 is claimed.
+
+**Core.** With f star (u) = conjugate f(-u) and chi(u) = exp(-u/2), the identity (chi f) star = chi^(-1) f star is a one-line calculation, rechecked in the v1.20 audit. The semilocal distribution is h = chi times (f convolved with f star). Equivalently h = g convolved with g sharp, where g = chi f and g sharp (u) = exp(-u) conjugate g(-u). That sharp is not the ordinary star of g. The numbers computed in the session used the corrected h. A formal graph of a flow, built from the bulk pairing, is not a cycle class, not a numerical group, and not a Hodge structure.
+
+**Formula.** (chi f)* = chi^(-1) f*, chi(u) = exp(-u/2); h = chi · (f * f*)
+
+**What is proved around it.** The involution identity is elementary and is rechecked by the audit script. The semilocal normalization is the correction recorded against the earlier scratch formula.
+
+**Also known as:** (chi f) star = chi inverse f star
+
+**Axes:** structure/frame (Ax1), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.5 (nearest gap: Deninger's conjectured cohomology for Spec ℤ, stated as axioms MP0–MP4 (no coined name)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.307
+
+> ⚠ **Correction / caution.** Do not replace the twisted sharp by (chi f) star (chi f) star.
+
+> ⚠ **Correction / caution.** Do not claim a global Euler phase c = 1. That statement is formal only.
+
+> ⚠ **Correction / caution.** A formal graph integral is not a cycle.
+
+**Relations (outgoing):**
+
+- corrects → [Connes trace formula](#connes-trace) — semilocal pairing is tau of chi times (f1 convolved with f2 star), not the naive star
+- distinguishes → [Connes trace formula](#connes-trace) — no claimed global factor c = 1
+
+**Relations (incoming):** [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) (uses)
+
+### #790 · 0.267 · De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p} <a id="dbn-local-flow-fv-sweep"></a>
 
 **Label:** Theorem · **id:** `dbn_local_flow_fv_sweep` · **quadrant:** true but ghost-blind/untested
 
@@ -21062,7 +21734,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Coupled coils: the Frobenius norm form is a two-coil energy with coupling k = |a_p|/2√p; Hasse ⇔ k ≤ 1; one-factor Laguerre margin 4 log²p (1 − k)](#coupled-coil-hasse) (restates); [Local Newman constant Λ_p = log(|a|/2√p)/log²p (Andrade–Chang–Miller 2014, Lemma 3.18, in time t_ACM = t log²p); Λ_p ≤ 0 ⇔ Hasse; a = 0 ⇒ −∞](#acm-local-newman-constant) (feeds); [The F/V sweep is a de Bruijn-Newman flow](#fv-is-dbn-flow) (refines); [Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)](#fourth-roots-supersingular) (illustrates); [Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products](#three-lenses-one-flow) (restates)
 
-### #776 · 0.267 · Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁) <a id="four-squares-eisenstein-lift"></a>
+### #792 · 0.267 · Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁) <a id="four-squares-eisenstein-lift"></a>
 
 **Label:** Theorem · **id:** `four_squares_eisenstein_lift` · **quadrant:** true but ghost-blind/untested
 
@@ -21095,7 +21767,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Zagier’s weight-3/2 series: Hurwitz class numbers pass the θ³, Kronecker–Hurwitz, Hecke T_{p²} (eigenvalue 1 + p = σ₁(p), E₂’s) and Dirichlet checks with no failures](#zagier-h-checks) (related to); [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) (same mechanism as); [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) (lives in)
 
-### #780 · 0.267 · Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics) <a id="fundamental-domain-three-phases"></a>
+### #796 · 0.267 · Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics) <a id="fundamental-domain-three-phases"></a>
 
 **Label:** Theorem · **id:** `fundamental_domain_three_phases` · **quadrant:** true but ghost-blind/untested
 
@@ -21119,7 +21791,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Epstein zeta no-go](#epstein) (lives in); [Selberg eigenvalue conjecture ↔ mass shell λ = ¼ + r²](#selberg-eigenvalue-mass-shell) (lives in); [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) (same mechanism as)
 
-### #782 · 0.267 · Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4) <a id="ks-quaternion-lift"></a>
+### #798 · 0.267 · Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4) <a id="ks-quaternion-lift"></a>
 
 **Label:** Theorem · **id:** `ks_quaternion_lift` · **quadrant:** true but ghost-blind/untested
 
@@ -21151,7 +21823,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [KS lift of the two walls: parabolic = a frequency reaches 0; Routh = opposite-Krein frequencies meet](#ks-lift-two-walls) (refines); [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) (lives in); [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) (same mechanism as)
 
-### #788 · 0.267 · Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner) <a id="push-shear-balance"></a>
+### #804 · 0.267 · Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner) <a id="push-shear-balance"></a>
 
 **Label:** Theorem · **id:** `push_shear_balance` · **quadrant:** true but ghost-blind/untested
 
@@ -21179,7 +21851,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel](#anisotropic-part-weil) (refines); [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading) (illustrates)
 
-### #789 · 0.267 · Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts <a id="quartet-capacity-sp4"></a>
+### #805 · 0.267 · Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts <a id="quartet-capacity-sp4"></a>
 
 **Label:** Theorem · **id:** `quartet_capacity_sp4` · **quadrant:** true but ghost-blind/untested
 
@@ -21205,7 +21877,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Krein collisions (how ghosts are born)](#krein-collision) (lives in); [Genealogy of DH ghosts: the σ-pencil f_λ = (1−λ)Λ(χ) + λWΛ(χ̄) (χ mod 5) keeps a functional equation for all real λ, runs from the Euler product L(χ) to DH (λ = 1/2); on-line zeros = crossings of one phase θ(t) with the level tan θ = −(1−λ)/λ; off-line pairs are born at folds (Krein collisions of opposite-sign crossings) with the square-root law; t ≤ 600: 17 escapes, 2 captures, net 15 = DH census](#euler-to-dh-pencil-genealogy) (lives in)
 
-### #791 · 0.267 · ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950) <a id="xi-global-product-over-places"></a>
+### #807 · 0.267 · ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950) <a id="xi-global-product-over-places"></a>
 
 **Label:** Cited · **id:** `xi_global_product_over_places` · **quadrant:** true but ghost-blind/untested
 
@@ -21227,7 +21899,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - restates → [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization)
 - related to → [Euler ⇔ multiplicative ⇔ Hecke eigen; DH = ((1−iκ)L(χ)+(1+iκ)L(χ̄))/2 mod 5](#euler-iff-hecke-dh-not-eigen)
 
-### #794 · 0.267 · Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V) <a id="dbn-deficit-time-to-cusp"></a>
+### #810 · 0.267 · Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V) <a id="dbn-deficit-time-to-cusp"></a>
 
 **Label:** Theorem · **id:** `dbn_deficit_time_to_cusp` · **quadrant:** true but ghost-blind/untested
 
@@ -21255,7 +21927,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)](#orbifold-vs-descartes-deficits) (feeds)
 
-### #795 · 0.267 · Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p <a id="dbn-product-cross-term"></a>
+### #811 · 0.267 · Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p <a id="dbn-product-cross-term"></a>
 
 **Label:** Theorem · **id:** `dbn_product_cross_term` · **quadrant:** true but ghost-blind/untested
 
@@ -21279,7 +21951,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Cole–Hopf: Ψ = H′/H obeys backward Burgers ∂_tΨ = −Ψ″ − 2ΨΨ′; at one prime the Toeplitz sequence 2T_k(x_t) is positive-definite iff t ≥ Λ_p; product cross-term −2tΨ_pΨ_q](#burgers-local-toeplitz) (feeds); [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero) (refines); [One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction](#prime-clocks) (feeds)
 
-### #798 · 0.267 · Kaluza–Klein circles, the infinite torus, and adelic solenoids <a id="kk-circle-and-adelic-solenoids"></a>
+### #814 · 0.267 · Kaluza–Klein circles, the infinite torus, and adelic solenoids <a id="kk-circle-and-adelic-solenoids"></a>
 
 **Label:** Theorem · **id:** `kk_circle_and_adelic_solenoids` · **quadrant:** true but ghost-blind/untested
 
@@ -21304,7 +21976,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Measure versus metric: the product formula gives an invariant measure, not an invariant metric](#haar-measure-not-metric) (refines); [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) (analogy of)
 
-### #801 · 0.267 · On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH <a id="chirality-star-gamma5-hodge-index"></a>
+### #817 · 0.267 · On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH <a id="chirality-star-gamma5-hodge-index"></a>
 
 **Label:** Theorem · **id:** `chirality_star_gamma5_hodge_index` · **quadrant:** true but ghost-blind/untested
 
@@ -21328,7 +22000,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn) (analogy of); [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) (feeds)
 
-### #802 · 0.267 · Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward <a id="dbn-bohlin-decay"></a>
+### #818 · 0.267 · Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward <a id="dbn-bohlin-decay"></a>
 
 **Label:** Theorem · **id:** `dbn_bohlin_decay` · **quadrant:** true but ghost-blind/untested
 
@@ -21351,7 +22023,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) (mirror of)
 
-### #806 · 0.267 · (τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|² <a id="exactness-monge-ampere"></a>
+### #822 · 0.267 · (τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|² <a id="exactness-monge-ampere"></a>
 
 **Label:** Theorem · **id:** `exactness_monge_ampere` · **quadrant:** true but ghost-blind/untested
 
@@ -21371,7 +22043,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)](#edge-boundary-cycle) (explains); [Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned](#serre-derivative-analogy) (analogous to)
 
-### #807 · 0.267 · The Galois deformation obstruction is a second-order curvature <a id="galois-obstruction-is-curvature"></a>
+### #823 · 0.267 · The Galois deformation obstruction is a second-order curvature <a id="galois-obstruction-is-curvature"></a>
 
 **Label:** Theorem · **id:** `galois_obstruction_is_curvature` · **quadrant:** true but ghost-blind/untested
 
@@ -21396,7 +22068,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [A dent moves a zero charge sideways; geometric deformations only rotate](#dent-is-charge-move) (refines)
 
-### #809 · 0.267 · Weil operator, star and the eighth turn <a id="hodge-c-star-eighth-turn"></a>
+### #825 · 0.267 · Weil operator, star and the eighth turn <a id="hodge-c-star-eighth-turn"></a>
 
 **Label:** Theorem · **id:** `hodge_C_star_eighth_turn` · **quadrant:** true but ghost-blind/untested
 
@@ -21419,7 +22091,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The 45-degree flip is a real structure, not a star](#flip45-is-real-structure) (analogy of)
 
-### #811 · 0.267 · Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min) <a id="local-dbn-slack"></a>
+### #827 · 0.267 · Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min) <a id="local-dbn-slack"></a>
 
 **Label:** Theorem · **id:** `local_dbn_slack` · **quadrant:** true but ghost-blind/untested
 
@@ -21446,7 +22118,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) (refines)
 
-### #812 · 0.267 · The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable <a id="local-lattice-hasse-only"></a>
+### #828 · 0.267 · The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable <a id="local-lattice-hasse-only"></a>
 
 **Label:** Theorem · **id:** `local_lattice_hasse_only` · **quadrant:** true but ghost-blind/untested
 
@@ -21466,7 +22138,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No place-by-place positive Hodge star realizes the Weil form: every local block is indefinite](#no-place-local-hodge-star) (extends); [Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π](#trig-hyperbolic-trace-dictionary) (related to)
 
-### #814 · 0.267 · Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift <a id="prime-torus-nonresonance"></a>
+### #830 · 0.267 · Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift <a id="prime-torus-nonresonance"></a>
 
 **Label:** Theorem · **id:** `prime_torus_nonresonance` · **quadrant:** true but ghost-blind/untested
 
@@ -21482,7 +22154,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Davenport–Heilbronn’s Krein-negative energy is carried by its non-multiplicative coefficients, yet deleting them makes it worse](#dh-kreinminus-carried-by-couplings) (tests); [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) (same mechanism as); [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) (refines)
 
-### #821 · 0.267 · One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction <a id="prime-clocks"></a>
+### #837 · 0.267 · One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction <a id="prime-clocks"></a>
 
 **Label:** Theorem · **id:** `prime_clocks` · **quadrant:** true but ghost-blind/untested
 
@@ -21507,7 +22179,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - feeds → [Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p](#dbn-product-cross-term)
 - restates → [Local Newman constant Λ_p = log(|a|/2√p)/log²p (Andrade–Chang–Miller 2014, Lemma 3.18, in time t_ACM = t log²p); Λ_p ≤ 0 ⇔ Hasse; a = 0 ⇒ −∞](#acm-local-newman-constant)
 
-### #823 · 0.267 · Sector map w = e^{iπs/2} <a id="sector-map-w"></a>
+### #839 · 0.267 · Sector map w = e^{iπs/2} <a id="sector-map-w"></a>
 
 **Label:** Theorem · **id:** `sector_map_w` · **quadrant:** true but ghost-blind/untested
 
@@ -21528,7 +22200,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) — w ↦ i/w
 - analogue of → [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip)
 
-### #826 · 0.267 · Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves <a id="conic-compactness"></a>
+### #842 · 0.267 · Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves <a id="conic-compactness"></a>
 
 **Label:** Theorem · **id:** `conic_compactness` · **quadrant:** true but ghost-blind/untested
 
@@ -21546,7 +22218,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading)
 
-### #827 · 0.267 · Finite Guinand–Weil dictionary for truncated Weil forms <a id="finite-guinand-weil-dictionary"></a>
+### #843 · 0.267 · Finite Guinand–Weil dictionary for truncated Weil forms <a id="finite-guinand-weil-dictionary"></a>
 
 **Label:** Theorem · **id:** `finite_guinand_weil_dictionary` · **quadrant:** true but ghost-blind/untested
 
@@ -21562,7 +22234,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Certified window for one off-line pair](#explicit-ghost-window)
 
-### #828 · 0.267 · The 45-degree flip is a real structure, not a star <a id="flip45-is-real-structure"></a>
+### #844 · 0.267 · The 45-degree flip is a real structure, not a star <a id="flip45-is-real-structure"></a>
 
 **Label:** Theorem · **id:** `flip45_is_real_structure` · **quadrant:** true but ghost-blind/untested
 
@@ -21582,7 +22254,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn)
 
-### #831 · 0.267 · Frame and clock invariance of Krein data at L4 <a id="frame-clock-invariance"></a>
+### #847 · 0.267 · Frame and clock invariance of Krein data at L4 <a id="frame-clock-invariance"></a>
 
 **Label:** Theorem · **id:** `frame_clock_invariance` · **quadrant:** true but ghost-blind/untested
 
@@ -21600,7 +22272,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [L4 linearization, Krein signatures and the Routh wall](#l4-routh-krein)
 
-### #836 · 0.267 · Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30) <a id="orbifold-vs-descartes-deficits"></a>
+### #852 · 0.267 · Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30) <a id="orbifold-vs-descartes-deficits"></a>
 
 **Label:** Theorem · **id:** `orbifold_vs_descartes_deficits` · **quadrant:** true but ghost-blind/untested
 
@@ -21622,7 +22294,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - feeds → [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp)
 
-### #839 · 0.267 · Ruled quadric through a saddle: null lines, signature (1,1) <a id="ruled-quadric-null-lines"></a>
+### #855 · 0.267 · Ruled quadric through a saddle: null lines, signature (1,1) <a id="ruled-quadric-null-lines"></a>
 
 **Label:** Theorem · **id:** `ruled_quadric_null_lines` · **quadrant:** true but ghost-blind/untested
 
@@ -21646,7 +22318,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [Hodge index theorem](#hodge-index)
 
-### #840 · 0.267 · so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖² <a id="so4-chirality-split"></a>
+### #856 · 0.267 · so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖² <a id="so4-chirality-split"></a>
 
 **Label:** Theorem · **id:** `so4_chirality_split` · **quadrant:** true but ghost-blind/untested
 
@@ -21664,7 +22336,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - corrects → [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading)
 
-### #842 · 0.267 · Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products <a id="three-lenses-one-flow"></a>
+### #858 · 0.267 · Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products <a id="three-lenses-one-flow"></a>
 
 **Label:** Theorem · **id:** `three_lenses_one_flow` · **quadrant:** true but ghost-blind/untested
 
@@ -21684,7 +22356,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep)
 
-### #844 · 0.267 · Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric <a id="flat-bochner-curvature-ghost-blind"></a>
+### #860 · 0.267 · Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric <a id="flat-bochner-curvature-ghost-blind"></a>
 
 **Label:** Theorem · **id:** `flat_bochner_curvature_ghost_blind` · **quadrant:** true but ghost-blind/untested
 
@@ -21706,7 +22378,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric)
 - analogy of → [The Fisher curvature operator on bivectors is ghost-blind](#fisher-curvature-operator-ghost-blind)
 
-### #875 · 0.240 · ζ has no local F/V rotation at any prime: degree 1, N = 0 <a id="zeta-local-factors-no-rotation"></a>
+### #893 · 0.240 · ζ has no local F/V rotation at any prime: degree 1, N = 0 <a id="zeta-local-factors-no-rotation"></a>
 
 **Label:** Restatement · **id:** `zeta_local_factors_no_rotation` · **quadrant:** RH-sharp
 
@@ -21727,7 +22399,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hecke p-power recursion as a lattice Klein–Gordon (lossless LC-ladder) transfer matrix: Hasse = passband, and ζ’s local factors sit at the massless band edge](#hecke-lattice-klein-gordon) (refines); [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) (extends)
 
-### #893 · 0.240 · The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e <a id="product-formula-rest-frame"></a>
+### #911 · 0.240 · The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e <a id="product-formula-rest-frame"></a>
 
 **Label:** Restatement · **id:** `product_formula_rest_frame` · **quadrant:** RH-sharp
 
@@ -21748,7 +22420,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogue of → [Levinson/Schur steps are SU(1,1) boosts: Weil positivity = every step subluminal](#levinson-su11-boosts) — ghost = boost of rapidity arccosh e
 - restates → [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) — Hasse ⇔ zero rapidity
 
-### #898 · 0.240 · Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π <a id="trig-hyperbolic-trace-dictionary"></a>
+### #916 · 0.240 · Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π <a id="trig-hyperbolic-trace-dictionary"></a>
 
 **Label:** Restatement · **id:** `trig_hyperbolic_trace_dictionary` · **quadrant:** RH-sharp
 
@@ -21767,7 +22439,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - restates → [Hyperbolic loops are the primes; zeros are an elliptic action on H¹; a hyperbolic action on H¹ is a ghost](#hyperbolic-orbits-elliptic-h1)
 - related to → [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only)
 
-### #902 · 0.240 · Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1} <a id="euler-half-exponent-tame-symbol"></a>
+### #920 · 0.240 · Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1} <a id="euler-half-exponent-tame-symbol"></a>
 
 **Label:** Restatement · **id:** `euler_half_exponent_tame_symbol` · **quadrant:** RH-sharp
 
@@ -21785,7 +22457,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - restates → [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting)
 
-### #907 · 0.240 · In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight <a id="lambda-as-norm"></a>
+### #925 · 0.240 · In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight <a id="lambda-as-norm"></a>
 
 **Label:** Restatement · **id:** `lambda_as_norm` · **quadrant:** RH-sharp
 
@@ -21803,7 +22475,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - uses → [The local zeta of one planar Lyapunov orbit has its zeros on the lines Re s = −(m+1)λ](#local-ruelle-lines)
 
-### #910 · 0.240 · Riemann-Roch sorts the two conditions <a id="riemann-roch-sorting"></a>
+### #928 · 0.240 · Riemann-Roch sorts the two conditions <a id="riemann-roch-sorting"></a>
 
 **Label:** Restatement · **id:** `riemann_roch_sorting` · **quadrant:** RH-sharp
 
@@ -21823,7 +22495,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Two conditions: primitive positivity and pole channel](#two-channel-missing-piece)
 
-### #916 · 0.240 · Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho) <a id="zeta-zero-fv-quadratic"></a>
+### #934 · 0.240 · Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho) <a id="zeta-zero-fv-quadratic"></a>
 
 **Label:** Restatement · **id:** `zeta_zero_fv_quadratic` · **quadrant:** RH-sharp
 
@@ -21845,7 +22517,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy)
 
-### #943 · 0.226 · Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ <a id="shimura-waldspurger-template-map"></a>
+### #961 · 0.226 · Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ <a id="shimura-waldspurger-template-map"></a>
 
 **Label:** Analogy · **id:** `shimura_waldspurger_template_map` · **quadrant:** background
 
@@ -21864,7 +22536,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - uses → [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square)
 - uses → [Kohnen–Zagier for 11a: L(E_D,1)√|D| = κ c(|D|)² for all 56 admissible D ≥ −399](#waldspurger-squares-11a)
 
-### #981 · 0.212 · SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G) <a id="su2xsu2-peter-weyl-surface"></a>
+### #999 · 0.212 · SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G) <a id="su2xsu2-peter-weyl-surface"></a>
 
 **Label:** Analogy · **id:** `su2xsu2_peter_weyl_surface` · **quadrant:** background
 
@@ -22180,6 +22852,8 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 > ⚠ **Correction / caution.** v1.19 correction. For zeta, a map of all compactly supported E0 tests, on every window, into a semidefinite quotient with squared norm exactly W is Weil positivity for zeta. An abstract GNS construction assuming RH can inherit formal compatibilities of W (covariance, window restriction, and the zeros-blind explicit formula) and is circular as a proof. Those compatibilities are not the missing source of the sign. Independent positivity of H+ identified with W, without assuming W >= 0, is what is missing. Not every further demand, including an unspecified Hecke action or a Beurling control, is claimed to follow automatically. Place-local squares cannot match the signed local terms one place at a time. The pole pair as an II_1,1 lattice is an analogy; no arithmetic lattice is constructed. No ample class or compatible J matching W is constructed.
 
+> ⚠ **Correction / caution.** v1.20. The window ledger, the bordered count, and the two failed representers do not construct H+. Open ~1.8 is unchanged. The Riemann Hypothesis is not proved.
+
 **Relations (outgoing):**
 
 - restates → [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement)
@@ -22196,7 +22870,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - tests → [DH off-line zero 0.80851718245663738555+85.699348485377592172i (|f|=2e−30); quadruple gives 2 ghosts (one per parity)](#dh-two-ghosts-per-quadruple)
 - restates → [Weil positivity criterion](#weil-positivity)
 
-**Relations (incoming):** [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (refines); [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) (refines)
+**Relations (incoming):** [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (refines); [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) (constrains); [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) (refines)
 
 ### #325 · 0.380 · A square root G with G*G = Z_L is trivial if Z_L ≥ 0; a non-circular G must be zero-free, non-local, equivariant and independently positive <a id="square-root-constraints"></a>
 
@@ -22216,7 +22890,53 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target)
 - restates → [Weil positivity criterion](#weil-positivity)
 
-### #745 · 0.292 · Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window <a id="fock-gram-realization-target"></a>
+### #495 · 0.347 · Two explicit representers fail; an independent matching map is still missing <a id="independent-representer-test"></a>
+
+**Label:** Theorem · **id:** `independent_representer_test` · **quadrant:** true but ghost-blind/untested
+
+*In plain words:* The bordered criterion would become a construction if a vector h were built from Gamma data, prime data, and the boundary, without inverting B, and if that vector carried the constraint and a negative square. Two candidates were written down in advance. Both fail. The failure of those two is proved, on the stated domain. A general no-go is not.
+
+**Core.** The identity asked for is B(h, F) = kappa C(F) on the window, equivalently a response equal to kappa cosh(v/2) almost everywhere, for even h. h1 = cosh(u/2) times the window indicator fails at A = 0.6 and at A = 1. The proof splits the archimedean integral at a fixed small a0. The untruncated comparison with the smooth continuation cosh(u/2) diverges, because the Gamma integrand tends to -cosh(v/2) at infinity and cosh sits at the Gamma pole. From a0 to infinity the integrand stays bounded, since h1 is bounded and compactly supported. On the short interval the smooth piece is integrable and the missing translate produces (cosh(L/2)/2) log(1/d) plus a bounded term. The coefficient 1/2 is the one in that expansion. A refinement records a rise of about 0.689 to 0.691 per factor of four in d, against (1/2) log 4 = 0.693. The Jc/Js decomposition in the parent audit is the same split. h2, the Dirichlet cosh, removes the edge logarithm. At A = 1, where the only prime power inside the window is 2, h2 fails because the response has a slope jump a_2 sinh(A/4)/2 = 0.06191 at ±(log 2 - A/2). That jump is exact under those hypotheses. At A = 0.6 the h2 residual is 6.92 percent, numerical only. Polynomial tests F = (d^2/du^2 - 1/4)G with G = (1-t^2)^2 t^k are piecewise polynomial, not smooth; they lie in the form domain, and they lie in E0 by integration by parts using G = G' = 0 at the edges. They disprove the identity on that domain. The smooth case of h1 and of h2 at A = 1 goes through the annihilator lemma. Density of smooth E0 tests in the form domain is plausible and not proved. The missing theorem is a vector h_A, built independently of B inverse, with the full response including M_A and every prime edge, with B(h_A, h_A) < 0, and with both sector conditions. The sector count is the RH-strength half. No such vector is constructed.
+
+**Formula.** B(h, ·) = kappa C on E0 tests iff the response lies in span{cosh, sinh}
+
+**Numbers.** h1 least-squares residuals, numerical: 37.9 percent at A = 0.6, 19.1 percent at A = 1. · h2 at A = 1, numerical residual about 3.0 percent, on top of the exact jump. · h2 at A = 0.6: residual 6.92 percent, stable across three grids, still only numerical. · Finite-difference jump at eps = 10^(-4): 0.06189, against 0.06191.
+
+**What is proved around it.** Failure of h1 at both widths, and failure of h2 at A = 1 under log 2 < A < log 3, on the form domain and on smooth tests via the annihilator lemma. Parent audit, Propositions 4 and 5.
+
+**Tests it must pass.** A proposed h that is defined as B inverse c, or that is checked only on even tests, or that drops the prime shifts, does not meet the missing theorem.
+
+**Also known as:** h1 and h2; missing matching theorem
+
+**Axes:** open target, sign/positivity (Ax2), ghost-blind
+
+**Scores (Heuristic):** gap significance 0.8 (nearest gap: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)) · sensitivity 1.0 · specificity 0.05 · tractability 0.6 · evidence 1.0 → priority 0.347
+
+> ⚠ **Correction / caution.** Only these two candidates are excluded. There is no universal Gamma-only no-go.
+
+> ⚠ **Correction / caution.** Do not prove the h1 edge by an untruncated integral against the smooth continuation of cosh. That integral diverges. Split at a fixed small a0.
+
+> ⚠ **Correction / caution.** Polynomial tests are piecewise and not smooth. A density argument from smooth E0 tests is not proved.
+
+> ⚠ **Correction / caution.** B inverse c is not an independent constructor.
+
+> ⚠ **Correction / caution.** Infinite-dimensional invertibility is unproved.
+
+> ⚠ **Correction / caution.** The Riemann Hypothesis is not proved.
+
+> ❓ **Not verified / open.** Missing theorem, not a result: construct h_A from Gamma, prime, and boundary data, independently of B inverse, so that B(h_A, F) = kappa C(F) + kappa' S(F) for every window F, including the diagonal M_A and the prime-translated edge layers; B(h_A, h_A) < 0; and both sector conditions hold. A finite singular orbit, a 1/log edge law, and a Gamma-only no-go are conjectural. Whether B inverse cosh equals cosh minus a finite edge-layer sum is a conjecture, and only when the inverse exists.
+
+**Relations (outgoing):**
+
+- illustrates → [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) — the Sylvester shape the missing h would have to meet; not a construction
+- constrains → [Missing: arithmetic Castelnuovo object (positive involution on a space where the Weil distribution is a |·|²)](#mp-castelnuovo) — still missing; this entry does not construct a positive involution
+- constrains → [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) — H+ identified with W, without assuming the sign, is not built; Open ~1.8 unchanged
+- constrains → [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](#kahler-triple-polarization) — no compatible J; rank 1 unchanged
+- uses → [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) — the response must include the diagonal M_A and the prime shifts
+
+**Relations (incoming):** [At width 1 the second candidate fails by a prime-2 kink of slope 0.06191](#prime-edge-kink-orbit) (obstructs); [At width 1 the second candidate fails by a prime-2 kink of slope 0.06191](#prime-edge-kink-orbit) (contrasts with)
+
+### #761 · 0.292 · Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window <a id="fock-gram-realization-target"></a>
 
 **Label:** Open · **id:** `fock_gram_realization_target` · **quadrant:** true but ghost-blind/untested
 
@@ -22238,7 +22958,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over F_q a positive similitude CᵀGC = qG exists for every tested curve and for no ghost (semidefinite test)](#fq-similitude-sdp) (instance of); [GNS factorization of W on all of E0 is Weil positivity for zeta; independent positivity of H+ is missing](#norm-identity-iff-weil-not-four-criteria) (contrasts with); [A square root G with G*G = Z_L is trivial if Z_L ≥ 0; a non-circular G must be zero-free, non-local, equivariant and independently positive](#square-root-constraints) (refines); [The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional](#pole-kernel-schmidt) (no-progress-on)
 
-### #746 · 0.292 · Where the Krein grading lives: the supporting functional of the Weil cone at ζ <a id="grading-supporting-functional"></a>
+### #762 · 0.292 · Where the Krein grading lives: the supporting functional of the Weil cone at ζ <a id="grading-supporting-functional"></a>
 
 **Label:** Conjecture · **id:** `grading_supporting_functional` · **quadrant:** true but ghost-blind/untested
 
@@ -22260,7 +22980,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) (refines); [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame) (refines)
 
-### #747 · 0.292 · Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology) <a id="missing-positive-invariant-form"></a>
+### #763 · 0.292 · Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology) <a id="missing-positive-invariant-form"></a>
 
 **Label:** Open · **id:** `missing_positive_invariant_form` · **quadrant:** true but ghost-blind/untested
 
@@ -22281,7 +23001,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) (refines)
 
-### #748 · 0.292 · Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy <a id="perelman-template-dbn"></a>
+### #764 · 0.292 · Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy <a id="perelman-template-dbn"></a>
 
 **Label:** Open · **id:** `perelman_template_dbn` · **quadrant:** true but ghost-blind/untested
 
@@ -22306,7 +23026,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares)](#dbn-loggas-entropy-production) (refines); [Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)](#zero-gas-forced-functionals) (refines)
 
-### #749 · 0.292 · Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages <a id="bypass-u-direction-gap"></a>
+### #765 · 0.292 · Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages <a id="bypass-u-direction-gap"></a>
 
 **Label:** Open · **id:** `bypass_u_direction_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -22327,7 +23047,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) (refines)
 
-### #750 · 0.292 · Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow <a id="hopf-fibration-spec-z"></a>
+### #766 · 0.292 · Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow <a id="hopf-fibration-spec-z"></a>
 
 **Label:** Conjecture · **id:** `hopf_fibration_spec_z` · **quadrant:** true but ghost-blind/untested
 
@@ -22348,7 +23068,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity](#arithmetic-topology-linking-matrix) (constrains)
 
-### #753 · 0.292 · No tested arithmetic family turns positive at a collinear-to-triangular type crossing <a id="no-neg-to-pos-crossing"></a>
+### #769 · 0.292 · No tested arithmetic family turns positive at a collinear-to-triangular type crossing <a id="no-neg-to-pos-crossing"></a>
 
 **Label:** Open · **id:** `no_neg_to_pos_crossing` · **quadrant:** true but ghost-blind/untested
 
@@ -22369,7 +23089,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) (refines)
 
-### #754 · 0.271 · Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack <a id="identity-not-estimate"></a>
+### #770 · 0.271 · Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack <a id="identity-not-estimate"></a>
 
 **Label:** Heuristic · **id:** `identity_not_estimate` · **quadrant:** background
 
@@ -22393,7 +23113,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The one-box axis: F(ℓ) = W(1_[0,ℓ]) has a uniform rescaled margin on [1, 10], but only by a 1-in-9400 cancellation](#single-box-axis-criterion) (refines); [The admissible prime weights form a thin slab: narrow along total mass, about 30 times wider along mass-neutral directions](#prime-weight-anisotropy) (refines); [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) (feeds)
 
-### #755 · 0.271 · The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger) <a id="edge-boundary-cycle"></a>
+### #771 · 0.271 · The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger) <a id="edge-boundary-cycle"></a>
 
 **Label:** Heuristic · **id:** `edge_boundary_cycle` · **quadrant:** background
 
@@ -22414,7 +23134,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [d* = −⋆d⋆ (dim 4), ∂̄* = −⋆∂⋆, Δ = 2□, [Λ,∂̄] = −i∂*; Hodge-index sign D°² = −‖α_harm‖² from ⋆ = −1 on primitive (1,1)](#dolbeault-kahler-sign) (supplies the sign for)
 
-### #756 · 0.271 · RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin <a id="kahler-package-one-liner"></a>
+### #772 · 0.271 · RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin <a id="kahler-package-one-liner"></a>
 
 **Label:** Heuristic · **id:** `kahler_package_one_liner` · **quadrant:** background
 
@@ -22435,7 +23155,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya](#both-at-once) (strengthens)
 
-### #866 · 0.240 · RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole <a id="sharpened-missing-piece"></a>
+### #884 · 0.240 · RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole <a id="sharpened-missing-piece"></a>
 
 **Label:** Restatement · **id:** `sharpened_missing_piece` · **quadrant:** RH-sharp
 
@@ -22451,7 +23171,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The Weil form is not a relative entropy or its Hessian: the entropy Hessian is diagonal and positive, the Weil prime term is minus a convolution pairing that is indefinite even at β = 2 (Re(−ζ′/ζ)(2+it) has minimum −0.351), and β = ½ lies below the phase transition where no Gibbs state exists](#weil-not-relative-entropy) (refines); [With D built from the archimedean place, positivity of the Weil form on a window splits into a boundary block (pole and primes cover the archimedean-negative modes) and a relative bound ρ = max(−K/D*D) ≤ 1 on the high-frequency block; ζ and χ₋₄ saturate ρ = 1.0000, so the split is sharp and equivalent to Weil positivity](#weitzenbock-split-sharp-circular) (refines); [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (refines); [Talenti template transcribed to Weil: bulk=boundary works on Yoshida's short-support class (ĝ(±i/2)=0 as the boundary condition); W_R alone indefinite by support log 4; total top eigenvalue → 0⁻](#talenti-template-test) (constrains); [Deninger: Θ a derivation of cup product + positive Hodge ⋆ ⇒ Θ=½+A, A skew ⇒ RH (conjectural cohomology)](#deninger-derivation-positivity) (candidate setting for); [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) (sharpens); [(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²](#exactness-monge-ampere) (explains)
 
-### #940 · 0.226 · 45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s <a id="hecke-mellin-lightcone-bypass"></a>
+### #958 · 0.226 · 45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s <a id="hecke-mellin-lightcone-bypass"></a>
 
 **Label:** Analogy · **id:** `hecke_mellin_lightcone_bypass` · **quadrant:** background
 
@@ -22467,7 +23187,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square) (obstructs); [Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages](#bypass-u-direction-gap) (refines)
 
-### #985 · 0.200 · Convolution square root <a id="convolution-square-root"></a>
+### #1004 · 0.200 · Convolution square root <a id="convolution-square-root"></a>
 
 **Label:** Open · **id:** `convolution_square_root` · **quadrant:** RH-sharp
 
@@ -22485,7 +23205,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Modularity as the observability link](#modularity-observability-link) (refines); [Branch selection by arithmetic](#phase-branch-selection) (refines); [Rankin-Selberg is blind to sign flips](#rs-blind-to-sign-flips) (instance of); [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) (analogy of); [RH as infinite divisibility](#infinitely-divisible-rh-criterion) (analogy of)
 
-### #986 · 0.200 · Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk <a id="anticipation-law-fluctuation"></a>
+### #1005 · 0.200 · Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk <a id="anticipation-law-fluctuation"></a>
 
 **Label:** Conjecture · **id:** `anticipation_law_fluctuation` · **quadrant:** RH-sharp
 
@@ -22508,7 +23228,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [No rigidity in the Levinson chain: Verblunsky coefficients are free, and ζ's update is expanding](#levinson-contraction-route-dead) (analogy of); [Subtracting the pole and the prime-number-theorem main term destroys the positivity object](#pnt-subtracted-levinson-nogo) (refines)
 
-### #987 · 0.200 · Weighted signed energy trace from the heat-flowed function <a id="signed-local-energy-trace"></a>
+### #1006 · 0.200 · Weighted signed energy trace from the heat-flowed function <a id="signed-local-energy-trace"></a>
 
 **Label:** Open · **id:** `signed_local_energy_trace` · **quadrant:** RH-sharp
 
@@ -22533,7 +23253,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Signed energy as an early warning of ghost landing](#signed-energy-early-warning) (refines); [Zero-free signed energy trace of the heat-flowed Xi](#contour-signed-energy-trace) (refines)
 
-### #988 · 0.200 · A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known <a id="slot2-thermodynamic-target"></a>
+### #1007 · 0.200 · A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known <a id="slot2-thermodynamic-target"></a>
 
 **Label:** Open · **id:** `slot2_thermodynamic_target` · **quadrant:** RH-sharp
 
@@ -22549,7 +23269,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [For λ ∈ [−0.4, 0], H_λ has no non-real zeros with Im h < 200 (γ < 100): a finite window cannot see the edge Λ ≥ 0](#zeta-edge-invisible-in-window) (constrains); [κ_{2k}/(2k)! = −(1/k)Σ h_j^{−2k}; on-axis zeros give alternating cumulant signs, and DH's off-axis term is suppressed by (10.19/171.4)^{2k} relative to its lowest on-axis zero, so the sign test is passed by DH for every k (checked k = 2…8 to 4 digits)](#cumulant-dominance-blind) (constrains); [Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang](#lambda-invariance-nogo) (constrains)
 
-### #989 · 0.200 · Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture) <a id="krein-laguerre-count"></a>
+### #1008 · 0.200 · Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture) <a id="krein-laguerre-count"></a>
 
 **Label:** Conjecture · **id:** `krein_laguerre_count` · **quadrant:** RH-sharp
 
@@ -22569,7 +23289,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH](#lc-square-xi) (feeds)
 
-### #990 · 0.200 · Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling <a id="noncircular-noghost-conjecture"></a>
+### #1009 · 0.200 · Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling <a id="noncircular-noghost-conjecture"></a>
 
 **Label:** Conjecture · **id:** `noncircular_noghost_conjecture` · **quadrant:** RH-sharp
 
@@ -22589,7 +23309,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (refines)
 
-### #991 · 0.200 · Weil functional as a special-cycle self-intersection (program) <a id="weil-as-special-cycle-self-intersection"></a>
+### #1010 · 0.200 · Weil functional as a special-cycle self-intersection (program) <a id="weil-as-special-cycle-self-intersection"></a>
 
 **Label:** Conjecture · **id:** `weil_as_special_cycle_self_intersection` · **quadrant:** RH-sharp
 
@@ -22608,7 +23328,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Arakelov geometry](#arakelov)
 - analogy of → [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity)
 
-### #992 · 0.200 · TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH <a id="taa-thesis"></a>
+### #1011 · 0.200 · TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH <a id="taa-thesis"></a>
 
 **Label:** Conjecture · **id:** `taa_thesis` · **quadrant:** RH-sharp
 
@@ -22624,7 +23344,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH)](#no-ghost-template) (refines)
 
-### #993 · 0.200 · No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8 <a id="entropy-bound-insufficient"></a>
+### #1012 · 0.200 · No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8 <a id="entropy-bound-insufficient"></a>
 
 **Label:** Conjecture · **id:** `entropy_bound_insufficient` · **quadrant:** RH-sharp
 
@@ -22638,7 +23358,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.2 · evidence 0.5 → priority 0.200
 
-### #994 · 0.200 · RH positivity and height positivity from one star-pairing <a id="height-positivity-equals-rh-positivity"></a>
+### #1013 · 0.200 · RH positivity and height positivity from one star-pairing <a id="height-positivity-equals-rh-positivity"></a>
 
 **Label:** Conjecture · **id:** `height_positivity_equals_rh_positivity` · **quadrant:** RH-sharp
 
@@ -22657,7 +23377,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Weil functional as a special-cycle self-intersection (program)](#weil-as-special-cycle-self-intersection) (analogy of)
 
-### #995 · 0.200 · zeta on the wall of deformation families <a id="zeta-on-the-wall"></a>
+### #1014 · 0.200 · zeta on the wall of deformation families <a id="zeta-on-the-wall"></a>
 
 **Label:** Conjecture · **id:** `zeta_on_the_wall` · **quadrant:** RH-sharp
 
@@ -22671,7 +23391,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 1.0 · tractability 0.2 · evidence 0.5 → priority 0.200
 
-### #1004 · 0.165 · Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object <a id="mechanism-global-object"></a>
+### #1023 · 0.165 · Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object <a id="mechanism-global-object"></a>
 
 **Label:** Open · **id:** `mechanism_global_object` · **quadrant:** true but ghost-blind/untested
 
@@ -22691,7 +23411,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Over 𝔽_q, a DH-type fake (c·P₁+(1−c)·P₂ of two genuine L-polynomials) keeps the functional equation and positive, integral, subfield-monotone point counts, yet violates RH; only the surface (Hodge index / Riemann–Roch bound) forces RH](#beurling-curve-fakes) (extends); [Truncated Euler products (+Γ, pole) on mass-0 test functions are indefinite until P > e^L then frozen: no Tate-type limit](#euler-truncation-not-tate) (feeds); [Néron local terms indefinite at every place for 389a1 and 5077a1; sum = ĥ Gram (PSD) to 7e−16](#local-neron-terms-indefinite) (feeds); [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement) (explains); [Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not](#thermo-dictionary-grades) (feeds); [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open) (analogue of)
 
-### #1005 · 0.165 · Zero-free window certificates as heat-flow barriers <a id="barrier-certificate-bypass"></a>
+### #1024 · 0.165 · Zero-free window certificates as heat-flow barriers <a id="barrier-certificate-bypass"></a>
 
 **Label:** Open · **id:** `barrier_certificate_bypass` · **quadrant:** true but ghost-blind/untested
 
@@ -22714,7 +23434,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Hermite count as a heat-flow barrier: sound but redundant](#hermite-barrier-soundness) (refines); [Route: Hermite barrier certificate to lower Lambda](#hermite-barrier-route) (refines)
 
-### #1006 · 0.165 · Order as a stability condition (target shape) <a id="ps-tilt-central-charge-target"></a>
+### #1025 · 0.165 · Order as a stability condition (target shape) <a id="ps-tilt-central-charge-target"></a>
 
 **Label:** Open · **id:** `ps_tilt_central_charge_target` · **quadrant:** true but ghost-blind/untested
 
@@ -22738,7 +23458,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) (refines); [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) (corrects)
 
-### #1007 · 0.165 · Candidate formulations of Castelnuovo-Severi over the integers <a id="cs-for-spec-z-formulations"></a>
+### #1026 · 0.165 · Candidate formulations of Castelnuovo-Severi over the integers <a id="cs-for-spec-z-formulations"></a>
 
 **Label:** Open · **id:** `cs_for_spec_z_formulations` · **quadrant:** true but ghost-blind/untested
 
@@ -22758,7 +23478,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Castelnuovo-Severi and Weil's bound](#castelnuovo-severi-lemma) (analogy of)
 
-### #1008 · 0.165 · Ring-preserving supercharge and RH as purity <a id="rings-purity-restates-positivity"></a>
+### #1027 · 0.165 · Ring-preserving supercharge and RH as purity <a id="rings-purity-restates-positivity"></a>
 
 **Label:** Conjecture · **id:** `rings_purity_restates_positivity` · **quadrant:** true but ghost-blind/untested
 
@@ -22779,7 +23499,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - analogy of → [Hodge–Riemann bilinear relations](#hodge-riemann)
 - analogy of → [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless)
 
-### #1009 · 0.165 · Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open <a id="spinor-root-open"></a>
+### #1028 · 0.165 · Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open <a id="spinor-root-open"></a>
 
 **Label:** Open · **id:** `spinor_root_open` · **quadrant:** true but ghost-blind/untested
 
@@ -22799,7 +23519,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1](#witten-index-inverse-zeta) (related to)
 
-### #1012 · 0.165 · Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1 <a id="weil-as-height-restriction"></a>
+### #1031 · 0.165 · Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1 <a id="weil-as-height-restriction"></a>
 
 **Label:** Open · **id:** `weil_as_height_restriction` · **quadrant:** true but ghost-blind/untested
 
@@ -22815,7 +23535,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object](#mechanism-global-object) (constrains); [Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors](#two-steps-to-baseline) (refines)
 
-### #1013 · 0.165 · One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya <a id="both-at-once"></a>
+### #1032 · 0.165 · One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya <a id="both-at-once"></a>
 
 **Label:** Open · **id:** `both_at_once` · **quadrant:** true but ghost-blind/untested
 
@@ -22833,7 +23553,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - strengthens → [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner)
 
-### #1014 · 0.165 · No ζ analogue of c=26 (no unitary c fits the Weil form) <a id="c26-gap"></a>
+### #1033 · 0.165 · No ζ analogue of c=26 (no unitary c fits the Weil form) <a id="c26-gap"></a>
 
 **Label:** Open · **id:** `c26_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -22849,7 +23569,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (uses)
 
-### #1015 · 0.165 · No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1) <a id="ddf-gap"></a>
+### #1034 · 0.165 · No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1) <a id="ddf-gap"></a>
 
 **Label:** Open · **id:** `ddf_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -22865,7 +23585,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (uses)
 
-### #1016 · 0.165 · F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge) <a id="fv-level-change-gap"></a>
+### #1035 · 0.165 · F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge) <a id="fv-level-change-gap"></a>
 
 **Label:** Open · **id:** `fv_level_change_gap` · **quadrant:** true but ghost-blind/untested
 
@@ -22881,7 +23601,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Refined missing piece (v1.15): a positive-by-construction transverse space H₊ for the scaling reduction — a no-ghost theorem with the pole pair as the II₁,₁ part](#no-ghost-missing-piece) (uses)
 
-### #1017 · 0.165 · Integrality instead of positivity (45-degree direction) <a id="integrality-support-bypass"></a>
+### #1036 · 0.165 · Integrality instead of positivity (45-degree direction) <a id="integrality-support-bypass"></a>
 
 **Label:** Open · **id:** `integrality_support_bypass` · **quadrant:** true but ghost-blind/untested
 
@@ -22901,7 +23621,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - analogy of → [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall)
 
-### #1018 · 0.165 · Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality <a id="needed-semilocal-sonin-inequality"></a>
+### #1037 · 0.165 · Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality <a id="needed-semilocal-sonin-inequality"></a>
 
 **Label:** Open · **id:** `needed_semilocal_sonin_inequality` · **quadrant:** true but ghost-blind/untested
 
@@ -22921,7 +23641,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin)
 
-### #1019 · 0.165 · Regularized xp foliation as a route <a id="regularized-xp-foliation-route"></a>
+### #1038 · 0.165 · Regularized xp foliation as a route <a id="regularized-xp-foliation-route"></a>
 
 **Label:** Open · **id:** `regularized_xp_foliation_route` · **quadrant:** true but ghost-blind/untested
 
@@ -22939,7 +23659,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #1020 · 0.165 · A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction <a id="siegel-zero-as-small-boundary-mass"></a>
+### #1039 · 0.165 · A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction <a id="siegel-zero-as-small-boundary-mass"></a>
 
 **Label:** Conjecture · **id:** `siegel_zero_as_small_boundary_mass` · **quadrant:** true but ghost-blind/untested
 
@@ -22957,7 +23677,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - related to → [A synthetic real off-line zero pair (Siegel-type) adds exactly one negative direction, at the window where the base margin collapses, with no second neck](#synthetic-siegel-single-timelike)
 
-### #1021 · 0.165 · Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors <a id="two-steps-to-baseline"></a>
+### #1040 · 0.165 · Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors <a id="two-steps-to-baseline"></a>
 
 **Label:** Open · **id:** `two_steps_to_baseline` · **quadrant:** true but ghost-blind/untested
 
@@ -22975,7 +23695,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1](#weil-as-height-restriction)
 
-### #1022 · 0.165 · Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula <a id="xside-vs-rside-obstruction"></a>
+### #1041 · 0.165 · Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula <a id="xside-vs-rside-obstruction"></a>
 
 **Label:** Open · **id:** `xside_vs_rside_obstruction` · **quadrant:** true but ghost-blind/untested
 
@@ -22993,7 +23713,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - explains → [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros)
 
-### #1023 · 0.165 · Chaotic 2-DOF regularized xp as a route <a id="chaotic-2dof-xp-route"></a>
+### #1042 · 0.165 · Chaotic 2-DOF regularized xp as a route <a id="chaotic-2dof-xp-route"></a>
 
 **Label:** Open · **id:** `chaotic_2dof_xp_route` · **quadrant:** true but ghost-blind/untested
 
@@ -23013,7 +23733,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Narrowed missing piece (Open): a structural reason for the global cancellation in the prime-to-sequence map (the explicit formula’s balance); a per-prime ferromagnetic sign is refuted in the tested families](#ferromagnetic-phi-missing-piece)
 
-### #1024 · 0.165 · Route: Hermite barrier certificate to lower Lambda <a id="hermite-barrier-route"></a>
+### #1043 · 0.165 · Route: Hermite barrier certificate to lower Lambda <a id="hermite-barrier-route"></a>
 
 **Label:** Open · **id:** `hermite_barrier_route` · **quadrant:** true but ghost-blind/untested
 
@@ -23031,7 +23751,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Zero-free window certificates as heat-flow barriers](#barrier-certificate-bypass)
 
-### #1025 · 0.165 · Route: Jacobi/Finsler geometry of xp as a positivity source <a id="jacobi-finsler-positivity-route"></a>
+### #1044 · 0.165 · Route: Jacobi/Finsler geometry of xp as a positivity source <a id="jacobi-finsler-positivity-route"></a>
 
 **Label:** Open · **id:** `jacobi_finsler_positivity_route` · **quadrant:** true but ghost-blind/untested
 
@@ -23339,7 +24059,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Missing: an inequality consequence of automorphy (SC-E / HS-1)](#mp-automorphy-ineq) (same mechanism as); [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) (same mechanism as)
 
-### #494 · 0.325 · Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein) <a id="euler-factor-wick-rotation"></a>
+### #497 · 0.325 · Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein) <a id="euler-factor-wick-rotation"></a>
 
 **Label:** Theorem · **id:** `euler_factor_wick_rotation` · **quadrant:** true but ghost-blind/untested
 
@@ -23372,7 +24092,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Boosts close into rotations only in imaginary time: Thomas–Wigner (boost commutators are rotations), Cartan duality H³ = SO(3,1)/SO(3) ↔ S³ = SO(4)/SO(3) (p ↦ ip), and Bisognano–Wichmann/Unruh: the Rindler boost is the modular flow of the wedge algebra; its Wick rotation is a Euclidean rotation whose 2π period is the KMS condition (T = a/2π) — arithmetic counterpart: ζ(β) as the primon-gas / Bost–Connes partition function, p^{−it} the time evolution](#boost-rotation-modular-kms) (same mechanism as); [Sundman clock for the F/V collision](#fv-sundman-oscillator) (refines); [Square-root factorization with a one-sided Wick flip](#sqrt-factorization-one-sided-wick) (refines); [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) (same mechanism as); [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) (same mechanism as); [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) (same mechanism as); [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) (refines); [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) (mirror of)
 
-### #543 · 0.325 · S-mirror ρ ↦ 1 − ρ̄ <a id="s-mirror"></a>
+### #546 · 0.325 · S-mirror ρ ↦ 1 − ρ̄ <a id="s-mirror"></a>
 
 **Label:** Theorem · **id:** `s_mirror` · **quadrant:** true but ghost-blind/untested
 
@@ -23396,7 +24116,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Two partners of a zero (duality vs conjugation)](#two-partners) (same mechanism as); [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) (same mechanism as)
 
-### #627 · 0.325 · The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it) <a id="unitary-axis-s-eq-s-plus-k4"></a>
+### #630 · 0.325 · The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it) <a id="unitary-axis-s-eq-s-plus-k4"></a>
 
 **Label:** Theorem · **id:** `unitary_axis_s_eq_s_plus_k4` · **quadrant:** true but ghost-blind/untested
 
@@ -23414,7 +24134,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - corrects → [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once)
 
-### #656 · 0.325 · Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out <a id="unitary-axis-rescaling-trivializes-phase"></a>
+### #659 · 0.325 · Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out <a id="unitary-axis-rescaling-trivializes-phase"></a>
 
 **Label:** Theorem · **id:** `unitary_axis_rescaling_trivializes_phase` · **quadrant:** true but ghost-blind/untested
 
@@ -23434,7 +24154,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module](#virasoro-halving-is-central-charge-change) (related to)
 
-### #685 · 0.307 · Metaplectic / Kubota cocycle <a id="metaplectic"></a>
+### #688 · 0.307 · Metaplectic / Kubota cocycle <a id="metaplectic"></a>
 
 **Label:** Theorem · **id:** `metaplectic` · **quadrant:** true but ghost-blind/untested
 
@@ -23458,7 +24178,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Kähler triple (ω, J, g) = polarization; elliptic ⇔ positive form preserved](#kahler-triple-polarization) (analogue of); [Weight-½ Eisenstein coefficients on Γ₀(4) from Kloosterman–Gauss sums agree with Goldfeld–Hoffstein Cor. 1.3](#weight-half-coefficients-verified) (uses); [Oscillator semigroup: positive ⇔ real A with symplectic eigenvalues ≤ 1 (archimedean, ghost-blind)](#oscillator-semigroup-contraction) (lives in); [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) (refines); [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once) (refines); [Half Tate twist ℚ(½)](#half-tate-twist) (same mechanism as); [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) (same mechanism as); [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) (same mechanism as); [The prime 2 as the wild place](#prime-two-wild) (same mechanism as); [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) (same mechanism as); [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) (same mechanism as); [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) (same mechanism as); [Klein–Gordon indefinite charge](#klein-gordon-charge) (analogue of)
 
-### #686 · 0.307 · Half Tate twist ℚ(½) <a id="half-tate-twist"></a>
+### #689 · 0.307 · Half Tate twist ℚ(½) <a id="half-tate-twist"></a>
 
 **Label:** Theorem · **id:** `half_tate_twist` · **quadrant:** true but ghost-blind/untested
 
@@ -23486,7 +24206,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Connes trace formula](#connes-trace) (analogue of); [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) (same mechanism as); [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) (analogue of); [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) (lives in); [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) (analogue of)
 
-### #687 · 0.307 · Functional equation ξ(s) = ξ(1 − s) <a id="functional-equation"></a>
+### #690 · 0.307 · Functional equation ξ(s) = ξ(1 − s) <a id="functional-equation"></a>
 
 **Label:** Theorem · **id:** `functional_equation` · **quadrant:** true but ghost-blind/untested
 
@@ -23515,7 +24235,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Davenport–Heilbronn function](#davenport-heilbronn) (fails for); [Euler product and functional equation work only together: the window positivity test](#euler-fe-conjunction) (counterexample to sufficiency of); [Epstein zeta no-go](#epstein) (fails for); [Liouville law gives symmetry, Hodge positivity gives the line](#liouville-vs-hodge-toy) (instance of); [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) (same mechanism as); [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) (implies); [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) (same mechanism as); [Scattering unitarity |φ| = 1](#scattering-phi) (special case of); [Sector map w = e^{iπs/2}](#sector-map-w) (same mechanism as)
 
-### #694 · 0.307 · Half turn = sign flip (S² = −I, root number, Hardy Z sign changes) <a id="half-turn-sign-flip"></a>
+### #697 · 0.307 · Half turn = sign flip (S² = −I, root number, Hardy Z sign changes) <a id="half-turn-sign-flip"></a>
 
 **Label:** Theorem · **id:** `half_turn_sign_flip` · **quadrant:** true but ghost-blind/untested
 
@@ -23545,7 +24265,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Verschiebung as the positive adjoint of Frobenius (F† = V)](#verschiebung-positive-adjoint) (same mechanism as); [Limiting mixed Hodge structure / nilpotent and SL₂-orbit theorems (Schmid; CKS)](#lmhs-nilpotent-orbit) (analogue of); [F/V merge: circle → ellipse → parabolic → hyperbola (t = a/√q; τ(t); sign pattern)](#fv-merge-trichotomy) (same mechanism as); [Sector map w = e^{iπs/2}](#sector-map-w) (analogue of); [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) (analogue of)
 
-### #699 · 0.307 · Cup product / Poincaré duality pairing <a id="cup-product"></a>
+### #702 · 0.307 · Cup product / Poincaré duality pairing <a id="cup-product"></a>
 
 **Label:** Theorem · **id:** `cup_product` · **quadrant:** true but ghost-blind/untested
 
@@ -23568,7 +24288,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Definite cup square / Krein one-liner](#definite-cup-square) (lives in); [Hodge–Riemann bilinear relations](#hodge-riemann) (special case of); [Curvature as cup square: convexity ↔ Rosati positivity](#curvature-cup-square) (analogue of); [Two partners of a zero (duality vs conjugation)](#two-partners) (same mechanism as); [Width → area → 2-form: (1/2π)Δ log|ξ| dσ∧dt = Σ δ_ρ](#zero-count-two-form) (same mechanism as)
 
-### #701 · 0.307 · Hecke operators <a id="hecke"></a>
+### #704 · 0.307 · Hecke operators <a id="hecke"></a>
 
 **Label:** Theorem · **id:** `hecke` · **quadrant:** true but ghost-blind/untested
 
@@ -23594,7 +24314,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Allowed locally ≠ aligned globally: every Frobenius angle is allowed, but only the genuine assignment keeps the window form positive (Δ and 11a1)](#allowed-locally-not-aligned-globally) (tests); [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) (same mechanism as); [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) (lives in); [Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)](#hecke-toy-contraction) (illustrates)
 
-### #703 · 0.307 · Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic <a id="real-forms-compact-vs-boost"></a>
+### #706 · 0.307 · Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic <a id="real-forms-compact-vs-boost"></a>
 
 **Label:** Theorem · **id:** `real_forms_compact_vs_boost` · **quadrant:** true but ghost-blind/untested
 
@@ -23628,7 +24348,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Boosts close into rotations only in imaginary time: Thomas–Wigner (boost commutators are rotations), Cartan duality H³ = SO(3,1)/SO(3) ↔ S³ = SO(4)/SO(3) (p ↦ ip), and Bisognano–Wichmann/Unruh: the Rindler boost is the modular flow of the wedge algebra; its Wick rotation is a Euclidean rotation whose 2π period is the KMS condition (T = a/2π) — arithmetic counterpart: ζ(β) as the primon-gas / Bost–Connes partition function, p^{−it} the time evolution](#boost-rotation-modular-kms) (lives in); [Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal)](#standing-frame-so22-ads3) (special case of)
 
-### #723 · 0.307 · Maass–Selberg relations <a id="maass-selberg"></a>
+### #726 · 0.307 · Maass–Selberg relations <a id="maass-selberg"></a>
 
 **Label:** Numerical · **id:** `maass_selberg` · **quadrant:** true but ghost-blind/untested
 
@@ -23652,7 +24372,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (same mechanism as); [Birman–Krein bridge: scattering phase = spectral shift; −φ′/φ = spectral density = Wigner delay = Maass–Selberg intercept](#birman-krein-spectral-shift) (same mechanism as); [Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T](#plus-space-ms-is-sl2-doubled) (refines)
 
-### #757 · 0.271 · Branch selection by arithmetic <a id="phase-branch-selection"></a>
+### #773 · 0.271 · Branch selection by arithmetic <a id="phase-branch-selection"></a>
 
 **Label:** Heuristic · **id:** `phase_branch_selection` · **quadrant:** background
 
@@ -23672,7 +24392,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Real-rooted exponential sums are restricted Lee–Yang polynomials](#lee-yang-multivariate-restriction) (analogy of); [Tension and amplitude dictionary](#half-density-tension-dictionary) (analogy of)
 
-### #770 · 0.267 · Half-density normalization |x|^{½} <a id="half-density"></a>
+### #786 · 0.267 · Half-density normalization |x|^{½} <a id="half-density"></a>
 
 **Label:** Theorem · **id:** `half_density` · **quadrant:** true but ghost-blind/untested
 
@@ -23700,7 +24420,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Eisenstein scattering resonances at s = ρ/2: purity at Re s = ¼](#eisenstein-resonances-rho-half) (analogue of); [The arithmetic equation of state: primon gas / Bost–Connes dictionary (T, U, S, C, Ω; KMS time; volume options; P_X(β))](#arithmetic-equation-of-state) (analogue of); [Mass shell / even Ξ: s(1−s) = ¼ + t²](#mass-shell-even-xi) (same mechanism as); [Density × density: Weil’s form read off the diagonal and its log n translates](#density-times-density-diagonal) (refines); [Half Tate twist ℚ(½)](#half-tate-twist) (same mechanism as); [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) (same mechanism as); [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) (analogue of); [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) (same mechanism as); [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) (same mechanism as); [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) (analogue of); [Distortionless line R/L = G/C](#distortionless) (same mechanism as); [Lamb cutoff](#lamb-cutoff) (same mechanism as)
 
-### #771 · 0.267 · Theta inversion θ(1/t) = √t θ(t) <a id="theta-inversion"></a>
+### #787 · 0.267 · Theta inversion θ(1/t) = √t θ(t) <a id="theta-inversion"></a>
 
 **Label:** Theorem · **id:** `theta_inversion` · **quadrant:** true but ghost-blind/untested
 
@@ -23729,7 +24449,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Ghost map Δ_w: zeros right of σ from damped Dirichlet sums](#ghost-map) (special case of); [Why the area is π: the circle in every zero count (Basel as common origin)](#circle-pi-in-zero-counts) (same mechanism as); [Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line](#jacobi-theta-decomposition-hinge) (related to); [L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line](#theta-fe-centre-on-line) (uses); [Half Tate twist ℚ(½)](#half-tate-twist) (same mechanism as); [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) (same mechanism as); [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) (same mechanism as)
 
-### #773 · 0.267 · The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K <a id="apsidal-sweep-eccentricity"></a>
+### #789 · 0.267 · The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K <a id="apsidal-sweep-eccentricity"></a>
 
 **Label:** Theorem · **id:** `apsidal_sweep_eccentricity` · **quadrant:** true but ghost-blind/untested
 
@@ -23764,7 +24484,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) (lives in); [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) (refines); [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) (lives in)
 
-### #775 · 0.267 · Eisenstein constant term & scattering φ(s) <a id="eisenstein-ct"></a>
+### #791 · 0.267 · Eisenstein constant term & scattering φ(s) <a id="eisenstein-ct"></a>
 
 **Label:** Theorem · **id:** `eisenstein_ct` · **quadrant:** true but ghost-blind/untested
 
@@ -23791,7 +24511,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) (analogue of); [Selberg resonances](#selberg-resonances) (same mechanism as); [Maass–Selberg relations](#maass-selberg) (same mechanism as); [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) (lives in); [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) (same mechanism as)
 
-### #778 · 0.267 · Hilbert reciprocity at 2: the odd halves become sign bits <a id="hilbert-reciprocity-at-2"></a>
+### #794 · 0.267 · Hilbert reciprocity at 2: the odd halves become sign bits <a id="hilbert-reciprocity-at-2"></a>
 
 **Label:** Cited · **id:** `hilbert_reciprocity_at_2` · **quadrant:** true but ghost-blind/untested
 
@@ -23828,7 +24548,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Half Tate twist ℚ(½)](#half-tate-twist) (same mechanism as); [The prime 2 as the wild place](#prime-two-wild) (same mechanism as); [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) (analogue of)
 
-### #779 · 0.267 · Scattering unitarity |φ| = 1 <a id="scattering-phi"></a>
+### #795 · 0.267 · Scattering unitarity |φ| = 1 <a id="scattering-phi"></a>
 
 **Label:** Theorem · **id:** `scattering_phi` · **quadrant:** true but ghost-blind/untested
 
@@ -23856,7 +24576,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Lax–Phillips scattering](#lax-phillips) (same mechanism as); [Time delay (Wigner)](#time-delay) (same mechanism as); [Birman–Krein bridge: scattering phase = spectral shift; −φ′/φ = spectral density = Wigner delay = Maass–Selberg intercept](#birman-krein-spectral-shift) (same mechanism as); [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) (same mechanism as)
 
-### #783 · 0.267 · Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase <a id="maslov-legendre-fourier"></a>
+### #799 · 0.267 · Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase <a id="maslov-legendre-fourier"></a>
 
 **Label:** Theorem · **id:** `maslov_legendre_fourier` · **quadrant:** true but ghost-blind/untested
 
@@ -23887,7 +24607,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Signed Maslov path on the Weil Gram matrix: not positivity-preserving; tropical end passes DH](#maslov-path-weil-matrix) (related to); [Half-density normalization |x|^{½}](#half-density) (same mechanism as)
 
-### #796 · 0.267 · Gauss sum as canonical √(±p) <a id="gauss-sum-canonical-root"></a>
+### #812 · 0.267 · Gauss sum as canonical √(±p) <a id="gauss-sum-canonical-root"></a>
 
 **Label:** Theorem · **id:** `gauss_sum_canonical_root` · **quadrant:** true but ghost-blind/untested
 
@@ -23908,7 +24628,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Metaplectic / Kubota cocycle](#metaplectic) — Weil index
 - same mechanism as → [The prime 2 as the wild place](#prime-two-wild) — √−1 costs ramification at 2
 
-### #808 · 0.267 · The critical-line wave: Hardy Z and the Riemann–Siegel phase <a id="hardy-z-critical-line-wave"></a>
+### #824 · 0.267 · The critical-line wave: Hardy Z and the Riemann–Siegel phase <a id="hardy-z-critical-line-wave"></a>
 
 **Label:** Theorem · **id:** `hardy_z_critical_line_wave` · **quadrant:** true but ghost-blind/untested
 
@@ -23933,7 +24653,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The induction matrix on the Q-quotient (Weil form on S-unit lattices)](#q-quotient-induction-matrix) (instance of)
 
-### #815 · 0.267 · w₂ / Čech class (TAA Lemma 138) <a id="w2-cech"></a>
+### #831 · 0.267 · w₂ / Čech class (TAA Lemma 138) <a id="w2-cech"></a>
 
 **Label:** Theorem · **id:** `w2_cech` · **quadrant:** true but ghost-blind/untested
 
@@ -23957,7 +24677,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Metaplectic / Kubota cocycle](#metaplectic) (same mechanism as); [Spin structure & theta characteristic](#spin-theta) (same mechanism as)
 
-### #829 · 0.267 · The factorial of one half and the Fourier quarter-turn <a id="fourier-quarter-turn"></a>
+### #845 · 0.267 · The factorial of one half and the Fourier quarter-turn <a id="fourier-quarter-turn"></a>
 
 **Label:** Theorem · **id:** `fourier_quarter_turn` · **quadrant:** true but ghost-blind/untested
 
@@ -23979,7 +24699,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - instance of → [One log-gas and its frozen limit](#log-gas-frozen-limit)
 
-### #832 · 0.267 · Frobenius angles are already quantized <a id="frobenius-angles-quantized"></a>
+### #848 · 0.267 · Frobenius angles are already quantized <a id="frobenius-angles-quantized"></a>
 
 **Label:** Theorem · **id:** `frobenius_angles_quantized` · **quadrant:** true but ghost-blind/untested
 
@@ -23999,7 +24719,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - refines → [Modularity as the observability link](#modularity-observability-link)
 
-### #841 · 0.267 · Spin structure & theta characteristic <a id="spin-theta"></a>
+### #857 · 0.267 · Spin structure & theta characteristic <a id="spin-theta"></a>
 
 **Label:** Theorem · **id:** `spin_theta` · **quadrant:** true but ghost-blind/untested
 
@@ -24023,7 +24743,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - same mechanism as → [w₂ / Čech class (TAA Lemma 138)](#w2-cech)
 
-### #855 · 0.256 · "Cocycles give structure, not sign" <a id="cocycle-principle"></a>
+### #872 · 0.256 · "Cocycles give structure, not sign" <a id="cocycle-principle"></a>
 
 **Label:** Heuristic · **id:** `cocycle_principle` · **quadrant:** background
 
@@ -24045,7 +24765,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [Automorphy defect (TAA Lemma 144)](#automorphy-defect) (same mechanism as); [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) (instance of); [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12) (instance of); [Metaplectic / Kubota cocycle](#metaplectic) (same mechanism as); [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) (analogue of); [The prime 2 as the wild place](#prime-two-wild) (same mechanism as); [w₂ / Čech class (TAA Lemma 138)](#w2-cech) (same mechanism as)
 
-### #980 · 0.212 · Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind) <a id="lrl-hidden-symmetry-trichotomy"></a>
+### #998 · 0.212 · Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind) <a id="lrl-hidden-symmetry-trichotomy"></a>
 
 **Label:** Analogy · **id:** `lrl_hidden_symmetry_trichotomy` · **quadrant:** background
 
@@ -24152,7 +24872,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 - fails for → [Weil positivity criterion](#weil-positivity)
 
-### #708 · 0.307 · The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once <a id="n-factorial-bridge-all-places"></a>
+### #711 · 0.307 · The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once <a id="n-factorial-bridge-all-places"></a>
 
 **Label:** Theorem · **id:** `n_factorial_bridge_all_places` · **quadrant:** true but ghost-blind/untested
 
@@ -24178,7 +24898,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [MP4 headline: the Euler product, taken as geometry (the Frobenius correspondence: graph classes on the square with an ample class), not as counting data, induces the Hodge splitting of the square, with its sign](#mp4-euler-induces-hodge) (lives in); [No-go items 27–32 (Missing Piece v5): per-prime SU(2)/Satake data; per-prime norm identities (a_p² + |α−ᾱ|² = 4p, the ζ mass shell, Kepler's |A|² + 2m|E|L² = (mk)²); correspondence alone (Jacquet–Langlands via Shimizu, functoriality); KMS/coefficient positivity; a compact real form on the zero side as input; single-place data of n!](#nogo-v5-per-prime-and-places) (same mechanism as)
 
-### #731 · 0.307 · The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros <a id="isotropic-line-kinematic"></a>
+### #734 · 0.307 · The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros <a id="isotropic-line-kinematic"></a>
 
 **Label:** Numerical · **id:** `isotropic_line_kinematic` · **quadrant:** true but ghost-blind/untested
 
@@ -24192,7 +24912,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Scores (Heuristic):** gap significance 0.2 (no gap within distance 2) · sensitivity 1.0 · specificity 0.05 · tractability 0.7 · evidence 0.8 → priority 0.307
 
-### #772 · 0.267 · The prime 2 as the wild place <a id="prime-two-wild"></a>
+### #788 · 0.267 · The prime 2 as the wild place <a id="prime-two-wild"></a>
 
 **Label:** Theorem · **id:** `prime_two_wild` · **quadrant:** true but ghost-blind/untested
 
@@ -24223,7 +24943,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) (uses); [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) (same mechanism as); [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) (same mechanism as); [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) (same mechanism as)
 
-### #810 · 0.267 · E₂* as the derivative of the Kronecker limit (cusp-scattering footprint) <a id="kronecker-limit-e2star"></a>
+### #826 · 0.267 · E₂* as the derivative of the Kronecker limit (cusp-scattering footprint) <a id="kronecker-limit-e2star"></a>
 
 **Label:** Theorem · **id:** `kronecker_limit_E2star` · **quadrant:** true but ghost-blind/untested
 
@@ -24249,7 +24969,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - same mechanism as → [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) — φ in the constant term
 - analogue of → [Birman–Krein bridge: scattering phase = spectral shift; −φ′/φ = spectral density = Wigner delay = Maass–Selberg intercept](#birman-krein-spectral-shift) — cusp scattering
 
-### #813 · 0.267 · The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH <a id="maass-selberg-positivity-blind-to-rh"></a>
+### #829 · 0.267 · The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH <a id="maass-selberg-positivity-blind-to-rh"></a>
 
 **Label:** Theorem · **id:** `maass_selberg_positivity_blind_to_rh` · **quadrant:** true but ghost-blind/untested
 
@@ -24270,7 +24990,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 
 **Relations (incoming):** [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) (refines)
 
-### #825 · 0.267 · The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared <a id="zeta-zero-is-coefficient-zero"></a>
+### #841 · 0.267 · The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared <a id="zeta-zero-is-coefficient-zero"></a>
 
 **Label:** Theorem · **id:** `zeta_zero_is_coefficient_zero` · **quadrant:** true but ghost-blind/untested
 
@@ -24289,7 +25009,7 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 - refines → [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh)
 - related to → [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square)
 
-### #851 · 0.267 · Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count <a id="prime-torus-euler-characteristic-zero"></a>
+### #867 · 0.267 · Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count <a id="prime-torus-euler-characteristic-zero"></a>
 
 **Label:** Theorem · **id:** `prime_torus_euler_characteristic_zero` · **quadrant:** true but ghost-blind/untested
 
@@ -24804,535 +25524,554 @@ Sections are ordered by their highest-ranked entry; entries within each section 
 | 491 | 0.347 | [Base-regularity test (B) and the B* no-go: B* (Euler product + counting error O(x^θ), θ < ½ ⇒ RH) appears false — a deterministic discretization of a continuous Beurling system keeps an exact zero at 0.75 ± 10i while the measured counting exponent is θ̂ ≈ 0.29 up to x = 5·10⁷ (Numerical refutation; asymptotic θ < ½ not proved); integer-counting error over 9 systems: ℤ bounded (≤ 1), Davenport–Heilbronn bounded, Epstein and ζ_Q(i) θ̂ ≈ 0.32, random discretizations at order √x](#beurling-counting-test-bstar) | Numerical | true but ghost-blind/untested |
 | 492 | 0.347 | [Signed Maslov path on the Weil Gram matrix: not positivity-preserving; tropical end passes DH](#maslov-path-weil-matrix) | Numerical | true but ghost-blind/untested |
 | 493 | 0.347 | [The OS transfer operator on the positive reflected part is not a positive contraction for ζ, 11a or Davenport–Heilbronn alike; matrix-pencil detection of off-line zeros is unreliable](#os-transfer-no-signal) | Numerical | true but ghost-blind/untested |
-| 494 | 0.325 | [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) | Theorem | true but ghost-blind/untested |
-| 495 | 0.325 | [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) | Theorem | true but ghost-blind/untested |
-| 496 | 0.325 | [Toeplitz / Verblunsky coefficients](#toeplitz-verblunsky) | Theorem | true but ghost-blind/untested |
-| 497 | 0.325 | [Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity](#zeros-as-frames-trichotomy) | Theorem | true but ghost-blind/untested |
-| 498 | 0.325 | [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) | Theorem | true but ghost-blind/untested |
-| 499 | 0.325 | [Sundman clock for the F/V collision](#fv-sundman-oscillator) | Theorem | true but ghost-blind/untested |
-| 500 | 0.325 | [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) | Theorem | true but ghost-blind/untested |
-| 501 | 0.325 | [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) | Cited | true but ghost-blind/untested |
-| 502 | 0.325 | [Equation of state of the window Weil operator](#window-equation-of-state) | Theorem | true but ghost-blind/untested |
-| 503 | 0.325 | [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) | Theorem | true but ghost-blind/untested |
-| 504 | 0.325 | [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) | Theorem | true but ghost-blind/untested |
-| 505 | 0.325 | [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame) | Theorem | true but ghost-blind/untested |
-| 506 | 0.325 | [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) | Theorem | true but ghost-blind/untested |
-| 507 | 0.325 | [Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6](#conductor-uniform-shift) | Theorem | true but ghost-blind/untested |
-| 508 | 0.325 | [Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations](#definite-vs-indefinite-strong-stability) | Theorem | true but ghost-blind/untested |
-| 509 | 0.325 | [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) | Theorem | true but ghost-blind/untested |
-| 510 | 0.325 | [F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4](#frobenius-verschiebung-rotation-split) | Theorem | true but ghost-blind/untested |
-| 511 | 0.325 | [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy) | Theorem | true but ghost-blind/untested |
-| 512 | 0.325 | [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) | Theorem | true but ghost-blind/untested |
-| 513 | 0.325 | [The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC](#jordan-shear-dtdc) | Theorem | true but ghost-blind/untested |
-| 514 | 0.325 | [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy) | Theorem | true but ghost-blind/untested |
-| 515 | 0.325 | [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) | Theorem | true but ghost-blind/untested |
-| 516 | 0.325 | [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite) | Theorem | true but ghost-blind/untested |
-| 517 | 0.325 | [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) | Theorem | true but ghost-blind/untested |
-| 518 | 0.325 | [Selberg resonances](#selberg-resonances) | Theorem | true but ghost-blind/untested |
-| 519 | 0.325 | [√2 family](#sqrt2-family) | Theorem | true but ghost-blind/untested |
-| 520 | 0.325 | [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) | Theorem | true but ghost-blind/untested |
-| 521 | 0.325 | [Levi-Civita regularization of zero collisions](#calogero-pair-levi-civita) | Theorem | true but ghost-blind/untested |
-| 522 | 0.325 | [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) | Theorem | true but ghost-blind/untested |
-| 523 | 0.325 | [Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability](#count-vs-stability-gyroscopic) | Theorem | true but ghost-blind/untested |
-| 524 | 0.325 | [Cusp ≠ archimedean place](#cusp-vs-infinity) | Theorem | true but ghost-blind/untested |
-| 525 | 0.325 | [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism) | Theorem | true but ghost-blind/untested |
-| 526 | 0.325 | [F₁ base](#f1-base) | Cited | true but ghost-blind/untested |
-| 527 | 0.325 | [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) | Theorem | true but ghost-blind/untested |
-| 528 | 0.325 | [Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π]](#frobenius-on-cm-lattice-11a) | Theorem | true but ghost-blind/untested |
-| 529 | 0.325 | [Norm as the product of two K-theory states](#fv-two-states-sector) | Theorem | true but ghost-blind/untested |
-| 530 | 0.325 | [Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line](#jacobi-theta-decomposition-hinge) | Theorem | true but ghost-blind/untested |
-| 531 | 0.325 | [Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound](#ks-stokes-hasse) | Theorem | true but ghost-blind/untested |
-| 532 | 0.325 | [Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant](#lagrange-clock-rates) | Theorem | true but ghost-blind/untested |
-| 533 | 0.325 | [Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang](#lambda-invariance-nogo) | Theorem | true but ghost-blind/untested |
-| 534 | 0.325 | [Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured](#lrl-rational-closure) | Theorem | true but ghost-blind/untested |
-| 535 | 0.325 | [No real-coefficient Weil cohomology for arithmetic curves](#no-real-weil-cohomology-arithmetic) | Theorem | true but ghost-blind/untested |
-| 536 | 0.325 | [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) | Theorem | true but ghost-blind/untested |
-| 537 | 0.325 | [Null-line quotient (Gupta-Bleuler form)](#null-line-quotient) | Theorem | true but ghost-blind/untested |
-| 538 | 0.325 | [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) | Theorem | true but ghost-blind/untested |
-| 539 | 0.325 | [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) | Theorem | true but ghost-blind/untested |
-| 540 | 0.325 | [Principalization](#principalization) | Theorem | true but ghost-blind/untested |
-| 541 | 0.325 | [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) | Theorem | true but ghost-blind/untested |
-| 542 | 0.325 | [Rodgers-Tao Hamiltonian as a Sundman clock](#rt-energy-sundman-clock) | Theorem | true but ghost-blind/untested |
-| 543 | 0.325 | [S-mirror ρ ↦ 1 − ρ̄](#s-mirror) | Theorem | true but ghost-blind/untested |
-| 544 | 0.325 | [The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions](#sitting-still) | Theorem | true but ghost-blind/untested |
-| 545 | 0.325 | [Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0](#vstar-v-edge-positivity) | Theorem | true but ghost-blind/untested |
-| 546 | 0.325 | [Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry](#xp2dof-maupertuis-finsler) | Theorem | true but ghost-blind/untested |
-| 547 | 0.325 | [Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd)](#arch-symbol-bose-kernel) | Theorem | true but ghost-blind/untested |
-| 548 | 0.325 | [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) | Theorem | true but ghost-blind/untested |
-| 549 | 0.325 | [Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄)](#chebyshev-bias-boson-fermion) | Cited | true but ghost-blind/untested |
-| 550 | 0.325 | [Closed geodesics on the modular surface](#closed-geodesics) | Theorem | true but ghost-blind/untested |
-| 551 | 0.325 | [Density / volume reading](#density-volume) | Theorem | true but ghost-blind/untested |
-| 552 | 0.325 | [A dent moves a zero charge sideways; geometric deformations only rotate](#dent-is-charge-move) | Theorem | true but ghost-blind/untested |
-| 553 | 0.325 | [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4) | Theorem | true but ghost-blind/untested |
-| 554 | 0.325 | [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement) | Cited | true but ghost-blind/untested |
-| 555 | 0.325 | [The F/V sweep is a de Bruijn-Newman flow](#fv-is-dbn-flow) | Theorem | true but ghost-blind/untested |
-| 556 | 0.325 | [log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ](#graded-gas-is-free-energy) | Theorem | true but ghost-blind/untested |
-| 557 | 0.325 | [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) | Theorem | true but ghost-blind/untested |
-| 558 | 0.325 | [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite) | Theorem | true but ghost-blind/untested |
-| 559 | 0.325 | [Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution](#hopf-lax-maupertuis-duality) | Theorem | true but ghost-blind/untested |
-| 560 | 0.325 | [Positive conserved tensor from an imaginary shift (local smoothing paper)](#imaginary-shift-positive-tensor) | Cited | true but ghost-blind/untested |
-| 561 | 0.325 | [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12) | Theorem | true but ghost-blind/untested |
-| 562 | 0.325 | [Two Kepler degenerations on the F/V gap axis](#kepler-two-degenerations) | Theorem | true but ghost-blind/untested |
-| 563 | 0.325 | [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign) | Theorem | true but ghost-blind/untested |
-| 564 | 0.325 | [L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force](#l4l5-isospectral-symmetric-damping) | Theorem | true but ghost-blind/untested |
-| 565 | 0.325 | [Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities](#local-logderiv-indefinite) | Theorem | true but ghost-blind/untested |
-| 566 | 0.325 | [Modularity as the observability link](#modularity-observability-link) | Theorem | true but ghost-blind/untested |
-| 567 | 0.325 | [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) | Theorem | true but ghost-blind/untested |
-| 568 | 0.325 | [Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T](#plus-space-ms-is-sl2-doubled) | Theorem | true but ghost-blind/untested |
-| 569 | 0.325 | [The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional](#pole-kernel-schmidt) | Theorem | true but ghost-blind/untested |
-| 570 | 0.325 | [L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²](#rational-frequency-ratio-quadratic-mu) | Theorem | true but ghost-blind/untested |
-| 571 | 0.325 | [Spec ℤ is terminal](#spec-z-terminal) | Theorem | true but ghost-blind/untested |
-| 572 | 0.325 | [Spinor/Clifford route](#spinor-route) | Theorem | true but ghost-blind/untested |
-| 573 | 0.325 | [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock) | Theorem | true but ghost-blind/untested |
-| 574 | 0.325 | [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall) | Theorem | true but ghost-blind/untested |
-| 575 | 0.325 | [Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge](#three-indices-not-conflated) | Theorem | true but ghost-blind/untested |
-| 576 | 0.325 | [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once) | Theorem | true but ghost-blind/untested |
-| 577 | 0.325 | [Weil Rosetta stone](#weil-rosetta) | Cited | true but ghost-blind/untested |
-| 578 | 0.325 | [Regularized xp on an energy level is a particle hitting an exponential wall](#xp-liouville-wall) | Theorem | true but ghost-blind/untested |
-| 579 | 0.325 | [The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form](#zeta-k-block-sum-conductor-shift) | Theorem | true but ghost-blind/untested |
-| 580 | 0.325 | [Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}](#abs-a-is-infinite-place-of-trace) | Theorem | true but ghost-blind/untested |
-| 581 | 0.325 | [Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier)](#arakelov-green-capacity) | Cited | true but ghost-blind/untested |
-| 582 | 0.325 | [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) | Theorem | true but ghost-blind/untested |
-| 583 | 0.325 | [CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean)](#cm-height-disc-det-split) | Theorem | true but ghost-blind/untested |
-| 584 | 0.325 | [Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields](#cmr-explicit-cft) | Cited | true but ghost-blind/untested |
-| 585 | 0.325 | [First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N](#coisotropic-reduction-pn) | Theorem | true but ghost-blind/untested |
-| 586 | 0.325 | [Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4](#correction-semilocal-pattern-known) | Cited | true but ghost-blind/untested |
-| 587 | 0.325 | [Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points)](#cr3bp-morse-count) | Theorem | true but ghost-blind/untested |
-| 588 | 0.325 | [The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist](#cross-term-correction) | Theorem | true but ghost-blind/untested |
-| 589 | 0.325 | [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) | Theorem | true but ghost-blind/untested |
-| 590 | 0.325 | [Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis](#escape-direction-pair) | Theorem | true but ghost-blind/untested |
-| 591 | 0.325 | [Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0](#euler-impedance-positive-real) | Theorem | true but ghost-blind/untested |
-| 592 | 0.325 | [Ω-parity split of the Euler product](#euler-product-omega-parity-split) | Theorem | true but ghost-blind/untested |
-| 593 | 0.325 | [Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids)](#finite-window-nonuniqueness) | Theorem | true but ghost-blind/untested |
-| 594 | 0.325 | [Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks](#genus-two-part-is-phase) | Theorem | true but ghost-blind/untested |
-| 595 | 0.325 | [BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it](#hagedorn-bc) | Theorem | true but ghost-blind/untested |
-| 596 | 0.325 | [T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures](#hecke-congruence-module-691) | Theorem | true but ghost-blind/untested |
-| 597 | 0.325 | [Indefinite norm as minimal mass over stability conditions](#hecke-mass-stability) | Theorem | true but ghost-blind/untested |
-| 598 | 0.325 | [Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5](#hill-topology-disc) | Theorem | true but ghost-blind/untested |
-| 599 | 0.325 | [A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s](#holomorphic-polarization-theta) | Theorem | true but ghost-blind/untested |
-| 600 | 0.325 | [Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s)](#ihara-rh-is-local-ramanujan) | Theorem | true but ghost-blind/untested |
-| 601 | 0.325 | [L4/L5 are the j = 0 point of the cross-ratio for every mass ratio](#j0-l4) | Theorem | true but ghost-blind/untested |
-| 602 | 0.325 | [Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷](#kac-formula-verified) | Theorem | true but ghost-blind/untested |
-| 603 | 0.325 | [Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip](#kk-ghost-blind-only-right-of-zeros) | Theorem | true but ghost-blind/untested |
-| 604 | 0.325 | [Kepler eccentricity as a degree of polarization (KS dictionary)](#ks-polarization-dictionary) | Theorem | true but ghost-blind/untested |
-| 605 | 0.325 | [What Lambda <= 0.19 would actually need](#lambda-019-gate) | Cited | true but ghost-blind/untested |
-| 606 | 0.325 | [Real-rooted exponential sums are restricted Lee–Yang polynomials](#lee-yang-multivariate-restriction) | Theorem | true but ghost-blind/untested |
-| 607 | 0.325 | [Legendre criterion for Poincare time changes of xp](#legendre-poincare-criterion) | Theorem | true but ghost-blind/untested |
-| 608 | 0.325 | [Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do](#lemma21-slack-identity) | Theorem | true but ghost-blind/untested |
-| 609 | 0.325 | [Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise](#mellin-partition-function) | Theorem | true but ghost-blind/untested |
-| 610 | 0.325 | [X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus](#modular-tower-platonic) | Theorem | true but ghost-blind/untested |
-| 611 | 0.325 | [The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230)](#narrow-wide-sign-at-infinity) | Theorem | true but ghost-blind/untested |
-| 612 | 0.325 | [The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996)](#negdir-is-pole-plane-interlacing) | Theorem | true but ghost-blind/untested |
-| 613 | 0.325 | [A positive but non-coercive metric loses the zeros](#non-coercive-metric-loses-spectrum) | Theorem | true but ghost-blind/untested |
-| 614 | 0.325 | [Piston free energy of the window Weil operator](#piston-window-free-energy) | Theorem | true but ghost-blind/untested |
-| 615 | 0.325 | [A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1](#pnt-by-norm-blowup) | Theorem | true but ghost-blind/untested |
-| 616 | 0.325 | [Polymath15: the barrier is not the bottleneck for upper bounds on Lambda](#polymath15-barrier-not-bottleneck) | Cited | true but ghost-blind/untested |
-| 617 | 0.325 | [Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge](#rallis-point-edge-or-boundary) | Cited | true but ghost-blind/untested |
-| 618 | 0.325 | [Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle](#routh27-from-right-triangles) | Theorem | true but ghost-blind/untested |
-| 619 | 0.325 | [Square-root factorization with a one-sided Wick flip](#sqrt-factorization-one-sided-wick) | Theorem | true but ghost-blind/untested |
-| 620 | 0.325 | [Lagrangian of the regularized xp (massive square-root form)](#srl-lagrangian) | Theorem | true but ghost-blind/untested |
-| 621 | 0.325 | [Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit](#stark-unit-leading-coefficient) | Cited | true but ghost-blind/untested |
-| 622 | 0.325 | [The gap-squared clock is hyperbolic arc length](#sundman-clock-hyperbolic-length) | Theorem | true but ghost-blind/untested |
-| 623 | 0.325 | [Kepler in Sundman time is linear: r″ = 2E r + k](#sundman-linear-kepler) | Theorem | true but ghost-blind/untested |
-| 624 | 0.325 | [Distortionless telegrapher line as a conformally symplectic flow](#telegrapher-distortionless) | Theorem | true but ghost-blind/untested |
-| 625 | 0.325 | [L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line](#theta-fe-centre-on-line) | Theorem | true but ghost-blind/untested |
-| 626 | 0.325 | [Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform](#third-axis-is-half-plane) | Theorem | true but ghost-blind/untested |
-| 627 | 0.325 | [The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it)](#unitary-axis-s-eq-s-plus-k4) | Theorem | true but ghost-blind/untested |
-| 628 | 0.325 | [|disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter](#vandermonde-log-gas) | Theorem | true but ghost-blind/untested |
-| 629 | 0.325 | [Window Weil form: simple even ground state, certified](#window-ground-state-simple-even) | Theorem | true but ghost-blind/untested |
-| 630 | 0.325 | [Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1](#witten-index-inverse-zeta) | Theorem | true but ghost-blind/untested |
-| 631 | 0.325 | [Distortionless criterion for the xp family: constant divergence](#xp-distortionless-constant-divergence) | Theorem | true but ghost-blind/untested |
-| 632 | 0.325 | [Zeta zero collisions are double-root type only](#zeta-collisions-type-one) | Theorem | true but ghost-blind/untested |
-| 633 | 0.325 | [Cohesion (arena)](#cohesion) | Theorem | true but ghost-blind/untested |
-| 634 | 0.325 | [U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84](#discriminant-family-invariance) | Theorem | true but ghost-blind/untested |
-| 635 | 0.325 | [EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly](#ez-operators-verified) | Theorem | true but ghost-blind/untested |
-| 636 | 0.325 | [T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them](#frobenius-up-verschiebung-down) | Theorem | true but ghost-blind/untested |
-| 637 | 0.325 | [Finite-window prime comb: time distribution = torus law (checked to 2e−3)](#kronecker-weyl-comb-law) | Theorem | true but ghost-blind/untested |
-| 638 | 0.325 | [In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward](#nested-window-family-morse-monotone) | Theorem | true but ghost-blind/untested |
-| 639 | 0.325 | [A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III](#nilpotent-must-be-orthogonal) | Theorem | true but ghost-blind/untested |
-| 640 | 0.325 | [A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost](#no-isotropic-no-nilpotent) | Theorem | true but ghost-blind/untested |
-| 641 | 0.325 | [Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n](#parabola-cone-points) | Theorem | true but ghost-blind/untested |
-| 642 | 0.325 | [Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here](#rung1-covered-by-certified-preprint) | Cited | true but ghost-blind/untested |
-| 643 | 0.325 | [Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign)](#trace-norm-form-signature) | Theorem | true but ghost-blind/untested |
-| 644 | 0.325 | [U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical)](#u-isometry) | Theorem | true but ghost-blind/untested |
-| 645 | 0.325 | [V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884](#vnat-flm-count) | Theorem | true but ghost-blind/untested |
-| 646 | 0.325 | [X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24](#x0p-components-meet) | Cited | true but ghost-blind/untested |
-| 647 | 0.325 | [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square) | Theorem | true but ghost-blind/untested |
-| 648 | 0.325 | [Local-to-global failure](#local-global) | Theorem | true but ghost-blind/untested |
-| 649 | 0.325 | [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) | Theorem | true but ghost-blind/untested |
-| 650 | 0.325 | [Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R](#routh-not-kac-wall) | Theorem | true but ghost-blind/untested |
-| 651 | 0.325 | [Conformally symplectic flows have exact forms and no Hamiltonian](#conformal-symplectic-no-hamiltonian) | Theorem | true but ghost-blind/untested |
-| 652 | 0.325 | [Multi-channel first-order factors are bounded by the SOS fit](#gram-factor-channel-bound) | Theorem | true but ghost-blind/untested |
-| 653 | 0.325 | [Local stability constants do not glue](#local-hardy-constants-no-glue) | Theorem | true but ghost-blind/untested |
-| 654 | 0.325 | [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) | Theorem | true but ghost-blind/untested |
-| 655 | 0.325 | [Modular-surface geodesic lengths are logs of quadratic units, not log p](#modular-lengths-quadratic-units) | Theorem | true but ghost-blind/untested |
-| 656 | 0.325 | [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) | Theorem | true but ghost-blind/untested |
-| 657 | 0.325 | [Prime term = alpha-derivative of the conjugated Vladimirov symbol](#vladimirov-derivative-is-prime-term) | Theorem | true but ghost-blind/untested |
-| 658 | 0.325 | [The window Weil operator is not extensive](#window-nonextensivity) | Theorem | true but ghost-blind/untested |
-| 659 | 0.325 | [Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H](#flag-curvature-gauge-dependent) | Theorem | true but ghost-blind/untested |
-| 660 | 0.325 | [Archimedean Newton polygon of P(T) misreports true curves](#fq-newton-polygon-false-positives) | Theorem | true but ghost-blind/untested |
-| 661 | 0.325 | [A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction](#gram-ab-rank-one) | Theorem | true but ghost-blind/untested |
-| 662 | 0.325 | [Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros](#jacobi-factor-flat-every-place) | Theorem | true but ghost-blind/untested |
-| 663 | 0.325 | [A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity](#ramond-g0-square) | Theorem | true but ghost-blind/untested |
-| 664 | 0.325 | [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) | Theorem | true but ghost-blind/untested |
-| 665 | 0.325 | [No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants)](#sundman-livsic-obstruction) | Theorem | true but ghost-blind/untested |
-| 666 | 0.325 | [Two-component Lee–Yang can fail](#two-component-lee-yang-can-fail) | Theorem | true but ghost-blind/untested |
-| 667 | 0.325 | [For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy](#gl1-monodromy-zero) | Theorem | true but ghost-blind/untested |
-| 668 | 0.325 | [Serre intersection positivity (2026 preprint) is local, not a global Hodge index](#serre-positivity-local-not-hodge) | Cited | true but ghost-blind/untested |
-| 669 | 0.325 | [λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular)](#box-to-limit-trivial-no-uniform-gap) | Theorem | true but ghost-blind/untested |
-| 670 | 0.325 | [Sign of a prime step is the sign of the prime-gap excess](#prime-step-sign-gap-excess) | Theorem | true but ghost-blind/untested |
-| 671 | 0.325 | [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) | Theorem | true but ghost-blind/untested |
-| 672 | 0.324 | [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) | Analogy | background |
-| 673 | 0.324 | [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) | Analogy | background |
-| 674 | 0.324 | [Kramers–Kronig relations](#kramers-kronig) | Analogy | background |
-| 675 | 0.324 | [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) | Analogy | background |
-| 676 | 0.324 | [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) | Analogy | background |
-| 677 | 0.324 | [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) | Analogy | background |
-| 678 | 0.324 | [Gribov ambiguity](#gribov) | Analogy | background |
-| 679 | 0.324 | [Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like)](#integrable-vs-kam-reading) | Analogy | background |
-| 680 | 0.324 | [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) | Analogy | background |
-| 681 | 0.324 | [Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms](#primes-as-knots-no-linking-in-zeta) | Analogy | background |
-| 682 | 0.324 | [Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity)](#ep-gap-across-collision) | Analogy | background |
-| 683 | 0.324 | [Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity](#weil-realtime-not-euclidean) | Analogy | background |
-| 684 | 0.324 | [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) | Analogy | background |
-| 685 | 0.307 | [Metaplectic / Kubota cocycle](#metaplectic) | Theorem | true but ghost-blind/untested |
-| 686 | 0.307 | [Half Tate twist ℚ(½)](#half-tate-twist) | Theorem | true but ghost-blind/untested |
-| 687 | 0.307 | [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) | Theorem | true but ghost-blind/untested |
-| 688 | 0.307 | [Bost–Connes KMS states](#kms-bost-connes) | Cited | true but ghost-blind/untested |
-| 689 | 0.307 | [Archimedean place and Γ_ℝ factor](#archimedean-place) | Theorem | true but ghost-blind/untested |
-| 690 | 0.307 | [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) | Theorem | true but ghost-blind/untested |
-| 691 | 0.307 | [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) | Cited | true but ghost-blind/untested |
-| 692 | 0.307 | [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles) | Cited | true but ghost-blind/untested |
-| 693 | 0.307 | [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) | Theorem | true but ghost-blind/untested |
-| 694 | 0.307 | [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) | Theorem | true but ghost-blind/untested |
-| 695 | 0.307 | [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) | Theorem | true but ghost-blind/untested |
-| 696 | 0.307 | [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) | Theorem | true but ghost-blind/untested |
-| 697 | 0.307 | [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) | Cited | true but ghost-blind/untested |
-| 698 | 0.307 | [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) | Theorem | true but ghost-blind/untested |
-| 699 | 0.307 | [Cup product / Poincaré duality pairing](#cup-product) | Theorem | true but ghost-blind/untested |
-| 700 | 0.307 | [Cusp forms & Petersson positivity](#cusp-forms-petersson) | Theorem | true but ghost-blind/untested |
-| 701 | 0.307 | [Hecke operators](#hecke) | Theorem | true but ghost-blind/untested |
-| 702 | 0.307 | [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) | Theorem | true but ghost-blind/untested |
-| 703 | 0.307 | [Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic](#real-forms-compact-vs-boost) | Theorem | true but ghost-blind/untested |
-| 704 | 0.307 | [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) | Cited | true but ghost-blind/untested |
-| 705 | 0.307 | [Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)](#euler-char-chi) | Theorem | true but ghost-blind/untested |
-| 706 | 0.307 | [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) | Cited | true but ghost-blind/untested |
-| 707 | 0.307 | [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) | Cited | true but ghost-blind/untested |
-| 708 | 0.307 | [The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once](#n-factorial-bridge-all-places) | Theorem | true but ghost-blind/untested |
-| 709 | 0.307 | [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) | Theorem | true but ghost-blind/untested |
-| 710 | 0.307 | [Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal)](#standing-frame-so22-ads3) | Theorem | true but ghost-blind/untested |
-| 711 | 0.307 | [Tate count / Picard number (ghost-blind)](#tate-count) | Theorem | true but ghost-blind/untested |
-| 712 | 0.307 | [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) | Theorem | true but ghost-blind/untested |
-| 713 | 0.307 | [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) | Theorem | true but ghost-blind/untested |
-| 714 | 0.307 | [Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial](#consani-archimedean-cohomology) | Cited | true but ghost-blind/untested |
-| 715 | 0.307 | [λ₂ is monotone under nested windows (Cauchy interlacing)](#lambda2-monotone-nested-windows) | Theorem | true but ghost-blind/untested |
-| 716 | 0.307 | [The Hodge star squares to the fermion parity in even dimension](#hodge-star-square-fermion-parity) | Theorem | true but ghost-blind/untested |
-| 717 | 0.307 | [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) | Theorem | true but ghost-blind/untested |
-| 718 | 0.307 | [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) | Theorem | true but ghost-blind/untested |
-| 719 | 0.307 | [Mechanical stability of the window is not positivity](#window-mechanical-stability) | Theorem | true but ghost-blind/untested |
-| 720 | 0.307 | [Max-plus Weil functional is dominated by the diagonal, hence ghost-blind](#maxplus-weil-diagonal-dominance) | Theorem | true but ghost-blind/untested |
-| 721 | 0.307 | [Non-normal residue ||P - P*|| is a gauge quantity and a collision detector](#riesz-nonnormal-residue-gauge) | Theorem | true but ghost-blind/untested |
-| 722 | 0.307 | [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) | Numerical | true but ghost-blind/untested |
-| 723 | 0.307 | [Maass–Selberg relations](#maass-selberg) | Numerical | true but ghost-blind/untested |
-| 724 | 0.307 | [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) | Numerical | true but ghost-blind/untested |
-| 725 | 0.307 | [Archimedean thresholds a*](#arch-threshold) | Numerical | true but ghost-blind/untested |
-| 726 | 0.307 | [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) | Numerical | true but ghost-blind/untested |
-| 727 | 0.307 | [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) | Numerical | true but ghost-blind/untested |
-| 728 | 0.307 | [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) | Numerical | true but ghost-blind/untested |
-| 729 | 0.307 | [Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4](#birth-from-near-null-floor) | Numerical | true but ghost-blind/untested |
-| 730 | 0.307 | [Gap widths approaching the wall](#gap-width-wall-exponent) | Numerical | true but ghost-blind/untested |
-| 731 | 0.307 | [The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros](#isotropic-line-kinematic) | Numerical | true but ghost-blind/untested |
-| 732 | 0.307 | [Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind](#gaussian-filter-ghost-blind) | Numerical | true but ghost-blind/untested |
-| 733 | 0.307 | [Edge-prime repair of the pole plane: refuted](#pole-plane-repair-negative) | Numerical | true but ghost-blind/untested |
-| 734 | 0.307 | [Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity](#arithmetic-topology-linking-matrix) | Numerical | true but ghost-blind/untested |
-| 735 | 0.307 | [Iterated log-concavity is ghost- and DH-blind](#coefficient-ilc-ghost-blind) | Numerical | true but ghost-blind/untested |
-| 736 | 0.307 | [The Fisher curvature operator on bivectors is ghost-blind](#fisher-curvature-operator-ghost-blind) | Numerical | true but ghost-blind/untested |
-| 737 | 0.307 | [Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes](#dbn-monotone-functionals) | Numerical | true but ghost-blind/untested |
-| 738 | 0.307 | [The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄](#raychaudhuri-curvature-no-discrimination) | Numerical | true but ghost-blind/untested |
-| 739 | 0.307 | [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) | Theorem | true but ghost-blind/untested |
-| 740 | 0.307 | [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) | Theorem | true but ghost-blind/untested |
-| 741 | 0.307 | [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) | Theorem | true but ghost-blind/untested |
-| 742 | 0.300 | [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) | Heuristic | sharp but interpretive |
-| 743 | 0.300 | [Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it](#dual-system-quotient-is-pole-plane) | Heuristic | sharp but interpretive |
-| 744 | 0.300 | [baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity)](#slot-mapping) | Heuristic | sharp but interpretive |
-| 745 | 0.292 | [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) | Open | true but ghost-blind/untested |
-| 746 | 0.292 | [Where the Krein grading lives: the supporting functional of the Weil cone at ζ](#grading-supporting-functional) | Conjecture | true but ghost-blind/untested |
-| 747 | 0.292 | [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) | Open | true but ghost-blind/untested |
-| 748 | 0.292 | [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn) | Open | true but ghost-blind/untested |
-| 749 | 0.292 | [Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages](#bypass-u-direction-gap) | Open | true but ghost-blind/untested |
-| 750 | 0.292 | [Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow](#hopf-fibration-spec-z) | Conjecture | true but ghost-blind/untested |
-| 751 | 0.292 | [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) | Conjecture | true but ghost-blind/untested |
-| 752 | 0.292 | [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) | Conjecture | true but ghost-blind/untested |
-| 753 | 0.292 | [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) | Open | true but ghost-blind/untested |
-| 754 | 0.271 | [Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack](#identity-not-estimate) | Heuristic | background |
-| 755 | 0.271 | [The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)](#edge-boundary-cycle) | Heuristic | background |
-| 756 | 0.271 | [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) | Heuristic | background |
-| 757 | 0.271 | [Branch selection by arithmetic](#phase-branch-selection) | Heuristic | background |
-| 758 | 0.271 | [Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible](#bost-connes-phase-mismatch) | Heuristic | background |
-| 759 | 0.271 | [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) | Heuristic | background |
-| 760 | 0.271 | [The adele class space can host the KK response, but no non-circular positivity source was found](#adelic-kk-no-noncircular-mechanism) | Heuristic | background |
-| 761 | 0.271 | [Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin](#coupling-is-heat-time) | Heuristic | background |
-| 762 | 0.271 | [Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed)](#h6-shimura-image-e12) | Heuristic | background |
-| 763 | 0.271 | [RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin)](#candidates-abcd) | Heuristic | background |
-| 764 | 0.271 | [Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ](#fq-periodic-poles-many-negatives) | Heuristic | background |
-| 765 | 0.271 | [Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8](#index-vs-dimension) | Heuristic | background |
-| 766 | 0.271 | [Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead](#thermo-ledger) | Heuristic | background |
-| 767 | 0.271 | [The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive](#weil-form-marginal-not-coercive) | Heuristic | background |
-| 768 | 0.271 | [μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)](#routh-q-sqrt69-numerology) | Heuristic | background |
-| 769 | 0.271 | [12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12](#twelve-numerology) | Heuristic | background |
-| 770 | 0.267 | [Half-density normalization |x|^{½}](#half-density) | Theorem | true but ghost-blind/untested |
-| 771 | 0.267 | [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) | Theorem | true but ghost-blind/untested |
-| 772 | 0.267 | [The prime 2 as the wild place](#prime-two-wild) | Theorem | true but ghost-blind/untested |
-| 773 | 0.267 | [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) | Theorem | true but ghost-blind/untested |
-| 774 | 0.267 | [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep) | Theorem | true but ghost-blind/untested |
-| 775 | 0.267 | [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) | Theorem | true but ghost-blind/untested |
-| 776 | 0.267 | [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) | Theorem | true but ghost-blind/untested |
-| 777 | 0.267 | [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) | Theorem | true but ghost-blind/untested |
-| 778 | 0.267 | [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) | Cited | true but ghost-blind/untested |
-| 779 | 0.267 | [Scattering unitarity |φ| = 1](#scattering-phi) | Theorem | true but ghost-blind/untested |
-| 780 | 0.267 | [Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics)](#fundamental-domain-three-phases) | Theorem | true but ghost-blind/untested |
-| 781 | 0.267 | [Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0](#kepler-so4-contraction) | Theorem | true but ghost-blind/untested |
-| 782 | 0.267 | [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) | Theorem | true but ghost-blind/untested |
-| 783 | 0.267 | [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) | Theorem | true but ghost-blind/untested |
-| 784 | 0.267 | [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) | Theorem | true but ghost-blind/untested |
-| 785 | 0.267 | [Yoshida window positivity](#yoshida) | Cited | true but ghost-blind/untested |
-| 786 | 0.267 | [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero) | Theorem | true but ghost-blind/untested |
-| 787 | 0.267 | [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) | Theorem | true but ghost-blind/untested |
-| 788 | 0.267 | [Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)](#push-shear-balance) | Theorem | true but ghost-blind/untested |
-| 789 | 0.267 | [Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts](#quartet-capacity-sp4) | Theorem | true but ghost-blind/untested |
-| 790 | 0.267 | [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only) | Theorem | true but ghost-blind/untested |
-| 791 | 0.267 | [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) | Cited | true but ghost-blind/untested |
-| 792 | 0.267 | [CM case: the Hasse triangle is Fermat's two-squares triangle](#cm-gaussian-hasse-triangle) | Theorem | true but ghost-blind/untested |
-| 793 | 0.267 | [Split/inert duality for a CM curve (32a1)](#cm-split-inert-duality) | Theorem | true but ghost-blind/untested |
-| 794 | 0.267 | [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) | Theorem | true but ghost-blind/untested |
-| 795 | 0.267 | [Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p](#dbn-product-cross-term) | Theorem | true but ghost-blind/untested |
-| 796 | 0.267 | [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) | Theorem | true but ghost-blind/untested |
-| 797 | 0.267 | [Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian](#johnson-lippmann-supercharge) | Cited | true but ghost-blind/untested |
-| 798 | 0.267 | [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids) | Theorem | true but ghost-blind/untested |
-| 799 | 0.267 | [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) | Theorem | true but ghost-blind/untested |
-| 800 | 0.267 | [Weight ladder (modular weights)](#weight-ladder) | Theorem | true but ghost-blind/untested |
-| 801 | 0.267 | [On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH](#chirality-star-gamma5-hodge-index) | Theorem | true but ghost-blind/untested |
-| 802 | 0.267 | [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) | Theorem | true but ghost-blind/untested |
-| 803 | 0.267 | [Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares)](#dbn-loggas-entropy-production) | Theorem | true but ghost-blind/untested |
-| 804 | 0.267 | [η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential](#eta-chain) | Theorem | true but ghost-blind/untested |
-| 805 | 0.267 | [Euler factors as passive but lossy sections](#euler-factor-passive-lossy) | Theorem | true but ghost-blind/untested |
-| 806 | 0.267 | [(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²](#exactness-monge-ampere) | Theorem | true but ghost-blind/untested |
-| 807 | 0.267 | [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature) | Theorem | true but ghost-blind/untested |
-| 808 | 0.267 | [The critical-line wave: Hardy Z and the Riemann–Siegel phase](#hardy-z-critical-line-wave) | Theorem | true but ghost-blind/untested |
-| 809 | 0.267 | [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn) | Theorem | true but ghost-blind/untested |
-| 810 | 0.267 | [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) | Theorem | true but ghost-blind/untested |
-| 811 | 0.267 | [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack) | Theorem | true but ghost-blind/untested |
-| 812 | 0.267 | [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only) | Theorem | true but ghost-blind/untested |
-| 813 | 0.267 | [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh) | Theorem | true but ghost-blind/untested |
-| 814 | 0.267 | [Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift](#prime-torus-nonresonance) | Theorem | true but ghost-blind/untested |
-| 815 | 0.267 | [w₂ / Čech class (TAA Lemma 138)](#w2-cech) | Theorem | true but ghost-blind/untested |
-| 816 | 0.267 | [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) | Theorem | true but ghost-blind/untested |
-| 817 | 0.267 | [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) | Theorem | true but ghost-blind/untested |
-| 818 | 0.267 | [The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄)](#chi-minus-one-half-pole) | Theorem | true but ghost-blind/untested |
-| 819 | 0.267 | [Number-theoretical ferromagnetic spin chain](#knauf-ferromagnetic-spin-chain) | Theorem | true but ghost-blind/untested |
-| 820 | 0.267 | [Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH](#newman-class-p-fails-for-phi) | Cited | true but ghost-blind/untested |
-| 821 | 0.267 | [One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction](#prime-clocks) | Theorem | true but ghost-blind/untested |
-| 822 | 0.267 | [Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV](#primon-box-ts-pv) | Theorem | true but ghost-blind/untested |
-| 823 | 0.267 | [Sector map w = e^{iπs/2}](#sector-map-w) | Theorem | true but ghost-blind/untested |
-| 824 | 0.267 | [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) | Theorem | true but ghost-blind/untested |
-| 825 | 0.267 | [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) | Theorem | true but ghost-blind/untested |
-| 826 | 0.267 | [Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves](#conic-compactness) | Theorem | true but ghost-blind/untested |
-| 827 | 0.267 | [Finite Guinand–Weil dictionary for truncated Weil forms](#finite-guinand-weil-dictionary) | Theorem | true but ghost-blind/untested |
-| 828 | 0.267 | [The 45-degree flip is a real structure, not a star](#flip45-is-real-structure) | Theorem | true but ghost-blind/untested |
-| 829 | 0.267 | [The factorial of one half and the Fourier quarter-turn](#fourier-quarter-turn) | Theorem | true but ghost-blind/untested |
-| 830 | 0.267 | [Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)](#fourth-roots-supersingular) | Theorem | true but ghost-blind/untested |
-| 831 | 0.267 | [Frame and clock invariance of Krein data at L4](#frame-clock-invariance) | Theorem | true but ghost-blind/untested |
-| 832 | 0.267 | [Frobenius angles are already quantized](#frobenius-angles-quantized) | Theorem | true but ghost-blind/untested |
-| 833 | 0.267 | [Gross-Zagier as rank-one positivity](#gross-zagier-rank-one-positivity) | Cited | true but ghost-blind/untested |
-| 834 | 0.267 | [Window Weil form as jump kinetic energy minus a mass plus a pole](#levy-khintchine-mass-gap) | Theorem | true but ghost-blind/untested |
-| 835 | 0.267 | [Möbius function as fermion parity of the primon gas](#mobius-is-witten-parity) | Theorem | true but ghost-blind/untested |
-| 836 | 0.267 | [Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)](#orbifold-vs-descartes-deficits) | Theorem | true but ghost-blind/untested |
-| 837 | 0.267 | [Rankin-Selberg is blind to sign flips](#rs-blind-to-sign-flips) | Theorem | true but ghost-blind/untested |
-| 838 | 0.267 | [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) | Theorem | true but ghost-blind/untested |
-| 839 | 0.267 | [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) | Theorem | true but ghost-blind/untested |
-| 840 | 0.267 | [so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²](#so4-chirality-split) | Theorem | true but ghost-blind/untested |
-| 841 | 0.267 | [Spin structure & theta characteristic](#spin-theta) | Theorem | true but ghost-blind/untested |
-| 842 | 0.267 | [Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products](#three-lenses-one-flow) | Theorem | true but ghost-blind/untested |
-| 843 | 0.267 | [Counts vs quadratic positivity](#count-positivity) | Theorem | true but ghost-blind/untested |
-| 844 | 0.267 | [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) | Theorem | true but ghost-blind/untested |
-| 845 | 0.267 | [Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)](#hecke-toy-contraction) | Theorem | true but ghost-blind/untested |
-| 846 | 0.267 | [Jacobi curvature sees only the trace of the log-Hessian of kinetic energy](#jacobi-curvature-trace-only) | Theorem | true but ghost-blind/untested |
-| 847 | 0.267 | [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind) | Theorem | true but ghost-blind/untested |
-| 848 | 0.267 | [The monotone log-gas energy cannot certify real zeros](#rt-energy-monotone-but-blind) | Theorem | true but ghost-blind/untested |
-| 849 | 0.267 | [The de Bruijn–Newman kernel is not PF5](#dbn-kernel-not-pf5) | Theorem | true but ghost-blind/untested |
-| 850 | 0.267 | [Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive](#euler-product-saddle-additivity) | Theorem | true but ghost-blind/untested |
-| 851 | 0.267 | [Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count](#prime-torus-euler-characteristic-zero) | Theorem | true but ghost-blind/untested |
-| 852 | 0.267 | [Real-axis log-convexity of L(sigma) measures coefficient signs, not RH](#real-axis-log-convexity-not-rh) | Theorem | true but ghost-blind/untested |
-| 853 | 0.267 | [Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)](#zero-gas-forced-functionals) | Theorem | true but ghost-blind/untested |
-| 854 | 0.267 | [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) | Theorem | true but ghost-blind/untested |
-| 855 | 0.256 | ["Cocycles give structure, not sign"](#cocycle-principle) | Heuristic | background |
-| 856 | 0.256 | [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) | Heuristic | background |
-| 857 | 0.253 | [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) | Analogy | sharp but interpretive |
-| 858 | 0.253 | [L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin](#l4-krein-indefinite-not-zeta) | Analogy | sharp but interpretive |
-| 859 | 0.253 | [The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn](#collinear-dh-odd-window) | Analogy | sharp but interpretive |
-| 860 | 0.253 | [(β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair](#fermion-pair-beta-2beta) | Analogy | sharp but interpretive |
-| 861 | 0.253 | [Ghost pair as dispersion (frequency-dependent decay)](#ghost-as-dispersion) | Analogy | sharp but interpretive |
-| 862 | 0.253 | [Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind](#einstein-cartan) | Analogy | sharp but interpretive |
-| 863 | 0.253 | [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) | Analogy | sharp but interpretive |
-| 864 | 0.253 | [Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall](#ferromagnetic-gyroscopic-stiffness) | Analogy | sharp but interpretive |
-| 865 | 0.240 | [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) | Restatement | RH-sharp |
-| 866 | 0.240 | [RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole](#sharpened-missing-piece) | Restatement | RH-sharp |
-| 867 | 0.240 | [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros) | Restatement | RH-sharp |
-| 868 | 0.240 | [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split) | Restatement | RH-sharp |
-| 869 | 0.240 | [Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular](#height-positivity-circular) | Restatement | RH-sharp |
-| 870 | 0.240 | [Hasse triangle and Newton's dT/dθ = L²](#hasse-triangle-newton) | Restatement | RH-sharp |
-| 871 | 0.240 | [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) | Restatement | RH-sharp |
-| 872 | 0.240 | [Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters](#imaginary-field-susceptibility) | Restatement | RH-sharp |
-| 873 | 0.240 | [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation) | Restatement | RH-sharp |
-| 874 | 0.240 | [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular) | Restatement | RH-sharp |
-| 875 | 0.240 | [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation) | Restatement | RH-sharp |
-| 876 | 0.240 | [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) | Restatement | RH-sharp |
-| 877 | 0.240 | [RH as a negative-square count (restatement)](#ghost-count-rh-restatement) | Restatement | RH-sharp |
-| 878 | 0.240 | [Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0](#hill-neck-lambda2) | Restatement | RH-sharp |
-| 879 | 0.240 | [Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH](#hodge-index-zeta-restatement) | Restatement | RH-sharp |
-| 880 | 0.240 | [Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information](#multispin-adds-nothing) | Restatement | RH-sharp |
-| 881 | 0.240 | [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement) | Restatement | RH-sharp |
-| 882 | 0.240 | [No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2](#transverse-positivity-slot2) | Restatement | RH-sharp |
-| 883 | 0.240 | [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary) | Restatement | RH-sharp |
-| 884 | 0.240 | [Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel](#anisotropic-part-weil) | Restatement | RH-sharp |
-| 885 | 0.240 | [sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece](#boundary-signature-neutral) | Restatement | RH-sharp |
-| 886 | 0.240 | [S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization)](#def-arithmetic-action) | Restatement | RH-sharp |
-| 887 | 0.240 | [(S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane](#def-thermodynamic-arithmetic-action) | Restatement | RH-sharp |
-| 888 | 0.240 | [KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1)](#kms-positivity-not-forcing) | Restatement | RH-sharp |
-| 889 | 0.240 | [Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH](#lc-square-xi) | Restatement | RH-sharp |
-| 890 | 0.240 | [Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted](#pole-plane-lorentz-boost) | Restatement | RH-sharp |
-| 891 | 0.240 | [Invariant maximal non-positive subspaces: exactly two](#pontryagin-exactly-two) | Restatement | RH-sharp |
-| 892 | 0.240 | [Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular](#positivity-is-nonconcentration) | Restatement | RH-sharp |
-| 893 | 0.240 | [The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e](#product-formula-rest-frame) | Restatement | RH-sharp |
-| 894 | 0.240 | [Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight)](#stationary-phase-split) | Restatement | RH-sharp |
-| 895 | 0.240 | [A nilpotent supercharge with W = {Q, Q*} restates positivity](#supercharge-laplacian-restates-positivity) | Restatement | RH-sharp |
-| 896 | 0.240 | [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin) | Restatement | RH-sharp |
-| 897 | 0.240 | [Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular](#thermo-only-extensivity) | Restatement | RH-sharp |
-| 898 | 0.240 | [Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π](#trig-hyperbolic-trace-dictionary) | Restatement | RH-sharp |
-| 899 | 0.240 | [Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH](#weil-energy-spectrum-zeros) | Restatement | RH-sharp |
-| 900 | 0.240 | [Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line](#zagier-e2-edge-dictionary) | Restatement | RH-sharp |
-| 901 | 0.240 | [RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked](#cramer-cm-iff-rh) | Restatement | RH-sharp |
-| 902 | 0.240 | [Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1}](#euler-half-exponent-tame-symbol) | Restatement | RH-sharp |
-| 903 | 0.240 | [No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement)](#fv-operator-pair-refuted) | Restatement | RH-sharp |
-| 904 | 0.240 | [Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²](#hodge-index-shear-subtracts) | Restatement | RH-sharp |
-| 905 | 0.240 | [RH as infinite divisibility](#infinitely-divisible-rh-criterion) | Restatement | RH-sharp |
-| 906 | 0.240 | [KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp](#ks-trichotomy-xp) | Restatement | RH-sharp |
-| 907 | 0.240 | [In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight](#lambda-as-norm) | Restatement | RH-sharp |
-| 908 | 0.240 | [RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts](#prime-side-cramer-cm) | Restatement | RH-sharp |
-| 909 | 0.240 | [RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH](#reciprocal-xi-pf-ensemble) | Restatement | RH-sharp |
-| 910 | 0.240 | [Riemann-Roch sorts the two conditions](#riemann-roch-sorting) | Restatement | RH-sharp |
-| 911 | 0.240 | [Rodgers-Tao renormalization needs the zero count (Turing)](#rt-renormalization-count-drift) | Restatement | RH-sharp |
-| 912 | 0.240 | [Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson](#signature-not-det-three-ways) | Restatement | RH-sharp |
-| 913 | 0.240 | [Which sign statements for zeta are non-circular](#signed-energy-noncircular-sign) | Restatement | RH-sharp |
-| 914 | 0.240 | [The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module](#virasoro-halving-is-central-charge-change) | Restatement | RH-sharp |
-| 915 | 0.240 | [⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite](#weil-braket-pairing) | Restatement | RH-sharp |
-| 916 | 0.240 | [Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)](#zeta-zero-fv-quadratic) | Restatement | RH-sharp |
-| 917 | 0.240 | [Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only](#corrections) | Restatement | RH-sharp |
-| 918 | 0.240 | [Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio](#honest-l-as-partition-ratio) | Restatement | RH-sharp |
-| 919 | 0.240 | [Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity](#kronecker-hurwitz-eichler-selberg) | Restatement | RH-sharp |
-| 920 | 0.240 | [W = covariance of φ̂_i under Σδ_γ iff zeros real](#weil-form-as-fisher-metric-circular) | Restatement | RH-sharp |
-| 921 | 0.240 | [Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful](#dh-no-brandt-control) | Restatement | RH-sharp |
-| 922 | 0.240 | [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) | Restatement | RH-sharp |
-| 923 | 0.240 | [Sundman-regularized Rodgers-Tao energy](#sundman-regularized-rt-energy) | Restatement | RH-sharp |
-| 924 | 0.240 | [The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on](#negative-cone-topology) | Restatement | RH-sharp |
-| 925 | 0.226 | [Buoyancy / Archimedes principle](#archimedes) | Analogy | background |
-| 926 | 0.226 | [Distortionless line R/L = G/C](#distortionless) | Analogy | background |
-| 927 | 0.226 | [Einstein–Cartan: spin enters as torsion](#einstein-cartan-torsion-spin) | Analogy | background |
-| 928 | 0.226 | [Heaviside RLGC line](#heaviside) | Analogy | background |
-| 929 | 0.226 | [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) | Analogy | background |
-| 930 | 0.226 | [The archimedean place as the "third body"](#archimedean-third-body-analogy) | Analogy | background |
-| 931 | 0.226 | [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) | Analogy | background |
-| 932 | 0.226 | [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) | Analogy | background |
-| 933 | 0.226 | [One log-gas and its frozen limit](#log-gas-frozen-limit) | Analogy | background |
-| 934 | 0.226 | [The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions](#lrl-fock-gram-conserved) | Analogy | background |
-| 935 | 0.226 | [Mass-density positivity](#mass-density) | Analogy | background |
-| 936 | 0.226 | [Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned](#serre-derivative-analogy) | Analogy | background |
-| 937 | 0.226 | [Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2](#archimedean-symbol-dispersion) | Analogy | background |
-| 938 | 0.226 | [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) | Analogy | background |
-| 939 | 0.226 | [Tension and amplitude dictionary](#half-density-tension-dictionary) | Analogy | background |
-| 940 | 0.226 | [45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s](#hecke-mellin-lightcone-bypass) | Analogy | background |
-| 941 | 0.226 | [z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover](#levi-civita-branched-cover) | Analogy | background |
-| 942 | 0.226 | [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) | Analogy | background |
-| 943 | 0.226 | [Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ](#shimura-waldspurger-template-map) | Analogy | background |
-| 944 | 0.226 | [Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not](#thermo-dictionary-grades) | Analogy | background |
-| 945 | 0.226 | [Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing)](#thermo-forcing-grades) | Analogy | background |
-| 946 | 0.226 | [Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again](#tree-band-edge-zero-velocity) | Analogy | background |
-| 947 | 0.226 | [691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open](#adjoint-691-eisenstein-not-cuspidal) | Analogy | background |
-| 948 | 0.226 | [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) | Analogy | background |
-| 949 | 0.226 | [Discriminant as self-intersection of a polarization (arithmetic Hodge index)](#discriminant-polarization-height) | Analogy | background |
-| 950 | 0.226 | [Divergence-free positive tensors as a quantitative tool once positivity is known](#dpt-quantitative-template) | Analogy | background |
-| 951 | 0.226 | [Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit](#einstein-de-haas-lesson) | Analogy | background |
-| 952 | 0.226 | [sqrt(q) normalization as fixing the energy shell](#frobenius-similitude-shell) | Analogy | background |
-| 953 | 0.226 | [Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points](#hodge-morse-analogy) | Analogy | background |
-| 954 | 0.226 | [Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane)](#ii11-pole-pair) | Analogy | background |
-| 955 | 0.226 | [KS/oscillator realisation as a positivity source for the Weil form](#ks-oscillator-positivity-source) | Analogy | background |
-| 956 | 0.226 | [Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel](#larmor-onsager-rotation-sector) | Analogy | background |
-| 957 | 0.226 | [The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places](#lichnerowicz-is-gamma-shift) | Analogy | background |
-| 958 | 0.226 | [Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given)](#maslov-reading) | Analogy | background |
-| 959 | 0.226 | [Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH)](#no-ghost-template) | Analogy | background |
-| 960 | 0.226 | [Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0](#plus-minus-units-bernoulli) | Analogy | background |
-| 961 | 0.226 | [pole cancels the one arithmetic ghost](#pole-as-counterterm-not-tachyon) | Analogy | background |
-| 962 | 0.226 | [prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S](#prime-mode-energy-quantum) | Analogy | background |
-| 963 | 0.226 | [The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t)](#rs-phase-not-per-prime) | Analogy | background |
-| 964 | 0.226 | [λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion](#sato-tate-angle-as-conserved-c) | Analogy | background |
-| 965 | 0.226 | [Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ](#viscosity-baroclinic) | Analogy | background |
-| 966 | 0.226 | [Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999)](#constraint-scaling) | Analogy | background |
-| 967 | 0.226 | [Per-prime curvatures σ_p² do not reproduce H(D) weights](#curvature-vs-class-numbers) | Analogy | background |
-| 968 | 0.226 | [(1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles](#duplication-fixed-point-pole) | Analogy | background |
-| 969 | 0.226 | [Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers](#eponymic-chain-linear-transfers) | Analogy | background |
-| 970 | 0.226 | [Euler product = independence over places, not Markov in log-time](#euler-markov) | Analogy | background |
-| 971 | 0.226 | [Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis](#kepler-lagrange-kapteyn-analogy) | Analogy | background |
-| 972 | 0.226 | [β* as work reserve → 0 at barrier (Carnot limit), log p as heat](#margin-work-reserve) | Analogy | background |
-| 973 | 0.226 | [T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant](#planck-ott-landsberg-reading) | Analogy | background |
-| 974 | 0.226 | [FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part](#r-equals-t-wrong-slot) | Analogy | background |
-| 975 | 0.226 | [T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy](#t1-boltzmann-reading) | Analogy | background |
-| 976 | 0.226 | [Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets](#zero-velocity-null-states) | Analogy | background |
-| 977 | 0.226 | [Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically](#aps-type-split-analogue) | Analogy | background |
-| 978 | 0.226 | [Hill-region stratification vs prime filtration](#hill-region-dictionary) | Analogy | background |
-| 979 | 0.226 | [2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴)](#two-is-half-only-mod3) | Analogy | background |
-| 980 | 0.212 | [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) | Analogy | background |
-| 981 | 0.212 | [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) | Analogy | background |
-| 982 | 0.212 | [Higgs mechanism: negative mass² at the symmetric point](#higgs-negative-mass2) | Analogy | background |
-| 983 | 0.212 | [Klein–Gordon indefinite charge](#klein-gordon-charge) | Analogy | background |
-| 984 | 0.212 | [Anomalous dispersion](#anomalous-dispersion) | Analogy | background |
-| 985 | 0.200 | [Convolution square root](#convolution-square-root) | Open | RH-sharp |
-| 986 | 0.200 | [Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk](#anticipation-law-fluctuation) | Conjecture | RH-sharp |
-| 987 | 0.200 | [Weighted signed energy trace from the heat-flowed function](#signed-local-energy-trace) | Open | RH-sharp |
-| 988 | 0.200 | [A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known](#slot2-thermodynamic-target) | Open | RH-sharp |
-| 989 | 0.200 | [Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture)](#krein-laguerre-count) | Conjecture | RH-sharp |
-| 990 | 0.200 | [Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling](#noncircular-noghost-conjecture) | Conjecture | RH-sharp |
-| 991 | 0.200 | [Weil functional as a special-cycle self-intersection (program)](#weil-as-special-cycle-self-intersection) | Conjecture | RH-sharp |
-| 992 | 0.200 | [TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH](#taa-thesis) | Conjecture | RH-sharp |
-| 993 | 0.200 | [No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8](#entropy-bound-insufficient) | Conjecture | RH-sharp |
-| 994 | 0.200 | [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) | Conjecture | RH-sharp |
-| 995 | 0.200 | [zeta on the wall of deformation families](#zeta-on-the-wall) | Conjecture | RH-sharp |
-| 996 | 0.200 | [“RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor](#never-focuses-conjecture-downgraded) | Conjecture | RH-sharp |
-| 997 | 0.187 | [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) | Open | true but ghost-blind/untested |
-| 998 | 0.181 | [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading) | Analogy | background |
-| 999 | 0.181 | [Lamb cutoff](#lamb-cutoff) | Analogy | background |
-| 1000 | 0.181 | [Two different χ’s: Euler characteristic vs class-group character](#two-chis) | Analogy | background |
-| 1001 | 0.181 | [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) | Analogy | background |
-| 1002 | 0.181 | [Ramanujan's 691 as a degeneration of the pole line](#ramanujan-691-degeneration) | Analogy | background |
-| 1003 | 0.181 | [Tate twist as hbar](#tate-twist-as-hbar) | Analogy | background |
-| 1004 | 0.165 | [Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object](#mechanism-global-object) | Open | true but ghost-blind/untested |
-| 1005 | 0.165 | [Zero-free window certificates as heat-flow barriers](#barrier-certificate-bypass) | Open | true but ghost-blind/untested |
-| 1006 | 0.165 | [Order as a stability condition (target shape)](#ps-tilt-central-charge-target) | Open | true but ghost-blind/untested |
-| 1007 | 0.165 | [Candidate formulations of Castelnuovo-Severi over the integers](#cs-for-spec-z-formulations) | Open | true but ghost-blind/untested |
-| 1008 | 0.165 | [Ring-preserving supercharge and RH as purity](#rings-purity-restates-positivity) | Conjecture | true but ghost-blind/untested |
-| 1009 | 0.165 | [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open) | Open | true but ghost-blind/untested |
-| 1010 | 0.165 | [Standard conjectures (Hodge type)](#standard-conj) | Open | true but ghost-blind/untested |
-| 1011 | 0.165 | [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) | Open | true but ghost-blind/untested |
-| 1012 | 0.165 | [Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1](#weil-as-height-restriction) | Open | true but ghost-blind/untested |
-| 1013 | 0.165 | [One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya](#both-at-once) | Open | true but ghost-blind/untested |
-| 1014 | 0.165 | [No ζ analogue of c=26 (no unitary c fits the Weil form)](#c26-gap) | Open | true but ghost-blind/untested |
-| 1015 | 0.165 | [No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1)](#ddf-gap) | Open | true but ghost-blind/untested |
-| 1016 | 0.165 | [F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge)](#fv-level-change-gap) | Open | true but ghost-blind/untested |
-| 1017 | 0.165 | [Integrality instead of positivity (45-degree direction)](#integrality-support-bypass) | Open | true but ghost-blind/untested |
-| 1018 | 0.165 | [Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality](#needed-semilocal-sonin-inequality) | Open | true but ghost-blind/untested |
-| 1019 | 0.165 | [Regularized xp foliation as a route](#regularized-xp-foliation-route) | Open | true but ghost-blind/untested |
-| 1020 | 0.165 | [A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction](#siegel-zero-as-small-boundary-mass) | Conjecture | true but ghost-blind/untested |
-| 1021 | 0.165 | [Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors](#two-steps-to-baseline) | Open | true but ghost-blind/untested |
-| 1022 | 0.165 | [Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula](#xside-vs-rside-obstruction) | Open | true but ghost-blind/untested |
-| 1023 | 0.165 | [Chaotic 2-DOF regularized xp as a route](#chaotic-2dof-xp-route) | Open | true but ghost-blind/untested |
-| 1024 | 0.165 | [Route: Hermite barrier certificate to lower Lambda](#hermite-barrier-route) | Open | true but ghost-blind/untested |
-| 1025 | 0.165 | [Route: Jacobi/Finsler geometry of xp as a positivity source](#jacobi-finsler-positivity-route) | Open | true but ghost-blind/untested |
+| 494 | 0.347 | [The bulk form B keeps the diagonal counterterm, on E0 and off it](#bulk-form-b-off-e0) | Theorem | true but ghost-blind/untested |
+| 495 | 0.347 | [Two explicit representers fail; an independent matching map is still missing](#independent-representer-test) | Theorem | true but ghost-blind/untested |
+| 496 | 0.347 | [A translation-invariant complex structure does not preserve the window kernel](#nonstationary-j-obstruction) | Theorem | true but ghost-blind/untested |
+| 497 | 0.325 | [Wick rotation of one Euler frame: t = 2cos θ → 2cos(iφ) = 2cosh φ; elliptic (bounded U_k, poles on |u| = 1 = local unitarity) → parabolic (k + 1, double pole) → hyperbolic (sinh growth); endpoint φ = ½ log p is ζ(s)ζ(s−1) (Eisenstein)](#euler-factor-wick-rotation) | Theorem | true but ghost-blind/untested |
+| 498 | 0.325 | [Morse picture of the strata: lobes (extrema), wedge (saddle level), hyperbolic windows (index 1)](#morse-lobes-wedges-windows) | Theorem | true but ghost-blind/untested |
+| 499 | 0.325 | [Toeplitz / Verblunsky coefficients](#toeplitz-verblunsky) | Theorem | true but ghost-blind/untested |
+| 500 | 0.325 | [Zeros as frames: simple real zero = elliptic, double zero = parabolic (collision), conjugate pair/quartet = hyperbolic; real zeros leave the line only by collision or from infinity](#zeros-as-frames-trichotomy) | Theorem | true but ghost-blind/untested |
+| 501 | 0.325 | [Hasse is the parabolic wall; Rosati positivity makes the Routh wall unreachable](#hasse-parabolic-routh-forbidden-by-rosati) | Theorem | true but ghost-blind/untested |
+| 502 | 0.325 | [Sundman clock for the F/V collision](#fv-sundman-oscillator) | Theorem | true but ghost-blind/untested |
+| 503 | 0.325 | [Nested discriminant parabolas D = 4n − r² collapse to D = 0, where H(0) = ζ(−1) = −1/12 = χ(SL₂(ℤ)), the orbifold Euler characteristic: boundary data only](#h0-zeta-minus-one-orbifold-euler) | Theorem | true but ghost-blind/untested |
+| 504 | 0.325 | [Pole of ζ at s = 1 (residue / 3/π)](#pole-s1) | Cited | true but ghost-blind/untested |
+| 505 | 0.325 | [Equation of state of the window Weil operator](#window-equation-of-state) | Theorem | true but ghost-blind/untested |
+| 506 | 0.325 | [The space of binary quadratic forms as the elliptic-curve analogue: definite forms = CM points (elliptic), D = 0 = the cusp (parabolic), indefinite forms = closed geodesics of length 2 log ε_D (hyperbolic)](#discriminant-space-trichotomy) | Theorem | true but ghost-blind/untested |
+| 507 | 0.325 | [Dual conic (adjugate): ellipse ↔ ellipse, hyperbola ↔ hyperbola, line pair ↔ double point](#dual-conic) | Theorem | true but ghost-blind/untested |
+| 508 | 0.325 | [Rotating frame: Legendre removes Coriolis from the energy value; it lives in the symplectic form](#legendre-jacobi-split-rotating-frame) | Theorem | true but ghost-blind/untested |
+| 509 | 0.325 | [Unique factorization = the primon Fock decomposition is an isomorphism](#primon-fock-unique-factorization) | Theorem | true but ghost-blind/untested |
+| 510 | 0.325 | [Conductor term log|D|·G shifts every Weil eigenvalue by log|D|; 36 imaginary quadratic χ_D positive for L≤6](#conductor-uniform-shift) | Theorem | true but ghost-blind/untested |
+| 511 | 0.325 | [Krein-definite normal forms are strongly stable; the indefinite L4 form is destabilized by small perturbations](#definite-vs-indefinite-strong-stability) | Theorem | true but ghost-blind/untested |
+| 512 | 0.325 | [Gluing connections are flat; a signed curvature must live in the metric](#flat-gluing-curvature-in-metric) | Theorem | true but ghost-blind/untested |
+| 513 | 0.325 | [F = (a/2)·I + N with N = (F−V)/2 and N² = (a²−4q)/4](#frobenius-verschiebung-rotation-split) | Theorem | true but ghost-blind/untested |
+| 514 | 0.325 | [F/V trichotomy in Manin's dictionary](#fv-nc-torus-trichotomy) | Theorem | true but ghost-blind/untested |
+| 515 | 0.325 | [(p+1)/2 = 2⁻¹ ∈ ℤ_p for odd p ⇔ the Hilbert symbol is trivial on units ⇔ Mp₂ splits over SL₂(ℤ_p); it fails only at 2, hence θ’s level 4, ε_d and (2/p)](#half-unit-mp2-splitting) | Theorem | true but ghost-blind/untested |
+| 516 | 0.325 | [The eigenvalue-1 Jordan block of a periodic-orbit monodromy is a shear with off-diagonal −dT/dC](#jordan-shear-dtdc) | Theorem | true but ghost-blind/untested |
+| 517 | 0.325 | [Kepler Jacobi curvature K=-E/(4(Er+1)^3) and the collision cone](#kepler-jacobi-trichotomy) | Theorem | true but ghost-blind/untested |
+| 518 | 0.325 | [At L1 a fundamental symmetry J exists: −(time reversal) on the saddle plane and ±I on the centres, with SJ positive definite](#l1-fundamental-symmetry) | Theorem | true but ghost-blind/untested |
+| 519 | 0.325 | [At L4 the effective-potential Hessian is negative definite; the cross term sets its discriminant](#l4-veff-hessian-negative-definite) | Theorem | true but ghost-blind/untested |
+| 520 | 0.325 | [The pole block of the Weil form is c·cosh((x−y)/2): rank 2, signature (1,1), a hyperbolic plane](#pole-block-hyperbolic-plane) | Theorem | true but ghost-blind/untested |
+| 521 | 0.325 | [Selberg resonances](#selberg-resonances) | Theorem | true but ghost-blind/untested |
+| 522 | 0.325 | [√2 family](#sqrt2-family) | Theorem | true but ghost-blind/untested |
+| 523 | 0.325 | [Hasse, Routh and Levinson walls are discriminant walls of quadratics with a fixed product](#amgm-discriminant-walls) | Theorem | true but ghost-blind/untested |
+| 524 | 0.325 | [Levi-Civita regularization of zero collisions](#calogero-pair-levi-civita) | Theorem | true but ghost-blind/untested |
+| 525 | 0.325 | [Cohen's weight r+½ series: H(r,0) = ζ(1−2r) = −B₂ᵣ/(2r), exact for r = 1…6; numerators 1,1,1,1,1,691](#cohen-constant-terms-zeta-odd) | Theorem | true but ghost-blind/untested |
+| 526 | 0.325 | [Count versus stability: the Coriolis term leaves the Morse count unchanged and decides stability](#count-vs-stability-gyroscopic) | Theorem | true but ghost-blind/untested |
+| 527 | 0.325 | [Cusp ≠ archimedean place](#cusp-vs-infinity) | Theorem | true but ghost-blind/untested |
+| 528 | 0.325 | [Energy positivity = positive kernel spectrum + mass-0 quotient (log kernel 1/2n); mass-0 ↔ pole-plane quotient](#energy-positivity-mechanism) | Theorem | true but ghost-blind/untested |
+| 529 | 0.325 | [F₁ base](#f1-base) | Cited | true but ghost-blind/untested |
+| 530 | 0.325 | [The Frobenius quadratic is the focal quadratic of a conic](#focal-frobenius-quadratic) | Theorem | true but ghost-blind/untested |
+| 531 | 0.325 | [Frobenius of 11a mod p acts on the two loops of the torus as multiplication by π on the CM lattice ℤ[π]](#frobenius-on-cm-lattice-11a) | Theorem | true but ghost-blind/untested |
+| 532 | 0.325 | [Norm as the product of two K-theory states](#fv-two-states-sector) | Theorem | true but ghost-blind/untested |
+| 533 | 0.325 | [Jacobi forms: the theta decomposition moves the square r² of the elliptic variable into the coefficient index D = 4n − r²; for E_{k,1}, c(D)² ∝ L(k − 1, χ)², a central value off ζ’s line](#jacobi-theta-decomposition-hinge) | Theorem | true but ghost-blind/untested |
+| 534 | 0.325 | [Kustaanheimo–Stiefel polarization ellipse: Stokes parameters and the genus-1 Hasse bound](#ks-stokes-hasse) | Theorem | true but ghost-blind/untested |
+| 535 | 0.325 | [Twin paradox at the Lagrange points: the co-rotating clock rate is the Jacobi constant](#lagrange-clock-rates) | Theorem | true but ghost-blind/untested |
+| 536 | 0.325 | [Conditions on V‴ or on convexity of V = −log Φ in σ² (EMN class G₋, Ellis–Newman GHS) are invariant under Φ → e^{λσ²}Φ, while Lee–Yang of Φ_λ holds only for λ ≥ Λ > −∞; hence no such condition can imply Lee–Yang](#lambda-invariance-nogo) | Theorem | true but ghost-blind/untested |
+| 537 | 0.325 | [Perturbed Kepler orbits close iff the apsidal ratio is rational; the lunar LRL precession in the restricted problem is measured](#lrl-rational-closure) | Theorem | true but ghost-blind/untested |
+| 538 | 0.325 | [No real-coefficient Weil cohomology for arithmetic curves](#no-real-weil-cohomology-arithmetic) | Theorem | true but ghost-blind/untested |
+| 539 | 0.325 | [Over F_q the rank-4 Néron–Severi sublattice of E×E has signature (1, 3) for every tested curve; ghosts give (2, 2)](#ns-exe-signature) | Theorem | true but ghost-blind/untested |
+| 540 | 0.325 | [Null-line quotient (Gupta-Bleuler form)](#null-line-quotient) | Theorem | true but ghost-blind/untested |
+| 541 | 0.325 | [At the parabolic edge |t| = 2 a ± Krein pair collides into a Jordan block (the cusp generator); no single Krein sign flips](#parabolic-edge) | Theorem | true but ghost-blind/untested |
+| 542 | 0.325 | [The pole pair is the real transfer-matrix pair e^{±a/2} (energies ∓½): absent from the full ζ kernel, weight −h² in the pole-removed kernel, never a contraction](#pole-transfer-pair) | Theorem | true but ghost-blind/untested |
+| 543 | 0.325 | [Principalization](#principalization) | Theorem | true but ghost-blind/untested |
+| 544 | 0.325 | [Polishchuk-Schwarz tilt as the wall limit of a central charge](#ps-central-charge-fv-family) | Theorem | true but ghost-blind/untested |
+| 545 | 0.325 | [Rodgers-Tao Hamiltonian as a Sundman clock](#rt-energy-sundman-clock) | Theorem | true but ghost-blind/untested |
+| 546 | 0.325 | [S-mirror ρ ↦ 1 − ρ̄](#s-mirror) | Theorem | true but ghost-blind/untested |
+| 547 | 0.325 | [The negative directions of the three-body energy form at a Lagrange point have δv = 0: they are zero-velocity directions](#sitting-still) | Theorem | true but ghost-blind/untested |
+| 548 | 0.325 | [Petersson positivity of V_p on J^cusp_{k,1} gives λ_p > −(√p+1/√p)p^{k−3/2}: excludes Satake offset δ ≥ ½ (edge) only, never forces δ = 0](#vstar-v-edge-positivity) | Theorem | true but ghost-blind/untested |
+| 549 | 0.325 | [Coupled 2-DOF regularized xp: Finsler, not Riemannian, Jacobi geometry](#xp2dof-maupertuis-finsler) | Theorem | true but ghost-blind/untested |
+| 550 | 0.325 | [Re ψ(a+it/2)−ψ(a)=∫e^{(1−2a)y}/sinh y·(1−cos ty)dy; KMS period 2π, fermionic antiperiodic; iπ-twist ∓i (ζ/odd)](#arch-symbol-bose-kernel) | Theorem | true but ghost-blind/untested |
+| 551 | 0.325 | [Arithmetic Hodge index: definite after quotienting an isotropic line](#arithmetic-hodge-index-null-quotient) | Theorem | true but ghost-blind/untested |
+| 552 | 0.325 | [Chebyshev bias as a boson–fermion imbalance set by the zeros of L(χ₄)](#chebyshev-bias-boson-fermion) | Cited | true but ghost-blind/untested |
+| 553 | 0.325 | [Closed geodesics on the modular surface](#closed-geodesics) | Theorem | true but ghost-blind/untested |
+| 554 | 0.325 | [Density / volume reading](#density-volume) | Theorem | true but ghost-blind/untested |
+| 555 | 0.325 | [A dent moves a zero charge sideways; geometric deformations only rotate](#dent-is-charge-move) | Theorem | true but ghost-blind/untested |
+| 556 | 0.325 | [Boson/fermion labelling of primes mod 4 is χ₄: split versus inert in Z[i]](#dirichlet-primes-are-chi4) | Theorem | true but ghost-blind/untested |
+| 557 | 0.325 | [Faltings–Hriljac: −Arakelov = Néron–Tate on generic-degree-0 divisors orthogonal to fibre components; signature (1,n−1)](#faltings-hriljac-statement) | Cited | true but ghost-blind/untested |
+| 558 | 0.325 | [The F/V sweep is a de Bruijn-Newman flow](#fv-is-dbn-flow) | Theorem | true but ghost-blind/untested |
+| 559 | 0.325 | [log(1/ζ(β)) = βF; Weil prime lines at ½ = U = −ζ′/ζ](#graded-gas-is-free-energy) | Theorem | true but ghost-blind/untested |
+| 560 | 0.325 | [In(W_np)=(1,1)⊕In(S_L); S_L≥0, min 7.64e−12 (W=1.6), 3.62e−23 (W=2); closes doubly exponentially](#haynsworth-pole-plane-split-windows) | Theorem | true but ghost-blind/untested |
+| 561 | 0.325 | [Indefinite norm as a minimum of definite forms](#hecke-indefinite-as-min-definite) | Theorem | true but ghost-blind/untested |
+| 562 | 0.325 | [Maupertuis (fixed E) and Hopf-Lax (fixed t) least action are Legendre-dual; Prekopa dequantizes to convex inf-convolution](#hopf-lax-maupertuis-duality) | Theorem | true but ghost-blind/untested |
+| 563 | 0.325 | [Positive conserved tensor from an imaginary shift (local smoothing paper)](#imaginary-shift-positive-tensor) | Cited | true but ghost-blind/untested |
+| 564 | 0.325 | [[M₁₂(ℤ) : ℤ·691E₁₂ ⊕ ℤΔ] = 691 exactly (691E₁₂ = 691E₄³ − 432000Δ; Smith diag(1,691)); cusp projection of M₁₂(ℤ) is (1/691)ℤΔ](#index-691-weight12) | Theorem | true but ghost-blind/untested |
+| 565 | 0.325 | [Two Kepler degenerations on the F/V gap axis](#kepler-two-degenerations) | Theorem | true but ghost-blind/untested |
+| 566 | 0.325 | [Levi-Civita (conformal) and Kustaanheimo–Stiefel (Δ₄(U∘π)=4|y|²(Δ₃U)∘π) lifts preserve harmonicity and sign; cannot create positivity](#ks-lc-preserve-sign) | Theorem | true but ghost-blind/untested |
+| 567 | 0.325 | [L4 and L5 are exactly isospectral under any symmetric damping; an L4/L5 asymmetry needs a circulatory (background-flow) force](#l4l5-isospectral-symmetric-damping) | Theorem | true but ghost-blind/untested |
+| 568 | 0.325 | [Local log-derivatives are sign-indefinite (Euler) or anti-passive for small t (Γ); global passivity is not a sum of local passivities](#local-logderiv-indefinite) | Theorem | true but ghost-blind/untested |
+| 569 | 0.325 | [Modularity as the observability link](#modularity-observability-link) | Theorem | true but ghost-blind/untested |
+| 570 | 0.325 | [Penning trap = hilltop plus Larmor twist: a laboratory twin of L4, of the Routh wall and of Davenport–Heilbronn’s rescued window](#penning-trap-l4-twin) | Theorem | true but ghost-blind/untested |
+| 571 | 0.325 | [Plus space: φ⁺(S) = 4^{1−2S} φ_SL₂(2S − ½), so the weight-½ Maass–Selberg diagonal is twice the SL₂ one at doubled ordinate and height 2√T](#plus-space-ms-is-sl2-doubled) | Theorem | true but ghost-blind/untested |
+| 572 | 0.325 | [The pole kernel has Schmidt rank 2 with eigenvalues (L ± 2 sinh(L/2))/2; its entropy is definitional](#pole-kernel-schmidt) | Theorem | true but ghost-blind/untested |
+| 573 | 0.325 | [L4 frequency ratios k:1 occur at quadratic-irrational mass ratios: 27μ(1 − μ) = 4k²/(1 + k²)²](#rational-frequency-ratio-quadratic-mu) | Theorem | true but ghost-blind/untested |
+| 574 | 0.325 | [Spec ℤ is terminal](#spec-z-terminal) | Theorem | true but ghost-blind/untested |
+| 575 | 0.325 | [Spinor/Clifford route](#spinor-route) | Theorem | true but ghost-blind/untested |
+| 576 | 0.325 | [Regularized xp as the hyperbolic Sundman clock](#srl-hyperbolic-sundman-clock) | Theorem | true but ghost-blind/untested |
+| 577 | 0.325 | [Support property dies at the wall; integrality replaces it on the wedge](#support-property-wall) | Theorem | true but ghost-blind/untested |
+| 578 | 0.325 | [Three indices that must not be conflated: Fredholm index, negative (Pontryagin) index, conserved charge](#three-indices-not-conflated) | Theorem | true but ghost-blind/untested |
+| 579 | 0.325 | [Weight-½ Eisenstein series on Γ₀(4): constant term ∝ ζ(4s−1)/ζ(4s), coefficients L(2s, χ_m)/ζ(4s); on the unitary axis (Goldfeld–Hoffstein Re s = ¼) it doubles once, like SL₂](#weight-half-eisenstein-doubles-once) | Theorem | true but ghost-blind/untested |
+| 580 | 0.325 | [Weil Rosetta stone](#weil-rosetta) | Cited | true but ghost-blind/untested |
+| 581 | 0.325 | [Regularized xp on an energy level is a particle hitting an exponential wall](#xp-liouville-wall) | Theorem | true but ghost-blind/untested |
+| 582 | 0.325 | [The Weil Gram of ζ_K = ζ·L(χ_{−d}) is the sum of the two forms exactly, and the conductor adds exactly log(d/π) to every eigenvalue of the L(χ) form](#zeta-k-block-sum-conductor-shift) | Theorem | true but ghost-blind/untested |
+| 583 | 0.325 | [Normalizing a Frobenius trace by |a| uses the infinite place of the wrong number: |a| = Π_ℓ |a|_ℓ⁻¹ is untied from p, while √q = |q|_p^{−1/2}](#abs-a-is-infinite-place-of-trace) | Theorem | true but ghost-blind/untested |
+| 584 | 0.325 | [Arakelov local heights = Green functions/equilibrium potentials (Rumely; Baker–Rumely); mutual-energy positivity (Favre–Rivera-Letelier)](#arakelov-green-capacity) | Cited | true but ghost-blind/untested |
+| 585 | 0.325 | [A uniform background density raises the Routh limit: 27μ(1 − μ) < (1 + 4κ)²](#background-density-raises-routh) | Theorem | true but ghost-blind/untested |
+| 586 | 0.325 | [CM Faltings height = (1/12)log|Δ_min| (discriminant, finite) + Chowla–Selberg lattice-determinant term (archimedean)](#cm-height-disc-det-split) | Theorem | true but ghost-blind/untested |
+| 587 | 0.325 | [Connes–Marcolli–Ramachandran KMS system: Z = ζ_K, explicit CFT for imaginary quadratic fields](#cmr-explicit-cft) | Cited | true but ghost-blind/untested |
+| 588 | 0.325 | [First-class constraint surface is coisotropic (not Legendrian); coisotropic reduction = Goddard–Thorn P/N](#coisotropic-reduction-pn) | Theorem | true but ghost-blind/untested |
+| 589 | 0.325 | [Correction: semilocal edge pattern already numerically in Connes–Consani 'Spectral triples and ζ-cycles' §2.2–2.4](#correction-semilocal-pattern-known) | Cited | true but ghost-blind/untested |
+| 590 | 0.325 | [Morse count of the co-rotating potential: 2 minima − 3 saddles = −1 = χ(plane minus two points)](#cr3bp-morse-count) | Theorem | true but ghost-blind/untested |
+| 591 | 0.325 | [The cross term of the twist Gram is c(D₁)c(D₂), a cycle integral, not a central value of a product twist](#cross-term-correction) | Theorem | true but ghost-blind/untested |
+| 592 | 0.325 | [Discrete de Rham lattice: Betti numbers equal harmonic-form counts for any positive diagonal Hodge star](#dec-betti-equals-harmonic) | Theorem | true but ghost-blind/untested |
+| 593 | 0.325 | [Escape directions of a Kepler conic behave like the Frobenius pair on the apsidal axis](#escape-direction-pair) | Theorem | true but ghost-blind/untested |
+| 594 | 0.325 | [Each Euler factor (1−p^(−s))^(−1) is positive-real: Re > 1/(1+p^(−σ)) > ½ for σ>0](#euler-impedance-positive-real) | Theorem | true but ghost-blind/untested |
+| 595 | 0.325 | [Ω-parity split of the Euler product](#euler-product-omega-parity-split) | Theorem | true but ghost-blind/untested |
+| 596 | 0.325 | [Finite-window positive representing measures are non-unique (Carathéodory–Toeplitz; NNLS on two grids)](#finite-window-nonuniqueness) | Theorem | true but ghost-blind/untested |
+| 597 | 0.325 | [Genus theory: the 2-rank of the class group is fixed by local Hilbert symbols (phase data, not sign); 122/122 checks](#genus-two-part-is-phase) | Theorem | true but ghost-blind/untested |
+| 598 | 0.325 | [BC density e^{E}: Hagedorn β_H = 1 = BC phase transition; Weil at β=½ beyond it](#hagedorn-bc) | Theorem | true but ghost-blind/untested |
+| 599 | 0.325 | [T_ℤ on M₁₂ ≅ {(a,b): a ≡ b mod 691}; T⊗𝔽₆₉₁ ≅ 𝔽₆₉₁[ε]/ε²; gcd_{n≤1000}(σ₁₁(n) − τ(n)) = 691, 0 congruence failures](#hecke-congruence-module-691) | Theorem | true but ghost-blind/untested |
+| 600 | 0.325 | [Indefinite norm as minimal mass over stability conditions](#hecke-mass-stability) | Theorem | true but ghost-blind/untested |
+| 601 | 0.325 | [Hill-region Euler characteristic jumps by −sign det Hess Ω (= sign of Hessian discriminant) at L1–L5](#hill-topology-disc) | Theorem | true but ghost-blind/untested |
+| 602 | 0.325 | [A holomorphic family is determined by its diagonal (Calabi): literal for the theta series in z, not in s](#holomorphic-polarization-theta) | Theorem | true but ghost-blind/untested |
+| 603 | 0.325 | [Ihara zeta of the finite graph has its nontrivial poles on |u| = ℓ^{−½} (Hashimoto check at q = 37): a single-prime Satake bound, not the Riemann hypothesis for ζ or L(f,s)](#ihara-rh-is-local-ramanujan) | Theorem | true but ghost-blind/untested |
+| 604 | 0.325 | [L4/L5 are the j = 0 point of the cross-ratio for every mass ratio](#j0-l4) | Theorem | true but ghost-blind/untested |
+| 605 | 0.325 | [Virasoro Shapovalov Grams at levels 1–6 computed exactly; the Kac determinant, including its constant, verified to 1.6·10⁻³⁷](#kac-formula-verified) | Theorem | true but ghost-blind/untested |
+| 606 | 0.325 | [Kramers–Kronig/Poisson reconstruction of ξ′/ξ from a vertical line holds iff no zeros lie to its right: ghost-blind only right of all zeros, RH-local in the strip](#kk-ghost-blind-only-right-of-zeros) | Theorem | true but ghost-blind/untested |
+| 607 | 0.325 | [Kepler eccentricity as a degree of polarization (KS dictionary)](#ks-polarization-dictionary) | Theorem | true but ghost-blind/untested |
+| 608 | 0.325 | [What Lambda <= 0.19 would actually need](#lambda-019-gate) | Cited | true but ghost-blind/untested |
+| 609 | 0.325 | [Real-rooted exponential sums are restricted Lee–Yang polynomials](#lee-yang-multivariate-restriction) | Theorem | true but ghost-blind/untested |
+| 610 | 0.325 | [Legendre criterion for Poincare time changes of xp](#legendre-poincare-criterion) | Theorem | true but ghost-blind/untested |
+| 611 | 0.325 | [Connes’ isotropic-pair inequality has slack exactly Q(y,y) on the pole-plane complement; random test vectors never detect failure, only extremal ones do](#lemma21-slack-identity) | Theorem | true but ghost-blind/untested |
+| 612 | 0.325 | [Mellin = two-sided Laplace in E=−log x; log-convex for f≥0; Weil g not ≥0 pointwise](#mellin-partition-function) | Theorem | true but ghost-blind/untested |
+| 613 | 0.325 | [X(3),X(4),X(5) are the tetrahedron, octahedron, icosahedron; X(6) is the hexagonal torus](#modular-tower-platonic) | Theorem | true but ghost-blind/untested |
+| 614 | 0.325 | [The class group sees sign in one ℤ/2 at the real places: h⁺ = h if a unit of norm −1 exists, else 2h (40/40 real quadratic D < 230)](#narrow-wide-sign-at-infinity) | Theorem | true but ghost-blind/untested |
+| 615 | 0.325 | [The single negative direction of the pole-free ζ form lies in the pole plane (interlacing; G-norm fraction 0.969→0.99996)](#negdir-is-pole-plane-interlacing) | Theorem | true but ghost-blind/untested |
+| 616 | 0.325 | [A positive but non-coercive metric loses the zeros](#non-coercive-metric-loses-spectrum) | Theorem | true but ghost-blind/untested |
+| 617 | 0.325 | [Piston free energy of the window Weil operator](#piston-window-free-energy) | Theorem | true but ghost-blind/untested |
+| 618 | 0.325 | [A zero of ζ on Re s = 1 would make the Eisenstein Fourier coefficients blow up against a bounded Maass–Selberg side; the line formula only turns negative for zeros right of Re s = 1](#pnt-by-norm-blowup) | Theorem | true but ghost-blind/untested |
+| 619 | 0.325 | [Polymath15: the barrier is not the bottleneck for upper bounds on Lambda](#polymath15-barrier-not-bottleneck) | Cited | true but ghost-blind/untested |
+| 620 | 0.325 | [Rallis inner product formula: ⟨θ(f), θ(f)⟩ involves L(s_{m,n} + ½, π) with s_{m,n} = (m − n − ε₀)/2; for Mp₂ → O(3) that is L(1, π), the edge](#rallis-point-edge-or-boundary) | Cited | true but ghost-blind/untested |
+| 621 | 0.325 | [Routh’s 27 comes from the 30–60–90 halves of the Lagrange triangle](#routh27-from-right-triangles) | Theorem | true but ghost-blind/untested |
+| 622 | 0.325 | [Square-root factorization with a one-sided Wick flip](#sqrt-factorization-one-sided-wick) | Theorem | true but ghost-blind/untested |
+| 623 | 0.325 | [Lagrangian of the regularized xp (massive square-root form)](#srl-lagrangian) | Theorem | true but ghost-blind/untested |
+| 624 | 0.325 | [Stark and Gross–Stark: the leading coefficient at s = 0 is the archimedean or p-adic log of a unit](#stark-unit-leading-coefficient) | Cited | true but ghost-blind/untested |
+| 625 | 0.325 | [The gap-squared clock is hyperbolic arc length](#sundman-clock-hyperbolic-length) | Theorem | true but ghost-blind/untested |
+| 626 | 0.325 | [Kepler in Sundman time is linear: r″ = 2E r + k](#sundman-linear-kepler) | Theorem | true but ghost-blind/untested |
+| 627 | 0.325 | [Distortionless telegrapher line as a conformally symplectic flow](#telegrapher-distortionless) | Theorem | true but ghost-blind/untested |
+| 628 | 0.325 | [L_θ(u) = 2ζ(2u) is doubled in u, but its weight-½ functional-equation centre u = ¼ maps to ζ’s critical line](#theta-fe-centre-on-line) | Theorem | true but ghost-blind/untested |
+| 629 | 0.325 | [Translation-invariant Weil kernel: three-axis extension reduces to the (u,z) half-plane; boundary conjugate = Hilbert transform](#third-axis-is-half-plane) | Theorem | true but ghost-blind/untested |
+| 630 | 0.325 | [The unitary axis of the half-integral-weight Eisenstein series is S = s + k/4 = ½ + it: coefficients L(½ + 2it, χ_m), scattering ζ(1 + 4it)](#unitary-axis-s-eq-s-plus-k4) | Theorem | true but ghost-blind/untested |
+| 631 | 0.325 | [|disc| = exp(−2·E_log) at β=2; capacity = transfinite diameter](#vandermonde-log-gas) | Theorem | true but ghost-blind/untested |
+| 632 | 0.325 | [Window Weil form: simple even ground state, certified](#window-ground-state-simple-even) | Theorem | true but ghost-blind/untested |
+| 633 | 0.325 | [Witten index of the primon gas = 1/ζ(β): 1 as β→∞, 0 at Hagedorn β→1](#witten-index-inverse-zeta) | Theorem | true but ghost-blind/untested |
+| 634 | 0.325 | [Distortionless criterion for the xp family: constant divergence](#xp-distortionless-constant-divergence) | Theorem | true but ghost-blind/untested |
+| 635 | 0.325 | [Zeta zero collisions are double-root type only](#zeta-collisions-type-one) | Theorem | true but ghost-blind/untested |
+| 636 | 0.325 | [Cohesion (arena)](#cohesion) | Theorem | true but ghost-blind/untested |
+| 637 | 0.325 | [U_l, V_l, T_p preserve the fundamental discriminant D₀; c(|D₀|f²) = c(|D₀|)Σ μ(d)χ_{D₀}(d)d^{k−2}a(f/d) verified 84/84](#discriminant-family-invariance) | Theorem | true but ghost-blind/untested |
+| 638 | 0.325 | [EZ U_l, V_l, T_p identities (V_lV_l', commutations, Hecke eigenvalues σ_{2k−3}(p), a_p(ΔE₆), a_p(ΔE₁₀)) verified exactly](#ez-operators-verified) | Theorem | true but ghost-blind/untested |
+| 639 | 0.325 | [T_p ≡ F+V mod p; F: τ↦pτ (q↦q^p) raises horocycles, V: τ↦(τ+j)/p (p branches) lowers them](#frobenius-up-verschiebung-down) | Theorem | true but ghost-blind/untested |
+| 640 | 0.325 | [Finite-window prime comb: time distribution = torus law (checked to 2e−3)](#kronecker-weyl-comb-law) | Theorem | true but ghost-blind/untested |
+| 641 | 0.325 | [In the nested window family the Weil-form eigenvalues are non-increasing in the window length, so spectral flow equals the change in the negative count and every crossing is downward](#nested-window-family-morse-monotone) | Theorem | true but ghost-blind/untested |
+| 642 | 0.325 | [A nilpotent preserving the symmetric Weil form must lie in so(Q): N x = Q(u,x)v − Q(v,x)u with v isotropic, N³ = 0, of type III](#nilpotent-must-be-orthogonal) | Theorem | true but ghost-blind/untested |
+| 643 | 0.325 | [A definite form admits no nonzero skew nilpotent: the full Weil form has none, the pole-removed Lorentzian form does, and on the pole plane alone so(1,1) is the scaling boost](#no-isotropic-no-nilpotent) | Theorem | true but ghost-blind/untested |
+| 644 | 0.325 | [Jacobi parabolas D=3,4 are the cone points ρ, i (CM −3, −4); Hurwitz H(3)=1/3, H(4)=1/2 = orbifold weights; parabolas = Heegner divisors, horocycles = Fourier index n](#parabola-cone-points) | Theorem | true but ghost-blind/untested |
+| 645 | 0.325 | [Rung 1 (and L ≤ 1.6) claimed by certified computation in an Aug 2026 preprint (arXiv:2608.24827); not verified here](#rung1-covered-by-certified-preprint) | Cited | true but ghost-blind/untested |
+| 646 | 0.325 | [Imaginary quadratic trace form signature (1,1), det = D; norm form det |D|/4 (Brill sign)](#trace-norm-form-signature) | Theorem | true but ghost-blind/untested |
+| 647 | 0.325 | [U_l*U_l = 1 on Jacobi cusp forms; V_p*U_p = V_p (p=2 numerical)](#u-isometry) | Theorem | true but ghost-blind/untested |
+| 648 | 0.325 | [V♮ = V_Λ⁺ ⊕ V_Λ^{T,+}: 2²⁴ fixed points, 2¹² twisted ground states (weight 3/2); weight 2 = 98580 + 98304 = 196884](#vnat-flm-count) | Theorem | true but ghost-blind/untested |
+| 649 | 0.325 | [X0(p) mod p: F- and V-graph components meet at supersingular points (w_p swaps them); Eichler mass (p−1)/24](#x0p-components-meet) | Cited | true but ghost-blind/untested |
+| 650 | 0.325 | [GL1 control: weight-3/2 Eisenstein coefficients are class numbers, linear in an edge value, not squares of central values](#sqrt-lift-gl1-linear-not-square) | Theorem | true but ghost-blind/untested |
+| 651 | 0.325 | [Local-to-global failure](#local-global) | Theorem | true but ghost-blind/untested |
+| 652 | 0.325 | [OS reflection positivity fails in two senses: the archimedean Hankel part is ≤ 0 at every window, and for concentrated test functions the log 2 atom dominates](#os-failure-two-senses) | Theorem | true but ghost-blind/untested |
+| 653 | 0.325 | [Routh is a Krein collision, not a Kac-type null vector: the L4 energy form is non-degenerate at μ_R](#routh-not-kac-wall) | Theorem | true but ghost-blind/untested |
+| 654 | 0.325 | [Conformally symplectic flows have exact forms and no Hamiltonian](#conformal-symplectic-no-hamiltonian) | Theorem | true but ghost-blind/untested |
+| 655 | 0.325 | [Multi-channel first-order factors are bounded by the SOS fit](#gram-factor-channel-bound) | Theorem | true but ghost-blind/untested |
+| 656 | 0.325 | [Local stability constants do not glue](#local-hardy-constants-no-glue) | Theorem | true but ghost-blind/untested |
+| 657 | 0.325 | [Each Kubota–Leopoldt branch has exactly λ zeros in the p-adic disc, so no per-prime spacing statistic exists](#lp-branch-no-spacing) | Theorem | true but ghost-blind/untested |
+| 658 | 0.325 | [Modular-surface geodesic lengths are logs of quadratic units, not log p](#modular-lengths-quadratic-units) | Theorem | true but ghost-blind/untested |
+| 659 | 0.325 | [Moving the scattering axis onto ζ’s critical line makes the scattering phase identically 1, so every zero drops out](#unitary-axis-rescaling-trivializes-phase) | Theorem | true but ghost-blind/untested |
+| 660 | 0.325 | [Prime term = alpha-derivative of the conjugated Vladimirov symbol](#vladimirov-derivative-is-prime-term) | Theorem | true but ghost-blind/untested |
+| 661 | 0.325 | [The window Weil operator is not extensive](#window-nonextensivity) | Theorem | true but ghost-blind/untested |
+| 662 | 0.325 | [Pointwise Jacobi/Finsler curvature sign is not invariant for non-mechanical H](#flag-curvature-gauge-dependent) | Theorem | true but ghost-blind/untested |
+| 663 | 0.325 | [Archimedean Newton polygon of P(T) misreports true curves](#fq-newton-polygon-false-positives) | Theorem | true but ghost-blind/untested |
+| 664 | 0.325 | [A Gram matrix b(|D₁|)·conj b(|D₂|) is rank 1 and positive by construction](#gram-ab-rank-one) | Theorem | true but ghost-blind/untested |
+| 665 | 0.325 | [Jacobi conformal factor: every place is flat in the critical strip; curvature only at zeros](#jacobi-factor-flat-every-place) | Theorem | true but ghost-blind/untested |
+| 666 | 0.325 | [A square-root operator G₀² = L₀ − c/24 is necessary but not sufficient for positivity](#ramond-g0-square) | Theorem | true but ghost-blind/untested |
+| 667 | 0.325 | [Iwasawa dictionary: class-group size ↔ inverse p-adic size of L-values and T ↔ (1+p)^s − 1; substituting s = |X_n| into p^{−s} gives a doubly exponentially small number, not an L-value](#reverse-substitution-dictionary) | Theorem | true but ghost-blind/untested |
+| 668 | 0.325 | [No time change carries the geodesic lengths 2 log ε_D to the prime lengths k log p (Livšic; multipliers are conjugacy invariants)](#sundman-livsic-obstruction) | Theorem | true but ghost-blind/untested |
+| 669 | 0.325 | [Two-component Lee–Yang can fail](#two-component-lee-yang-can-fail) | Theorem | true but ghost-blind/untested |
+| 670 | 0.325 | [For GL₁ (class field theory) the local monodromy N is 0 at every place, so the nilpotent on the Weil form is auxiliary, not arithmetic monodromy](#gl1-monodromy-zero) | Theorem | true but ghost-blind/untested |
+| 671 | 0.325 | [Serre intersection positivity (2026 preprint) is local, not a global Hodge index](#serre-positivity-local-not-hodge) | Cited | true but ghost-blind/untested |
+| 672 | 0.325 | [λ*(W) nonincreasing; RH ⇔ λ*≥0 ∀W; inf λ* = 0, so no uniform margin; renormalized LW quantity presupposes positivity (circular)](#box-to-limit-trivial-no-uniform-gap) | Theorem | true but ghost-blind/untested |
+| 673 | 0.325 | [Sign of a prime step is the sign of the prime-gap excess](#prime-step-sign-gap-excess) | Theorem | true but ghost-blind/untested |
+| 674 | 0.325 | [A covariance of W would be a weight, not a normalized state; that positivity is not established](#positive-weight-not-normalized-state) | Theorem | true but ghost-blind/untested |
+| 675 | 0.324 | [CR3BP Hessian, Morse index and Hill pinch, as a dictionary for the Hasse / Σ valve](#cr3bp-zvc-hasse-dictionary) | Analogy | background |
+| 676 | 0.324 | [Cusp-form vanishing is not the geometric cusp; a residual Spec T collision is a pinch-twin of Σ](#cuspform-residual-cong-as-pinch) | Analogy | background |
+| 677 | 0.324 | [Kramers–Kronig relations](#kramers-kronig) | Analogy | background |
+| 678 | 0.324 | [No-ghost theorem ↔ Gupta–Bleuler quotient of the window form (Analogy)](#no-ghost-gupta-bleuler-analogy) | Analogy | background |
+| 679 | 0.324 | [The Shapovalov Gram per level as an analogue of the Weil form per window](#shapovalov-weil-window) | Analogy | background |
+| 680 | 0.324 | [Mazur–Wiles squeezes equality from an exact global count and one-sided local bounds; Weil positivity lacks the exact global count](#mazur-wiles-squeeze-vs-positivity) | Analogy | background |
+| 681 | 0.324 | [Gribov ambiguity](#gribov) | Analogy | background |
+| 682 | 0.324 | [Reading: the p-adic side as independent counts (action–angle-like) and the archimedean side as a repelling spectrum (KAM/chaotic-like)](#integrable-vs-kam-reading) | Analogy | background |
+| 683 | 0.324 | [691 glues the Eisenstein and cusp pieces over ℤ₍₆₉₁₎ while they stay Petersson-orthogonal over ℝ; congruence primes 691…657931 checked for k = 12…26](#six91-finite-place-glue) | Analogy | background |
+| 684 | 0.324 | [Primes as removed loops: each prime block is k-fold windings of one orbit, but ζ’s Weil form has no p–q cross terms](#primes-as-knots-no-linking-in-zeta) | Analogy | background |
+| 685 | 0.324 | [Equivalence-principle gap across a collision: TAA Lemma 157 gap 1 − 2β is 0 before and at the merge and opens ∝ (t* − t)^{1/2} after; RH read as ζ on the EP side, at its edge (at infinity)](#ep-gap-across-collision) | Analogy | background |
+| 686 | 0.324 | [Weil positivity is real-time (Bochner, unitary group) positivity, not Euclidean (Osterwalder–Schrader, contraction semigroup) positivity](#weil-realtime-not-euclidean) | Analogy | background |
+| 687 | 0.324 | [Robertson–Schrödinger, BPS, Hodge index, and no-ghost are related architectures, not one identity](#quadratic-architectures-related) | Analogy | background |
+| 688 | 0.307 | [Metaplectic / Kubota cocycle](#metaplectic) | Theorem | true but ghost-blind/untested |
+| 689 | 0.307 | [Half Tate twist ℚ(½)](#half-tate-twist) | Theorem | true but ghost-blind/untested |
+| 690 | 0.307 | [Functional equation ξ(s) = ξ(1 − s)](#functional-equation) | Theorem | true but ghost-blind/untested |
+| 691 | 0.307 | [Bost–Connes KMS states](#kms-bost-connes) | Cited | true but ghost-blind/untested |
+| 692 | 0.307 | [Archimedean place and Γ_ℝ factor](#archimedean-place) | Theorem | true but ghost-blind/untested |
+| 693 | 0.307 | [Gauss-sum unitarity |g| = √p (RH for a CM curve as a unitarity identity)](#gauss-sum-unitarity) | Theorem | true but ghost-blind/untested |
+| 694 | 0.307 | [Herbrand–Ribet: ω¹⁻ᵏ eigenspace of Cl(ℚ(μ_p)) and p | B_k](#herbrand-ribet) | Cited | true but ghost-blind/untested |
+| 695 | 0.307 | [Mazur–Wiles main conjecture ("Euler characteristic = L-value")](#mazur-wiles) | Cited | true but ghost-blind/untested |
+| 696 | 0.307 | [E₂ anomaly (E₂* = E₂ − 3/(πy))](#e2-anomaly) | Theorem | true but ghost-blind/untested |
+| 697 | 0.307 | [Half turn = sign flip (S² = −I, root number, Hardy Z sign changes)](#half-turn-sign-flip) | Theorem | true but ghost-blind/untested |
+| 698 | 0.307 | [Hecke on S³ (Lubotzky–Phillips–Sarnak): for p ≡ 1 mod 4 the p+1 norm-p quaternions act on S³/±1 and on PSL/PGL(2,F_q) Cayley graphs; constant function eigenvalue p+1 (= ζ frame √p + 1/√p after normalizing), all other eigenvalues |λ| ≤ 2√p (Ramanujan via Deligne/Eichler) = elliptic frames; unique factorization ⇒ (p+1)-regular tree](#lps-hecke-on-s3) | Theorem | true but ghost-blind/untested |
+| 699 | 0.307 | [Moser/Souriau: bound Kepler orbits at fixed E < 0 form S²×S² with coordinates j± = (L ± A′)/2, |j₊| = |j₋| = 1/(2√(−2E)); H²(S²×S²) intersection form [[0,1],[1,0]] (signature (1,1): diagonal +2, anti-diagonal −2 — Hodge-index shape); perturbations of a compact orbit average to slow precession of A at fixed |A|, unbound orbits only deflect](#moser-orbit-space-s2xs2) | Theorem | true but ghost-blind/untested |
+| 700 | 0.307 | [Nash–Kuiper flexibility / Onsager threshold](#nash-kuiper-onsager) | Cited | true but ghost-blind/untested |
+| 701 | 0.307 | [Apsides = zeros of the dual-minus-adjoint gap form: for v′ = Xv, X ∈ sl₂(ℝ), r·v = ½⟨(Xᵀ − X^∨)v, v⟩; apsides are the null lines of the squeeze part; circle ⇔ gap ≡ 0 ⇔ dual = Euclidean adjoint (τ = i)](#apsides-gap-form) | Theorem | true but ghost-blind/untested |
+| 702 | 0.307 | [Cup product / Poincaré duality pairing](#cup-product) | Theorem | true but ghost-blind/untested |
+| 703 | 0.307 | [Cusp forms & Petersson positivity](#cusp-forms-petersson) | Theorem | true but ghost-blind/untested |
+| 704 | 0.307 | [Hecke operators](#hecke) | Theorem | true but ghost-blind/untested |
+| 705 | 0.307 | [PV ↔ TS: dT∧dS = dP∧dV (Maxwell as one area identity); work = heat = enclosed area; PdV, TdS two primitives of one exact 2-form](#pv-ts-symplectomorphism) | Theorem | true but ghost-blind/untested |
+| 706 | 0.307 | [Compact vs non-compact real forms of so(4,ℂ) = sl₂ℂ ⊕ sl₂ℂ: so(4) = su(2)⊕su(2) (Killing (0,6), S³), so(3,1) = sl(2,ℂ)_ℝ ((3,3), H³/Lorentz), so(2,2) = sl(2,ℝ)⊕sl(2,ℝ) ((4,2)); SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ by x ↦ g x h⁻¹ is the F/V animation's own G×G, the non-compact twin of SO(4) on S³; rotation = elliptic, boost = hyperbolic (ζ: φ = ½ log p), null rotation = parabolic](#real-forms-compact-vs-boost) | Theorem | true but ghost-blind/untested |
+| 707 | 0.307 | [Connes–Consani 2021: Weil positivity at the archimedean place (support [2^{−1/2}, 2^{1/2}])](#cc21-archimedean-positivity) | Cited | true but ghost-blind/untested |
+| 708 | 0.307 | [Euler characteristic χ(D) = dim H⁰ − dim H¹ (Connes–Consani RR)](#euler-char-chi) | Theorem | true but ghost-blind/untested |
+| 709 | 0.307 | [Ramanujan congruence τ(n) ≡ σ₁₁(n) mod 691 (Δ ≡ E₁₂)](#ramanujan-691) | Cited | true but ghost-blind/untested |
+| 710 | 0.307 | [What each 𝔽₁ approach builds in place of Spec ℤ × Spec ℤ](#f1-square-constructions) | Cited | true but ghost-blind/untested |
+| 711 | 0.307 | [The n! bridge: n! carries every place (Γ/Stirling at ∞; v_p(n!), Morita's Γ_p and Gauss sums at p), tied by the product formula; each place is ghost-blind, so what is missing is a positivity coupling all places at once](#n-factorial-bridge-all-places) | Theorem | true but ghost-blind/untested |
+| 712 | 0.307 | [Self-dual / anti-self-dual split as push / shear](#self-duality-push-shear) | Theorem | true but ghost-blind/untested |
+| 713 | 0.307 | [Standing frame of the F/V frame geometry: SO(2,2)₀ = (SL₂ℝ×SL₂ℝ)/±1 on AdS₃ = SL₂ℝ (x ↦ g x h⁻¹), compact dual SO(4) on S³ — the unique candidate meeting seven criteria read off the animation (all frame types; trace-preserving conjugation; transitive sweep through t = ±2; real traces only; real form of so(4,ℂ); all Satake frames of ζ and cusp forms; minimal)](#standing-frame-so22-ads3) | Theorem | true but ghost-blind/untested |
+| 714 | 0.307 | [Tate count / Picard number (ghost-blind)](#tate-count) | Theorem | true but ghost-blind/untested |
+| 715 | 0.307 | [Thermodynamic geometry: Ruppeiner/Weinhold metrics, contact structure (Mrugała), and the compatible J that a 2-dim state surface always has](#thermo-geometry-ruppeiner-contact) | Theorem | true but ghost-blind/untested |
+| 716 | 0.307 | [The Weil form is the Jacobi integral of the scaling-generator flow D v̇ = Z v](#weil-pencil-jacobi-integral) | Theorem | true but ghost-blind/untested |
+| 717 | 0.307 | [Consani: archimedean cohomology, N at infinity, Γ-factor as a characteristic polynomial](#consani-archimedean-cohomology) | Cited | true but ghost-blind/untested |
+| 718 | 0.307 | [λ₂ is monotone under nested windows (Cauchy interlacing)](#lambda2-monotone-nested-windows) | Theorem | true but ghost-blind/untested |
+| 719 | 0.307 | [The Hodge star squares to the fermion parity in even dimension](#hodge-star-square-fermion-parity) | Theorem | true but ghost-blind/untested |
+| 720 | 0.307 | [The literal Osterwalder–Schrader form ⟨Θf, f⟩ = W(x+y) is about half negative for ζ, ζ pole-removed, Davenport–Heilbronn and 11a alike](#os-form-half-negative) | Theorem | true but ghost-blind/untested |
+| 721 | 0.307 | [Window thermodynamics cannot see where zero is](#thermo-shift-invariance) | Theorem | true but ghost-blind/untested |
+| 722 | 0.307 | [Mechanical stability of the window is not positivity](#window-mechanical-stability) | Theorem | true but ghost-blind/untested |
+| 723 | 0.307 | [Max-plus Weil functional is dominated by the diagonal, hence ghost-blind](#maxplus-weil-diagonal-dominance) | Theorem | true but ghost-blind/untested |
+| 724 | 0.307 | [Non-normal residue ||P - P*|| is a gauge quantity and a collision detector](#riesz-nonnormal-residue-gauge) | Theorem | true but ghost-blind/untested |
+| 725 | 0.307 | [Primary sign rule for a_p of y² = x³ − x](#primary-sign-rule) | Numerical | true but ghost-blind/untested |
+| 726 | 0.307 | [Maass–Selberg relations](#maass-selberg) | Numerical | true but ghost-blind/untested |
+| 727 | 0.307 | [Pole-plane coherency of the Weil form: a necessary 2×2 shadow (downgraded)](#pole-plane-polarization) | Numerical | true but ghost-blind/untested |
+| 728 | 0.307 | [Archimedean thresholds a*](#arch-threshold) | Numerical | true but ghost-blind/untested |
+| 729 | 0.307 | [Hofstadter gap labels for F/V fluxes](#gap-labelling-fv-check) | Numerical | true but ghost-blind/untested |
+| 730 | 0.307 | [Hofstadter gap widths decay exponentially in |n|, not n^2](#gap-width-vs-label) | Numerical | true but ghost-blind/untested |
+| 731 | 0.307 | [Slack ledger: record close pairs follow z ~ C/d (exponent 1.0±0.15, C ~ π²/(2 log p log q), no sharp constant); same-branch record jumps are exactly continued-fraction convergent denominators of log q/log p; slack left in [0,Z] is d_min(Z)²/8 ≈ C²/8Z²](#slack-ledger-cf) | Numerical | true but ghost-blind/untested |
+| 732 | 0.307 | [Negative eigenvalues are born out of a near-null floor of the window Gram that every system, including a theorem-positive 𝔽_q control, reaches by L ≈ 1.1–2.4](#birth-from-near-null-floor) | Numerical | true but ghost-blind/untested |
+| 733 | 0.307 | [Gap widths approaching the wall](#gap-width-wall-exponent) | Numerical | true but ghost-blind/untested |
+| 734 | 0.307 | [The boundary isotropic line converges to the pole character e^{x/2} with |t| ≈ L e^{−L/2}, identically across ζ, Davenport–Heilbronn and 11a: blind to zeros](#isotropic-line-kinematic) | Numerical | true but ghost-blind/untested |
+| 735 | 0.307 | [Gaussian (imaginary-shift, Husimi, heat) filters are ghost-blind](#gaussian-filter-ghost-blind) | Numerical | true but ghost-blind/untested |
+| 736 | 0.307 | [Edge-prime repair of the pole plane: refuted](#pole-plane-repair-negative) | Numerical | true but ghost-blind/untested |
+| 737 | 0.307 | [Legendre-symbol linking matrix of primes ≡ 1 mod 4: spectrally random, indefinite, uncorrelated with Weil positivity](#arithmetic-topology-linking-matrix) | Numerical | true but ghost-blind/untested |
+| 738 | 0.307 | [Iterated log-concavity is ghost- and DH-blind](#coefficient-ilc-ghost-blind) | Numerical | true but ghost-blind/untested |
+| 739 | 0.307 | [The Fisher curvature operator on bivectors is ghost-blind](#fisher-curvature-operator-ghost-blind) | Numerical | true but ghost-blind/untested |
+| 740 | 0.307 | [Monotone quantities along the de Bruijn–Newman flow: kernel-side entropies are smooth through t = 0; zero-side energy relaxes](#dbn-monotone-functionals) | Numerical | true but ghost-blind/untested |
+| 741 | 0.307 | [The Raychaudhuri-type curvature κ = −λ̈/λ of the lowest eigenvalue is negative before the floor for ζ and equally for Davenport–Heilbronn, 11a and χ₋₄](#raychaudhuri-curvature-no-discrimination) | Numerical | true but ghost-blind/untested |
+| 742 | 0.307 | [E0 is dense in L² and not closed; on one window the kernel is closed of codimension 2](#e0-dense-window-kernel-closed) | Theorem | true but ghost-blind/untested |
+| 743 | 0.307 | [After the counterterm, the net prime contribution has the sign of the autocorrelation](#signed-prime-autocorrelation) | Theorem | true but ghost-blind/untested |
+| 744 | 0.307 | [Window Weil form as nonnegative spring energy minus a counterterm](#spring-energy-counterterm-split) | Theorem | true but ghost-blind/untested |
+| 745 | 0.307 | [Finite bordered inertia: index 0, or index 1 with q at most 0](#bordered-inertia-moment-criterion) | Theorem | true but ghost-blind/untested |
+| 746 | 0.307 | [Under trace-class assumptions the cutoff splits into two Hankel pieces minus a remainder](#connes-cutoff-pair-two-hankel) | Theorem | true but ghost-blind/untested |
+| 747 | 0.307 | [Regularity of a local ring is not a global principal generator, and not a sign](#iwasawa-regularity-class) | Theorem | true but ghost-blind/untested |
+| 748 | 0.307 | [A skew pairing on H1 becomes symmetric on the product, with both signs](#kunneth-skew-to-symmetric) | Theorem | true but ghost-blind/untested |
+| 749 | 0.307 | [Each local term is a product-state covariance, and that covariance is subtracted](#local-product-state-covariance) | Theorem | true but ghost-blind/untested |
+| 750 | 0.307 | [At width 2 the near-null cluster is unresolved across bases](#near-null-cluster-a2) | Numerical | true but ghost-blind/untested |
+| 751 | 0.307 | [The pole term is 2 ev+ ev-, equally 2(C squared minus S squared)](#pole-form-p-2recpluscminus) | Theorem | true but ghost-blind/untested |
+| 752 | 0.307 | [At width 1 the second candidate fails by a prime-2 kink of slope 0.06191](#prime-edge-kink-orbit) | Theorem | true but ghost-blind/untested |
+| 753 | 0.307 | [The counterterm adds local mean statistics; it is not a global idele coupling](#product-formula-defect-mean) | Theorem | true but ghost-blind/untested |
+| 754 | 0.307 | [Rankin-Selberg unfolding produces square coefficients, not the Weil form](#rankin-selberg-square-calibration) | Cited | true but ghost-blind/untested |
+| 755 | 0.307 | [Semilocal trace: the bulk symbol is a scattering time delay, not a Hodge theorem](#semilocal-scattering-phase-time-delay) | Theorem | true but ghost-blind/untested |
+| 756 | 0.307 | [The semilocal pairing uses a twisted involution, not the naive star of chi f](#twisted-star-convolution) | Theorem | true but ghost-blind/untested |
+| 757 | 0.307 | [Exact window ledger: the Weil form is the pole term plus a bulk form](#window-energy-ledger) | Theorem | true but ghost-blind/untested |
+| 758 | 0.300 | [Criticality: genuine L-functions are gapless in three directions, so any proof of positivity must be margin-free](#genuine-l-criticality) | Heuristic | sharp but interpretive |
+| 759 | 0.300 | [Connes–Consani pole conditions / dual-system cokernel = quotient by the Hodge-index (pole) plane; DH negatives survive it](#dual-system-quotient-is-pole-plane) | Heuristic | sharp but interpretive |
+| 760 | 0.300 | [baseline slot 4 (asymptotic condition at ∞) is the same for ζ and DH up to parity and conductor; any separation of ζ from DH must come from slot 2 (interior: Euler product / positivity)](#slot-mapping) | Heuristic | sharp but interpretive |
+| 761 | 0.292 | [Open target: a positive Fock-type space and a zero-free G_L with Z_L = G_L*G_L for every window](#fock-gram-realization-target) | Open | true but ghost-blind/untested |
+| 762 | 0.292 | [Where the Krein grading lives: the supporting functional of the Weil cone at ζ](#grading-supporting-functional) | Conjecture | true but ghost-blind/untested |
+| 763 | 0.292 | [Orientation is not positivity: what is missing is a positive invariant form (Rosati over F_q; for ζ, Deninger’s conjectured cohomology)](#missing-positive-invariant-form) | Open | true but ghost-blind/untested |
+| 764 | 0.292 | [Perelman template: forced monotones of the local flow (|a_eff|, zero log-energy S with Ṡ = 2Σ(∂S)²); a monotone functional for the full product is Open; Galois/curvature link is Analogy](#perelman-template-dbn) | Open | true but ghost-blind/untested |
+| 765 | 0.292 | [Sharpened gap: a positivity linear in the coefficients c_m(S) off the unitary axis (the u = 2S − ½ direction); positivity in the discriminant variable exists but only averages](#bypass-u-direction-gap) | Open | true but ghost-blind/untested |
+| 766 | 0.292 | [Conjecture-level target: a Hopf-type fibration of Spec ℤ (a global Kustaanheimo–Stiefel map) as a Deninger triple with a compact circle/Bohr-torus flow](#hopf-fibration-spec-z) | Conjecture | true but ghost-blind/untested |
+| 767 | 0.292 | [Tropical/semiring Hodge index on Spec Z x Spec Z as the positivity source (tested, downgraded)](#tropical-hodge-index-conjecture) | Conjecture | true but ghost-blind/untested |
+| 768 | 0.292 | [One doubling per rung: no tested theta lift moves Maass–Selberg positivity onto ζ’s line; the halving appears only as a linear coefficient or as its square](#one-doubling-per-rung) | Conjecture | true but ghost-blind/untested |
+| 769 | 0.292 | [No tested arithmetic family turns positive at a collinear-to-triangular type crossing](#no-neg-to-pos-crossing) | Open | true but ghost-blind/untested |
+| 770 | 0.271 | [Zero-margin heuristic: Hodge-index positivity for Spec Z × Spec Z must come from an identity (Weil form = ‖Qg‖², or ⋆ with ⋆²=+1), not an estimate with slack](#identity-not-estimate) | Heuristic | background |
+| 771 | 0.271 | [The edge r = 1 as a boundary; ∂∂ = 0 ⇔ d² = 0 as the root of exactness; what survives at the edge as a cycle, i.e. a cohomology class (Deninger)](#edge-boundary-cycle) | Heuristic | background |
+| 772 | 0.271 | [RH needs a Kähler package (L, ∂̄, ⋆) for Spec Z × Spec Z under which the trace-free part is a sum-of-squares deficit against the trace push, balanced at zero margin](#kahler-package-one-liner) | Heuristic | background |
+| 773 | 0.271 | [Branch selection by arithmetic](#phase-branch-selection) | Heuristic | background |
+| 774 | 0.271 | [Bost–Connes: class-field-theory symmetry is visible only for β > 1 (extremal KMS states); the Weil form lives at β = ½ in the unique-KMS phase, where that symmetry is invisible](#bost-connes-phase-mismatch) | Heuristic | background |
+| 775 | 0.271 | [Margins close doubly exponentially for ζ itself (Zhu; Schur complement), so no uniform gap exists: positivity of the complement must come from an identity (a norm or sum of squares by construction), not from domination](#margins-force-identity) | Heuristic | background |
+| 776 | 0.271 | [The adele class space can host the KK response, but no non-circular positivity source was found](#adelic-kk-no-noncircular-mechanism) | Heuristic | background |
+| 777 | 0.271 | [Ferromagnetic coupling acts like positive de Bruijn time: e^{Jσ₁σ₂} contains e^{(J/2)S²}, forward heat flow in the total spin](#coupling-is-heat-time) | Heuristic | background |
+| 778 | 0.271 | [Reading: the Shimura/Kohnen image of H_6 is E₁₂, so the 691 denominators are E₁₂'s 65520/691 (image not computed)](#h6-shimura-image-e12) | Heuristic | background |
+| 779 | 0.271 | [RR/θ (Analogy 2.0), BC free energy (Analogy 2.4), log-energy (Restatement 2.0, circular), log det/prolate (3.2 live via Sonin)](#candidates-abcd) | Heuristic | background |
+| 780 | 0.271 | [Over 𝔽_q the pole set is periodic, and the pole-removed window form has a negative count growing with resolution: the single negative carried by the pole is a feature of ℚ](#fq-periodic-poles-many-negatives) | Heuristic | background |
+| 781 | 0.271 | [Uncountable labels, separable completion; window effective dimension 2LT/π; N(T*) = e^{2L}(2L−1)+7/8](#index-vs-dimension) | Heuristic | background |
+| 782 | 0.271 | [Thermo ledger: literal = window F/Legendre, pole conjugacy, Szegő, CC archimedean trace; nearly = semilocal edges, Lévy kernel; rest circular/analogy/dead](#thermo-ledger) | Heuristic | background |
+| 783 | 0.271 | [The Weil window form is marginal (lowest eigenvalue → 0⁺), unlike a negatively curved index form, which is coercive](#weil-form-marginal-not-coercive) | Heuristic | background |
+| 784 | 0.271 | [μ_R lies in ℚ(√69), with minimal polynomial discriminant 621 = 25² − 4 (numerology, no mechanism)](#routh-q-sqrt69-numerology) | Heuristic | background |
+| 785 | 0.271 | [12 = 3·2² from the split of the Lagrange points is numerology; the closest literal twelve is SL₂(ℤ)^ab = ℤ/12](#twelve-numerology) | Heuristic | background |
+| 786 | 0.267 | [Half-density normalization |x|^{½}](#half-density) | Theorem | true but ghost-blind/untested |
+| 787 | 0.267 | [Theta inversion θ(1/t) = √t θ(t)](#theta-inversion) | Theorem | true but ghost-blind/untested |
+| 788 | 0.267 | [The prime 2 as the wild place](#prime-two-wild) | Theorem | true but ghost-blind/untested |
+| 789 | 0.267 | [The F/V sweep as an orbit sequence: invariant conics S_t = [[1,−t/2],[−t/2,1]] of g_t keep their apsidal axes at 45°/135° for all t; e_H² = 2t/(t+2); after Bohlin z², Kepler e_K = t/2 = (F+V)/2√q, F/√q = e_K + i b/a; circle → ellipse → parabola (t = 2, F = V, escape) → hyperbola; binding margin 1 − t/2 = 1 − e_K](#apsidal-sweep-eccentricity) | Theorem | true but ghost-blind/untested |
+| 790 | 0.267 | [De Bruijn–Newman flow at one prime = the F/V sweep at fixed determinant: a_eff(t) = a e^{−t log²p}](#dbn-local-flow-fv-sweep) | Theorem | true but ghost-blind/untested |
+| 791 | 0.267 | [Eisenstein constant term & scattering φ(s)](#eisenstein-ct) | Theorem | true but ghost-blind/untested |
+| 792 | 0.267 | [Four squares as the quaternion lift of ζ: Σ r₄(n) n^{−s} = 8(1 − 4^{1−s}) ζ(s) ζ(s−1); r₄(p)/8 = p + 1 ⇒ normalized t = (p+1)/√p = 2cosh(½ log p) — ζ's hyperbolic (boost) frames are the trivial/Eisenstein part; cusp parts appear only for other definite quaternion lattices (B ramified at 11, ∞: θ_O = E + (8/5) f₁₁ₐ₁)](#four-squares-eisenstein-lift) | Theorem | true but ghost-blind/untested |
+| 793 | 0.267 | [Gauss half: quadratic character, (p ± 1)/2 and the (p + 1)/4 square-root formula](#gauss-half) | Theorem | true but ghost-blind/untested |
+| 794 | 0.267 | [Hilbert reciprocity at 2: the odd halves become sign bits](#hilbert-reciprocity-at-2) | Cited | true but ghost-blind/untested |
+| 795 | 0.267 | [Scattering unitarity |φ| = 1](#scattering-phi) | Theorem | true but ghost-blind/untested |
+| 796 | 0.267 | [Fundamental domain of SL₂(ℤ): elliptic (CM points), parabolic (cusp), hyperbolic (closed geodesics)](#fundamental-domain-three-phases) | Theorem | true but ghost-blind/untested |
+| 797 | 0.267 | [Kepler: LRL vector closes so(4) = su(2) ⊕ su(2) for E < 0, so(3,1) for E > 0, e(3) at E = 0](#kepler-so4-contraction) | Theorem | true but ghost-blind/untested |
+| 798 | 0.267 | [Kustaanheimo–Stiefel quaternion lift: x = q i q̄ (Hopf map S³ → S², |x| = |q|²) with the bilinear U(1) constraint turns 3D Kepler at energy E into the 4D isotropic oscillator with ω² = −E/2; E < 0 real ω (rotation), E > 0 inverted oscillator (boost) — the Wick rotation; the commutant of the constraint in u(4) is u(2)⊕u(2) ⊃ su(2)⊕su(2) = so(4)](#ks-quaternion-lift) | Theorem | true but ghost-blind/untested |
+| 799 | 0.267 | [Legendre ↔ Fourier: stationary phase, half-density amplitude, Maslov phase](#maslov-legendre-fourier) | Theorem | true but ghost-blind/untested |
+| 800 | 0.267 | [Half representations of SL(2,F_p): p+4 irreps of dims 1, p, p+1 ((p−3)/2 of them), p−1 ((p−1)/2), and two each of dims (p+1)/2 and (p−1)/2 — the induced rep from the quadratic (Legendre) character splits in half, with unipotent character values (1 ± √(εp))/2 and (−1 ± √(εp))/2, ε = (−1/p) (quadratic Gauss sum); needs F_p a field — the precise place where (p ± 1)/2 separates primes from odd composites](#sl2fp-half-representations) | Theorem | true but ghost-blind/untested |
+| 801 | 0.267 | [Yoshida window positivity](#yoshida) | Cited | true but ghost-blind/untested |
+| 802 | 0.267 | [Λ = 0 exactly for every finite product of ≥ 2 strictly Hasse degree-2 factors at distinct primes; (a) infinitely many non-real zeros for all t < 0 (Kronecker close pairs + local Rouché on F + sF″; Bohr + Hurwitz), (b) real-rooted for t ≥ 0 (Pólya 1927, Laguerre–Pólya class)](#incommensurable-lehmer-zero) | Theorem | true but ghost-blind/untested |
+| 803 | 0.267 | [One cusp, three readings: orbifold, Tate curve, archimedean monodromy](#one-cusp-three-readings) | Theorem | true but ghost-blind/untested |
+| 804 | 0.267 | [Push–shear balance: ∫(τ/2)² − ∫|H°|² = ½B with B = ∫(Δu)² − ∫|Hess u|² = ∮[κ(u_n²+u_s²) − 2u_s∂_s u_n] (corner terms on polygons); 0 on ℝ², ½∫K|∇u|² on closed surfaces (Bochner)](#push-shear-balance) | Theorem | true but ghost-blind/untested |
+| 805 | 0.267 | [Quartet capacity: which real Lie algebras carry an off-line quartet {±δ ± iγ}: none in so(4) or in sl₂⊕sl₂ on ℝ²⊕ℝ²; yes in so(2,2) on ℝ²⊗ℝ² (a_i + b_j), sp(4,ℝ) ≅ so(3,2) and sl₂ℂ on ℂ²; Krein collision in sp(4,ℝ): only opposite signatures leave the axis — the real form of the frame group does not decide ghosts](#quartet-capacity-sp4) | Theorem | true but ghost-blind/untested |
+| 806 | 0.267 | [Hill topology of the Weil form sees only signature events, not Routh quartets](#weil-hill-topology-signature-only) | Theorem | true but ghost-blind/untested |
+| 807 | 0.267 | [ξ is the global product over places: Λ(s) = π^{−s/2}Γ(s/2)·ζ(s) = ∏_v ζ_v(s); the archimedean factor is the partition function of a continuum, each Euler factor (1 − p^{−s})^{−1} a one-mode boson at energy log p; the functional equation comes from the adelic Poisson summation and the product formula (Tate 1950)](#xi-global-product-over-places) | Cited | true but ghost-blind/untested |
+| 808 | 0.267 | [CM case: the Hasse triangle is Fermat's two-squares triangle](#cm-gaussian-hasse-triangle) | Theorem | true but ghost-blind/untested |
+| 809 | 0.267 | [Split/inert duality for a CM curve (32a1)](#cm-split-inert-duality) | Theorem | true but ghost-blind/untested |
+| 810 | 0.267 | [Cone deficit along the local dBN flow: δ(t) = 2π − 2arccos(|a|e^{−t log²p}/2√p) falls to 180° forward and reaches the cusp (2π) at t = Λ_p; past the cusp it is a boost of length log(F/V)](#dbn-deficit-time-to-cusp) | Theorem | true but ghost-blind/untested |
+| 811 | 0.267 | [Product obstruction: flow(H₁H₂) − flow(H₁)flow(H₂) = 2e^{t(L₁²+L₂²)}[(e^{2tL₁L₂}−1)cos(L₁+L₂)z + (e^{−2tL₁L₂}−1)cos(L₁−L₂)z]; Λ_global ≠ max Λ_p](#dbn-product-cross-term) | Theorem | true but ghost-blind/untested |
+| 812 | 0.267 | [Gauss sum as canonical √(±p)](#gauss-sum-canonical-root) | Theorem | true but ghost-blind/untested |
+| 813 | 0.267 | [Johnson–Lippmann operator: a spin-dependent Laplace–Runge–Lenz operator commuting with the Dirac–Coulomb Hamiltonian](#johnson-lippmann-supercharge) | Cited | true but ghost-blind/untested |
+| 814 | 0.267 | [Kaluza–Klein circles, the infinite torus, and adelic solenoids](#kk-circle-and-adelic-solenoids) | Theorem | true but ghost-blind/untested |
+| 815 | 0.267 | [The 1/24 identities (1/24 = −ζ(−1)/2, η²⁴ = Δ, Θ_Leech) and the verdict: in Weil’s form the 1/24 acts only through the weight](#one-twentyfourth-identities) | Theorem | true but ghost-blind/untested |
+| 816 | 0.267 | [Weight ladder (modular weights)](#weight-ladder) | Theorem | true but ghost-blind/untested |
+| 817 | 0.267 | [On E×E over ℂ: ⋆² = 1, ⋆ = γ₅ on spinors (up to sign), Λ⁺ = ℝω ⊕ Re Λ^{2,0}, primitive (1,1) = ASD; Hodge index = only SD (1,1) class is ω; τ = (1/12π²)∫(|W⁺|² − |W⁻|²) = 0, blind to RH](#chirality-star-gamma5-hodge-index) | Theorem | true but ghost-blind/untested |
+| 818 | 0.267 | [Bohlin eccentricity under the local flow: e_K(t) = e^{−(t−Λ_p) log²p}; elliptic → parabolic (t = Λ_p) → hyperbolic, read backward](#dbn-bohlin-decay) | Theorem | true but ghost-blind/untested |
+| 819 | 0.267 | [Log-gas entropy of the zeros: dS/dt = ½ Re Σ ż² (Perelman-type sum of squares)](#dbn-loggas-entropy-production) | Theorem | true but ghost-blind/untested |
+| 820 | 0.267 | [η chain: weight-½ half-density, D log η = E₂/24, E₂* curvature = c₁(ω) (half-volume); half-mass fits only as the L179 equipotential](#eta-chain) | Theorem | true but ghost-blind/untested |
+| 821 | 0.267 | [Euler factors as passive but lossy sections](#euler-factor-passive-lossy) | Theorem | true but ghost-blind/untested |
+| 822 | 0.267 | [(τ/2)²−|H°|²=det H=½div(Δu∇u−H∇u), det H dx∧dy=d(u_x du_y); on S² the non-exact remainder is ½∫K|∇u|²](#exactness-monge-ampere) | Theorem | true but ghost-blind/untested |
+| 823 | 0.267 | [The Galois deformation obstruction is a second-order curvature](#galois-obstruction-is-curvature) | Theorem | true but ghost-blind/untested |
+| 824 | 0.267 | [The critical-line wave: Hardy Z and the Riemann–Siegel phase](#hardy-z-critical-line-wave) | Theorem | true but ghost-blind/untested |
+| 825 | 0.267 | [Weil operator, star and the eighth turn](#hodge-c-star-eighth-turn) | Theorem | true but ghost-blind/untested |
+| 826 | 0.267 | [E₂* as the derivative of the Kronecker limit (cusp-scattering footprint)](#kronecker-limit-e2star) | Theorem | true but ghost-blind/untested |
+| 827 | 0.267 | [Local slack s_p = -Lambda_p = log(2 sqrt p/|a|)/log^2 p; products of Hasse frames at distinct primes have slack 0 (not additive, not min)](#local-dbn-slack) | Theorem | true but ghost-blind/untested |
+| 828 | 0.267 | [The lattice whose axes are the normalized Euler factors sees only local Hasse: it is blind to Davenport–Heilbronn, and the archimedean factor is indispensable](#local-lattice-hasse-only) | Theorem | true but ghost-blind/untested |
+| 829 | 0.267 | [The Maass–Selberg norm of truncated Eisenstein series is positive unconditionally, so cusp positivity does not see RH](#maass-selberg-positivity-blind-to-rh) | Theorem | true but ghost-blind/untested |
+| 830 | 0.267 | [Unique factorization = non-resonance of the prime torus; Euler product = separable Bohr lift](#prime-torus-nonresonance) | Theorem | true but ghost-blind/untested |
+| 831 | 0.267 | [w₂ / Čech class (TAA Lemma 138)](#w2-cech) | Theorem | true but ghost-blind/untested |
+| 832 | 0.267 | [W_R=(1/2π)∫|Φ̂|²K, K=log π−Re ψ(1/4+it/2)=−2θ′ (smooth zero density); K(t₀)=0 at t₀=6.2898=argmin θ](#archimedean-weyl-kernel) | Theorem | true but ghost-blind/untested |
+| 833 | 0.267 | [Beta integral, Maslov dequantization and entropy](#beta-dequantization-entropy) | Theorem | true but ghost-blind/untested |
+| 834 | 0.267 | [The χ = −1 "effective pole" is half of ζ’s pole, entering through ζ_ℚ(i) = ζ·L(χ₄)](#chi-minus-one-half-pole) | Theorem | true but ghost-blind/untested |
+| 835 | 0.267 | [Number-theoretical ferromagnetic spin chain](#knauf-ferromagnetic-spin-chain) | Theorem | true but ghost-blind/untested |
+| 836 | 0.267 | [Φ is not in Newman's class 𝒫 (unconditional), so b₀ < ∞; the Lee–Yang property of Φ is RH](#newman-class-p-fails-for-phi) | Cited | true but ghost-blind/untested |
+| 837 | 0.267 | [One clock per prime: τ_p = t log²p (ACM time); time to the cusp on its own clock is log cos θ̄₀, independent of p; cross-tones run at (log p + log q)², and the 2 log p log q term is the product interaction](#prime-clocks) | Theorem | true but ghost-blind/untested |
+| 838 | 0.267 | [Primon gas in a box: Z = ζ(V^{−1/3}/T), PV = U/3, ∮TdS = ∮PdV](#primon-box-ts-pv) | Theorem | true but ghost-blind/untested |
+| 839 | 0.267 | [Sector map w = e^{iπs/2}](#sector-map-w) | Theorem | true but ghost-blind/untested |
+| 840 | 0.267 | [Contact form and Legendre surface of the window equation of state](#window-contact-legendre-surface) | Theorem | true but ghost-blind/untested |
+| 841 | 0.267 | [The m = 1 plus-space coefficient is ∝ ζ(½ + 2it)/ζ(1 + 4it): ζ’s zeros on its own line are zeros of a Fourier coefficient, which the norm sees only squared](#zeta-zero-is-coefficient-zero) | Theorem | true but ghost-blind/untested |
+| 842 | 0.267 | [Elliptic/parabolic/hyperbolic as |tr M| = 2r < = > 2 for normalised Frobenius; only SO(2) compact; in RP² the parabola is tangent to the line at infinity (zero-margin edge as tangency); r = 1 forces scalar Frobenius for elliptic curves](#conic-compactness) | Theorem | true but ghost-blind/untested |
+| 843 | 0.267 | [Finite Guinand–Weil dictionary for truncated Weil forms](#finite-guinand-weil-dictionary) | Theorem | true but ghost-blind/untested |
+| 844 | 0.267 | [The 45-degree flip is a real structure, not a star](#flip45-is-real-structure) | Theorem | true but ghost-blind/untested |
+| 845 | 0.267 | [The factorial of one half and the Fourier quarter-turn](#fourier-quarter-turn) | Theorem | true but ghost-blind/untested |
+| 846 | 0.267 | [Fourth roots: a_p = 0 (supersingular) gives r = 0 over 𝔽_p and the cusp r = 1 over 𝔽_{p²} (a_{p²} = −2p)](#fourth-roots-supersingular) | Theorem | true but ghost-blind/untested |
+| 847 | 0.267 | [Frame and clock invariance of Krein data at L4](#frame-clock-invariance) | Theorem | true but ghost-blind/untested |
+| 848 | 0.267 | [Frobenius angles are already quantized](#frobenius-angles-quantized) | Theorem | true but ghost-blind/untested |
+| 849 | 0.267 | [Gross-Zagier as rank-one positivity](#gross-zagier-rank-one-positivity) | Cited | true but ghost-blind/untested |
+| 850 | 0.267 | [Window Weil form as jump kinetic energy minus a mass plus a pole](#levy-khintchine-mass-gap) | Theorem | true but ghost-blind/untested |
+| 851 | 0.267 | [Möbius function as fermion parity of the primon gas](#mobius-is-witten-parity) | Theorem | true but ghost-blind/untested |
+| 852 | 0.267 | [Platonic-point deficits 2π(1 − 1/k) are orbifold cone deficits of S²/G, not Descartes vertex defects; orbifold Gauss–Bonnet: cone deficits + area = 720° (icosahedral 708° + 12°, χ_orb = 1/30)](#orbifold-vs-descartes-deficits) | Theorem | true but ghost-blind/untested |
+| 853 | 0.267 | [Rankin-Selberg is blind to sign flips](#rs-blind-to-sign-flips) | Theorem | true but ghost-blind/untested |
+| 854 | 0.267 | [Rankin–Selberg explicit formula yields a positive-definite lattice form](#rs-explicit-formula-positive-lattice-form) | Theorem | true but ghost-blind/untested |
+| 855 | 0.267 | [Ruled quadric through a saddle: null lines, signature (1,1)](#ruled-quadric-null-lines) | Theorem | true but ghost-blind/untested |
+| 856 | 0.267 | [so(4)=su(2)⊕su(2): Λ± are commuting rotation subalgebras; D·D=‖D⁺‖²−‖D⁻‖²](#so4-chirality-split) | Theorem | true but ghost-blind/untested |
+| 857 | 0.267 | [Spin structure & theta characteristic](#spin-theta) | Theorem | true but ghost-blind/untested |
+| 858 | 0.267 | [Three lenses on one Euler factor (analytic factor, det(1 − Frob X), oscillator 2cos(z log p)) carry the same dBN flow; they separate only for products](#three-lenses-one-flow) | Theorem | true but ghost-blind/untested |
+| 859 | 0.267 | [Counts vs quadratic positivity](#count-positivity) | Theorem | true but ghost-blind/untested |
+| 860 | 0.267 | [Curvature routes to positivity are ghost-blind: flat Bochner remainder, flat prime graph, indefinite Λ² operator, fixed-sign Verblunsky metric](#flat-bochner-curvature-ghost-blind) | Theorem | true but ghost-blind/untested |
+| 861 | 0.267 | [Hecke ladder toy: U_p on ℓ²(ℕ) with J₃ = log n raises J₃ by log p, but [U_p, U_p*] is a projection (Toeplitz/Bost–Connes): a contraction, neither su(2) nor su(1,1)](#hecke-toy-contraction) | Theorem | true but ghost-blind/untested |
+| 862 | 0.267 | [Jacobi curvature sees only the trace of the log-Hessian of kinetic energy](#jacobi-curvature-trace-only) | Theorem | true but ghost-blind/untested |
+| 863 | 0.267 | [The K-theory order is automatic and ghost-blind](#k-order-ghost-blind) | Theorem | true but ghost-blind/untested |
+| 864 | 0.267 | [The monotone log-gas energy cannot certify real zeros](#rt-energy-monotone-but-blind) | Theorem | true but ghost-blind/untested |
+| 865 | 0.267 | [The de Bruijn–Newman kernel is not PF5](#dbn-kernel-not-pf5) | Theorem | true but ghost-blind/untested |
+| 866 | 0.267 | [Saddles of Euler products: curvature is additive and the cross-prime term at a saddle is always non-positive](#euler-product-saddle-additivity) | Theorem | true but ghost-blind/untested |
+| 867 | 0.267 | [Euler characteristic on the prime torus is zero; the explicit formula is a regularized Lefschetz sum whose sign lives in H¹, not in a count](#prime-torus-euler-characteristic-zero) | Theorem | true but ghost-blind/untested |
+| 868 | 0.267 | [Real-axis log-convexity of L(sigma) measures coefficient signs, not RH](#real-axis-log-convexity-not-rh) | Theorem | true but ghost-blind/untested |
+| 869 | 0.267 | [Forced functionals of the finite dBN zero gas: dL/dt = 2E, dE/dt ≤ 0; W = L − (n(n−1)/4) log S₂ nondecreasing, constant on Hermite configurations; Y = ΣIm² nonincreasing; de Bruijn envelope y_max(t)² ≤ max(y₀² − 2(t − t₀), 0)](#zero-gas-forced-functionals) | Theorem | true but ghost-blind/untested |
+| 870 | 0.267 | [The only scaling-and-Fourier invariant Hermitian form on Tate’s two boundary numbers is hyperbolic or zero](#tate-boundary-only-hyperbolic) | Theorem | true but ghost-blind/untested |
+| 871 | 0.267 | [Both parity sectors carry a constraint; the even test is not E0](#even-odd-sector-constraints) | Theorem | true but ghost-blind/untested |
+| 872 | 0.256 | ["Cocycles give structure, not sign"](#cocycle-principle) | Heuristic | background |
+| 873 | 0.256 | [J. W. McGreevy's flat-potential animation: half-turn polarity flip through a pure wedge](#wedge-flip-animation) | Heuristic | background |
+| 874 | 0.253 | [Hodge-index type at the Lagrange points: L1–L3 have one positive direction along the primaries axis, L4/L5 have one too many](#hodge-index-lagrange-points) | Analogy | sharp but interpretive |
+| 875 | 0.253 | [L4/L5 below Routh are Krein-indefinite (n₋ = 2): they twin Davenport–Heilbronn’s n₋ = 2 windows, and ζ has no CR3BP equilibrium twin](#l4-krein-indefinite-not-zeta) | Analogy | sharp but interpretive |
+| 876 | 0.253 | [The collinear points (one negative, a real pair) twin the odd window of Davenport–Heilbronn](#collinear-dh-odd-window) | Analogy | sharp but interpretive |
+| 877 | 0.253 | [(β,2β) fermion potential has (1,1) Hessian for ζ and DH alike; s→2s doubling is not the pole-plane Legendre pair](#fermion-pair-beta-2beta) | Analogy | sharp but interpretive |
+| 878 | 0.253 | [Ghost pair as dispersion (frequency-dependent decay)](#ghost-as-dispersion) | Analogy | sharp but interpretive |
+| 879 | 0.253 | [Einstein–Cartan torsion: no object; fermionic antiperiodicity DH-blind](#einstein-cartan) | Analogy | sharp but interpretive |
+| 880 | 0.253 | [Purity as distortionless transmission: weight strata = attenuation classes](#purity-distortionless) | Analogy | sharp but interpretive |
+| 881 | 0.253 | [Ferromagnetic coupling as gyroscopic stiffness: ζ sits exactly on its de Bruijn–Newman wall](#ferromagnetic-gyroscopic-stiffness) | Analogy | sharp but interpretive |
+| 882 | 0.243 | [One model form: a null conic, a timelike point, and a positive polar](#conic-polarity-one-form) | Analogy | background |
+| 883 | 0.240 | [Elliptic/parabolic/hyperbolic trichotomy and the Weil radius](#weil-radius-trichotomy) | Restatement | RH-sharp |
+| 884 | 0.240 | [RH = Hodge index for Spec Z×Spec Z with zero margin; missing piece = identity (balance law) whose leftover is a signed boundary term at ∞ and the pole](#sharpened-missing-piece) | Restatement | RH-sharp |
+| 885 | 0.240 | [Positive measure on shell C=½ reproducing Weil kernel is forced to be Σδ_γ; existence ⇔ RH](#bochner-shell-measure-forced-zeros) | Restatement | RH-sharp |
+| 886 | 0.240 | [The residue of ζ_K splits as h (finite places, sign-blind) times R·2^{r₁}(2π)^{r₂}/(w√|d|) (archimedean); L′(0,χ_D) = h log ε (40/40 to 1e−30)](#class-number-formula-mass-split) | Restatement | RH-sharp |
+| 887 | 0.240 | [Positivity of the extended Weil form at all heights z>0 is Lagarias’s RH-equivalent criterion; separator circular](#height-positivity-circular) | Restatement | RH-sharp |
+| 888 | 0.240 | [Hasse triangle and Newton's dT/dθ = L²](#hasse-triangle-newton) | Restatement | RH-sharp |
+| 889 | 0.240 | [Partial Legendre (principal pivot) in the negative pole variable: convex U ⇔ Schur complement ≥ 0 ⇔ Weil complement positive](#haynsworth-legendre-flip) | Restatement | RH-sharp |
+| 890 | 0.240 | [Positivity = susceptibility at imaginary field (Laguerre), not heat capacity at real parameters](#imaginary-field-susceptibility) | Restatement | RH-sharp |
+| 891 | 0.240 | [Net force = push − shear = ⟨g|g⟩_W with shear = prime side (Hodge: net = −D°²); RH iff the net force never points down](#net-force-orientation) | Restatement | RH-sharp |
+| 892 | 0.240 | [Passivity (Re ξ′/ξ>0 on Re s>½) separates ζ from DH but is equivalent to zero location (Lagarias 1999 Thm 1.1): circular separator](#passivity-separator-circular) | Restatement | RH-sharp |
+| 893 | 0.240 | [ζ has no local F/V rotation at any prime: degree 1, N = 0](#zeta-local-factors-no-rotation) | Restatement | RH-sharp |
+| 894 | 0.240 | [One Bernoulli number B₁₂ (691) governs four boundary objects: Cohen's H₆ constant term, E₁₂ ≡ Δ, the ω⁻¹¹ class-group eigenspace, and a simple zero (λ = 1) of the 691-adic L-function](#b12-four-boundary-objects) | Restatement | RH-sharp |
+| 895 | 0.240 | [RH as a negative-square count (restatement)](#ghost-count-rh-restatement) | Restatement | RH-sharp |
+| 896 | 0.240 | [Hill-region topology of the Weil form: closed, two caps or necked iff n₋ = 0, 1 or ≥ 2; the L1-neck analogue is λ₂ = 0](#hill-neck-lambda2) | Restatement | RH-sharp |
+| 897 | 0.240 | [Hodge-index signature for ζ (positivity on pole-plane complement) ⇔ RH](#hodge-index-zeta-restatement) | Restatement | RH-sharp |
+| 898 | 0.240 | [Lee–Yang for the single-spin Pólya kernel Φ is RH; by continuity at J → 0, ferromagnetic N-spin Lee–Yang for all J ≥ 0 fails exactly when the single-spin property fails, so multi-spin tests add no information](#multispin-adds-nothing) | Restatement | RH-sharp |
+| 899 | 0.240 | [RH ⇔ the scaling-reduced Weil form has no negative-norm states (Weil 1952; Bombieri 2000: n₋ = ½ #off-line zeros)](#rh-no-ghost-restatement) | Restatement | RH-sharp |
+| 900 | 0.240 | [No-ghost transports positivity from a known-positive transverse factor (V♮); ζ analogue = slot 2](#transverse-positivity-slot2) | Restatement | RH-sharp |
+| 901 | 0.240 | [Hamiltonian dictionary for the window Weil form](#weil-form-momentum-dictionary) | Restatement | RH-sharp |
+| 902 | 0.240 | [Anisotropic part: E×E primitive Gram negative definite iff Hasse (det = 2(a²−4p)); over Spec Z, Q = 1−P removes the pole functionals and Weil’s criterion is T ≤ 0 on the kernel](#anisotropic-part-weil) | Restatement | RH-sharp |
+| 903 | 0.240 | [sign Q = (1,1) ⊕ sign(v^⊥/⟨v⟩): the pole/cusp pair is a hyperbolic plane and all signature content sits in the middle graded piece](#boundary-signature-neutral) | Restatement | RH-sharp |
+| 904 | 0.240 | [S[f] = ĝ(0)+ĝ(1)−Σ_v W_v(g) = Σ_ρ ĝ(ρ), g = f*f^♯, f̂(s)=∫f x^s d*x (CC21 normalization)](#def-arithmetic-action) | Restatement | RH-sharp |
+| 905 | 0.240 | [(S, T, scaling flow, Euler axiom) read via Mellin=partition function, extensive prime free energy, 2π thermal kernel, O(1,1) pole plane](#def-thermodynamic-arithmetic-action) | Restatement | RH-sharp |
+| 906 | 0.240 | [KMS/passivity/Jacobson/Tolman give no forcing of the Schur complement (circular via Lagarias; no Gibbs below β=1)](#kms-positivity-not-forcing) | Restatement | RH-sharp |
+| 907 | 0.240 | [Levi-Civita square: Ξ(t) = F(t²) and the bound-oscillator reading of RH](#lc-square-xi) | Restatement | RH-sharp |
+| 908 | 0.240 | [Pole term 2α·uv in null coords; log-translation = O(1,1) boost rapidity c/2; zero pair-planes boosted by β−½; RH ⇔ only the pole plane is boosted](#pole-plane-lorentz-boost) | Restatement | RH-sharp |
+| 909 | 0.240 | [Invariant maximal non-positive subspaces: exactly two](#pontryagin-exactly-two) | Restatement | RH-sharp |
+| 910 | 0.240 | [Wells are dense below T₁ (ζ ~4–10% at t=400); positivity = band-limited non-concentration (Landau–Widom), circular](#positivity-is-nonconcentration) | Restatement | RH-sharp |
+| 911 | 0.240 | [The product formula as the archimedean rest frame; a ghost is a boost with rapidity arccosh e](#product-formula-rest-frame) | Restatement | RH-sharp |
+| 912 | 0.240 | [Stirling constant (a−½)π/2 = −π/4 (1-D stationary phase, sgn Hess·π/4, shared by every Γ_ℝ factor) + aπ/2 (parity weight)](#stationary-phase-split) | Restatement | RH-sharp |
+| 913 | 0.240 | [A nilpotent supercharge with W = {Q, Q*} restates positivity](#supercharge-laplacian-restates-positivity) | Restatement | RH-sharp |
+| 914 | 0.240 | [T ⇔ for every finite S, Γ+pole+S form ≥0 on L<log p_next(S); literal at S=∅ only](#t-iff-semilocal-sonin) | Restatement | RH-sharp |
+| 915 | 0.240 | [Of all thermodynamic positivities tested (heat capacity, KMS, entropy, Ruppeiner, Lévy, OS), the only ζ-specific literal one is extensivity: free energy additive over primes ⇔ Euler product; the rest are edge-only, ghost-blind or circular](#thermo-only-extensivity) | Restatement | RH-sharp |
+| 916 | 0.240 | [Trace dictionary a/√q = 2cos θ: elliptic on the line, ghosts at θ = iη or π + iη, walls at θ = 0, π](#trig-hyperbolic-trace-dictionary) | Restatement | RH-sharp |
+| 917 | 0.240 | [Weil form as energy: spectrum of its kernel is the zero set, so positivity ⇔ RH](#weil-energy-spectrum-zeros) | Restatement | RH-sharp |
+| 918 | 0.240 | [Zagier’s ℋ (S = ¾) corresponds to E₂* (s′ = 1) under s′ = 2S − ½ and T ↦ 2√T: both sit at the pole/edge, not on the line](#zagier-e2-edge-dictionary) | Restatement | RH-sharp |
+| 919 | 0.240 | [RH ⇔ Cramér V(iu)=Σ e^{−γu} completely monotone (Euclidean RP of zero correlator); ghost signal masked](#cramer-cm-iff-rh) | Restatement | RH-sharp |
+| 920 | 0.240 | [Euler’s criterion a^{(p−1)/2} = (a/p) is the tame Hilbert symbol (a,p)_p; Gauss’s half-system is a fundamental domain for F_p^×/{±1}](#euler-half-exponent-tame-symbol) | Restatement | RH-sharp |
+| 921 | 0.240 | [No pair among U_l, V_l gives FV = VF = scalar on Jacobi spaces; FV = p^{2k−3} holds only for Satake roots (Eichler–Shimura restatement)](#fv-operator-pair-refuted) | Restatement | RH-sharp |
+| 922 | 0.240 | [Hodge index in push/shear language: D² = (D·ω)²/ω² + D°², Hodge index ⇔ D°² ≤ 0 (shear can only subtract); D°² = D₀² − ½(D·h − D·v)²](#hodge-index-shear-subtracts) | Restatement | RH-sharp |
+| 923 | 0.240 | [RH as infinite divisibility](#infinitely-divisible-rh-criterion) | Restatement | RH-sharp |
+| 924 | 0.240 | [KS lift: Kepler trichotomy as sign of b^2-ac; hyperbolic = xp](#ks-trichotomy-xp) | Restatement | RH-sharp |
+| 925 | 0.240 | [In a Ruelle/Selberg zeta the saddle multiplier plays the role of the norm N(γ), and √Λ is the half-density weight](#lambda-as-norm) | Restatement | RH-sharp |
+| 926 | 0.240 | [RH ⇔ F_a(u)=Σ_ρ e^{−u√(γ²+a²)} CM; prime side via K_ν kernels; n≤12 non-separating, ζ failures are floor artefacts](#prime-side-cramer-cm) | Restatement | RH-sharp |
+| 927 | 0.240 | [RH ⇔ Λ=(1/2π)∫e^{−ixτ}/ξ(½+τ)dτ PF∞ (Gröchenig 2020, Schoenberg); numerically Λ>0, log-concave, minors k≤6 >0 for ζ AND DH](#reciprocal-xi-pf-ensemble) | Restatement | RH-sharp |
+| 928 | 0.240 | [Riemann-Roch sorts the two conditions](#riemann-roch-sorting) | Restatement | RH-sharp |
+| 929 | 0.240 | [Rodgers-Tao renormalization needs the zero count (Turing)](#rt-renormalization-count-drift) | Restatement | RH-sharp |
+| 930 | 0.240 | [Determinant sees parity only, signature is the invariant: CM height (disc/det), Hill regions (Δχ = −sign det Hess) and the Weil form (n₋ = ½·#off-line zeros) give the same lesson](#signature-not-det-three-ways) | Restatement | RH-sharp |
+| 931 | 0.240 | [Which sign statements for zeta are non-circular](#signed-energy-noncircular-sign) | Restatement | RH-sharp |
+| 932 | 0.240 | [The ξ(2s) → ξ(s) halving corresponds to a change of Liouville background charge (c 7 → 25), not to an operator in one Virasoro module](#virasoro-halving-is-central-charge-change) | Restatement | RH-sharp |
+| 933 | 0.240 | [⟨g|h⟩_W=Σ_ρ ĝ(ρ)conj ĥ(1−ρ̄); Hermitian and scaling-isometric unconditionally; RH ⇔ positive semidefinite](#weil-braket-pairing) | Restatement | RH-sharp |
+| 934 | 0.240 | [Each zeta zero as an F/V quadratic with a = 1, q = rho(1 - rho)](#zeta-zero-fv-quadratic) | Restatement | RH-sharp |
+| 935 | 0.240 | [Corrections: pole term 2Re(uv̄); prime normalization; RH ⇔ S≥0 on all T; β^⊥ statement is pole-term-only](#corrections) | Restatement | RH-sharp |
+| 936 | 0.240 | [Honest L-functions appear only as ratios of Bost–Connes-type partition functions, such as ζ_{ℚ(i)}/ζ; Davenport–Heilbronn is a linear combination, not a product or ratio](#honest-l-as-partition-ratio) | Restatement | RH-sharp |
+| 937 | 0.240 | [Parabola sums ΣH(4n−r²) = Hecke traces (KH n≤60, ES k=12 → τ(n) n≤10 exact); additivity over primes = Hecke multiplicativity](#kronecker-hurwitz-eichler-selberg) | Restatement | RH-sharp |
+| 938 | 0.240 | [W = covariance of φ̂_i under Σδ_γ iff zeros real](#weil-form-as-fisher-metric-circular) | Restatement | RH-sharp |
+| 939 | 0.240 | [Davenport–Heilbronn has no Shimura/Brandt vector, so a twist-Gram control is not meaningful](#dh-no-brandt-control) | Restatement | RH-sharp |
+| 940 | 0.240 | [Prime torus in action-angle variables: H₀ = Σ k_p log p is linear in the actions, so KAM nondegeneracy fails and small divisors are RH-blind](#prime-torus-action-angle-degenerate) | Restatement | RH-sharp |
+| 941 | 0.240 | [Sundman-regularized Rodgers-Tao energy](#sundman-regularized-rt-energy) | Restatement | RH-sharp |
+| 942 | 0.240 | [The negative cone {Q < 0} on the unit sphere is homotopic to S^{n₋−1}, so its topology changes at every switch-on](#negative-cone-topology) | Restatement | RH-sharp |
+| 943 | 0.226 | [Buoyancy / Archimedes principle](#archimedes) | Analogy | background |
+| 944 | 0.226 | [Distortionless line R/L = G/C](#distortionless) | Analogy | background |
+| 945 | 0.226 | [Einstein–Cartan: spin enters as torsion](#einstein-cartan-torsion-spin) | Analogy | background |
+| 946 | 0.226 | [Heaviside RLGC line](#heaviside) | Analogy | background |
+| 947 | 0.226 | [The zero-velocity boundary Ω = C/2 of the rotating frame ↔ the turning point of the Γ factor (Stirling/WKB phase); the archimedean Weil term is the negative one](#omega-c2-gamma-turning-point) | Analogy | background |
+| 948 | 0.226 | [The archimedean place as the "third body"](#archimedean-third-body-analogy) | Analogy | background |
+| 949 | 0.226 | [|L|² = det Gram(r, p) parallels the Hasse Gram determinant q − a²/4 of End(E)](#lagrange-hasse-gram) | Analogy | background |
+| 950 | 0.226 | [Momentum side: Legendre takes a Lagrangian quadratic in v (a norm) to a Hamiltonian linear in p along supporting lines, so the missing linear-in-coefficients positivity would live on the momentum side](#legendre-momentum-side-linear-positivity) | Analogy | background |
+| 951 | 0.226 | [One log-gas and its frozen limit](#log-gas-frozen-limit) | Analogy | background |
+| 952 | 0.226 | [The Gram matrix of (L, A) is conserved in Kepler motion, and Fock maps the bound shell to the unit quaternions](#lrl-fock-gram-conserved) | Analogy | background |
+| 953 | 0.226 | [Mass-density positivity](#mass-density) | Analogy | background |
+| 954 | 0.226 | [Quasimodular anomaly: E₂(γτ)=j²E₂+(6/πi)cj, E₂=D log Δ connection, ϑ_k=D−(k/12)E₂, curvature −E₄/12; Weil analogue: Γ-factor log-derivative K already present and unsigned](#serre-derivative-analogy) | Analogy | background |
+| 955 | 0.226 | [Archimedean dispersion: the symbol Ω(r) is negative below r₀ = 6.28984, and the pole is the positive term at imaginary momentum r = ±i/2](#archimedean-symbol-dispersion) | Analogy | background |
+| 956 | 0.226 | [The degenerate level D = 0 ↔ a topology change of the Hill region (a critical value of the Jacobi constant)](#degenerate-discriminant-hill-topology) | Analogy | background |
+| 957 | 0.226 | [Tension and amplitude dictionary](#half-density-tension-dictionary) | Analogy | background |
+| 958 | 0.226 | [45° bypass: the Hecke–Mellin transform Λ(w+s−½)Λ(w−s+½) and CM periods ζ_K(s)/ζ(2s) put ζ on its own line; Maass–Selberg positivity lives only in s](#hecke-mellin-lightcone-bypass) | Analogy | background |
+| 959 | 0.226 | [z = w²: Kepler (Levi-Civita) regularization and the Ramond twist share the 2:1 branched cover](#levi-civita-branched-cover) | Analogy | background |
+| 960 | 0.226 | [Principalization (every ideal becomes principal in the Hilbert class field) ↔ conformal Hamiltonization (the Jacobi/Chaplygin multiplier 2(Ω − C/2)): an obstruction trivialized by lifting; divisibility, not sign](#principalization-conformal-hamiltonization) | Analogy | background |
+| 961 | 0.226 | [Shimura lift T_{p²} ↔ T_p and Mp₂ splitting give structure without sign; Waldspurger squares are a candidate square root for cusp forms at the centre only, missing for ζ](#shimura-waldspurger-template-map) | Analogy | background |
+| 962 | 0.226 | [Thermodynamic dictionary mapped onto F–H ingredients: Tate limit, Green/capacity, product formula, mass-0 align; 2nd law, C, Dirac do not](#thermo-dictionary-grades) | Analogy | background |
+| 963 | 0.226 | [Faltings–Hriljac ingredients as thermodynamics: Tate limit (circular for ζ), product formula = first law (literal), degree 0 = neutrality (circular), points = microstates (missing)](#thermo-forcing-grades) | Analogy | background |
+| 964 | 0.226 | [Hecke trees: the Kesten–McKay band edge |λ| = 2√p has zero group velocity, a “curve of zero velocity” that is the parabolic wall a² = 4q again](#tree-band-edge-zero-velocity) | Analogy | background |
+| 965 | 0.226 | [691 ∣ L^alg(Ad Δ,1) in integral period normalization; it is the Eisenstein (boundary) congruence, not a cuspidal Hida congruence (dim S₁₂ = 1); identification with Hida's module in full cohomology Cited/Open](#adjoint-691-eisenstein-not-cuspidal) | Analogy | background |
+| 966 | 0.226 | [Principalization in the Hilbert class field trivializes divisibility but keeps the single pole: class group and pole mass are different data](#capitulation-keeps-pole) | Analogy | background |
+| 967 | 0.226 | [Discriminant as self-intersection of a polarization (arithmetic Hodge index)](#discriminant-polarization-height) | Analogy | background |
+| 968 | 0.226 | [Divergence-free positive tensors as a quantitative tool once positivity is known](#dpt-quantitative-template) | Analogy | background |
+| 969 | 0.226 | [Einstein–de Haas lesson: the molecular-current model gave g ≈ 1, the true carrier was spin (g = 2); the missing piece may be a spin-like degree of freedom, not an orbit](#einstein-de-haas-lesson) | Analogy | background |
+| 970 | 0.226 | [sqrt(q) normalization as fixing the energy shell](#frobenius-similitude-shell) | Analogy | background |
+| 971 | 0.226 | [Hodge index signature (1,n−1) vs Morse index at collinear Lagrange points](#hodge-morse-analogy) | Analogy | background |
+| 972 | 0.226 | [Lorentzian II₁,₁ of Goddard–Thorn ↔ pole pair at ∞ (signature (1,1) hyperbolic plane)](#ii11-pole-pair) | Analogy | background |
+| 973 | 0.226 | [KS/oscillator realisation as a positivity source for the Weil form](#ks-oscillator-positivity-source) | Analogy | background |
+| 974 | 0.226 | [Larmor–Onsager chain: the RH-sensitive data sit in the rotation (imaginary-field) sector; the real (boost) sector is convex for any positive kernel](#larmor-onsager-rotation-sector) | Analogy | background |
+| 975 | 0.226 | [The polarization-curvature constant k/4 = a/2 is fixed by the Γ shift, so the Lichnerowicz-type term belongs to the archimedean data, not to the finite places](#lichnerowicz-is-gamma-shift) | Analogy | background |
+| 976 | 0.226 | [Reading the shared −π/4 as a Maslov index of a ray-limit Lagrangian (no WKB construction given)](#maslov-reading) | Analogy | background |
+| 977 | 0.226 | [Pole plane = II₁,₁; pole-annihilator = constraints; transverse positivity missing (= RH)](#no-ghost-template) | Analogy | background |
+| 978 | 0.226 | [Complex conjugation splits Cl(ℚ(μ_p)): the minus part is Bernoulli data (v₆₉₁(h⁻) = 2, 218 digits), the plus part is unit/regulator data; Leopoldt's R_p ≠ 0 is the p-adic analogue of R > 0](#plus-minus-units-bernoulli) | Analogy | background |
+| 979 | 0.226 | [pole cancels the one arithmetic ghost](#pole-as-counterterm-not-tachyon) | Analogy | background |
+| 980 | 0.226 | [prime p = mode with quantum log p; enters window only for L>log p; matches an earlier research note L_S](#prime-mode-energy-quantum) | Analogy | background |
+| 981 | 0.226 | [The Riemann–Siegel phase is purely archimedean (parity + conductor) and carries no per-prime data; per-prime information lives in S(t)](#rs-phase-not-per-prime) | Analogy | background |
+| 982 | 0.226 | [λ_ℓ/√ℓ = 2cos θ_ℓ lies strictly inside (−2, 2) for all tree-quotient eigenvectors: a per-prime conserved angle, not a global constant of motion](#sato-tate-angle-as-conserved-c) | Analogy | background |
+| 983 | 0.226 | [Viscosity multiplies trace-free strain; dissipation 2μ|S°|² ≥ 0 is the analogue of the missing sign; baroclinic wedge ↔ Gram tilt cos θ = r, net = p sin²θ](#viscosity-baroclinic) | Analogy | background |
+| 984 | 0.226 | [Virasoro constraint L₀=1, L_n=0 ↔ scaling action of C_Q on the adele class space (Connes 1999)](#constraint-scaling) | Analogy | background |
+| 985 | 0.226 | [Per-prime curvatures σ_p² do not reproduce H(D) weights](#curvature-vs-class-numbers) | Analogy | background |
+| 986 | 0.226 | [(1+1)/2 = 1: s = 1 is the fixed point of s ↦ (s+1)/2, the second Γ_ℝ factor in Γ_ℝ(s)Γ_ℝ(s+1) = Γ_ℂ(s); the fixed points 0, 1 are ξ’s poles](#duplication-fixed-point-pole) | Analogy | background |
+| 987 | 0.226 | [Jacobi → Jacobi theta → Eichler–Zagier → Eichler–Shimura → Shimura–Taniyama–Weil → Taylor–Wiles is a chain of linear, Hecke-equivariant modularity transfers](#eponymic-chain-linear-transfers) | Analogy | background |
+| 988 | 0.226 | [Euler product = independence over places, not Markov in log-time](#euler-markov) | Analogy | background |
+| 989 | 0.226 | [Lagrange (local radius) ↔ semilocal edges; Kapteyn/Bessel (global) ↔ prolate/Sonin global basis](#kepler-lagrange-kapteyn-analogy) | Analogy | background |
+| 990 | 0.226 | [β* as work reserve → 0 at barrier (Carnot limit), log p as heat](#margin-work-reserve) | Analogy | background |
+| 991 | 0.226 | [T/γ, γT, invariant ↔ 1/f̂(1), 1/f̂(0), 1/√(f̂(0)f̂(1)); Weil uses the invariant](#planck-ott-landsberg-reading) | Analogy | background |
+| 992 | 0.226 | [FLT template (Frey → Ribet → Wiles R = T) forces automorphy, i.e. an Euler product with functional equation; ζ already has both, so R = T addresses a slot that is not missing. Its numerical criterion (an inequality forced to equality) is the transferable part](#r-equals-t-wrong-slot) | Analogy | background |
+| 993 | 0.226 | [T₁ = 2π e^{sup P}: barrier = Boltzmann factor of maximal comb energy](#t1-boltzmann-reading) | Analogy | background |
+| 994 | 0.226 | [Zero velocity ↔ degeneracy of the form (null states, Kac wall), not the light cone; zero acceleration (Lagrange points) ↔ ghost onsets](#zero-velocity-null-states) | Analogy | background |
+| 995 | 0.226 | [Spectral flow of the window family as interior density plus boundary η (APS-type): finite-dimensional analogue only, and the identity fails numerically](#aps-type-split-analogue) | Analogy | background |
+| 996 | 0.226 | [Hill-region stratification vs prime filtration](#hill-region-dictionary) | Analogy | background |
+| 997 | 0.226 | [2 ≡ 2⁻¹ (mod p) only for p = 3 (checked p < 10⁴)](#two-is-half-only-mod3) | Analogy | background |
+| 998 | 0.212 | [Laplace–Runge–Lenz vector: |A| = mk·e, so bound (definite, E < 0) ⇔ |A| < mk; hidden symmetry SO(4) (E < 0, compact, discrete spectrum) / E(3) (E = 0) / SO(1,3) (E > 0) = elliptic / parabolic / hyperbolic; tangential periapsis impulse stretches A (changes the margin), radial impulse rotates A (precession, spectrum-blind)](#lrl-hidden-symmetry-trichotomy) | Analogy | background |
+| 999 | 0.212 | [SU(2)×SU(2) as a compact 'product surface': SO(4) = (SU(2)×SU(2))/±1 acts on S³ = SU(2) by x ↦ g x h⁻¹, stabilizer of 1 = diagonal (conjugation, preserves trace = F+V); Peter–Weyl L²(G) = ⊕ V_π ⊗ V_π* is the compact analogue of Künneth; dictionary to Weil's C×C (Δ ↔ diagonal, Γ_F ↔ translate, Lefschetz ↔ trace, Hodge index ↔ Haar positivity, automatic for compact G)](#su2xsu2-peter-weyl-surface) | Analogy | background |
+| 1000 | 0.212 | [Higgs mechanism: negative mass² at the symmetric point](#higgs-negative-mass2) | Analogy | background |
+| 1001 | 0.212 | [Klein–Gordon indefinite charge](#klein-gordon-charge) | Analogy | background |
+| 1002 | 0.212 | [Anomalous dispersion](#anomalous-dispersion) | Analogy | background |
+| 1003 | 0.212 | [A polar family shrinks to the null point at infinity, in two gauges](#polar-family-h-s-degeneration) | Analogy | background |
+| 1004 | 0.200 | [Convolution square root](#convolution-square-root) | Open | RH-sharp |
+| 1005 | 0.200 | [Anticipation law: the past fluctuation of the primes predicts the present one inside the Krein disk](#anticipation-law-fluctuation) | Conjecture | RH-sharp |
+| 1006 | 0.200 | [Weighted signed energy trace from the heat-flowed function](#signed-local-energy-trace) | Open | RH-sharp |
+| 1007 | 0.200 | [A condition that Φ satisfies, Davenport–Heilbronn violates, and that implies Lee–Yang must be non-λ-invariant and must feel zeros at large height (non-local in height); none is known](#slot2-thermodynamic-target) | Open | RH-sharp |
+| 1008 | 0.200 | [Krein–Laguerre count: negative-Krein pencil pairs versus Laguerre-violation windows (conjecture)](#krein-laguerre-count) | Conjecture | RH-sharp |
+| 1009 | 0.200 | [Non-circular no-ghost for ζ needs an Euler-factor-built, scaling-equivariant, window-consistent intertwiner into an independently positive space plus a c=26-type identity that fails for DH and Beurling](#noncircular-noghost-conjecture) | Conjecture | RH-sharp |
+| 1010 | 0.200 | [Weil functional as a special-cycle self-intersection (program)](#weil-as-special-cycle-self-intersection) | Conjecture | RH-sharp |
+| 1011 | 0.200 | [TAA thesis: potential Φ on H₊ with Hess S, pole pair Legendre-conjugate, forced nonneg limit on pole annihilator using Euler axiom, failing for DH ⇒ RH](#taa-thesis) | Conjecture | RH-sharp |
+| 1012 | 0.200 | [No entropy/large-deviation bound alone implies window positivity; DH non-extensive from W=1.79 yet positive to 3.8](#entropy-bound-insufficient) | Conjecture | RH-sharp |
+| 1013 | 0.200 | [RH positivity and height positivity from one star-pairing](#height-positivity-equals-rh-positivity) | Conjecture | RH-sharp |
+| 1014 | 0.200 | [zeta on the wall of deformation families](#zeta-on-the-wall) | Conjecture | RH-sharp |
+| 1015 | 0.200 | [“RH ⇔ the Weil window family never focuses” as a Jacobi/Morse curvature criterion is downgraded: every system approaches the near-kernel, and the Davenport–Heilbronn conjugate point is a birth from the floor](#never-focuses-conjecture-downgraded) | Conjecture | RH-sharp |
+| 1016 | 0.187 | [The missing square Spec ℤ × Spec ℤ as the object (collapse ℤ⊗ℤ = ℤ; defect requirements R1–R5)](#missing-square-spec-z) | Open | true but ghost-blind/untested |
+| 1017 | 0.181 | [Buoyancy reading of the F/V sweep: r=|a|/2√p = shear/push (rescaled frame); elliptic floats (margin s_p=log(1/r)/log²p), cusp neutral, hyperbolic sinks](#buoyancy-reading) | Analogy | background |
+| 1018 | 0.181 | [Lamb cutoff](#lamb-cutoff) | Analogy | background |
+| 1019 | 0.181 | [Two different χ’s: Euler characteristic vs class-group character](#two-chis) | Analogy | background |
+| 1020 | 0.181 | [Sha as a locally trivial, globally nontrivial defect](#sha-as-holonomy-defect) | Analogy | background |
+| 1021 | 0.181 | [Ramanujan's 691 as a degeneration of the pole line](#ramanujan-691-degeneration) | Analogy | background |
+| 1022 | 0.181 | [Tate twist as hbar](#tate-twist-as-hbar) | Analogy | background |
+| 1023 | 0.165 | [Arithmetic positivity mechanism: global points (Tate limit of log-sizes ≥ 0) + product formula + degree-0 quotient; ζ side lacks the global object](#mechanism-global-object) | Open | true but ghost-blind/untested |
+| 1024 | 0.165 | [Zero-free window certificates as heat-flow barriers](#barrier-certificate-bypass) | Open | true but ghost-blind/untested |
+| 1025 | 0.165 | [Order as a stability condition (target shape)](#ps-tilt-central-charge-target) | Open | true but ghost-blind/untested |
+| 1026 | 0.165 | [Candidate formulations of Castelnuovo-Severi over the integers](#cs-for-spec-z-formulations) | Open | true but ghost-blind/untested |
+| 1027 | 0.165 | [Ring-preserving supercharge and RH as purity](#rings-purity-restates-positivity) | Conjecture | true but ghost-blind/untested |
+| 1028 | 0.165 | [Witten-type natural Dirac square root of the Weil form: generic root circular; natural one open](#spinor-root-open) | Open | true but ghost-blind/untested |
+| 1029 | 0.165 | [Standard conjectures (Hodge type)](#standard-conj) | Open | true but ghost-blind/untested |
+| 1030 | 0.165 | [Thermodynamic J direction: Maxwell = symmetry (no sign), Clausius = inequality, ω(x,x)=0; positivity needs a compatible J or a stability Hessian; a rigid work↔heat J is Cauchy–Riemann (harmonic U, indefinite) or forces quadratic U; free primon gas has zero cross-prime covariance, (log ζ)″ is a trivial variance](#thermodynamic-j-direction) | Open | true but ghost-blind/untested |
+| 1031 | 0.165 | [Weil form as restriction of an Arakelov height pairing on an arithmetic surface over F1](#weil-as-height-restriction) | Open | true but ghost-blind/untested |
+| 1032 | 0.165 | [One operator that is a sum of squares (net ≥ 0 as an identity) and generates dBN (∂_tH = +Δ_z H, backward heat on the real line); stronger than Hilbert–Pólya](#both-at-once) | Open | true but ghost-blind/untested |
+| 1033 | 0.165 | [No ζ analogue of c=26 (no unitary c fits the Weil form)](#c26-gap) | Open | true but ghost-blind/untested |
+| 1034 | 0.165 | [No ζ analogue of DDF operators (no raising operator; Weil n₋ steps by 1)](#ddf-gap) | Open | true but ghost-blind/untested |
+| 1035 | 0.165 | [F/V change level; slot-2 positivity lives at one level; only V*V ≥ 0 (edge)](#fv-level-change-gap) | Open | true but ghost-blind/untested |
+| 1036 | 0.165 | [Integrality instead of positivity (45-degree direction)](#integrality-support-bypass) | Open | true but ghost-blind/untested |
+| 1037 | 0.165 | [Conceptual rung 1 needs W_{∞,2}(g*g*) ≥ Tr(ϑ_S(g)S_Sϑ_S(g)*); CCM 2024 gives the Sonin space (Thm 2), not the inequality](#needed-semilocal-sonin-inequality) | Open | true but ghost-blind/untested |
+| 1038 | 0.165 | [Regularized xp foliation as a route](#regularized-xp-foliation-route) | Open | true but ghost-blind/untested |
+| 1039 | 0.165 | [A Siegel zero is abnormally small residue mass h·R; conjecturally it appears as a second pole-like negative direction](#siegel-zero-as-small-boundary-mass) | Conjecture | true but ghost-blind/untested |
+| 1040 | 0.165 | [Baseline object is two steps from arithmetic Hodge index: F1-product with pole plane as rulings; map test functions to divisors](#two-steps-to-baseline) | Open | true but ghost-blind/untested |
+| 1041 | 0.165 | [Obstruction: x-side Lévy positivity (ν_½, unconditional) does not transfer to r-side Bochner positivity; the transfer is the explicit formula](#xside-vs-rside-obstruction) | Open | true but ghost-blind/untested |
+| 1042 | 0.165 | [Chaotic 2-DOF regularized xp as a route](#chaotic-2dof-xp-route) | Open | true but ghost-blind/untested |
+| 1043 | 0.165 | [Route: Hermite barrier certificate to lower Lambda](#hermite-barrier-route) | Open | true but ghost-blind/untested |
+| 1044 | 0.165 | [Route: Jacobi/Finsler geometry of xp as a positivity source](#jacobi-finsler-positivity-route) | Open | true but ghost-blind/untested |

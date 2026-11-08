@@ -1,0 +1,14 @@
+raise2_E2s : True
+raise4_Q : True
+raise6_R : True
+raise_minus_serre_is_kE2s/12 : True
+serre12_Delta : True
+raise12_Delta=E2s*Delta : True
+wronskian_Q3_R2 : -Q**2*R*(Q**3 - R**2)
+wronskian_Q6_Q3R2 : -Q**8*R*(Q**3 - R**2)
+wronskian_P_free : True
+E10_eq_E4E6 : True
+B10 : 5/66
+B10_over_20 : 1/264
+-2k/B_k k=10 : -264
+dimM_k (k=10,12) : [1, 2]

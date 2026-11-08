@@ -1,0 +1,99 @@
+{
+ "A=1.0": {
+  "M_A": 6.352441562694213,
+  "K0": -5.3721834192256654,
+  "primes": [
+   2
+  ],
+  "floor_Einf_full": 3.663618321924015,
+  "floor_Einf_E0": 5.558512039246929,
+  "floor_Ep_full": 0.49012907173427456,
+  "floor_Ep_E0": 0.4901290717414529,
+  "floor_joint_full": 4.384884265905609,
+  "floor_joint_E0": 6.366596355093232,
+  "sum_of_separate_floors_E0": 6.048641110988382,
+  "shortfall_separate": 0.3038004517058308,
+  "joint_minus_M_E0(=Ritz lam_min W)": 0.014154792399018845,
+  "slepian_cushion_Einf": {
+   "value": 2.309269440333804,
+   "X": 1.0
+  }
+ },
+ "A=1.6": {
+  "M_A": 8.314156944449286,
+  "K0": -5.3721834192256654,
+  "primes": [
+   2,
+   3,
+   4
+  ],
+  "floor_Einf_full": 3.071197896095243,
+  "floor_Einf_E0": 5.079068651918672,
+  "floor_Ep_full": 1.7253597847778845,
+  "floor_Ep_E0": 1.7481571201281207,
+  "floor_joint_full": 5.033762138399152,
+  "floor_joint_E0": 8.313508921543468,
+  "sum_of_separate_floors_E0": 6.827225772046793,
+  "shortfall_separate": 1.4869311724024925,
+  "joint_minus_M_E0(=Ritz lam_min W)": -0.000648022905817669,
+  "slepian_cushion_Einf": {
+   "value": 1.754352588957816,
+   "X": 1.0
+  }
+ },
+ "A=2.0": {
+  "M_A": 11.224651783578484,
+  "K0": -5.3721834192256654,
+  "primes": [
+   2,
+   3,
+   4,
+   5,
+   7
+  ],
+  "floor_Einf_full": 2.7748548607202355,
+  "floor_Einf_E0": 4.845657940446487,
+  "floor_Ep_full": 4.022417967292617,
+  "floor_Ep_E0": 4.297838592116604,
+  "floor_joint_full": 6.981829289102506,
+  "floor_joint_E0": 11.223538093953605,
+  "sum_of_separate_floors_E0": 9.143496532563091,
+  "shortfall_separate": 2.0811552510153923,
+  "joint_minus_M_E0(=Ritz lam_min W)": -0.0011136896248782335,
+  "slepian_cushion_Einf": {
+   "value": 1.4286736626086627,
+   "X": 1.0
+  }
+ },
+ "A=3.0": {
+  "M_A": 18.387837402655045,
+  "K0": -5.3721834192256654,
+  "primes": [
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   11,
+   13,
+   16,
+   17,
+   19
+  ],
+  "floor_Einf_full": 2.217953665635217,
+  "floor_Einf_E0": 4.393622428336161,
+  "floor_Ep_full": 8.849326690089844,
+  "floor_Ep_E0": 11.32781265437698,
+  "floor_joint_full": 11.279622836932203,
+  "floor_joint_E0": 18.371520139678893,
+  "sum_of_separate_floors_E0": 15.721435082713143,
+  "shortfall_separate": 2.666402319941902,
+  "joint_minus_M_E0(=Ritz lam_min W)": -0.01631726297615188,
+  "slepian_cushion_Einf": {
+   "value": 1.101773371559154,
+   "X": 0.5
+  }
+ }
+}

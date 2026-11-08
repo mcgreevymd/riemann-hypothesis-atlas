@@ -1,0 +1,68 @@
+{
+ "r_circ": "l**2/mu",
+ "Ueff2_at_rc": "mu**4/l**6",
+ "apsides": [
+  0.6125741132772069,
+  2.7207592200561264
+ ],
+ "rddot_at_peri": 1.6854377448471463,
+ "g_vs_v2_over_r_at_peri": [
+  2.664911064067352,
+  4.350348808914498
+ ],
+ "fock": {
+  "CCR_p2_interior_err": 1.7763568394002505e-15,
+  "CCR_p2_boundary_states_with_defect": 1500,
+  "BdagB=N_p2": 1.7763568394002505e-15,
+  "bdag=S_sqrt(N+1)_p2": 0.0,
+  "S*S-I_interior_p2": 0.0,
+  "CCR_p3_interior_err": 1.7763568394002505e-15,
+  "CCR_p3_boundary_states_with_defect": 2000,
+  "BdagB=N_p3": 8.881784197001252e-16,
+  "bdag=S_sqrt(N+1)_p3": 0.0,
+  "S*S-I_interior_p3": 0.0,
+  "CCR_p5_interior_err": 8.881784197001252e-16,
+  "CCR_p5_boundary_states_with_defect": 2400,
+  "BdagB=N_p5": 4.440892098500626e-16,
+  "bdag=S_sqrt(N+1)_p5": 0.0,
+  "S*S-I_interior_p5": 0.0,
+  "CCR_p7_interior_err": 8.881784197001252e-16,
+  "CCR_p7_boundary_states_with_defect": 2572,
+  "BdagB=N_p7": 4.440892098500626e-16,
+  "bdag=S_sqrt(N+1)_p7": 0.0,
+  "S*S-I_interior_p7": 0.0,
+  "[b2,b3dag]": 4.898979485566356,
+  "[b3,b7dag]": 2.8284271247461903,
+  "H=log n on 7-smooth": 8.881784197001252e-16,
+  "|360> norm & position": [
+   1.0000000000000004,
+   360
+  ],
+  "unnormalized ||(b2dag)^k|1>||^2 = k!": [
+   1.0,
+   2.0000000000000004,
+   6.000000000000001,
+   24.000000000000004,
+   120.00000000000004,
+   720.0000000000001,
+   5040.000000000003
+  ],
+  "[b2,b3dag]_deep": 0.0,
+  "[b3,b7dag]_deep": 0.0,
+  "[b2,b5dag]_deep": 0.0
+ },
+ "coherent ||z||^2 vs exp(sum p^-2s)": [
+  1.5242753953707162,
+  1.5242755901935918
+ ],
+ "isometry vector sum n^-2s vs prod 1/(1-p^-2s)": [
+  1.595046677564215,
+  1.5950520833333333
+ ],
+ "sum logp/(p^b-1) vs -zeta'/zeta(2)": [
+  0.5699599930643277,
+  0.5699609930945329
+ ],
+ "A=2: 2 sum Lambda(n)/sqrt n (n<e^A) as truncated occupation": 5.852468364352818,
+ "A=2: M_A = -K0 + that": 11.224651783578484
+}

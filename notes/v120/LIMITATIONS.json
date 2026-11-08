@@ -1,0 +1,41 @@
+{
+  "rh_proved": false,
+  "release": "v1.20",
+  "proposed_only": true,
+  "merge": false,
+  "tag": false,
+  "rank1": "kahler_triple_polarization",
+  "open_score_unchanged": "Open ~1.8",
+  "not_constructed": [
+    "independent representer h_A",
+    "compatible J whose metric is W",
+    "infinite-dimensional inverse of B on the constraint",
+    "geometric target of the right size for E0",
+    "Hodge structure, cycles, or numerical group for the formal graph"
+  ],
+  "numerical_uncertified": [
+    "per-place window totals",
+    "E0 estimates, not certified brackets; absolute cosines, not squared overlaps",
+    "h2 residual 6.92 percent at A=0.6",
+    "finite-difference kink 0.06189",
+    "A=2 near-null cluster in either basis",
+    "positive-compression comparison with W"
+  ],
+  "conjectural": [
+    "universal prime-edge singular orbit",
+    "1/log edge law",
+    "Gamma-only no-go",
+    "finite sum of edge layers for B inverse cosh"
+  ],
+  "closed_in_stated_scope": [
+    "local product-state covariance as a sign source",
+    "h1 and h2 as representers",
+    "translation-invariant J on E0",
+    "moments alone implying a gap",
+    "formal global phase c=1",
+    "formal graph as cycles",
+    "weight-12 selector and sigma-convexity of log|xi|",
+    "Iwasawa invariants as a sign",
+    "Rankin-Selberg square coefficients as W"
+  ]
+}

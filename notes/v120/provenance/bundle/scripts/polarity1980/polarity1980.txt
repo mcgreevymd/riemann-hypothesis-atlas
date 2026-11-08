@@ -1,0 +1,6 @@
+Q= -4*Q*Z + T**2  grad_euclid= Matrix([[2*T, -4*Z, -4*Q]])
+Q(xinf)= 0  polar of xinf: B(xinf,v)= -2*c  (contains xinf: True )
+Q(h)= -4  h-perp: B(h,v)= -2*b - 2*c
+Q on h-perp (b=-c): a**2 + 4*c**2
+tangent line pT-Q-p^2Z through pt [t:t^2/4:1] tangent: -(2*p - t)**2/4
+metric-G gradient of Q = G^-1*2Mx: Matrix([[2*T, -2*Z, -4*Q/3]])  (differential 2Mx unchanged)

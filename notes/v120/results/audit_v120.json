@@ -1,0 +1,144 @@
+{
+ "rh_proved": false,
+ "checks": {
+  "K0_digamma": {
+   "ok": true,
+   "K0": "-5.37218341922567"
+  },
+  "E0_kills_P_only": {
+   "ok": true,
+   "note": "The diagonal M_A stays in B by definition of the ledger."
+  },
+  "twisted_star": {
+   "ok": true,
+   "max_abs": 6.206335383118183e-17
+  },
+  "naive_star_differs": {
+   "ok": true,
+   "note": "(chi f)* equals chi^{-1} f*, not chi times that same star."
+  },
+  "k_edge_equivalent": {
+   "ok": true,
+   "ratios": [
+    1.0049957708461346,
+    1.0004999582708407,
+    1.0000499995833276
+   ]
+  },
+  "kink_exact_value": {
+   "ok": true,
+   "predicted": 0.061906320172915884
+  },
+  "kink_finite_difference": {
+   "ok": true,
+   "jump": 0.06188802232465207,
+   "v0": 0.1931471805599453,
+   "note": "Numerical derivative. The exact jump is the prediction. Not a certificate of a spectrum."
+  },
+  "bordered_inertia_both_index0_and_index1": {
+   "ok": true,
+   "cases": [
+    {
+     "kind": "index0",
+     "q": 0.0396597483240266,
+     "nB": 0,
+     "nR": 0,
+     "good": true
+    },
+    {
+     "kind": "index0",
+     "q": 0.3539532296318302,
+     "nB": 0,
+     "nR": 0,
+     "good": true
+    },
+    {
+     "kind": "index1_q_neg",
+     "q": -0.6666666666666666,
+     "nB": 1,
+     "nR": 0,
+     "good": true
+    },
+    {
+     "kind": "index1_q_pos",
+     "q": 0.5133333333333333,
+     "nB": 1,
+     "nR": 1,
+     "good": true
+    },
+    {
+     "kind": "index2",
+     "q": -0.4575000000000001,
+     "nB": 2,
+     "nR": 1,
+     "good": true
+    }
+   ]
+  },
+  "Q_homogeneous_and_affine": {
+   "ok": true
+  },
+  "gauge_ratio_is_scale_squared": {
+   "ok": true
+  },
+  "conic_signature_one_negative": {
+   "ok": true,
+   "eigenvalues": "[-2, 1, 2]"
+  },
+  "polar_positive": {
+   "ok": true
+  },
+  "smooth_at_infinity": {
+   "ok": true,
+   "note": "Chart Q=1 is the parabola T^2=4Z. Not a cusp."
+  },
+  "kunneth_signs": {
+   "ok": true,
+   "I_alpha": "-8",
+   "I_beta": "8"
+  },
+  "polynomial_test_boundary": {
+   "ok": true
+  },
+  "polynomial_test_not_smooth": {
+   "ok": true,
+   "Gtt_edge": "8"
+  },
+  "moment_operator_cancels": {
+   "ok": true
+  },
+  "ar1_covariance_psd": {
+   "ok": true,
+   "min_eig": 0.1828075503091531
+  },
+  "local_ufd_not_global_principal": {
+   "ok": true,
+   "note": "2 and 1+sqrt(-5) are irreducible. Noetherian does not mean a Noether charge. Regular local UFD is not global principality."
+  },
+  "weight_is_not_counterterm": {
+   "ok": true,
+   "note": "2(psi(k/2)-log 2pi) is not k/12."
+  },
+  "hilbert_not_compactly_supported": {
+   "ok": true,
+   "closed": 0.3496991525660598,
+   "quad": 0.3496991528018449,
+   "note": "Nonzero at x=2, outside the support of the indicator. A convolution J does not preserve compact support."
+  },
+  "level_set_not_the_strip": {
+   "ok": true,
+   "semi_axis": 2.23606797749979,
+   "note": "The curve Q=1 meets v_T near 0 only at large |v_Q|. Its limit is two lines. The inequality Q<=1 fills the region between them."
+  },
+  "atlas_schema": {
+   "ok": true,
+   "concepts": 1044,
+   "relations": 2051,
+   "rank1": "kahler_triple_polarization",
+   "priority": 0.72,
+   "missing_pieces": 10,
+   "open_18": 24
+  }
+ },
+ "all_ok": true
+}
