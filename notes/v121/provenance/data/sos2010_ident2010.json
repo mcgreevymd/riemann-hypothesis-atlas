@@ -1,0 +1,23 @@
+{
+ "kinf-k5-exp(-a/2)": "0",
+ "pole_part_symbol": "16*t**2/(4*t**2 + 1)",
+ "pole_part_check": "0",
+ "psi_shift_resid": [
+  5.546678239835239e-32,
+  -1.4954355423000654e-16,
+  6.001205538514356e-18,
+  -1.4952644577434006e-19
+ ],
+ "K5(0)=psi(5/4)-log pi": -1.3721834192256657,
+ "K0+4": -1.3721834192256657,
+ "twisted_factorization_resid": "0",
+ "green_tail": "G(u>supp) = e^{u/2}\u222be^{-s/2}F - e^{-u/2}\u222be^{s/2}F  (expand 2sinh((u-s)/2))",
+ "moments": [
+  "0",
+  "0"
+ ],
+ "R_local_exact": "28311552/5311735",
+ "R_local": 5.330000837767697,
+ "R_kernel_numeric": 5.330000837767697,
+ "normF_identity_resid": "0"
+}

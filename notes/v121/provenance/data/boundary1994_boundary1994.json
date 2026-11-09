@@ -1,0 +1,108 @@
+[
+ {
+  "k": 12,
+  "w": 10,
+  "dim Z1": 14,
+  "dim B1": 11,
+  "dim H1": 3,
+  "SNF of H1-coordinate map (all 1 => onto Z^3)": "[1, 1, 1]",
+  "dim W=Z1_T": 3,
+  "delta(1)=1|S-1 equals X^w-1": true,
+  "delta(1)(T)=1|T-1": "0",
+  "class of delta(1) in H1 (coords)": "[0, 0, 0]",
+  "W_Z basis even": [
+   "1 - X**10",
+   "-X**8 + 3*X**6 - 3*X**4 + X**2"
+  ],
+  "W_Z basis odd": [
+   "4*X**9 - 25*X**7 + 42*X**5 - 25*X**3 + 4*X"
+  ],
+  "T2 on W+_Z (columns = images of basis)": "[[2049, 108], [0, -24]]",
+  "T2 eigen on W+": "[(-24, [[-36/691, 1]]), (2049, [[1, 0]])]",
+  "primitive eigvec in W+_Z coords (eig -24)": "[-36, 691]",
+  "primitive eigvec in W+_Z coords (eig 2049)": "[1, 0]",
+  "index [W+_Z : eigenlines]": "691",
+  "sigma_{k-1}(2) - tau-like eigen": "[2073, 0]",
+  "odd Eisenstein period rho_G^-": "-5*X**9/1584 - X**7/480 - X**5/504 - X**3/480 - 5*X/1584",
+  "solved c": "691/720720",
+  "a0(G_k)=-B_k/2k": "691/65520",
+  "c == a0/(w+1)  [res_inf phi_G = a0]": true,
+  "res(Eis_1)": "1",
+  "coords Eis_1 in H1_Z-free (Z^3)": "[-1, -22680/691, -33736/691]",
+  "coords of W_Z basis classes": [
+   [
+    "1 - X**10",
+    "[0, 0, 0]"
+   ],
+   [
+    "-X**8 + 3*X**6 - 3*X**4 + X**2",
+    "[0, 0, -120]"
+   ],
+   [
+    "4*X**9 - 25*X**7 + 42*X**5 - 25*X**3 + 4*X",
+    "[0, 630, 630]"
+   ]
+  ],
+  "res on H1_Z-free unit generators": [
+   "-1",
+   "0",
+   "0"
+  ],
+  "lcm denominators of Eis_1 coords": "691",
+  "factor": "{691: 1}",
+  "num zeta(1-k)": "691"
+ },
+ {
+  "k": 16,
+  "w": 14,
+  "dim Z1": 18,
+  "dim B1": 15,
+  "dim H1": 3,
+  "SNF of H1-coordinate map (all 1 => onto Z^3)": "[1, 1, 1]",
+  "dim W=Z1_T": 3,
+  "delta(1)=1|S-1 equals X^w-1": true,
+  "delta(1)(T)=1|T-1": "0",
+  "class of delta(1) in H1 (coords)": "[0, 0, 0]",
+  "W_Z basis even": [
+   "1 - X**14",
+   "2*X**12 - 7*X**10 + 11*X**8 - 11*X**6 + 7*X**4 - 2*X**2"
+  ],
+  "W_Z basis odd": [
+   "36*X**13 - 245*X**11 + 539*X**9 - 660*X**7 + 539*X**5 - 245*X**3 + 36*X"
+  ],
+  "T2 on W+_Z (columns = images of basis)": "[[32769, -3240], [0, 216]]",
+  "T2 eigen on W+": "[(216, [[360/3617, 1]]), (32769, [[1, 0]])]",
+  "primitive eigvec in W+_Z coords (eig 216)": "[360, 3617]",
+  "primitive eigvec in W+_Z coords (eig 32769)": "[1, 0]",
+  "index [W+_Z : eigenlines]": "3617",
+  "sigma_{k-1}(2) - tau-like eigen": "[32553, 0]",
+  "odd Eisenstein period rho_G^-": "-7*X**13/144 - 691*X**11/21600 - 13*X**9/432 - 143*X**7/4800 - 13*X**5/432 - 691*X**3/21600 - 7*X/144",
+  "solved c": "3617/244800",
+  "a0(G_k)=-B_k/2k": "3617/16320",
+  "c == a0/(w+1)  [res_inf phi_G = a0]": true,
+  "res(Eis_1)": "1",
+  "coords Eis_1 in H1_Z-free (Z^3)": "[-1, -1200441/3617, -6410523/3617]",
+  "coords of W_Z basis classes": [
+   [
+    "1 - X**14",
+    "[0, 0, 0]"
+   ],
+   [
+    "2*X**12 - 7*X**10 + 11*X**8 - 11*X**6 + 7*X**4 - 2*X**2",
+    "[0, 0, 840]"
+   ],
+   [
+    "36*X**13 - 245*X**11 + 539*X**9 - 660*X**7 + 539*X**5 - 245*X**3 + 36*X",
+    "[0, 6930, 41580]"
+   ]
+  ],
+  "res on H1_Z-free unit generators": [
+   "-1",
+   "0",
+   "0"
+  ],
+  "lcm denominators of Eis_1 coords": "3617",
+  "factor": "{3617: 1}",
+  "num zeta(1-k)": "3617"
+ }
+]

@@ -1,0 +1,80 @@
+{
+ "K0_closed_form": "-5.37218341922566558223295749745",
+ "FP_identity": "2.95709068791478723806578593456",
+ "minusK0_split": true,
+ "T_closed_form": true,
+ "small_window_cstar": "0.19656595196313999455943595252",
+ "small_window_two_scale": "0.19670785619966997487022797835",
+ "a2": "0.490129071734273595856950861818",
+ "a3": "0.634284100597563977186387772545",
+ "M_1": "6.35244156269421277394685922108",
+ "M_1.1": "7.62100976388934072831963476617",
+ "M1_value": true,
+ "two_prime_path_norm": "0.900927616261846783820164246823",
+ "two_prime_path_norm_matrix": true,
+ "probe_identity_rows": [
+  [
+   "1.0",
+   "2.0",
+   "0.0459900665187011",
+   "0.0459900665187011",
+   1.8488927466117464e-32
+  ],
+  [
+   "(0.800000000000000044408920985006 + 3.0j)",
+   "(1.5 - 2.0j)",
+   "(0.0466097101129497 - 0.000363342917283821j)",
+   "(0.0466097101129497 - 0.000363342917283821j)",
+   6.975072773650642e-32
+  ],
+  [
+   "(0.599999999999999977795539507497 + 10.0j)",
+   "(0.599999999999999977795539507497 + 10.0j)",
+   "(0.104985091314413 + 0.0j)",
+   "(0.10498509131434 + 0.0j)",
+   7.288700282681366e-14
+  ]
+ ],
+ "probe_identity": true,
+ "Kq_1_2_matches_kms2040": true,
+ "KMS_prime_kernel_1_2": true,
+ "qprime0": "0.0462099862308379415778676208607",
+ "Phi_moment_ratio": true,
+ "Phi_positive_samples": true,
+ "ghost_moments_zero": true,
+ "ghost_fourier_route": {
+  "norm2": 40.77466063348416,
+  "W_over_N": 0.0023337530055115483,
+  "W_drop2_over_N": -0.6392279389118883
+ },
+ "ghost_W_matches": true,
+ "ghost_drop2_matches": true,
+ "block_gap_no_prime": true,
+ "block_negative": {
+  "g": "0.00301192415024093631309311924856",
+  "d": "0.107651173059256194005718864493",
+  "w": "-0.104639248909015257692625745244",
+  "det": "-0.0112645378930949863994737490695"
+ },
+ "block_det_value": true,
+ "two_constraint_inertia_identity_random": "0 mismatches /300",
+ "pencil_min_flat_in_sum": "2*B + 4*Cm*Cp",
+ "pencil_min_equals_2W": true,
+ "serre_E10_cusp_coefficient": "38016/691",
+ "K0_minus_K0sigma1": true,
+ "arakelov_minus_K0_gaps": {
+  "a=0": "3.37218",
+  "a=1/2": "5.37218",
+  "a=-log(pi)/2": "1.08272",
+  "a=-log(2pi)/2": "-0.303571"
+ },
+ "arakelov_gaps": true,
+ "Sreg_equals_K0_over_2": true,
+ "K5_equals_K0_plus_4": true,
+ "gamma_planck_ladder": true,
+ "completed_zeta_residues": true,
+ "xi_entire_at_0_1": true,
+ "all_ok": true,
+ "failed": [],
+ "seconds": 7.0
+}

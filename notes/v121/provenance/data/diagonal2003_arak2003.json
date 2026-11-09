@@ -1,0 +1,39 @@
+{
+ "O1hat_sq": 0.5,
+ "avg_log_chordal": -0.5,
+ "avg_log_chordal_direct": -0.5,
+ "omega_hat_sq": {
+  "a=0 (FS^-2 on omega, Green -log chordal^2)": 2.0,
+  "Arakelov (int g mu=0, residue metric), a=1/2": 0.0,
+  "Kahler vol-1, omega=(i/2)h dz^dzbar: a=-1/2 log pi": 4.2894597716988,
+  "Kahler vol-1, omega=i h dz^dzbar: a=-1/2 log 2pi": 5.675754132818691
+ },
+ "anomaly_coeff_d_da": -4.0,
+ "minusK0": 5.3721834192256654,
+ "mismatch_minusK0_minus_value": {
+  "a=0 (FS^-2 on omega, Green -log chordal^2)": 3.3721834192256654,
+  "Arakelov (int g mu=0, residue metric), a=1/2": 5.3721834192256654,
+  "Kahler vol-1, omega=(i/2)h dz^dzbar: a=-1/2 log pi": 1.0827236475268658,
+  "Kahler vol-1, omega=i h dz^dzbar: a=-1/2 log 2pi": -0.3035707135930251
+ },
+ "a_needed_NOT_A_FIT": -0.8430458548064164,
+ "exp_minus_a_needed": 2.3234330499243687,
+ "compare_sqrtpi_sqrt2pi": [
+  1.772453850905516,
+  2.5066282746310007
+ ],
+ "section_selfint_P0": {
+  "a=0 (FS^-2 on omega, Green -log chordal^2)": 0.0,
+  "Arakelov (int g mu=0, residue metric), a=1/2": -0.5,
+  "Kahler vol-1, omega=(i/2)h dz^dzbar: a=-1/2 log pi": 0.5723649429247001,
+  "Kahler vol-1, omega=i h dz^dzbar: a=-1/2 log 2pi": 0.9189385332046728
+ },
+ "tate_derived_diag_degree": 0.0,
+ "K0": -5.3721834192256654,
+ "2dlogGammaR_half": -5.3721834192256654,
+ "dlog_invariant_under_const": 0.0,
+ "K0_decomp": {
+  "psi(1/4)": -4.2274535333762655,
+  "-log pi (from pi^{-s/2}, s-dependent scale)": -1.1447298858494002
+ }
+}

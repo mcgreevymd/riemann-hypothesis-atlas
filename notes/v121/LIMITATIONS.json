@@ -1,0 +1,20 @@
+{
+  "rh_proved": false,
+  "all_window_positivity": false,
+  "release": "v1.21",
+  "proposed_only": true,
+  "merge": false,
+  "tag": false,
+  "rank1": "kahler_triple_polarization",
+  "open_score_unchanged": "Open ~1.8",
+  "counts": {"concepts": 1066, "relations": 2108},
+  "certified_only_through": "A <= 1.1",
+  "certificates_are_not_formal_proofs": true,
+  "numerical_only_beyond": "A > 1.1",
+  "not_constructed": [
+    "arithmetic class map Phi with a computed intersection pairing",
+    "all-window positivity of W on E0",
+    "independently positive coupled storage equal to K_q",
+    "two-cusp modular origin of M_A"
+  ]
+}

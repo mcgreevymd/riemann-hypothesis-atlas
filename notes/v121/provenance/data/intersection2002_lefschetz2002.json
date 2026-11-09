@@ -1,0 +1,56 @@
+{
+ "hyperbolic diag(2,1/2)": {
+  "detDf": 1.0,
+  "det_I_minus_Df": -0.5,
+  "index": -1,
+  "AB_weight": 2.0
+ },
+ "elliptic rot(pi/3)": {
+  "detDf": 0.9999999999999999,
+  "det_I_minus_Df": 0.9999999999999999,
+  "index": 1,
+  "AB_weight": 1.0000000000000002
+ },
+ "shear [[1,1],[0,1]] (parabolic)": {
+  "detDf": 1.0,
+  "det_I_minus_Df": 0.0,
+  "index": "non-isolated/degenerate",
+  "AB_weight": "undefined"
+ },
+ "osc time 2pi = I": {
+  "detDf": 1.0,
+  "det_I_minus_Df": 0.0,
+  "index": "non-isolated/degenerate",
+  "AB_weight": "undefined"
+ },
+ "p-adic |1-u|_p for u=p^m, p^-m (normal factor) and Weil weight log p p^{-m/2}": [
+  {
+   "p": 2,
+   "m": 1,
+   "abs_1_minus_u_p": 1.0,
+   "abs_1_minus_uinv_p": 2.0,
+   "Weil_weight": 0.4901290717342736
+  },
+  {
+   "p": 2,
+   "m": 2,
+   "abs_1_minus_u_p": 1.0,
+   "abs_1_minus_uinv_p": 4.0,
+   "Weil_weight": 0.34657359027997264
+  },
+  {
+   "p": 3,
+   "m": 1,
+   "abs_1_minus_u_p": 1.0,
+   "abs_1_minus_uinv_p": 3.0,
+   "Weil_weight": 0.634284100597564
+  },
+  {
+   "p": 3,
+   "m": 2,
+   "abs_1_minus_u_p": 1.0,
+   "abs_1_minus_uinv_p": 9.0,
+   "Weil_weight": 0.3662040962227032
+  }
+ ]
+}

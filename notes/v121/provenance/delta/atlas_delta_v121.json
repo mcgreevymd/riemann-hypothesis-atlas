@@ -1,0 +1,1131 @@
+{
+ "base": {
+  "version": "v1.20",
+  "concepts": 1044,
+  "relations": 2051
+ },
+ "proposed": {
+  "version": "v1.21",
+  "concepts": 1066,
+  "relations": 2108
+ },
+ "added_concepts": 22,
+ "added_relations": 57,
+ "concepts": [
+  {
+   "id": "signed_window_operator",
+   "name": "Signed self-adjoint window operator K_A = L_A - M_A + P_A",
+   "aliases": [
+    "K_A",
+    "window Weil operator"
+   ],
+   "plain": "The window Weil form is the form of one closed, semibounded self-adjoint operator: a positive jump (Gamma plus primes) operator, minus a constant mass, plus a rank-two pole part. The Gamma part grows like log|t| in frequency. The operator exists; its sign on E0 is exactly what is missing.",
+   "label": "Theorem",
+   "core": "On L2(I_A), I_A = [-A/2, A/2], the form W = P + H_A - M_A||F||^2 is closed and bounded below on a log-Sobolev domain; the associated operator is K_A = L_A - M_A + P_A with L_A >= 0 the Gamma and prime jump operator and P_A of rank 2. The Gamma symbol is asymptotic to log|t|. The missing inequality is ||J_A F||^2 >= M_A ||F||^2 on E0 (J_A the square root of L_A) proved without zeros.",
+   "formula": "K_A = L_A - M_A + P_A,  W(F) = <K_A F, F>",
+   "numbers": [
+    "Gamma symbol ~ log|t| (operator2023)."
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "sign/positivity (Ax2)",
+    "ghost-blind"
+   ],
+   "uncertain": "Positivity of K_A on E0 for any window beyond A = 1.1.",
+   "proved": "Closedness and semiboundedness from the positive jump form plus bounded perturbations (operator2023).",
+   "tests": "Any proposed sign mechanism must reproduce the certified gaps on A <= 1.1.",
+   "pitfalls": [
+    "Existence of a self-adjoint operator is not a sign statement.",
+    "Do not identify K_A with the cusp Laplacian: same 1/4, different operator."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "window_energy_ledger",
+     "note": "operator form of the ledger"
+    },
+    {
+     "type": "refines",
+     "to": "weil_operator",
+     "note": "window realization"
+    },
+    {
+     "type": "lives-in",
+     "to": "bulk_form_B_off_E0",
+     "note": "B is the L_A - M_A part"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1.0,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "window_energy_ledger"
+  },
+  {
+   "id": "pole_cancelled_chebyshev_ledger",
+   "name": "Pole-cancelled ledger with Chebyshev remainder",
+   "aliases": [],
+   "plain": "Subtracting the pole against the main term of the prime sum rewrites W with a constant K5 = K0 + 4 and an integral against the Chebyshev remainder E = psi - x. The unconstrained residual mass changes sign between A = 1 and A = 2.",
+   "label": "Theorem",
+   "core": "W(F) = K5||F||^2 + J5(F) - 2 int x^{-1/2} <F, T_{log x}F> dE(x), E = psi_Cheb - x, K5(0) = K0 + 4. Unconstrained residual mass M~_A = M_A - 4e^{A/2}.",
+   "formula": "W = K5||F||^2 + J5 - 2∫x^{-1/2}<F,T_{log x}F> dE(x)",
+   "numbers": [
+    "M~_A: -0.2424 (A=1), 0.3515 (A=2), 0.4611 (A=3) [Numerical]."
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "Sign control of the dE integral on E0.",
+   "proved": "Exact algebra; reproduced numerically (sos2010, realization2033).",
+   "tests": "Ghost n=2 deletion changes the dE term.",
+   "pitfalls": [
+    "sos2010 \"Lemma A\" is a Ritz value, not a lower bound."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "window_energy_ledger",
+     "note": "pole/main-term cancellation"
+    },
+    {
+     "type": "related",
+     "to": "pole_plane",
+     "note": "pole absorbed into K5"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1.0,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "window_energy_ledger"
+  },
+  {
+   "id": "moment_parametrization_hardy_quarter",
+   "name": "E0 = (d^2 - 1/4) H^2_0: moment constraints as a Hardy-1/4 operator",
+   "aliases": [],
+   "plain": "Every window test with both moments zero is (d^2 - 1/4)G for a unique G supported in the window, and conversely. In the chart r = e^{-u} the operator is d_r(r^2 d_r); 1/4 is the Hardy constant and also the bottom of the continuous spectrum at the modular cusp.",
+   "label": "Theorem",
+   "core": "D = d^2 - 1/4 maps H^2_0(I_A) bijectively onto L2(I_A) ∩ ker C+ ∩ ker C-, C± = ∫F e^{±u/2}. Under r = e^{-u} with the unitary half-density, D becomes d_r(r^2 d_r). The radial cusp operator -y^2 d_y^2 is unitarily -d_t^2 + 1/4.",
+   "formula": "E0 = D H^2_0,  D = d^2 - 1/4",
+   "numbers": [],
+   "axes": [
+    "structure/frame (Ax1)",
+    "reference/pole/cusp",
+    "ghost-blind"
+   ],
+   "uncertain": "Whether the shared 1/4 is more than coincidence of half-densities.",
+   "proved": "Elementary ODE with compact support iff both moments vanish (parabola2019, poincare2024, modular2026).",
+   "tests": "",
+   "pitfalls": [
+    "Same constant 1/4 does not make the cusp Laplacian the W operator."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "bulk_form_B_off_E0",
+     "note": "explicit parametrization of E0"
+    },
+    {
+     "type": "related",
+     "to": "hardy_constant_window_weil",
+     "note": "Hardy 1/4 in the unitary chart"
+    },
+    {
+     "type": "analogue-of",
+     "to": "one_cusp_three_readings",
+     "note": "cusp continuous spectrum starts at 1/4"
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_d8",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1.0,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "bulk_form_B_off_E0"
+  },
+  {
+   "id": "mass_counterterm_character_class",
+   "name": "M_A as a regularized prime sum fixed by the character class",
+   "aliases": [],
+   "plain": "The mass M_A is twice the window prime sum minus its regularized value -zeta'/zeta(1/2) = K0/2. The constant K0 has the closed form -(gamma + log 8 pi + pi/2) and is fixed by the adelic character class; there is no free renormalization parameter. The SL2(Z) cusp produces the sigma = 1 version of the constant instead.",
+   "label": "Theorem",
+   "core": "M_A = 2(S_A - S_reg), S_reg = -zeta'/zeta(1/2) = K0/2; -K0 = gamma + log 8pi + pi/2; FP∫k = pi/2 + 2log2; in Connes semilocal trace degree form M_A is the total alpha-normalized mass. K0 - K0^(1) = -pi/2 - log 2.",
+   "formula": "M_A = -K0 + 2Σ_{log n<A} Λ(n)/√n,  K0 = ψ(1/4) - log π = -5.372183",
+   "numbers": [
+    "K0 = -5.3721834",
+    "K0 - K0^(1) = -2.2639",
+    "S_reg = -2.68609"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "Closed forms checked to 30 digits (audit2060); Connes 1999 Thm VII.4 cited for the trace form.",
+   "tests": "",
+   "pitfalls": [
+    "The earlier \"RG family\" reading (free scheme parameter) is wrong.",
+    "Explicit-formula tables of M_A that use zeros are diagnostics only."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "spring_energy_counterterm_split",
+     "note": "closed form of the counterterm"
+    },
+    {
+     "type": "uses",
+     "to": "connes_trace",
+     "note": "degree form"
+    },
+    {
+     "type": "contrasts-with",
+     "to": "tautology_boundary",
+     "note": "zero-based tables are diagnostic only"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1.0,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "spring_energy_counterterm_split"
+  },
+  {
+   "id": "small_window_poincare_bound",
+   "name": "No-prime windows: W >= 0.1965||F||^2 on E0 for A <= 1/10",
+   "aliases": [],
+   "plain": "For windows shorter than log 2 no prime enters, and a Poincare-type argument using both moment constraints proves a uniform positive lower bound for A <= 1/10.",
+   "label": "Theorem",
+   "core": "For A <= 1/10, W(F) >= c*||F||^2 on E0 with c* = log(5√2/π) - γ - 3/80 ≈ 0.19657 > 7/240. Elementary chain bounds without moments fail at A = 1 (3.7528 vs 6.3524 needed).",
+   "formula": "c* = log(5√2/π) - γ - 3/80",
+   "numbers": [
+    "c* ≈ 0.19657"
+   ],
+   "axes": [
+    "sign/positivity (Ax2)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "Hand proof (poincare2024), constant rechecked in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "No prime is involved; this says nothing about arithmetic."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "certified_windows",
+     "note": "analytic smallest-window case"
+    },
+    {
+     "type": "tests",
+     "to": "weil_positivity",
+     "note": "window instance only"
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "certified_windows"
+  },
+  {
+   "id": "prime_window_certificates",
+   "name": "Certified E0 gaps through A = 1.1 (primes 2 and 3)",
+   "aliases": [],
+   "plain": "Three computer-assisted bounds: W >= 0.0045||F||^2 on E0 up to width 0.694 (interval arithmetic), W >= 0.004||F||^2 up to width 1 (prime 2), and W >= 0.0005||F||^2 up to width 1.1 (primes 2 and 3). Beyond 1.1 nothing is certified.",
+   "label": "Theorem",
+   "core": "A <= 347/500: constrained log-Jensen lemma, mpmath.iv. A <= 1: 815 cells, N=48, κ=2; finite eigenvalue > 0.0069963, h* > 2.2304, B* < 0.07587, Schur margin > 0.000314 ⇒ W >= ||F||^2/250. A <= 1.1: 1838 cells, N=192, κ=4; effective eigenvalue > 0.00066384, h* > 3.20786 ⇒ W >= 0.0005||F||^2. Computer-assisted: scalar data in mpmath interval arithmetic; finite matrices in IEEE-754 binary64 with dot-product error gamma_n = n u/(1 - n u), u = 2^-53, and explicit residual/orthogonality bounds. Not a formally verified proof.",
+   "formula": "W ≥ c_A ||F||^2 on E0: c = 0.0045 (A≤0.694), 0.004 (A≤1), 0.0005 (A≤1.1)",
+   "numbers": [
+    "Schur margins 0.000314 (A=1), effective eigen 0.00066384 (A=1.1)"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "Extension past 1.1; formal verification of the floating-point layer.",
+   "proved": "Computer-assisted: scalar data in mpmath interval arithmetic; finite matrices in IEEE-754 binary64 with dot-product error gamma_n = n u/(1 - n u), u = 2^-53, and explicit residual/orthogonality bounds. Not a formally verified proof. Re-executed with single-thread BLAS; all assertions passed.",
+   "tests": "Same pipeline with n=2 deleted must fail (ghost control).",
+   "pitfalls": [
+    "Not a formal proof.",
+    "Window positivity on A <= 1.1 is not RH and is not all-window positivity.",
+    "Failure of the interval bound at 0.695 is inconclusive, not a counterexample."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "certified_windows",
+     "note": "prime-carrying windows"
+    },
+    {
+     "type": "extends",
+     "to": "small_window_poincare_bound",
+     "note": "adds primes 2, 3"
+    },
+    {
+     "type": "tests",
+     "to": "weil_positivity",
+     "note": "window instances only"
+    }
+   ],
+   "priority": 0.347,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.7,
+    "evidence": 0.64,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "certified_windows"
+  },
+  {
+   "id": "e0_minima_grid_bias",
+   "name": "E0 minima beyond A = 1.1 are numerical and grid-biased",
+   "aliases": [],
+   "plain": "Constrained minima of W/||F||^2 fall from about 0.012 at A = 1 to about 1.3e-5 for A between 2 and 3 on 2048-cell models; 128-cell models give about 2e-3, roughly 100 times larger. The gap and the discretization error are the same size.",
+   "label": "Numerical",
+   "core": "Ritz/finite-model minima on E0 (inertia2057): 0.8749 (0.5), 0.5455 (0.694), 0.011872 (1), 0.00093187 (1.1), 1.72e-5 (1.5), 1.278e-5 (2), 1.30e-5 (2.5), 1.2786e-5 (3).",
+   "formula": "",
+   "numbers": [
+    "2048 cells vs 128 cells differ ~100x beyond A ≈ 1.1"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "ghost-sensitive"
+   ],
+   "uncertain": "Everything beyond 1.1.",
+   "proved": "Not certified.",
+   "tests": "",
+   "pitfalls": [
+    "Upper estimates only; do not draw as brackets.",
+    "A tiny positive minimum is not evidence of positivity at that scale."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "window_signature_numerical_witness",
+     "note": "E0-constrained minima"
+    },
+    {
+     "type": "contrasts-with",
+     "to": "prime_window_certificates",
+     "note": "uncertified region"
+    }
+   ],
+   "priority": 0.365,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "window_signature_numerical_witness"
+  },
+  {
+   "id": "n2_deletion_ghost_control",
+   "name": "Deleting n = 2 alone makes W negative on an explicit E0 test",
+   "aliases": [],
+   "plain": "On the test (d^2 - 1/4)(1-u^2)^4 at width 2, the true W/||F||^2 is +0.0023; deleting only the n = 2 term gives -0.639. Any positivity proof must see the actual prime coefficients.",
+   "label": "Numerical",
+   "core": "G = (1-u^2)^4 on [-1,1], F = DG, ||F||^2 = 40.77466; W = 0.0951580, W/N = 0.0023338; drop-2 W/N = -0.63923 (two routes: physical quadrature and Fourier side).",
+   "formula": "",
+   "numbers": [
+    "W/N = 0.0023338",
+    "drop-2 W/N = -0.63923"
+   ],
+   "axes": [
+    "ghost-sensitive",
+    "numerics/certificate"
+   ],
+   "uncertain": "",
+   "proved": "Quadrature in two independent routes agree.",
+   "tests": "",
+   "pitfalls": [
+    "The deleted-coefficient form is not admissible Euler data; it is a sensitivity control, not a counterexample."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "explicit_ghost_window",
+     "note": "coefficient-deletion ghost"
+    },
+    {
+     "type": "constrains",
+     "to": "weil_positivity",
+     "note": "proof must be coefficient-sensitive"
+    }
+   ],
+   "priority": 0.4,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.7,
+    "evidence": 0.8,
+    "quadrant": "RH-sharp"
+   },
+   "rank": null,
+   "_template": "explicit_ghost_window"
+  },
+  {
+   "id": "one_negative_direction_certificate",
+   "name": "Exactly one negative direction off E0 (certified at A = 1, 1.1)",
+   "aliases": [],
+   "plain": "With Q = W - P on the full window, n-(Q|E0) = n-(Q) + n+(S) - 2 where S is the 2x2 moment Schur complement. At A = 1 and 1.1 the certificate shows Q has exactly one negative direction and the rest of its spectrum is at least 0.004 and 0.0005. The sign pattern of S follows from the constrained certificate, not independently.",
+   "label": "Theorem",
+   "core": "A=1: Q(const) ∈ [-1.95450, -1.95400], second spectral lower 0.004, Schur margin 0.000513. A=1.1: Q(const) ∈ [-2.1351, -2.1346], gap 0.0005, margin 0.000164. Finite minorant W_J alone has 2 negative directions. Scans to A=3: n-(Q)=1 in every finite model; squared overlap of the negative mode with span{e^{±u/2}} 0.969–0.999. Computer-assisted: scalar data in mpmath interval arithmetic; finite matrices in IEEE-754 binary64 with dot-product error gamma_n = n u/(1 - n u), u = 2^-53, and explicit residual/orthogonality bounds. Not a formally verified proof.",
+   "formula": "n-(Q|E0) = n-(Q) + n+(S) - 2",
+   "numbers": [
+    "gap ≥ 0.004 (A=1), ≥ 0.0005 (A=1.1)"
+   ],
+   "axes": [
+    "numerics/certificate",
+    "sign/positivity (Ax2)",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "Index count beyond 1.1.",
+   "proved": "Computer-assisted: scalar data in mpmath interval arithmetic; finite matrices in IEEE-754 binary64 with dot-product error gamma_n = n u/(1 - n u), u = 2^-53, and explicit residual/orthogonality bounds. Not a formally verified proof.",
+   "tests": "A class map Φ must reproduce this count and gap.",
+   "pitfalls": [
+    "One negative direction, not two.",
+    "Overlap 0.97–0.999 is closeness, not identity with the hyperbolic plane.",
+    "S signature is derived from, not independent of, the E0 certificate."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "instance",
+     "to": "bordered_inertia_moment_criterion",
+     "note": "certified case n-(Q)=1, S signature (1,1)"
+    },
+    {
+     "type": "refines",
+     "to": "pole_block_hyperbolic_plane",
+     "note": "negative mode near the pole plane"
+    },
+    {
+     "type": "refines",
+     "to": "haynsworth_pole_plane_split_windows",
+     "note": "certified inertia"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1.0,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "bordered_inertia_moment_criterion"
+  },
+  {
+   "id": "fe_fixed_boundary_class",
+   "name": "Boundary plane (1,1) and the FE-fixed class e = h + v",
+   "aliases": [],
+   "plain": "The two boundary classes h, v are isotropic with J(h,v) = 1, so they span a hyperbolic plane of signature (1,1). The functional equation swaps them; the fixed class e = h + v has J(e,e) = 2, normalized by the residues -1, +1 of the completed zeta at s = 0, 1. Its orthogonal complement contains the negative line h - v as well as the projected tests, so it is not E0.",
+   "label": "Theorem",
+   "core": "J(h,h)=J(v,v)=0, J(h,v)=1, B_U R = I, e^⊥ = R(h - v) ⊕ π(A), J(h-v,h-v) = -2.",
+   "formula": "J(e,e) = 2",
+   "numbers": [],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "Exact (polarity2021); residues checked in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "Residues are those of the completed zeta Λ(s), not of ξ (ξ is entire).",
+    "e^⊥ ≠ E0."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "pole_block_hyperbolic_plane",
+     "note": "normalized boundary plane"
+    },
+    {
+     "type": "uses",
+     "to": "functional_equation",
+     "note": "FE swap h ↔ v"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "pole_block_hyperbolic_plane"
+  },
+  {
+   "id": "formal_projection_restates_w",
+   "name": "Formal boundary model: -J(πF, πG) = W is a restatement",
+   "aliases": [],
+   "plain": "Adding the two boundary classes and projecting, πF = F - C-(F)h - C+(F)v, gives -J(πF, πG) = W(F, G) on every window test. Because J on tests is defined from W, this reproduces the Hodge-index layout but proves nothing about the sign.",
+   "label": "Restatement",
+   "core": "With J defined on tests by J|tests = -W - (pole correction), the projection identity holds on all of D(I). A sign theorem needs J constructed independently, with W = -(intersection) on the primitive sector computed.",
+   "formula": "-J(πF, πG) = W(F, G)",
+   "numbers": [],
+   "axes": [
+    "restatement ⇔ RH",
+    "structure/frame (Ax1)",
+    "missing piece"
+   ],
+   "uncertain": "",
+   "proved": "Exact (matching1989).",
+   "tests": "",
+   "pitfalls": [
+    "Do not cite this identity as evidence for a Hodge index theorem."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "restates",
+     "to": "weil_positivity",
+     "note": "tautological on tests"
+    },
+    {
+     "type": "related",
+     "to": "tautology_boundary",
+     "note": "defined, not computed"
+    },
+    {
+     "type": "contrasts-with",
+     "to": "hodge_index",
+     "note": "layout without the theorem"
+    }
+   ],
+   "priority": 0.579,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_rg5",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "tautology_boundary"
+  },
+  {
+   "id": "arithmetic_class_map_requirements",
+   "name": "Requirements on the missing arithmetic class map Φ",
+   "aliases": [],
+   "plain": "A real Hodge-index route needs a map Φ from window tests to an intersection space built from geometry first, for example Φ(F) = ∫F(u)[Γ_u]du over graphs of the scaling action. The pairing must be computed: primes as fixed points with weight Λ(n)/√n, the Gamma term as an archimedean Green term, M_A as the diagonal self-intersection, and a Hodge-index theorem that applies. A fixed finite-rank lattice cannot work.",
+   "label": "Open",
+   "core": "Tests for any candidate: reproduce exactly one negative direction off E0 with gaps ≥ 0.004 (A=1) and ≥ 0.0005 (A=1.1); see the n=2 coefficient (ghost control). Ingredient status: ampleness holds on the positive-function cone; effectivity fails for the pointwise cone; a relative (GRR-type) lemma gives (A)+(R) ⇒ n+(J)=1; quadratic Riemann–Roch missing.",
+   "formula": "Φ(F) = ∫ F(u) [Γ_u] du,  W = -⟨ΦF, ΦF⟩ on the primitive sector",
+   "numbers": [],
+   "axes": [
+    "open target",
+    "missing piece",
+    "sign/positivity (Ax2)"
+   ],
+   "uncertain": "All of it.",
+   "proved": "",
+   "tests": "Finite certificates (A ≤ 1.1) and the n=2 ghost.",
+   "pitfalls": [
+    "A pairing defined from W is circular.",
+    "Finite-rank NS obstruction (bulk_form_B_off_E0)."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "no_ghost_missing_piece",
+     "note": "concrete shape of the missing object"
+    },
+    {
+     "type": "uses",
+     "to": "hodge_index",
+     "note": "needed theorem"
+    },
+    {
+     "type": "related",
+     "to": "mp_quadratic_rr",
+     "note": "missing quadratic RR"
+    },
+    {
+     "type": "related",
+     "to": "mp_castelnuovo",
+     "note": "function-field model"
+    },
+    {
+     "type": "tested_by",
+     "to": "one_negative_direction_certificate",
+     "note": "index and gap"
+    }
+   ],
+   "priority": 0.165,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.2,
+    "evidence": 0.5,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "thermodynamic_J_direction"
+  },
+  {
+   "id": "pencil_discriminant_window_conic",
+   "name": "W = half the minimal pencil discriminant through e",
+   "aliases": [],
+   "plain": "Every window test spans with the boundary classes a pencil of conics; W(F) is half the minimum of its discriminant through e. Window lines become nearly parabolic as A grows, and a four-dimensional example shows the conic picture alone does not force positivity.",
+   "label": "Theorem",
+   "core": "W(F) = ½ min Δ_e; disc(Q|ℓ) = -4 det M · Q(pole ℓ); one conic in a moving chart, det = -1/4. Separation 0.128, 1.46e-3, 1.6e-7 [Numerical].",
+   "formula": "W(F) = ½ min Δ_e",
+   "numbers": [
+    "separation 0.128 → 1.6e-7"
+   ],
+   "axes": [
+    "structure/frame (Ax1)",
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "sympy (parabolic1998, audit2060).",
+   "tests": "",
+   "pitfalls": [
+    "Geometry of the pencil does not supply a sign."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "pole_block_hyperbolic_plane",
+     "note": "pencil form"
+    },
+    {
+     "type": "related",
+     "to": "kahler_triple_polarization",
+     "note": "conic polarity model"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "pole_block_hyperbolic_plane"
+  },
+  {
+   "id": "k0_not_arakelov_degree",
+   "name": "K0 is a Mellin derivative, not an Arakelov degree on P^1_Z",
+   "aliases": [],
+   "plain": "The arithmetic self-intersection of the diagonal on P^1 over Z is 2 - 4a for the canonical metric family, never -K0. K0 is the derivative 2(log Γ_R)'(1/2) (= 2E[log|x|] under the Tate weight). The Tate dimension-one diagonal has degree 0. Hecke ratios at weight 12 are 2cos(mθ_p), which do not collapse to Λ(n)/√n.",
+   "label": "Theorem",
+   "core": "ω̂^2(P^1_Z) = 2 - 4a; -K0 - (2-4a) = 3.3722, 5.3722, 1.0827, -0.3036 for the canonical choices tested. Derived Δ^2 = 2 - 2g.",
+   "formula": "K0 = 2(log Γ_R)'(1/2)",
+   "numbers": [
+    "gaps 3.3722, 5.3722, 1.0827, -0.3036"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "reference/pole/cusp"
+   ],
+   "uncertain": "Other arithmetic surfaces.",
+   "proved": "diagonal2003, intersection2002; rechecked in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "Scope: P^1_Z and the metrics tested.",
+    "Spin/Wu/Rokhlin structures give parity only."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "arakelov",
+     "note": "P^1_Z diagonal does not produce K0"
+    },
+    {
+     "type": "contrasts-with",
+     "to": "mass_counterterm_character_class",
+     "note": "Mellin derivative vs degree"
+    }
+   ],
+   "priority": 0.452,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "arakelov"
+  },
+  {
+   "id": "probe_response_identity",
+   "name": "B_W(F_z, F_w) = K_q(z, w): W on exponential probes is the ξ response kernel",
+   "aliases": [],
+   "plain": "On truncated exponentials F_z = e^{-zu}1_{u≥0}, the complete Weil form, including pole, Gamma, K0 and every prime, equals the kernel (q(z) + conj q(w))/(z + conj w) with q = ξ'/ξ(1/2 + z). RH is equivalent to q being positive-real (Lagarias, Hinkkanen); the passage from probes back to compact tests is only sketched.",
+   "label": "Theorem",
+   "core": "For Re z, Re w > 1/2: B_W(F_z, F_w) = K_q(z, w). Inverse superposition to compact tests: sketched.",
+   "formula": "K_q(z,w) = (q(z) + \\bar q(w))/(z + \\bar w)",
+   "numbers": [
+    "K_q(1,2) = 0.045990",
+    "q'(0) = 0.0462099862"
+   ],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "restatement ⇔ RH",
+    "ghost-blind"
+   ],
+   "uncertain": "Full proof of \"PSD on one vertical line ⇒ W ≥ 0 on compact tests\".",
+   "proved": "Exact algebra (dispersion2030); three probe pairs rechecked by independent quadrature in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "q'(0) > 0 is not passivity (z + z^3 is a falsifier)."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "passive_network_positive_real",
+     "note": "window form = response kernel"
+    },
+    {
+     "type": "uses",
+     "to": "lagarias",
+     "note": "positive-real ⇔ RH"
+    },
+    {
+     "type": "related",
+     "to": "passivity",
+     "note": "storage reading"
+    }
+   ],
+   "priority": 0.42,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": null,
+   "_template": "passive_network_positive_real"
+  },
+  {
+   "id": "dispersion_not_passivity",
+   "name": "Causal and dispersive is not passive",
+   "aliases": [],
+   "plain": "Explicit causal, stable transfer functions such as -1/(z+1), the ghost transfer, and z + z^3 fail positive-realness. Anomalous dispersion is not loss, and Heaviside's distortionless line is still lossy. The needed property is Herglotz positivity, not causality.",
+   "label": "Theorem",
+   "core": "Falsifiers: q = -1/(z+1); q_a (ghost); z + z^3.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "Elementary (dispersion2030).",
+   "tests": "",
+   "pitfalls": [
+    "Distortionless ≠ lossless."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "anomalous_dispersion",
+     "note": "explicit falsifiers"
+    },
+    {
+     "type": "analogy",
+     "to": "telegrapher_distortionless",
+     "note": "distortionless but lossy"
+    },
+    {
+     "type": "fails-for",
+     "to": "passivity",
+     "note": "causality alone"
+    }
+   ],
+   "priority": 0.212,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 0.6,
+    "specificity": 0.05,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": null,
+   "_template": "anomalous_dispersion"
+  },
+  {
+   "id": "signed_kyp_delay_line",
+   "name": "Delay-line realization with signed KYP storage",
+   "aliases": [],
+   "plain": "The ξ response has a delay-line state realization whose storage identity is exact but signed: the boundary storage 2Re(x+ conj x-) is indefinite. A finite prime cutoff leaves a pole at z = 1/2, and independent per-prime storage diverges.",
+   "label": "Theorem",
+   "core": "2Re(ū y_B) = d/dt(S_∂ + S_jump) + D_jump - M_B|u|^2; pole-cancelled transfer q = g5 - ∫x^{-z-1/2} dE.",
+   "formula": "",
+   "numbers": [],
+   "axes": [
+    "phase/unitarity (Ax3)",
+    "no-go / refuted",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "A positive coupled storage.",
+   "proved": "realization2033.",
+   "tests": "",
+   "pitfalls": [
+    "A signed storage identity is not a passivity proof."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "passivity",
+     "note": "explicit realization"
+    },
+    {
+     "type": "uses",
+     "to": "pole_cancelled_chebyshev_ledger",
+     "note": "pole-cancelled transfer"
+    }
+   ],
+   "priority": 0.6,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": null,
+   "_template": "passivity"
+  },
+  {
+   "id": "prime_gap_block_obstruction",
+   "name": "Prime-gap 2x2 storage blocks fail",
+   "aliases": [],
+   "plain": "Coupling the storage blocks with a fixed PSD diagonal diverges, and the exact-match block is not PSD inside prime gaps: at cutoff B = 2 the weight w_B is negative just after log 2, 3, 5 and 7, proved at s = 49/25.",
+   "label": "Theorem",
+   "core": "B=2, s0=49/25: g=0.003012, d=0.107651, w=-0.104639, det=-0.0112645, ρ_req=5.978. Fixed-diagonal coupling needs ≥ (√P_B - √G)^2.",
+   "formula": "",
+   "numbers": [
+    "det = -0.0112645 at s0 = 1.96",
+    "w_B<0 on (0.693,0.766), (1.099,1.183), (1.609,1.707), (1.946,2) [Numerical]"
+   ],
+   "axes": [
+    "no-go / refuted",
+    "sign/positivity (Ax2)",
+    "ghost-sensitive"
+   ],
+   "uncertain": "",
+   "proved": "blocks2038; rechecked in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "Scope: these block shapes only."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "fails-for",
+     "to": "passivity",
+     "note": "blockwise PSD storage"
+    },
+    {
+     "type": "refines",
+     "to": "signed_kyp_delay_line",
+     "note": "blockwise attempt"
+    }
+   ],
+   "priority": 0.6,
+   "ranking": {
+    "gap_significance": 0.8,
+    "gap": "mp_passivity_margin",
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tractability": 0.3,
+    "evidence": 1,
+    "quadrant": "RH-sharp"
+   },
+   "rank": null,
+   "_template": "passivity"
+  },
+  {
+   "id": "kms_half_kernel_not_response",
+   "name": "Bost–Connes KMS at β = 1/2 gives the prime weights but not K_q",
+   "aliases": [],
+   "plain": "At β = 1/2 the Bost–Connes KMS state produces vectors with squared norm Λ(n)/√n exactly, but their Gram kernel is -ζ'/ζ(1/2 + z + conj w), which lacks the Gamma, pole and mass terms of K_q; the all-prime vector has infinite norm. The fermion primon gas has the wrong sign at n = 4 and 9.",
+   "label": "Theorem",
+   "core": "||v_n||^2 = Λ(n)/√n; kernel -ζ'/ζ(1/2 + z + w̄) ≠ K_q; boson Z = ζ(β), fermion Z = ζ(β)/ζ(2β).",
+   "formula": "",
+   "numbers": [
+    "C_2 = 0.63038",
+    "J = 0.100396"
+   ],
+   "axes": [
+    "physics analogue",
+    "no-go / refuted"
+   ],
+   "uncertain": "",
+   "proved": "kms2040; KMS theory cited.",
+   "tests": "",
+   "pitfalls": [
+    "Positive weights are not positive W."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "kms_bost_connes",
+     "note": "β = 1/2 vectors"
+    },
+    {
+     "type": "contrasts-with",
+     "to": "probe_response_identity",
+     "note": "missing Gamma, pole, mass"
+    },
+    {
+     "type": "related",
+     "to": "graded_primon_gas",
+     "note": "boson/fermion signs"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_flow_h1",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "kms_bost_connes"
+  },
+  {
+   "id": "gamma_kernel_planck_ladder",
+   "name": "Gamma jump kernel as a Planck/OU ladder",
+   "aliases": [],
+   "plain": "The archimedean jump kernel e^{-a/2}/(1 - e^{-2a}) is the sum of exponentials with rates 2m + 1/2, a Planck-type ladder. Reading Gamma as radiation and primes as a primon gas is suggestive; they are not one Hamiltonian, and kinetic (H_A) versus potential (M_A) is bookkeeping, not a sign mechanism.",
+   "label": "Analogy",
+   "core": "k∞(a) = Σ_m e^{-(2m+1/2)a} (exact).",
+   "formula": "k∞(a) = e^{-a/2}/(1-e^{-2a})",
+   "numbers": [],
+   "axes": [
+    "physics analogue",
+    "ghost-blind"
+   ],
+   "uncertain": "",
+   "proved": "Geometric series (exact).",
+   "tests": "",
+   "pitfalls": [
+    "Not a thermodynamic proof of positivity."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "local_product_state_covariance",
+     "note": "OU rates 2m+1/2"
+    },
+    {
+     "type": "analogue-of",
+     "to": "planck_ott_landsberg_reading",
+     "note": "ladder reading"
+    }
+   ],
+   "priority": 0.226,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 0.6,
+    "specificity": 0.5,
+    "tractability": 0.4,
+    "evidence": 0.5,
+    "quadrant": "background"
+   },
+   "rank": null,
+   "_template": "planck_ott_landsberg_reading"
+  },
+  {
+   "id": "serre_derivative_cusp_correction",
+   "name": "Serre derivative of E_k closes only at k = 4, 6, 8, 12",
+   "aliases": [],
+   "plain": "Differentiating E_k and restoring covariance with E_2 leaves a cusp correction f_k in S_{k+2}; it vanishes exactly when S_{k+2} = 0. For E_10 the correction carries 38016/691. This is a calibration of the derivative anomaly, not a W mechanism.",
+   "label": "Theorem",
+   "core": "D E_k = (k/12)(E_2 E_k - E_{k+2}) + f_k, f_k = 0 ⇔ k ∈ {4,6,8,12}; a_1(f_10) = 38016/691; D_4E_4 = -E_6/3, D_6E_6 = -E_4^2/2.",
+   "formula": "",
+   "numbers": [
+    "38016/691"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "",
+   "proved": "Bernoulli bound plus exact check 14 ≤ k ≤ 398 (eisenstein1990); 38016/691 rechecked in audit2060.",
+   "tests": "",
+   "pitfalls": [
+    "E_2 = θ log Δ vs K0 = 2(log Γ_R)'(1/2) is a parallel, not an identification."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "e2_anomaly",
+     "note": "general weight"
+    },
+    {
+     "type": "analogue-of",
+     "to": "serre_derivative_analogy",
+     "note": "made exact"
+    }
+   ],
+   "priority": 0.307,
+   "ranking": {
+    "gap_significance": 0.5,
+    "gap": "mp_automorphy_ineq",
+    "sensitivity": 1.0,
+    "specificity": 0.05,
+    "tractability": 0.6,
+    "evidence": 0.8,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "e2_anomaly"
+  },
+  {
+   "id": "boundary_class_691",
+   "name": "X^10 - 1 is the boundary class δ(1) in H^1_c; Eisenstein denominator 691",
+   "aliases": [],
+   "plain": "In weight 12 the period polynomial X^10 - 1 is the boundary class δ(1) in compactly supported cohomology, not the Eisenstein class. The Eisenstein lift has denominator 691 (3617 at weight 16), and mod 691 the Hecke operator T2 + 24 is nilpotent on the Δ line. One cusp supplies only one moment; two moments need Γ0(N).",
+   "label": "Theorem",
+   "core": "T2 = [[2049,0],[-1296000,-24]], 2049 ≡ -24 mod 691; D(δ1, ψ) = 6 res ψ; Sym^2 signature (1,2); <Δ,Δ> = 1.0353620568e-6.",
+   "formula": "",
+   "numbers": [
+    "<Δ,Δ> = 1.0353620568e-6"
+   ],
+   "axes": [
+    "reference/pole/cusp",
+    "structure/frame (Ax1)"
+   ],
+   "uncertain": "Modular origin of M_A.",
+   "proved": "boundary1994, hodge1991.",
+   "tests": "",
+   "pitfalls": [
+    "hodge1991 called X^10 - 1 \"the Eisenstein class\": corrected."
+   ],
+   "lemmas": [],
+   "rels": [
+    {
+     "type": "refines",
+     "to": "index_691_weight12",
+     "note": "boundary reading"
+    },
+    {
+     "type": "related",
+     "to": "one_cusp_three_readings",
+     "note": "one cusp, one moment"
+    },
+    {
+     "type": "related",
+     "to": "adjoint_691_eisenstein_not_cuspidal",
+     "note": "691 denominator"
+    }
+   ],
+   "priority": 0.325,
+   "ranking": {
+    "gap_significance": 0.2,
+    "gap": "",
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tractability": 0.6,
+    "evidence": 1,
+    "quadrant": "true but ghost-blind/untested"
+   },
+   "rank": null,
+   "_template": "index_691_weight12"
+  }
+ ]
+}

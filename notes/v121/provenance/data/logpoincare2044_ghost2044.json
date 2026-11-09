@@ -1,0 +1,8 @@
+{
+  "A": 2,
+  "Cplus_exact": "0",
+  "Cminus_exact": "0",
+  "W_original_over_norm": "0.002333753202303333053359702385943841305362",
+  "W_drop2_over_norm": "-0.6392279387150964890276019727952597770322",
+  "status": "quadrature, not interval-certified; fixed trial upper bounds, not lower certificates"
+}

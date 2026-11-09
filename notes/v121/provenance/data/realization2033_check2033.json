@@ -1,0 +1,10 @@
+{
+  "delay_kernel_identity_residual": "0",
+  "boundary_kernel_identity_residual": "0",
+  "AstarPplusPA": "Matrix([[0, 0], [0, 0]])",
+  "PBminusCstar": "Matrix([[0], [0]])",
+  "xi_center": "0.497120778188314109912773739685397719807293609557705185933234",
+  "q_at_center": "0 exactly by FE",
+  "qprime_at_center": "0.046209986230837941577867620860678028006763520794844180246365",
+  "cubic_low_frequency_control_q(1+2i)": "(-10+0j)"
+}

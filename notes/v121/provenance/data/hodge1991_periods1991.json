@@ -1,0 +1,81 @@
+{
+ "dim W (Eichler-Shimura-Manin, k=12)": 3,
+ "X^10-1 in W": true,
+ "X^2(X^2-1)^3 in W": true,
+ "4X^9-25X^7+42X^5-25X^3+4X in W": true,
+ "X^10-1 == 1|S - 1": true,
+ "1|T == 1 (T-invariant)": true,
+ "Smith invariants of [e,c1,m1] (all 1 => saturated Z-basis)": [
+  "1",
+  "1",
+  "1"
+ ],
+ "r+/omega+ coefficients (X^0..X^10)": [
+  "-0.0520984081041968",
+  "0.0",
+  "1.0",
+  "0.0",
+  "-3.0",
+  "0.0",
+  "3.0",
+  "0.0",
+  "-1.0",
+  "0.0",
+  "0.0520984081041968"
+ ],
+ "r-/omega- coefficients": [
+  "0.0",
+  "4.0",
+  "0.0",
+  "-25.0",
+  "0.0",
+  "42.0",
+  "0.0",
+  "-25.0",
+  "0.0",
+  "4.0",
+  "0.0"
+ ],
+ "max|r+/w+ - [(36/691)(X^10-1) - X^2(X^2-1)^3]|": "4.6192e-19",
+ "max|r-/w- - m1|": "7.3468e-40",
+ "omega+": "0.11437902243884895436",
+ "omega-": "0.0092692761623701632363",
+ "index [W+_Z : Z(X^10-1) + Z(36(X^10-1)-691 X^2(X^2-1)^3)]": "691",
+ "pairing symmetric": true,
+ "signature (pos,neg)": [
+  5,
+  6
+ ],
+ "pairing SL2(Z)-invariant": true,
+ "<1,1> (cusp T-invariant vector isotropic)": "0",
+ "polar of 1 = {q_10=0}: <1,X^j> for j": [
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "0",
+  "1"
+ ],
+ "<(X-z)^10,(X-z)^10>": "0",
+ "deg<=j  orthogonal to deg<=9-j (osculating flag self-dual)": true,
+ "polarized limit sign <X^10, N^10 X^10>": "3628800",
+ "<rho|(T-T^-1), conj rho>": "(0.0 + 0.012722528954011495494j)",
+ "6(2i)^11 <Delta,Delta>": "(0.0 - 0.012722528954011495494j)",
+ "ratio": "(-1.0 + 0.0j)",
+ "B(P,Q)=<P|(T-T^-1),Q> Gram on (e,c1,m1)": {
+  "e,e": "0",
+  "e,c1": "0",
+  "e,m1": "0",
+  "c1,e": "0",
+  "c1,c1": "0",
+  "c1,m1": "-6",
+  "m1,e": "0",
+  "m1,c1": "6",
+  "m1,m1": "0"
+ }
+}

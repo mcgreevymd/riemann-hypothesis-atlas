@@ -1,0 +1,10 @@
+{
+  "all_assertions_passed": true,
+  "width_one_certificate_reexecuted": true,
+  "representative_spectra_recomputed": [
+    1,
+    1.1,
+    3
+  ],
+  "scan_rows_checked": 117
+}

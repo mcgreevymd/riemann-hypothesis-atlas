@@ -1,0 +1,60 @@
+{
+  "prime_power_coefficients": [
+    {
+      "n": 2,
+      "boson_coefficient": "log(2)",
+      "fermion_coefficient": "log(2)"
+    },
+    {
+      "n": 3,
+      "boson_coefficient": "log(3)",
+      "fermion_coefficient": "log(3)"
+    },
+    {
+      "n": 4,
+      "boson_coefficient": "log(2)",
+      "fermion_coefficient": "-log(2)"
+    },
+    {
+      "n": 5,
+      "boson_coefficient": "log(5)",
+      "fermion_coefficient": "log(5)"
+    },
+    {
+      "n": 7,
+      "boson_coefficient": "log(7)",
+      "fermion_coefficient": "log(7)"
+    },
+    {
+      "n": 8,
+      "boson_coefficient": "log(2)",
+      "fermion_coefficient": "log(2)"
+    },
+    {
+      "n": 9,
+      "boson_coefficient": "log(3)",
+      "fermion_coefficient": "-log(3)"
+    },
+    {
+      "n": 11,
+      "boson_coefficient": "log(11)",
+      "fermion_coefficient": "log(11)"
+    },
+    {
+      "n": 13,
+      "boson_coefficient": "log(13)",
+      "fermion_coefficient": "log(13)"
+    },
+    {
+      "n": 16,
+      "boson_coefficient": "log(2)",
+      "fermion_coefficient": "-log(2)"
+    }
+  ],
+  "Gibbs_beta2_kernel_z1_w2": "0.6303764850163106335776825620497658114822",
+  "target_Kq_z1_w2": "0.04599006651870111731393869285726788798354",
+  "critical_KMS_prime_kernel_z1_w2": "0.100395641676643918998516509523779987725",
+  "boson_energy_beta2": "0.5699609930945328063998643600197300024035",
+  "fermion_energy_beta2": "0.4426214631837905534074670086410164623073",
+  "variance_boson_beta2": "0.8844818339635238851965361538706511685887"
+}
