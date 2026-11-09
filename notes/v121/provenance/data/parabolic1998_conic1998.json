@@ -1,0 +1,61 @@
+{
+ "1 Q_k": "X**2 + Y**2*k - Y*Z",
+ "1 det M_k (ternary discriminant D1)": "-1/4",
+ "1 inertia k=1,0,-1": [
+  [
+   2,
+   1,
+   0
+  ],
+  [
+   2,
+   1,
+   0
+  ],
+  [
+   2,
+   1,
+   0
+  ]
+ ],
+ "1 Q|line_inf": "X**2 + Y**2*k",
+ "1 binary disc of Q|line_inf (D3)": "-4*k",
+ "1 dual form Q*(l_inf)=l^T adj l": "k",
+ "1 pole of line_inf (center)": "[0, -2, -4*k]",
+ "1 Q(center)": "-4*k",
+ "2 parabola tangent at t (coeffs of X,Y,Z)": "[t, -1/2, -t**2/2]",
+ "2 affine form": "t*(-t + 2*x)",
+ "2 projective limit t->oo (normalized by t^2)": "[0, 0, -1/2]",
+ "2 ellipse far-vertex tangent": "[0, kk/2, -1/2]",
+ "2 ellipse far tangent k->0+": "[0, 0, -1/2]",
+ "2 ellipse vertical tangents at y=": "[1/(2*kk)]",
+ "2 ellipse vertical tangent x=": "[-1/(2*sqrt(kk)), 1/(2*sqrt(kk))]",
+ "2 hyperbola asymptotes (polars of real points at inf)": [
+  "[m, -m**2, -1/2]",
+  "[-m, -m**2, -1/2]"
+ ],
+ "2 asymptote affine": [
+  "(m*x - 1/2)/m**2",
+  "(-m*x - 1/2)/m**2"
+ ],
+ "2 asymptotes as m->0 (normalize by m^2)": [
+  "[0, 0, -1/2]",
+  "[0, 0, -1/2]"
+ ],
+ "2 hyperbola tangent along branch y->+oo (normalized)": "[m, -m**2, -1/2]",
+ "3 Q(h_s)": "-s",
+ "3 polar of h_s": "[0, -s/2, -1/2]",
+ "3 polar affine: y=": "-1/s",
+ "3 affine rep of h_s: (0,1/s)": "interior axis point",
+ "3 Q at affine rep (0,1/s,1)": "-1/s",
+ "3 Gram of Q on h_s^perp": "[[1, 0], [0, s]]",
+ "3 classification": "s>0: definite (ellipse-type complement); s=0: [[1,0],[0,0]] null (tangent line at infinity, parabola); s<0: (1,1) (hyperbola-type)",
+ "4 det(P^T M P) - l^T adj(M) l": "0",
+ "4 consequence": "binary disc(Q|l) = -4 l^T adj(M) l = -4 det(M) Q(pole(l)); with In(M)=(2,1): Q(pole)<0 <=> Q|l definite (ellipse), =0 tangent (parabola), >0 (1,1) (hyperbola)",
+ "5 envelope disc_t": "4*(x**2 - y)",
+ "5 projection Jacobian of incidence (x,t)->(x,y=2tx-t^2) d y/dt": "-2*t + 2*x",
+ "6 disc (quarter) in (alpha,beta)": "2*B + alpha**2 - 2*alpha*beta + 2*alpha*c_m - 2*alpha*c_p + beta**2 - 2*beta*c_m + 2*beta*c_p + c_m**2 + 2*c_m*c_p + c_p**2",
+ "6 Hessian in alpha,beta": "[[2, -2], [-2, 2]]",
+ "6 min over U-part": "2*(B + 2*c_m*c_p)",
+ "6 compare 2W=2(B+2c_p c_m)": "2*B + 4*c_m*c_p"
+}

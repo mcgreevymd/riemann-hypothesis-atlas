@@ -1,0 +1,374 @@
+[
+ {
+  "cited": "-5.372183",
+  "found": true,
+  "value": -5.3721834192256654,
+  "source": "counterterm1995_connes_arch1995.json:/K0"
+ },
+ {
+  "cited": "0.19657",
+  "found": true,
+  "value": 0.19656595196314,
+  "source": "poincare2024_check2024.json:/small_window_margin_lower"
+ },
+ {
+  "cited": "3.7528",
+  "found": true,
+  "value": 3.7528146930055737,
+  "source": "poincare2024_check2024.json:/rows[4]/H_chain_1000_lower"
+ },
+ {
+  "cited": "6.3524",
+  "found": true,
+  "value": 6.352441562694213,
+  "source": "eisenstein1990_analytic1990.json:/M_A(A=1)[0]"
+ },
+ {
+  "cited": "0.005275",
+  "found": true,
+  "value": 0.005275031819065523,
+  "source": "logpoincare2044_certify2044.json:/W_lower_expression_enclosure"
+ },
+ {
+  "cited": "9.0258",
+  "found": true,
+  "value": 9.025798276449894,
+  "source": "logpoincare2044_buckling_edge2044.json:[5]/k_lower"
+ },
+ {
+  "cited": "0.358",
+  "found": false,
+  "value": null,
+  "source": null
+ },
+ {
+  "cited": "0.0069963",
+  "found": true,
+  "value": 0.00699625700369369,
+  "source": "inertia2057_base_certificate2057.json:/finite_continuum_compression_eigen_lower"
+ },
+ {
+  "cited": "2.2304",
+  "found": true,
+  "value": 2.2304423244752134,
+  "source": "inertia2057_base_certificate2057.json:/high_block_lower"
+ },
+ {
+  "cited": "0.07587",
+  "found": true,
+  "value": 0.07587107207297479,
+  "source": "inertia2057_base_certificate2057.json:/cross_norm_bound"
+ },
+ {
+  "cited": "0.000314",
+  "found": false,
+  "value": null,
+  "source": null
+ },
+ {
+  "cited": "0.00066384",
+  "found": true,
+  "value": 0.0006638402195536748,
+  "source": "inertia2057_base_two_certificate2057.json:/verified_effective_eigen_lower"
+ },
+ {
+  "cited": "3.20786",
+  "found": true,
+  "value": 3.2078580774851138,
+  "source": "inertia2057_base_two_certificate2057.json:/high_block_lower"
+ },
+ {
+  "cited": "0.8749",
+  "found": true,
+  "value": 0.8749195641327701,
+  "source": "inertia2057_scan2057.json:/refined[0]/constrained_min"
+ },
+ {
+  "cited": "0.5455",
+  "found": true,
+  "value": 0.5455457502515122,
+  "source": "inertia2057_scan2057.json:/refined[3]/constrained_min"
+ },
+ {
+  "cited": "0.011872",
+  "found": true,
+  "value": 0.011872393222344887,
+  "source": "inertia2057_scan2057.json:/refined[5]/constrained_min"
+ },
+ {
+  "cited": "0.00093187",
+  "found": true,
+  "value": 0.0009318728774131253,
+  "source": "inertia2057_scan2057.json:/refined[7]/constrained_min"
+ },
+ {
+  "cited": "1.72e-5",
+  "found": true,
+  "value": 1.7214668971690117e-05,
+  "source": "inertia2057_scan2057.json:/refined[9]/Q_first[1]"
+ },
+ {
+  "cited": "1.278e-5",
+  "found": true,
+  "value": 1.2779988351280362e-05,
+  "source": "inertia2057_scan2057.json:/refined[11]/Q_first[1]"
+ },
+ {
+  "cited": "1.30e-5",
+  "found": true,
+  "value": 1.3047894401422057e-05,
+  "source": "inertia2057_scan2057.json:/refined[13]/Q_first[1]"
+ },
+ {
+  "cited": "1.2786e-5",
+  "found": true,
+  "value": 1.2785892550032917e-05,
+  "source": "inertia2057_scan2057.json:/refined[15]/Q_first[1]"
+ },
+ {
+  "cited": "40.77466",
+  "found": true,
+  "value": 40.77466063348416,
+  "source": "polarity2021_check2021.json:/norm2"
+ },
+ {
+  "cited": "0.0951580",
+  "found": true,
+  "value": 0.09515799482622532,
+  "source": "polarity2021_check2021.json:/W_original"
+ },
+ {
+  "cited": "0.0023338",
+  "found": true,
+  "value": 0.002333753202303333,
+  "source": "logpoincare2044_ghost2044.json:/W_original_over_norm"
+ },
+ {
+  "cited": "-0.63923",
+  "found": true,
+  "value": -0.6392279387150965,
+  "source": "logpoincare2044_ghost2044.json:/W_drop2_over_norm"
+ },
+ {
+  "cited": "-0.2424",
+  "found": false,
+  "value": null,
+  "source": null
+ },
+ {
+  "cited": "0.3515",
+  "found": true,
+  "value": 0.35152446974230267,
+  "source": "blocks2038_check2038.json:/Mtilde"
+ },
+ {
+  "cited": "0.4611",
+  "found": false,
+  "value": null,
+  "source": null
+ },
+ {
+  "cited": "-0.50404",
+  "found": true,
+  "value": -0.5040399689093413,
+  "source": "matching1989_inertia1989.json:/A0.6_J40/q_e"
+ },
+ {
+  "cited": "-0.5000004",
+  "found": true,
+  "value": -0.5000004263448224,
+  "source": "matching1989_inertia1989.json:/A1.0_J24/q_e"
+ },
+ {
+  "cited": "-1.95450",
+  "found": true,
+  "value": -1.9545009578179557,
+  "source": "inertia2057_certify_inertia2057.json:/constant_trial_Q_interval"
+ },
+ {
+  "cited": "-1.95400",
+  "found": true,
+  "value": -1.9540004997032865,
+  "source": "inertia2057_certify_inertia2057.json:/constant_trial_Q_interval"
+ },
+ {
+  "cited": "-2.1351",
+  "found": true,
+  "value": -2.135102954320795,
+  "source": "inertia2057_certify_two_inertia2057.json:/constant_trial_Q_interval"
+ },
+ {
+  "cited": "-2.1346",
+  "found": true,
+  "value": -2.1346479848226108,
+  "source": "inertia2057_certify_two_inertia2057.json:/constant_trial_Q_interval"
+ },
+ {
+  "cited": "0.000513",
+  "found": true,
+  "value": 0.0005126070280306888,
+  "source": "inertia2057_certify_inertia2057.json:/Schur_margin"
+ },
+ {
+  "cited": "0.000164",
+  "found": true,
+  "value": 0.00016407897631720385,
+  "source": "inertia2057_certify_two_inertia2057.json:/Schur_margin"
+ },
+ {
+  "cited": "0.969",
+  "found": true,
+  "value": 0.969099586046801,
+  "source": "inertia2057_inertia2057.json:/rows[0]/negative_mode_moment_overlap_squared[0]"
+ },
+ {
+  "cited": "0.999",
+  "found": true,
+  "value": 0.9988069147424439,
+  "source": "inertia2057_inertia2057.json:/rows[15]/S_eigenvalues[1]"
+ },
+ {
+  "cited": "0.128",
+  "found": true,
+  "value": 0.12832081041151375,
+  "source": "parabolic1998_pencilW1998.json:/A=0.6[0]/null_point_separation"
+ },
+ {
+  "cited": "1.46e-3",
+  "found": true,
+  "value": 0.0014625390441740241,
+  "source": "inertia2057_scan2057.json:/coarse_scan[96]/W_first[2]"
+ },
+ {
+  "cited": "1.6e-7",
+  "found": true,
+  "value": 1.6186804311275803e-07,
+  "source": "parabolic1998_pencilW1998.json:/A=1.5[0]/null_point_separation"
+ },
+ {
+  "cited": "3.3722",
+  "found": true,
+  "value": 3.3721834192256654,
+  "source": "diagonal2003_arak2003.json:/mismatch_minusK0_minus_value/a=0 (FS^-2 on omega, Green -log chordal^2)"
+ },
+ {
+  "cited": "5.3722",
+  "found": true,
+  "value": 5.3721834192256654,
+  "source": "counterterm1995_maass1995.json:/constants/minusK0_closed"
+ },
+ {
+  "cited": "1.0827",
+  "found": true,
+  "value": 1.0827236475268658,
+  "source": "diagonal2003_arak2003.json:/mismatch_minusK0_minus_value/Kahler vol-1, omega=(i/2)h dz^dzbar: a=-1/2 log pi"
+ },
+ {
+  "cited": "-0.3036",
+  "found": true,
+  "value": -0.3035707135930251,
+  "source": "diagonal2003_arak2003.json:/mismatch_minusK0_minus_value/Kahler vol-1, omega=i h dz^dzbar: a=-1/2 log 2pi"
+ },
+ {
+  "cited": "0.045990",
+  "found": true,
+  "value": 0.04599006651870112,
+  "source": "kms2040_check2040.json:/target_Kq_z1_w2"
+ },
+ {
+  "cited": "0.0462099862",
+  "found": true,
+  "value": 0.04620998623083794,
+  "source": "realization2033_check2033.json:/qprime_at_center"
+ },
+ {
+  "cited": "0.003012",
+  "found": true,
+  "value": 0.0030119241502409365,
+  "source": "blocks2038_check2038.json:/rows[2]/Gamma5_weight"
+ },
+ {
+  "cited": "0.107651",
+  "found": true,
+  "value": 0.1076511730592562,
+  "source": "blocks2038_check2038.json:/rows[2]/smooth_density_weight"
+ },
+ {
+  "cited": "-0.104639",
+  "found": true,
+  "value": -0.10463924890901526,
+  "source": "blocks2038_check2038.json:/rows[2]/exact_signed_storage_weight"
+ },
+ {
+  "cited": "-0.0112645",
+  "found": true,
+  "value": -0.011264537893094987,
+  "source": "blocks2038_check2038.json:/rows[2]/exact_match_block_determinant"
+ },
+ {
+  "cited": "5.978",
+  "found": true,
+  "value": 5.97843301986909,
+  "source": "blocks2038_check2038.json:/rows[2]/rho_required_for_exact_match"
+ },
+ {
+  "cited": "0.20412",
+  "found": true,
+  "value": 0.2041155410596622,
+  "source": "blocks2038_check2038.json:/rows[0]/exact_signed_storage_weight"
+ },
+ {
+  "cited": "-0.28601",
+  "found": true,
+  "value": -0.2860135306746114,
+  "source": "blocks2038_check2038.json:/drop2_at_s_half_signed_weight"
+ },
+ {
+  "cited": "-0.17576",
+  "found": true,
+  "value": -0.17576223487115133,
+  "source": "blocks2038_check2038.json:/q_EB_at_zero"
+ },
+ {
+  "cited": "0.63038",
+  "found": true,
+  "value": 0.6303764850163106,
+  "source": "kms2040_check2040.json:/Gibbs_beta2_kernel_z1_w2"
+ },
+ {
+  "cited": "0.100396",
+  "found": true,
+  "value": 0.10039564167664392,
+  "source": "kms2040_check2040.json:/critical_KMS_prime_kernel_z1_w2"
+ },
+ {
+  "cited": "1.0353620568e-6",
+  "found": true,
+  "value": 1.035362056804321e-06,
+  "source": "boundary1994_duality1994.json:/omega+ omega- / 2^10"
+ },
+ {
+  "cited": "2.66247",
+  "found": true,
+  "value": 2.662473875803667,
+  "source": "logpoincare2044_buckling_edge2044.json:[5]/potential_gain"
+ },
+ {
+  "cited": "0.490129",
+  "found": true,
+  "value": 0.4901290717342736,
+  "source": "blocks2038_check2038.json:/prime_atoms[0][1]"
+ },
+ {
+  "cited": "0.9009276163",
+  "found": true,
+  "value": 0.9009276162618467,
+  "source": "multiprime2047_twoprime_derivative2047.json:[0]/S_norm"
+ },
+ {
+  "cited": "6.3524415627",
+  "found": true,
+  "value": 6.352441562694213,
+  "source": "eisenstein1990_analytic1990.json:/M_A(A=1)[0]"
+ }
+]

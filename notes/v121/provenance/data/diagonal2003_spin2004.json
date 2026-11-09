@@ -1,0 +1,109 @@
+{
+ "deg4_e^{c1/2}Ahat": "c1**2/12 + c2/12",
+ "Td2": "c1**2/12 + c2/12",
+ "spinc_equals_Todd": true,
+ "P2_index_O(n)": "(n + 1)*(n + 2)/2",
+ "P2_matches_(n+1)(n+2)/2": true,
+ "P2_w2": "c1=3H odd -> w2=H mod 2 !=0 (Wu: H.H=1 odd); non-spin although H ample",
+ "P1xP1": {
+  "rank": 2,
+  "sig": [
+   1,
+   1
+  ],
+  "det": -1,
+  "even": true,
+  "sigma": 0
+ },
+ "K3": {
+  "rank": 22,
+  "sig": [
+   3,
+   19
+  ],
+  "det": -1,
+  "even": true,
+  "sigma": -16
+ },
+ "Enriques_free": {
+  "rank": 10,
+  "sig": [
+   1,
+   9
+  ],
+  "det": -1,
+  "even": true,
+  "sigma": -8
+ },
+ "P2": {
+  "rank": 1,
+  "sig": [
+   1,
+   0
+  ],
+  "det": 1,
+  "even": false,
+  "sigma": 1
+ },
+ "E8": {
+  "rank": 8,
+  "sig": [
+   8,
+   0
+  ],
+  "det": 1,
+  "even": true,
+  "sigma": 8
+ },
+ "Rokhlin_K3_sigma_mod16": 0,
+ "Enriques_sigma": -8,
+ "Enriques_not_spin_by_Rokhlin": true,
+ "K3_Hperp_sig": [
+  2,
+  19
+ ],
+ "K3_note": "H^perp sig (2,19); real primitive (1,1) part sig (0,19) negative by Hodge-Riemann (Hodge type), not by spin",
+ "P1xP1_chi_O(-1,-1)": 0,
+ "P1xP1_Ahat=-sigma/8": 0.0,
+ "K3_chi_O": 2,
+ "K3_Ahat=-sigma/8": 2.0,
+ "P1xP1_RR_integral_all": true,
+ "P1xP1_D2+DK_even_all": true,
+ "P2_Wu": [
+  [
+   -3,
+   0
+  ],
+  [
+   -2,
+   0
+  ],
+  [
+   -1,
+   0
+  ],
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   0
+  ]
+ ],
+ "Delta2_by_g": {
+  "0": 2,
+  "1": 0,
+  "2": -2,
+  "3": -4
+ },
+ "Enriques_note": "free H^2 even unimodular (1,9) yet w2=K mod 2 !=0 (torsion); sigma=-8 not div by 16 confirms non-spin"
+}

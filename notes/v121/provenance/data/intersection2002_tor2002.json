@@ -1,0 +1,95 @@
+{
+ "chi(O_D (x)^L O_D) = chi(O_D) - chi(N^dual)": "d  (= D^2 for any genus)",
+ "diagonal: chi(O_C) - chi(Omega_C)": "2 - 2*g",
+ "derived self-intersections": {
+  "Delta in P1xP1 (g=0)": 2,
+  "Delta in ExE (g=1)": 0,
+  "Delta in CxC, g=2": -2,
+  "fibre h=pt x P1 in P1xP1 (N^dual=O)": 0,
+  "(-1)-curve E on Bl_p P2 (N^dual=O(1))": -1,
+  "ample (1,1) curve (= Delta class) in P1xP1": 2
+ },
+ "h.v local Tor lengths": [
+  1,
+  0
+ ],
+ "A=k[x,y]/(xy): length Tor_i(A/x,A/y), i=0..7": [
+  1,
+  0,
+  1,
+  0,
+  1,
+  0,
+  1,
+  0
+ ],
+ "O(-1) on P1: c1, h0, h1, chi": [
+  -1,
+  0,
+  0,
+  0
+ ],
+ "P1xP1 cohomology (Kunneth)": {
+  "O(1,-3)": {
+   "D2": -6,
+   "h": [
+    0,
+    4,
+    0
+   ],
+   "chi": -4,
+   "chi_RR": -4
+  },
+  "O(-1,-1)": {
+   "D2": 2,
+   "h": [
+    0,
+    0,
+    0
+   ],
+   "chi": 0,
+   "chi_RR": 0
+  },
+  "O(-2,-2)": {
+   "D2": 8,
+   "h": [
+    0,
+    0,
+    1
+   ],
+   "chi": 1,
+   "chi_RR": 1
+  },
+  "O(-3,-3)": {
+   "D2": 18,
+   "h": [
+    0,
+    0,
+    4
+   ],
+   "chi": 4,
+   "chi_RR": 4
+  },
+  "O(2,2)": {
+   "D2": 8,
+   "h": [
+    9,
+    0,
+    0
+   ],
+   "chi": 9,
+   "chi_RR": 9
+  },
+  "O(1,0)": {
+   "D2": 0,
+   "h": [
+    2,
+    0,
+    0
+   ],
+   "chi": 2,
+   "chi_RR": 2
+  }
+ },
+ "note": "O(-3,-3): D^2=18>0, h0=0, h2=4: effectivity comes from -D (h2=h0(K-D)); chi alone never gives h0."
+}

@@ -1,0 +1,44 @@
+{
+  "A": "1",
+  "cells": 815,
+  "Gamma_terms": 48,
+  "finite_minorant_Q_inertia": [
+    1,
+    0,
+    814
+  ],
+  "finite_minorant_W_inertia": [
+    2,
+    0,
+    813
+  ],
+  "finite_minorant_constrained_inertia": [
+    0,
+    0,
+    813
+  ],
+  "finite_minorant_Q_first": [
+    -1.9920809379938924,
+    0.007043981761799369,
+    0.017244183728116046,
+    0.359184994986846
+  ],
+  "finite_minorant_S": [
+    -0.9991649617972227,
+    1.1158960407856857
+  ],
+  "finite_minorant_constrained_min": 0.0070206464087929,
+  "verified_effective_second_lower": 0.007042881312017001,
+  "verified_diagonalization_error": 1.1004492386290174e-06,
+  "verified_eta": 7.663914786601086e-11,
+  "verified_rho": 2.0316369812876741e-10,
+  "construction_error": 1.1e-06,
+  "continuum_Q_index": 1,
+  "continuum_Q_spectrum_gap_about_zero": 0.003999999999999999,
+  "constant_trial_Q_interval": "[-1.95450095781795573998552895784503955066406250911849223799627, -1.95400049970328649843979608755515555244758730191845925024041]",
+  "continuum_Q_second_spectral_lower": 0.003999999999999999,
+  "Schur_margin": 0.0005126070280306888,
+  "continuum_S_signature": "one positive, one negative; follows exactly from invertibility and constrained coercivity",
+  "continuum_E0_lower": 0.003999999999999999,
+  "all_assertions_passed": true
+}

@@ -1,0 +1,13 @@
+{
+  "exact_coefficient_checks_through_q_power": 16,
+  "residuals": {
+    "thetaE2": "0",
+    "thetaE4": "0",
+    "thetaE6": "0",
+    "D4E4": "0",
+    "D6E6": "0",
+    "D12Delta": "0",
+    "radial_cusp_identity": "G(log(y))/4 - Subs(Derivative(G(_xi_1), (_xi_1, 2)), _xi_1, log(y))"
+  },
+  "Delta_initial_terms": "q - 24*q**2 + 252*q**3 - 1472*q**4 + 4830*q**5 + O(q**6)"
+}

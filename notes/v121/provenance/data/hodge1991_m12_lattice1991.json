@@ -1,0 +1,27 @@
+{
+ "691E12 = 691E4^3 + c*Delta, c": -432000,
+ "E6^2 = E4^3 - 1728 Delta": true,
+ "gcd(691,c)": 1,
+ "index [M12(Z): Z(691E12)+Z Delta]": "691",
+ "a0 on primitive Eisenstein vector": 691,
+ "c mod 691": 566,
+ "65520 mod 691": 566,
+ "691E12 == c Delta (mod 691) coefficientwise n<=400": true,
+ "gcd_{n<=400}(tau(n)-sigma11(n))": 691,
+ "G12-Delta: all n>=1 coeffs divisible by 691": true,
+ "T2 matrix on (E4^3,Delta) columns": [
+  [
+   "2049",
+   "0"
+  ],
+  [
+   "-1296000",
+   "-24"
+  ]
+ ],
+ "T2 eigen: sigma11(2), tau(2)": [
+  2049,
+  -24
+ ],
+ "sigma11(2)-tau(2) factor": "{3: 1, 691: 1}"
+}

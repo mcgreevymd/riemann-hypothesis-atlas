@@ -1,0 +1,23 @@
+{
+ "Gram(h,v,Delta,Gamma)": "[[0, 1, 1, q], [1, 0, 1, 1], [1, 1, 2 - 2*g, -a + q + 1], [q, 1, -a + q + 1, q*(2 - 2*g)]]",
+ "primitive Gram (Delta',Gamma')": "[[-2*g, -a], [-a, -2*g*q]]",
+ "det primitive (g=1)": "-a**2 + 4*q",
+ "Hodge index on primitive (g=1) <=> det>=0 & trace<0": "det = 4q - a^2 (g=1): >=0 iff |a| <= 2 sqrt q (Hasse)",
+ "fake q=5,a=5 primitive Gram": "[[-2, -5], [-5, -10]]",
+ "fake eigen": "[(-6 + sqrt(41), 1), (-sqrt(41) - 6, 1)]",
+ "fake D (coords h,v,Delta,Gamma)": "[-1/5 + sqrt(41)/5, -21/5 + sqrt(41)/5, -sqrt(41)/5 - 4/5, 1]",
+ "fake D.h, D.v, D.H, D^2": [
+  "0",
+  "0",
+  "0",
+  "-164/25 + 34*sqrt(41)/25"
+ ],
+ "tilt: D'.h (deg on fibre h of pr2)": "-epsilon",
+ "tilt: D'.v (deg on fibre v of pr1)": "epsilon",
+ "tilt: D'.H": "0",
+ "tilt: D'^2": "-2*epsilon**2 - 164/25 + 34*sqrt(41)/25",
+ "GRR deg det f_*O(nD) (pr1)": "n**2*(-a*x2*x3 - g*q*x3**2 - g*x2**2 + q*x0*x3 + q*x2*x3 + q*x3**2 + x0*x1 + x0*x2 + x1*x2 + x1*x3 + x2**2 + x2*x3) + n*(-g*q*x3 - g*x1 - g*x2 + q*x3 + x1 + x2)",
+ "n^2 coefficient": "-a*x2*x3 - g*q*x3**2 - g*x2**2 + q*x0*x3 + q*x2*x3 + q*x3**2 + x0*x1 + x0*x2 + x1*x2 + x1*x3 + x2**2 + x2*x3",
+ "n^2 coeff equals D^2/2": "True",
+ "section adjunction Delta^2 + (2g-2)": "0"
+}

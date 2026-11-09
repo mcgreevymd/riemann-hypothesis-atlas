@@ -1,0 +1,14 @@
+{
+ "K0": -5.3721834192256654,
+ "W_inf(G)": -2.0738616037416087,
+ "a=0.5: h(1)=g(0)": 1.0,
+ "a=0.5: int ghat": 0.9999999999981619,
+ "a=0.5: Connes finite part F=-int ghat log|u|": 2.2377394818904857,
+ "a=0.5: F + W_inf(G)": 0.163877878148877,
+ "a=0.5: F + W_inf(G) - (gamma+log2pi)G(0) [if constant omitted]": 0.163877878148877,
+ "a=-0.5: h(1)=g(0)": 1.0,
+ "a=-0.5: int ghat": 0.9999999999981626,
+ "a=-0.5: Connes finite part F=-int ghat log|u|": 2.0719913150778386,
+ "a=-0.5: F + W_inf(G)": -0.0018702886637700367,
+ "a=-0.5: F + W_inf(G) - (gamma+log2pi)G(0) [if constant omitted]": -0.0018702886637700367
+}
