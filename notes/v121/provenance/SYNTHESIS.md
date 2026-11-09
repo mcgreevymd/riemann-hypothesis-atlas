@@ -203,7 +203,7 @@ Notation:
 ## 7. Open problems (front of v1.21)
 
 1. **[Open]** Construct Φ from geometry (§4.1), with the pairing computed, so that W = −(intersection) on the primitive sector, and prove a Hodge index theorem that applies.
-2. **[Open]** Extend certified positivity beyond A = 1.1 with grid bias controlled. Next target: A = 1.5 (primes 2, 3, 4) with a gap of about 1.7e−5. The current certificate method needs about 100× more resolution.
+2. **[Open]** Extend certified positivity beyond A = 1.1 with grid bias controlled. Next target: A = 1.5 (prime powers n = 2, 3, 4) with a gap of about 1.7e−5. The current certificate method needs about 100× more resolution.
 3. **[Open]** An independently positive coupled storage that reproduces K_q exactly (§5).
 4. **[Open]** A two-cusp (Γ₀(N)) dictionary that carries both moments and a modular origin for M_A (§6.3).
 

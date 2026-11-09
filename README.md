@@ -6,6 +6,8 @@ Version 1.21 · 9 Nov 2026 (UTC)
 
 ## Since v1.20
 
+Links are relative to the repository root (this file is included in README.md).
+
 > **RH is not proved; no all-window positivity.** The Riemann Hypothesis is not proved. Nothing here proves it. Nothing here proves positivity of the Weil form W for all windows. W ≥ c‖F‖² on E0 is established only for windows of width A ≤ 1.1. It is analytic for A ≤ 1/10, interval-certified for A ≤ 0.694, and computer-assisted for A ≤ 1 and A ≤ 1.1. Every statement for A > 1.1 is numerical. Grid bias at that scale is about the same size as the gap. Rank 1 is unchanged: `kahler_triple_polarization`. Open ~1.8 is unchanged.
 
 Work of 8 Nov 2026 (America/Chicago), integrated 9 Nov 2026 (UTC). Counts: 1066 concepts (+22) and 2108 typed relations (+57). Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. [AUDIT.md](notes/v121/provenance/AUDIT.md) overrides the synthesis and the archived notes. Raw notes are archived and are not quoted here.
@@ -89,7 +91,7 @@ The 128-cell and 2048-cell values differ by about 100× beyond A ≈ 1.1. **Ther
 ### Open problems
 
 1. **[Open]** Construct Φ from geometry, with the pairing computed, so that W = −(intersection) on the primitive sector, and prove a Hodge index theorem that applies.
-2. **[Open]** Extend certified positivity beyond A = 1.1 with grid bias controlled. Next target: A = 1.5 (primes 2, 3, 4) with a gap of about 1.7e−5. The current certificate method needs about 100× more resolution.
+2. **[Open]** Extend certified positivity beyond A = 1.1 with grid bias controlled. Next target: A = 1.5 (prime powers n = 2, 3, 4) with a gap of about 1.7e−5. The current certificate method needs about 100× more resolution.
 3. **[Open]** An independently positive coupled storage that reproduces K_q exactly.
 4. **[Open]** A two-cusp (Γ₀(N)) dictionary that carries both moments and a modular origin for M_A.
 

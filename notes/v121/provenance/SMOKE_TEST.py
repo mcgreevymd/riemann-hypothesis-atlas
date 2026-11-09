@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Quick bundle self-check (about 1 min): delta validates, audit re-derivations pass, cited numbers match JSON, figures regenerate,
-no machine-local paths in repo-bound text. Full certificate reruns: python3 rerun_all.py (about 10 min; OPENBLAS_NUM_THREADS=1)."""
+no machine-local paths in repo-bound text. Regenerates checks/audit2060.json and figures/*.svg; run `git checkout -- notes/v121/provenance` afterwards.
+Full certificate reruns: python3 rerun_all.py (about 10 min; OPENBLAS_NUM_THREADS=1)."""
 import subprocess, sys, json, pathlib, re, os
 H = pathlib.Path(__file__).resolve().parent
 env = dict(os.environ, OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
