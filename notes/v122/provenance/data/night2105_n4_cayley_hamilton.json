@@ -1,0 +1,205 @@
+{
+ "note": "exact identities checked in double precision",
+ "rows": [
+  {
+   "curve": "genus1 y^2=x^3+x+1/F5",
+   "K": 1,
+   "window": 2,
+   "rank": 2,
+   "expected": 2,
+   "kernel_dim": 0,
+   "max_resid_Ltilde_shifts": 0.0,
+   "G_minus_P_plus_T": 4.440892098500626e-16,
+   "counts": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "counts_expected": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "min_eig_T": 0.6583592135001259
+  },
+  {
+   "curve": "genus1 y^2=x^3+x+1/F5",
+   "K": 2,
+   "window": 3,
+   "rank": 2,
+   "expected": 2,
+   "kernel_dim": 1,
+   "max_resid_Ltilde_shifts": 6.894341957538586e-16,
+   "G_minus_P_plus_T": 5.273559366969494e-16,
+   "counts": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "counts_expected": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "min_eig_T": -1.1008988859417812e-15
+  },
+  {
+   "curve": "genus1 y^2=x^3+x+1/F5",
+   "K": 5,
+   "window": 6,
+   "rank": 2,
+   "expected": 2,
+   "kernel_dim": 4,
+   "max_resid_Ltilde_shifts": 1.247457973265988e-15,
+   "G_minus_P_plus_T": 7.549516567451064e-15,
+   "counts": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "counts_expected": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "min_eig_T": -9.307309733857195e-16
+  },
+  {
+   "curve": "genus1 y^2=x^3+x+1/F5",
+   "K": 12,
+   "window": 13,
+   "rank": 2,
+   "expected": 2,
+   "kernel_dim": 11,
+   "max_resid_Ltilde_shifts": 1.868508978620435e-15,
+   "G_minus_P_plus_T": 1.013855666087693e-12,
+   "counts": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "counts_expected": [
+    9,
+    27,
+    108,
+    675
+   ],
+   "min_eig_T": -4.226601485754776e-15
+  },
+  {
+   "curve": "genus2 y^2=x^5+2x+1/F3",
+   "K": 3,
+   "window": 4,
+   "rank": 4,
+   "expected": 4,
+   "kernel_dim": 0,
+   "max_resid_Ltilde_shifts": 0.0,
+   "G_minus_P_plus_T": 5.773159728050814e-15,
+   "counts": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "counts_expected": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "min_eig_T": 0.18538593437369405
+  },
+  {
+   "curve": "genus2 y^2=x^5+2x+1/F3",
+   "K": 4,
+   "window": 5,
+   "rank": 4,
+   "expected": 4,
+   "kernel_dim": 1,
+   "max_resid_Ltilde_shifts": 2.1736071586315514e-14,
+   "G_minus_P_plus_T": 1.354472090042691e-14,
+   "counts": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "counts_expected": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "min_eig_T": -7.651177849524669e-16
+  },
+  {
+   "curve": "genus2 y^2=x^5+2x+1/F3",
+   "K": 7,
+   "window": 8,
+   "rank": 4,
+   "expected": 4,
+   "kernel_dim": 4,
+   "max_resid_Ltilde_shifts": 2.3767968599158748e-14,
+   "G_minus_P_plus_T": 2.375877272697835e-14,
+   "counts": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "counts_expected": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "min_eig_T": -4.958497574242829e-15
+  },
+  {
+   "curve": "genus2 y^2=x^5+2x+1/F3",
+   "K": 12,
+   "window": 13,
+   "rank": 4,
+   "expected": 4,
+   "kernel_dim": 9,
+   "max_resid_Ltilde_shifts": 3.2161123639320726e-14,
+   "G_minus_P_plus_T": 7.494005416219807e-14,
+   "counts": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "counts_expected": [
+    7,
+    15,
+    19,
+    83,
+    232,
+    795
+   ],
+   "min_eig_T": -2.7525182785379795e-14
+  }
+ ]
+}

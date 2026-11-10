@@ -1,0 +1,488 @@
+{
+ "R1_bidegree": {
+  "0.7": [
+   1.0,
+   0.7
+  ],
+  "2.0": [
+   1.0,
+   2.0
+  ],
+  "3.141592653589793": [
+   1.0,
+   3.141592653589793
+  ]
+ },
+ "pullback": {
+  "0.7": {
+   "G*Psi(mu) covector": [
+    -0.7,
+    0.7
+   ],
+   "ratio_to_Delta": [
+    0.7,
+    0.7
+   ]
+  },
+  "2.0": {
+   "G*Psi(mu) covector": [
+    -2.0,
+    2.0
+   ],
+   "ratio_to_Delta": [
+    2.0,
+    2.0
+   ]
+  },
+  "3.141592653589793": {
+   "G*Psi(mu) covector": [
+    -3.141592653589793,
+    3.141592653589793
+   ],
+   "ratio_to_Delta": [
+    3.141592653589793,
+    3.141592653589793
+   ]
+  }
+ },
+ "pairs_cartier": [
+  {
+   "lam": 3.0,
+   "mu": 2.0,
+   "affine_direct": 1.0,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 1.0,
+   "R2_mu_times_PsiDelta": 1.0,
+   "R2_min_form": 1.0,
+   "P1xP1_total": 5.0,
+   "corners_2min": 4.0,
+   "affine_plus_corners": 5.0,
+   "R2_total": 5.0
+  },
+  {
+   "lam": 4.0,
+   "mu": 2.0,
+   "affine_direct": 2.0,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 2.0,
+   "R2_mu_times_PsiDelta": 2.0,
+   "R2_min_form": 2.0,
+   "P1xP1_total": 6.0,
+   "corners_2min": 4.0,
+   "affine_plus_corners": 6.0,
+   "R2_total": 6.0
+  },
+  {
+   "lam": 2.5,
+   "mu": 0.7,
+   "affine_direct": 1.8,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 1.8,
+   "R2_mu_times_PsiDelta": 1.8,
+   "R2_min_form": 1.8,
+   "P1xP1_total": 3.2,
+   "corners_2min": 1.4,
+   "affine_plus_corners": 3.2,
+   "R2_total": 3.1999999999999997
+  },
+  {
+   "lam": 3.669296667619244,
+   "mu": 1.4918246976412703,
+   "affine_direct": 2.1774719699779737,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 2.1774719699779737,
+   "R2_mu_times_PsiDelta": 2.1774719699779737,
+   "R2_min_form": 2.1774719699779737,
+   "P1xP1_total": 5.161121365260515,
+   "corners_2min": 2.9836493952825407,
+   "affine_plus_corners": 5.161121365260515,
+   "R2_total": 5.161121365260514
+  },
+  {
+   "lam": 3.141592653589793,
+   "mu": 1.4142135623730951,
+   "affine_direct": 1.727379091216698,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 1.7273790912166984,
+   "R2_mu_times_PsiDelta": 1.7273790912166982,
+   "R2_min_form": 1.7273790912166982,
+   "P1xP1_total": 4.555806215962888,
+   "corners_2min": 2.8284271247461903,
+   "affine_plus_corners": 4.555806215962888,
+   "R2_total": 4.555806215962889
+  },
+  {
+   "lam": 0.3,
+   "mu": 0.9,
+   "affine_direct": 0.6000000000000001,
+   "pushforward_equals_Psi_lam": true,
+   "projection_formula": 0.6000000000000001,
+   "R2_mu_times_PsiDelta": 0.6000000000000001,
+   "R2_min_form": 0.6,
+   "P1xP1_total": 1.2,
+   "corners_2min": 0.6,
+   "affine_plus_corners": 1.2000000000000002,
+   "R2_total": 1.2
+  }
+ ],
+ "numeric_MA": [
+  {
+   "lam": 3.0,
+   "mu": 2.0,
+   "MA": 0.9999999956671743,
+   "exact": 1.0
+  },
+  {
+   "lam": 4.0,
+   "mu": 2.0,
+   "MA": 1.9999999999998292,
+   "exact": 2.0
+  },
+  {
+   "lam": 2.5,
+   "mu": 0.7,
+   "MA": 1.7999999999999967,
+   "exact": 1.8
+  },
+  {
+   "lam": 3.669296667619244,
+   "mu": 1.4918246976412703,
+   "MA": 2.1774719699779688,
+   "exact": 2.1774719699779737
+  },
+  {
+   "check": "G2^*Psi(2) . F1 (Delta.F1=1)",
+   "MA": 1.9999999999999971,
+   "exact": 2.0
+  },
+  {
+   "check": "Psi(pi).F2",
+   "MA": 3.1415926535897873,
+   "exact": 3.141592653589793
+  }
+ ],
+ "current_models": {
+  "pairs": [
+   {
+    "lam": 3.0,
+    "mu": 2.0,
+    "density_pairing": 1.0000000000002207,
+    "exact": 1.0,
+    "form_pairing": 1.0
+   },
+   {
+    "lam": 4.0,
+    "mu": 2.0,
+    "density_pairing": 0.5000000000001104,
+    "exact": 0.5,
+    "form_pairing": 1.0
+   },
+   {
+    "lam": 2.5,
+    "mu": 0.7,
+    "density_pairing": 0.555555555555678,
+    "exact": 0.5555555555555556,
+    "form_pairing": 1.0
+   },
+   {
+    "lam": 3.669296667619244,
+    "mu": 1.4918246976412703,
+    "density_pairing": 0.4592481619914199,
+    "exact": 0.45924816199131857,
+    "form_pairing": 1.0
+   }
+  ],
+  "pullback": {
+   "density: G^*Psi(mu)/Delta": "1/mu",
+   "form (delta(g)dg): G^*Psi(mu)/Delta": "1",
+   "cartier/Lagerberg (delta(g) dg^d''g): G^*Psi(mu)/Delta": "mu",
+   "bidegree density": "(1,1/mu)",
+   "bidegree form": "(1,1)",
+   "bidegree cartier": "(1,mu)"
+  },
+  "density_bidegree": {
+   "2.0": [
+    1.0000000000002207,
+    0.5000000000001104
+   ],
+   "3.141592653589793": [
+    1.0000000000002205,
+    0.3183098861838609
+   ]
+  }
+ },
+ "function_field_P1": [
+  {
+   "q": 2,
+   "k": 3,
+   "l": 1,
+   "frob_binomial_identity": true,
+   "ord_at_0": 2,
+   "total": 10,
+   "interior_points_Fq_star": 3,
+   "interior_mult_total": 6
+  },
+  {
+   "q": 3,
+   "k": 2,
+   "l": 1,
+   "frob_binomial_identity": true,
+   "ord_at_0": 3,
+   "total": 12,
+   "interior_points_Fq_star": 2,
+   "interior_mult_total": 6
+  },
+  {
+   "q": 5,
+   "k": 2,
+   "l": 1,
+   "frob_binomial_identity": true,
+   "ord_at_0": 5,
+   "total": 30,
+   "interior_points_Fq_star": 4,
+   "interior_mult_total": 20
+  }
+ ],
+ "toeplitz": [
+  {
+   "u": 0.2,
+   "v": 1.5,
+   "a": 1.3,
+   "cartier_total": 2.437586605774912,
+   "two_cosh": 2.4375866057749125,
+   "cartier_affine": 1.3934950522528802,
+   "two_sinh": 1.3934950522528802,
+   "density_weighted_plus": 0.7176200578418187,
+   "inv_two_sinh": 0.7176200578418187,
+   "k_inf": 0.5639309459851256
+  },
+  {
+   "u": 1.0,
+   "v": 2.3,
+   "a": 1.2999999999999998,
+   "cartier_total": 2.4375866057749116,
+   "two_cosh": 2.437586605774912,
+   "cartier_affine": 1.3934950522528797,
+   "two_sinh": 1.3934950522528797,
+   "density_weighted_plus": 0.7176200578418189,
+   "inv_two_sinh": 0.7176200578418189,
+   "k_inf": 0.5639309459851256
+  },
+  {
+   "u": -0.4,
+   "v": 0.9,
+   "a": 1.3,
+   "cartier_total": 2.4375866057749125,
+   "two_cosh": 2.4375866057749125,
+   "cartier_affine": 1.3934950522528802,
+   "two_sinh": 1.3934950522528802,
+   "density_weighted_plus": 0.7176200578418186,
+   "inv_two_sinh": 0.7176200578418187,
+   "k_inf": 0.5639309459851256
+  },
+  {
+   "u": 2.0,
+   "v": 0.7,
+   "a": 1.3,
+   "cartier_total": 2.4375866057749125,
+   "two_cosh": 2.4375866057749125,
+   "cartier_affine": 1.39349505225288,
+   "two_sinh": 1.3934950522528802,
+   "density_weighted_plus": 0.7176200578418188,
+   "inv_two_sinh": 0.7176200578418187,
+   "k_inf": 0.5639309459851256
+  }
+ ],
+ "weight_test_w1": [
+  3.718281828459045,
+  10.107337927389695
+ ],
+ "model_b_torus": [
+  {
+   "p": 2,
+   "mu": 1.5,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 2,
+   "mu": 3.141592653589793,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 2,
+   "mu": 4,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": true
+  },
+  {
+   "p": 2,
+   "covering_n": 2,
+   "fixed_points": 1,
+   "expected": 1
+  },
+  {
+   "p": 2,
+   "covering_n": 3,
+   "fixed_points": 2,
+   "expected": 2
+  },
+  {
+   "p": 2,
+   "covering_n": 5,
+   "fixed_points": 4,
+   "expected": 4
+  },
+  {
+   "p": 3,
+   "mu": 1.5,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 3,
+   "mu": 3.141592653589793,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 3,
+   "mu": 9,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": true
+  },
+  {
+   "p": 3,
+   "covering_n": 2,
+   "fixed_points": 1,
+   "expected": 1
+  },
+  {
+   "p": 3,
+   "covering_n": 3,
+   "fixed_points": 2,
+   "expected": 2
+  },
+  {
+   "p": 3,
+   "covering_n": 5,
+   "fixed_points": 4,
+   "expected": 4
+  },
+  {
+   "p": 5,
+   "mu": 1.5,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 5,
+   "mu": 3.141592653589793,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": false
+  },
+  {
+   "p": 5,
+   "mu": 25,
+   "translation_class": [
+    1,
+    1
+   ],
+   "Psi_dot_Delta": 0,
+   "coincident_with_Delta": true
+  },
+  {
+   "p": 5,
+   "covering_n": 2,
+   "fixed_points": 1,
+   "expected": 1
+  },
+  {
+   "p": 5,
+   "covering_n": 3,
+   "fixed_points": 2,
+   "expected": 2
+  },
+  {
+   "p": 5,
+   "covering_n": 5,
+   "fixed_points": 4,
+   "expected": 4
+  }
+ ],
+ "model_b_CC_index": [
+  {
+   "p": 2,
+   "h": "3",
+   "index": 3,
+   "deg_CC_preserved": true
+  },
+  {
+   "p": 2,
+   "h": "3/4",
+   "index": 3,
+   "deg_CC_preserved": true
+  },
+  {
+   "p": 3,
+   "h": "9",
+   "index": 1,
+   "deg_CC_preserved": true
+  },
+  {
+   "p": 3,
+   "h": "2",
+   "index": 2,
+   "deg_CC_preserved": true
+  },
+  {
+   "p": 5,
+   "h": "7/25",
+   "index": 7,
+   "deg_CC_preserved": true
+  }
+ ],
+ "model_b_CC_source": {
+  "source": "Connes-Consani, Geometry of the scaling site (alainconnes.org/wp-content/uploads/scalingsite.pdf), Sec 4-5.2",
+  "deg": "deg(D)=sum_j h_j, h_j in H_j=lambda_j H_p (order = jump of derivative, scaled by lambda: log-coordinate slope jump)",
+  "Lemma5.7_arithmetic_Fr^a_mu(f)(l)=mu f(l/mu), all mu in R*_+": "points H->mu H (translation on log circle), orders x mu, deg x mu",
+  "Lemma5.8_relative_Fr^r_h(f)(l)=f(hl), h in H_p^+": "points H->H/h (translation), deg preserved",
+  "Lemma5.9_absolute_Fr_h(f)=h f, h in H_p^+": "points fixed, deg x h; Fr_h = Fr^a_h o Fr^r_h",
+  "consequence": "mu-multiplicity on C_p exists honestly but only for the R_max-SEMILINEAR arithmetic Frobenius; the R_max-linear point map (relative) has degree 1. For mu=p^k, Fr^a_{p^k} = absolute Frobenius (fixes every point of C_p).",
+  "bidegree_obstruction": "a real-weight 1-cycle supported on a translation graph in C_p x C_p has tangent direction (1,1) so fibre-bidegree (c,c); it cannot have bidegree (1,mu) for mu!=1."
+ },
+ "model_b_CC_index_note": "[H_p:hH_p] index table is auxiliary only (prime-to-p numerator of h); not used in verdict"
+}

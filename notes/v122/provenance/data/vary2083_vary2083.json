@@ -1,0 +1,156 @@
+{
+ "closed_forms_u_gt_v": {
+  "T+_raw": "-4*v - 4*log(exp(a) - 1) + 6",
+  "T+_bal": "2*a - 4*log(exp(a) - 1) + 6",
+  "A+_raw = d_u T": "4*exp(a)/(1 - exp(a))",
+  "A+_bal = d_u T": "-2/tanh(a/2)",
+  "B+ = d_u d_v T": "-4*exp(a)/(exp(2*a) - 2*exp(a) + 1)",
+  "C+_A_hat (both e^-/2, bal)": "((-exp(v) + exp(a + v))*(a - 2*log(exp(a) - 1) + 1) + (-exp(a/2 + v) + exp(3*a/2 + v))*(-a + 2*log(exp(a) - 1) - 5)*exp(a/2))*exp(-a/2 - 2*v)/(1 - exp(a))**2",
+  "C+_B_hat (both e^-/2, bal)": "(a*exp(6*a) - 6*a*exp(5*a) + 15*a*exp(4*a) - 20*a*exp(3*a) + 15*a*exp(2*a) - 6*a*exp(a) + a - 2*exp(6*a)*log(exp(a) - 1) + 3*exp(6*a) + 12*exp(5*a)*log(exp(a) - 1) - 26*exp(5*a) - 30*exp(4*a)*log(exp(a) - 1) + 77*exp(4*a) + 40*exp(3*a)*log(exp(a) - 1) - 108*exp(3*a) - 30*exp(2*a)*log(exp(a) - 1) + 77*exp(2*a) + 12*exp(a)*log(exp(a) - 1) - 26*exp(a) - 2*log(exp(a) - 1) + 3)*exp(-a/2 - v)/(2*(exp(6*a) - 6*exp(5*a) + 15*exp(4*a) - 20*exp(3*a) + 15*exp(2*a) - 6*exp(a) + 1))",
+  "C+_A_dual (e^-(u-v)/2, bal)": "-(a*exp(a) - a - 2*exp(a)*log(exp(a) - 1) + 5*exp(a) + 2*log(exp(a) - 1) - 1)*exp(-a/2)/(exp(a) - 1)",
+  "C+_B_dual (e^-(u-v)/2, bal)": "(-a*exp(2*a)/2 + a*exp(a) - a/2 + exp(2*a)*log(exp(a) - 1) - 7*exp(2*a)/2 - 2*exp(a)*log(exp(a) - 1) - exp(a) + log(exp(a) - 1) + 1/2)*exp(-a/2)/(exp(2*a) - 2*exp(a) + 1)",
+  "T-_raw": "-4*v - log((exp(a) + 1)**4) + 6",
+  "T-_bal": "2*a - 4*log(exp(a) + 1) + 6",
+  "A-_raw = d_u T": "-4*exp(a)/(exp(a) + 1)",
+  "A-_bal = d_u T": "-2*tanh(a/2)",
+  "B- = d_u d_v T": "4*exp(a)/(exp(2*a) + 2*exp(a) + 1)",
+  "C-_A_hat (both e^-/2, bal)": "((exp(v) + exp(a + v))*(-a + 2*log(exp(a) + 1) - 1) + (exp(a/2 + v) + exp(3*a/2 + v))*(-a + 2*log(exp(a) + 1) - 5)*exp(a/2))*exp(-a/2 - 2*v)/(exp(a) + 1)**2",
+  "C-_B_hat (both e^-/2, bal)": "(a*exp(4*a) + 4*a*exp(3*a) + 6*a*exp(2*a) + 4*a*exp(a) + a + 3*exp(4*a) + 20*exp(3*a) + 34*exp(2*a) + 20*exp(a) - log((exp(a) + 1)**(2*exp(4*a) + 8*exp(3*a) + 12*exp(2*a) + 8*exp(a) + 2)) + 3)*exp(-a/2 - v)/(2*(exp(4*a) + 4*exp(3*a) + 6*exp(2*a) + 4*exp(a) + 1))",
+  "C-_A_dual (e^-(u-v)/2, bal)": "(-a*exp(a) - a - 5*exp(a) + log((exp(a) + 1)**(2*exp(a) + 2)) - 1)*exp(-a/2)/(exp(a) + 1)",
+  "C-_B_dual (e^-(u-v)/2, bal)": "(-a*exp(2*a) - 2*a*exp(a) - a - 7*exp(2*a) + 2*exp(a) + log((exp(a) + 1)**(2*exp(2*a) + 4*exp(a) + 2)) + 1)*exp(-a/2)/(2*(exp(2*a) + 2*exp(a) + 1))",
+  "F_A_tr = d_u T_tr": "-a/sinh(a + v)**2 - a/sinh(a)**2 - v/sinh(a + v)**2 + coth(a) + coth(a + v) - 2/tanh(a/2)",
+  "F_B_tr = d_u d_v T_tr": "-(4*a*sinh(a/2)**2*cosh(a)/sinh(a)**3 - 4*sinh(a/2)**2/sinh(a)**2 + 2)/(cosh(a) - 1)",
+  "A+_raw (u<v), a=v-u": "Piecewise((0, Eq(exp(a), 1)), (4/(exp(a) - 1), True))",
+  "A-_raw (u<v), a=v-u": "-4/(exp(a) + 1)"
+ },
+ "D_sign_averages": {
+  "avg A_raw": "4*exp(2*a)/(1 - exp(2*a))",
+  "avg A_bal": "-tanh(a/2) - 1/tanh(a/2)",
+  "avg B": "-8*exp(2*a)/(exp(4*a) - 2*exp(2*a) + 1)",
+  "avg A_dual": "(-a*exp(2*a) + a + exp(2*a)*log(exp(a) - 1) - 5*exp(2*a) - log(exp(a) - 1) + log((exp(a) + 1)**(exp(2*a) - 1)) + 1)*exp(-a/2)/(exp(2*a) - 1)"
+ },
+ "avgT_raw (u>v)": "-4*v - 2*log(exp(a) - 1) - 2*log(exp(a) + 1) + 6",
+ "identities_residuals (0 = exact)": {
+  "cooked t2078: k - (-1/4)e^{-a/2} avg A_raw": "0",
+  "-1/4 A+_raw - 1/(1-q)  [AB index on O at (0,0)]": "0",
+  "-1/4 A+_raw(u<v) - (-q/(1-1/q)^{-1}...) : -1/4A(u<v) + q/(1-q)": "Piecewise((1/(exp(a) - 1), Eq(exp(a), 1)), (0, True))",
+  "-1/4 avg A_raw - 1/(1-q^2)  [doubling]": "0",
+  "-1/4 A+_bal - (1/2)coth(a/2)": "0",
+  "B+ + 1/sinh^2(a/2)": "0",
+  "B- - 1/cosh^2(a/2)": "0",
+  "-B+/4 - q/(1-q)^2  [=1/|det(1-diag(e^a,e^-a))|]": "0",
+  "avg B + 2/sinh^2 a": "0",
+  "sqrt identity: k - (sqrt(-B+/4)+sqrt(B-/4))/2": "-((exp(2*a) - 1)*sqrt(exp(2*a) + 2*exp(a) + 1)*sqrt(1/(exp(2*a) - 2*exp(a) + 1)) - 2*sqrt(exp(2*a) + 2*exp(a) + 1)*exp(a) + exp(2*a) - 1)*exp(a/2)/(2*(exp(2*a) - 1)*sqrt(exp(2*a) + 2*exp(a) + 1))",
+  "factorization: k - (-A+_raw/4)*(1/(2cosh(a/2)))": "0",
+  "k - [(-1/4)avg<dGhat,Ghat^v>_raw - (1/8)e^{-a/2} avgT_raw]": "0"
+ },
+ "asymptotics": {
+  "k_inf": {
+   "a->0": "(a*(12 - a) + 24)/(48*a)",
+   "lim e^{a/2}*f (a->oo)": "1",
+   "lim f (a->oo)": "0"
+  },
+  "-1/8 A+_raw": {
+   "a->0": "(a*(a + 6) + 12)/(24*a)",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "1/2"
+  },
+  "-1/8 A+_bal": {
+   "a->0": "(a**2 + 12)/(24*a)",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "1/4"
+  },
+  "-1/8 avg A_raw": {
+   "a->0": "(a*(a + 3) + 3)/(12*a)",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "1/2"
+  },
+  "B+": {
+   "a->0": "1/3 - 4/a**2",
+   "lim e^{a/2}*f (a->oo)": "0",
+   "lim f (a->oo)": "0"
+  },
+  "B-": {
+   "a->0": "1",
+   "lim e^{a/2}*f (a->oo)": "0",
+   "lim f (a->oo)": "0"
+  },
+  "avg B": {
+   "a->0": "2/3 - 2/a**2",
+   "lim e^{a/2}*f (a->oo)": "0",
+   "lim f (a->oo)": "0"
+  },
+  "C+_A_dual": {
+   "a->0": "-a*log(a) + 2*a/3 + 2*log(a) - 1 - 4/a",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "0"
+  },
+  "C+_B_dual": {
+   "a->0": "-a*log(a)/2 - a/6 + log(a) + 1/3 - 2/a - 4/a**2",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "0"
+  },
+  "avg C_A_dual": {
+   "a->0": "(a*(-a*(log(64*a**6) - 7) + log(4096*a**12) - 24) - 24)/(12*a)",
+   "lim e^{a/2}*f (a->oo)": "oo",
+   "lim f (a->oo)": "0"
+  },
+  "F_B_tr": {
+   "a->0": "-1/3 - 4/a**2",
+   "lim e^{a/2}*f (a->oo)": "0",
+   "lim f (a->oo)": "0"
+  }
+ },
+ "u_dependent (non-invariant) pieces": {
+  "C+_A_hat (both e^{-u/2},e^{-v/2})": "((-exp(v) + exp(a + v))*(a - 2*log(exp(a) - 1) + 1) + (-exp(a/2 + v) + exp(3*a/2 + v))*(-a + 2*log(exp(a) - 1) - 5)*exp(a/2))*exp(-a/2 - 2*v)/(1 - exp(a))**2",
+  "F_A_tr": "-a/sinh(a + v)**2 - a/sinh(a)**2 - v/sinh(a + v)**2 + coth(a) + coth(a + v) - 2/tanh(a/2)"
+ },
+ "fourier_symbols": {
+  "T_bal-6 = -4log(2sinh(|x|/2))": "4 pi coth(pi t)/t",
+  "A_bal = -2coth(x/2) (odd, PV)": "4 pi i coth(pi t)",
+  "B = -1/sinh^2(x/2) (Hadamard FP)": "4 pi t coth(pi t)  (>0)",
+  "k_inf(|x|)": "~ -log|t| growth (FP 1/(2|x|) singularity); digamma-type"
+ },
+ "numeric_checks_raw": [
+  {
+   "u": 0.7,
+   "v": 0.0,
+   "A_fd": -7.9457393380670815,
+   "A_exact": -7.945735454537853,
+   "B_fd": -7.837975854352308,
+   "B_cartan": -7.837942523837112,
+   "B_exact": -7.837942523837112
+  },
+  {
+   "u": 1.3,
+   "v": 0.4,
+   "A_fd": -6.740472825918498,
+   "A_exact": -6.7404710016200315,
+   "B_fd": -4.618028531855334,
+   "B_cartan": -4.618016329300106,
+   "B_exact": -4.618016329300106
+  },
+  {
+   "u": -0.5,
+   "v": 1.5,
+   "A_fd": 0.6260707294525325,
+   "A_exact": 0.6260705709986626,
+   "B_fd": -0.7240621640036693,
+   "B_cartan": -0.7240616609663106,
+   "B_exact": -0.7240616609663106
+  },
+  {
+   "u": 2.0,
+   "v": -1.0,
+   "A_fd": -4.209582826578906,
+   "A_exact": -4.209582785965024,
+   "B_fd": -0.22056412074533682,
+   "B_cartan": -0.22056402200823905,
+   "B_exact": -0.2205640220082391
+  }
+ ],
+ "positivity_check_B": {
+  "Q_direct": 13.82536374180009,
+  "Q_fourier": 13.831771481664234
+ }
+}
