@@ -1,0 +1,25 @@
+{
+  "rh_proved": false,
+  "phi_constructed": false,
+  "hodge_type_sign": false,
+  "all_window_positivity": false,
+  "release": "v1.22",
+  "proposed_only": true,
+  "merge": false,
+  "tag": false,
+  "rank1": "kahler_triple_polarization",
+  "open_score_unchanged": "Open ~1.8",
+  "counts": {"concepts": 1088, "relations": 2173},
+  "certified_only_through": "A <= 1.1 (v1.21 certificates; nothing new certified)",
+  "numerical_only": ["n_-(Q), n_-(S) counts outside A = 1, 1.1", "Riesz-lift Gram near J (mesh-dependent)", "prime-weight scaling controls (not Euler data)", "mesh floor above A = 1.1"],
+  "exact_finite_dimensional_only": ["window Shioda-Tate split", "Krein boundary-condition formula", "penalty threshold c*"],
+  "analogy_only": ["Frechet/L2 as homological/numerical equivalence", "telegrapher (t2085)", "graded shadow H0+H1+H2 for zeta"],
+  "cooked": ["k_inf from first variations", "dreamer Construction A", "dreamer chart in part 2B"],
+  "not_constructed": [
+    "arithmetic class map Phi with a computed intersection pairing",
+    "polarization on Connes' cokernel H1",
+    "a vertical log p fibre component of Psi(p^k) . Delta",
+    "a geometric one-bound-state theorem for H_A below M_A",
+    "the prolate boundary parameter Theta_A"
+  ]
+}

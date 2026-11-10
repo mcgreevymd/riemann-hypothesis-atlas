@@ -1,5 +1,17 @@
 # Changelog — The RH Atlas
 
+## v1.22 — 9–10 Nov 2026 (UTC)
+
+- 1088 concepts (+22) and 2173 typed relations (+65), from v1.21 at `deaaf83` (1066 concepts, 2108 relations). Covers 9 Nov 2026 (America/Chicago).
+- **Class map Φ.** Graphs of scaling [Γ_u] for every real u, with k∞ from the x∞ = 0 locus and Λ(n)/√n from x_p = 0. The renormalized fixed-point pairing is −(W − P), so it is −W on E0. The (h_sym, h_asym) frame. A function-field template that forces the half-density. Requirements R1–R5 on Φ.
+- **Closed routes.** Green currents on P¹×P¹; first variations (cooked); Hecke squares (wrong target); Arakelov P¹_Z×P¹_Z (principal); the tropical Cartier model (genus 0); Connes–Consani Riemann–Roch (no n²); one real PL chart (R2 and R3 cannot both hold).
+- **Two walls** (determinant and n²), both crossed classically by the Jacobian / H¹. Connes' cokernel H¹: the trace holds, but there is no polarization. Fréchet versus L². Open lead: the semilocal prolate boundary condition.
+- **New connections.** The determinant wall is the product formula [Exact]. Finite-window Shioda–Tate split n₋(W|E0) = n₋(Q) − n₋(S), with the Hodge index as one bound state of H_A below M_A [identity Exact; counts Numerical]. The pole plane as a Krein boundary condition [Exact]. Near-null = numerically trivial over F_q, and genus ∞ on every ζ window [Exact over F_q; Analogy otherwise]. The near-null plateau above A = 1.1 is a mesh floor [Numerical].
+- **Not claimed.** RH is not proved. Φ is not constructed. There is no Hodge-type sign and no all-window positivity. The certificates are unchanged (A ≤ 1.1). Prime-weight scalings and deletions are controls, not Euler data.
+- Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Rank 1 remains `kahler_triple_polarization`. Open ~1.8 is unchanged.
+- **Front matter.** `notes/v122/` (FRONT, SYNTHESIS, LIMITATIONS, insert script); `figures/v122/` (fig1 is the front figure, fig2 is supporting); provenance in `notes/v122/provenance/`, where AUDIT.md overrides the notes. Smoke test: `python3 notes/v122/provenance/SMOKE_TEST.py`.
+- **Intended release, after review.** Proposed tag `v1.22` on the reviewed merge commit. This branch does not merge, tag, or publish a release.
+
 ## v1.21 — 8–9 Nov 2026 (UTC)
 
 - 1066 concepts (+22) and 2108 typed relations (+57), from v1.20 (1044 concepts, 2051 relations). Covers 8 Nov 2026 (America/Chicago). The window Weil form is the form of one closed, semibounded, signed self-adjoint operator. E0 = (∂² − 1/4)H²₀. The Hardy and cusp constant 1/4 is shared, and the operators are not identified. M_A is a regularized prime sum, and K₀ is fixed by the character class.

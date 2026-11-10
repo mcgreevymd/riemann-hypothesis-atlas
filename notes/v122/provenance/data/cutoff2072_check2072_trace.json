@@ -1,0 +1,37 @@
+{
+ "A_archimedean": {
+  "gauss_s0.5_even": {
+   "connes_xvar": "2.07386160374123",
+   "connes_logvar": "2.07386160374123",
+   "minus_Winf_fourier": "2.07386160374123",
+   "minus_Winf_degree": "2.07386160374123",
+   "x_minus_log": "0.0",
+   "x_plus_Wf": "3.39e-21",
+   "deg_minus_fourier": "-3.39e-21",
+   "omit_const_miss": "-2.4150927"
+  },
+  "gauss_s0.3_shift0.2": {
+   "connes_xvar": "1.38867782254224",
+   "connes_logvar": "1.38867782254224",
+   "minus_Winf_fourier": "1.38867782254224",
+   "minus_Winf_degree": "1.38867782254224",
+   "x_minus_log": "0.0",
+   "x_plus_Wf": "-1.69e-21",
+   "deg_minus_fourier": "-1.69e-21",
+   "omit_const_miss": "-1.9338551"
+  }
+ },
+ "B_window_A1.1": {
+  "FG": "0.0313656353938",
+  "arch_trace": "0.0503899234729",
+  "prime_trace": "0.00348568759034",
+  "trace_fin": "0.0538756110633",
+  "H_A": "0.185162202523",
+  "M_A": "7.62100976389",
+  "B_eq_W_minus_P": "-0.0538756110633",
+  "P": "0.0541027212985",
+  "trace_fin_plus_B": "1.39e-16",
+  "trace_fin_minus_B": "0.10775122",
+  "note": "trace_fin = -(W-P) = M_A<F,G> - H_A(F,G); divergent part 2 log(Lam) <F,G> removed"
+ }
+}

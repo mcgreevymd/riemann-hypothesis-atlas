@@ -1,0 +1,181 @@
+{
+ "max_abs_err_product_formula": 1.7763568394002505e-15,
+ "ok_halfdensity_P1_is_hsym": true,
+ "ok_halfdensity_Gm_is_hasym": true,
+ "p_never_divides_pk_minus_1": true,
+ "examples": [
+  {
+   "n": 2,
+   "p": 2,
+   "k": 1,
+   "chart_det": 1,
+   "primes_carrying": [],
+   "p_divides": false,
+   "fixed_points_RZ": 1,
+   "log_p": 0.6931471805599453,
+   "ratio_chart_to_logp": 1.4426950408889634
+  },
+  {
+   "n": 4,
+   "p": 2,
+   "k": 2,
+   "chart_det": 3,
+   "primes_carrying": [
+    3
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 3,
+   "log_p": 0.6931471805599453,
+   "ratio_chart_to_logp": 4.328085122666891
+  },
+  {
+   "n": 8,
+   "p": 2,
+   "k": 3,
+   "chart_det": 7,
+   "primes_carrying": [
+    7
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 7,
+   "log_p": 0.6931471805599453,
+   "ratio_chart_to_logp": 10.098865286222745
+  },
+  {
+   "n": 3,
+   "p": 3,
+   "k": 1,
+   "chart_det": 2,
+   "primes_carrying": [
+    2
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 2,
+   "log_p": 1.0986122886681098,
+   "ratio_chart_to_logp": 1.8204784532536746
+  },
+  {
+   "n": 9,
+   "p": 3,
+   "k": 2,
+   "chart_det": 8,
+   "primes_carrying": [
+    2
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 8,
+   "log_p": 1.0986122886681098,
+   "ratio_chart_to_logp": 7.2819138130146985
+  },
+  {
+   "n": 5,
+   "p": 5,
+   "k": 1,
+   "chart_det": 4,
+   "primes_carrying": [
+    2
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 4,
+   "log_p": 1.6094379124341003,
+   "ratio_chart_to_logp": 2.4853397382384474
+  },
+  {
+   "n": 25,
+   "p": 5,
+   "k": 2,
+   "chart_det": 24,
+   "primes_carrying": [
+    2,
+    3
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 24,
+   "log_p": 1.6094379124341003,
+   "ratio_chart_to_logp": 14.912038429430684
+  },
+  {
+   "n": 7,
+   "p": 7,
+   "k": 1,
+   "chart_det": 6,
+   "primes_carrying": [
+    2,
+    3
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 6,
+   "log_p": 1.9459101490553132,
+   "ratio_chart_to_logp": 3.0833900542185044
+  },
+  {
+   "n": 49,
+   "p": 7,
+   "k": 2,
+   "chart_det": 48,
+   "primes_carrying": [
+    2,
+    3
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 48,
+   "log_p": 1.9459101490553132,
+   "ratio_chart_to_logp": 24.667120433748035
+  },
+  {
+   "n": 11,
+   "p": 11,
+   "k": 1,
+   "chart_det": 10,
+   "primes_carrying": [
+    2,
+    5
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 10,
+   "log_p": 2.3978952727983707,
+   "ratio_chart_to_logp": 4.170323914242463
+  },
+  {
+   "n": 13,
+   "p": 13,
+   "k": 1,
+   "chart_det": 12,
+   "primes_carrying": [
+    2,
+    3
+   ],
+   "p_divides": false,
+   "fixed_points_RZ": 12,
+   "log_p": 2.5649493574615367,
+   "ratio_chart_to_logp": 4.67845494301536
+  }
+ ],
+ "k_dependence_of_needed_chart_jacobian": [
+  {
+   "p": 2,
+   "k": 1,
+   "needed": 1.4426950408889634
+  },
+  {
+   "p": 2,
+   "k": 2,
+   "needed": 4.328085122666891
+  },
+  {
+   "p": 2,
+   "k": 3,
+   "needed": 10.098865286222745
+  },
+  {
+   "p": 2,
+   "k": 4,
+   "needed": 21.64042561333445
+  },
+  {
+   "p": 2,
+   "k": 5,
+   "needed": 44.723546267557865
+  }
+ ]
+}

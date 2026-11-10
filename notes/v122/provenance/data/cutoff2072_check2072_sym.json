@@ -1,0 +1,20 @@
+{
+ "k_inf_series": "-a**2/32 - a/48 + 1/4 + 1/(2*a)",
+ "K=2k_series": "-a**2/16 - a/24 + 1/2 + 1/a",
+ "even_avg_minus_k": "0",
+ "K0": "-5.3721834192256655822",
+ "K0_minus_closed(-g-pi/2-3log2-logpi)": "0.0",
+ "FP_H_int0inf_K": "2.9570906879147872381",
+ "FP_minus(pi/2+2log2)": "3.9443e-31",
+ "-K0-(gamma+log2pi)-FP": "-3.9443e-31",
+ "FT_Pf_check_lhs_minus_rhs": {
+  "1.0": "-1.9722e-31",
+  "2.0": "0.0",
+  "0.7": "0.0"
+ },
+ "gamma_expansion_residual": {
+  "0.3": "0.0",
+  "3.0": "0.0",
+  "17.0": "0.0"
+ }
+}
