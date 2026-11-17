@@ -1,0 +1,8 @@
+{
+ "version": "v1.23",
+ "not_claimed": ["RH is not proved", "Phi is not constructed", "no Hodge-type sign", "no all-window positivity", "nothing touches TARGET (D)"],
+ "numerical_scope": "All eigenvalues for A > log P are Galerkin (Rayleigh-Ritz) values: minima are upper bounds, negative counts are lower bounds. A >= 2.5: not converged in basis size. Digit doubling identical for every reported run.",
+ "priority": "The value t* = 0.28119957, a <= t*/2, the Perron theorem for the pole-free part and the parity/rank-one reduction are de Andrade Silva's (Zenodo 20682833). Only the closed form log P (plastic number) is claimed as new, and only as far as checked (Suzuki not checked for it).",
+ "unchecked": ["Mehennaoui Zenodo 23441945 proofs", "whether Suzuki arXiv:2606.09096 states log P"],
+ "certificates": "Unchanged from v1.21 (A <= 1.1)."
+}
