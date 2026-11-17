@@ -1,5 +1,17 @@
 # Changelog — The RH Atlas
 
+## v1.23 — 16–17 Nov 2026 (UTC)
+
+- 1101 concepts (+13) and 2217 typed relations (+44), from v1.22 at `04aedc7` (1088 concepts, 2173 relations). Covers 14–17 Nov 2026 (America/Chicago).
+- **TAA Lemmas 188–193.** L188 plastic-number threshold A ≤ log P for the Markov property of CCM's form [Exact; value due to de Andrade Silva, closed form new as far as checked]. L189 single-null-hyperplane form of Weil's criterion [Exact; Restatement]. L190 jump-kernel exponents are the poles of Γ(s/2), n = 0 is the pole of Λ [Exact correction]. L191 odd-sector scalar criterion for even-simplicity, S > 0 for A = 0.28–5 [Exact reduction; Numerical]. L192 the Hilbert-transform J restates Weil's criterion and does not empty (D) [Exact; closed route]. L193 L(s, χ₄) Markov to log 3, even ground state through A = 4 [Exact + Numerical].
+- **hp2251.** CCM even-simplicity holds at A = 1–6 in Galerkin spaces up to 200 functions and 600 digits; A ≥ 2.5 not converged (upper bounds) [Numerical].
+- **Literature.** Suzuki arXiv:2606.09096; de Andrade Silva Zenodo 20682833 and 20737110; Mehennaoui Zenodo 23441945 (proofs not checked).
+- **Review.** "Nested Hyperbolae, Null Poles, and the Missing H¹" (J.W. McGreevy with Claude, v2): verdicts recorded as `ms2253_review_verdicts`. The TARGET C16 commentary ((D) = the ½ as a normalization) recorded as `d_normalization_not_offset`.
+- **Not claimed.** RH is not proved. Φ is not constructed. There is no Hodge-type sign and no all-window positivity. Nothing touches (D). Certificates unchanged (A ≤ 1.1).
+- Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Rank 1 remains `kahler_triple_polarization`. Open ~1.8 is unchanged.
+- **Front matter.** `notes/v123/` (FRONT, SYNTHESIS, LIMITATIONS, insert script); provenance in `notes/v123/provenance/`, where AUDIT.md overrides the notes. Smoke test: `python3 notes/v123/provenance/SMOKE_TEST.py`. No new figures.
+- **Intended release, after review.** Proposed tag `v1.23` on the reviewed merge commit. This branch does not merge, tag, or publish a release.
+
 ## v1.22 — 9–10 Nov 2026 (UTC)
 
 - 1088 concepts (+22) and 2173 typed relations (+65), from v1.21 at `deaaf83` (1066 concepts, 2108 relations). Covers 9 Nov 2026 (America/Chicago).
