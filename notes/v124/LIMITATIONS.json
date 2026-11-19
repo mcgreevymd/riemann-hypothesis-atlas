@@ -1,0 +1,8 @@
+{
+ "version": "v1.24",
+ "not_claimed": ["RH is not proved", "Phi is not constructed", "no Hodge-type sign", "no all-window positivity", "nothing touches TARGET (D)"],
+ "numerical_scope": "Window-form eigenvalues on Q are Galerkin (Rayleigh-Ritz): minima are upper bounds, negative counts lower bounds, onsets upper bounds. Prime-side B-spline onsets are basis-sensitive for low-amplitude ghosts (DH 3.85 at h = .025, 5.7 at h = .05, 3.58 fine). F_q census in exact integer arithmetic with explicit tail bounds.",
+ "priority": "L196 rung (iv) reproduces TAA L166; the F_q mechanism is Weil/Grothendieck (cited). L197 truncation lags restate ledger section 304; the lambda > 0 pencil restates L173.",
+ "unchecked": ["Honda-Tate/Rueck classification of non-Jacobian on-circle survivors (L196)", "ghost locations of interior pencil members (L197)", "the slope-jump formula quoted in the t2284 framing"],
+ "certificates": "Unchanged from v1.21 (A <= 1.1)."
+}

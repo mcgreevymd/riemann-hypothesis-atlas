@@ -1,0 +1,364 @@
+{
+ "3": {
+  "box_total": 2725,
+  "box_off": 2662,
+  "iii_N>=0": [
+   88,
+   28
+  ],
+  "iv_a_d>=0": [
+   74,
+   17
+  ],
+  "v_twist": [
+   68,
+   12
+  ],
+  "vi_Jgroup": [
+   68,
+   12
+  ],
+  "vii_HI_n<=1": [
+   68,
+   12
+  ],
+  "vii_HI_n<=2": [
+   66,
+   10
+  ],
+  "vii_HI_n<=3": [
+   60,
+   4
+  ],
+  "vii_HI_n<=4": [
+   56,
+   0
+  ],
+  "vii_HI_n<=6": [
+   56,
+   0
+  ],
+  "vii_HI_n<=8": [
+   56,
+   0
+  ],
+  "vii_HI_n<=12": [
+   56,
+   0
+  ],
+  "vii_HI_n<=20": [
+   56,
+   0
+  ],
+  "vii_HI_all_n(=on circle)": [
+   56,
+   0
+  ],
+  "boundary_r=q": 0,
+  "real_curves(attained)": 50,
+  "attained_not_in_vi": [],
+  "on_circle_vi_not_attained": 6,
+  "fakes_vi_by_type": {
+   "R": 8,
+   "C": 4
+  },
+  "first_violation_n_hist": {
+   "2": 2,
+   "3": 6,
+   "4": 4
+  },
+  "max_first_violation_n": 4
+ },
+ "5": {
+  "box_total": 12341,
+  "box_off": 12212,
+  "iii_N>=0": [
+   364,
+   237
+  ],
+  "iv_a_d>=0": [
+   326,
+   199
+  ],
+  "v_twist": [
+   297,
+   172
+  ],
+  "vi_Jgroup": [
+   297,
+   172
+  ],
+  "vii_HI_n<=1": [
+   297,
+   172
+  ],
+  "vii_HI_n<=2": [
+   237,
+   112
+  ],
+  "vii_HI_n<=3": [
+   145,
+   20
+  ],
+  "vii_HI_n<=4": [
+   133,
+   8
+  ],
+  "vii_HI_n<=6": [
+   125,
+   0
+  ],
+  "vii_HI_n<=8": [
+   125,
+   0
+  ],
+  "vii_HI_n<=12": [
+   125,
+   0
+  ],
+  "vii_HI_n<=20": [
+   125,
+   0
+  ],
+  "vii_HI_all_n(=on circle)": [
+   125,
+   0
+  ],
+  "boundary_r=q": 0,
+  "real_curves(attained)": 115,
+  "attained_not_in_vi": [],
+  "on_circle_vi_not_attained": 10,
+  "fakes_vi_by_type": {
+   "R": 80,
+   "C": 92
+  },
+  "first_violation_n_hist": {
+   "2": 60,
+   "3": 92,
+   "4": 12,
+   "5": 8
+  },
+  "max_first_violation_n": 5
+ },
+ "7": {
+  "box_total": 33573,
+  "box_off": 33366,
+  "iii_N>=0": [
+   946,
+   741
+  ],
+  "iv_a_d>=0": [
+   880,
+   675
+  ],
+  "v_twist": [
+   789,
+   586
+  ],
+  "vi_Jgroup": [
+   789,
+   586
+  ],
+  "vii_HI_n<=1": [
+   789,
+   586
+  ],
+  "vii_HI_n<=2": [
+   477,
+   274
+  ],
+  "vii_HI_n<=3": [
+   249,
+   46
+  ],
+  "vii_HI_n<=4": [
+   225,
+   22
+  ],
+  "vii_HI_n<=6": [
+   205,
+   2
+  ],
+  "vii_HI_n<=8": [
+   203,
+   0
+  ],
+  "vii_HI_n<=12": [
+   203,
+   0
+  ],
+  "vii_HI_n<=20": [
+   203,
+   0
+  ],
+  "vii_HI_all_n(=on circle)": [
+   203,
+   0
+  ],
+  "boundary_r=q": 0,
+  "real_curves(attained)": 192,
+  "attained_not_in_vi": [],
+  "on_circle_vi_not_attained": 11,
+  "fakes_vi_by_type": {
+   "R": 269,
+   "C": 317
+  },
+  "first_violation_n_hist": {
+   "2": 312,
+   "3": 228,
+   "4": 24,
+   "5": 18,
+   "6": 2,
+   "7": 2
+  },
+  "max_first_violation_n": 7
+ },
+ "11": {
+  "box_total": 129317,
+  "box_off": 128916,
+  "iii_N>=0": [
+   3508,
+   3107
+  ],
+  "iv_a_d>=0": [
+   3336,
+   2935
+  ],
+  "v_twist": [
+   2956,
+   2555
+  ],
+  "vi_Jgroup": [
+   2956,
+   2555
+  ],
+  "vii_HI_n<=1": [
+   2956,
+   2555
+  ],
+  "vii_HI_n<=2": [
+   1113,
+   712
+  ],
+  "vii_HI_n<=3": [
+   515,
+   114
+  ],
+  "vii_HI_n<=4": [
+   447,
+   46
+  ],
+  "vii_HI_n<=6": [
+   411,
+   10
+  ],
+  "vii_HI_n<=8": [
+   403,
+   2
+  ],
+  "vii_HI_n<=12": [
+   401,
+   0
+  ],
+  "vii_HI_n<=20": [
+   401,
+   0
+  ],
+  "vii_HI_all_n(=on circle)": [
+   401,
+   0
+  ],
+  "boundary_r=q": 0,
+  "real_curves(attained)": 383,
+  "attained_not_in_vi": [],
+  "on_circle_vi_not_attained": 18,
+  "fakes_vi_by_type": {
+   "R": 1143,
+   "C": 1412
+  },
+  "first_violation_n_hist": {
+   "2": 1843,
+   "3": 598,
+   "4": 68,
+   "5": 32,
+   "6": 4,
+   "7": 6,
+   "8": 2,
+   "9": 2
+  },
+  "max_first_violation_n": 9
+ },
+ "13": {
+  "box_total": 213045,
+  "box_off": 212532,
+  "iii_N>=0": [
+   5712,
+   5199
+  ],
+  "iv_a_d>=0": [
+   5474,
+   4961
+  ],
+  "v_twist": [
+   4835,
+   4322
+  ],
+  "vi_Jgroup": [
+   4835,
+   4322
+  ],
+  "vii_HI_n<=1": [
+   4835,
+   4322
+  ],
+  "vii_HI_n<=2": [
+   1523,
+   1010
+  ],
+  "vii_HI_n<=3": [
+   673,
+   160
+  ],
+  "vii_HI_n<=4": [
+   577,
+   64
+  ],
+  "vii_HI_n<=6": [
+   525,
+   12
+  ],
+  "vii_HI_n<=8": [
+   517,
+   4
+  ],
+  "vii_HI_n<=12": [
+   513,
+   0
+  ],
+  "vii_HI_n<=20": [
+   513,
+   0
+  ],
+  "vii_HI_all_n(=on circle)": [
+   513,
+   0
+  ],
+  "boundary_r=q": 0,
+  "fakes_vi_by_type": {
+   "R": 1916,
+   "C": 2406
+  },
+  "first_violation_n_hist": {
+   "2": 3312,
+   "3": 850,
+   "4": 96,
+   "5": 46,
+   "6": 6,
+   "7": 6,
+   "8": 2,
+   "10": 2,
+   "12": 2
+  },
+  "max_first_violation_n": 12
+ }
+}

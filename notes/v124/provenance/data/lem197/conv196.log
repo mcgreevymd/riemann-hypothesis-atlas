@@ -1,0 +1,13 @@
+zeta 2 deleted + log p diag (conv A, remove) {'full': None, 'E0': None, 'coshperp': None}
+zeta 2 extra factor - log p diag (conv A, add) {'full': 0.175, 'E0': 0.625, 'coshperp': 0.4}
+zeta 3 deleted + log p diag (conv A, remove) {'full': None, 'E0': None, 'coshperp': None}
+zeta 3 extra factor - log p diag (conv A, add) {'full': 0.125, 'E0': 0.425, 'coshperp': 0.275}
+zeta 5 deleted + log p diag (conv A, remove) {'full': None, 'E0': None, 'coshperp': None}
+zeta 5 extra factor - log p diag (conv A, add) {'full': 0.125, 'E0': 0.275, 'coshperp': 0.175}
+zeta_K 2 deleted + log p diag (conv A, remove) {'full': None, 'E0': None, 'coshperp': None}
+zeta_K 2 extra factor - log p diag (conv A, add) {'full': 1.5, 'E0': 3.5, 'coshperp': 3.5}
+zeta_K 3 deleted + log p diag (conv A, remove) {'full': 4.25, 'E0': 4.6, 'coshperp': 4.6}
+zeta_K 3 extra factor - log p diag (conv A, add) {'full': 1.375, 'E0': 2.575, 'coshperp': 2.575}
+zeta_K 5 deleted + log p diag (conv A, remove) {'full': None, 'E0': None, 'coshperp': None}
+zeta_K 5 extra factor - log p diag (conv A, add) {'full': 1.2, 'E0': 3.1, 'coshperp': 2.7}
+zeta_K 3 deleted + 2 log 3 diag (3 splits) {'full': None, 'E0': None, 'coshperp': None}
