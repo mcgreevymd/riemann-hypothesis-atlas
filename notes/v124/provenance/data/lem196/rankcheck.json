@@ -1,0 +1,34 @@
+{
+ "5": {
+  "(rank,n-W,offpairs,n-Q)": {
+   "(4, 2, 2, 3)": 91,
+   "(4, 1, 1, 2)": 59
+  },
+  "violations_of_prediction": 0,
+  "n": 150
+ },
+ "7": {
+  "(rank,n-W,offpairs,n-Q)": {
+   "(4, 2, 2, 3)": 84,
+   "(4, 1, 1, 2)": 66
+  },
+  "violations_of_prediction": 0,
+  "n": 150
+ },
+ "11": {
+  "(rank,n-W,offpairs,n-Q)": {
+   "(4, 2, 2, 3)": 98,
+   "(4, 1, 1, 2)": 52
+  },
+  "violations_of_prediction": 0,
+  "n": 150
+ },
+ "13": {
+  "(rank,n-W,offpairs,n-Q)": {
+   "(4, 1, 1, 2)": 46,
+   "(4, 2, 2, 3)": 104
+  },
+  "violations_of_prediction": 0,
+  "n": 150
+ }
+}

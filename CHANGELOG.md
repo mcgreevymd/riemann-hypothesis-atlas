@@ -1,5 +1,33 @@
 # Changelog — The RH Atlas
 
+## v1.24 — 18–19 Nov 2026 (UTC)
+
+- 1113 concepts (+12) and 2266 typed relations (+49), from v1.23 at `b035a04` (1101 concepts, 2217 relations). Covers 17–18 Nov 2026 (America/Chicago).
+- **TAA Lemma 194.**
+  - Over all windows, RH ⇔ Q ≥ 0 on cosh(u/2)^⊥ ⇔ Q ≥ 0 on E0; index 1 is only implied [Proved; Restatement].
+  - E0 is carried to E0 by translation, which acts as a boost [Proved].
+- **TAA Lemma 195 (draft).**
+  - The onset law σ′r* = const fails; the conductor law stands [Numerical].
+  - L(χ mod 5) is positive to r = 8 while DH fails at 3.58 [Numerical].
+- **TAA Lemma 196.** Genus-2 anatomy over F_q.
+  - No count rung kills the fakes, and the depth N*(q) grows with q [Numerical, exact integers].
+  - Box completeness (196.1) and finite rank with n−(Q) = n−(W) + 1 (196.4) [Proved].
+  - The FE is needed for positivity ⇒ purity (196.6).
+- **TAA Lemma 197.** Euler × FE ablation.
+  - 36/36 single-ingredient fakes fail by r = 5.7 [Numerical].
+  - The §351 share test is tautological [Proved].
+  - Poisson completion: Euler without the FE can be positive [Proved].
+  - Reconciled with L196: the Euler × FE split does not carry the sign [Restatement].
+- **Filter sort, closed routes, framings (t2271–t2286).** Recorded as `multiplicativity_filter_sort_2271`, `closed_routes_t2271_2284`, `window_equivalence_principle_framing` and `kepler_perpendicularity_framing`.
+- **Corrections to earlier chat checks.**
+  - Z₂'s first frequency is log(3/2).
+  - 0.2812 is a Markov threshold, not a positivity threshold.
+  - On a Riemannian 4-manifold, ∫F∧*F = ‖F‖² ≥ 0 and *² = +1. The earlier "indefinite" claim was wrong; ∫F∧F is the pairing that can be indefinite.
+- **Not claimed.** RH is not proved. Φ is not constructed. There is no Hodge-type sign and no all-window positivity. Nothing touches (D). Certificates are unchanged (A ≤ 1.1).
+- Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Rank 1 remains `kahler_triple_polarization`. Open ~1.8 is unchanged.
+- **Front matter.** `notes/v124/` (FRONT, SYNTHESIS, LIMITATIONS, insert script). Provenance is in `notes/v124/provenance/`, where AUDIT.md overrides the notes. Smoke test: `python3 notes/v124/provenance/SMOKE_TEST.py`. No new figures.
+- **Intended release, after review.** Proposed tag `v1.24` on the reviewed merge commit. This branch does not merge, tag, or publish a release.
+
 ## v1.23 — 16–17 Nov 2026 (UTC)
 
 - 1101 concepts (+13) and 2217 typed relations (+44), from v1.22 at `04aedc7` (1088 concepts, 2173 relations). Covers 14–17 Nov 2026 (America/Chicago).
