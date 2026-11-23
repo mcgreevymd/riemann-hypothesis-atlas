@@ -2,7 +2,26 @@
 
 **J. W. McGreevy; formalization by Grok Bot**
 
-Version 1.24 · 19 Nov 2026 (UTC)
+Version 1.25 · 23 Nov 2026 (UTC)
+
+## Since v1.24
+
+Links are relative to the repository root (this file is included in README.md).
+
+> **RH is not proved. Φ is not constructed. There is no Hodge-type sign and no all-window positivity.** Nothing in v1.25 touches the compatibility condition (D) ([J, Θ] = 0 on ℋ). The certified E0 gaps are still the v1.21 ones (A ≤ 1.1). Every statement for larger windows is numerical (Galerkin: minima are upper bounds, negative counts lower bounds). Rank 1 is unchanged: `kahler_triple_polarization`. Open ~1.8 is unchanged.
+
+**New in v1.25.** Work of 20–22 Nov 2026 (America/Chicago). Counts: 1115 concepts (+2) and 2278 typed relations (+12). Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Two additions only, approved by J. W. McGreevy.
+
+Tags: **[Exact]** an identity or a literature fact; **[Closed]** a restatement or closed route.
+
+### Einstein / Hagedorn on the Bost–Connes row
+- **[Exact]** Einstein's 1917 derivation of B₁₂ = B₂₁ (hence Planck's law from A/B coefficients plus Boltzmann statistics) uses the high-temperature limit ρ → ∞. The primon gas's thermal description ends at the Hagedorn point β_H = 1 (the pole of ζ), and the Weil form lives beyond it, on Re β = ½ (complex β). So the step that forces detailed balance in physics is unavailable for ζ; continuation past β = 1 runs through the functional equation, which Davenport–Heilbronn and Epstein zetas (e.g. Z_{x²+5y²}) share. Recorded on the Bost–Connes / KMS-primon entry, on the Theorem 3.2 table row, and as `einstein_hagedorn_bc`.
+
+### Constraint / Dirac framing
+- **[Exact + Closed route]** In the Lagrange/Dirac-constraint picture of Q (norm constraint ‖f‖² = 1, pole constraints f̂(0) = f̂(1) = 0 or ⟨f, cosh⟩ = 0, the pencil Q − λ·norm, Poisson brackets such as {xy, x²+y²} = 2(y²−x²)), every element is built from Q alone and is sign-neutral: Davenport–Heilbronn and Epstein zetas share it. Relative to Q the pole plane is already nondegenerate (1,1), i.e. a second-class pair, with no Euler product used; Q-orthogonal reduction of that plane gives index 1 only, not Q ≥ 0 on E0 (TAA Lemma 194). The Hamiltonian J (rotation of the (x, y) plane) is not TARGET's J (a complex structure on ℋ compatible with ω); brackets with respect to TARGET's ω are undefined until piece (B) exists. The only multiplicativity-using constraint expressible here is simultaneous eigen-constraints for the commuting Hecke / scaling-by-p family; it rejects Z_{x²+5y²} = ½(ζ_K + L(s,χ)), K = ℚ(√−5), only because it is a sum of two Euler products, so it is the Euler-product filter (`prime_torus_nonresonance`, #884: selects pure modes) and supplies no sign (cf. TAA Lemma 196: 𝔽_q fakes with Euler products fail Hodge index). Any sign-giving, prime-dependent constraint beyond this would have to encode finite-place intersection data, i.e. the missing square Spec ℤ × Spec ℤ. Recorded as `constraint_dirac_framing_route`.
+
+**Open, in order of bearing on Φ.** Unchanged from v1.24.
+
 
 ## Since v1.23
 
@@ -269,7 +288,7 @@ The 128-cell and 2048-cell values differ by about 100× beyond A ≈ 1.1. **Ther
 
 **[Obstruction]** *Block positivity.* Fixed-diagonal PSD coupling diverges; it needs ≥ (√P_B − √G)². The exact-match 2×2 block fails at cutoff B = 2, s₀ = 49/25: g = 0.003012, d = 0.107651, w = −0.104639, det = −0.0112645. The required ratio is ρ_req = 5.978. **[Numerical]** w_B < 0 on four intervals at B = 2, directly after log 2, log 3, log 5 and log 7: (0.693, 0.766), (1.099, 1.183), (1.609, 1.707) and (1.946, 2). At s = 0.5, w = +0.20412, while the ghost gives −0.28601. q_{E2}(0) = −0.17576.
 
-**[Exact + Obstruction]** *KMS / primon gas.* The boson gas has Z = ζ(β). The fermion gas has Z = ζ(β)/ζ(2β), with the wrong sign at n = 4 and 9. The Bost–Connes KMS state at β = ½ gives vectors with ‖v_n‖² = Λ(n)/√n exactly. **[Exact + Cited]** Their kernel is −ζ′/ζ(½ + z + conjugate w). That is not K_q: the Gamma, pole and mass terms are missing. The all-prime vector has infinite norm. **[Obstruction]** Sample values: C₂ = 0.63038, J = 0.100396, K_q(1, 2) = 0.045990.
+**[Exact + Obstruction]** *KMS / primon gas.* The boson gas has Z = ζ(β). The fermion gas has Z = ζ(β)/ζ(2β), with the wrong sign at n = 4 and 9. The Bost–Connes KMS state at β = ½ gives vectors with ‖v_n‖² = Λ(n)/√n exactly. **[Exact + Cited]** Their kernel is −ζ′/ζ(½ + z + conjugate w). That is not K_q: the Gamma, pole and mass terms are missing. The all-prime vector has infinite norm. **[Obstruction]** Sample values: C₂ = 0.63038, J = 0.100396, K_q(1, 2) = 0.045990. **[Exact]** Einstein's 1917 derivation of B₁₂ = B₂₁ (hence Planck's law from A/B coefficients plus Boltzmann statistics) uses the high-temperature limit ρ → ∞. The primon gas's thermal description ends at the Hagedorn point β_H = 1 (the pole of ζ), and the Weil form lives beyond it, on Re β = ½ (complex β). So the step that forces detailed balance in physics is unavailable for ζ; continuation past β = 1 runs through the functional equation, which Davenport–Heilbronn and Epstein zetas (e.g. Z_{x²+5y²}) share.
 
 **[Exact / Analogy]** *Planck ladder.* k∞(a) = Σ_m e^{−(2m+½)a}. This is an Ornstein–Uhlenbeck / Planck tower with rates 2m + ½. **[Exact]** Reading the Gamma term as blackbody radiation and the primes as a primon gas is suggestive. They are not the same Hamiltonian. **[Analogy]** The kinetic-versus-potential reading is accurate as bookkeeping. It is not a sign mechanism. **[Analogy]**
 
@@ -439,7 +458,7 @@ Entries: [spring split](ATLAS.md#spring-energy-counterterm-split), [signed autoc
 | Determinant / discriminant | sign det W = (−1)^{n₋}: parity only | DH-blind [Theorem 3.2] |
 | Heat capacity, entropy, Lévy measure | Weil kernel = x·Lévy measure at β = ½ (literal), but the form is not a relative entropy; Re Λ′/Λ > 0 at β = 1.05, 1.5 for ζ and DH alike | edge-only [Theorem 3.5, Numerical 3.3] |
 | KMS, passivity, Tolman | passivity ⇔ zero locations (Lagarias) | circular [Restatement 2.0] |
-| Bost–Connes | Hagedorn β_H = 1; the Weil form lives at β = ½, below the phase transition | no positivity supplied [Theorem 3.2] |
+| Bost–Connes | Hagedorn β_H = 1; the Weil form lives at β = ½, below the phase transition. Einstein’s 1917 derivation of B₁₂ = B₂₁ (hence Planck’s law from A/B coefficients plus Boltzmann statistics) uses the high-temperature limit ρ → ∞, which is unavailable past the Hagedorn point; continuation past β = 1 runs through the functional equation, shared by Davenport–Heilbronn and Epstein zetas (e.g. Z_{x²+5y²}) [Exact] | no positivity supplied [Theorem 3.2] |
 | Spinor / Witten | Lichnerowicz pieces indefinite; Witten index 1/ζ(β); (1,1) splits identical for ζ and DH | content-free [Theorem 2.0–2.6] |
 | Ruppeiner geometry | (β, hΩ) family: ζ positive-definite (R ≈ +0.22–0.26), χ₋₄ negative-definite, DH indefinite | stability ≠ RH [Numerical 3.2] |
 | Reflection positivity (Osterwalder–Schrader) | pole reflection-positive (rank 2), archimedean term exactly anti-RP, primes indefinite; the total is not RP even under RH | not a mechanism [Theorem 3.3] |

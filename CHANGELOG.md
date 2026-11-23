@@ -1,5 +1,15 @@
 # Changelog — The RH Atlas
 
+## v1.25 — 22–23 Nov 2026 (UTC)
+
+- 1115 concepts (+2) and 2278 typed relations (+12), from v1.24 at `0666a183` (1113 concepts, 2266 relations). Covers 20–22 Nov 2026 (America/Chicago).
+- **Einstein / Hagedorn on the Bost–Connes row [Exact].** Einstein's 1917 derivation of B₁₂ = B₂₁ (hence Planck's law from A/B coefficients plus Boltzmann statistics) uses the high-temperature limit ρ → ∞. The primon gas's thermal description ends at the Hagedorn point β_H = 1 (the pole of ζ), and the Weil form lives beyond it, on Re β = ½ (complex β). So the step that forces detailed balance in physics is unavailable for ζ; continuation past β = 1 runs through the functional equation, which Davenport–Heilbronn and Epstein zetas (e.g. Z_{x²+5y²}) share. Recorded on the Bost–Connes / KMS-primon entry, on the Theorem 3.2 table row, and as `einstein_hagedorn_bc`.
+- **Constraint / Dirac framing [Exact + Closed route].** Every element of the Lagrange/Dirac-constraint picture of Q is built from Q alone and is sign-neutral. Relative to Q the pole plane is already nondegenerate (1,1), i.e. a second-class pair, with no Euler product used; Q-orthogonal reduction gives index 1 only, not Q ≥ 0 on E0 (TAA Lemma 194). The Hamiltonian J of the (x, y) plane is not TARGET's J. The only multiplicativity-using constraint expressible here is the Hecke / scaling-by-p eigen-filter; it rejects Z_{x²+5y²} only as a sum of two Euler products, so it is the Euler-product filter (`prime_torus_nonresonance`, #884) and supplies no sign (cf. TAA Lemma 196). Any sign-giving, prime-dependent constraint beyond this would be the missing square Spec ℤ × Spec ℤ. Recorded as `constraint_dirac_framing_route`.
+- **Not claimed.** RH is not proved. Φ is not constructed. There is no Hodge-type sign and no all-window positivity. Nothing touches (D). Certificates are unchanged (A ≤ 1.1).
+- Existing priorities and the relative order of existing concepts are unchanged. New concepts follow the existing block of the same priority. Rank 1 remains `kahler_triple_polarization`. Open ~1.8 is unchanged.
+- **Front matter.** `notes/v125/` (FRONT, insert script). No new figures. No TARGET.md edits.
+- **Intended release, after review.** Proposed tag `v1.25` on the reviewed merge commit. This branch does not merge, tag, or publish a release.
+
 ## v1.24 — 18–19 Nov 2026 (UTC)
 
 - 1113 concepts (+12) and 2266 typed relations (+49), from v1.23 at `b035a04` (1101 concepts, 2217 relations). Covers 17–18 Nov 2026 (America/Chicago).
